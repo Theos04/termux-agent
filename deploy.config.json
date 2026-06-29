@@ -1,0 +1,7 @@
+{
+  "host": "u0_a215@100.93.132.97",
+  "port": 8022,
+  "remoteDir": "~/automation/chrome-launcher",
+  "branch": "main",
+  "github": "https://github.com/Theos04/termux-agent.git"
+}

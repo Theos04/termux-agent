@@ -86,6 +86,32 @@ python run_agent.py submit agent_act -p '{
 | `unstop_list` | navigate to Unstop internships |
 | `discovery` | `agent_act` with `unstop_jobs` context |
 
+## Deploy from Windows
+
+```powershell
+cd C:\Users\mailt\Desktop\dashboard-daily\termux-agent
+
+# Full deploy: git push + scp + restart agent
+.\deploy.ps1
+
+# Or with options:
+.\deploy_to_termux.ps1                    # git push + scp
+.\deploy_to_termux.ps1 -Mode git          # GitHub only → Termux git pull
+.\deploy_to_termux.ps1 -Mode scp          # SCP hotfix only (1 password prompt)
+.\deploy_to_termux.ps1 -Upgrade -Restart  # run upgrade.sh + restart
+.\deploy_to_termux.ps1 -Message "fix cdp handlers"
+```
+
+Edit `deploy.config.json` to change SSH host/port.
+
+### First-time Termux setup (after git clone)
+
+```bash
+cd ~/automation/chrome-launcher
+bash upgrade.sh          # if SCP files blocked git pull
+python run_agent.py run --api --workers 1
+```
+
 ## Install on Termux
 
 ```bash
