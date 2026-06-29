@@ -17,7 +17,7 @@ if [ -f "$ROOT/.agent.pid" ]; then
     rm -f "$ROOT/.agent.pid"
 fi
 
-nohup python run_agent.py run --api --workers 3 \
+nohup python run_agent.py run --api --workers 1 \
     > "$ROOT/logs/agent.log" 2>&1 &
 
 echo $! > "$ROOT/.agent.pid"

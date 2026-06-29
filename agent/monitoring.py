@@ -19,6 +19,7 @@ class Monitor:
         schedules = self._db.get_schedules()
         recent_events = self._events.get_history(limit=20)
         recent_failed = self._db.get_tasks(status="failed", limit=10)
+        recent_tasks = self._db.get_tasks(limit=15)
 
         return {
             "tasks": {
@@ -32,6 +33,7 @@ class Monitor:
             },
             "recent_events": recent_events,
             "recent_failed": recent_failed,
+            "recent_tasks": recent_tasks,
         }
 
     def task_detail(self, task_id: int) -> Optional[dict]:
