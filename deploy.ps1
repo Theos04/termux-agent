@@ -7,14 +7,19 @@
 param(
     [switch]$Quick,
     [switch]$GitOnly,
-    [string]$Message = ""
+    [string]$Message = "",
+    [switch]$DryRun
 )
 
-$deployArgs = @()
-if ($Quick) { $deployArgs += "-Mode", "scp" }
-elseif ($GitOnly) { $deployArgs += "-Mode", "git" }
-else { $deployArgs += "-Mode", "both", "-Restart" }
+$deployArgs = @{}
+if ($Quick) { $deployArgs["Mode"] = "scp" }
+elseif ($GitOnly) { $deployArgs["Mode"] = "git" }
+else {
+    $deployArgs["Mode"] = "both"
+    $deployArgs["Restart"] = $true
+}
 
-if ($Message) { $deployArgs += "-Message", $Message }
+if ($Message) { $deployArgs["Message"] = $Message }
+if ($DryRun) { $deployArgs["DryRun"] = $true }
 
 & "$PSScriptRoot\deploy_to_termux.ps1" @deployArgs

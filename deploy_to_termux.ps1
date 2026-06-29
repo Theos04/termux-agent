@@ -82,7 +82,7 @@ function Deploy-Git {
             git commit -m $Message
         }
         elseif ($status -and $SkipCommit) {
-            Write-Host "Uncommitted changes (SkipCommit set) — only pushing existing commits" -ForegroundColor Yellow
+            Write-Host "Uncommitted changes (SkipCommit set) - only pushing existing commits" -ForegroundColor Yellow
         }
         else {
             Write-Host "Working tree clean"
