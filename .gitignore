@@ -4,7 +4,13 @@ __pycache__/
 
 # SQLite
 *.db
+*.db-wal
+*.db-shm
 *.sqlite
+
+# Agent runtime
+.agent.pid
+logs/
 
 # Logs
 *.log
