@@ -30,6 +30,62 @@ Event-driven Chrome automation agent for **Termux on Android**. Orchestrates CDP
 | **Monitoring** | Dashboard, event history, failed task viewer |
 | **Plugins** | `register_handler()` / `register_subscriber()` |
 
+## MCP-style CDP tools
+
+The agent uses **direct imports** (`cdpv116`, `fetch_page2`) — no subprocess.
+
+| Task | Description |
+|------|-------------|
+| `session_start` | Start Chrome session with `name` + `url` |
+| `session_stop` | Stop session |
+| `session_list` | List sessions |
+| `browser_navigate` | Navigate to URL (auto-starts session) |
+| `browser_get_content` | Get text/html/links from page |
+| `browser_execute_js` | Run JavaScript |
+| `browser_click` | Click CSS selector |
+| `browser_fill` | Fill input field |
+| `browser_extract` | Structured job/page extraction |
+| `browser_run_script` | Run scripts-library JS |
+| `agent_act` | Multi-step context agent |
+
+List tools: `GET /api/tools`
+
+### Examples
+
+```bash
+# Start session + navigate
+python run_agent.py submit session_start -p '{"name":"unstop","url":"https://unstop.com/internships"}'
+
+# Fetch page content (starts session if needed)
+python run_agent.py submit browser_navigate -p '{"name":"agent","url":"https://example.com"}'
+python run_agent.py submit browser_get_content -p '{"name":"agent","format":"text"}'
+
+# MCP context agent — multi-step
+python run_agent.py submit agent_act -p '{"context":"unstop_jobs","name":"unstop"}'
+python run_agent.py submit agent_act -p '{"context":"fetch_page","url":"https://example.com"}'
+
+# Custom action sequence
+python run_agent.py submit agent_act -p '{
+  "name": "agent",
+  "url": "https://unstop.com/internships",
+  "actions": [
+    {"type": "navigate"},
+    {"type": "get_content", "format": "text"},
+    {"type": "extract"}
+  ]
+}'
+```
+
+## Legacy task aliases
+
+| Old task | Maps to |
+|----------|---------|
+| `fetch_page` | `browser_get_content` |
+| `launch_chrome` | `session_start` |
+| `run_js` | `browser_execute_js` |
+| `unstop_list` | navigate to Unstop internships |
+| `discovery` | `agent_act` with `unstop_jobs` context |
+
 ## Install on Termux
 
 ```bash
@@ -89,22 +145,7 @@ python run_agent.py failed
 
 ## Task types
 
-| Type | Script | Description |
-|------|--------|-------------|
-| `fetch_page` | fetch_page.py | Fetch page content |
-| `fetch_page2` | fetch_page2.py | Enhanced page fetch |
-| `fetch_page_llm` | fetch_page_llm.py | LLM-ready page content |
-| `fetch_page_job_read_more` | fetch_page_job_read_more.py | Job detail scraper |
-| `launch_chrome` | launch-chrome.py | Start Chrome with CDP |
-| `run_js` | run-js-any-chrome.py | Execute JS in Chrome |
-| `dynamic_js` | dynamic_chrome_executor.py | Dynamic JS executor |
-| `unstop_list` | get-list-unstop.py | Unstop job/hackathon lists |
-| `web_scrape` | web_scraper_unstop.py | Unstop web scraper |
-| `cdp` | cdpv116.py, cdp_*.py | Any CDP script |
-| `discovery` | — | Periodic multi-source fetch |
-| `fix_devtools` | fix_devtools.py | Repair DevTools connection |
-| `shell` | any | Run arbitrary script |
-| `echo` | — | Health check |
+See **MCP-style CDP tools** section above.
 
 ## HTTP API
 

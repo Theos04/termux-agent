@@ -10,8 +10,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-import handlers.chrome_handlers  # noqa: F401 — register handlers
-import handlers.discovery  # noqa: F401
+import handlers.cdp_handlers  # noqa: F401 — register CDP handlers
+import handlers.mcp_agent  # noqa: F401 — register MCP agent_act
 
 from agent.agent import Agent
 from agent.config import AgentConfig

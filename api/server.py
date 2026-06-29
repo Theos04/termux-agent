@@ -98,6 +98,11 @@ def create_app(agent: Optional[Agent] = None) -> Flask:
         _agent.scheduler.disable_schedule(name)
         return jsonify({"enabled": False})
 
+    @app.route("/api/tools")
+    def tools():
+        from agent.tools import list_tools
+        return jsonify(list_tools())
+
     @app.route("/")
     def index():
         return DASHBOARD_HTML
