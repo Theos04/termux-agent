@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+
+# SQLite
+*.db
+*.sqlite
+
+# Logs
+*.log
+
+# Cache
+.cache/
+
+# Chrome profile
+chrome-persistent-profile/
+~/chrome-persistent-profile/
+
+# Temp
+tmp/
+temp/
+
+# VSCode
+.vscode/
+
+# Virtual env
+venv/
+.env
