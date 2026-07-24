@@ -1,0 +1,2594 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "Quick HAR Capture",
+      "version": "1.0"
+    },
+    "entries": [
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://unstop.com/assets/static-json/converted_faqs_data.json",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNWM0NjE0NmMyMjJjMmM2NDg5ODE2YTMzZWUzZDM4OGFhZDU5OTRmNTA3NzMxOGQ3Y2M2ZDIwZTI1NGE1YThlZTgzMDVlNTQ4NDljZGY2ZmUiLCJpYXQiOjE3ODQ1MzMzNDQuNTc4NTksIm5iZiI6MTc4NDUzMzM0NC41Nzg1OTQsImV4cCI6MTc4Njk1MjU0NC41NTg0MDcsInN1YiI6IjI5NTU0MTAwIiwic2NvcGVzIjpbXX0.AedRk5scyTSJJGPjsBGHXOMnwxwXbvmXGVzZUUWajHHkDs0j0Q4U_jdHlbnd1OSQ1HqJ4_SBYKUJ2M5DOmUNsC37eXizuEOXORWmOyb1BCeEsv7TrprcdkN-kvelFVFlaGbFycwjwF_g4z6Bk8P7gZLw4DXHPMc7ry_Rik6TQBIexuGGrQTg1sSciH77hLR5XNikXdnHDiMzF6h9VmJDzcp6yZQbBxGMAQiDf-tI_opj1mYpOAMF4fzpPG47rN6E0odFE7opl1eyaFDaaHzePJIn25ALGzsk6jtsdUaa-yVtYnJvGIT9L-i5HdAdWgRMPKaWHD5f4Yz1zl8U_ggidy36QUIuNXpdc1KFEIloOMPXdFt6IDwCoLrIeH4L10UF58dIoEDPU-oUygQCV9jMs2Uyx7GfM0jE7NNIpuHgQ3RCti4Dg2kXxZi8dDQ8i16XDdNC3RcGerSL6w-sOmon9A1-Q-V9o0WSusmlijQ8gptgNxoBbX5Gn91IxYQcRQCQX4Jrr3AttL0_Gsb4oraMJ0_s05vKcxcDY9yw62EdI52CoF4oQ_F6aThQraYFr5KuP6RoSklIImOPPWTmjAOkc8p0vvUSzrbBUQrjd1u_L_sdAaDIgjBEWLlAjldMfvfNb8HrFZjMXOPPbame2BKv29puRdLmph4oU20_Mf_-jko",
+            "Referer": "https://unstop.com/job/backend-development-jobs?oppstatus=open&roles=backend-development",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "Accept": "application/json, text/plain, */*",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "content-encoding": "br",
+            "etag": "W/\"6a41fcff-10f84\"",
+            "age": "15911",
+            "x-content-type-options": "nosniff",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-behaviour": "frontend",
+            "x-behaviour2": "frontend",
+            "date": "Mon, 29 Jun 2026 05:23:31 GMT",
+            "content-type": "application/json",
+            "last-modified": "Mon, 29 Jun 2026 05:05:03 GMT",
+            "vary": "Accept-Encoding, Origin",
+            "x-amz-cf-id": "wKAPx6si0UlOBoFPeqrpkYa16DPI-X3keM7qbRPGtcfOWyaljtYQLA==",
+            "x-frame-options": "SAMEORIGIN",
+            "cache-control": "max-age=31536000, public",
+            "pragma": "public",
+            "via": "1.1 d43494f195e4e3dd7202dfa9e17d6efe.cloudfront.net (CloudFront)",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "BOM78-P9",
+            "server": "CloudFront"
+          },
+          "content": {
+            "mimeType": "application/json"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.454227",
+        "request_time": 1784916302.4542947,
+        "response_time": 1784916302.5738952
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://unstop.com/assets/i18n/ucore-en.json",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNWM0NjE0NmMyMjJjMmM2NDg5ODE2YTMzZWUzZDM4OGFhZDU5OTRmNTA3NzMxOGQ3Y2M2ZDIwZTI1NGE1YThlZTgzMDVlNTQ4NDljZGY2ZmUiLCJpYXQiOjE3ODQ1MzMzNDQuNTc4NTksIm5iZiI6MTc4NDUzMzM0NC41Nzg1OTQsImV4cCI6MTc4Njk1MjU0NC41NTg0MDcsInN1YiI6IjI5NTU0MTAwIiwic2NvcGVzIjpbXX0.AedRk5scyTSJJGPjsBGHXOMnwxwXbvmXGVzZUUWajHHkDs0j0Q4U_jdHlbnd1OSQ1HqJ4_SBYKUJ2M5DOmUNsC37eXizuEOXORWmOyb1BCeEsv7TrprcdkN-kvelFVFlaGbFycwjwF_g4z6Bk8P7gZLw4DXHPMc7ry_Rik6TQBIexuGGrQTg1sSciH77hLR5XNikXdnHDiMzF6h9VmJDzcp6yZQbBxGMAQiDf-tI_opj1mYpOAMF4fzpPG47rN6E0odFE7opl1eyaFDaaHzePJIn25ALGzsk6jtsdUaa-yVtYnJvGIT9L-i5HdAdWgRMPKaWHD5f4Yz1zl8U_ggidy36QUIuNXpdc1KFEIloOMPXdFt6IDwCoLrIeH4L10UF58dIoEDPU-oUygQCV9jMs2Uyx7GfM0jE7NNIpuHgQ3RCti4Dg2kXxZi8dDQ8i16XDdNC3RcGerSL6w-sOmon9A1-Q-V9o0WSusmlijQ8gptgNxoBbX5Gn91IxYQcRQCQX4Jrr3AttL0_Gsb4oraMJ0_s05vKcxcDY9yw62EdI52CoF4oQ_F6aThQraYFr5KuP6RoSklIImOPPWTmjAOkc8p0vvUSzrbBUQrjd1u_L_sdAaDIgjBEWLlAjldMfvfNb8HrFZjMXOPPbame2BKv29puRdLmph4oU20_Mf_-jko",
+            "Referer": "https://unstop.com/job/backend-development-jobs?roles=backend-development&oppstatus=open",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "Accept": "application/json, text/plain, */*",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "content-encoding": "br",
+            "etag": "W/\"6a41fcff-131a\"",
+            "age": "15420",
+            "x-content-type-options": "nosniff",
+            "x-behaviour2": "frontend",
+            "x-cache": "Hit from cloudfront",
+            "x-behaviour": "frontend",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "date": "Mon, 29 Jun 2026 05:23:29 GMT",
+            "content-type": "application/json",
+            "last-modified": "Mon, 29 Jun 2026 05:05:03 GMT",
+            "vary": "Accept-Encoding, Origin",
+            "x-amz-cf-id": "EA1sgOjgUXB8OxPsk9rVAVoqeibOW96G3XE6EyLGa11X7mjv8nZAqg==",
+            "x-frame-options": "SAMEORIGIN",
+            "cache-control": "max-age=31536000, public",
+            "pragma": "public",
+            "via": "1.1 8db549d367d0865d2cf0abf52ae953e4.cloudfront.net (CloudFront)",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P4",
+            "server": "CloudFront"
+          },
+          "content": {
+            "mimeType": "application/json"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.459133",
+        "request_time": 1784916302.4592016,
+        "response_time": 1784916302.627638
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://unstop.com/assets/i18n/ucore-en.json",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNWM0NjE0NmMyMjJjMmM2NDg5ODE2YTMzZWUzZDM4OGFhZDU5OTRmNTA3NzMxOGQ3Y2M2ZDIwZTI1NGE1YThlZTgzMDVlNTQ4NDljZGY2ZmUiLCJpYXQiOjE3ODQ1MzMzNDQuNTc4NTksIm5iZiI6MTc4NDUzMzM0NC41Nzg1OTQsImV4cCI6MTc4Njk1MjU0NC41NTg0MDcsInN1YiI6IjI5NTU0MTAwIiwic2NvcGVzIjpbXX0.AedRk5scyTSJJGPjsBGHXOMnwxwXbvmXGVzZUUWajHHkDs0j0Q4U_jdHlbnd1OSQ1HqJ4_SBYKUJ2M5DOmUNsC37eXizuEOXORWmOyb1BCeEsv7TrprcdkN-kvelFVFlaGbFycwjwF_g4z6Bk8P7gZLw4DXHPMc7ry_Rik6TQBIexuGGrQTg1sSciH77hLR5XNikXdnHDiMzF6h9VmJDzcp6yZQbBxGMAQiDf-tI_opj1mYpOAMF4fzpPG47rN6E0odFE7opl1eyaFDaaHzePJIn25ALGzsk6jtsdUaa-yVtYnJvGIT9L-i5HdAdWgRMPKaWHD5f4Yz1zl8U_ggidy36QUIuNXpdc1KFEIloOMPXdFt6IDwCoLrIeH4L10UF58dIoEDPU-oUygQCV9jMs2Uyx7GfM0jE7NNIpuHgQ3RCti4Dg2kXxZi8dDQ8i16XDdNC3RcGerSL6w-sOmon9A1-Q-V9o0WSusmlijQ8gptgNxoBbX5Gn91IxYQcRQCQX4Jrr3AttL0_Gsb4oraMJ0_s05vKcxcDY9yw62EdI52CoF4oQ_F6aThQraYFr5KuP6RoSklIImOPPWTmjAOkc8p0vvUSzrbBUQrjd1u_L_sdAaDIgjBEWLlAjldMfvfNb8HrFZjMXOPPbame2BKv29puRdLmph4oU20_Mf_-jko",
+            "Referer": "https://unstop.com/job/backend-development-jobs?roles=backend-development&oppstatus=open",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "Accept": "application/json, text/plain, */*",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "content-encoding": "br",
+            "etag": "W/\"6a41fcff-131a\"",
+            "age": "15420",
+            "x-content-type-options": "nosniff",
+            "x-behaviour2": "frontend",
+            "x-cache": "Hit from cloudfront",
+            "x-behaviour": "frontend",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "date": "Mon, 29 Jun 2026 05:23:29 GMT",
+            "content-type": "application/json",
+            "last-modified": "Mon, 29 Jun 2026 05:05:03 GMT",
+            "vary": "Accept-Encoding, Origin",
+            "x-amz-cf-id": "EA1sgOjgUXB8OxPsk9rVAVoqeibOW96G3XE6EyLGa11X7mjv8nZAqg==",
+            "x-frame-options": "SAMEORIGIN",
+            "cache-control": "max-age=31536000, public",
+            "pragma": "public",
+            "via": "1.1 8db549d367d0865d2cf0abf52ae953e4.cloudfront.net (CloudFront)",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P4",
+            "server": "CloudFront"
+          },
+          "content": {
+            "mimeType": "application/json"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.464032",
+        "request_time": 1784916302.4640994,
+        "response_time": 1784916302.6553671
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1313490&time=1784916302108&li_adsId=e8ccfe64-e762-48b1-a57c-ed1045b5c50f&url=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&tm=gtmv2",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "linkedin-action": "1",
+            "strict-transport-security": "max-age=31536000",
+            "x-li-pop": "cf-prod-lor1-x",
+            "cf-cache-status": "DYNAMIC",
+            "x-li-fabric": "prod-lor1",
+            "x-content-type-options": "nosniff",
+            "cf-ray": "a204d9c72ec3c795-BOM",
+            "x-li-uuid": "AAZXXzYjZeSTGuPw+XK0Aw==",
+            "x-li-proto": "http/2",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "content-length": "0",
+            "date": "Fri, 24 Jul 2026 18:05:02 GMT",
+            "content-type": "application/javascript",
+            "server": "cloudflare"
+          },
+          "content": {
+            "mimeType": "application/javascript"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.478765",
+        "request_time": 1784916302.4788315,
+        "response_time": 1784916302.7536895
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&ae=g&auid=204574487.1782055997&dt=Jobs%20for%20Fresher%20-%20247%2B%20Fresher%20Job%20Opportunities%202026&en=page_view&dl=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs&scrsrc=www.googletagmanager.com&rnd=2067992881.1784915674&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67m1h2v6428212za200zd6428212xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~117227716~118897920~118897930~119896803&apvc=0&tft=1784916302207&tfd=580434&fmt=8",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {},
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.473307",
+        "request_time": 1784916302.4733684,
+        "response_time": 1784916303.3793917
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://px.ads.linkedin.com/attribution_trigger?pid=1313490&time=1784916302108&url=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&tm=gtmv2",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "Accept": "*",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "content-encoding": "gzip",
+            "cf-cache-status": "DYNAMIC",
+            "x-li-fabric": "prod-lor1",
+            "access-control-allow-methods": "GET, OPTIONS",
+            "x-content-type-options": "nosniff",
+            "x-li-proto": "http/2",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "date": "Fri, 24 Jul 2026 18:05:02 GMT",
+            "content-type": "application/json",
+            "vary": "accept-encoding",
+            "access-control-allow-headers": "*",
+            "strict-transport-security": "max-age=31536000",
+            "x-li-pop": "cf-prod-lor1-x",
+            "x-fs-uuid": "0006575f3628e3fbeff28a5b828a3777",
+            "x-restli-protocol-version": "1.0.0",
+            "cf-ray": "a204d9c95d4147b6-BOM",
+            "x-li-uuid": "AAZXXzYo4/vv8opbgoo3dw==",
+            "access-control-allow-origin": "*",
+            "server": "cloudflare"
+          },
+          "content": {
+            "mimeType": "application/json"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.469914",
+        "request_time": 1784916302.4699695,
+        "response_time": 1784916303.41654
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "Accept": "*",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "Content-Type": "text/plain;charset=UTF-8",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": "H4sIAAAAAAAAA62WbW/bNhDHv4pxL/pm4iJLtmULCAbXa7p03TosRoGhCAJKPEtsKJIjT3lAke8+0LIdO3U9u9sr+6jj7/73oLO/gJXCQ/6pn/bTwSS+jsCXTlr6iM5LoyFP43EEJBuEvJ+NB5P+KI37STKIQJiGSw05tNqTsT+WpoEIWqcgh5rI+vzs7PnR2WdTnC0c+hod+2wK/1Pr0dGjxfPV6avV5x/ce6mrDy39hdydJ3GSvjLWeuLU+nNjUUMEllc4l6QQcnhnCt9bGNe76AA91ksG2Q8b850peh+sNY5aLUmi7yVxMoII7rHwkvBKVpqrP/HvFj1dCshhnA7TLFkMWTopE5ZMhoJlE7FgaVwko0xkEyyHEIH0c8e1V5xQQL7gymMESl7wjgLBeCu5ps5opC8h/wLWF1fECSFng6dAeS/1LYpLPbV2g6mxgVy3SkXgl/rmjzYkO3t/OfsVIqgdLjqsMM2UyMmiJfSBjwob1HSFDdcky+5ih1o9+shV+/Js24149TsPLYcpRFDw8rZyptXisuEVXrly7Sf32VNFG1trdHN8CAV4zctb1KL3M96hMhYdPIfuGtndKVvnjYMcrJGa0MHTivOmcw7T+o0c4fK36ds38B1p+rvqPyV6XCLXG8eZa5vCzx3iMptnIdxa5owhiEBTPaulEpD3IygV9z609xPoipH2rEzTbJwl2SiJWQzXT9E2Rsi7UwkRWOMlSaOZQ8VJ3uG/UQc71LAN2L3j1qJjpdHEpV52+RjBy1WyzY532KVC7hby4Uja4fSXQoNA1HSy0MPoDW1diO+nSrEah43ctcxvpHJkqICslCm4Yh65K+vDg+KJOyZ12NUotkL04/5wnMTpaMBG+0Lgg1XGYbhPsmQ1OsM8lmG+dgKmeyfzEP1lrXYnpUYu0N2swp9297l7rT6x79yJm+cevbjbalZyZ1qPajf6rpu5Vxs/Zg7o3NMWc69uNA8SWz1bxzop+e3oHZAJx6vVV2W4WAdiDr012ocN0R1Qjc2Jtd6fQzirkJmWvq7i5vFp1PVIjcbpeDjIxgnLTlb6/wO2sj1ty/KSurofmWp36mRVbZZRZzDekvkFZVXTSo0kbL56lQ+9LmHoNd7vE3Mdfuykv5CK0KF4/ThTMuyo7u/N0z837Vg+eAoAAA=="
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "headers": {
+            "linkedin-action": "1",
+            "x-li-pop": "cf-prod-lor1-x",
+            "strict-transport-security": "max-age=31536000",
+            "cf-cache-status": "DYNAMIC",
+            "x-li-fabric": "prod-lor1",
+            "access-control-allow-credentials": "true",
+            "x-content-type-options": "nosniff",
+            "cf-ray": "a204d9ca7ddec795-BOM",
+            "x-li-uuid": "AAZXXzYr1PjvMvVSx3xkQA==",
+            "x-li-proto": "http/2",
+            "access-control-allow-origin": "https://unstop.com",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "date": "Fri, 24 Jul 2026 18:05:02 GMT",
+            "vary": "Origin",
+            "server": "cloudflare"
+          },
+          "content": {
+            "mimeType": ""
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.495156",
+        "request_time": 1784916302.4952102,
+        "response_time": 1784916303.949334
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.google.com/pagead/form-data/16653406380?gtm=45be67m1h2v9206003174za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117227716~118897920~118897930~119381663~119896803&rcb=18&npa=0&frm=0&pscdl=noapi&ae=a&auid=204574487.1782055997&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Linux&uapv=&uaw=0",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {},
+          "content": {
+            "mimeType": "text/html"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.899155",
+        "request_time": 1784916303.8992162,
+        "response_time": 1784916304.074483
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.google.com/ccm/form-data/16653406380?gtm=45be67m1h2v9206003174za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117227716~118897920~118897930~119381663~119896803&rcb=18&npa=0&frm=0&ae=a&pscdl=noapi&auid=204574487.1782055997&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Linux&uapv=&uaw=0&ec_mode=a&em=tv.1&emd=tvd.1",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "headers": {
+            "cache-control": "no-cache, no-store, must-revalidate",
+            "pragma": "no-cache",
+            "cross-origin-resource-policy": "cross-origin",
+            "access-control-allow-credentials": "true",
+            "content-security-policy-report-only": "script-src 'none'; form-action 'none'; frame-src 'none'; report-uri https://csp.withgoogle.com/csp/scaffolding/ascnsrsgac:67:0",
+            "report-to": "{\"group\":\"ascnsrsgac:67:0\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/scaffolding/ascnsrsgac:67:0\"}],}",
+            "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+            "access-control-allow-origin": "https://unstop.com",
+            "cross-origin-opener-policy-report-only": "same-origin; report-to=ascnsrsgac:67:0",
+            "content-length": "0",
+            "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "date": "Fri, 24 Jul 2026 18:05:03 GMT",
+            "content-type": "text/plain",
+            "server": "Golfe2"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.902370",
+        "request_time": 1784916303.9024239,
+        "response_time": 1784916304.0906606
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.google.com/rmkt/collect/16653406380/?random=1784916303437&cv=11&fst=1784916303437&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be67m1h2v9206003174za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117227716~118897920~118897930~119381663~119896803&u_w=1366&u_h=768&url=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&ref=https%3A%2F%2Funstop.com%2Fjob%2Ffresher-jobs%3Fusertype%3Dfresher%26fresherPassingOutYear%3D2023%26oppstatus%3Dopen&rcb=18&frm=0&tiba=Jobs%20for%20-%2077709%2B%202026&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=204574487.1782055997&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dpage_view&ept=68&gcp=5",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {},
+          "content": {
+            "mimeType": "text/html"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.910547",
+        "request_time": 1784916303.9106045,
+        "response_time": 1784916304.0994632
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/16653406380/?random=1784916303437&cv=11&fst=1784916303437&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be67m1h2v9206003174za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117227716~118897920~118897930~119381663~119896803&u_w=1366&u_h=768&url=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&ref=https%3A%2F%2Funstop.com%2Fjob%2Ffresher-jobs%3Fusertype%3Dfresher%26fresherPassingOutYear%3D2023%26oppstatus%3Dopen&rcb=18&frm=0&tiba=Jobs%20for%20-%2077709%2B%202026&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=204574487.1782055997&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dpage_view&ept=9&rfmt=3&fmt=4",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "cache-control": "no-cache, must-revalidate",
+            "timing-allow-origin": "*",
+            "content-encoding": "br",
+            "pragma": "no-cache",
+            "cross-origin-resource-policy": "cross-origin",
+            "x-content-type-options": "nosniff",
+            "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+            "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "p3p": "policyref=\"https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml\", CP=\"CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR\"",
+            "content-length": "2723",
+            "date": "Fri, 24 Jul 2026 18:05:04 GMT",
+            "x-xss-protection": "0",
+            "content-type": "text/javascript; charset=UTF-8",
+            "content-disposition": "attachment; filename=\"f.txt\"",
+            "server": "cafe"
+          },
+          "content": {
+            "mimeType": "text/javascript"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.906559",
+        "request_time": 1784916303.9066193,
+        "response_time": 1784916305.6185842
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1007890599/?random=1784916303681&cv=11&fst=1784916303681&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be67m1h2v886724522za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~117227716~118395335~118897920~118897930~119896802&u_w=1366&u_h=768&url=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&ref=https%3A%2F%2Funstop.com%2Fjob%2Ffresher-jobs%3Fusertype%3Dfresher%26fresherPassingOutYear%3D2023%26oppstatus%3Dopen&rcb=3&frm=0&tiba=Jobs%20for%20-%2077709%2B%202026&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=204574487.1782055997&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dpage_view&ept=9&rfmt=3&fmt=4",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "cache-control": "no-cache, must-revalidate",
+            "timing-allow-origin": "*",
+            "content-encoding": "br",
+            "pragma": "no-cache",
+            "cross-origin-resource-policy": "cross-origin",
+            "x-content-type-options": "nosniff",
+            "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+            "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "p3p": "policyref=\"https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml\", CP=\"CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR\"",
+            "content-length": "2730",
+            "date": "Fri, 24 Jul 2026 18:05:04 GMT",
+            "x-xss-protection": "0",
+            "content-type": "text/javascript; charset=UTF-8",
+            "content-disposition": "attachment; filename=\"f.txt\"",
+            "server": "cafe"
+          },
+          "content": {
+            "mimeType": "text/javascript"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.919538",
+        "request_time": 1784916303.9195712,
+        "response_time": 1784916305.6433132
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.google.com/ccm/form-data/1007890599?gtm=45be67m1h2v886724522za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~117227716~118395335~118897920~118897930~119896802&rcb=3&npa=0&frm=0&ae=a&pscdl=noapi&auid=204574487.1782055997&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Linux&uapv=&uaw=0&ec_mode=a&em=tv.1&emd=tvd.1",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "headers": {
+            "cache-control": "no-cache, no-store, must-revalidate",
+            "pragma": "no-cache",
+            "cross-origin-resource-policy": "cross-origin",
+            "access-control-allow-credentials": "true",
+            "content-security-policy-report-only": "script-src 'none'; form-action 'none'; frame-src 'none'; report-uri https://csp.withgoogle.com/csp/scaffolding/ascnsrsgac:67:0",
+            "report-to": "{\"group\":\"ascnsrsgac:67:0\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/scaffolding/ascnsrsgac:67:0\"}],}",
+            "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+            "access-control-allow-origin": "https://unstop.com",
+            "cross-origin-opener-policy-report-only": "same-origin; report-to=ascnsrsgac:67:0",
+            "content-length": "0",
+            "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "date": "Fri, 24 Jul 2026 18:05:05 GMT",
+            "content-type": "text/plain",
+            "server": "Golfe2"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.917468",
+        "request_time": 1784916303.9175017,
+        "response_time": 1784916305.6716719
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.google.com/pagead/form-data/1007890599?gtm=45be67m1h2v886724522za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~117227716~118395335~118897920~118897930~119896802&rcb=3&npa=0&frm=0&pscdl=noapi&ae=a&auid=204574487.1782055997&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Linux&uapv=&uaw=0",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {},
+          "content": {
+            "mimeType": "text/html"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.915773",
+        "request_time": 1784916303.9158099,
+        "response_time": 1784916305.6780052
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.google.com/ccm/collect?rcb=18&frm=0&auid=204574487.1782055997&dt=Jobs%20for%20-%2077709%2B%202026&en=page_view&dl=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs&scrsrc=www.googletagmanager.com&rnd=2067992881.1784915674&navt=n&npa=0&ae=a&gtm=45be67m1h2v9206003174za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117227716~118897920~118897930~119381663~119896803&apvc=0&tids=AW-16653406380&tid=AW-16653406380&tft=1784916303859&tfd=582086&fmt=8",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {},
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.923304",
+        "request_time": 1784916303.9233375,
+        "response_time": 1784916305.6802056
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.google.com/rmkt/collect/1007890599/?random=1784916303681&cv=11&fst=1784916303681&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be67m1h2v886724522za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~117227716~118395335~118897920~118897930~119896802&u_w=1366&u_h=768&url=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&ref=https%3A%2F%2Funstop.com%2Fjob%2Ffresher-jobs%3Fusertype%3Dfresher%26fresherPassingOutYear%3D2023%26oppstatus%3Dopen&rcb=3&frm=0&tiba=Jobs%20for%20-%2077709%2B%202026&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=204574487.1782055997&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dpage_view&ept=68&gcp=5",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {},
+          "content": {
+            "mimeType": "text/html"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.921598",
+        "request_time": 1784916303.9216323,
+        "response_time": 1784916305.6905596
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.google.com/ccm/collect?rcb=3&frm=0&auid=204574487.1782055997&dt=Jobs%20for%20-%2077709%2B%202026&en=page_view&dl=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs&scrsrc=www.googletagmanager.com&rnd=2067992881.1784915674&navt=n&npa=0&ae=a&gtm=45be67m1h2v886724522za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~117227716~118395335~118897920~118897930~119896802&apvc=0&tids=AW-1007890599&tid=AW-1007890599&tft=1784916303861&tfd=582089&fmt=8",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {},
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.925018",
+        "request_time": 1784916303.9250512,
+        "response_time": 1784916305.697388
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://analytics.google.com/g/collect?v=2&tid=G-98GC4MBLXM&gtm=45je67m1h2v879976757z86428212za20gzb6428212zd6428212&_p=1784915669975&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=936913394&_eu=AAAAAGQC&are=1&cid=1838056259.1782055997&frm=0&pscdl=noapi&rcb=0&sr=1366x768&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=7&tag_exp=115616986~115938465~115938468~118395335~118897920~118897930~119896803&sid=1784914401&sct=34&seg=1&dl=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Foppstatus%3Dopen%26roles%3Dbackend-development&dr=https%3A%2F%2Funstop.com%2F&dt=Jobs%20for%20Fresher%20-%20247%2B%20Fresher%20Job%20Opportunities%202026&en=page&_et=314205&tfd=579957",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "headers": {
+            "cache-control": "no-cache, no-store, must-revalidate",
+            "pragma": "no-cache",
+            "cross-origin-resource-policy": "cross-origin",
+            "access-control-allow-credentials": "true",
+            "content-security-policy-report-only": "script-src 'none'; form-action 'none'; frame-src 'none'; report-uri https://csp.withgoogle.com/csp/scaffolding/ascnsrsggc:197:0",
+            "report-to": "{\"group\":\"ascnsrsggc:197:0\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/scaffolding/ascnsrsggc:197:0\"}],}",
+            "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+            "access-control-allow-origin": "https://unstop.com",
+            "cross-origin-opener-policy-report-only": "same-origin; report-to=ascnsrsggc:197:0",
+            "content-length": "0",
+            "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "date": "Fri, 24 Jul 2026 18:05:06 GMT",
+            "content-type": "text/plain",
+            "server": "Golfe2"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.441160",
+        "request_time": 1784916302.4412367,
+        "response_time": 1784916307.1180437
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://analytics.google.com/g/collect?v=2&tid=G-98GC4MBLXM&gtm=45je67m1h2v879976757z86428212za20gzb6428212zd6428212&_p=1784915669975&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=936913394&_eu=AAAAAGQC&are=1&cid=1838056259.1782055997&frm=0&pscdl=noapi&rcb=0&sr=1366x768&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&tag_exp=115616986~115938465~115938468~118395335~118897920~118897930~119896803&sid=1784914401&sct=34&seg=1&dl=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&dr=https%3A%2F%2Funstop.com%2F&dt=Jobs%20for%20Fresher%20-%20247%2B%20Fresher%20Job%20Opportunities%202026&_s=8&tfd=581885",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "Content-Type": "text/plain;charset=UTF-8",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": "en=page&_et=211\r\nen=page&_et=164\r\nen=page&_et=38"
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "headers": {
+            "cache-control": "no-cache, no-store, must-revalidate",
+            "pragma": "no-cache",
+            "cross-origin-resource-policy": "cross-origin",
+            "access-control-allow-credentials": "true",
+            "content-security-policy-report-only": "script-src 'none'; form-action 'none'; frame-src 'none'; report-uri https://csp.withgoogle.com/csp/scaffolding/ascnsrsggc:197:0",
+            "report-to": "{\"group\":\"ascnsrsggc:197:0\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/scaffolding/ascnsrsggc:197:0\"}],}",
+            "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+            "access-control-allow-origin": "https://unstop.com",
+            "cross-origin-opener-policy-report-only": "same-origin; report-to=ascnsrsggc:197:0",
+            "content-length": "0",
+            "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "date": "Fri, 24 Jul 2026 18:05:06 GMT",
+            "content-type": "text/plain",
+            "server": "Golfe2"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.914164",
+        "request_time": 1784916303.9142056,
+        "response_time": 1784916307.1278605
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://ad.doubleclick.net/ccm/s/collect?auid=204574487.1782055997&gtm=45He67m1h2v6428212za200zd6428212xea",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "headers": {},
+          "content": {
+            "mimeType": "text/html"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.466952",
+        "request_time": 1784916302.4670076,
+        "response_time": 1784916307.3894906
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "Accept": "*",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "Content-Type": "text/plain;charset=UTF-8",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": "H4sIAAAAAAAAA22PUUvDMBSF/0q5D76YunbtOhsQ2YPKhqC44YuIJM3dFk2TmHuryPC/yxzMFx8/zuHjnB1EawjkU1mVVd0WzwKoSzbyIyaywYOsinMBbHsEWU7P67ZsqqKcVq0AE3plPUgYPHGIZ13oQcCQHEjYMkeSo9FfNHoNeqRV94be5AY/0IXYo+f8NWi6DDESKx7oIkT0Jyk4pIt/2iAgqg2uLDsECYugKVuHlF0npC2mLM/G9fT0iIugs7sYQ+LBW7ZI2bgYNyDgEzVZxqXdeOUe8H1A4rkBCaVqirZaN3k3RZ0bbZpcGZzkhZmUzbg2qi0QBFhaJeXJKUYDcq0coQBnr9XBAnu4scrzAXpLHcgdRNJLVowg8/p7b7m1/g3N3M9iPGq22IP0g3MC6Hff6ivuz97Pbq5eHufL+Qq+fwBE9a36uAEAAA=="
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "headers": {
+            "linkedin-action": "1",
+            "x-li-pop": "cf-prod-lor1-x",
+            "strict-transport-security": "max-age=31536000",
+            "cf-cache-status": "DYNAMIC",
+            "x-li-fabric": "prod-lor1",
+            "access-control-allow-credentials": "true",
+            "x-content-type-options": "nosniff",
+            "cf-ray": "a204d9e4be03c795-BOM",
+            "x-li-uuid": "AAZXXzZrrJuSERLMqXNteA==",
+            "x-li-proto": "http/2",
+            "access-control-allow-origin": "https://unstop.com",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "date": "Fri, 24 Jul 2026 18:05:06 GMT",
+            "vary": "Origin",
+            "server": "cloudflare"
+          },
+          "content": {
+            "mimeType": ""
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.784888",
+        "request_time": 1784916302.7849529,
+        "response_time": 1784916307.4940906
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "Accept": "*",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "Content-Type": "text/plain;charset=UTF-8",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": "H4sIAAAAAAAAA22PzUoDMRRGX2W4Czdm7PzEaRso4kKlRVBscSMimcmtTZtJYu4dRcR3l1qoG5eHA4fv+4JoDYF6KuuyltPiWQB1yUZ+xEQ2eFB1MRHAtkdQ5Xgip2VTF+W0kQJM6LX1oGDwxCGedaEHAUNyoGDDHEmNRn9qtA3tqNXdDr3JDb6jC7FHz/k2tHSRgkOa/aNPQozEmgeahYgeBET9iivLDkHBIrSUrUPKrhPSBlOWZ5Ucnx5xEdrsLsaQePCWLVJWFVUDAj6wJcu4tK9euwd8G5B4bkCBkYXBqi7yWleYy/q8zM9LLfOqq5qmK0wlxyUIsLRK2pPTjAbUWjtCAc5e60MF9nBjtecD9JY6UF8QqV2yZgSVy+995db6HZq5v4zxmNlgD8oPzgmg332rz7g/e395c/XyOF/OV/D9A5HGB/K4AQAA"
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "headers": {
+            "linkedin-action": "1",
+            "x-li-pop": "cf-prod-lor1-x",
+            "strict-transport-security": "max-age=31536000",
+            "cf-cache-status": "DYNAMIC",
+            "x-li-fabric": "prod-lor1",
+            "access-control-allow-credentials": "true",
+            "x-content-type-options": "nosniff",
+            "cf-ray": "a204d9e4be05c795-BOM",
+            "x-li-uuid": "AAZXXzZsw1B+0MaGZd9uYg==",
+            "x-li-proto": "http/2",
+            "access-control-allow-origin": "https://unstop.com",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "date": "Fri, 24 Jul 2026 18:05:06 GMT",
+            "vary": "Origin",
+            "server": "cloudflare"
+          },
+          "content": {
+            "mimeType": ""
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.789815",
+        "request_time": 1784916302.7898765,
+        "response_time": 1784916307.5652795
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://n.clarity.ms/collect",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "Accept": "application/x-clarity-gzip",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": "\u001f\u008b\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u00b5T\u00dbn\u00dc6\u0010\u00fd\u0015\u0081\u000fE\u008c\u008e\u00b4\u00bc\u0089\u00a2\u001c\u0004\u0085k\u00a0Msi\u001f\u00d2 \u0001\u00049\u00e0j\u00e9]z%R\u0010)\u00ef:M\u00f3\u00ed\u00c5\u00c8\u001b;A\u008a\u00be\u0015\u0012\u0088\u0099\u00e1\u00f0\u00f0p8\u0087\u007f\u0011K\u00ce\u001bB\u000b]\u00a8\u008a\u0000\u0003\n\u008ck\td\u00dd\u00df\u00a9\u00bd\u00bc\u00a1zK\u0080\u00f0\u00edPo'\u0002\u00e46\u001a!\u00ef\b\b\u00a0\u00cbGv)\u008d\u00f1|\u00b5\u009a}La,\u00ba0\u00acn\u00c2z\u00b56\u00dd\u00de\u00faM\u00be\u00b1\u00b7\u00b6\u000f\u00e3`}\u00cao\u00c2:\u00fe4\u0085\u00de\u00c6g\u00ff2\u00fdC\u0018\u00c7\u0098L\u009a\u00e3\u00b30ZOZ \u0086\u009c7\u008d\u0002\rL\u00a8\u0012\u0014\u0097-4B\u0003c\u00df\u0004j\u00e0\u001aX\u000bM)\u0004\u00f0\u001a\u0004=\u00fd\u00bcT\u00c0+\u000e\u00bc\u00aa@1\u0001\u0082R\u00fe0\u0094\u00f7\u00f4\u00bd\u00b9u[\u0093,\u0001\u00b2\u00e3\u0004\u00b4\u0096\n\u00b8\u0010\u00acn\u00a1a\\\u000b\u0010\u0012\u00c8\u0087\u00ae\u00ef\u00f6\u0004\u009aS\u0019\u00ae\u00f8\u00d5V\u00d3+z\u00c5\u0085\u0012\u00a4m\u00a1\u00e1\u0095\u0094U\r\u0012\u001e\u0099=\u001a\u00b8OM5p\u00a4TI\u00ca1\u00c0+Q\u0097\u00fc\u00ab\u00b8\u00a8\u00f9\u007f\u00ba\u00df'\u00fb\u00b9\u00ef\u00bf\u00b0\u00c4kk\u00c8\u00eb\u00f0\u00d1\u00f5\u00bdY\u0095\u0005\u00cd\u009e\u00bcg\u00eci\u00f6\u00ca\u00f9\u00f9\u0098\u001d\u00b5\u00fa\u00a0\u00e4Yv1\u008e\u00bd}g\u00d7/]Z\u0095\u00a2*\u0084\u00ca\u009e\u00bc|\u00fe\u00e7\u00ebW\u0090\u00f5no\u00b3_m\u00b7\u000fg\u00d9\u00e5n\n\u0083]1Y\u0017\u0014\u00bf\u00ec\u008d\u00b96\u0093;-!-0h\u00fe\u00cf{\u0017\u00d0\u0090\u0017a\u001d\u00b3\u00eb0e\u00bfL6\u00ee\u00ec\u0094\u00e5\u0019\u0097\u00d5\u008f\u000f\u00ee\u008b\u00b0\u00ce\u00fe\u0018\u00c70\u00a5\u00d9\u00bb\u00e4l\u00cc8\u00e5\u00c8MBC6\u00da%\u00b9\u009b\u008f\u00f30\u00c6\u00aa\u00e8\u00fa0o\u00ae\u00a7\u00e0S\u00e1m\"@\u001e)\u0013 \u0087\u00c3\u00a1\u00d8\u0086\u00b0\u00edm2\u00db\u00c1x\u00b3\u00b5\u00d3i*z3\u0016\u00bd\u00eb6\u00fe\u00ab\u00dc\u00ae7\u0093Kw\u00c5\u00101#\u0099\u00e4\u00ba\u00c2lb\u009e\u000e.\u00a5\u0087\u00a5\u00f3\u00a16\u0015\u001d\u00f4 \u000b{\u00b4\u00dd\u009clnFW\u00981\u008faN\u00bb\u009c\u0015f0\u001f\u00837\u0087xZ\u0081\u00bb|Cl<\"n\u00d1;\u00bf\u00b7\u001b\u00e7\u00bf\u00a3\u00bb\u0004Z\u00a8\u00a1!\u00d6\u00e7o\u00df\u00e0\u00bd\u0094\u00d0\u0010v\u00ec\u00fc\u00f5M\u008f\u00aeZ\u00e6\u00d0\u00c2\u00ac\u0083]G\u0097,i\u0081c\u00b3\u00fc\u00e6\u0093\u009d|\u00dc\u00b91f\u009f\u00b2\u00a5\u00de\u009f\u00b2\u00cb0\u008c6\u00b9\u00e4\u0082G\u00f7\u00b9\u00e9\u00f6&\u00ed\u00ee\u009d\u00cb0O\u00d1\u00c6,\u00cf\u00de.<\u0011\u0088CC\u0096\u001eC\u0007K\u00bf\u00f4\u008e\u009b\u0087\u00cfL\u00d6\u0004\u00c8\u00ef!\u009d]<\u00fdy2~\u00f3\u0099KLBN\f\u008d\n\u001a\"\u00b7hiT\u00d6\"%\u0094oC8\u00f6\u0000\u0082]DgV\u0097\u00a6\u00ef\u00e6\u0094\f\u0006\u00f1|\u00b9\u0010\u0014\u00ed/@\u0002\u0081rF\u00800\u00c6\t\u0010Y*\u00b4\u00c5\u00d2\u00a9\u0002\u00b1\u00afM\u001f\u00ed\u00a2\u00d3E+(?ViY3%(\u00d7\u008c/\u00ea\u00c1\u00e7\u0001$\u0094\u001cJ\u00e0\u00a0@p\u00a8\u0080S\u000e\u001aj\u00a1$\u00d4\u00a0%0\u00ba\u00fc\u008b\u00b8\u0015\u0096\u00bbR\u001a\u00cb\u00cc%\u00f0\u0012\u00f3\u00d5\"m\u001cj` \u0018\u000e\u001c\u00d1\u0005h<\u0093\u00c43P\u0010\u00f5\u00f2`\u00dd?0\n\u00144J\u0080\u00ac\u0081QEA\u00f0\u0013U\t\u0012\u00a1\u0018\u00b0\u00b6\u00fd\u00fb\u001f\u00ce\u00da\u00d6\u0080\u00a8\u0005\u0000\u0000"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Access-Control-Allow-Credentials": "true",
+            "Request-Context": "appId=cid-v1:a449a586-8786-487f-a449-dc1b282a2628",
+            "Access-Control-Allow-Origin": "https://unstop.com",
+            "Date": "Fri, 24 Jul 2026 18:05:06 GMT",
+            "Content-Type": "text/plain; charset=utf-8",
+            "Vary": "Origin",
+            "Server": "nginx"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:04.180891",
+        "request_time": 1784916304.180958,
+        "response_time": 1784916307.6206732
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://n.clarity.ms/collect",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "Content-Type": "text/plain;charset=UTF-8",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": "{\"e\":[\"0.8.67\",7,253666,20811,\"bly6k4j08g\",\"2gm9gr\",\"vsa34y\",2,1,1,0,\"https://unstop.com/job/backend-development-jobs?oppstatus=open&roles=backend-development\"],\"a\":[[271907,12,992,617,47,\"\",\"true\"],[272063,12,992,607,46,\"\",\"true\"],[272097,12,992,573,31,\"\",\"true\"],[272130,12,992,551,21,\"\",\"true\"],[272160,12,992,530,19,\"\",\"true\"],[272168,12,336,458,7,\"\",\"true\"],[272183,12,336,434,4,\"\",\"true\"],[272263,12,336,420,0,\"\",\"true\"],[272354,12,343,415,74,\"\",\"true\"],[272368,12,401,425,95,\"\",\"true\"],[272392,12,374,436,130,\"\",\"true\"],[272407,12,357,436,155,\"\",\"true\"],[272445,12,2583,436,201,\"\",\"true\"],[272501,12,2583,433,239,\"\",\"true\"],[273048,12,2583,430,252,\"\",\"true\"],[273452,12,2583,429,253,\"\",\"true\"],[273570,12,2583,429,261,\"\",\"true\"],[273572,12,2637,455,237,\"\",\"true\"],[273616,12,2838,626,205,\"\",\"true\"],[273685,12,2638,637,205,\"\",\"true\"],[273696,12,2643,860,234,\"\",\"true\"],[273888,12,2643,915,248,\"\",\"true\"],[273900,12,2643,917,235,\"\",\"true\"],[273922,12,2643,908,230,\"\",\"true\"],[273922,13,2643,908,230,\"\",\"true\"],[273952,14,2643,908,230,\"\",\"true\"],[253666,4,1,1365,624,1365,624,0,0,0,345,14426,0,68075,0,345,68075,465,239,290239,465,239,290398,1018,379,67968,null],[274476,0,2,276,3,31,4,40,5,2,7,23,25,29],[274476,36,6,[274020,0,274346,0]]]}"
+        },
+        "response": {
+          "status": 204,
+          "statusText": "No Content",
+          "headers": {
+            "Request-Context": "appId=cid-v1:a449a586-8786-487f-a449-dc1b282a2628",
+            "Access-Control-Allow-Origin": "https://unstop.com",
+            "Date": "Fri, 24 Jul 2026 18:05:06 GMT",
+            "Vary": "Origin",
+            "Server": "nginx",
+            "Connection": "keep-alive",
+            "Access-Control-Allow-Credentials": "true"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.449515",
+        "request_time": 1784916302.4495714,
+        "response_time": 1784916307.652471
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://analytics.google.com/g/collect?v=2&tid=G-98GC4MBLXM&gtm=45je67m1h2v879976757za20gzb6428212zd6428212&_p=1784915669975&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=936913394&_eu=AEAAAGQC&ae=a&are=1&cid=1838056259.1782055997&frm=0&pscdl=noapi&rcb=0&sr=1366x768&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=9&tag_exp=115616986~115938465~115938468~118395335~118897920~118897930~119896803&dl=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&dr=https%3A%2F%2Funstop.com%2Fjob%2Ffresher-jobs%3Fusertype%3Dfresher%26fresherPassingOutYear%3D2023%26oppstatus%3Dopen&sid=1784914401&sct=34&seg=1&dt=Jobs%20for%20-%2077709%2B%202026&en=page_view&_et=1423&tfd=586892",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "headers": {
+            "cache-control": "no-cache, no-store, must-revalidate",
+            "pragma": "no-cache",
+            "cross-origin-resource-policy": "cross-origin",
+            "access-control-allow-credentials": "true",
+            "content-security-policy-report-only": "script-src 'none'; form-action 'none'; frame-src 'none'; report-uri https://csp.withgoogle.com/csp/scaffolding/ascnsrsggc:197:0",
+            "report-to": "{\"group\":\"ascnsrsggc:197:0\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/scaffolding/ascnsrsggc:197:0\"}],}",
+            "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+            "access-control-allow-origin": "https://unstop.com",
+            "cross-origin-opener-policy-report-only": "same-origin; report-to=ascnsrsggc:197:0",
+            "content-length": "0",
+            "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "date": "Fri, 24 Jul 2026 18:05:08 GMT",
+            "content-type": "text/plain",
+            "server": "Golfe2"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:08.686917",
+        "request_time": 1784916308.6869926,
+        "response_time": 1784916308.8482153
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://unstop.com/api/public/opportunity/search-result?opportunity=jobs&page=1&per_page=18&roles=backend-development&oppstatus=open&sortBy=&orderBy=&filter_condition=&undefined=true",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNWM0NjE0NmMyMjJjMmM2NDg5ODE2YTMzZWUzZDM4OGFhZDU5OTRmNTA3NzMxOGQ3Y2M2ZDIwZTI1NGE1YThlZTgzMDVlNTQ4NDljZGY2ZmUiLCJpYXQiOjE3ODQ1MzMzNDQuNTc4NTksIm5iZiI6MTc4NDUzMzM0NC41Nzg1OTQsImV4cCI6MTc4Njk1MjU0NC41NTg0MDcsInN1YiI6IjI5NTU0MTAwIiwic2NvcGVzIjpbXX0.AedRk5scyTSJJGPjsBGHXOMnwxwXbvmXGVzZUUWajHHkDs0j0Q4U_jdHlbnd1OSQ1HqJ4_SBYKUJ2M5DOmUNsC37eXizuEOXORWmOyb1BCeEsv7TrprcdkN-kvelFVFlaGbFycwjwF_g4z6Bk8P7gZLw4DXHPMc7ry_Rik6TQBIexuGGrQTg1sSciH77hLR5XNikXdnHDiMzF6h9VmJDzcp6yZQbBxGMAQiDf-tI_opj1mYpOAMF4fzpPG47rN6E0odFE7opl1eyaFDaaHzePJIn25ALGzsk6jtsdUaa-yVtYnJvGIT9L-i5HdAdWgRMPKaWHD5f4Yz1zl8U_ggidy36QUIuNXpdc1KFEIloOMPXdFt6IDwCoLrIeH4L10UF58dIoEDPU-oUygQCV9jMs2Uyx7GfM0jE7NNIpuHgQ3RCti4Dg2kXxZi8dDQ8i16XDdNC3RcGerSL6w-sOmon9A1-Q-V9o0WSusmlijQ8gptgNxoBbX5Gn91IxYQcRQCQX4Jrr3AttL0_Gsb4oraMJ0_s05vKcxcDY9yw62EdI52CoF4oQ_F6aThQraYFr5KuP6RoSklIImOPPWTmjAOkc8p0vvUSzrbBUQrjd1u_L_sdAaDIgjBEWLlAjldMfvfNb8HrFZjMXOPPbame2BKv29puRdLmph4oU20_Mf_-jko",
+            "Referer": "https://unstop.com/job/backend-development-jobs?roles=backend-development&oppstatus=open",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "Accept": "application/json, text/plain, */*",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-content-type-options": "nosniff",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Miss from cloudfront",
+            "x-behaviour": "api",
+            "x-amz-cf-id": "mdBAjPlI7odo8DN1tbOVFk7DYNTPTuYtwFLkbyJIu4R2K8PkdX5OsQ==",
+            "date": "Fri, 24 Jul 2026 18:05:09 GMT",
+            "content-type": "application/json",
+            "vary": "Accept-Encoding,Accept-Encoding",
+            "x-frame-options": "SAMEORIGIN",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "cache-control": "max-age=300, public, s-maxage=300",
+            "pragma": "",
+            "referrer-policy": "origin-when-cross-origin",
+            "via": "1.1 95e4d46944eba5eaecbb038464c027d8.cloudfront.net (CloudFront)",
+            "permissions-policy": "browsing-topics=()",
+            "x-xss-protection": "1",
+            "x-country": "IN",
+            "x-amz-cf-pop": "PNQ50-P4",
+            "server": "CloudFront"
+          },
+          "content": {
+            "mimeType": "application/json"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:03.952083",
+        "request_time": 1784916303.9521186,
+        "response_time": 1784916309.6102698
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.facebook.com/tr/",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Origin": "https://unstop.com",
+            "Referer": "https://unstop.com/",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Linux\""
+          },
+          "postData": "id=1114135612720126&ev=SubscribedButtonClick&dl=https%3A%2F%2Funstop.com%2Fjob%2Ffresher-jobs%3Fusertype%3Dfresher%26fresherPassingOutYear%3D2023%26oppstatus%3Dopen&rl=&if=false&ts=1784916301442&iw=false&cd%5BbuttonFeatures%5D=%7B%22classList%22%3A%22card_new+ng-star-inserted%22%2C%22destination%22%3A%22%22%2C%22id%22%3A%22%22%2C%22imageUrl%22%3A%22%22%2C%22innerText%22%3A%22Backend+Developer%22%2C%22numChildButtons%22%3A0%2C%22tag%22%3A%22a%22%2C%22type%22%3Anull%2C%22name%22%3A%22%22%7D&cd%5BbuttonText%5D=Backend+Developer&cd%5BformFeatures%5D=%5B%5D&cd%5BpageFeatures%5D=%7B%22title%22%3A%22Jobs+for+Fresher+-+247%2B+Fresher+Job+Opportunities+2026%22%7D&sw=1366&sh=768&v=2.9.361&r=stable&ec=6&o=4126&aems=0%3B0&fbp=fb.1.1782056004474.468933651922110033&cs_est=true&ler=empty&cdl=API_unavailable&pmd%5Blocale%5D=en&pmd%5Bdescription%5D=Discover+jobs+for+freshers+and+apply+to+247%2B+opportunities.+Explore+online+jobs%2C+graduate+jobs%2C+entry-level+roles+%26+fresher+jobs+across+industries.&plt=2777.8999999910593&iss=1&ss=%7B%22page_description%22%3A%5B%7B%22rid%22%3A%221467251588165360%22%2C%22v%22%3A%5B%22For+Business%22%5D%7D%2C%7B%22rid%22%3A%2227567332276270472%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%5D%2C%22page_title%22%3A%5B%7B%22rid%22%3A%221998699374413486%22%2C%22v%22%3A%5B%22Recruiter%22%5D%7D%5D%2C%22page_keywords%22%3A%5B%7B%22rid%22%3A%221045635514681997%22%2C%22v%22%3A%5B%22247+Jobs+for+Freshers%22%5D%7D%2C%7B%22rid%22%3A%221807823447266165%22%2C%22v%22%3A%5B%22Data+Science%22%2C%22Backend+Developer%22%2C%22Mechanical+Engineer%22%2C%22Growth+Marketing%22%2C%22Machine+Learning%22%2C%22Electrical+Engineer%22%2C%22Graphic+Designer%22%2C%22Content+Writing%22%5D%7D%5D%2C%22entity_name%22%3A%5B%7B%22rid%22%3A%222082582652470293%22%2C%22v%22%3A%5B%22Latest+Opportunities+on+Unstop%22%5D%7D%2C%7B%22rid%22%3A%22974264228983619%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%2C%7B%22rid%22%3A%222091790848381339%22%2C%22v%22%3A%5B%22Latest+Opportunities+on+Unstop%22%5D%7D%5D%2C%22author%22%3A%5B%7B%22rid%22%3A%221721691985820501%22%2C%22v%22%3A%5B%22The+website+%5C%22Unstop%5C%22+would+like+to+send+you+awesome+offers%21%22%5D%7D%5D%2C%22event_description%22%3A%5B%7B%22rid%22%3A%221032546502712802%22%2C%22v%22%3A%5B%22Senior+HR+Manager%22%2C%22Business+Partner+Executive%22%2C%22Creative+Designer%22%2C%22B2B+Business+Development+Associate%22%2C%22Inside+Sales+Executive%22%2C%22Telecaller+Executive%22%2C%22Aditya+Birla+Group+Stratos+2026%22%2C%22Unstop+Quizverse+2026%22%5D%7D%5D%2C%22article_type%22%3A%5B%7B%22rid%22%3A%221573690801100804%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%5D%2C%22entity_description%22%3A%5B%7B%22rid%22%3A%221716329252913118%22%2C%22v%22%3A%5B%22Mentor%22%5D%7D%2C%7B%22rid%22%3A%224086774051628305%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%5D%2C%22page_type%22%3A%5B%7B%22rid%22%3A%222052790302265642%22%2C%22v%22%3A%5B%22The+website+%5C%22Unstop%5C%22+would+like+to+send+you+awesome+offers%21%22%5D%7D%2C%7B%22rid%22%3A%222927920340896114%22%2C%22v%22%3A%5B%22Jobs%22%5D%7D%2C%7B%22rid%22%3A%222531015210697603%22%2C%22v%22%3A%5B%22Internships%22%5D%7D%5D%2C%22article_name%22%3A%5B%7B%22rid%22%3A%221948857635774003%22%2C%22v%22%3A%5B%22247+Jobs+for+Freshers%22%5D%7D%2C%7B%22rid%22%3A%222278620019634837%22%2C%22v%22%3A%5B%22Latest+Opportunities+on+Unstop%22%5D%7D%5D%7D&imft=1&tz=330&it=1784915984269&coo=false&es=automatic&tm=3&ap%5Bcurrency%5D=USD&ap%5Bcontents%5D=%5B%7B%22item_price%22%3A0%7D%5D&expv2%5B0%5D=pl1&expv2%5B1%5D=el3&expv2%5B2%5D=bc1&expv2%5B3%5D=ra2&expv2%5B4%5D=rp2&expv2%5B5%5D=ct3&expv2%5B6%5D=hf0&rqm=formPOST"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "access-control-allow-credentials": "true",
+            "access-control-allow-origin": "https://unstop.com",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "content-length": "0",
+            "content-type": "text/plain",
+            "cross-origin-resource-policy": "cross-origin",
+            "date": "Fri, 24 Jul 2026 18:05:09 GMT",
+            "server": "proxygen-bolt",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-fb-connection-quality": "GOOD; q=0.7, rtt=51, rtx=3, c=10, mss=1238, tbw=2308, tp=-1, tpl=-1, uplat=1232, ullat=1232"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.540311",
+        "request_time": 1784916302.5403748,
+        "response_time": 1784916309.6745243
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://sdk-03.moengage.com/v2/sdk/report/BU64JRRIOTIBVKPCO4ONDE61",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "Content-Type": "text/plain;charset=utf-8",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {},
+          "content": {
+            "mimeType": "application/json"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:05.087322",
+        "request_time": 1784916305.0874288,
+        "response_time": 1784916309.7469227
+      },
+      {
+        "request": {
+          "method": "OPTIONS",
+          "url": "https://sdk-03.moengage.com/v3/campaigns/inapp/live/6a5da0bdb90d6df8861b2722?sdk_ver=2.54.4&unique_id=0f4a169b-4228-4265-8434-435e6e74f2c9&os=web",
+          "headers": {
+            "Accept": "*/*",
+            "Access-Control-Request-Headers": "content-type,moe-appkey",
+            "Access-Control-Request-Method": "POST",
+            "Origin": "https://unstop.com",
+            "Sec-Fetch-Mode": "cors",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "access-control-allow-headers": "DNT, User-Agent, X-Requested-With, If-Modified-Since,Cache-Control, Content-Type, Range, MOE-DBNAME, MOE-APPKEY,MOE-REQUEST-ID, MOE-UNIQUE-ID, MOE-APPSECRET, MOE-INAPP-BATCH-ID, MOE-DASHBOARD-USER-ID, MOE-PROJECT-CODE",
+            "access-control-allow-methods": "GET, POST, OPTIONS, DELETE, PUT, PATCH",
+            "access-control-allow-origin": "*",
+            "content-length": "0",
+            "content-type": "application/json",
+            "date": "Fri, 24 Jul 2026 18:05:10 GMT",
+            "moe-request-id": "jfKduVnY",
+            "server": "nginx",
+            "strict-transport-security": "max-age=16070400; includeSubDomains",
+            "via": "1.1 3eb21151f5d5de5c14a8543a3e4b214a.cloudfront.net (CloudFront)",
+            "x-amz-cf-id": "LrHc9Y_Ds51R9m3stVtqHT2WgkZ3sMF5FluPG-tmXLjrEBUZjVZTrQ==",
+            "x-amz-cf-pop": "PNQ50-P1",
+            "x-cache": "Miss from cloudfront",
+            "x-content-type-options": "nosniff"
+          },
+          "content": {
+            "mimeType": "application/json"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:04.442369",
+        "request_time": 1784916304.4424422,
+        "response_time": 1784916310.7877312
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.facebook.com/tr/",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Origin": "https://unstop.com",
+            "Referer": "https://unstop.com/",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Linux\""
+          },
+          "postData": "id=1114135612720126&ev=PageView&dl=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Foppstatus%3Dopen%26roles%3Dbackend-development&rl=&if=false&ts=1784916301816&iw=false&sw=1366&sh=768&v=2.9.361&r=stable&ec=7&o=4126&aems=0%3B0&fbp=fb.1.1782056004474.468933651922110033&cs_est=true&ler=empty&cdl=API_unavailable&pmd%5Btitle%5D=Jobs+for+Fresher+-+247%2B+Fresher+Job+Opportunities+2026&pmd%5Blocale%5D=en&pmd%5Bdescription%5D=Discover+jobs+for+freshers+and+apply+to+247%2B+opportunities.+Explore+online+jobs%2C+graduate+jobs%2C+entry-level+roles+%26+fresher+jobs+across+industries.&plt=2777.8999999910593&iss=1&ss=%7B%22page_description%22%3A%5B%7B%22rid%22%3A%221467251588165360%22%2C%22v%22%3A%5B%22For+Business%22%5D%7D%2C%7B%22rid%22%3A%2227567332276270472%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%5D%2C%22page_title%22%3A%5B%7B%22rid%22%3A%221998699374413486%22%2C%22v%22%3A%5B%22Recruiter%22%5D%7D%5D%2C%22page_keywords%22%3A%5B%7B%22rid%22%3A%221045635514681997%22%2C%22v%22%3A%5B%22247+Jobs+for+Freshers%22%5D%7D%2C%7B%22rid%22%3A%221807823447266165%22%2C%22v%22%3A%5B%22Graphic+Designer%22%2C%22Frontend+Developer%22%2C%22Backend+Developer%22%2C%22Machine+Learning%22%2C%22Growth+Marketing%22%2C%22Accounting%22%2C%22Mechanical+Engineer%22%2C%22Data+Science%22%5D%7D%5D%2C%22entity_name%22%3A%5B%7B%22rid%22%3A%222082582652470293%22%2C%22v%22%3A%5B%22Latest+Opportunities+on+Unstop%22%5D%7D%2C%7B%22rid%22%3A%22974264228983619%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%2C%7B%22rid%22%3A%222091790848381339%22%2C%22v%22%3A%5B%22Latest+Opportunities+on+Unstop%22%5D%7D%5D%2C%22author%22%3A%5B%7B%22rid%22%3A%221721691985820501%22%2C%22v%22%3A%5B%22The+website+%5C%22Unstop%5C%22+would+like+to+send+you+awesome+offers%21%22%5D%7D%5D%2C%22event_description%22%3A%5B%7B%22rid%22%3A%221032546502712802%22%2C%22v%22%3A%5B%22Business+Partner+Executive%22%2C%22B2B+Business+Development+Associate%22%2C%22Business+Development+Executive%22%2C%22Sales+%26+Marketing+Executive%22%2C%22Senior+HR+Manager%22%2C%22Asian+Paints+Alchemy+2026%22%2C%22AI+Language+Evaluator+%28Bengali%29%22%2C%22Creative+Designer%22%5D%7D%5D%2C%22article_type%22%3A%5B%7B%22rid%22%3A%221573690801100804%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%5D%2C%22entity_description%22%3A%5B%7B%22rid%22%3A%221716329252913118%22%2C%22v%22%3A%5B%22Mentor%22%5D%7D%2C%7B%22rid%22%3A%224086774051628305%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%5D%2C%22page_type%22%3A%5B%7B%22rid%22%3A%222052790302265642%22%2C%22v%22%3A%5B%22The+website+%5C%22Unstop%5C%22+would+like+to+send+you+awesome+offers%21%22%5D%7D%2C%7B%22rid%22%3A%222927920340896114%22%2C%22v%22%3A%5B%22Jobs%22%5D%7D%2C%7B%22rid%22%3A%222531015210697603%22%2C%22v%22%3A%5B%22Internships%22%5D%7D%5D%2C%22article_name%22%3A%5B%7B%22rid%22%3A%221948857635774003%22%2C%22v%22%3A%5B%22247+Jobs+for+Freshers%22%5D%7D%2C%7B%22rid%22%3A%222278620019634837%22%2C%22v%22%3A%5B%22Latest+Opportunities+on+Unstop%22%5D%7D%5D%7D&imft=1&tz=330&it=1784916301746&coo=false&ap%5Bcurrency%5D=USD&ap%5Bcontents%5D=%5B%7B%22item_price%22%3A0%7D%5D&expv2%5B0%5D=pl1&expv2%5B1%5D=el3&expv2%5B2%5D=bc1&expv2%5B3%5D=ra2&expv2%5B4%5D=rp2&expv2%5B5%5D=ct3&expv2%5B6%5D=hf0&rqm=formPOST"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "access-control-allow-credentials": "true",
+            "access-control-allow-origin": "https://unstop.com",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "content-length": "0",
+            "content-type": "text/plain",
+            "cross-origin-resource-policy": "cross-origin",
+            "date": "Fri, 24 Jul 2026 18:05:10 GMT",
+            "server": "proxygen-bolt",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-fb-connection-quality": "MODERATE; q=0.3, rtt=173, rtx=5, c=10, mss=1238, tbw=2687, tp=-1, tpl=-1, uplat=1098, ullat=1098"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.568819",
+        "request_time": 1784916302.5688748,
+        "response_time": 1784916310.8146527
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.facebook.com/tr/",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Origin": "https://unstop.com",
+            "Referer": "https://unstop.com/",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Linux\""
+          },
+          "postData": "id=1114135612720126&ev=PageView&dl=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&rl=&if=false&ts=1784916302017&iw=false&sw=1366&sh=768&v=2.9.361&r=stable&ec=8&o=4126&aems=0%3B0&fbp=fb.1.1782056004474.468933651922110033&cs_est=true&ler=empty&cdl=API_unavailable&pmd%5Btitle%5D=Jobs+for+Fresher+-+247%2B+Fresher+Job+Opportunities+2026&pmd%5Blocale%5D=en&plt=2777.8999999910593&iss=1&ss=%7B%22page_description%22%3A%5B%7B%22rid%22%3A%221467251588165360%22%2C%22v%22%3A%5B%22For+Business%22%5D%7D%2C%7B%22rid%22%3A%2227567332276270472%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%5D%2C%22page_title%22%3A%5B%7B%22rid%22%3A%221998699374413486%22%2C%22v%22%3A%5B%22Recruiter%22%5D%7D%5D%2C%22page_keywords%22%3A%5B%7B%22rid%22%3A%221045635514681997%22%2C%22v%22%3A%5B%22247+Jobs+for+Freshers%22%5D%7D%2C%7B%22rid%22%3A%221807823447266165%22%2C%22v%22%3A%5B%22Graphic+Designer%22%2C%22Frontend+Developer%22%2C%22Backend+Developer%22%2C%22Machine+Learning%22%2C%22Growth+Marketing%22%2C%22Accounting%22%2C%22Mechanical+Engineer%22%2C%22Data+Science%22%5D%7D%5D%2C%22entity_name%22%3A%5B%7B%22rid%22%3A%222082582652470293%22%2C%22v%22%3A%5B%22Latest+Opportunities+on+Unstop%22%5D%7D%2C%7B%22rid%22%3A%22974264228983619%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%2C%7B%22rid%22%3A%222091790848381339%22%2C%22v%22%3A%5B%22Latest+Opportunities+on+Unstop%22%5D%7D%5D%2C%22author%22%3A%5B%7B%22rid%22%3A%221721691985820501%22%2C%22v%22%3A%5B%22The+website+%5C%22Unstop%5C%22+would+like+to+send+you+awesome+offers%21%22%5D%7D%5D%2C%22event_description%22%3A%5B%7B%22rid%22%3A%221032546502712802%22%2C%22v%22%3A%5B%22Business+Partner+Executive%22%2C%22B2B+Business+Development+Associate%22%2C%22Business+Development+Executive%22%2C%22Sales+%26+Marketing+Executive%22%2C%22Senior+HR+Manager%22%2C%22Asian+Paints+Alchemy+2026%22%2C%22AI+Language+Evaluator+%28Bengali%29%22%2C%22Creative+Designer%22%5D%7D%5D%2C%22article_type%22%3A%5B%7B%22rid%22%3A%221573690801100804%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%5D%2C%22entity_description%22%3A%5B%7B%22rid%22%3A%221716329252913118%22%2C%22v%22%3A%5B%22Mentor%22%5D%7D%2C%7B%22rid%22%3A%224086774051628305%22%2C%22v%22%3A%5B%22Latest+Jobs+in+India.%22%5D%7D%5D%2C%22page_type%22%3A%5B%7B%22rid%22%3A%222052790302265642%22%2C%22v%22%3A%5B%22The+website+%5C%22Unstop%5C%22+would+like+to+send+you+awesome+offers%21%22%5D%7D%2C%7B%22rid%22%3A%222927920340896114%22%2C%22v%22%3A%5B%22Jobs%22%5D%7D%2C%7B%22rid%22%3A%222531015210697603%22%2C%22v%22%3A%5B%22Internships%22%5D%7D%5D%2C%22article_name%22%3A%5B%7B%22rid%22%3A%221948857635774003%22%2C%22v%22%3A%5B%22247+Jobs+for+Freshers%22%5D%7D%2C%7B%22rid%22%3A%222278620019634837%22%2C%22v%22%3A%5B%22Latest+Opportunities+on+Unstop%22%5D%7D%5D%7D&imft=1&tz=330&it=1784916301966&coo=false&ap%5Bcurrency%5D=USD&ap%5Bcontents%5D=%5B%7B%22item_price%22%3A0%7D%5D&expv2%5B0%5D=pl1&expv2%5B1%5D=el3&expv2%5B2%5D=bc1&expv2%5B3%5D=ra2&expv2%5B4%5D=rp2&expv2%5B5%5D=ct3&expv2%5B6%5D=hf0&rqm=formPOST"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "access-control-allow-credentials": "true",
+            "access-control-allow-origin": "https://unstop.com",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "content-length": "0",
+            "content-type": "text/plain",
+            "cross-origin-resource-policy": "cross-origin",
+            "date": "Fri, 24 Jul 2026 18:05:10 GMT",
+            "server": "proxygen-bolt",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-fb-connection-quality": "GOOD; q=0.7, rtt=141, rtx=5, c=10, mss=1238, tbw=2861, tp=-1, tpl=-1, uplat=1136, ullat=1136"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:02.622467",
+        "request_time": 1784916302.6225407,
+        "response_time": 1784916310.9170206
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://sdk-03.moengage.com/v3/campaigns/inapp/live/6a5da0bdb90d6df8861b2722?sdk_ver=2.54.4&unique_id=0f4a169b-4228-4265-8434-435e6e74f2c9&os=web",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "MOE-APPKEY": "BU64JRRIOTIBVKPCO4ONDE61",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "Content-Type": "application/json",
+            "sec-ch-ua-mobile": "?0",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+          },
+          "postData": "{\"contexts\":[\"string\"],\"campaign_context\":{\"cid\":\"6a5da0bdb90d6df8861b2722_F_T_ON_AB_1_P_0_L_0\",\"campaign_name\":\"Unstop Campus Campion\",\"moe_locale_name\":\"Default\",\"moe_locale_id\":\"0\",\"moe_variation_id\":\"1\"},\"user_session_attributes\":{\"roles\":\"backend-development\",\"oppstatus\":\"open\",\"USER_TYPE\":\"Returning\",\"DAY_OF_THE_WEEK\":\"Friday\",\"TIME_OF_THE_DAY\":\"23\"},\"event\":{\"name\":\"MOE_PAGE_VIEWED\",\"attributes\":{\"timestamp\":1784916302325,\"moe_logged_in_status\":true,\"moe_first_visit\":false,\"URL\":\"https://unstop.com/job/backend-development-jobs?roles=backend-development&oppstatus=open\"},\"time\":\"2026-07-24T18:05:04.430Z\"},\"identifiers\":{\"user_identities\":{\"uid\":29554100},\"previous_identities\":{},\"uid\":29554100}}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "strict-transport-security": "max-age=16070400; includeSubDomains",
+            "content-encoding": "gzip",
+            "access-control-allow-methods": "GET, POST, OPTIONS, DELETE, PUT, PATCH",
+            "x-content-type-options": "nosniff",
+            "via": "1.1 3eb21151f5d5de5c14a8543a3e4b214a.cloudfront.net (CloudFront)",
+            "access-control-allow-origin": "*",
+            "x-cache": "Miss from cloudfront",
+            "content-length": "5837",
+            "moe-request-id": "nXOTembc",
+            "date": "Fri, 24 Jul 2026 18:05:10 GMT",
+            "content-type": "application/json",
+            "x-amz-cf-pop": "PNQ50-P1",
+            "server": "nginx",
+            "x-amz-cf-id": "cmOrHEzXLOUotb4wW7HJb6K7Zg3J1VM9MKkmOQQIA3l18oSCbEZTZw==",
+            "access-control-allow-headers": "DNT, User-Agent, X-Requested-With, If-Modified-Since,Cache-Control, Content-Type, Range, MOE-DBNAME, MOE-APPKEY,MOE-REQUEST-ID, MOE-UNIQUE-ID, MOE-APPSECRET, MOE-INAPP-BATCH-ID, MOE-DASHBOARD-USER-ID, MOE-PROJECT-CODE"
+          },
+          "content": {
+            "mimeType": "application/json"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:04.449897",
+        "request_time": 1784916304.4499567,
+        "response_time": 1784916310.9587705
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6a5b663974476_organisation_image-KTGGY6DpzC788376195iWBNUezqUX.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "etag": "\"6b028ed4cebfb7963775e1391339625f\"",
+            "x-amz-version-id": "8LmEqL7tdPQM5bqtdEWUxZNN4Bx5kPFb",
+            "age": "98813",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "4gOA0H8AYMtzKUYvk5qtFo-4wDmNd4L4MgjUUTLArEr96u1iq9xhrw==",
+            "date": "Sun, 19 Jul 2026 03:57:08 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Sat, 18 Jul 2026 11:42:04 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 e34024ac6d61f73c33f9c7bc61728660.cloudfront.net (CloudFront)",
+            "content-length": "1756",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "BOM78-P11",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.115739",
+        "request_time": 1784916312.1158125,
+        "response_time": 1784916312.5396245
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-6a5b57a9d73f7_bookyaar_logo.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "etag": "\"81885596cd33995d93352ff2f96ffbc1\"",
+            "x-amz-version-id": "AuaTHunqed3hT974FqtjY.hC58saaFga",
+            "age": "71233",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "vjFTRaVGTAui-qN70BL8NeIEynFzznk7fKIR3y_hxJk8OPP_M51M2A==",
+            "date": "Sun, 19 Jul 2026 11:36:48 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Sat, 18 Jul 2026 11:35:55 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 e34024ac6d61f73c33f9c7bc61728660.cloudfront.net (CloudFront)",
+            "content-length": "2650",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "BOM78-P11",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.118839",
+        "request_time": 1784916312.118898,
+        "response_time": 1784916312.550004
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6a5a23dad17fe_organisation_image-fpapCQpYhz714082216zrvln1GY8f.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-amz-version-id": ".YKBKKGJz3Patok7M5glMISjlzG4OEh0",
+            "etag": "\"d321c3615e823aadd00e923c2bbc660e\"",
+            "age": "153414",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "M7QiQsrc4o_pMNnM7RM2_CxqKXEjj-TJV9WSjGvpNkFWkRJf60CYzw==",
+            "date": "Sat, 18 Jul 2026 12:47:58 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Fri, 17 Jul 2026 12:47:54 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 c67710fc569d98c780039c17b3fc4eda.cloudfront.net (CloudFront)",
+            "content-length": "3746",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "BOM78-P11",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.121721",
+        "request_time": 1784916312.1217828,
+        "response_time": 1784916312.558849
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-6925b33643e89_wikasta.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-amz-version-id": "DfgxGMkryN1tiupkeUkMXT4c18xtYa_I",
+            "etag": "\"4aeb91a8f1be838dbebcc3cd0211acce\"",
+            "age": "6288870",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "zxpVpEye-q2OcmPku8Tp_nmtScJJPK6xbB4UNxskzpxJGsPZoCC_cQ==",
+            "date": "Fri, 08 May 2026 12:31:30 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Tue, 25 Nov 2025 13:56:38 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 c67710fc569d98c780039c17b3fc4eda.cloudfront.net (CloudFront)",
+            "content-length": "2422",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "BOM78-P11",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.124524",
+        "request_time": 1784916312.1245956,
+        "response_time": 1784916312.5668898
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6a5c71bdcf09d_organisation_image-bNkF4yCKja660626371a4FEAkdXte.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-amz-version-id": "8xed3NInlAMzpbclNk297.g4c7VYa1hV",
+            "etag": "\"87eb12ad1b09b7bbacb9a290e3885e00\"",
+            "age": "384707",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "SXYbBSSSKn40yGND9cjVH7m6-3p82EpNse8njlIQXBGveeDlJC7Axw==",
+            "date": "Mon, 20 Jul 2026 06:42:53 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Sun, 19 Jul 2026 06:42:34 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 692e4af125194a6aa4787a7a8f364386.cloudfront.net (CloudFront)",
+            "content-length": "2414",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P2",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.127563",
+        "request_time": 1784916312.1276205,
+        "response_time": 1784916312.574712
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6a5a138000363_organisation_image-07Fn5ad7461296455870JukuARYM9N.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-amz-version-id": "60W_e6rCYn.j9JJfB1vfF1Y82ZUv7L21",
+            "etag": "\"98cee7d39a4d4c2cbfeafcff6d816a34\"",
+            "age": "539716",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "lgOvg4ogc_YqOVPVyU-n3_6OiN7lHL36H6WR1uqmn9iDzalCElY6SA==",
+            "date": "Sat, 18 Jul 2026 11:39:24 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Fri, 17 Jul 2026 11:37:30 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 692e4af125194a6aa4787a7a8f364386.cloudfront.net (CloudFront)",
+            "content-length": "1820",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P2",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.130413",
+        "request_time": 1784916312.1304731,
+        "response_time": 1784916312.5819874
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6a5a08e290fda_images__7_.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-amz-version-id": "jaMTBgT27mw9ndBETWr5S9jTz0pDyIKI",
+            "etag": "\"52e5205b603ffbd4a1530f5babd0a65f\"",
+            "age": "542063",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "2z2ImzbEXy_pJnXL6hyNu02VjPVv54ZkPzylJ2XXx_nPvQqEDI7_Ig==",
+            "date": "Sat, 18 Jul 2026 11:00:17 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Fri, 17 Jul 2026 10:57:29 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 692e4af125194a6aa4787a7a8f364386.cloudfront.net (CloudFront)",
+            "content-length": "2466",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P2",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.133240",
+        "request_time": 1784916312.1333067,
+        "response_time": 1784916312.589001
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6a59c8a661738_GENPACT.jpg?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-amz-version-id": "Iew3jviYJD9XZMWxpiZMXjDvvxvse5f3",
+            "etag": "\"856a3573d93698fd00d83d83f8f3760a\"",
+            "age": "645249",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "m57a0Sf_VfqkWv4hVHbleu_8tCj8VJTTumn2bYue8BbMsbE8ZCNGtg==",
+            "date": "Fri, 17 Jul 2026 06:20:31 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Fri, 17 Jul 2026 06:18:58 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 692e4af125194a6aa4787a7a8f364386.cloudfront.net (CloudFront)",
+            "content-length": "2006",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P2",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.135976",
+        "request_time": 1784916312.1360347,
+        "response_time": 1784916312.5961983
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-6a57562bbd063_screenshot_2026-07-15_151252.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-amz-version-id": "kff0IZ5e66trCbwqt4LEriR__Q4Ln41_",
+            "etag": "\"45a52ed7276fb55a5edaf40b9414007b\"",
+            "age": "715230",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "DVMRTff1Wcie7MS4Z_kYijF55iMYIlWGin1LxjAa4Z_kq7y3J5UsOA==",
+            "date": "Thu, 16 Jul 2026 10:54:10 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Wed, 15 Jul 2026 10:54:07 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 692e4af125194a6aa4787a7a8f364386.cloudfront.net (CloudFront)",
+            "content-length": "1202",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P2",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.138879",
+        "request_time": 1784916312.1389413,
+        "response_time": 1784916312.604279
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6a5720d326975_hw.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-amz-version-id": "j1nyd3EMQEJNrRV99BLxwJaSkBOHzN2_",
+            "etag": "\"3106c02f6abbaebffb4d83a91d63022b\"",
+            "age": "732633",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "SddXdAcrr1clVnqXLk6ZpQ0b-gsBDmFN4Dv_WEWs5TwH4lPt8aolIw==",
+            "date": "Thu, 16 Jul 2026 06:04:07 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Wed, 15 Jul 2026 06:00:41 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 692e4af125194a6aa4787a7a8f364386.cloudfront.net (CloudFront)",
+            "content-length": "1928",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P2",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.141740",
+        "request_time": 1784916312.1418037,
+        "response_time": 1784916312.6100795
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6a5627a25772b_Birlasoft-logo-with-CK-Birla-group-01.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "etag": "\"7ee6c11a19fe84fccf10b951818ed7ef\"",
+            "x-amz-version-id": "Jz0aGDkfOPhHckqhf2f4BFNhih_D6XAC",
+            "age": "81096",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "st87hFRkRe5KZQdDWmVLYsx07Kri_dg1r60-nfiFVcBRYD8vf4BfMw==",
+            "date": "Wed, 15 Jul 2026 12:15:16 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Tue, 14 Jul 2026 12:13:13 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 9319c9ea176673da0fdeb226a7737ee8.cloudfront.net (CloudFront)",
+            "content-length": "1746",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P2",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.144694",
+        "request_time": 1784916312.1447513,
+        "response_time": 1784916312.6130404
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/6a55b889ee23e_lseg.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-amz-version-id": "rkNCS0EnMltevGSlKFkj9ud7KcyQc6rV",
+            "etag": "\"0b479cedcd3ef9d9341491d9cbad9839\"",
+            "age": "825104",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "JFbG5deuu7-wLRhLVL_ohHzf4g-BFogyAJ7BBnbzccwy5iul78ca0w==",
+            "date": "Wed, 15 Jul 2026 04:22:56 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Tue, 14 Jul 2026 04:19:51 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 692e4af125194a6aa4787a7a8f364386.cloudfront.net (CloudFront)",
+            "content-length": "1060",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P2",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.147494",
+        "request_time": 1784916312.1475544,
+        "response_time": 1784916312.616122
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-6a527a3c884a3_screenshot_2026-07-11_220303.png?d=146x146",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-amz-version-id": "_ilteVoZpc09JESzXSyGTMVcgI2M3gpE",
+            "etag": "\"dbaeeec0b43509c2fda3c257f8859d14\"",
+            "age": "974017",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "DJ2b9xVe8RZX_5cDoO2woba38EVq6fhBfdhUKlRDJIbL4mqaTsyeCQ==",
+            "date": "Mon, 13 Jul 2026 11:01:03 GMT",
+            "content-type": "image/webp",
+            "last-modified": "Sun, 12 Jul 2026 11:00:52 GMT",
+            "vary": "Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 692e4af125194a6aa4787a7a8f364386.cloudfront.net (CloudFront)",
+            "content-length": "1722",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P2",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/webp"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.150344",
+        "request_time": 1784916312.1504045,
+        "response_time": 1784916312.6191797
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://unstop.com/api/un-cities?search=&default_list=true",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNWM0NjE0NmMyMjJjMmM2NDg5ODE2YTMzZWUzZDM4OGFhZDU5OTRmNTA3NzMxOGQ3Y2M2ZDIwZTI1NGE1YThlZTgzMDVlNTQ4NDljZGY2ZmUiLCJpYXQiOjE3ODQ1MzMzNDQuNTc4NTksIm5iZiI6MTc4NDUzMzM0NC41Nzg1OTQsImV4cCI6MTc4Njk1MjU0NC41NTg0MDcsInN1YiI6IjI5NTU0MTAwIiwic2NvcGVzIjpbXX0.AedRk5scyTSJJGPjsBGHXOMnwxwXbvmXGVzZUUWajHHkDs0j0Q4U_jdHlbnd1OSQ1HqJ4_SBYKUJ2M5DOmUNsC37eXizuEOXORWmOyb1BCeEsv7TrprcdkN-kvelFVFlaGbFycwjwF_g4z6Bk8P7gZLw4DXHPMc7ry_Rik6TQBIexuGGrQTg1sSciH77hLR5XNikXdnHDiMzF6h9VmJDzcp6yZQbBxGMAQiDf-tI_opj1mYpOAMF4fzpPG47rN6E0odFE7opl1eyaFDaaHzePJIn25ALGzsk6jtsdUaa-yVtYnJvGIT9L-i5HdAdWgRMPKaWHD5f4Yz1zl8U_ggidy36QUIuNXpdc1KFEIloOMPXdFt6IDwCoLrIeH4L10UF58dIoEDPU-oUygQCV9jMs2Uyx7GfM0jE7NNIpuHgQ3RCti4Dg2kXxZi8dDQ8i16XDdNC3RcGerSL6w-sOmon9A1-Q-V9o0WSusmlijQ8gptgNxoBbX5Gn91IxYQcRQCQX4Jrr3AttL0_Gsb4oraMJ0_s05vKcxcDY9yw62EdI52CoF4oQ_F6aThQraYFr5KuP6RoSklIImOPPWTmjAOkc8p0vvUSzrbBUQrjd1u_L_sdAaDIgjBEWLlAjldMfvfNb8HrFZjMXOPPbame2BKv29puRdLmph4oU20_Mf_-jko",
+            "Referer": "https://unstop.com/job/backend-development-jobs?roles=backend-development&oppstatus=open",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "Accept": "application/json, text/plain, */*",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-content-type-options": "nosniff",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Miss from cloudfront",
+            "x-behaviour": "api",
+            "x-amz-cf-id": "2e5-C96FIDX5YGC2tQXlxECoPsfSBudFEqTSWuaoLkmTZhLm8C9HOA==",
+            "date": "Fri, 24 Jul 2026 17:34:14 GMT",
+            "content-type": "application/json",
+            "vary": "Accept-Encoding,Accept-Encoding",
+            "x-frame-options": "SAMEORIGIN",
+            "cache-control": "max-age=3600, public, s-maxage=3600",
+            "pragma": "",
+            "referrer-policy": "origin-when-cross-origin",
+            "via": "1.1 76c8b6149bd17b365b0a900e898b9710.cloudfront.net (CloudFront)",
+            "permissions-policy": "browsing-topics=()",
+            "x-xss-protection": "1",
+            "x-country": "IN",
+            "x-amz-cf-pop": "PNQ50-P4",
+            "server": "CloudFront"
+          },
+          "content": {
+            "mimeType": "application/json"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.105980",
+        "request_time": 1784916312.106057,
+        "response_time": 1784916312.6427977
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://unstop.com/api/workrelationship/workfunction/getAll",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiNWM0NjE0NmMyMjJjMmM2NDg5ODE2YTMzZWUzZDM4OGFhZDU5OTRmNTA3NzMxOGQ3Y2M2ZDIwZTI1NGE1YThlZTgzMDVlNTQ4NDljZGY2ZmUiLCJpYXQiOjE3ODQ1MzMzNDQuNTc4NTksIm5iZiI6MTc4NDUzMzM0NC41Nzg1OTQsImV4cCI6MTc4Njk1MjU0NC41NTg0MDcsInN1YiI6IjI5NTU0MTAwIiwic2NvcGVzIjpbXX0.AedRk5scyTSJJGPjsBGHXOMnwxwXbvmXGVzZUUWajHHkDs0j0Q4U_jdHlbnd1OSQ1HqJ4_SBYKUJ2M5DOmUNsC37eXizuEOXORWmOyb1BCeEsv7TrprcdkN-kvelFVFlaGbFycwjwF_g4z6Bk8P7gZLw4DXHPMc7ry_Rik6TQBIexuGGrQTg1sSciH77hLR5XNikXdnHDiMzF6h9VmJDzcp6yZQbBxGMAQiDf-tI_opj1mYpOAMF4fzpPG47rN6E0odFE7opl1eyaFDaaHzePJIn25ALGzsk6jtsdUaa-yVtYnJvGIT9L-i5HdAdWgRMPKaWHD5f4Yz1zl8U_ggidy36QUIuNXpdc1KFEIloOMPXdFt6IDwCoLrIeH4L10UF58dIoEDPU-oUygQCV9jMs2Uyx7GfM0jE7NNIpuHgQ3RCti4Dg2kXxZi8dDQ8i16XDdNC3RcGerSL6w-sOmon9A1-Q-V9o0WSusmlijQ8gptgNxoBbX5Gn91IxYQcRQCQX4Jrr3AttL0_Gsb4oraMJ0_s05vKcxcDY9yw62EdI52CoF4oQ_F6aThQraYFr5KuP6RoSklIImOPPWTmjAOkc8p0vvUSzrbBUQrjd1u_L_sdAaDIgjBEWLlAjldMfvfNb8HrFZjMXOPPbame2BKv29puRdLmph4oU20_Mf_-jko",
+            "Referer": "https://unstop.com/job/backend-development-jobs?roles=backend-development&oppstatus=open",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "Accept": "application/json, text/plain, */*",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "x-content-type-options": "nosniff",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Miss from cloudfront",
+            "x-behaviour": "api",
+            "x-amz-cf-id": "BUJY9Kdxn8vjGXpRZEGgokhUN6tPD-2iCtM1Nir-bkGsKTtwcwcXcw==",
+            "date": "Fri, 24 Jul 2026 18:05:10 GMT",
+            "content-type": "application/json",
+            "vary": "Accept-Encoding,Accept-Encoding",
+            "x-frame-options": "SAMEORIGIN",
+            "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+            "cache-control": "no-cache, private",
+            "referrer-policy": "origin-when-cross-origin",
+            "via": "1.1 95e4d46944eba5eaecbb038464c027d8.cloudfront.net (CloudFront)",
+            "permissions-policy": "browsing-topics=()",
+            "x-xss-protection": "1",
+            "x-country": "IN",
+            "x-amz-cf-pop": "PNQ50-P4",
+            "server": "CloudFront"
+          },
+          "content": {
+            "mimeType": "application/json"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:12.112373",
+        "request_time": 1784916312.1124399,
+        "response_time": 1784916313.217727
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://www.google.com/pagead/1p-user-list/1007890599/?random=1784916303681&cv=11&fst=1784916000000&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be67m1h2v886724522za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~117227716~118395335~118897920~118897930~119896802&u_w=1366&u_h=768&url=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&ref=https%3A%2F%2Funstop.com%2Fjob%2Ffresher-jobs%3Fusertype%3Dfresher%26fresherPassingOutYear%3D2023%26oppstatus%3Dopen&rcb=3&frm=0&tiba=Jobs%20for%20-%2077709%2B%202026&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=204574487.1782055997&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dpage_view&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAEQoqgbAsXoohwhdaJAvq65fgmKWE9H4wFUbWwq0hkaUcaT6x5p9k8XDluinqc_DsJN4ezvBAe4Yv3zTm-5MMMYNJT78RlqggILUucnSOvzF6oOv-t8EB7sRmcHppmLy8XEufBfAl-A5H0wN26frwEgSkigicIqK_O_-ltS5IPXWIz7Kc4L0I3sQIc8N793Bzr3gmYXJPeEvOjaC7CsIejVeOIutaPkYD4eUs4f_R4MEho9CijCIopCYTDEnCcO5Y1dTYLo5wE7WpZfnyGK8O2vKtRVUX1GwW4f0uNhWCAiU&random=3016706580&rmt_tld=0&ipr=y",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "content-security-policy": "script-src 'none'; object-src 'none'",
+            "cache-control": "no-cache, no-store, must-revalidate",
+            "timing-allow-origin": "*",
+            "pragma": "no-cache",
+            "cross-origin-resource-policy": "cross-origin",
+            "x-content-type-options": "nosniff",
+            "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+            "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "p3p": "policyref=\"https://www.googleadservices.com/pagead/p3p.xml\", CP=\"NOI DEV PSA PSD IVA IVD OTP OUR OTR IND OTC\"",
+            "content-length": "42",
+            "date": "Fri, 24 Jul 2026 18:05:13 GMT",
+            "x-xss-protection": "0",
+            "content-type": "image/gif",
+            "server": "cafe"
+          },
+          "content": {
+            "mimeType": "image/gif"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:05.657363",
+        "request_time": 1784916305.6574366,
+        "response_time": 1784916313.6952145
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://www.google.com/pagead/1p-user-list/16653406380/?random=1784916303437&cv=11&fst=1784916000000&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be67m1h2v9206003174za20gzb6428212zd6428212xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~117227716~118897920~118897930~119381663~119896803&u_w=1366&u_h=768&url=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&ref=https%3A%2F%2Funstop.com%2Fjob%2Ffresher-jobs%3Fusertype%3Dfresher%26fresherPassingOutYear%3D2023%26oppstatus%3Dopen&rcb=18&frm=0&tiba=Jobs%20for%20-%2077709%2B%202026&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=204574487.1782055997&uaa=arm&uab=64&uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dpage_view&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAEQoqgRwkRXo1WUgz1sU2jOIdsEOE6-tUijM38kAo4A1Y-_29gcQN-3QkSp2LcufTeLnh1eSXKbWsYT31O_JJDuyVqUB_RhjeOMA5lTS5dCPir2pN0bxhXMOptyzm4RafHbzY7q51xhHzrNJLHYPh78IFid9qFlxvsxfbpNj2FN8md4dqp9PzjJ-2VuNzq0lKSRY7IHlkEwgxjuyiQynJWvIQdxCGyRlGsF-0LOw3aBqOKHSJO5cYQbcT3wq_va8GrCvAIFxOx5X5WDg7H2jb1opCN6ShwZltEQY1L7wlBlE&random=2251620841&rmt_tld=0&ipr=y",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "content-security-policy": "script-src 'none'; object-src 'none'",
+            "cache-control": "no-cache, no-store, must-revalidate",
+            "timing-allow-origin": "*",
+            "pragma": "no-cache",
+            "cross-origin-resource-policy": "cross-origin",
+            "x-content-type-options": "nosniff",
+            "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+            "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+            "p3p": "policyref=\"https://www.googleadservices.com/pagead/p3p.xml\", CP=\"NOI DEV PSA PSD IVA IVD OTP OUR OTR IND OTC\"",
+            "content-length": "42",
+            "date": "Fri, 24 Jul 2026 18:05:13 GMT",
+            "x-xss-protection": "0",
+            "content-type": "image/gif",
+            "server": "cafe"
+          },
+          "content": {
+            "mimeType": "image/gif"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:05.627136",
+        "request_time": 1784916305.6272237,
+        "response_time": 1784916314.2999105
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.facebook.com/tr/",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": "id=1114135612720126&ev=SubscribedButtonClick&dl=https%3A%2F%2Funstop.com%2Fjob%2Ffresher-jobs%3Fusertype%3Dfresher%26fresherPassingOutYear%3D2023%26oppstatus%3Dopen&rl=&if=false&ts=1784916301442&iw=false&cd[buttonFeatures]=%7B%22classList%22%3A%22card_new%20ng-star-inserted%22%2C%22destination%22%3A%22%22%2C%22id%22%3A%22%22%2C%22imageUrl%22%3A%22%22%2C%22innerText%22%3A%22Backend%20Developer%22%2C%22numChildButtons%22%3A0%2C%22tag%22%3A%22a%22%2C%22type%22%3Anull%2C%22name%22%3A%22%22%7D&cd[buttonText]=Backend%20Developer&cd[formFeatures]=%5B%5D&cd[pageFeatures]=%7B%22title%22%3A%22Jobs%20for%20Fresher%20-%20247%2B%20Fresher%20Job%20Opportunities%202026%22%7D&sw=1366&sh=768&v=2.9.361&r=stable&ec=6&o=4126&aems=0%3B0&fbp=fb.1.1782056004474.468933651922110033&cs_est=true&ler=empty&cdl=API_unavailable&pmd[locale]=en&pmd[description]=Discover%20jobs%20for%20freshers%20and%20apply%20to%20247%2B%20opportunities.%20Explore%20online%20jobs%2C%20graduate%20jobs%2C%20entry-level%20roles%20%26%20fresher%20jobs%20across%20industries.&plt=2777.8999999910593&iss=1&ss=%7B%22page_description%22%3A%5B%7B%22rid%22%3A%221467251588165360%22%2C%22v%22%3A%5B%22For%20Business%22%5D%7D%2C%7B%22rid%22%3A%2227567332276270472%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%5D%2C%22page_title%22%3A%5B%7B%22rid%22%3A%221998699374413486%22%2C%22v%22%3A%5B%22Recruiter%22%5D%7D%5D%2C%22page_keywords%22%3A%5B%7B%22rid%22%3A%221045635514681997%22%2C%22v%22%3A%5B%22247%20Jobs%20for%20Freshers%22%5D%7D%2C%7B%22rid%22%3A%221807823447266165%22%2C%22v%22%3A%5B%22Data%20Science%22%2C%22Backend%20Developer%22%2C%22Mechanical%20Engineer%22%2C%22Growth%20Marketing%22%2C%22Machine%20Learning%22%2C%22Electrical%20Engineer%22%2C%22Graphic%20Designer%22%2C%22Content%20Writing%22%5D%7D%5D%2C%22entity_name%22%3A%5B%7B%22rid%22%3A%222082582652470293%22%2C%22v%22%3A%5B%22Latest%20Opportunities%20on%20Unstop%22%5D%7D%2C%7B%22rid%22%3A%22974264228983619%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%2C%7B%22rid%22%3A%222091790848381339%22%2C%22v%22%3A%5B%22Latest%20Opportunities%20on%20Unstop%22%5D%7D%5D%2C%22author%22%3A%5B%7B%22rid%22%3A%221721691985820501%22%2C%22v%22%3A%5B%22The%20website%20%5C%22Unstop%5C%22%20would%20like%20to%20send%20you%20awesome%20offers!%22%5D%7D%5D%2C%22event_description%22%3A%5B%7B%22rid%22%3A%221032546502712802%22%2C%22v%22%3A%5B%22Senior%20HR%20Manager%22%2C%22Business%20Partner%20Executive%22%2C%22Creative%20Designer%22%2C%22B2B%20Business%20Development%20Associate%22%2C%22Inside%20Sales%20Executive%22%2C%22Telecaller%20Executive%22%2C%22Aditya%20Birla%20Group%20Stratos%202026%22%2C%22Unstop%20Quizverse%202026%22%5D%7D%5D%2C%22article_type%22%3A%5B%7B%22rid%22%3A%221573690801100804%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%5D%2C%22entity_description%22%3A%5B%7B%22rid%22%3A%221716329252913118%22%2C%22v%22%3A%5B%22Mentor%22%5D%7D%2C%7B%22rid%22%3A%224086774051628305%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%5D%2C%22page_type%22%3A%5B%7B%22rid%22%3A%222052790302265642%22%2C%22v%22%3A%5B%22The%20website%20%5C%22Unstop%5C%22%20would%20like%20to%20send%20you%20awesome%20offers!%22%5D%7D%2C%7B%22rid%22%3A%222927920340896114%22%2C%22v%22%3A%5B%22Jobs%22%5D%7D%2C%7B%22rid%22%3A%222531015210697603%22%2C%22v%22%3A%5B%22Internships%22%5D%7D%5D%2C%22article_name%22%3A%5B%7B%22rid%22%3A%221948857635774003%22%2C%22v%22%3A%5B%22247%20Jobs%20for%20Freshers%22%5D%7D%2C%7B%22rid%22%3A%222278620019634837%22%2C%22v%22%3A%5B%22Latest%20Opportunities%20on%20Unstop%22%5D%7D%5D%7D&imft=1&tz=330&it=1784915984269&coo=false&es=automatic&tm=3&ap[currency]=USD&ap[contents]=%5B%7B%22item_price%22%3A0%7D%5D&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf0&rqm=fetch&ie[i]=1"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-fb-connection-quality": "EXCELLENT; q=0.9, rtt=24, rtx=1, c=10, mss=1238, tbw=2356, tp=-1, tpl=-1, uplat=19, ullat=19",
+            "cross-origin-resource-policy": "cross-origin",
+            "access-control-allow-credentials": "true",
+            "access-control-allow-origin": "https://unstop.com",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "content-length": "0",
+            "date": "Fri, 24 Jul 2026 18:05:11 GMT",
+            "content-type": "text/plain",
+            "server": "proxygen-bolt"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:06.550656",
+        "request_time": 1784916306.550724,
+        "response_time": 1784916315.0289857
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.facebook.com/tr/",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": "id=1114135612720126&ev=PageView&dl=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Foppstatus%3Dopen%26roles%3Dbackend-development&rl=&if=false&ts=1784916301816&iw=false&sw=1366&sh=768&v=2.9.361&r=stable&ec=7&o=4126&aems=0%3B0&fbp=fb.1.1782056004474.468933651922110033&cs_est=true&ler=empty&cdl=API_unavailable&pmd[title]=Jobs%20for%20Fresher%20-%20247%2B%20Fresher%20Job%20Opportunities%202026&pmd[locale]=en&pmd[description]=Discover%20jobs%20for%20freshers%20and%20apply%20to%20247%2B%20opportunities.%20Explore%20online%20jobs%2C%20graduate%20jobs%2C%20entry-level%20roles%20%26%20fresher%20jobs%20across%20industries.&plt=2777.8999999910593&iss=1&ss=%7B%22page_description%22%3A%5B%7B%22rid%22%3A%221467251588165360%22%2C%22v%22%3A%5B%22For%20Business%22%5D%7D%2C%7B%22rid%22%3A%2227567332276270472%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%5D%2C%22page_title%22%3A%5B%7B%22rid%22%3A%221998699374413486%22%2C%22v%22%3A%5B%22Recruiter%22%5D%7D%5D%2C%22page_keywords%22%3A%5B%7B%22rid%22%3A%221045635514681997%22%2C%22v%22%3A%5B%22247%20Jobs%20for%20Freshers%22%5D%7D%2C%7B%22rid%22%3A%221807823447266165%22%2C%22v%22%3A%5B%22Graphic%20Designer%22%2C%22Frontend%20Developer%22%2C%22Backend%20Developer%22%2C%22Machine%20Learning%22%2C%22Growth%20Marketing%22%2C%22Accounting%22%2C%22Mechanical%20Engineer%22%2C%22Data%20Science%22%5D%7D%5D%2C%22entity_name%22%3A%5B%7B%22rid%22%3A%222082582652470293%22%2C%22v%22%3A%5B%22Latest%20Opportunities%20on%20Unstop%22%5D%7D%2C%7B%22rid%22%3A%22974264228983619%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%2C%7B%22rid%22%3A%222091790848381339%22%2C%22v%22%3A%5B%22Latest%20Opportunities%20on%20Unstop%22%5D%7D%5D%2C%22author%22%3A%5B%7B%22rid%22%3A%221721691985820501%22%2C%22v%22%3A%5B%22The%20website%20%5C%22Unstop%5C%22%20would%20like%20to%20send%20you%20awesome%20offers!%22%5D%7D%5D%2C%22event_description%22%3A%5B%7B%22rid%22%3A%221032546502712802%22%2C%22v%22%3A%5B%22Business%20Partner%20Executive%22%2C%22B2B%20Business%20Development%20Associate%22%2C%22Business%20Development%20Executive%22%2C%22Sales%20%26%20Marketing%20Executive%22%2C%22Senior%20HR%20Manager%22%2C%22Asian%20Paints%20Alchemy%202026%22%2C%22AI%20Language%20Evaluator%20(Bengali)%22%2C%22Creative%20Designer%22%5D%7D%5D%2C%22article_type%22%3A%5B%7B%22rid%22%3A%221573690801100804%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%5D%2C%22entity_description%22%3A%5B%7B%22rid%22%3A%221716329252913118%22%2C%22v%22%3A%5B%22Mentor%22%5D%7D%2C%7B%22rid%22%3A%224086774051628305%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%5D%2C%22page_type%22%3A%5B%7B%22rid%22%3A%222052790302265642%22%2C%22v%22%3A%5B%22The%20website%20%5C%22Unstop%5C%22%20would%20like%20to%20send%20you%20awesome%20offers!%22%5D%7D%2C%7B%22rid%22%3A%222927920340896114%22%2C%22v%22%3A%5B%22Jobs%22%5D%7D%2C%7B%22rid%22%3A%222531015210697603%22%2C%22v%22%3A%5B%22Internships%22%5D%7D%5D%2C%22article_name%22%3A%5B%7B%22rid%22%3A%221948857635774003%22%2C%22v%22%3A%5B%22247%20Jobs%20for%20Freshers%22%5D%7D%2C%7B%22rid%22%3A%222278620019634837%22%2C%22v%22%3A%5B%22Latest%20Opportunities%20on%20Unstop%22%5D%7D%5D%7D&imft=1&tz=330&it=1784916301746&coo=false&ap[currency]=USD&ap[contents]=%5B%7B%22item_price%22%3A0%7D%5D&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf0&rqm=fetch&ie[i]=1"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-fb-connection-quality": "EXCELLENT; q=0.9, rtt=36, rtx=1, c=13, mss=1238, tbw=2689, tp=-1, tpl=-1, uplat=26, ullat=26",
+            "cross-origin-resource-policy": "cross-origin",
+            "access-control-allow-credentials": "true",
+            "access-control-allow-origin": "https://unstop.com",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "content-length": "0",
+            "date": "Fri, 24 Jul 2026 18:05:11 GMT",
+            "content-type": "text/plain",
+            "server": "proxygen-bolt"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:06.911496",
+        "request_time": 1784916306.9115763,
+        "response_time": 1784916315.0598402
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://www.facebook.com/tr/",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": "id=1114135612720126&ev=PageView&dl=https%3A%2F%2Funstop.com%2Fjob%2Fbackend-development-jobs%3Froles%3Dbackend-development%26oppstatus%3Dopen&rl=&if=false&ts=1784916302017&iw=false&sw=1366&sh=768&v=2.9.361&r=stable&ec=8&o=4126&aems=0%3B0&fbp=fb.1.1782056004474.468933651922110033&cs_est=true&ler=empty&cdl=API_unavailable&pmd[title]=Jobs%20for%20Fresher%20-%20247%2B%20Fresher%20Job%20Opportunities%202026&pmd[locale]=en&plt=2777.8999999910593&iss=1&ss=%7B%22page_description%22%3A%5B%7B%22rid%22%3A%221467251588165360%22%2C%22v%22%3A%5B%22For%20Business%22%5D%7D%2C%7B%22rid%22%3A%2227567332276270472%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%5D%2C%22page_title%22%3A%5B%7B%22rid%22%3A%221998699374413486%22%2C%22v%22%3A%5B%22Recruiter%22%5D%7D%5D%2C%22page_keywords%22%3A%5B%7B%22rid%22%3A%221045635514681997%22%2C%22v%22%3A%5B%22247%20Jobs%20for%20Freshers%22%5D%7D%2C%7B%22rid%22%3A%221807823447266165%22%2C%22v%22%3A%5B%22Graphic%20Designer%22%2C%22Frontend%20Developer%22%2C%22Backend%20Developer%22%2C%22Machine%20Learning%22%2C%22Growth%20Marketing%22%2C%22Accounting%22%2C%22Mechanical%20Engineer%22%2C%22Data%20Science%22%5D%7D%5D%2C%22entity_name%22%3A%5B%7B%22rid%22%3A%222082582652470293%22%2C%22v%22%3A%5B%22Latest%20Opportunities%20on%20Unstop%22%5D%7D%2C%7B%22rid%22%3A%22974264228983619%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%2C%7B%22rid%22%3A%222091790848381339%22%2C%22v%22%3A%5B%22Latest%20Opportunities%20on%20Unstop%22%5D%7D%5D%2C%22author%22%3A%5B%7B%22rid%22%3A%221721691985820501%22%2C%22v%22%3A%5B%22The%20website%20%5C%22Unstop%5C%22%20would%20like%20to%20send%20you%20awesome%20offers!%22%5D%7D%5D%2C%22event_description%22%3A%5B%7B%22rid%22%3A%221032546502712802%22%2C%22v%22%3A%5B%22Business%20Partner%20Executive%22%2C%22B2B%20Business%20Development%20Associate%22%2C%22Business%20Development%20Executive%22%2C%22Sales%20%26%20Marketing%20Executive%22%2C%22Senior%20HR%20Manager%22%2C%22Asian%20Paints%20Alchemy%202026%22%2C%22AI%20Language%20Evaluator%20(Bengali)%22%2C%22Creative%20Designer%22%5D%7D%5D%2C%22article_type%22%3A%5B%7B%22rid%22%3A%221573690801100804%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%5D%2C%22entity_description%22%3A%5B%7B%22rid%22%3A%221716329252913118%22%2C%22v%22%3A%5B%22Mentor%22%5D%7D%2C%7B%22rid%22%3A%224086774051628305%22%2C%22v%22%3A%5B%22Latest%20Jobs%20in%20India.%22%5D%7D%5D%2C%22page_type%22%3A%5B%7B%22rid%22%3A%222052790302265642%22%2C%22v%22%3A%5B%22The%20website%20%5C%22Unstop%5C%22%20would%20like%20to%20send%20you%20awesome%20offers!%22%5D%7D%2C%7B%22rid%22%3A%222927920340896114%22%2C%22v%22%3A%5B%22Jobs%22%5D%7D%2C%7B%22rid%22%3A%222531015210697603%22%2C%22v%22%3A%5B%22Internships%22%5D%7D%5D%2C%22article_name%22%3A%5B%7B%22rid%22%3A%221948857635774003%22%2C%22v%22%3A%5B%22247%20Jobs%20for%20Freshers%22%5D%7D%2C%7B%22rid%22%3A%222278620019634837%22%2C%22v%22%3A%5B%22Latest%20Opportunities%20on%20Unstop%22%5D%7D%5D%7D&imft=1&tz=330&it=1784916301966&coo=false&ap[currency]=USD&ap[contents]=%5B%7B%22item_price%22%3A0%7D%5D&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf0&rqm=fetch&ie[i]=1"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-fb-connection-quality": "EXCELLENT; q=0.9, rtt=35, rtx=1, c=13, mss=1238, tbw=2838, tp=-1, tpl=-1, uplat=28, ullat=28",
+            "cross-origin-resource-policy": "cross-origin",
+            "access-control-allow-credentials": "true",
+            "access-control-allow-origin": "https://unstop.com",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "content-length": "0",
+            "date": "Fri, 24 Jul 2026 18:05:11 GMT",
+            "content-type": "text/plain",
+            "server": "proxygen-bolt"
+          },
+          "content": {
+            "mimeType": "text/plain"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:07.107175",
+        "request_time": 1784916307.1072547,
+        "response_time": 1784916315.1037805
+      },
+      {
+        "request": {
+          "method": "POST",
+          "url": "https://sdk-03.moengage.com/v3/campaigns/inapp/live/stats?sdk_ver=2.54.4&unique_id=0f4a169b-4228-4265-8434-435e6e74f2c9&os=web&app_id=BU64JRRIOTIBVKPCO4ONDE61",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "Content-Type": "text/plain;charset=utf-8",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {},
+          "content": {
+            "mimeType": "application/json"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:11.017340",
+        "request_time": 1784916311.0174034,
+        "response_time": 1784916315.1096663
+      },
+      {
+        "request": {
+          "method": "GET",
+          "url": "https://d8it4huxumps7.cloudfront.net/uploads/images/6683ee5d0486a_profile_nudge_eclipse.png?234x306",
+          "headers": {
+            "sec-ch-ua-platform": "\"Linux\"",
+            "Referer": "https://unstop.com/",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0"
+          },
+          "postData": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "headers": {
+            "etag": "\"434ab855a094d00089a0006c08ed9922\"",
+            "x-amz-version-id": "zQykzEXeWgW2kFdInIZRlXY6uLzVSR9L",
+            "age": "22697",
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "x-cache": "Hit from cloudfront",
+            "x-amz-cf-id": "54SZHXVLiuRWC9q-pbtTXsSiFVNIACNUtg4cF5Dzl81bY72vKYu7NA==",
+            "date": "Mon, 29 Jun 2026 03:32:59 GMT",
+            "content-type": "image/png",
+            "last-modified": "Tue, 02 Jul 2024 12:11:10 GMT",
+            "vary": "Accept-Encoding, Origin",
+            "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'self';",
+            "cache-control": "max-age=31536002",
+            "via": "1.1 aa3eb29e83403a6463b0e4bbd6175a48.cloudfront.net (CloudFront)",
+            "content-length": "2902",
+            "x-xss-protection": "1; mode=block",
+            "x-amz-cf-pop": "PNQ50-P2",
+            "server": "AmazonS3"
+          },
+          "content": {
+            "mimeType": "image/png"
+          }
+        },
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0,
+          "receive": 0
+        },
+        "time": 0,
+        "startedDateTime": "2026-07-24T23:35:15.667437",
+        "request_time": 1784916315.667499,
+        "response_time": 1784916315.675269
+      }
+    ]
+  }
+}
