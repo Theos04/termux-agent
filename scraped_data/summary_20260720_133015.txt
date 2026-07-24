@@ -1,0 +1,14 @@
+============================================================
+Unstop Job Scraping Summary
+============================================================
+
+Scraped at: 2026-07-20 13:30:15
+Total jobs: 0
+Pages scraped: 2
+Duration: 58.71 seconds
+Errors: 2
+
+Errors:
+  - Extraction exception: 'int' object has no attribute 'get'
+  - Extraction exception: 'int' object has no attribute 'get'
+

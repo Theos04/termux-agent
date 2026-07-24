@@ -1,0 +1,36 @@
+============================================================
+Unstop Job Scraping Summary
+============================================================
+
+Scraped at: 2026-07-16 14:40:34
+Total jobs: 18
+Pages scraped: 1
+Duration: 30.60 seconds
+Errors: 0
+
+Top 10 Companies:
+  Refratex India Pvt. Ltd.: 2 jobs
+  Cutibless Healthcare Pvt Ltd: 2 jobs
+  Hire8Global: 1 jobs
+  Blanco Thornton Properties: 1 jobs
+  LeadUpAI: 1 jobs
+  Zyrax Fitness: 1 jobs
+  Brand Balance: 1 jobs
+  Hive rift softwares Pvt ltd: 1 jobs
+  BTW Visa Services Pvt. Ltd.: 1 jobs
+  Yoi  Media LLP: 1 jobs
+
+Top 10 Locations:
+  In Office  |  Jaipur: 3 jobs
+  In Office  |  Hyderabad: 2 jobs
+  In Office  |  Ghaziabad: 2 jobs
+  In Office  |  Bangalore: 2 jobs
+  In Office  |  Noida: 1 jobs
+  Work from Home  | Pan India: 1 jobs
+  Hybrid  |  Agra: 1 jobs
+  In Office  |  Delhi: 1 jobs
+  In Office  |  Thane: 1 jobs
+  Work from Home: 1 jobs
+
+Job Types:
+  Full Time: 17 jobs

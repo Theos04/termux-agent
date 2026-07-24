@@ -1,0 +1,24 @@
+"""
+modules/deepseek_writer.py
+wrapper module for automation deepseek's web chat; set the prompt text and 
+clicks send. Talks only to ChromeDaemon, per CDP_MODULE_SOP
+"""
+
+import asyncio
+import time 
+
+from lib import run_library_script, resolve_session_by_port
+
+class DeepseekWriter:
+	"""Types a prompt into Deepseek's chat box and sends it."""
+
+	SET_TEXT_SCRIPT = "deepseek_set_text"
+	CLICK_SEND_SCRIPT = "deepseek_click_send"
+
+	def __init__(self, daemon, session_name: str = "deepseek-writer"):
+		self.daemon = daemon
+		self.session = session_name
+
+	async def run(self, **kwargs) -> dict:
+		"""
+

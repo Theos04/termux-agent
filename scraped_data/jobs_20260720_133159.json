@@ -1,0 +1,11 @@
+{
+  "session": "unstop",
+  "target_url": "https://unstop.com/job/",
+  "total_jobs": 0,
+  "pages_scraped": 1,
+  "jobs": [],
+  "errors": [],
+  "started_at": "2026-07-20 13:31:34.616438",
+  "completed_at": "2026-07-20 13:31:59.087337",
+  "duration_seconds": 24.470925
+}

@@ -1,0 +1,55 @@
+============================================================
+Unstop Job Scraping Summary
+============================================================
+
+Scraped at: 2026-07-16 22:07:23
+Total jobs: 18
+Pages scraped: 1
+Duration: 26.71 seconds
+Errors: 0
+
+Top 10 Companies:
+  Refratex India Pvt. Ltd.: 2 jobs
+  Cutibless Healthcare Pvt Ltd: 2 jobs
+  PJN Technologies  Pvt Ltd: 1 jobs
+  iMatiz Technologies: 1 jobs
+  Hire8Global: 1 jobs
+  Blanco Thornton Properties: 1 jobs
+  LeadUpAI: 1 jobs
+  Zyrax Fitness: 1 jobs
+  Brand Balance: 1 jobs
+  Hive rift softwares Pvt ltd: 1 jobs
+
+Top 10 Locations:
+  In Office  |  Bangalore: 4 jobs
+  In Office  |  Hyderabad: 2 jobs
+  In Office  |  Ghaziabad: 2 jobs
+  In Office  |  Jaipur: 2 jobs
+  In Office  |  Noida: 1 jobs
+  Work from Home  | Pan India: 1 jobs
+  Hybrid  |  Agra: 1 jobs
+  In Office  |  Delhi: 1 jobs
+  In Office  |  Thane: 1 jobs
+  Work from Home: 1 jobs
+
+Job Types:
+  Full Time: 17 jobs
+
+Top 20 Skills:
+  Fresher: 18 jobs
+  Business Development: 7 jobs
+  Experienced Professionals: 7 jobs
+  Inside Sales: 4 jobs
+  B2B Sales: 2 jobs
+  Customer Support: 2 jobs
+  Supply Chain Operations: 2 jobs
+  Technical Writing: 1 jobs
+  Inventory Management: 1 jobs
+  Business Operations: 1 jobs
+  B2C Sales: 1 jobs
+  Field Sales: 1 jobs
+  Content Marketing: 1 jobs
+  Social Media Marketing: 1 jobs
+  Data Science: 1 jobs
+  Graphic Design: 1 jobs
+  Video Editing: 1 jobs

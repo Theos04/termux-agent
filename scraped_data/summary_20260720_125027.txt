@@ -1,0 +1,14 @@
+============================================================
+Unstop Job Scraping Summary
+============================================================
+
+Scraped at: 2026-07-20 12:50:27
+Total jobs: 0
+Pages scraped: 0
+Duration: 0.03 seconds
+Errors: 2
+
+Errors:
+  - Navigation error: No WebSocket connection
+  - Failed to scrape page 1
+

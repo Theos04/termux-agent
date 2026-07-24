@@ -92,7 +92,7 @@ def fix_chrome_command(port, url):
     return cmd
 
 def main():
-    port = 9236  # Your upwork port
+    port = 9241  # Your upwork port
     url = "https://www.upwork.com/"
     
     print("🔍 Chrome DevTools Diagnostic Tool")

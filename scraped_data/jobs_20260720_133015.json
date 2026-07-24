@@ -1,0 +1,14 @@
+{
+  "session": "unstop",
+  "target_url": "https://unstop.com/job/",
+  "total_jobs": 0,
+  "pages_scraped": 2,
+  "jobs": [],
+  "errors": [
+    "Extraction exception: 'int' object has no attribute 'get'",
+    "Extraction exception: 'int' object has no attribute 'get'"
+  ],
+  "started_at": "2026-07-20 13:29:16.859427",
+  "completed_at": "2026-07-20 13:30:15.565670",
+  "duration_seconds": 58.706282
+}

@@ -1,0 +1,59 @@
+============================================================
+Unstop Job Scraping Summary
+============================================================
+
+Scraped at: 2026-07-16 16:19:29
+Total jobs: 261
+Pages scraped: 15
+Duration: 412.58 seconds
+Errors: 0
+
+Top 10 Companies:
+  EY: 9 jobs
+  Caterpillar Inc.: 6 jobs
+  Deloitte: 4 jobs
+  NIIT Limited: 4 jobs
+  Domestic Cluster Enterprise: 3 jobs
+  Next Art Creations: 3 jobs
+  Emversity: 3 jobs
+  Learning Routes Private Limited: 3 jobs
+  Wells Fargo: 3 jobs
+  Genpact: 3 jobs
+
+Top 10 Locations:
+  In Office  |  Bangalore: 50 jobs
+  In Office  |  Mumbai: 24 jobs
+  Work from Home: 22 jobs
+  In Office  |  Hyderabad: 14 jobs
+  In Office  |  Gurgaon: 13 jobs
+  In Office  |  Chennai: 13 jobs
+  In Office  |  Noida: 12 jobs
+  In Office  |  Pune: 10 jobs
+  Work from Home  | Pan India: 6 jobs
+  In Office  |  Jaipur: 6 jobs
+
+Job Types:
+  Full Time: 254 jobs
+  Part Time: 4 jobs
+
+Top 20 Skills:
+  Fresher: 226 jobs
+  Experienced Professionals: 98 jobs
+  Others: 56 jobs
+  Business Development: 27 jobs
+  Sales: 23 jobs
+  Customer Support: 17 jobs
+  Software Development: 14 jobs
+  Inside Sales: 12 jobs
+  Accounting: 12 jobs
+  Data Analysis: 11 jobs
+  Business Analysis: 10 jobs
+  Client Servicing: 10 jobs
+  B2B Sales: 9 jobs
+  Supply Chain Operations: 8 jobs
+  Field Sales: 8 jobs
+  Closed: 8 jobs
+  Business Operations: 7 jobs
+  B2C Sales: 6 jobs
+  Graphic Design: 6 jobs
+  Finance: 6 jobs

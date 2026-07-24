@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "Python Programming",
+    "description": "Advanced Python concepts and best practices",
+    "priority": "high",
+    "tags": [
+      "python",
+      "programming",
+      "development"
+    ],
+    "created": "2026-01-15 10:30:00",
+    "updated": "2026-01-15 10:30:00"
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning",
+    "description": "Introduction to ML algorithms",
+    "priority": "medium",
+    "tags": [
+      "ml",
+      "ai",
+      "data-science"
+    ],
+    "created": "2026-01-14 14:20:00",
+    "updated": "2026-01-14 14:20:00"
+  }
+]

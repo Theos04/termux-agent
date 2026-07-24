@@ -1,0 +1,14 @@
+{
+  "session": "unstop",
+  "target_url": "https://unstop.com/job/",
+  "total_jobs": 0,
+  "pages_scraped": 0,
+  "jobs": [],
+  "errors": [
+    "Navigation error: {'code': -32000, 'message': 'Inspected target navigated or closed'}",
+    "Failed to scrape page 1"
+  ],
+  "started_at": "2026-07-20 13:13:43.834817",
+  "completed_at": "2026-07-20 13:13:43.888878",
+  "duration_seconds": 0.054085
+}

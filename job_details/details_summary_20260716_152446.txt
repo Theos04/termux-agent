@@ -1,0 +1,43 @@
+============================================================
+Job Details Scraping Summary
+============================================================
+
+Total jobs: 0
+Errors: 5
+
+Errors:
+  - Failed to create JobDetail for https://unstop.com/jobs/customer-support-executive-international-voice-process-hire8global-1718890: 3 validation errors for JobDetail
+company
+  field required (type=value_error.missing)
+location
+  field required (type=value_error.missing)
+eligibility
+  str type expected (type=type_error.str)
+  - Failed to create JobDetail for https://unstop.com/jobs/store-inventory-executive-refratex-india-pvt-ltd-1718757: 3 validation errors for JobDetail
+company
+  field required (type=value_error.missing)
+location
+  field required (type=value_error.missing)
+eligibility
+  str type expected (type=type_error.str)
+  - Failed to create JobDetail for https://unstop.com/jobs/merchandiser-refratex-india-pvt-ltd-1718772: 3 validation errors for JobDetail
+company
+  field required (type=value_error.missing)
+location
+  field required (type=value_error.missing)
+eligibility
+  str type expected (type=type_error.str)
+  - Failed to create JobDetail for https://unstop.com/jobs/real-estate-sales-specialist-blanco-thornton-properties-1718762: 3 validation errors for JobDetail
+company
+  field required (type=value_error.missing)
+location
+  field required (type=value_error.missing)
+eligibility
+  str type expected (type=type_error.str)
+  - Failed to create JobDetail for https://unstop.com/jobs/business-development-executive-cutibless-healthcare-pvt-ltd-1718749: 3 validation errors for JobDetail
+company
+  field required (type=value_error.missing)
+location
+  field required (type=value_error.missing)
+eligibility
+  str type expected (type=type_error.str)

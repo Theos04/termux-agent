@@ -1,0 +1,316 @@
+{
+  "session": "unstop",
+  "target_url": "https://unstop.com/job/",
+  "total_jobs": 18,
+  "pages_scraped": 1,
+  "jobs": [
+    {
+      "title": "Business Development Executive-Bangalore",
+      "company": "PJN Technologies  Pvt Ltd",
+      "location": "In Office  |  Bangalore",
+      "url": "https://unstop.com/jobs/business-development-executive-bangalore-pjn-technologies-pvt-ltd-1719411",
+      "posted_date": "Jul 16, 2026",
+      "description": "Business Development Executive-Bangalore at PJN Technologies  Pvt Ltd",
+      "job_type": "Full Time",
+      "eligibility": null,
+      "skills": [
+        "B2B Sales",
+        "Business Development",
+        "Fresher"
+      ],
+      "source_id": "business-development-executive-bangalore-pjn-technologies-pvt-ltd-1719411",
+      "scraped_at": "2026-07-16 22:07:23.139166"
+    },
+    {
+      "title": "Research Associate Technical Content Creator",
+      "company": "iMatiz Technologies",
+      "location": "In Office  |  Bangalore",
+      "url": "https://unstop.com/jobs/research-associate-technical-content-creator-imatiz-technologies-1719389",
+      "posted_date": "Jul 16, 2026",
+      "description": "Research Associate Technical Content Creator at iMatiz Technologies",
+      "job_type": "Full Time",
+      "eligibility": null,
+      "skills": [
+        "Technical Writing",
+        "Fresher"
+      ],
+      "source_id": "research-associate-technical-content-creator-imatiz-technologies-1719389",
+      "scraped_at": "2026-07-16 22:07:23.139467"
+    },
+    {
+      "title": "Customer Support Executive - International Voice Process",
+      "company": "Hire8Global",
+      "location": "In Office  |  Hyderabad",
+      "url": "https://unstop.com/jobs/customer-support-executive-international-voice-process-hire8global-1718890",
+      "posted_date": "Jul 15, 2026",
+      "description": "Customer Support Executive - International Voice Process at Hire8Global",
+      "job_type": "Full Time",
+      "eligibility": null,
+      "skills": [
+        "Customer Support",
+        "Fresher",
+        "Experienced Professionals"
+      ],
+      "source_id": "customer-support-executive-international-voice-process-hire8global-1718890",
+      "scraped_at": "2026-07-16 22:07:23.139676"
+    },
+    {
+      "title": "Store Inventory Executive",
+      "company": "Refratex India Pvt. Ltd.",
+      "location": "In Office  |  Ghaziabad",
+      "url": "https://unstop.com/jobs/store-inventory-executive-refratex-india-pvt-ltd-1718757",
+      "posted_date": "Jul 15, 2026",
+      "description": "Store Inventory Executive at Refratex India Pvt. Ltd.",
+      "job_type": "Full Time",
+      "eligibility": null,
+      "skills": [
+        "Supply Chain Operations",
+        "Inventory Management",
+        "Fresher"
+      ],
+      "source_id": "store-inventory-executive-refratex-india-pvt-ltd-1718757",
+      "scraped_at": "2026-07-16 22:07:23.139880"
+    },
+    {
+      "title": "Merchandiser",
+      "company": "Refratex India Pvt. Ltd.",
+      "location": "In Office  |  Ghaziabad",
+      "url": "https://unstop.com/jobs/merchandiser-refratex-india-pvt-ltd-1718772",
+      "posted_date": "Jul 15, 2026",
+      "description": "Merchandiser at Refratex India Pvt. Ltd.",
+      "job_type": "Full Time",
+      "eligibility": null,
+      "skills": [
+        "Business Operations",
+        "Supply Chain Operations",
+        "Fresher"
+      ],
+      "source_id": "merchandiser-refratex-india-pvt-ltd-1718772",
+      "scraped_at": "2026-07-16 22:07:23.140059"
+    },
+    {
+      "title": "Real Estate Sales Specialist",
+      "company": "Blanco Thornton Properties",
+      "location": "In Office  |  Noida",
+      "url": "https://unstop.com/jobs/real-estate-sales-specialist-blanco-thornton-properties-1718762",
+      "posted_date": "Jul 15, 2026",
+      "description": "Real Estate Sales Specialist at Blanco Thornton Properties",
+      "job_type": "Full Time",
+      "eligibility": null,
+      "skills": [
+        "B2C Sales",
+        "Fresher",
+        "Experienced Professionals"
+      ],
+      "source_id": "real-estate-sales-specialist-blanco-thornton-properties-1718762",
+      "scraped_at": "2026-07-16 22:07:23.140225"
+    },
+    {
+      "title": "Business Development Executive",
+      "company": "Cutibless Healthcare Pvt Ltd",
+      "location": "In Office  |  Bangalore",
+      "url": "https://unstop.com/jobs/business-development-executive-cutibless-healthcare-pvt-ltd-1718749",
+      "posted_date": "Jul 15, 2026",
+      "description": "Business Development Executive at Cutibless Healthcare Pvt Ltd",
+      "job_type": "Full Time",
+      "eligibility": null,
+      "skills": [
+        "Field Sales",
+        "Business Development",
+        "Fresher"
+      ],
+      "source_id": "business-development-executive-cutibless-healthcare-pvt-ltd-1718749",
+      "scraped_at": "2026-07-16 22:07:23.140389"
+    },
+    {
+      "title": "Telecalling Executive",
+      "company": "Cutibless Healthcare Pvt Ltd",
+      "location": "In Office  |  Bangalore",
+      "url": "https://unstop.com/jobs/telecalling-executive-cutibless-healthcare-pvt-ltd-1718735",
+      "posted_date": "Jul 15, 2026",
+      "description": "Telecalling Executive at Cutibless Healthcare Pvt Ltd",
+      "job_type": "Full Time",
+      "eligibility": null,
+      "skills": [
+        "Customer Support",
+        "Inside Sales",
+        "Fresher"
+      ],
+      "source_id": "telecalling-executive-cutibless-healthcare-pvt-ltd-1718735",
+      "scraped_at": "2026-07-16 22:07:23.140547"
+    },
+    {
+      "title": "BD / Pre Sales Associate",
+      "company": "LeadUpAI",
+      "location": "Work from Home  | Pan India",
+      "url": "https://unstop.com/jobs/bd-pre-sales-associate-leadupai-1718731",
+      "posted_date": "Jul 15, 2026",
+      "description": "BD / Pre Sales Associate at LeadUpAI",
+      "job_type": null,
+      "eligibility": null,
+      "skills": [
+        "Inside Sales",
+        "Business Development",
+        "Fresher"
+      ],
+      "source_id": "bd-pre-sales-associate-leadupai-1718731",
+      "scraped_at": "2026-07-16 22:07:23.140729"
+    },
+    {
+      "title": "Inside Sales Executive",
+      "company": "Zyrax Fitness",
+      "location": "Hybrid  |  Agra",
+      "url": "https://unstop.com/jobs/inside-sales-executive-zyrax-fitness-1718723",
+      "posted_date": "Jul 15, 2026",
+      "description": "Inside Sales Executive at Zyrax Fitness",
+      "job_type": "Full Time",
+      "eligibility": null,
+      "skills": [
+        "Inside Sales",
+        "Fresher",
+        "Experienced Professionals"
+      ],
+      "source_id": "inside-sales-executive-zyrax-fitness-1718723",
+      "scraped_at": "2026-07-16 22:07:23.141026"
+    },
+    {
+      "title": "Content Creator",
+      "company": "Brand Balance",
+      "location": "In Office  |  Jaipur",
+      "url": "https://unstop.com/jobs/content-creator-brand-balance-1718698",
+      "posted_date": "Jul 15, 2026",
+      "description": "Content Creator at Brand Balance",
+      "job_type": "Full Time",
+      "eligibility": "1 -",
+      "skills": [
+        "Content Marketing",
+        "Fresher",
+        "Experienced Professionals"
+      ],
+      "source_id": "content-creator-brand-balance-1718698",
+      "scraped_at": "2026-07-16 22:07:23.141233"
+    },
+    {
+      "title": "Business Development Executive",
+      "company": "Hive rift softwares Pvt ltd",
+      "location": "In Office  |  Delhi",
+      "url": "https://unstop.com/jobs/business-development-executive-hive-rift-softwares-pvt-ltd-1718619",
+      "posted_date": "Jul 15, 2026",
+      "description": "Business Development Executive at Hive rift softwares Pvt ltd",
+      "job_type": "Full Time",
+      "eligibility": "1 -",
+      "skills": [
+        "Business Development",
+        "Experienced Professionals",
+        "Fresher"
+      ],
+      "source_id": "business-development-executive-hive-rift-softwares-pvt-ltd-1718619",
+      "scraped_at": "2026-07-16 22:07:23.141450"
+    },
+    {
+      "title": "Corporate Lead Generation Executive",
+      "company": "BTW Visa Services Pvt. Ltd.",
+      "location": "In Office  |  Thane",
+      "url": "https://unstop.com/jobs/corporate-lead-generation-executive-btw-visa-services-pvt-ltd-1718627",
+      "posted_date": "Jul 15, 2026",
+      "description": "Corporate Lead Generation Executive at BTW Visa Services Pvt. Ltd.",
+      "job_type": "Full Time",
+      "eligibility": null,
+      "skills": [
+        "Inside Sales",
+        "Business Development",
+        "Fresher"
+      ],
+      "source_id": "corporate-lead-generation-executive-btw-visa-services-pvt-ltd-1718627",
+      "scraped_at": "2026-07-16 22:07:23.141640"
+    },
+    {
+      "title": "Social Media Content Creator",
+      "company": "Yoi  Media LLP",
+      "location": "In Office  |  Hyderabad",
+      "url": "https://unstop.com/jobs/social-media-creator-yoi-media-llp-1718617",
+      "posted_date": "Jul 15, 2026",
+      "description": "Social Media Content Creator at Yoi  Media LLP",
+      "job_type": "Full Time",
+      "eligibility": "1 -",
+      "skills": [
+        "Social Media Marketing",
+        "Fresher",
+        "Experienced Professionals"
+      ],
+      "source_id": "social-media-creator-yoi-media-llp-1718617",
+      "scraped_at": "2026-07-16 22:07:23.141819"
+    },
+    {
+      "title": "Data Scientist - Analytics & GenAI",
+      "company": "KGP Talkie",
+      "location": "Work from Home",
+      "url": "https://unstop.com/jobs/data-scientist-analytics-genai-kgp-talkie-1718591",
+      "posted_date": "Jul 15, 2026",
+      "description": "Data Scientist - Analytics & GenAI at KGP Talkie",
+      "job_type": "Full Time",
+      "eligibility": "1 -",
+      "skills": [
+        "Data Science",
+        "Fresher",
+        "Experienced Professionals"
+      ],
+      "source_id": "data-scientist-analytics-genai-kgp-talkie-1718591",
+      "scraped_at": "2026-07-16 22:07:23.141983"
+    },
+    {
+      "title": "Business Development Executive",
+      "company": "Genius Group Global",
+      "location": "In Office  |  Ernakulam",
+      "url": "https://unstop.com/jobs/business-development-executive-genius-group-global-1718470",
+      "posted_date": "Jul 15, 2026",
+      "description": "Business Development Executive at Genius Group Global",
+      "job_type": "Full Time",
+      "eligibility": null,
+      "skills": [
+        "Business Development",
+        "Fresher"
+      ],
+      "source_id": "business-development-executive-genius-group-global-1718470",
+      "scraped_at": "2026-07-16 22:07:23.142137"
+    },
+    {
+      "title": "Creative Designer",
+      "company": "Urban Culture",
+      "location": "In Office  |  Jaipur",
+      "url": "https://unstop.com/jobs/creative-designer-urban-culture-1718442",
+      "posted_date": "Jul 15, 2026",
+      "description": "Creative Designer at Urban Culture",
+      "job_type": "Full Time",
+      "eligibility": "1 -",
+      "skills": [
+        "Graphic Design",
+        "Video Editing",
+        "Fresher"
+      ],
+      "source_id": "creative-designer-urban-culture-1718442",
+      "scraped_at": "2026-07-16 22:07:23.142303"
+    },
+    {
+      "title": "Business Development Executive (BDE)",
+      "company": "Glocert Certifications India Private Limited",
+      "location": "In Office  |  Coimbatore",
+      "url": "https://unstop.com/jobs/business-development-executive-bde-glocert-certifications-india-private-limited-1718494",
+      "posted_date": "Jul 15, 2026",
+      "description": "Business Development Executive (BDE) at Glocert Certifications India Private Limited",
+      "job_type": "Full Time",
+      "eligibility": "1 -",
+      "skills": [
+        "B2B Sales",
+        "Business Development",
+        "Fresher"
+      ],
+      "source_id": "business-development-executive-bde-glocert-certifications-india-private-limited-1718494",
+      "scraped_at": "2026-07-16 22:07:23.142467"
+    }
+  ],
+  "errors": [],
+  "started_at": "2026-07-16 22:06:56.431953",
+  "completed_at": "2026-07-16 22:07:23.143992",
+  "duration_seconds": 26.712047
+}

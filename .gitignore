@@ -32,3 +32,57 @@ temp/
 # Virtual env
 venv/
 .env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+dump.rdb
+
+# Logs
+logs/
+*.log
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+
+# Generated JSON dumps
+page_analysis_*.json
+dom_tree_*.json
+ax_tree_*.json
+snapshot_*.json
+semantic_elements_*.json
+crawl_*.json
+deepseek_chat_*.json
+notebooklm_*.json
+har_*.json
+scraped_*.json
+
+# Generated text
+deepseek_chat_*.txt
+notebooklm_*.txt
+
+# Screenshots
+*.png
+
+# Temporary
+*.bak
+~
+
+# Celery
+celerybeat-schedule*
+
+# OS
+.DS_Store
+Thumbs.db

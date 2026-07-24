@@ -17,7 +17,7 @@ from flask_cors import CORS
 
 # Import your existing modules
 from cdpv116 import ChromeSessionManager, Config
-from fetch_page2 import ChromePage
+from fetch_page_llm5 import ChromePage
 from session_db import SessionDB
 
 # Setup logging
@@ -45,7 +45,7 @@ class JobState:
         self.current_job = None
         self.last_update = None
         self.session_id = None
-        self.port = 9226
+        self.port = 9258
         self._lock = threading.Lock()
         
     def add_job(self, job_data: Dict):
@@ -152,7 +152,7 @@ script_manager = ScriptManager()
 # Chrome Session Management
 # ============================================================================
 
-def init_chrome_session(port: int = 9226):
+def init_chrome_session(port: int = 9258):
     """Initialize a Chrome session on the specified port"""
     global chrome_manager, chrome_page
     
@@ -254,7 +254,7 @@ def index():
             <p>Using specialized JavaScript scripts from scripts-library/unstop</p>
             
             <div class="status running">
-                <strong>Status:</strong> Running on port 9226
+                <strong>Status:</strong> Running on port 9258
             </div>
             
             <h2>📜 Available Scripts</h2>
@@ -286,7 +286,7 @@ def index():
             <div class="endpoint">
                 <span class="method post">POST</span>
                 <strong>/api/init</strong>
-                <p>Initialize Chrome session on port 9226</p>
+                <p>Initialize Chrome session on port 9258</p>
             </div>
             
             <div class="endpoint">
@@ -429,7 +429,7 @@ def api_status():
             **stats,
             'chrome_connected': chrome_page is not None and chrome_page.connected,
             'session_id': job_state.session_id,
-            'port': 9226,
+            'port': 9258,
             'available_scripts': script_manager.list_scripts()
         }
     })
@@ -438,7 +438,7 @@ def api_status():
 def api_init():
     """Initialize Chrome session"""
     try:
-        success = init_chrome_session(9226)
+        success = init_chrome_session(9258)
         
         if success:
             # Navigate to Unstop
@@ -448,9 +448,9 @@ def api_init():
             
             return jsonify({
                 'status': 'success',
-                'message': 'Chrome session initialized on port 9226',
+                'message': 'Chrome session initialized on port 9258',
                 'data': {
-                    'port': 9226,
+                    'port': 9258,
                     'session_id': job_state.session_id,
                     'connected': chrome_page is not None and chrome_page.connected,
                     'scripts': script_manager.list_scripts()
@@ -701,7 +701,7 @@ def main():
 ╔═══════════════════════════════════════════════════════════╗
 ║           🤖 Unstop Automation API                        ║
 ║           Using Specialized JS Scripts                   ║
-║           Port: 9226                                     ║
+║           Port: 9258                                     ║
 ╚═══════════════════════════════════════════════════════════╝
     """)
     
@@ -709,8 +709,8 @@ def main():
     print()
     
     # Initialize Chrome
-    print("Initializing Chrome on port 9226...")
-    init_chrome_session(9226)
+    print("Initializing Chrome on port 9258...")
+    init_chrome_session(9258)
     
     # Start background fetcher
     background_thread = threading.Thread(target=background_fetcher, daemon=True)

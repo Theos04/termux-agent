@@ -1,0 +1,14 @@
+============================================================
+Unstop Job Scraping Summary
+============================================================
+
+Scraped at: 2026-07-20 13:16:36
+Total jobs: 0
+Pages scraped: 0
+Duration: 0.04 seconds
+Errors: 2
+
+Errors:
+  - Navigation error: {'code': -32000, 'message': 'Inspected target navigated or closed'}
+  - Failed to scrape page 1
+

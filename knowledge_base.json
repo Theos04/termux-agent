@@ -1,0 +1,65 @@
+{
+  "topics": [
+    {
+      "id": 2,
+      "title": "Machine Learning Fundamentals",
+      "description": "Understanding core ML concepts: supervised learning, unsupervised learning, and reinforcement learning.",
+      "priority": "high",
+      "tags": [
+        "ml",
+        "ai",
+        "data-science"
+      ],
+      "created": "2026-07-22 17:04:41",
+      "updated": "2026-07-22 17:04:41"
+    },
+    {
+      "id": 1,
+      "title": "Python Best Practices",
+      "description": "Writing clean, efficient, and maintainable Python code following PEP 8 guidelines.",
+      "priority": "high",
+      "tags": [
+        "python",
+        "programming",
+        "best-practices"
+      ],
+      "created": "2026-07-22 17:04:41",
+      "updated": "2026-07-22 17:04:41"
+    },
+    {
+      "id": 3,
+      "title": "Web Development with Flask",
+      "description": "Building web applications using Flask framework with REST APIs and database integration.",
+      "priority": "medium",
+      "tags": [
+        "web",
+        "flask",
+        "python"
+      ],
+      "created": "2026-07-22 17:04:41",
+      "updated": "2026-07-22 17:04:41"
+    },
+    {
+      "id": 4,
+      "title": "Docker Containerization",
+      "description": "Containerizing applications with Docker for consistent deployment and scaling.",
+      "priority": "low",
+      "tags": [
+        "docker",
+        "devops",
+        "containers"
+      ],
+      "created": "2026-07-22 17:04:41",
+      "updated": "2026-07-22 17:04:41"
+    },
+    {
+      "id": 5,
+      "title": "hovsvg",
+      "description": "",
+      "priority": "medium",
+      "tags": [],
+      "created": "2026-07-22 20:18:29",
+      "updated": "2026-07-22 20:18:29"
+    }
+  ]
+}

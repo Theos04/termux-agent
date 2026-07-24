@@ -1,0 +1,50 @@
+============================================================
+Unstop Hackathon Scraping Summary
+============================================================
+
+Scraped at: 2026-07-16 22:21:02
+Total hackathons: 85
+Pages scraped: 5
+Duration: 139.46 seconds
+Errors: 0
+
+Top 10 Organizations:
+  H & P Projects: 5 hackathons
+  Inderprastha Engineering College (IPEC), Ghaziabad: 2 hackathons
+  Indian Institute of Technology (IIT), Bombay: 2 hackathons
+  Paper Buddy: 2 hackathons
+  Algo University: 2 hackathons
+  Go Beyond Tickets: 1 hackathons
+  Vellore Institute of Technology (VIT), Chennai: 1 hackathons
+  Coimbatore Institute of Technology (CIT), Coimbatore: 1 hackathons
+  National Institute of Technology (NIT), Delhi: 1 hackathons
+  Nexploit: 1 hackathons
+
+Top 10 Locations:
+  Online: 85 hackathons
+
+Status Distribution:
+  Online: 46 hackathons
+  Open: 39 hackathons
+
+Top 20 Skills/Technologies:
+  Undergraduate: 56 hackathons
+  Postgraduate: 46 hackathons
+  Engineering Students: 30 hackathons
+  Software Development: 28 hackathons
+  Quizzes & Treasure Hunt: 28 hackathons
+  Others: 17 hackathons
+  Everyone can apply: 14 hackathons
+  Applied AI: 13 hackathons
+  Data Science: 9 hackathons
+  Machine Learning Engineering: 6 hackathons
+  School Students: 3 hackathons
+  Data Analysis: 3 hackathons
+  Web Development: 2 hackathons
+  Business Development: 2 hackathons
+  Fresher: 2 hackathons
+  Cloud Engineering: 2 hackathons
+  Closed: 2 hackathons
+  Project Management: 2 hackathons
+  Frontend Development: 2 hackathons
+  IT Operations: 2 hackathons
