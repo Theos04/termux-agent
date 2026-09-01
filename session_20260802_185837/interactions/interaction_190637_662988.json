@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "session_id": "20260802_185837",
+    "timestamp": "2026-08-02T19:06:37.663413",
+    "tab_url": "https://web.whatsapp.com/",
+    "tab_title": "WhatsApp",
+    "context": {
+      "type": "script_execution"
+    },
+    "interaction_number": 5,
+    "command_index": 16
+  },
+  "data": {
+    "script_file": "/data/data/com.termux/files/home/automation/chrome-launcher/scripts-library/whatsapp/mynumber_code.js",
+    "script_content": "// WhatsApp Web - Comprehensive code finder with page analysis\n(function() {\n    console.log('\ud83d\udd0d WhatsApp Web - Comprehensive Code Finder');\n    \n    // Get current page info\n    const pageInfo = {\n        url: window.location.href,\n        title: document.title,\n        tabId: window.name || 'unknown'\n    };\n    console.log('\ud83d\udcc4 Page Info:', pageInfo);\n    \n    // Search for code using multiple strategies\n    function findCode() {\n        let results = [];\n        \n        // Strategy 1: Look for ...",
+    "result": {
+      "success": true,
+      "code": "J,V,S,2,X,W,5,J",
+      "formatted": "J V S 2 X W 5 J",
+      "characters": [
+        "J",
+        "V",
+        "S",
+        "2",
+        "X",
+        "W",
+        "5",
+        "J"
+      ],
+      "method": "data-link-code",
+      "allCodes": [
+        {
+          "code": "J,V,S,2,X,W,5,J",
+          "method": "data-link-code",
+          "element": "DIV",
+          "class": "",
+          "id": ""
+        }
+      ],
+      "pageInfo": {
+        "url": "https://web.whatsapp.com/",
+        "title": "WhatsApp",
+        "tabId": "unknown"
+      },
+      "domStructure": {
+        "dataLinkCodes": [
+          {
+            "code": "J,V,S,2,X,W,5,J",
+            "tag": "DIV",
+            "class": "",
+            "id": ""
+          }
+        ],
+        "ariaDetails": [
+          {
+            "aria": "link-device-phone-number-code-screen-instructions",
+            "tag": "DIV",
+            "class": ""
+          }
+        ],
+        "testIds": [
+          {
+            "testid": "wa-logo",
+            "tag": "SPAN",
+            "class": ""
+          },
+          {
+            "testid": "wa-wordmark",
+            "tag": "SPAN",
+            "class": ""
+          },
+          {
+            "testid": "clickable-link",
+            "tag": "A",
+            "class": "x1v5yvga x1xlr1w8 xt0b8zv xbvygy2 x17f7hit xp30eni xhmieyt xtnn1bt x9v5kkp xmw7ebm xrdum7p"
+          },
+          {
+            "testid": "link-with-phone-number-code-cells",
+            "tag": "DIV",
+            "class": ""
+          },
+          {
+            "testid": "wa-square-icon",
+            "tag": "SPAN",
+            "class": ""
+          },
+          {
+            "testid": "menu",
+            "tag": "SPAN",
+            "class": ""
+          },
+          {
+            "testid": "settings-iphone",
+            "tag": "SPAN",
+            "class": ""
+          },
+          {
+            "testid": "link-device-qrcode-alt-linking-hint",
+            "tag": "DIV",
+            "class": "x1ypdohk xujl8zx x1vs5fdg xewurvo x3pynha xowvryd xk50ysn xcul1l7 x90lxvo"
+          },
+          {
+            "testid": "wa-brand-arrow-right",
+            "tag": "SPAN",
+            "class": ""
+          },
+          {
+            "testid": "link-device-qrcode-alt-linking-help",
+            "tag": "DIV",
+            "class": "x1ypdohk x1rg5ohu xowvryd xk50ysn xcul1l7 x90lxvo xujl8zx x1vs5fdg xewurvo x3pynha"
+          },
+          {
+            "testid": "wa-brand-arrow-out",
+            "tag": "SPAN",
+            "class": ""
+          },
+          {
+            "testid": "lock-outline",
+            "tag": "SPAN",
+            "class": ""
+          },
+          {
+            "testid": "link-device-qrcode-alt-linking-tc",
+            "tag": "DIV",
+            "class": "x1ypdohk x65c15g x2b8uid x1pg5gke xo1l8bm xetkqiv xqhqf4p xt0b8zv"
+          }
+        ]
+      }
+    },
+    "execution_time": "2026-08-02T19:06:37.662877"
+  }
+}

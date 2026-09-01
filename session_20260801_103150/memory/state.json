@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "session_id": "20260801_103150",
+    "start_time": "2026-08-01T10:31:50.593340",
+    "end_time": null,
+    "chrome_port": 9257,
+    "tab_url": "https://www.naukri.com/mnjuser/recommendedjobs",
+    "tab_title": "Recommended Jobs | Mynaukri",
+    "total_commands": 70,
+    "snapshots_taken": [],
+    "files_generated": {}
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 70,
+  "last_updated": "2026-08-01T10:32:23.110706"
+}

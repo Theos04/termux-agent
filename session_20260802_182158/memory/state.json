@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "session_id": "20260802_182158",
+    "start_time": "2026-08-02T18:21:58.074326",
+    "end_time": "2026-08-02T18:23:49.375955",
+    "chrome_port": 9258,
+    "tab_url": "https://unstop.com/hackathons/y-hack26-24-hour-national-hackathon-kpr-institute-of-engineering-and-technology-kpriet-coimbatore-1702198",
+    "tab_title": "Y-Hack&#39;26 \u2013 24-Hour National Hackathon - 2026",
+    "total_commands": 10,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 1,
+      "snapshots": 1,
+      "accessibility": 2
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "session_20260802_182158/dom_trees/dom_182207_144136.json",
+      "metadata": {
+        "session_id": "20260802_182158",
+        "timestamp": "2026-08-02T18:22:07.144305",
+        "tab_url": "https://unstop.com/",
+        "tab_title": "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 3275,
+        "command_index": 2
+      }
+    },
+    "last_snapshot": {
+      "file": "session_20260802_182158/snapshots/snapshot_182209_770890.json",
+      "metadata": {
+        "session_id": "20260802_182158",
+        "timestamp": "2026-08-02T18:22:09.771022",
+        "tab_url": "https://unstop.com/",
+        "tab_title": "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+        "context": {
+          "method": "DOMSnapshot.getSnapshot",
+          "params": {
+            "computedStyleWhitelist": [],
+            "includeEventListeners": false,
+            "includePaintOrder": false,
+            "includeUserAgentShadowTree": true
+          }
+        },
+        "dom_node_count": 3561,
+        "layout_tree_count": 0,
+        "computed_styles_count": 0,
+        "command_index": 5
+      }
+    },
+    "last_accessibility": {
+      "file": "session_20260802_182158/accessibility/a11y_182346_034939.json",
+      "metadata": {
+        "session_id": "20260802_182158",
+        "timestamp": "2026-08-02T18:23:46.035078",
+        "tab_url": "https://unstop.com/hackathons/y-hack26-24-hour-national-hackathon-kpr-institute-of-engineering-and-technology-kpriet-coimbatore-1702198",
+        "tab_title": "Y-Hack&#39;26 \u2013 24-Hour National Hackathon - 2026",
+        "context": {
+          "method": "Accessibility.getFullAXTree"
+        },
+        "node_count": 555,
+        "command_index": 10
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 10,
+  "last_updated": "2026-08-02T18:23:49.377928"
+}

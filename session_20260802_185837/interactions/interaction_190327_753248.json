@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "session_id": "20260802_185837",
+    "timestamp": "2026-08-02T19:03:27.753555",
+    "tab_url": "devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@07b52360cc15066f987c910ab34dfbcd4a8778d2/&targetType=tab&can_dock=true&panel=elements",
+    "tab_title": "DevTools - web.whatsapp.com/",
+    "context": {
+      "type": "script_execution"
+    },
+    "interaction_number": 2,
+    "command_index": 6
+  },
+  "data": {
+    "script_file": "/data/data/com.termux/files/home/automation/chrome-launcher/scripts-library/whatsapp/mynumber_code.js",
+    "script_content": "// WhatsApp Web - Extract and display the link code\n(function() {\n    console.log('\ud83d\udd0d WhatsApp Web - Extracting Link Code');\n    \n    function extractLinkCode() {\n        // Method 1: Find by data-testid\n        const codeElement = document.querySelector('[data-testid=\"link-with-phone-number-code-cells\"]');\n        if (codeElement) {\n            const code = codeElement.getAttribute('data-link-code');\n            if (code) {\n                return {\n                    success: true,\n            ...",
+    "result": {
+      "success": false,
+      "message": "Code not found on page",
+      "debug": {
+        "success": false,
+        "message": "Code not found",
+        "allDataLinkCodes": []
+      }
+    },
+    "execution_time": "2026-08-02T19:03:27.753137"
+  }
+}

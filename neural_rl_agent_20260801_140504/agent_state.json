@@ -1,0 +1,29 @@
+{
+  "cycle": 20,
+  "goal_achieved": false,
+  "best_reward": 15.0,
+  "episodes": 17,
+  "best_path": {
+    "actions": [
+      "navigate|jobs1|navigation",
+      "navigate|jobs1|navigation",
+      "navigate|jobs1|navigation",
+      "navigate|saved jobs|navigation",
+      "navigate|mnc|navigation"
+    ],
+    "reward": 15.0,
+    "cycle": 19
+  },
+  "success_count": 12,
+  "unique_states": 13,
+  "discovery_rate": 1.0,
+  "pattern_stats": {
+    "total_patterns": 5,
+    "total_sequences": 14,
+    "successful_sequences": 0,
+    "unique_state_types": 2,
+    "unique_actions": 10
+  },
+  "evolution_generation": 2,
+  "timestamp": "2026-08-01T14:06:54.916493"
+}

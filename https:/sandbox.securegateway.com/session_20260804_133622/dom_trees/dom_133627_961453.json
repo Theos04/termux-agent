@@ -1,0 +1,3123 @@
+{
+  "metadata": {
+    "session_id": "20260804_133622",
+    "timestamp": "2026-08-04T13:36:27.961711",
+    "tab_url": "https://sandbox.securegateway.com/",
+    "tab_title": "Secure Gateway\u00ae Sandbox for Penetration Testing-ALSCO",
+    "context": {
+      "depth": -1,
+      "pierce": true,
+      "method": "DOM.getDocument"
+    },
+    "node_count": 252,
+    "command_index": 2
+  },
+  "data": {
+    "nodeId": 1,
+    "backendNodeId": 1,
+    "nodeType": 9,
+    "nodeName": "#document",
+    "localName": "",
+    "nodeValue": "",
+    "childNodeCount": 2,
+    "children": [
+      {
+        "nodeId": 2,
+        "parentId": 1,
+        "backendNodeId": 20,
+        "nodeType": 10,
+        "nodeName": "html",
+        "localName": "",
+        "nodeValue": "",
+        "publicId": "",
+        "systemId": ""
+      },
+      {
+        "nodeId": 3,
+        "parentId": 1,
+        "backendNodeId": 21,
+        "nodeType": 1,
+        "nodeName": "HTML",
+        "localName": "html",
+        "nodeValue": "",
+        "childNodeCount": 2,
+        "children": [
+          {
+            "nodeId": 4,
+            "parentId": 3,
+            "backendNodeId": 22,
+            "nodeType": 1,
+            "nodeName": "HEAD",
+            "localName": "head",
+            "nodeValue": "",
+            "childNodeCount": 10,
+            "children": [
+              {
+                "nodeId": 5,
+                "parentId": 4,
+                "backendNodeId": 23,
+                "nodeType": 1,
+                "nodeName": "META",
+                "localName": "meta",
+                "nodeValue": "",
+                "childNodeCount": 0,
+                "children": [],
+                "attributes": [
+                  "charset",
+                  "UTF-8"
+                ]
+              },
+              {
+                "nodeId": 6,
+                "parentId": 4,
+                "backendNodeId": 24,
+                "nodeType": 1,
+                "nodeName": "META",
+                "localName": "meta",
+                "nodeValue": "",
+                "childNodeCount": 0,
+                "children": [],
+                "attributes": [
+                  "name",
+                  "viewport",
+                  "content",
+                  "width=device-width, initial-scale=1.0"
+                ]
+              },
+              {
+                "nodeId": 7,
+                "parentId": 4,
+                "backendNodeId": 25,
+                "nodeType": 1,
+                "nodeName": "LINK",
+                "localName": "link",
+                "nodeValue": "",
+                "childNodeCount": 0,
+                "children": [],
+                "attributes": [
+                  "rel",
+                  "shortcut icon",
+                  "href",
+                  "favicon.ico",
+                  "type",
+                  "image/x-icon"
+                ]
+              },
+              {
+                "nodeId": 8,
+                "parentId": 4,
+                "backendNodeId": 26,
+                "nodeType": 1,
+                "nodeName": "TITLE",
+                "localName": "title",
+                "nodeValue": "",
+                "childNodeCount": 1,
+                "children": [
+                  {
+                    "nodeId": 9,
+                    "parentId": 8,
+                    "backendNodeId": 27,
+                    "nodeType": 3,
+                    "nodeName": "#text",
+                    "localName": "",
+                    "nodeValue": "Secure Gateway\u00ae Sandbox for Penetration Testing-ALSCO"
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "nodeId": 10,
+                "parentId": 4,
+                "backendNodeId": 28,
+                "nodeType": 1,
+                "nodeName": "META",
+                "localName": "meta",
+                "nodeValue": "",
+                "childNodeCount": 0,
+                "children": [],
+                "attributes": [
+                  "name",
+                  "description",
+                  "content",
+                  "Secure Gateway\u00ae and ALSCO\u00ae Sandbox for Penetration Testing provides a safe environment for testing authentication, file uploads, content detection, and vulnerability assessments. Explore our secure testing environment."
+                ]
+              },
+              {
+                "nodeId": 11,
+                "parentId": 4,
+                "backendNodeId": 29,
+                "nodeType": 1,
+                "nodeName": "META",
+                "localName": "meta",
+                "nodeValue": "",
+                "childNodeCount": 0,
+                "children": [],
+                "attributes": [
+                  "name",
+                  "keywords",
+                  "content",
+                  "Secure Gateway\u00ae Sandbox, Penetration Testing,WAF, ALSCO, ALSCO TODAY, ALSCO SOFTWARE,\u0627\u0644\u0633\u0643\u0648 , \u0627\u0644\u0633\u0643\u0648 \u0633\u0648\u0641\u062a\u0648\u064a\u0631, \u0634\u0631\u0643\u0629 \u0627\u0644\u0633\u0643\u0648 \u062a\u0648\u062f\u064a, \u0627\u0644\u0633\u0643\u064a\u0648\u0631\u0643\u064a\u062a\u0648\u064a, Cybersecurity Testing,hackerone,ALSCO hackerone, ALSCO Secure Gateway, ALSCO Bug Bounty, Secure Gateway Bug Bounty,Royal Bug Bounty , File Upload Testing, Authentication Testing, Secure File Upload, SQL Injection Testing, XSS Testing, Bug Bounty Program, ALSCO Security"
+                ]
+              },
+              {
+                "nodeId": 12,
+                "parentId": 4,
+                "backendNodeId": 30,
+                "nodeType": 8,
+                "nodeName": "#comment",
+                "localName": "",
+                "nodeValue": " Fonts and Icons "
+              },
+              {
+                "nodeId": 13,
+                "parentId": 4,
+                "backendNodeId": 31,
+                "nodeType": 1,
+                "nodeName": "LINK",
+                "localName": "link",
+                "nodeValue": "",
+                "childNodeCount": 0,
+                "children": [],
+                "attributes": [
+                  "href",
+                  "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap",
+                  "rel",
+                  "stylesheet"
+                ]
+              },
+              {
+                "nodeId": 14,
+                "parentId": 4,
+                "backendNodeId": 32,
+                "nodeType": 1,
+                "nodeName": "LINK",
+                "localName": "link",
+                "nodeValue": "",
+                "childNodeCount": 0,
+                "children": [],
+                "attributes": [
+                  "rel",
+                  "stylesheet",
+                  "href",
+                  "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                ]
+              },
+              {
+                "nodeId": 15,
+                "parentId": 4,
+                "backendNodeId": 33,
+                "nodeType": 1,
+                "nodeName": "STYLE",
+                "localName": "style",
+                "nodeValue": "",
+                "childNodeCount": 1,
+                "children": [
+                  {
+                    "nodeId": 16,
+                    "parentId": 15,
+                    "backendNodeId": 34,
+                    "nodeType": 3,
+                    "nodeName": "#text",
+                    "localName": "",
+                    "nodeValue": "\n        body {\n            font-family: 'Inter', sans-serif;\n            margin: 0;\n            padding: 0;\n            background-color: #f8f9fa;\n            color: #333;\n        }\n\n        /* Navbar */\n        .navbar {\n            background-color: #002855;\n        }\n\n        .navbar-brand {\n            color: #fff;\n            font-weight: 700;\n            font-size: 1.6rem;\n        }\n\n        .navbar-nav .nav-link {\n            color: #ddd;\n            font-weight: 600;\n        }\n\n        .navbar-nav .nav-link:hover {\n            color: #fff;\n        }\n\n        /* Hero Section */\n        .hero {\n            background: linear-gradient(to bottom, #003366, #002855), url('https://via.placeholder.com/1920x1080') center/cover no-repeat;\n            color: #fff;\n            padding: 5rem 1rem;\n            text-align: center;\n        }\n\n        .hero h1 {\n            font-size: 3rem;\n            font-weight: 700;\n            margin-bottom: 1.5rem;\n        }\n\n        .hero p {\n            font-size: 1.25rem;\n            margin-bottom: 2rem;\n        }\n\n        /* Info Boxes */\n        .info-boxes {\n            padding: 3rem 1rem;\n            background-color: #fff;\n        }\n\n        .info-boxes h2 {\n            text-align: center;\n            font-size: 2rem;\n            font-weight: 700;\n            color: #004085;\n            margin-bottom: 2rem;\n        }\n\n        .info-box {\n            border: 1px solid #ddd;\n            border-radius: 0.5rem;\n            padding: 1.5rem;\n            background: #f8f9fa;\n            margin-bottom: 1.5rem;\n            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\n            transition: transform 0.3s ease, box-shadow 0.3s ease;\n        }\n\n        .info-box:hover {\n            transform: translateY(-10px);\n            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);\n        }\n\n        .info-box h3 {\n            font-size: 1.25rem;\n            font-weight: 600;\n            color: #004085;\n        }\n\n        .info-box p {\n            font-size: 1rem;\n            line-height: 1.6;\n        }\n\n        .info-box.warning {\n            background-color: #fff3cd;\n            border-left: 5px solid #ffc107;\n            color: #856404;\n        }\n\n        /* Footer */\n        .footer {\n            background: linear-gradient(to bottom, #004085, #003366);\n            color: #ccc;\n            padding: 2rem 1rem;\n            text-align: center;\n        }\n\n        .footer a {\n            color: #ffd700;\n            text-decoration: none;\n            font-weight: 600;\n        }\n\n        .footer a:hover {\n            text-decoration: underline;\n        }\n\n.justify-text {\n    text-align: justify;\n}\n\n\n    "
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "nodeId": 17,
+            "parentId": 3,
+            "backendNodeId": 35,
+            "nodeType": 1,
+            "nodeName": "BODY",
+            "localName": "body",
+            "nodeValue": "",
+            "childNodeCount": 11,
+            "children": [
+              {
+                "nodeId": 18,
+                "parentId": 17,
+                "backendNodeId": 36,
+                "nodeType": 8,
+                "nodeName": "#comment",
+                "localName": "",
+                "nodeValue": " Navbar "
+              },
+              {
+                "nodeId": 19,
+                "parentId": 17,
+                "backendNodeId": 37,
+                "nodeType": 1,
+                "nodeName": "NAV",
+                "localName": "nav",
+                "nodeValue": "",
+                "childNodeCount": 1,
+                "children": [
+                  {
+                    "nodeId": 20,
+                    "parentId": 19,
+                    "backendNodeId": 38,
+                    "nodeType": 1,
+                    "nodeName": "DIV",
+                    "localName": "div",
+                    "nodeValue": "",
+                    "childNodeCount": 3,
+                    "children": [
+                      {
+                        "nodeId": 21,
+                        "parentId": 20,
+                        "backendNodeId": 39,
+                        "nodeType": 1,
+                        "nodeName": "A",
+                        "localName": "a",
+                        "nodeValue": "",
+                        "childNodeCount": 1,
+                        "children": [
+                          {
+                            "nodeId": 22,
+                            "parentId": 21,
+                            "backendNodeId": 40,
+                            "nodeType": 3,
+                            "nodeName": "#text",
+                            "localName": "",
+                            "nodeValue": "Secure Gateway\u00ae"
+                          }
+                        ],
+                        "attributes": [
+                          "class",
+                          "navbar-brand",
+                          "href",
+                          "#"
+                        ]
+                      },
+                      {
+                        "nodeId": 23,
+                        "parentId": 20,
+                        "backendNodeId": 41,
+                        "nodeType": 1,
+                        "nodeName": "BUTTON",
+                        "localName": "button",
+                        "nodeValue": "",
+                        "childNodeCount": 1,
+                        "children": [
+                          {
+                            "nodeId": 24,
+                            "parentId": 23,
+                            "backendNodeId": 42,
+                            "nodeType": 1,
+                            "nodeName": "SPAN",
+                            "localName": "span",
+                            "nodeValue": "",
+                            "childNodeCount": 0,
+                            "children": [],
+                            "attributes": [
+                              "class",
+                              "navbar-toggler-icon"
+                            ]
+                          }
+                        ],
+                        "attributes": [
+                          "class",
+                          "navbar-toggler",
+                          "type",
+                          "button",
+                          "data-bs-toggle",
+                          "collapse",
+                          "data-bs-target",
+                          "#navbarNav",
+                          "aria-controls",
+                          "navbarNav",
+                          "aria-expanded",
+                          "false",
+                          "aria-label",
+                          "Toggle navigation"
+                        ]
+                      },
+                      {
+                        "nodeId": 25,
+                        "parentId": 20,
+                        "backendNodeId": 6,
+                        "nodeType": 1,
+                        "nodeName": "DIV",
+                        "localName": "div",
+                        "nodeValue": "",
+                        "childNodeCount": 1,
+                        "children": [
+                          {
+                            "nodeId": 26,
+                            "parentId": 25,
+                            "backendNodeId": 7,
+                            "nodeType": 1,
+                            "nodeName": "UL",
+                            "localName": "ul",
+                            "nodeValue": "",
+                            "childNodeCount": 3,
+                            "children": [
+                              {
+                                "nodeId": 27,
+                                "parentId": 26,
+                                "backendNodeId": 43,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 28,
+                                    "parentId": 27,
+                                    "backendNodeId": 44,
+                                    "nodeType": 1,
+                                    "nodeName": "A",
+                                    "localName": "a",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 29,
+                                        "parentId": 28,
+                                        "backendNodeId": 45,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "Home"
+                                      }
+                                    ],
+                                    "attributes": [
+                                      "class",
+                                      "nav-link",
+                                      "href",
+                                      "index.php"
+                                    ]
+                                  }
+                                ],
+                                "attributes": [
+                                  "class",
+                                  "nav-item"
+                                ]
+                              },
+                              {
+                                "nodeId": 30,
+                                "parentId": 26,
+                                "backendNodeId": 8,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 31,
+                                    "parentId": 30,
+                                    "backendNodeId": 46,
+                                    "nodeType": 1,
+                                    "nodeName": "A",
+                                    "localName": "a",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 32,
+                                        "parentId": 31,
+                                        "backendNodeId": 47,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "Admin Testing"
+                                      }
+                                    ],
+                                    "attributes": [
+                                      "class",
+                                      "nav-link",
+                                      "href",
+                                      "admin/",
+                                      "target",
+                                      "_blank"
+                                    ]
+                                  }
+                                ],
+                                "attributes": [
+                                  "class",
+                                  "nav-item"
+                                ]
+                              },
+                              {
+                                "nodeId": 33,
+                                "parentId": 26,
+                                "backendNodeId": 9,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 34,
+                                    "parentId": 33,
+                                    "backendNodeId": 48,
+                                    "nodeType": 1,
+                                    "nodeName": "A",
+                                    "localName": "a",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 35,
+                                        "parentId": 34,
+                                        "backendNodeId": 49,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "Upload Testing"
+                                      }
+                                    ],
+                                    "attributes": [
+                                      "class",
+                                      "nav-link",
+                                      "href",
+                                      "up/",
+                                      "target",
+                                      "_blank"
+                                    ]
+                                  }
+                                ],
+                                "attributes": [
+                                  "class",
+                                  "nav-item"
+                                ]
+                              }
+                            ],
+                            "attributes": [
+                              "class",
+                              "navbar-nav ms-auto"
+                            ]
+                          }
+                        ],
+                        "attributes": [
+                          "class",
+                          "collapse navbar-collapse",
+                          "id",
+                          "navbarNav"
+                        ]
+                      }
+                    ],
+                    "attributes": [
+                      "class",
+                      "container"
+                    ]
+                  }
+                ],
+                "attributes": [
+                  "class",
+                  "navbar navbar-expand-lg navbar-dark"
+                ]
+              },
+              {
+                "nodeId": 36,
+                "parentId": 17,
+                "backendNodeId": 50,
+                "nodeType": 8,
+                "nodeName": "#comment",
+                "localName": "",
+                "nodeValue": " Hero Section "
+              },
+              {
+                "nodeId": 37,
+                "parentId": 17,
+                "backendNodeId": 2,
+                "nodeType": 1,
+                "nodeName": "SECTION",
+                "localName": "section",
+                "nodeValue": "",
+                "childNodeCount": 1,
+                "children": [
+                  {
+                    "nodeId": 38,
+                    "parentId": 37,
+                    "backendNodeId": 51,
+                    "nodeType": 1,
+                    "nodeName": "DIV",
+                    "localName": "div",
+                    "nodeValue": "",
+                    "childNodeCount": 3,
+                    "children": [
+                      {
+                        "nodeId": 39,
+                        "parentId": 38,
+                        "backendNodeId": 52,
+                        "nodeType": 1,
+                        "nodeName": "H1",
+                        "localName": "h1",
+                        "nodeValue": "",
+                        "childNodeCount": 1,
+                        "children": [
+                          {
+                            "nodeId": 40,
+                            "parentId": 39,
+                            "backendNodeId": 10,
+                            "nodeType": 3,
+                            "nodeName": "#text",
+                            "localName": "",
+                            "nodeValue": "Sandbox Environment for Penetration Testing"
+                          }
+                        ],
+                        "attributes": []
+                      },
+                      {
+                        "nodeId": 41,
+                        "parentId": 38,
+                        "backendNodeId": 11,
+                        "nodeType": 1,
+                        "nodeName": "P",
+                        "localName": "p",
+                        "nodeValue": "",
+                        "childNodeCount": 7,
+                        "children": [
+                          {
+                            "nodeId": 42,
+                            "parentId": 41,
+                            "backendNodeId": 53,
+                            "nodeType": 1,
+                            "nodeName": "STRONG",
+                            "localName": "strong",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 43,
+                                "parentId": 42,
+                                "backendNodeId": 54,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": "About Secure Gateway\u00ae:"
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 44,
+                            "parentId": 41,
+                            "backendNodeId": 12,
+                            "nodeType": 3,
+                            "nodeName": "#text",
+                            "localName": "",
+                            "nodeValue": "  Secure Gateway\u00ae is an AI-driven security solution invented by ALSCO\u00ae, designed to deliver multi-layered defense against cyber threats. It operates through advanced network traffic analysis, enabling intelligent detection and prevention of unauthorized access, data breaches, and malicious activities in enterprise environments. This innovative technology is protected under three U.S. patents: U.S. Patent No. 10,498,760 B1 \u2013 Revolutionizing Online Security, U.S. Patent No. 10,630,721 B1 \u2013 Revolutionizing Email and Database Protection, and U.S. Patent No. 11,777,927 B1 \u2013 Establishing Secure Communication Channels. "
+                          },
+                          {
+                            "nodeId": 45,
+                            "parentId": 41,
+                            "backendNodeId": 55,
+                            "nodeType": 1,
+                            "nodeName": "BR",
+                            "localName": "br",
+                            "nodeValue": "",
+                            "childNodeCount": 0,
+                            "children": [],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 46,
+                            "parentId": 41,
+                            "backendNodeId": 56,
+                            "nodeType": 1,
+                            "nodeName": "BR",
+                            "localName": "br",
+                            "nodeValue": "",
+                            "childNodeCount": 0,
+                            "children": [],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 47,
+                            "parentId": 41,
+                            "backendNodeId": 13,
+                            "nodeType": 3,
+                            "nodeName": "#text",
+                            "localName": "",
+                            "nodeValue": "Additionally, "
+                          },
+                          {
+                            "nodeId": 48,
+                            "parentId": 41,
+                            "backendNodeId": 57,
+                            "nodeType": 1,
+                            "nodeName": "B",
+                            "localName": "b",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 49,
+                                "parentId": 48,
+                                "backendNodeId": 14,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": "Secure Gateway\u00ae"
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 50,
+                            "parentId": 41,
+                            "backendNodeId": 15,
+                            "nodeType": 3,
+                            "nodeName": "#text",
+                            "localName": "",
+                            "nodeValue": " is a trademarked brand under Trademark Registration No. 7566628 and Trademark Registration  No. 5992874. Secure Gateway\u00ae combines cutting-edge AI technology, real-time network analysis, and patented innovations to offer unmatched cybersecurity performance across industries, including government, education, finance, and enterprise sectors.\n\n"
+                          }
+                        ],
+                        "attributes": [
+                          "class",
+                          "justify-text"
+                        ]
+                      },
+                      {
+                        "nodeId": 51,
+                        "parentId": 38,
+                        "backendNodeId": 16,
+                        "nodeType": 1,
+                        "nodeName": "P",
+                        "localName": "p",
+                        "nodeValue": "",
+                        "childNodeCount": 3,
+                        "children": [
+                          {
+                            "nodeId": 52,
+                            "parentId": 51,
+                            "backendNodeId": 17,
+                            "nodeType": 3,
+                            "nodeName": "#text",
+                            "localName": "",
+                            "nodeValue": "\n                This sandbox is restricted to hackers on "
+                          },
+                          {
+                            "nodeId": 53,
+                            "parentId": 51,
+                            "backendNodeId": 58,
+                            "nodeType": 1,
+                            "nodeName": "A",
+                            "localName": "a",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 54,
+                                "parentId": 53,
+                                "backendNodeId": 18,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": "hackerone.com"
+                              }
+                            ],
+                            "attributes": [
+                              "href",
+                              "https://hackerone.com/alsco",
+                              "class",
+                              "text-warning",
+                              "target",
+                              "_blank"
+                            ]
+                          },
+                          {
+                            "nodeId": 55,
+                            "parentId": 51,
+                            "backendNodeId": 19,
+                            "nodeType": 3,
+                            "nodeName": "#text",
+                            "localName": "",
+                            "nodeValue": ". Please visit ALSCO bug bounty programs.\n            "
+                          }
+                        ],
+                        "attributes": []
+                      }
+                    ],
+                    "attributes": [
+                      "class",
+                      "container"
+                    ]
+                  }
+                ],
+                "attributes": [
+                  "class",
+                  "hero"
+                ]
+              },
+              {
+                "nodeId": 56,
+                "parentId": 17,
+                "backendNodeId": 59,
+                "nodeType": 8,
+                "nodeName": "#comment",
+                "localName": "",
+                "nodeValue": " Info Boxes Section "
+              },
+              {
+                "nodeId": 57,
+                "parentId": 17,
+                "backendNodeId": 60,
+                "nodeType": 1,
+                "nodeName": "SECTION",
+                "localName": "section",
+                "nodeValue": "",
+                "childNodeCount": 1,
+                "children": [
+                  {
+                    "nodeId": 58,
+                    "parentId": 57,
+                    "backendNodeId": 61,
+                    "nodeType": 1,
+                    "nodeName": "DIV",
+                    "localName": "div",
+                    "nodeValue": "",
+                    "childNodeCount": 6,
+                    "children": [
+                      {
+                        "nodeId": 59,
+                        "parentId": 58,
+                        "backendNodeId": 62,
+                        "nodeType": 1,
+                        "nodeName": "H2",
+                        "localName": "h2",
+                        "nodeValue": "",
+                        "childNodeCount": 1,
+                        "children": [
+                          {
+                            "nodeId": 60,
+                            "parentId": 59,
+                            "backendNodeId": 63,
+                            "nodeType": 3,
+                            "nodeName": "#text",
+                            "localName": "",
+                            "nodeValue": "Testing Guidelines"
+                          }
+                        ],
+                        "attributes": []
+                      },
+                      {
+                        "nodeId": 61,
+                        "parentId": 58,
+                        "backendNodeId": 64,
+                        "nodeType": 1,
+                        "nodeName": "DIV",
+                        "localName": "div",
+                        "nodeValue": "",
+                        "childNodeCount": 5,
+                        "children": [
+                          {
+                            "nodeId": 62,
+                            "parentId": 61,
+                            "backendNodeId": 65,
+                            "nodeType": 1,
+                            "nodeName": "H3",
+                            "localName": "h3",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 63,
+                                "parentId": 62,
+                                "backendNodeId": 66,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": "1-Authentication Security Testing"
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 64,
+                            "parentId": 61,
+                            "backendNodeId": 67,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 2,
+                            "children": [
+                              {
+                                "nodeId": 65,
+                                "parentId": 64,
+                                "backendNodeId": 68,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 66,
+                                    "parentId": 65,
+                                    "backendNodeId": 69,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Objective:"
+                                  }
+                                ],
+                                "attributes": []
+                              },
+                              {
+                                "nodeId": 67,
+                                "parentId": 64,
+                                "backendNodeId": 70,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": " Test if you can bypass the two-factor authentication (2FA) system used by Secure Gateway\u00ae."
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 68,
+                            "parentId": 61,
+                            "backendNodeId": 71,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 69,
+                                "parentId": 68,
+                                "backendNodeId": 72,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 70,
+                                    "parentId": 69,
+                                    "backendNodeId": 73,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Instructions:"
+                                  }
+                                ],
+                                "attributes": []
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 71,
+                            "parentId": 61,
+                            "backendNodeId": 74,
+                            "nodeType": 1,
+                            "nodeName": "UL",
+                            "localName": "ul",
+                            "nodeValue": "",
+                            "childNodeCount": 3,
+                            "children": [
+                              {
+                                "nodeId": 72,
+                                "parentId": 71,
+                                "backendNodeId": 75,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 4,
+                                "children": [
+                                  {
+                                    "nodeId": 74,
+                                    "parentId": 72,
+                                    "backendNodeId": 77,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 75,
+                                        "parentId": 74,
+                                        "backendNodeId": 78,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "Bypass 2FA:"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 76,
+                                    "parentId": 72,
+                                    "backendNodeId": 79,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "  \n            - Try to log in "
+                                  },
+                                  {
+                                    "nodeId": 77,
+                                    "parentId": 72,
+                                    "backendNodeId": 80,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 78,
+                                        "parentId": 77,
+                                        "backendNodeId": 81,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "without entering the verification code"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 79,
+                                    "parentId": 72,
+                                    "backendNodeId": 82,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ".  \n            - Check if there is any way to skip or avoid the 2FA step.\n        "
+                                  }
+                                ],
+                                "attributes": [],
+                                "pseudoElements": [
+                                  {
+                                    "nodeId": 73,
+                                    "backendNodeId": 76,
+                                    "nodeType": 1,
+                                    "nodeName": "::marker",
+                                    "localName": "::marker",
+                                    "nodeValue": "",
+                                    "childNodeCount": 0,
+                                    "attributes": [],
+                                    "pseudoType": "marker"
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeId": 80,
+                                "parentId": 71,
+                                "backendNodeId": 83,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 2,
+                                "children": [
+                                  {
+                                    "nodeId": 82,
+                                    "parentId": 80,
+                                    "backendNodeId": 85,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 83,
+                                        "parentId": 82,
+                                        "backendNodeId": 86,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "Guess or Brute Force the Code:"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 84,
+                                    "parentId": 80,
+                                    "backendNodeId": 87,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "  \n            - Try guessing the 2FA code manually.  \n            - Use tools or scripts to attempt multiple guesses.\n        "
+                                  }
+                                ],
+                                "attributes": [],
+                                "pseudoElements": [
+                                  {
+                                    "nodeId": 81,
+                                    "backendNodeId": 84,
+                                    "nodeType": 1,
+                                    "nodeName": "::marker",
+                                    "localName": "::marker",
+                                    "nodeValue": "",
+                                    "childNodeCount": 0,
+                                    "attributes": [],
+                                    "pseudoType": "marker"
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeId": 85,
+                                "parentId": 71,
+                                "backendNodeId": 88,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 4,
+                                "children": [
+                                  {
+                                    "nodeId": 87,
+                                    "parentId": 85,
+                                    "backendNodeId": 90,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 88,
+                                        "parentId": 87,
+                                        "backendNodeId": 91,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "Test Code Validity:"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 89,
+                                    "parentId": 85,
+                                    "backendNodeId": 92,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "  \n            - Check if "
+                                  },
+                                  {
+                                    "nodeId": 90,
+                                    "parentId": 85,
+                                    "backendNodeId": 93,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 91,
+                                        "parentId": 90,
+                                        "backendNodeId": 94,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "previously used or expired authentication codes"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 92,
+                                    "parentId": 85,
+                                    "backendNodeId": 95,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": " can still grant access.\n        "
+                                  }
+                                ],
+                                "attributes": [],
+                                "pseudoElements": [
+                                  {
+                                    "nodeId": 86,
+                                    "backendNodeId": 89,
+                                    "nodeType": 1,
+                                    "nodeName": "::marker",
+                                    "localName": "::marker",
+                                    "nodeValue": "",
+                                    "childNodeCount": 0,
+                                    "attributes": [],
+                                    "pseudoType": "marker"
+                                  }
+                                ]
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 93,
+                            "parentId": 61,
+                            "backendNodeId": 96,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 2,
+                            "children": [
+                              {
+                                "nodeId": 94,
+                                "parentId": 93,
+                                "backendNodeId": 97,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 95,
+                                    "parentId": 94,
+                                    "backendNodeId": 98,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Goal:"
+                                  }
+                                ],
+                                "attributes": []
+                              },
+                              {
+                                "nodeId": 96,
+                                "parentId": 93,
+                                "backendNodeId": 99,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": " Find out if it is possible to log in without a valid 2FA code or if you can guess the code using brute force. Document any vulnerabilities you discover."
+                              }
+                            ],
+                            "attributes": []
+                          }
+                        ],
+                        "attributes": [
+                          "class",
+                          "info-box"
+                        ]
+                      },
+                      {
+                        "nodeId": 97,
+                        "parentId": 58,
+                        "backendNodeId": 100,
+                        "nodeType": 1,
+                        "nodeName": "DIV",
+                        "localName": "div",
+                        "nodeValue": "",
+                        "childNodeCount": 5,
+                        "children": [
+                          {
+                            "nodeId": 98,
+                            "parentId": 97,
+                            "backendNodeId": 101,
+                            "nodeType": 1,
+                            "nodeName": "H3",
+                            "localName": "h3",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 99,
+                                "parentId": 98,
+                                "backendNodeId": 102,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": "2. Secure File Upload Validation"
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 100,
+                            "parentId": 97,
+                            "backendNodeId": 103,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 2,
+                            "children": [
+                              {
+                                "nodeId": 101,
+                                "parentId": 100,
+                                "backendNodeId": 104,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 102,
+                                    "parentId": 101,
+                                    "backendNodeId": 105,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Objective:"
+                                  }
+                                ],
+                                "attributes": []
+                              },
+                              {
+                                "nodeId": 103,
+                                "parentId": 100,
+                                "backendNodeId": 106,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": " Test if Secure Gateway\u00ae prevents unauthorized or harmful files from being uploaded and executed."
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 104,
+                            "parentId": 97,
+                            "backendNodeId": 107,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 105,
+                                "parentId": 104,
+                                "backendNodeId": 108,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 106,
+                                    "parentId": 105,
+                                    "backendNodeId": 109,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Instructions:"
+                                  }
+                                ],
+                                "attributes": []
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 107,
+                            "parentId": 97,
+                            "backendNodeId": 110,
+                            "nodeType": 1,
+                            "nodeName": "UL",
+                            "localName": "ul",
+                            "nodeValue": "",
+                            "childNodeCount": 2,
+                            "children": [
+                              {
+                                "nodeId": 108,
+                                "parentId": 107,
+                                "backendNodeId": 111,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 7,
+                                "children": [
+                                  {
+                                    "nodeId": 110,
+                                    "parentId": 108,
+                                    "backendNodeId": 113,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 111,
+                                        "parentId": 110,
+                                        "backendNodeId": 114,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "Try Uploading Unallowed Files:"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 112,
+                                    "parentId": 108,
+                                    "backendNodeId": 115,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "  \n            - Upload files with extensions "
+                                  },
+                                  {
+                                    "nodeId": 113,
+                                    "parentId": 108,
+                                    "backendNodeId": 116,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 114,
+                                        "parentId": 113,
+                                        "backendNodeId": 117,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "not on the allowed list:"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 115,
+                                    "parentId": 108,
+                                    "backendNodeId": 118,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 116,
+                                        "parentId": 115,
+                                        "backendNodeId": 119,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "jpg, jpeg, png, gif, jfif, mp4, doc, docx, pdf, xls, xlsx, ppsx, ppt, pptx, flv, rar, zip, htm, html"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 117,
+                                    "parentId": 108,
+                                    "backendNodeId": 120,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ".  \n            - Examples of unallowed extensions: "
+                                  },
+                                  {
+                                    "nodeId": 118,
+                                    "parentId": 108,
+                                    "backendNodeId": 121,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 119,
+                                        "parentId": 118,
+                                        "backendNodeId": 122,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "exe, php, js, bat, cmd, sh"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 120,
+                                    "parentId": 108,
+                                    "backendNodeId": 123,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ".\n        "
+                                  }
+                                ],
+                                "attributes": [],
+                                "pseudoElements": [
+                                  {
+                                    "nodeId": 109,
+                                    "backendNodeId": 112,
+                                    "nodeType": 1,
+                                    "nodeName": "::marker",
+                                    "localName": "::marker",
+                                    "nodeValue": "",
+                                    "childNodeCount": 0,
+                                    "attributes": [],
+                                    "pseudoType": "marker"
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeId": 121,
+                                "parentId": 107,
+                                "backendNodeId": 124,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 2,
+                                "children": [
+                                  {
+                                    "nodeId": 123,
+                                    "parentId": 121,
+                                    "backendNodeId": 126,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 124,
+                                        "parentId": 123,
+                                        "backendNodeId": 127,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "Open the File in a Browser:"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 125,
+                                    "parentId": 121,
+                                    "backendNodeId": 128,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "  \n            - After uploading, try opening the file in your browser.  \n            - Check if it runs scripts, shows content, or behaves strangely.\n        "
+                                  }
+                                ],
+                                "attributes": [],
+                                "pseudoElements": [
+                                  {
+                                    "nodeId": 122,
+                                    "backendNodeId": 125,
+                                    "nodeType": 1,
+                                    "nodeName": "::marker",
+                                    "localName": "::marker",
+                                    "nodeValue": "",
+                                    "childNodeCount": 0,
+                                    "attributes": [],
+                                    "pseudoType": "marker"
+                                  }
+                                ]
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 126,
+                            "parentId": 97,
+                            "backendNodeId": 129,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 2,
+                            "children": [
+                              {
+                                "nodeId": 127,
+                                "parentId": 126,
+                                "backendNodeId": 130,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 128,
+                                    "parentId": 127,
+                                    "backendNodeId": 131,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Goal:"
+                                  }
+                                ],
+                                "attributes": []
+                              },
+                              {
+                                "nodeId": 129,
+                                "parentId": 126,
+                                "backendNodeId": 132,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": " Find out if you can upload restricted files and if they run or behave unexpectedly in the browser. Document anything unusual."
+                              }
+                            ],
+                            "attributes": []
+                          }
+                        ],
+                        "attributes": [
+                          "class",
+                          "info-box"
+                        ]
+                      },
+                      {
+                        "nodeId": 130,
+                        "parentId": 58,
+                        "backendNodeId": 133,
+                        "nodeType": 1,
+                        "nodeName": "DIV",
+                        "localName": "div",
+                        "nodeValue": "",
+                        "childNodeCount": 5,
+                        "children": [
+                          {
+                            "nodeId": 131,
+                            "parentId": 130,
+                            "backendNodeId": 134,
+                            "nodeType": 1,
+                            "nodeName": "H3",
+                            "localName": "h3",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 132,
+                                "parentId": 131,
+                                "backendNodeId": 135,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": "3. Content Detection System Testing"
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 133,
+                            "parentId": 130,
+                            "backendNodeId": 136,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 2,
+                            "children": [
+                              {
+                                "nodeId": 134,
+                                "parentId": 133,
+                                "backendNodeId": 137,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 135,
+                                    "parentId": 134,
+                                    "backendNodeId": 138,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Objective:"
+                                  }
+                                ],
+                                "attributes": []
+                              },
+                              {
+                                "nodeId": 136,
+                                "parentId": 133,
+                                "backendNodeId": 139,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": " Test if Secure Gateway\u00ae can detect and block harmful content hidden inside allowed file types."
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 137,
+                            "parentId": 130,
+                            "backendNodeId": 140,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 138,
+                                "parentId": 137,
+                                "backendNodeId": 141,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 139,
+                                    "parentId": 138,
+                                    "backendNodeId": 142,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Instructions:"
+                                  }
+                                ],
+                                "attributes": []
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 140,
+                            "parentId": 130,
+                            "backendNodeId": 143,
+                            "nodeType": 1,
+                            "nodeName": "UL",
+                            "localName": "ul",
+                            "nodeValue": "",
+                            "childNodeCount": 2,
+                            "children": [
+                              {
+                                "nodeId": 141,
+                                "parentId": 140,
+                                "backendNodeId": 144,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 8,
+                                "children": [
+                                  {
+                                    "nodeId": 143,
+                                    "parentId": 141,
+                                    "backendNodeId": 146,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 144,
+                                        "parentId": 143,
+                                        "backendNodeId": 147,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "Upload a File with Hidden Content:"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 145,
+                                    "parentId": 141,
+                                    "backendNodeId": 148,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "  \n            - Create a file with an "
+                                  },
+                                  {
+                                    "nodeId": 146,
+                                    "parentId": 141,
+                                    "backendNodeId": 149,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 147,
+                                        "parentId": 146,
+                                        "backendNodeId": 150,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "allowed extension"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 148,
+                                    "parentId": 141,
+                                    "backendNodeId": 151,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": " like "
+                                  },
+                                  {
+                                    "nodeId": 149,
+                                    "parentId": 141,
+                                    "backendNodeId": 152,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 150,
+                                        "parentId": 149,
+                                        "backendNodeId": 153,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": ".jpg"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 151,
+                                    "parentId": 141,
+                                    "backendNodeId": 154,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ".  \n            - Inside the file content (not the file name), add this string:  \n              "
+                                  },
+                                  {
+                                    "nodeId": 152,
+                                    "parentId": 141,
+                                    "backendNodeId": 155,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 153,
+                                        "parentId": 152,
+                                        "backendNodeId": 156,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "[php_uname]"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 154,
+                                    "parentId": 141,
+                                    "backendNodeId": 157,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ".\n        "
+                                  }
+                                ],
+                                "attributes": [],
+                                "pseudoElements": [
+                                  {
+                                    "nodeId": 142,
+                                    "backendNodeId": 145,
+                                    "nodeType": 1,
+                                    "nodeName": "::marker",
+                                    "localName": "::marker",
+                                    "nodeValue": "",
+                                    "childNodeCount": 0,
+                                    "attributes": [],
+                                    "pseudoType": "marker"
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeId": 155,
+                                "parentId": 140,
+                                "backendNodeId": 158,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 4,
+                                "children": [
+                                  {
+                                    "nodeId": 157,
+                                    "parentId": 155,
+                                    "backendNodeId": 160,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 158,
+                                        "parentId": 157,
+                                        "backendNodeId": 161,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "Attempt to Upload the File:"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 159,
+                                    "parentId": 155,
+                                    "backendNodeId": 162,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "  \n            - Upload the file to the system.  \n            - Check if the system "
+                                  },
+                                  {
+                                    "nodeId": 160,
+                                    "parentId": 155,
+                                    "backendNodeId": 163,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 161,
+                                        "parentId": 160,
+                                        "backendNodeId": 164,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "detects and blocks"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 162,
+                                    "parentId": 155,
+                                    "backendNodeId": 165,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": " it.\n        "
+                                  }
+                                ],
+                                "attributes": [],
+                                "pseudoElements": [
+                                  {
+                                    "nodeId": 156,
+                                    "backendNodeId": 159,
+                                    "nodeType": 1,
+                                    "nodeName": "::marker",
+                                    "localName": "::marker",
+                                    "nodeValue": "",
+                                    "childNodeCount": 0,
+                                    "attributes": [],
+                                    "pseudoType": "marker"
+                                  }
+                                ]
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 163,
+                            "parentId": 130,
+                            "backendNodeId": 166,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 2,
+                            "children": [
+                              {
+                                "nodeId": 164,
+                                "parentId": 163,
+                                "backendNodeId": 167,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 165,
+                                    "parentId": 164,
+                                    "backendNodeId": 168,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Goal:"
+                                  }
+                                ],
+                                "attributes": []
+                              },
+                              {
+                                "nodeId": 166,
+                                "parentId": 163,
+                                "backendNodeId": 169,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": " Determine if Secure Gateway\u00ae can detect malicious content hidden inside allowed file types. Document any behavior or vulnerabilities."
+                              }
+                            ],
+                            "attributes": []
+                          }
+                        ],
+                        "attributes": [
+                          "class",
+                          "info-box"
+                        ]
+                      },
+                      {
+                        "nodeId": 167,
+                        "parentId": 58,
+                        "backendNodeId": 170,
+                        "nodeType": 1,
+                        "nodeName": "DIV",
+                        "localName": "div",
+                        "nodeValue": "",
+                        "childNodeCount": 5,
+                        "children": [
+                          {
+                            "nodeId": 168,
+                            "parentId": 167,
+                            "backendNodeId": 171,
+                            "nodeType": 1,
+                            "nodeName": "H3",
+                            "localName": "h3",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 169,
+                                "parentId": 168,
+                                "backendNodeId": 172,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": "4. Injection Vulnerability Testing"
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 170,
+                            "parentId": 167,
+                            "backendNodeId": 173,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 4,
+                            "children": [
+                              {
+                                "nodeId": 171,
+                                "parentId": 170,
+                                "backendNodeId": 174,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 172,
+                                    "parentId": 171,
+                                    "backendNodeId": 175,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Objective:"
+                                  }
+                                ],
+                                "attributes": []
+                              },
+                              {
+                                "nodeId": 173,
+                                "parentId": 170,
+                                "backendNodeId": 176,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": " Test if the "
+                              },
+                              {
+                                "nodeId": 174,
+                                "parentId": 170,
+                                "backendNodeId": 177,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 175,
+                                    "parentId": 174,
+                                    "backendNodeId": 178,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Royal CMS"
+                                  }
+                                ],
+                                "attributes": []
+                              },
+                              {
+                                "nodeId": 176,
+                                "parentId": 170,
+                                "backendNodeId": 179,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": " is vulnerable to SQL Injection, URL Injection, or XSS attacks that could manipulate files, alter database records, or download sensitive data."
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 177,
+                            "parentId": 167,
+                            "backendNodeId": 180,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 178,
+                                "parentId": 177,
+                                "backendNodeId": 181,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 179,
+                                    "parentId": 178,
+                                    "backendNodeId": 182,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Instructions:"
+                                  }
+                                ],
+                                "attributes": []
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 180,
+                            "parentId": 167,
+                            "backendNodeId": 183,
+                            "nodeType": 1,
+                            "nodeName": "UL",
+                            "localName": "ul",
+                            "nodeValue": "",
+                            "childNodeCount": 4,
+                            "children": [
+                              {
+                                "nodeId": 181,
+                                "parentId": 180,
+                                "backendNodeId": 184,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 10,
+                                "children": [
+                                  {
+                                    "nodeId": 183,
+                                    "parentId": 181,
+                                    "backendNodeId": 186,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 184,
+                                        "parentId": 183,
+                                        "backendNodeId": 187,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "SQL Injection:"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 185,
+                                    "parentId": 181,
+                                    "backendNodeId": 188,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "  \n            - Try injecting "
+                                  },
+                                  {
+                                    "nodeId": 186,
+                                    "parentId": 181,
+                                    "backendNodeId": 189,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 187,
+                                        "parentId": 186,
+                                        "backendNodeId": 190,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "SQL commands"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 188,
+                                    "parentId": 181,
+                                    "backendNodeId": 191,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": " into input fields (e.g., login forms, search boxes).  \n            - Check if you can "
+                                  },
+                                  {
+                                    "nodeId": 189,
+                                    "parentId": 181,
+                                    "backendNodeId": 192,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 190,
+                                        "parentId": 189,
+                                        "backendNodeId": 193,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "alter database values"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 191,
+                                    "parentId": 181,
+                                    "backendNodeId": 194,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ", "
+                                  },
+                                  {
+                                    "nodeId": 192,
+                                    "parentId": 181,
+                                    "backendNodeId": 195,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 193,
+                                        "parentId": 192,
+                                        "backendNodeId": 196,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "retrieve sensitive data"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 194,
+                                    "parentId": 181,
+                                    "backendNodeId": 197,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ", or "
+                                  },
+                                  {
+                                    "nodeId": 195,
+                                    "parentId": 181,
+                                    "backendNodeId": 198,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 196,
+                                        "parentId": 195,
+                                        "backendNodeId": 199,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "access restricted areas"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 197,
+                                    "parentId": 181,
+                                    "backendNodeId": 200,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ".\n        "
+                                  }
+                                ],
+                                "attributes": [],
+                                "pseudoElements": [
+                                  {
+                                    "nodeId": 182,
+                                    "backendNodeId": 185,
+                                    "nodeType": 1,
+                                    "nodeName": "::marker",
+                                    "localName": "::marker",
+                                    "nodeValue": "",
+                                    "childNodeCount": 0,
+                                    "attributes": [],
+                                    "pseudoType": "marker"
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeId": 198,
+                                "parentId": 180,
+                                "backendNodeId": 201,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 8,
+                                "children": [
+                                  {
+                                    "nodeId": 200,
+                                    "parentId": 198,
+                                    "backendNodeId": 203,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 201,
+                                        "parentId": 200,
+                                        "backendNodeId": 204,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "URL Injection:"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 202,
+                                    "parentId": 198,
+                                    "backendNodeId": 205,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "  \n            - Modify "
+                                  },
+                                  {
+                                    "nodeId": 203,
+                                    "parentId": 198,
+                                    "backendNodeId": 206,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 204,
+                                        "parentId": 203,
+                                        "backendNodeId": 207,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "URLs"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 205,
+                                    "parentId": 198,
+                                    "backendNodeId": 208,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": " in the browser's address bar to inject commands.  \n            - Check if you can "
+                                  },
+                                  {
+                                    "nodeId": 206,
+                                    "parentId": 198,
+                                    "backendNodeId": 209,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 207,
+                                        "parentId": 206,
+                                        "backendNodeId": 210,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "access unauthorized files"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 208,
+                                    "parentId": 198,
+                                    "backendNodeId": 211,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": " or "
+                                  },
+                                  {
+                                    "nodeId": 209,
+                                    "parentId": 198,
+                                    "backendNodeId": 212,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 210,
+                                        "parentId": 209,
+                                        "backendNodeId": 213,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "manipulate data"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 211,
+                                    "parentId": 198,
+                                    "backendNodeId": 214,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ".\n        "
+                                  }
+                                ],
+                                "attributes": [],
+                                "pseudoElements": [
+                                  {
+                                    "nodeId": 199,
+                                    "backendNodeId": 202,
+                                    "nodeType": 1,
+                                    "nodeName": "::marker",
+                                    "localName": "::marker",
+                                    "nodeValue": "",
+                                    "childNodeCount": 0,
+                                    "attributes": [],
+                                    "pseudoType": "marker"
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeId": 212,
+                                "parentId": 180,
+                                "backendNodeId": 215,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 8,
+                                "children": [
+                                  {
+                                    "nodeId": 214,
+                                    "parentId": 212,
+                                    "backendNodeId": 217,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 215,
+                                        "parentId": 214,
+                                        "backendNodeId": 218,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "XSS Injection (Cross-Site Scripting):"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 216,
+                                    "parentId": 212,
+                                    "backendNodeId": 219,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "  \n            - Insert "
+                                  },
+                                  {
+                                    "nodeId": 217,
+                                    "parentId": 212,
+                                    "backendNodeId": 220,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 218,
+                                        "parentId": 217,
+                                        "backendNodeId": 221,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "malicious scripts"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 219,
+                                    "parentId": 212,
+                                    "backendNodeId": 222,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": " (e.g., JavaScript) into input fields.  \n            - Check if the scripts "
+                                  },
+                                  {
+                                    "nodeId": 220,
+                                    "parentId": 212,
+                                    "backendNodeId": 223,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 221,
+                                        "parentId": 220,
+                                        "backendNodeId": 224,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "execute in the browser"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 222,
+                                    "parentId": 212,
+                                    "backendNodeId": 225,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": " or "
+                                  },
+                                  {
+                                    "nodeId": 223,
+                                    "parentId": 212,
+                                    "backendNodeId": 226,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 224,
+                                        "parentId": 223,
+                                        "backendNodeId": 227,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "affect user sessions"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 225,
+                                    "parentId": 212,
+                                    "backendNodeId": 228,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ".\n        "
+                                  }
+                                ],
+                                "attributes": [],
+                                "pseudoElements": [
+                                  {
+                                    "nodeId": 213,
+                                    "backendNodeId": 216,
+                                    "nodeType": 1,
+                                    "nodeName": "::marker",
+                                    "localName": "::marker",
+                                    "nodeValue": "",
+                                    "childNodeCount": 0,
+                                    "attributes": [],
+                                    "pseudoType": "marker"
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeId": 226,
+                                "parentId": 180,
+                                "backendNodeId": 229,
+                                "nodeType": 1,
+                                "nodeName": "LI",
+                                "localName": "li",
+                                "nodeValue": "",
+                                "childNodeCount": 8,
+                                "children": [
+                                  {
+                                    "nodeId": 228,
+                                    "parentId": 226,
+                                    "backendNodeId": 231,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 229,
+                                        "parentId": 228,
+                                        "backendNodeId": 232,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "Observe System Behavior:"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 230,
+                                    "parentId": 226,
+                                    "backendNodeId": 233,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "  \n            - Check if your injections caused any "
+                                  },
+                                  {
+                                    "nodeId": 231,
+                                    "parentId": 226,
+                                    "backendNodeId": 234,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 232,
+                                        "parentId": 231,
+                                        "backendNodeId": 235,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "file changes on the server"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 233,
+                                    "parentId": 226,
+                                    "backendNodeId": 236,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ", "
+                                  },
+                                  {
+                                    "nodeId": 234,
+                                    "parentId": 226,
+                                    "backendNodeId": 237,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 235,
+                                        "parentId": 234,
+                                        "backendNodeId": 238,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "altered database records"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 236,
+                                    "parentId": 226,
+                                    "backendNodeId": 239,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ", or "
+                                  },
+                                  {
+                                    "nodeId": 237,
+                                    "parentId": 226,
+                                    "backendNodeId": 240,
+                                    "nodeType": 1,
+                                    "nodeName": "STRONG",
+                                    "localName": "strong",
+                                    "nodeValue": "",
+                                    "childNodeCount": 1,
+                                    "children": [
+                                      {
+                                        "nodeId": 238,
+                                        "parentId": 237,
+                                        "backendNodeId": 241,
+                                        "nodeType": 3,
+                                        "nodeName": "#text",
+                                        "localName": "",
+                                        "nodeValue": "enabled database downloads"
+                                      }
+                                    ],
+                                    "attributes": []
+                                  },
+                                  {
+                                    "nodeId": 239,
+                                    "parentId": 226,
+                                    "backendNodeId": 242,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": ".\n        "
+                                  }
+                                ],
+                                "attributes": [],
+                                "pseudoElements": [
+                                  {
+                                    "nodeId": 227,
+                                    "backendNodeId": 230,
+                                    "nodeType": 1,
+                                    "nodeName": "::marker",
+                                    "localName": "::marker",
+                                    "nodeValue": "",
+                                    "childNodeCount": 0,
+                                    "attributes": [],
+                                    "pseudoType": "marker"
+                                  }
+                                ]
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 240,
+                            "parentId": 167,
+                            "backendNodeId": 243,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 2,
+                            "children": [
+                              {
+                                "nodeId": 241,
+                                "parentId": 240,
+                                "backendNodeId": 244,
+                                "nodeType": 1,
+                                "nodeName": "STRONG",
+                                "localName": "strong",
+                                "nodeValue": "",
+                                "childNodeCount": 1,
+                                "children": [
+                                  {
+                                    "nodeId": 242,
+                                    "parentId": 241,
+                                    "backendNodeId": 245,
+                                    "nodeType": 3,
+                                    "nodeName": "#text",
+                                    "localName": "",
+                                    "nodeValue": "Goal:"
+                                  }
+                                ],
+                                "attributes": []
+                              },
+                              {
+                                "nodeId": 243,
+                                "parentId": 240,
+                                "backendNodeId": 246,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": " Identify if SQL Injection, URL Injection, or XSS attacks can manipulate files, alter database values, or expose sensitive information. Document any vulnerabilities found."
+                              }
+                            ],
+                            "attributes": []
+                          }
+                        ],
+                        "attributes": [
+                          "class",
+                          "info-box"
+                        ]
+                      },
+                      {
+                        "nodeId": 244,
+                        "parentId": 58,
+                        "backendNodeId": 247,
+                        "nodeType": 1,
+                        "nodeName": "DIV",
+                        "localName": "div",
+                        "nodeValue": "",
+                        "childNodeCount": 2,
+                        "children": [
+                          {
+                            "nodeId": 245,
+                            "parentId": 244,
+                            "backendNodeId": 248,
+                            "nodeType": 1,
+                            "nodeName": "H3",
+                            "localName": "h3",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 246,
+                                "parentId": 245,
+                                "backendNodeId": 249,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": "Important Notes"
+                              }
+                            ],
+                            "attributes": []
+                          },
+                          {
+                            "nodeId": 247,
+                            "parentId": 244,
+                            "backendNodeId": 250,
+                            "nodeType": 1,
+                            "nodeName": "P",
+                            "localName": "p",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 248,
+                                "parentId": 247,
+                                "backendNodeId": 251,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": "This is the only sandbox testing environment where many Secure Gateway\u00ae security functions are disabled. Some hacking tools and methods may work here but will not function in the live product."
+                              }
+                            ],
+                            "attributes": []
+                          }
+                        ],
+                        "attributes": [
+                          "class",
+                          "info-box warning"
+                        ]
+                      }
+                    ],
+                    "attributes": [
+                      "class",
+                      "container"
+                    ]
+                  }
+                ],
+                "attributes": [
+                  "class",
+                  "info-boxes"
+                ]
+              },
+              {
+                "nodeId": 249,
+                "parentId": 17,
+                "backendNodeId": 252,
+                "nodeType": 8,
+                "nodeName": "#comment",
+                "localName": "",
+                "nodeValue": " Footer "
+              },
+              {
+                "nodeId": 250,
+                "parentId": 17,
+                "backendNodeId": 3,
+                "nodeType": 1,
+                "nodeName": "FOOTER",
+                "localName": "footer",
+                "nodeValue": "",
+                "childNodeCount": 1,
+                "children": [
+                  {
+                    "nodeId": 251,
+                    "parentId": 250,
+                    "backendNodeId": 253,
+                    "nodeType": 1,
+                    "nodeName": "DIV",
+                    "localName": "div",
+                    "nodeValue": "",
+                    "childNodeCount": 2,
+                    "children": [
+                      {
+                        "nodeId": 252,
+                        "parentId": 251,
+                        "backendNodeId": 254,
+                        "nodeType": 1,
+                        "nodeName": "P",
+                        "localName": "p",
+                        "nodeValue": "",
+                        "childNodeCount": 1,
+                        "children": [
+                          {
+                            "nodeId": 253,
+                            "parentId": 252,
+                            "backendNodeId": 255,
+                            "nodeType": 3,
+                            "nodeName": "#text",
+                            "localName": "",
+                            "nodeValue": "\u00a9 2026 Secure Gateway\u00ae. All Rights Reserved."
+                          }
+                        ],
+                        "attributes": []
+                      },
+                      {
+                        "nodeId": 254,
+                        "parentId": 251,
+                        "backendNodeId": 256,
+                        "nodeType": 1,
+                        "nodeName": "P",
+                        "localName": "p",
+                        "nodeValue": "",
+                        "childNodeCount": 3,
+                        "children": [
+                          {
+                            "nodeId": 255,
+                            "parentId": 254,
+                            "backendNodeId": 257,
+                            "nodeType": 3,
+                            "nodeName": "#text",
+                            "localName": "",
+                            "nodeValue": "Visit our "
+                          },
+                          {
+                            "nodeId": 256,
+                            "parentId": 254,
+                            "backendNodeId": 258,
+                            "nodeType": 1,
+                            "nodeName": "A",
+                            "localName": "a",
+                            "nodeValue": "",
+                            "childNodeCount": 1,
+                            "children": [
+                              {
+                                "nodeId": 257,
+                                "parentId": 256,
+                                "backendNodeId": 259,
+                                "nodeType": 3,
+                                "nodeName": "#text",
+                                "localName": "",
+                                "nodeValue": "Bug Bounty Program"
+                              }
+                            ],
+                            "attributes": [
+                              "href",
+                              "https://hackerone.com/alsco",
+                              "target",
+                              "_blank"
+                            ]
+                          },
+                          {
+                            "nodeId": 258,
+                            "parentId": 254,
+                            "backendNodeId": 260,
+                            "nodeType": 3,
+                            "nodeName": "#text",
+                            "localName": "",
+                            "nodeValue": " for more information."
+                          }
+                        ],
+                        "attributes": []
+                      }
+                    ],
+                    "attributes": [
+                      "class",
+                      "container"
+                    ]
+                  }
+                ],
+                "attributes": [
+                  "class",
+                  "footer"
+                ]
+              },
+              {
+                "nodeId": 259,
+                "parentId": 17,
+                "backendNodeId": 261,
+                "nodeType": 8,
+                "nodeName": "#comment",
+                "localName": "",
+                "nodeValue": " Scripts "
+              },
+              {
+                "nodeId": 260,
+                "parentId": 17,
+                "backendNodeId": 262,
+                "nodeType": 1,
+                "nodeName": "SCRIPT",
+                "localName": "script",
+                "nodeValue": "",
+                "childNodeCount": 0,
+                "children": [],
+                "attributes": [
+                  "src",
+                  "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+                ]
+              },
+              {
+                "nodeId": 261,
+                "parentId": 17,
+                "backendNodeId": 263,
+                "nodeType": 1,
+                "nodeName": "DIV",
+                "localName": "div",
+                "nodeValue": "",
+                "childNodeCount": 1,
+                "children": [
+                  {
+                    "nodeId": 262,
+                    "parentId": 261,
+                    "backendNodeId": 264,
+                    "nodeType": 1,
+                    "nodeName": "A",
+                    "localName": "a",
+                    "nodeValue": "",
+                    "childNodeCount": 1,
+                    "children": [
+                      {
+                        "nodeId": 263,
+                        "parentId": 262,
+                        "backendNodeId": 4,
+                        "nodeType": 1,
+                        "nodeName": "IMG",
+                        "localName": "img",
+                        "nodeValue": "",
+                        "childNodeCount": 0,
+                        "children": [],
+                        "attributes": [
+                          "class",
+                          "img-responsive",
+                          "alt",
+                          "Scanned By Secure Gateway",
+                          "title",
+                          "Scanned By Secure Gateway",
+                          "src",
+                          "Secure_Gateway_Seal.svg",
+                          "width",
+                          "150",
+                          "height",
+                          "66"
+                        ]
+                      }
+                    ],
+                    "attributes": [
+                      "href",
+                      "https://securegateway.com",
+                      "target",
+                      "_blank"
+                    ]
+                  }
+                ],
+                "attributes": [
+                  "style",
+                  "position: fixed; z-index: 1000; width: 150px; height: 65px; bottom: 5px; left: 2px;"
+                ]
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": [
+          "lang",
+          "en"
+        ],
+        "frameId": "A7310C42E41FBFE7182309CE5B1F081B"
+      }
+    ],
+    "documentURL": "https://sandbox.securegateway.com/",
+    "baseURL": "https://sandbox.securegateway.com/",
+    "xmlVersion": "",
+    "compatibilityMode": "NoQuirksMode",
+    "isScrollable": true
+  }
+}

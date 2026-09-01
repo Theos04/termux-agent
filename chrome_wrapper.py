@@ -108,7 +108,7 @@ class ChromeAPIClient:
     def start_session(self, name: str = None, url: str = "https://unstop.com/") -> Dict:
         """Start a session"""
         name = name or self.session_name
-        return self._request('POST', '/session/start', {'name': name, 'url': url})
+        return self._request('POST', f'/session/{name}/start', {'url': url})
     
     def stop_session(self, name: str = None) -> Dict:
         """Stop a session"""

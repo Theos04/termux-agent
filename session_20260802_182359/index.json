@@ -1,0 +1,22 @@
+{
+  "dom_trees": [
+    {
+      "filename": "dom_182409_081400.json",
+      "timestamp": "2026-08-02T18:24:09.081532",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_182911_725779.json",
+      "timestamp": "2026-08-02T18:29:11.727872",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ]
+}

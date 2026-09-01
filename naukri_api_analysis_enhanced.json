@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-02T16:47:44.044743",
+  "total_endpoints": 30,
+  "job_endpoints": 3,
+  "promising_endpoints": [],
+  "token_usage": {},
+  "analysis_summary": {
+    "total_calls": 117,
+    "unique_domains": 3
+  }
+}

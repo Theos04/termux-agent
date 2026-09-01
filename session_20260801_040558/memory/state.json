@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "session_id": "20260801_040558",
+    "start_time": "2026-08-01T04:05:58.598713",
+    "end_time": null,
+    "chrome_port": 9258,
+    "tab_url": "https://unstop.com/",
+    "tab_title": "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+    "total_commands": 30,
+    "snapshots_taken": [],
+    "files_generated": {
+      "accessibility": 2,
+      "dom_trees": 2
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "/data/data/com.termux/files/home/automation/chrome-launcher/session_20260801_040558/dom_trees/dom_040620_999096.json",
+      "metadata": {
+        "session_id": "20260801_040558",
+        "timestamp": "2026-08-01T04:06:20.999234",
+        "tab_url": "https://unstop.com/",
+        "tab_title": "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 3287,
+        "command_index": 20
+      }
+    },
+    "last_snapshot": null,
+    "last_accessibility": {
+      "file": "/data/data/com.termux/files/home/automation/chrome-launcher/session_20260801_040558/accessibility/a11y_040619_350036.json",
+      "metadata": {
+        "session_id": "20260801_040558",
+        "timestamp": "2026-08-01T04:06:19.350176",
+        "tab_url": "https://unstop.com/",
+        "tab_title": "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+        "context": {
+          "method": "Accessibility.getFullAXTree"
+        },
+        "node_count": 2081,
+        "command_index": 18
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 30,
+  "last_updated": "2026-08-01T04:06:21.864175"
+}

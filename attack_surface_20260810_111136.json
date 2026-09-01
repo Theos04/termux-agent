@@ -1,0 +1,4019 @@
+{
+  "summary": {
+    "total_domains": 10,
+    "total_endpoints": 115,
+    "total_authentication_endpoints": 1,
+    "total_admin_endpoints": 3
+  },
+  "domains": [
+    "537e7edf292c0117bde89240176c4ab2.safeframe.googlesyndication.com",
+    "taxonomy-suggest.naukri.com",
+    "www.google.com",
+    "ep2.adtrafficquality.google",
+    "ep1.adtrafficquality.google",
+    "static.naukimg.com",
+    "www.naukri.com",
+    "img.naukimg.com",
+    "lg.naukri.com",
+    "logs.naukri.com"
+  ],
+  "endpoints": {
+    "img.naukimg.com/logo_images/groups/v1/2641916.gif": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/gif"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://img.naukimg.com/logo_images/groups/v1/2641916.gif",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:40.896768"
+        }
+      ]
+    },
+    "img.naukimg.com/logo_images/groups/v1/1186200.gif": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/gif"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://img.naukimg.com/logo_images/groups/v1/1186200.gif",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:40.900622"
+        }
+      ]
+    },
+    "img.naukimg.com/logo_images/groups/v1/226728.gif": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/gif"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://img.naukimg.com/logo_images/groups/v1/226728.gif",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:40.904522"
+        }
+      ]
+    },
+    "img.naukimg.com/logo_images/groups/v1/47784.gif": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/gif"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://img.naukimg.com/logo_images/groups/v1/47784.gif",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:40.907984"
+        }
+      ]
+    },
+    "img.naukimg.com/logo_images/groups/v1/216316.gif": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/gif"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://img.naukimg.com/logo_images/groups/v1/216316.gif",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:40.910705"
+        }
+      ]
+    },
+    "img.naukimg.com/logo_images/groups/v1/2114.gif": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/gif"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://img.naukimg.com/logo_images/groups/v1/2114.gif",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:40.913398"
+        }
+      ]
+    },
+    "img.naukimg.com/logo_images/groups/v1/41608.gif": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/gif"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://img.naukimg.com/logo_images/groups/v1/41608.gif",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:40.916157"
+        }
+      ]
+    },
+    "img.naukimg.com/logo_images/groups/v1/45204.gif": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/gif"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://img.naukimg.com/logo_images/groups/v1/45204.gif",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:40.921323"
+        }
+      ]
+    },
+    "img.naukimg.com/logo_images/groups/v1/12466.gif": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/gif"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://img.naukimg.com/logo_images/groups/v1/12466.gif",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:40.918650"
+        }
+      ]
+    },
+    "img.naukimg.com/logo_images/groups/v1/3835862.gif": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/gif"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://img.naukimg.com/logo_images/groups/v1/3835862.gif",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:40.923829"
+        }
+      ]
+    },
+    "logs.naukri.com/uba": {
+      "methods": [
+        "POST"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "accept-encoding",
+        "cookie",
+        "Content-Type",
+        ":scheme",
+        "content-type",
+        "user-agent",
+        "sec-ch-ua",
+        "sec-fetch-site",
+        ":method",
+        ":path",
+        "content-length",
+        "Referer",
+        "priority",
+        "referer",
+        "User-Agent",
+        "origin",
+        ":authority",
+        "sec-ch-ua-mobile",
+        "sec-fetch-mode",
+        "accept",
+        "sec-fetch-dest",
+        "accept-language",
+        "sec-ch-ua-platform"
+      ],
+      "response_statuses": [],
+      "content_types": [],
+      "tokens": [],
+      "examples": []
+    },
+    "static.naukimg.com/s/0/0/i/WHATMA/exp.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/WHATMA/exp.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:43.229429"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/WHATMA/loc.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/WHATMA/loc.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:43.232471"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/WHATMA/keySkills.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/WHATMA/keySkills.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:43.235533"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/WHATMA/indt.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/WHATMA/indt.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:43.238697"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/WHATMA/earlyApp.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/WHATMA/earlyApp.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:43.245446"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/WHATMA/dept.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/WHATMA/dept.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:43.241918"
+        }
+      ]
+    },
+    "taxonomy-suggest.naukri.com/suggest/dsCommonSuggester": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [
+        "subCategory",
+        "query",
+        "astext",
+        "resultField",
+        "p_query",
+        "appId",
+        "category",
+        "callback",
+        "tagFour",
+        "c_query",
+        "limit",
+        "sourceId"
+      ],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "accept-encoding",
+        "sec-ch-ua",
+        "referer",
+        "cookie",
+        "sec-fetch-site",
+        ":method",
+        ":scheme",
+        "accept",
+        "sec-fetch-dest",
+        "User-Agent",
+        ":path",
+        "user-agent",
+        "accept-language",
+        "sec-ch-ua-platform",
+        ":authority",
+        "Referer",
+        "sec-ch-ua-mobile",
+        "sec-fetch-mode"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://taxonomy-suggest.naukri.com/suggest/dsCommonSuggester?limit=8&appId=105&tagThree=&tagFour=&resultField=id,name&subCategory=dsJSsuggestor&query=p&category=top&c_query=null&p_query=null&sourceId=4001&vertical=&astext=p&callback=_1786340452641",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:52.741935"
+        },
+        {
+          "url": "https://taxonomy-suggest.naukri.com/suggest/dsCommonSuggester?limit=8&appId=105&tagThree=&tagFour=&resultField=id,name&subCategory=dsJSsuggestor&query=flas&category=top&c_query=null&p_query=null&sourceId=4001&vertical=&astext=flas&callback=_1786340453245",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:53.300446"
+        },
+        {
+          "url": "https://taxonomy-suggest.naukri.com/suggest/dsCommonSuggester?limit=8&appId=105&tagThree=&tagFour=&resultField=id,name&subCategory=dsJSsuggestor&query=flask&category=top&c_query=null&p_query=null&sourceId=4001&vertical=&astext=flask&callback=_1786340453459",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:53.505725"
+        }
+      ]
+    },
+    "www.naukri.com/flask-jobs": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [
+        "nignbevent_src",
+        "k"
+      ],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "accept-encoding",
+        "cookie",
+        ":scheme",
+        "user-agent",
+        "Upgrade-Insecure-Requests",
+        "sec-ch-ua",
+        "sec-fetch-site",
+        ":method",
+        ":path",
+        "Referer",
+        "priority",
+        "referer",
+        "User-Agent",
+        "sec-fetch-user",
+        ":authority",
+        "sec-ch-ua-mobile",
+        "sec-fetch-mode",
+        "accept",
+        "sec-fetch-dest",
+        "accept-language",
+        "sec-ch-ua-platform",
+        "upgrade-insecure-requests"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/html"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://www.naukri.com/flask-jobs?k=flask&nignbevent_src=jobsearchDeskGNB",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:56.270928"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/c/fonts/static/satoshi/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/octet-stream"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.745160"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/c/fonts/static/satoshi/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/octet-stream"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.755598"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/c/fonts/static/satoshi/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/octet-stream"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.765866"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/transparentImg.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/transparentImg.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.775258"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/dc3b8c4d86e650ea.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/dc3b8c4d86e650ea.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.710855"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/9216356713d51a36.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/9216356713d51a36.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.714077"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/78d41feaba858687.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/78d41feaba858687.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.716968"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/7d9a0cf29dbbd70f.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/7d9a0cf29dbbd70f.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.719866"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/ddb0e4dfe6602a68.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/ddb0e4dfe6602a68.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.726160"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/b09725aaa4a54f31.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/b09725aaa4a54f31.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.723018"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/8261187dc13c11af.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/8261187dc13c11af.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.729347"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/d8d8f8af507d0a93.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/d8d8f8af507d0a93.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.732563"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/ef49947185a39b61.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/ef49947185a39b61.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.738836"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/97d28480c758bae1.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/97d28480c758bae1.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.735766"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/730c5c1c813fb960.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/730c5c1c813fb960.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.741989"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/webpack-6df5b37926f12043.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/webpack-6df5b37926f12043.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.784954"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/2443530c-23a8d6970c885865.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/2443530c-23a8d6970c885865.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.788174"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/main-app-41bfa04a3d4c7c6a.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/main-app-41bfa04a3d4c7c6a.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.793500"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/8139-4360348199a77d11.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/8139-4360348199a77d11.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:58.791296"
+        }
+      ]
+    },
+    "www.naukri.com/manifest.json": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/json"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://www.naukri.com/manifest.json",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:10:59.472009"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/777f4ba5110127e5.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/777f4ba5110127e5.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.756078"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/728f2fbd6f5fa85b.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/728f2fbd6f5fa85b.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.762402"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/6394-215001aa64adeba7.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/6394-215001aa64adeba7.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.740272"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/3051.0a445442f3d770a3.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/3051.0a445442f3d770a3.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.743346"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/7951-e8c791abaab72e96.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/7951-e8c791abaab72e96.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.746590"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/9221.87cae979f437fdeb.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/9221.87cae979f437fdeb.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.749742"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/3536.f7a75d45265cd01b.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/3536.f7a75d45265cd01b.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.752803"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/585.e9da85b3c22c450d.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/585.e9da85b3c22c450d.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.759159"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/3180-ec879ea21fa11a90.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/3180-ec879ea21fa11a90.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.768510"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/app/error-af640d3e14161cf2.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/app/error-af640d3e14161cf2.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.771523"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/1718-225bf113c2b4a7ee.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/1718-225bf113c2b4a7ee.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.777576"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/4772.3fdd7b50f7b7fc05.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/4772.3fdd7b50f7b7fc05.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.765415"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/9097-67abbcea92208fcb.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/9097-67abbcea92208fcb.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.786626"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/906-8f0fb452c5aec220.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/906-8f0fb452c5aec220.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.774526"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/8575-10161216e7b8cb7d.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/8575-10161216e7b8cb7d.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.780666"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/6845-b392d83e674ea4c1.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/6845-b392d83e674ea4c1.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.783677"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/app/srp/page-2b8c51c109e4d27a.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/app/srp/page-2b8c51c109e4d27a.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:00.789720"
+        }
+      ]
+    },
+    "static.naukimg.com/s/5/135/i/appLaucherIcon/Naukri-xxhdpi.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/5/135/i/appLaucherIcon/Naukri-xxhdpi.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:01.133121"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/2336.83f33000ad6dddf5.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/2336.83f33000ad6dddf5.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:02.667325"
+        }
+      ]
+    },
+    "static.naukimg.com/s/7/0/j/widget-client-ni.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/7/0/j/widget-client-ni.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:02.885890"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/tracking-module.4b5b8cbe9f2b465a.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/tracking-module.4b5b8cbe9f2b465a.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:02.942451"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/1/j/ub_v1.16.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/1/j/ub_v1.16.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:02.980404"
+        }
+      ]
+    },
+    "www.naukri.com/jobapi/v1/ads/new/ff": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [
+        "adType",
+        "deviceType"
+      ],
+      "body_params": [],
+      "auth_methods": [
+        "Bearer"
+      ],
+      "headers": [
+        "accept-encoding",
+        "authorization",
+        "cookie",
+        "Content-Type",
+        ":scheme",
+        "content-type",
+        "appid",
+        "user-agent",
+        "sec-ch-ua",
+        "sec-fetch-site",
+        ":method",
+        ":path",
+        "Referer",
+        "priority",
+        "referer",
+        "User-Agent",
+        ":authority",
+        "sec-ch-ua-mobile",
+        "sec-fetch-mode",
+        "systemid",
+        "clientid",
+        "accept",
+        "sec-fetch-dest",
+        "accept-language",
+        "sec-ch-ua-platform"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/json"
+      ],
+      "tokens": [
+        {
+          "type": "Bearer",
+          "header": "authorization",
+          "value": "eyJraWQiOiIzIiwidHlwIjoiSldUIiwiYWxnIjoiUlM1MTIifQ...",
+          "full_value": "eyJraWQiOiIzIiwidHlwIjoiSldUIiwiYWxnIjoiUlM1MTIifQ.eyJ1ZF9yZXNJZCI6MTk0Njg5NzY2LCJzdWIiOiIyMDc2Mzk4NjYiLCJ1ZF91c2VybmFtZSI6Im1haWx0by5oYXJzaG1laHRhMDRAZ21haWwuY29tIiwidWRfaXNFbWFpbCI6dHJ1ZSwiaXNzIjoiSW5mb0VkZ2UgSW5kaWEgUHZ0LiBMdGQuIiwidXNlckFnZW50IjoiTW96aWxsYS81LjAgKFgxMTsgTGludXggeDg2XzY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTQ5LjAuMC4wIFNhZmFyaS81MzcuMzYiLCJpcEFkcmVzcyI6IjI0MDE6NDkwMDo4OGZiOjZlNzM6NjU4MTo2OGY3OjJhZDI6OTY0NyIsInVkX2lzVGVjaE9wc0xvZ2luIjpmYWxzZSwidXNlcklkIjoyMDc2Mzk4NjYsInN1YlVzZXJUeXBlIjoiIiwidXNlclN0YXRlIjoiQVVUSEVOVElDQVRFRCIsInVkX2lzUGFpZENsaWVudCI6ZmFsc2UsInVkX2VtYWlsVmVyaWZpZWQiOnRydWUsInVzZXJUeXBlIjoiam9ic2Vla2VyIiwic2Vzc2lvblN0YXRUaW1lIjoiMjAyNi0wNy0xNlQwMzo0MjowMCIsInVkX2VtYWlsIjoibWFpbHRvLmhhcnNobWVodGEwNEBnbWFpbC5jb20iLCJ1c2VyUm9sZSI6InVzZXIiLCJleHAiOjE3ODYzNDExMTQsInRva2VuVHlwZSI6ImFjY2Vzc1Rva2VuIiwiaWF0IjoxNzg2MzM3NTE0LCJqdGkiOiIwY2I4ZmNjY2VlODc0M2MzYTgyOTFhNzJlNTZiYTk5NSIsInBvZElkIjoicHJvZC01YmJjNmJiNTliLW56dmo5In0.TG_NQP98PAY4SvgI6TJX5kossv7mJMrqqiZqnYlbDsZcKpXKdNlToVDu9fkv_d_-jlLCpiTG6hc5dzaZJjCbv1XU-jcgk6kIf0Gcu9Ec5IpkxbsTm-jZmF25Kgq16bLUaIWv68PYStJEeW4TzYvSOQT5wx-4GQ0ZPHHffdaE3exxieFR1N4pzJvW5BI4844aGoNJkn8kQf303wsT0LW0xfkSx79Zth8DJ0Od5q2Y0CzYHmH1fgewiJ8Jl_kgyLfXTWc_gh1XB5V7DBrmKqixxfUrkPqtcvXiu3dSYJ0ysgcqd5Ettt5pd8og8Jc3kXrjCKArFWiXbMMGfkAqnC8JSQ",
+          "decoded": {
+            "header": {
+              "kid": "3",
+              "typ": "JWT",
+              "alg": "RS512"
+            },
+            "payload": {
+              "ud_resId": 194689766,
+              "sub": "207639866",
+              "ud_username": "mailto.harshmehta04@gmail.com",
+              "ud_isEmail": true,
+              "iss": "InfoEdge India Pvt. Ltd.",
+              "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+              "ipAdress": "2401:4900:88fb:6e73:6581:68f7:2ad2:9647",
+              "ud_isTechOpsLogin": false,
+              "userId": 207639866,
+              "subUserType": "",
+              "userState": "AUTHENTICATED",
+              "ud_isPaidClient": false,
+              "ud_emailVerified": true,
+              "userType": "jobseeker",
+              "sessionStatTime": "2026-07-16T03:42:00",
+              "ud_email": "mailto.harshmehta04@gmail.com",
+              "userRole": "user",
+              "exp": 1786341114,
+              "tokenType": "accessToken",
+              "iat": 1786337514,
+              "jti": "0cb8fcccee8743c3a8291a72e56ba995",
+              "podId": "prod-5bbc6bb59b-nzvj9"
+            },
+            "algorithm": "RS512",
+            "type": "JWT",
+            "issued_at": "2026-08-10T10:21:54",
+            "expires_at": "2026-08-10T11:21:54",
+            "issuer": "InfoEdge India Pvt. Ltd.",
+            "subject": "207639866",
+            "audience": null,
+            "claims": {
+              "ud_resId": 194689766,
+              "sub": "207639866",
+              "ud_username": "mailto.harshmehta04@gmail.com",
+              "ud_isEmail": true,
+              "iss": "InfoEdge India Pvt. Ltd.",
+              "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+              "ipAdress": "2401:4900:88fb:6e73:6581:68f7:2ad2:9647",
+              "ud_isTechOpsLogin": false,
+              "userId": 207639866,
+              "subUserType": "",
+              "userState": "AUTHENTICATED",
+              "ud_isPaidClient": false,
+              "ud_emailVerified": true,
+              "userType": "jobseeker",
+              "sessionStatTime": "2026-07-16T03:42:00",
+              "ud_email": "mailto.harshmehta04@gmail.com",
+              "userRole": "user",
+              "exp": 1786341114,
+              "tokenType": "accessToken",
+              "iat": 1786337514,
+              "jti": "0cb8fcccee8743c3a8291a72e56ba995",
+              "podId": "prod-5bbc6bb59b-nzvj9"
+            }
+          }
+        },
+        {
+          "type": "Bearer",
+          "header": "authorization",
+          "value": "eyJraWQiOiIzIiwidHlwIjoiSldUIiwiYWxnIjoiUlM1MTIifQ...",
+          "full_value": "eyJraWQiOiIzIiwidHlwIjoiSldUIiwiYWxnIjoiUlM1MTIifQ.eyJ1ZF9yZXNJZCI6MTk0Njg5NzY2LCJzdWIiOiIyMDc2Mzk4NjYiLCJ1ZF91c2VybmFtZSI6Im1haWx0by5oYXJzaG1laHRhMDRAZ21haWwuY29tIiwidWRfaXNFbWFpbCI6dHJ1ZSwiaXNzIjoiSW5mb0VkZ2UgSW5kaWEgUHZ0LiBMdGQuIiwidXNlckFnZW50IjoiTW96aWxsYS81LjAgKFgxMTsgTGludXggeDg2XzY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTQ5LjAuMC4wIFNhZmFyaS81MzcuMzYiLCJpcEFkcmVzcyI6IjI0MDE6NDkwMDo4OGZiOjZlNzM6NjU4MTo2OGY3OjJhZDI6OTY0NyIsInVkX2lzVGVjaE9wc0xvZ2luIjpmYWxzZSwidXNlcklkIjoyMDc2Mzk4NjYsInN1YlVzZXJUeXBlIjoiIiwidXNlclN0YXRlIjoiQVVUSEVOVElDQVRFRCIsInVkX2lzUGFpZENsaWVudCI6ZmFsc2UsInVkX2VtYWlsVmVyaWZpZWQiOnRydWUsInVzZXJUeXBlIjoiam9ic2Vla2VyIiwic2Vzc2lvblN0YXRUaW1lIjoiMjAyNi0wNy0xNlQwMzo0MjowMCIsInVkX2VtYWlsIjoibWFpbHRvLmhhcnNobWVodGEwNEBnbWFpbC5jb20iLCJ1c2VyUm9sZSI6InVzZXIiLCJleHAiOjE3ODYzNDExMTQsInRva2VuVHlwZSI6ImFjY2Vzc1Rva2VuIiwiaWF0IjoxNzg2MzM3NTE0LCJqdGkiOiIwY2I4ZmNjY2VlODc0M2MzYTgyOTFhNzJlNTZiYTk5NSIsInBvZElkIjoicHJvZC01YmJjNmJiNTliLW56dmo5In0.TG_NQP98PAY4SvgI6TJX5kossv7mJMrqqiZqnYlbDsZcKpXKdNlToVDu9fkv_d_-jlLCpiTG6hc5dzaZJjCbv1XU-jcgk6kIf0Gcu9Ec5IpkxbsTm-jZmF25Kgq16bLUaIWv68PYStJEeW4TzYvSOQT5wx-4GQ0ZPHHffdaE3exxieFR1N4pzJvW5BI4844aGoNJkn8kQf303wsT0LW0xfkSx79Zth8DJ0Od5q2Y0CzYHmH1fgewiJ8Jl_kgyLfXTWc_gh1XB5V7DBrmKqixxfUrkPqtcvXiu3dSYJ0ysgcqd5Ettt5pd8og8Jc3kXrjCKArFWiXbMMGfkAqnC8JSQ",
+          "decoded": {
+            "header": {
+              "kid": "3",
+              "typ": "JWT",
+              "alg": "RS512"
+            },
+            "payload": {
+              "ud_resId": 194689766,
+              "sub": "207639866",
+              "ud_username": "mailto.harshmehta04@gmail.com",
+              "ud_isEmail": true,
+              "iss": "InfoEdge India Pvt. Ltd.",
+              "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+              "ipAdress": "2401:4900:88fb:6e73:6581:68f7:2ad2:9647",
+              "ud_isTechOpsLogin": false,
+              "userId": 207639866,
+              "subUserType": "",
+              "userState": "AUTHENTICATED",
+              "ud_isPaidClient": false,
+              "ud_emailVerified": true,
+              "userType": "jobseeker",
+              "sessionStatTime": "2026-07-16T03:42:00",
+              "ud_email": "mailto.harshmehta04@gmail.com",
+              "userRole": "user",
+              "exp": 1786341114,
+              "tokenType": "accessToken",
+              "iat": 1786337514,
+              "jti": "0cb8fcccee8743c3a8291a72e56ba995",
+              "podId": "prod-5bbc6bb59b-nzvj9"
+            },
+            "algorithm": "RS512",
+            "type": "JWT",
+            "issued_at": "2026-08-10T10:21:54",
+            "expires_at": "2026-08-10T11:21:54",
+            "issuer": "InfoEdge India Pvt. Ltd.",
+            "subject": "207639866",
+            "audience": null,
+            "claims": {
+              "ud_resId": 194689766,
+              "sub": "207639866",
+              "ud_username": "mailto.harshmehta04@gmail.com",
+              "ud_isEmail": true,
+              "iss": "InfoEdge India Pvt. Ltd.",
+              "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+              "ipAdress": "2401:4900:88fb:6e73:6581:68f7:2ad2:9647",
+              "ud_isTechOpsLogin": false,
+              "userId": 207639866,
+              "subUserType": "",
+              "userState": "AUTHENTICATED",
+              "ud_isPaidClient": false,
+              "ud_emailVerified": true,
+              "userType": "jobseeker",
+              "sessionStatTime": "2026-07-16T03:42:00",
+              "ud_email": "mailto.harshmehta04@gmail.com",
+              "userRole": "user",
+              "exp": 1786341114,
+              "tokenType": "accessToken",
+              "iat": 1786337514,
+              "jti": "0cb8fcccee8743c3a8291a72e56ba995",
+              "podId": "prod-5bbc6bb59b-nzvj9"
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "url": "https://www.naukri.com/jobapi/v1/ads/new/ff?adType=SRP_RP&deviceType=DESK",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:02.823776"
+        },
+        {
+          "url": "https://www.naukri.com/jobapi/v1/ads/new/ff?adType=BELLY&deviceType=DESK",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:05.350081"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/j/nLoggerJB_v3.4.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/j/nLoggerJB_v3.4.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:02.992038"
+        }
+      ]
+    },
+    "static.naukimg.com/s/7/0/j/naukri-widget_v12.36-modern.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/7/0/j/naukri-widget_v12.36-modern.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:03.581533"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/2316.a1fc198a061b8e21.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/2316.a1fc198a061b8e21.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:03.081305"
+        }
+      ]
+    },
+    "www.naukri.com/jobapi/v3/search": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [
+        "seoKey",
+        "k",
+        "nignbevent_src",
+        "noOfResults",
+        "keyword",
+        "searchType",
+        "src",
+        "urlType",
+        "pageNo"
+      ],
+      "body_params": [],
+      "auth_methods": [
+        "Bearer"
+      ],
+      "headers": [
+        "accept-encoding",
+        "authorization",
+        "cookie",
+        "Content-Type",
+        ":scheme",
+        "content-type",
+        "appid",
+        "user-agent",
+        "sec-ch-ua",
+        "sec-fetch-site",
+        ":method",
+        ":path",
+        "Referer",
+        "nkparam",
+        "priority",
+        "referer",
+        "User-Agent",
+        ":authority",
+        "sec-ch-ua-mobile",
+        "sec-fetch-mode",
+        "systemid",
+        "clientid",
+        "accept",
+        "sec-fetch-dest",
+        "accept-language",
+        "sec-ch-ua-platform",
+        "gid"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/json"
+      ],
+      "tokens": [
+        {
+          "type": "Bearer",
+          "header": "authorization",
+          "value": "eyJraWQiOiIzIiwidHlwIjoiSldUIiwiYWxnIjoiUlM1MTIifQ...",
+          "full_value": "eyJraWQiOiIzIiwidHlwIjoiSldUIiwiYWxnIjoiUlM1MTIifQ.eyJ1ZF9yZXNJZCI6MTk0Njg5NzY2LCJzdWIiOiIyMDc2Mzk4NjYiLCJ1ZF91c2VybmFtZSI6Im1haWx0by5oYXJzaG1laHRhMDRAZ21haWwuY29tIiwidWRfaXNFbWFpbCI6dHJ1ZSwiaXNzIjoiSW5mb0VkZ2UgSW5kaWEgUHZ0LiBMdGQuIiwidXNlckFnZW50IjoiTW96aWxsYS81LjAgKFgxMTsgTGludXggeDg2XzY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTQ5LjAuMC4wIFNhZmFyaS81MzcuMzYiLCJpcEFkcmVzcyI6IjI0MDE6NDkwMDo4OGZiOjZlNzM6NjU4MTo2OGY3OjJhZDI6OTY0NyIsInVkX2lzVGVjaE9wc0xvZ2luIjpmYWxzZSwidXNlcklkIjoyMDc2Mzk4NjYsInN1YlVzZXJUeXBlIjoiIiwidXNlclN0YXRlIjoiQVVUSEVOVElDQVRFRCIsInVkX2lzUGFpZENsaWVudCI6ZmFsc2UsInVkX2VtYWlsVmVyaWZpZWQiOnRydWUsInVzZXJUeXBlIjoiam9ic2Vla2VyIiwic2Vzc2lvblN0YXRUaW1lIjoiMjAyNi0wNy0xNlQwMzo0MjowMCIsInVkX2VtYWlsIjoibWFpbHRvLmhhcnNobWVodGEwNEBnbWFpbC5jb20iLCJ1c2VyUm9sZSI6InVzZXIiLCJleHAiOjE3ODYzNDExMTQsInRva2VuVHlwZSI6ImFjY2Vzc1Rva2VuIiwiaWF0IjoxNzg2MzM3NTE0LCJqdGkiOiIwY2I4ZmNjY2VlODc0M2MzYTgyOTFhNzJlNTZiYTk5NSIsInBvZElkIjoicHJvZC01YmJjNmJiNTliLW56dmo5In0.TG_NQP98PAY4SvgI6TJX5kossv7mJMrqqiZqnYlbDsZcKpXKdNlToVDu9fkv_d_-jlLCpiTG6hc5dzaZJjCbv1XU-jcgk6kIf0Gcu9Ec5IpkxbsTm-jZmF25Kgq16bLUaIWv68PYStJEeW4TzYvSOQT5wx-4GQ0ZPHHffdaE3exxieFR1N4pzJvW5BI4844aGoNJkn8kQf303wsT0LW0xfkSx79Zth8DJ0Od5q2Y0CzYHmH1fgewiJ8Jl_kgyLfXTWc_gh1XB5V7DBrmKqixxfUrkPqtcvXiu3dSYJ0ysgcqd5Ettt5pd8og8Jc3kXrjCKArFWiXbMMGfkAqnC8JSQ",
+          "decoded": {
+            "header": {
+              "kid": "3",
+              "typ": "JWT",
+              "alg": "RS512"
+            },
+            "payload": {
+              "ud_resId": 194689766,
+              "sub": "207639866",
+              "ud_username": "mailto.harshmehta04@gmail.com",
+              "ud_isEmail": true,
+              "iss": "InfoEdge India Pvt. Ltd.",
+              "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+              "ipAdress": "2401:4900:88fb:6e73:6581:68f7:2ad2:9647",
+              "ud_isTechOpsLogin": false,
+              "userId": 207639866,
+              "subUserType": "",
+              "userState": "AUTHENTICATED",
+              "ud_isPaidClient": false,
+              "ud_emailVerified": true,
+              "userType": "jobseeker",
+              "sessionStatTime": "2026-07-16T03:42:00",
+              "ud_email": "mailto.harshmehta04@gmail.com",
+              "userRole": "user",
+              "exp": 1786341114,
+              "tokenType": "accessToken",
+              "iat": 1786337514,
+              "jti": "0cb8fcccee8743c3a8291a72e56ba995",
+              "podId": "prod-5bbc6bb59b-nzvj9"
+            },
+            "algorithm": "RS512",
+            "type": "JWT",
+            "issued_at": "2026-08-10T10:21:54",
+            "expires_at": "2026-08-10T11:21:54",
+            "issuer": "InfoEdge India Pvt. Ltd.",
+            "subject": "207639866",
+            "audience": null,
+            "claims": {
+              "ud_resId": 194689766,
+              "sub": "207639866",
+              "ud_username": "mailto.harshmehta04@gmail.com",
+              "ud_isEmail": true,
+              "iss": "InfoEdge India Pvt. Ltd.",
+              "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+              "ipAdress": "2401:4900:88fb:6e73:6581:68f7:2ad2:9647",
+              "ud_isTechOpsLogin": false,
+              "userId": 207639866,
+              "subUserType": "",
+              "userState": "AUTHENTICATED",
+              "ud_isPaidClient": false,
+              "ud_emailVerified": true,
+              "userType": "jobseeker",
+              "sessionStatTime": "2026-07-16T03:42:00",
+              "ud_email": "mailto.harshmehta04@gmail.com",
+              "userRole": "user",
+              "exp": 1786341114,
+              "tokenType": "accessToken",
+              "iat": 1786337514,
+              "jti": "0cb8fcccee8743c3a8291a72e56ba995",
+              "podId": "prod-5bbc6bb59b-nzvj9"
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "url": "https://www.naukri.com/jobapi/v3/search?noOfResults=20&urlType=search_by_keyword&searchType=adv&keyword=flask&pageNo=1&k=flask&nignbevent_src=jobsearchDeskGNB&seoKey=flask-jobs&src=jobsearchDesk&latLong=",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:03.420998"
+        }
+      ]
+    },
+    "lg.naukri.com//uba": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [
+        "data",
+        "rad"
+      ],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "accept-encoding",
+        ":scheme",
+        "user-agent",
+        "sec-ch-ua",
+        "sec-fetch-site",
+        ":method",
+        ":path",
+        "Referer",
+        "priority",
+        "referer",
+        "User-Agent",
+        "origin",
+        ":authority",
+        "sec-ch-ua-mobile",
+        "sec-fetch-mode",
+        "accept",
+        "sec-fetch-dest",
+        "accept-language",
+        "sec-ch-ua-platform"
+      ],
+      "response_statuses": [
+        204
+      ],
+      "content_types": [],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://lg.naukri.com//uba?data={%22rt.start%22:%22navigation%22,%22t_resp%22:%222551%22,%22t_page%22:%228662%22,%22t_done%22:%2211213%22,%22r%22:%22https%3A%2F%2Fwww.naukri.com%2Fmnjuser%2Fhomepage%22,%22t_resr%22:{},%22u%22:%22nmit-https%3A%2F%2Fwww.naukri.com%2Fflask-jobs%3Fk%3Dflask%26nignbevent_src%3DjobsearchDeskGNB%22,%22nt_dns%22:%220%22,%22nt_red%22:%220%22,%22nt_plt%22:%221271%22,%22nt_render%22:%221786%22,%22nt_req%22:%22136%22,%22nt_res%22:%2298%22,%22nt_tcp%22:%22522%22,%22appId%22:109,%22tag%22:%22jobseeker-desktop-srp-nmit%22,%22eventName%22:%22newMonkPerformance%22,%22tenantId%22:1,%22deviceType%22:%22SERVER%22}&rad=0.09735182629258088",
+          "method": "GET",
+          "status": 204,
+          "timestamp": "2026-08-10T11:11:05.905441"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/2ad6885b692024fa.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/2ad6885b692024fa.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:12.789805"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/assets/icons/ni-icons.dd96ca47c9a764728dfcae6d428abd0a933daa20.woff2": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/octet-stream"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/assets/icons/ni-icons.dd96ca47c9a764728dfcae6d428abd0a933daa20.woff2",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:12.880453"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/4078.c8c31da2601c71ad.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/4078.c8c31da2601c71ad.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:12.794170"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/9069.075feebb1f3be9ec.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/9069.075feebb1f3be9ec.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:12.776118"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/7194.380e6b6e1432242c.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/7194.380e6b6e1432242c.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:12.874757"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/2294.138fd50fba10d2aa.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/2294.138fd50fba10d2aa.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:12.878683"
+        }
+      ]
+    },
+    "www.naukri.com/jobapi/v1/ads/new/dfp": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [
+        "urlType",
+        "keyword",
+        "searchType"
+      ],
+      "body_params": [],
+      "auth_methods": [
+        "Bearer"
+      ],
+      "headers": [
+        "systemid",
+        "sec-ch-ua",
+        "authorization",
+        "Content-Type",
+        "clientid",
+        "accept",
+        "appid",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/json"
+      ],
+      "tokens": [
+        {
+          "type": "Bearer",
+          "header": "authorization",
+          "value": "eyJraWQiOiIzIiwidHlwIjoiSldUIiwiYWxnIjoiUlM1MTIifQ...",
+          "full_value": "eyJraWQiOiIzIiwidHlwIjoiSldUIiwiYWxnIjoiUlM1MTIifQ.eyJ1ZF9yZXNJZCI6MTk0Njg5NzY2LCJzdWIiOiIyMDc2Mzk4NjYiLCJ1ZF91c2VybmFtZSI6Im1haWx0by5oYXJzaG1laHRhMDRAZ21haWwuY29tIiwidWRfaXNFbWFpbCI6dHJ1ZSwiaXNzIjoiSW5mb0VkZ2UgSW5kaWEgUHZ0LiBMdGQuIiwidXNlckFnZW50IjoiTW96aWxsYS81LjAgKFgxMTsgTGludXggeDg2XzY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTQ5LjAuMC4wIFNhZmFyaS81MzcuMzYiLCJpcEFkcmVzcyI6IjI0MDE6NDkwMDo4OGZiOjZlNzM6NjU4MTo2OGY3OjJhZDI6OTY0NyIsInVkX2lzVGVjaE9wc0xvZ2luIjpmYWxzZSwidXNlcklkIjoyMDc2Mzk4NjYsInN1YlVzZXJUeXBlIjoiIiwidXNlclN0YXRlIjoiQVVUSEVOVElDQVRFRCIsInVkX2lzUGFpZENsaWVudCI6ZmFsc2UsInVkX2VtYWlsVmVyaWZpZWQiOnRydWUsInVzZXJUeXBlIjoiam9ic2Vla2VyIiwic2Vzc2lvblN0YXRUaW1lIjoiMjAyNi0wNy0xNlQwMzo0MjowMCIsInVkX2VtYWlsIjoibWFpbHRvLmhhcnNobWVodGEwNEBnbWFpbC5jb20iLCJ1c2VyUm9sZSI6InVzZXIiLCJleHAiOjE3ODYzNDExMTQsInRva2VuVHlwZSI6ImFjY2Vzc1Rva2VuIiwiaWF0IjoxNzg2MzM3NTE0LCJqdGkiOiIwY2I4ZmNjY2VlODc0M2MzYTgyOTFhNzJlNTZiYTk5NSIsInBvZElkIjoicHJvZC01YmJjNmJiNTliLW56dmo5In0.TG_NQP98PAY4SvgI6TJX5kossv7mJMrqqiZqnYlbDsZcKpXKdNlToVDu9fkv_d_-jlLCpiTG6hc5dzaZJjCbv1XU-jcgk6kIf0Gcu9Ec5IpkxbsTm-jZmF25Kgq16bLUaIWv68PYStJEeW4TzYvSOQT5wx-4GQ0ZPHHffdaE3exxieFR1N4pzJvW5BI4844aGoNJkn8kQf303wsT0LW0xfkSx79Zth8DJ0Od5q2Y0CzYHmH1fgewiJ8Jl_kgyLfXTWc_gh1XB5V7DBrmKqixxfUrkPqtcvXiu3dSYJ0ysgcqd5Ettt5pd8og8Jc3kXrjCKArFWiXbMMGfkAqnC8JSQ",
+          "decoded": {
+            "header": {
+              "kid": "3",
+              "typ": "JWT",
+              "alg": "RS512"
+            },
+            "payload": {
+              "ud_resId": 194689766,
+              "sub": "207639866",
+              "ud_username": "mailto.harshmehta04@gmail.com",
+              "ud_isEmail": true,
+              "iss": "InfoEdge India Pvt. Ltd.",
+              "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+              "ipAdress": "2401:4900:88fb:6e73:6581:68f7:2ad2:9647",
+              "ud_isTechOpsLogin": false,
+              "userId": 207639866,
+              "subUserType": "",
+              "userState": "AUTHENTICATED",
+              "ud_isPaidClient": false,
+              "ud_emailVerified": true,
+              "userType": "jobseeker",
+              "sessionStatTime": "2026-07-16T03:42:00",
+              "ud_email": "mailto.harshmehta04@gmail.com",
+              "userRole": "user",
+              "exp": 1786341114,
+              "tokenType": "accessToken",
+              "iat": 1786337514,
+              "jti": "0cb8fcccee8743c3a8291a72e56ba995",
+              "podId": "prod-5bbc6bb59b-nzvj9"
+            },
+            "algorithm": "RS512",
+            "type": "JWT",
+            "issued_at": "2026-08-10T10:21:54",
+            "expires_at": "2026-08-10T11:21:54",
+            "issuer": "InfoEdge India Pvt. Ltd.",
+            "subject": "207639866",
+            "audience": null,
+            "claims": {
+              "ud_resId": 194689766,
+              "sub": "207639866",
+              "ud_username": "mailto.harshmehta04@gmail.com",
+              "ud_isEmail": true,
+              "iss": "InfoEdge India Pvt. Ltd.",
+              "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+              "ipAdress": "2401:4900:88fb:6e73:6581:68f7:2ad2:9647",
+              "ud_isTechOpsLogin": false,
+              "userId": 207639866,
+              "subUserType": "",
+              "userState": "AUTHENTICATED",
+              "ud_isPaidClient": false,
+              "ud_emailVerified": true,
+              "userType": "jobseeker",
+              "sessionStatTime": "2026-07-16T03:42:00",
+              "ud_email": "mailto.harshmehta04@gmail.com",
+              "userRole": "user",
+              "exp": 1786341114,
+              "tokenType": "accessToken",
+              "iat": 1786337514,
+              "jti": "0cb8fcccee8743c3a8291a72e56ba995",
+              "podId": "prod-5bbc6bb59b-nzvj9"
+            }
+          }
+        }
+      ],
+      "examples": [
+        {
+          "url": "https://www.naukri.com/jobapi/v1/ads/new/dfp?&urlType=search_by_keyword&searchType=adv&keyword=flask",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:12.964580"
+        }
+      ]
+    },
+    "www.naukri.com/cloudgateway-ccs/inventory-management-services/v2/page/pagename/ni-desktop-srp-dashboard-v2": {
+      "methods": [
+        "POST"
+      ],
+      "query_params": [
+        "partial",
+        "rules",
+        "sync"
+      ],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "systemid",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "Content-Type",
+        "Accept",
+        "clientid",
+        "appid",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Authorization"
+      ],
+      "response_statuses": [],
+      "content_types": [],
+      "tokens": [],
+      "examples": []
+    },
+    "static.naukimg.com/s/0/0/i/naukri-identity/naukri_gnb_logo.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/naukri-identity/naukri_gnb_logo.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.008153"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/ambitionBoxLogo.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/ambitionBoxLogo.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.020810"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/instagram.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/instagram.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.053732"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/twitter_v1.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/twitter_v1.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.062763"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/linkedin.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/linkedin.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.070533"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/android-app_v1.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/android-app_v1.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.078562"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/ios-app_v1.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/ios-app_v1.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.086376"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/infoedge-logo.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/infoedge-logo.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.094004"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/footer-logos/nnacres.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/nnacres.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.101706"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jeevansathi.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jeevansathi.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.109363"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/footer-logos/ng_v1.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/ng_v1.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.117449"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.124852"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/footer-logos/iimjobs.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/iimjobs.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.131661"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/footer-logos/hirist_v1.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/hirist_v1.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.138510"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jobhai.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jobhai.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.146215"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/footer-logos/doselect.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/doselect.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.229108"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/footer-logos/minis.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/minis.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.241166"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/new-homepage/footer-logos/coding_ninjas.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/coding_ninjas.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.292789"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/gnb/j/vendors~ni-desktop-gnb-notif-center-revamped~ni-gnb-drawer~ni-gnb-notif-center~ni-gnb-search-bar.2df47e54.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/gnb/j/vendors~ni-desktop-gnb-notif-center-revamped~ni-gnb-drawer~ni-gnb-notif-center~ni-gnb-search-bar.2df47e54.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:14.700717"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/gnb/j/ni-desktop-gnb-notif-center-revamped.5c12d7e1.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/gnb/j/ni-desktop-gnb-notif-center-revamped.5c12d7e1.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:14.718240"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/gnb/j/vendors~ni-gnb-search-bar.0584b169.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/gnb/j/vendors~ni-gnb-search-bar.0584b169.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:14.704838"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/gnb/j/ni-gnb-search-bar.2c9a2cfc.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/gnb/j/ni-gnb-search-bar.2c9a2cfc.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:14.708316"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/gnb/j/ni-gnb-sse-comp.92f18a2b.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/gnb/j/ni-gnb-sse-comp.92f18a2b.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:14.711676"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/gnb/j/vendors~ni-desktop-gnb-notif-center-revamped~ni-gnb-drawer~ni-gnb-login-layer.fc83b9d6.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/gnb/j/vendors~ni-desktop-gnb-notif-center-revamped~ni-gnb-drawer~ni-gnb-login-layer.fc83b9d6.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:14.714953"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/gnb/j/ni-gnb-drawer.a1d9c2bd.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/gnb/j/ni-gnb-drawer.a1d9c2bd.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:14.722700"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/gnb/j/ni-gnb-collated-pill.4925e84d.min.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/gnb/j/ni-gnb-collated-pill.4925e84d.min.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:18.033318"
+        }
+      ]
+    },
+    "537e7edf292c0117bde89240176c4ab2.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "accept-encoding",
+        ":scheme",
+        "user-agent",
+        "Upgrade-Insecure-Requests",
+        "sec-ch-ua",
+        "sec-fetch-site",
+        ":method",
+        "sec-fetch-storage-access",
+        ":path",
+        "Referer",
+        "x-client-data",
+        "priority",
+        "referer",
+        "User-Agent",
+        ":authority",
+        "sec-ch-ua-mobile",
+        "sec-fetch-mode",
+        "accept",
+        "sec-fetch-dest",
+        "accept-language",
+        "sec-ch-ua-platform",
+        "upgrade-insecure-requests"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/html"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://537e7edf292c0117bde89240176c4ab2.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:27.799890"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/5345.3127dda8bc735087.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/5345.3127dda8bc735087.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:24.659021"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/chunks/2032.9cfc620d7cfb09a9.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/x-javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/chunks/2032.9cfc620d7cfb09a9.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:24.674842"
+        }
+      ]
+    },
+    "ep1.adtrafficquality.google/getconfig/sodar": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [
+        "tv",
+        "st",
+        "sv",
+        "sjk",
+        "tid"
+      ],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "accept-encoding",
+        ":scheme",
+        "user-agent",
+        "sec-ch-ua",
+        "sec-fetch-site",
+        ":method",
+        ":path",
+        "Referer",
+        "priority",
+        "referer",
+        "User-Agent",
+        "origin",
+        ":authority",
+        "sec-ch-ua-mobile",
+        "sec-fetch-mode",
+        "accept",
+        "sec-fetch-dest",
+        "accept-language",
+        "sec-ch-ua-platform"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "application/json"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202607310101&st=env&sjk=6171301292142835",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:27.566161"
+        }
+      ]
+    },
+    "ep2.adtrafficquality.google/sodar/sodar2.js": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/javascript"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://ep2.adtrafficquality.google/sodar/sodar2.js",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:29.290168"
+        }
+      ]
+    },
+    "www.google.com/recaptcha/api2/aframe": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "accept-encoding",
+        "cookie",
+        ":scheme",
+        "user-agent",
+        "Upgrade-Insecure-Requests",
+        "sec-ch-ua",
+        "sec-fetch-site",
+        ":method",
+        "sec-fetch-storage-access",
+        ":path",
+        "Referer",
+        "x-client-data",
+        "priority",
+        "referer",
+        "User-Agent",
+        ":authority",
+        "sec-ch-ua-mobile",
+        "sec-fetch-mode",
+        "accept",
+        "sec-fetch-dest",
+        "accept-language",
+        "sec-ch-ua-platform",
+        "upgrade-insecure-requests"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/html"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://www.google.com/recaptcha/api2/aframe",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:30.915240"
+        }
+      ]
+    },
+    "ep2.adtrafficquality.google/sodar/sodar2/255/runner.html": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "Upgrade-Insecure-Requests",
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/html"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://ep2.adtrafficquality.google/sodar/sodar2/255/runner.html",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:30.553542"
+        }
+      ]
+    },
+    "static.naukimg.com/s/9/121/_next/static/css/d18a653f31c6c971.css": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "Origin",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "text/css"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/9/121/_next/static/css/d18a653f31c6c971.css",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:32.700661"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/gnb-pills/naukri360.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/gnb-pills/naukri360.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:35.353563"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/gnb-pills/resume-tool.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/gnb-pills/resume-tool.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:35.390389"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/gnb-pills/interview-prep.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/gnb-pills/interview-prep.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:35.454839"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/gnb-pills/upskilling.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/gnb-pills/upskilling.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:35.467209"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/gnb-pills/news-insights.png": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/png"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/gnb-pills/news-insights.png",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:35.480047"
+        }
+      ]
+    },
+    "static.naukimg.com/s/0/0/i/ni-gnb-revamped/userdp_v1.svg": {
+      "methods": [
+        "GET"
+      ],
+      "query_params": [],
+      "body_params": [],
+      "auth_methods": [],
+      "headers": [
+        "sec-ch-ua",
+        "User-Agent",
+        "sec-ch-ua-platform",
+        "Referer",
+        "sec-ch-ua-mobile"
+      ],
+      "response_statuses": [
+        200
+      ],
+      "content_types": [
+        "image/svg+xml"
+      ],
+      "tokens": [],
+      "examples": [
+        {
+          "url": "https://static.naukimg.com/s/0/0/i/ni-gnb-revamped/userdp_v1.svg",
+          "method": "GET",
+          "status": 200,
+          "timestamp": "2026-08-10T11:11:35.492550"
+        }
+      ]
+    }
+  },
+  "authentication_endpoints": [
+    {
+      "url": "https://static.naukimg.com/s/9/121/_next/static/gnb/j/vendors~ni-desktop-gnb-notif-center-revamped~ni-gnb-drawer~ni-gnb-login-layer.fc83b9d6.min.js",
+      "method": "GET",
+      "auth_methods": []
+    }
+  ],
+  "admin_endpoints": [
+    {
+      "url": "https://www.naukri.com/jobapi/v1/ads/new/ff?adType=SRP_RP&deviceType=DESK",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://www.naukri.com/jobapi/v1/ads/new/ff?adType=BELLY&deviceType=DESK",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "url": "https://www.naukri.com/jobapi/v1/ads/new/dfp?&urlType=search_by_keyword&searchType=adv&keyword=flask",
+      "method": "GET",
+      "status": 200
+    }
+  ],
+  "technologies": []
+}

@@ -1,0 +1,43 @@
+{
+  "cycle": 12,
+  "goal_achieved": false,
+  "best_reward": 11.0,
+  "q_stats": {
+    "state_count": 4,
+    "total_q_values": 119,
+    "exploration_rate": 0.5318309230296775,
+    "learning_rate": 0.22499999999999998,
+    "total_actions": 12,
+    "unique_actions": 90,
+    "consecutive_repeats": 0,
+    "successful_paths": 4,
+    "best_sequences": 4,
+    "goal_achieved": false
+  },
+  "reward_progress": [
+    8.0,
+    5.7,
+    0.7,
+    11.0,
+    6.0,
+    0.7,
+    0.7,
+    0.7,
+    0.7,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "episodes": 12,
+  "best_path": {
+    "actions": [
+      "click|application status|job_application",
+      "click|application status|job_application",
+      "click|application status|job_application",
+      "click|highlight your application|job_application"
+    ],
+    "reward": 11.0,
+    "success_count": 1
+  },
+  "timestamp": "2026-08-01T10:55:45.229015"
+}

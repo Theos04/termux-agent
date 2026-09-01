@@ -1,0 +1,21 @@
+================================================================================
+🧠 ENHANCED RL AGENT - FINAL REPORT
+================================================================================
+Total Cycles: 6
+States Discovered: 4
+Q-Values Learned: 45
+Exploration Rate: 0.475
+Total Actions: 5
+Unique Actions: 31
+
+Recent Performance (last 5):
+  Avg Reward: 2.10
+  Success Rate: 100.0%
+
+Action Distribution:
+  click|application status|job_application: 2 times
+  click|application status9 updates|job_application: 1 times
+  click|fastjob20 20% off on servic...|pagination: 1 times
+  click|saved jobs|save_content: 1 times
+
+================================================================================

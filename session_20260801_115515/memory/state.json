@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "session_id": "20260801_115515",
+    "start_time": "2026-08-01T11:55:15.119310",
+    "end_time": null,
+    "chrome_port": 9259,
+    "tab_url": "https://www.moneycontrol.com/",
+    "tab_title": "Business News: Stock and Share Market News, Economy and Finance News, Sensex, Nifty, Global Market, NSE, BSE Live IPO News - Moneycontrol.com",
+    "total_commands": 128,
+    "snapshots_taken": [],
+    "files_generated": {}
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 128,
+  "last_updated": "2026-08-01T11:57:50.255434"
+}

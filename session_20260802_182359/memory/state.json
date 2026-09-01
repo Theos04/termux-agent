@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "session_id": "20260802_182359",
+    "start_time": "2026-08-02T18:23:59.365529",
+    "end_time": "2026-08-02T18:37:22.559790",
+    "chrome_port": 9258,
+    "tab_url": "https://unstop.com/competitions/1702198/register",
+    "tab_title": "Unstop - Competitions, Quizzes, Hackathons, Scholarships and Internships for Students and Corporates",
+    "total_commands": 6,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 2
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "session_20260802_182359/dom_trees/dom_182911_725779.json",
+      "metadata": {
+        "session_id": "20260802_182359",
+        "timestamp": "2026-08-02T18:29:11.727872",
+        "tab_url": "https://unstop.com/competitions/1702198/register",
+        "tab_title": "Unstop - Competitions, Quizzes, Hackathons, Scholarships and Internships for Students and Corporates",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 1090,
+        "command_index": 6
+      }
+    },
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 6,
+  "last_updated": "2026-08-02T18:37:22.578308"
+}

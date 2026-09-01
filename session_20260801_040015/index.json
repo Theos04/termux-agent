@@ -1,0 +1,11 @@
+{
+  "accessibility": [
+    {
+      "filename": "a11y_040020_283015.json",
+      "timestamp": "2026-08-01T04:00:20.283152",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    }
+  ]
+}

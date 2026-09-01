@@ -1,0 +1,57 @@
+{
+  "cycle": 30,
+  "goal_achieved": false,
+  "best_reward": 14.0,
+  "q_stats": {
+    "state_count": 13,
+    "total_q_values": 319,
+    "exploration_rate": 0.6175541700641609,
+    "learning_rate": 0.22499999999999998,
+    "total_actions": 282,
+    "unique_actions": 282,
+    "consecutive_repeats": 0,
+    "stuck_count": 0,
+    "episodes": 25,
+    "successful_episodes": 10,
+    "avg_reward": 4.476,
+    "max_reward": 14.0,
+    "min_reward": 0.9
+  },
+  "reward_progress": [
+    14.0,
+    5.9,
+    5.9,
+    3.9,
+    3.9,
+    3.9,
+    5.9,
+    3.9,
+    5.9,
+    3.9,
+    3.9,
+    5.6000000000000005,
+    3.9,
+    3.3,
+    5.9,
+    3.6,
+    3.6,
+    5.300000000000001,
+    5.300000000000001,
+    5.9
+  ],
+  "episodes": 25,
+  "best_path": {
+    "actions": [
+      "click|Watch more|pagination",
+      "click|Watch more|pagination",
+      "click|Watch more|pagination",
+      "navigate|English|navigation",
+      "navigate|Hindi|navigation"
+    ],
+    "reward": 14.0,
+    "cycle": 6
+  },
+  "success_count": 1,
+  "unique_states": 12,
+  "timestamp": "2026-08-01T13:00:17.763421"
+}

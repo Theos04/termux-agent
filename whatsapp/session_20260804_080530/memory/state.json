@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "session_id": "20260804_080530",
+    "start_time": "2026-08-04T08:05:30.354822",
+    "end_time": null,
+    "chrome_port": 9261,
+    "tab_url": "https://web.whatsapp.com/",
+    "tab_title": "(170) WhatsApp Business",
+    "total_commands": 32,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 3,
+      "snapshots": 1,
+      "accessibility": 1
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "whatsapp/session_20260804_080530/dom_trees/dom_085809_288149.json",
+      "metadata": {
+        "session_id": "20260804_080530",
+        "timestamp": "2026-08-04T08:58:09.289092",
+        "tab_url": "https://web.whatsapp.com/",
+        "tab_title": "(170) WhatsApp Business",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 5100,
+        "command_index": 12
+      }
+    },
+    "last_snapshot": {
+      "file": "whatsapp/session_20260804_080530/snapshots/snapshot_080550_543710.json",
+      "metadata": {
+        "session_id": "20260804_080530",
+        "timestamp": "2026-08-04T08:05:50.543854",
+        "tab_url": "https://web.whatsapp.com/",
+        "tab_title": "(170) WhatsApp Business",
+        "context": {
+          "method": "DOMSnapshot.getSnapshot",
+          "params": {
+            "computedStyleWhitelist": [],
+            "includeEventListeners": false,
+            "includePaintOrder": false,
+            "includeUserAgentShadowTree": true
+          }
+        },
+        "dom_node_count": 3092,
+        "layout_tree_count": 0,
+        "computed_styles_count": 0,
+        "command_index": 7
+      }
+    },
+    "last_accessibility": {
+      "file": "whatsapp/session_20260804_080530/accessibility/a11y_080552_556071.json",
+      "metadata": {
+        "session_id": "20260804_080530",
+        "timestamp": "2026-08-04T08:05:52.556265",
+        "tab_url": "https://web.whatsapp.com/",
+        "tab_title": "(170) WhatsApp Business",
+        "context": {
+          "method": "Comprehensive_AX_Tree"
+        },
+        "node_count": 0,
+        "command_index": 9
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": [
+      {
+        "timestamp": "2026-08-04T08:47:55.630157",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9261): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9261): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-04T08:47:55.646644",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      }
+    ]
+  },
+  "command_count": 32,
+  "last_updated": "2026-08-04T09:08:51.756859"
+}

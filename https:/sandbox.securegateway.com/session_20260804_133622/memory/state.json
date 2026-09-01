@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "session_id": "20260804_133622",
+    "start_time": "2026-08-04T13:36:22.518133",
+    "end_time": "2026-08-04T13:50:19.490742",
+    "chrome_port": 9264,
+    "tab_url": "https://sandbox.securegateway.com/",
+    "tab_title": "Secure Gateway\u00ae Sandbox for Penetration Testing-ALSCO",
+    "total_commands": 2,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 1
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "https:/sandbox.securegateway.com/session_20260804_133622/dom_trees/dom_133627_961453.json",
+      "metadata": {
+        "session_id": "20260804_133622",
+        "timestamp": "2026-08-04T13:36:27.961711",
+        "tab_url": "https://sandbox.securegateway.com/",
+        "tab_title": "Secure Gateway\u00ae Sandbox for Penetration Testing-ALSCO",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 252,
+        "command_index": 2
+      }
+    },
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 2,
+  "last_updated": "2026-08-04T13:50:19.530068"
+}

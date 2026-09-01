@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "session_id": "20260802_183907",
+    "start_time": "2026-08-02T18:39:07.730465",
+    "end_time": "2026-08-02T18:58:20.836324",
+    "chrome_port": 9223,
+    "tab_url": "https://web.whatsapp.com/",
+    "tab_title": "WhatsApp",
+    "total_commands": 26,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 2,
+      "interactions": 8
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "session_20260802_183907/dom_trees/dom_184852_107723.json",
+      "metadata": {
+        "session_id": "20260802_183907",
+        "timestamp": "2026-08-02T18:48:52.107878",
+        "tab_url": "https://web.whatsapp.com/",
+        "tab_title": "WhatsApp",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 379,
+        "command_index": 12
+      }
+    },
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": {
+      "file": "session_20260802_183907/interactions/interaction_185800_992714.json",
+      "metadata": {
+        "session_id": "20260802_183907",
+        "timestamp": "2026-08-02T18:58:00.992870",
+        "tab_url": "https://web.whatsapp.com/",
+        "tab_title": "WhatsApp",
+        "context": {
+          "type": "script_execution"
+        },
+        "interaction_number": 8,
+        "command_index": 26
+      }
+    },
+    "interaction_count": 8,
+    "errors": []
+  },
+  "command_count": 26,
+  "last_updated": "2026-08-02T18:58:20.840016"
+}

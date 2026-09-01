@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "session_id": "20260801_140504",
+    "start_time": "2026-08-01T14:05:04.463407",
+    "end_time": null,
+    "chrome_port": 9260,
+    "tab_url": "https://www.naukri.com/companies-hiring-in-india?title=MNCs%20actively%20hiring&src=gnbCompanies_homepage_srch&pageNo=1&categoryId=101&qcbusinessSize=217",
+    "tab_title": "List of top companies hiring in India - Naukri.com",
+    "total_commands": 104,
+    "snapshots_taken": [],
+    "files_generated": {}
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 104,
+  "last_updated": "2026-08-01T14:06:54.902605"
+}

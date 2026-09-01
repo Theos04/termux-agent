@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "session_id": "20260801_040928",
+    "start_time": "2026-08-01T04:09:28.473193",
+    "end_time": null,
+    "chrome_port": 9257,
+    "tab_url": "https://www.ambitionbox.com/communities/retail",
+    "tab_title": "Retail | AmbitionBox",
+    "total_commands": 130,
+    "snapshots_taken": [],
+    "files_generated": {
+      "accessibility": 10
+    }
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": {
+      "file": "/data/data/com.termux/files/home/automation/chrome-launcher/session_20260801_040928/accessibility/a11y_041010_429161.json",
+      "metadata": {
+        "session_id": "20260801_040928",
+        "timestamp": "2026-08-01T04:10:10.429299",
+        "tab_url": "https://www.ambitionbox.com/communities/retail",
+        "tab_title": "Retail | AmbitionBox",
+        "context": {
+          "method": "Accessibility.getFullAXTree"
+        },
+        "node_count": 5346,
+        "command_index": 120
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 130,
+  "last_updated": "2026-08-01T04:10:11.811615"
+}

@@ -1,0 +1,20 @@
+================================================================================
+🧠 FINAL RL AGENT - COMPLETE REPORT
+================================================================================
+Total Cycles: 8
+States Discovered: 4
+Q-Values Learned: 50
+Exploration Rate: 0.559
+Total Actions: 7
+Unique Actions: 50
+Consecutive Repeats: 0
+
+Recent Performance (last 7):
+  Avg Reward: 5.37
+  Success Rate: 100.0%
+
+Action Distribution:
+  click|saved jobs|save_content: 4 times
+  click|application status|job_application: 3 times
+
+================================================================================

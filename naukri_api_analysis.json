@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-08-02T16:39:42.412403",
+  "total_endpoints": 3,
+  "job_endpoints": {
+    "GET /s/{id}/{id}/j/vendors~ni-desktop-gnb-notif-center-revamped~ni-gnb-drawer~ni-gnb-notif-center~ni-gnb-search-bar.cee72e6a.min": {
+      "count": 2,
+      "methods": [
+        "GET"
+      ],
+      "statuses": [
+        200,
+        200
+      ]
+    },
+    "GET /s/{id}/{id}/j/ni-gnb-search-bar.4a1e6db1.min": {
+      "count": 2,
+      "methods": [
+        "GET"
+      ],
+      "statuses": [
+        200,
+        200
+      ]
+    },
+    "GET /s/{id}/{id}/j/vendors~ni-gnb-search-bar.6fb99408.min": {
+      "count": 2,
+      "methods": [
+        "GET"
+      ],
+      "statuses": [
+        200,
+        200
+      ]
+    }
+  },
+  "api_queries": [],
+  "tokens_available": false
+}

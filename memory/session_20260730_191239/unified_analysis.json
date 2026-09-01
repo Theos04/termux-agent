@@ -1,0 +1,278 @@
+{
+  "url": "",
+  "title": "Untitled",
+  "page_type": "job_listing",
+  "purpose": "Browse and apply for job opportunities",
+  "text_samples": [
+    "@font-face{font-family:'Satoshi';src:url(\"https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2\") format(\"woff2\");font-weight:400;font-display:swap;font-style:normal}@font-face{font-family:'Satoshi';src:url(\"https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2\") format(\"woff2\");font-weight:500;font-display:swap;font-style:normal}@font-face{font-family:'Satoshi';src:url(\"https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2\") format(\"woff2\");font-weight:700;font-display:swap;font-style:normal}@font-face{font-family:'Satoshi';src:url(\"https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/J64QX5IPOHK56I2KYUNBQ5M2XWZEYKYX.woff2\") format(\"woff2\");font-weight:900;font-display:swap;font-style:normal}@font-face{font-family:'Satoshi Fallback';font-style:normal;font-weight:400;src:local(\"Arial\");ascent-override:102.23%;descent-override:24.29%;line-gap-override:10.12%;size-adjust:98.80%;font-display:swap}@font-face{font-family:'Satoshi Fallback';font-style:normal;font-weight:500;src:local(\"Arial\");ascent-override:99.15%;descent-override:23.56%;line-gap-override:9.82%;size-adjust:101.86%;font-display:swap}@font-face{font-family:'Satoshi Fallback';font-style:normal;font-weight:700;src:local(\"Arial Bold\");ascent-override:103.72%;descent-override:24.65%;line-gap-override:10.27%;size-adjust:97.38%;font-display:swap}.chatbot_AutoSuggestor{position:absolute;width:calc(100% - 48px);background-color:#fff;list-style-type:none;padding:0px;margin:0px;box-sizing:border-box;z-index:10;background:#FFFFFF;box-shadow:0px 6px 25px rgba(30,10,58,0.08);border-radius:16px;top:100%;left:24px}.chatbot_AutoSuggestor.chatbot_SlideUp{-webkit-animation-name:suggestor-slide-up;animation-name:suggestor-slide-up;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}.chatbot_AutoSuggestor.chatbot_SlideDown{-webkit-animation-name:suggestor-slide-down;animation-name:suggestor-slide-down;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}.chatbot_AutoSuggestor.chatbot_Hide{height:0px;display:none;overflow:hidden}.chatbot_AutoSuggestor .chatbot_SuggestorItem{font-weight:500;font-size:14px;line-height:18px;color:#121224;cursor:pointer;padding-right:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:12px;cursor:default}.chatbot_AutoSuggestor ._bold{font-weight:700}.chatbot_AutoSuggestor ul{padding:0px;margin:0;max-height:140px;overflow-y:auto;list-style-type:none;box-sizing:border-box}.chatbot_AutoSuggestor .suggList{background:#fff;margin:12px}.chatbot_AutoSuggestor li:last-child{border-bottom:0;margin-bottom:0px}.chatbot_AutoSuggestor li:first-child{margin-top:0px}@-webkit-keyframes suggestor-slide-up{from{transform:translateY(0%);visibility:hidden}to{transform:translateY(0);visibility:visible}}@keyframes suggestor-slide-up{from{transform:translateY(0%);visibility:hidden}to{transform:translateY(0);visibility:visible}}@-webkit-keyframes suggestor-slide-down{from{transform:translateY(0);visibility:visible}to{transform:translateY(0%);height:0px;visibility:hidden}}@keyframes suggestor-slide-down{from{transform:translateY(0);visibility:visible}to{transform:translateY(0%);height:0px;visibility:hidden}}.chatbot_AutoSuggestor ul::-webkit-scrollbar{width:4px}.chatbot_AutoSuggestor ul::-webkit-scrollbar-thumb{background-color:#E7E7F1;border-radius:4px;height:38px}.chatbot_AutoSuggestor ul::-webkit-scrollbar-track{background-color:#fff}.chatbot_Hidden,.floatButtonHide{opacity:0;visibility:hidden}.chatbot_Visible{opacity:1;visibility:visible}.chatbot_Drawer{position:fixed;background:#fff;overflow-y:hidden;width:472px;z-index:999;border-radius:20px 0px 0px 20px}.chatbot_Drawer.noBackdrop{box-shadow:0 2px 14px 0 rgba(0,0,0,0.1)}.chatbot_Drawer .chatbot_DrawerContentWrapper{position:relative;z-index:9;display:flex;flex-direction:column;height:100%;background:#fff;border-radius:20px 0px 0px 20px}.chatbot_left{top:0;bottom:0;left:0;-webkit-animation:drawerAnimateLeft ease-out 0.3s;animation:drawerAnimateLeft ease-out 0.3s}.chatbot_leftHide{top:0;bottom:0;left:0;-webkit-animation:drawerAnimateLeftRev ease-out 0.3s;animation:drawerAnimateLeftRev ease-out 0.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}.chatbot_right{top:0;bottom:0;right:0;-webkit-animation:drawerAnimateRight ease-out 0.3s;animation:drawerAnimateRight ease-out 0.3s}.chatbot_rightHide{top:0;bottom:0;right:0;-webkit-animation:drawerAnimateRightRev ease-out 0.3s;animation:drawerAnimateRightRev ease-out 0.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}.chatbot_top{top:0;right:0;left:0;-webkit-animation:drawerAnimateTop ease-out 0.3s;animation:drawerAnimateTop ease-out 0.3s}.chatbot_topHide{top:0;right:0;left:0;-webkit-animation:drawerAnimateTopRev ease-out 0.3s;animation:drawerAnimateTopRev ease-out 0.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}.chatbot_bottom{left:0;bottom:0;right:0;-webkit-animation:drawerAnimateBottom ease-out 0.3s;animation:drawerAnimateBottom ease-out 0.3s}.chatbot_bottomHide{left:0;bottom:0;right:0;-webkit-animation:drawerAnimateBottomRev ease-out 0.3s;animation:drawerAnimateBottomRev ease-out 0.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}@-webkit-keyframes drawerAnimateLeft{from{transform:translateX(-100%)}to{}}@keyframes drawerAnimateLeft{from{transform:translateX(-100%)}to{}}@-webkit-keyframes drawerAnimateLeftRev{from{}to{transform:translateX(-100%)}}@keyframes drawerAnimateLeftRev{from{}to{transform:translateX(-100%)}}@-webkit-keyframes drawerAnimateRight{from{transform:translateX(100%)}to{}}@keyframes drawerAnimateRight{from{transform:translateX(100%)}to{}}@-webkit-keyframes drawerAnimateRightRev{from{}to{transform:translateX(100%)}}@keyframes drawerAnimateRightRev{from{}to{transform:translateX(100%)}}@-webkit-keyframes drawerAnimateTop{from{transform:translateY(-100%)}to{}}@keyframes drawerAnimateTop{from{transform:translateY(-100%)}to{}}@-webkit-keyframes drawerAnimateTopRev{from{}to{transform:translateY(-100%)}}@keyframes drawerAnimateTopRev{from{}to{transform:translateY(-100%)}}@-webkit-keyframes drawerAnimateBottom{from{transform:translateY(100%)}to{}}@keyframes drawerAnimateBottom{from{transform:translateY(100%)}to{}}@-webkit-keyframes drawerAnimateBottomRev{from{}to{transform:translateY(100%)}}@keyframes drawerAnimateBottomRev{from{}to{transform:translateY(100%)}}.chatbot_Hidden,.floatButtonHide{opacity:0;visibility:hidden}.chatbot_Visible{opacity:1;visibility:visible}.chatbot_FloatButton{display:flex;align-items:center;justify-content:center;position:fixed;right:30px;bottom:30px;height:56px;z-index:999;border-radius:50%;padding:10px;color:#4A90E2;background-color:#fff;box-shadow:0 2px 4px 0 rgba(0,0,0,0.28);padding:20px 14px;box-sizing:border-box;width:56px;cursor:pointer}.chatbot_FloatButton.changeBorder{-webkit-animation:changeBorder 300ms linear 2s forwards;animation:changeBorder 300ms linear 2s forwards}.chatbot_FloatButton.reverseChangeBorder{-webkit-animation-name:revChangeBorder;animation-name:revChangeBorder;-webkit-animation-duration:300ms;animation-duration:300ms;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-delay:0s;animation-delay:0s}.chatbot_FloatButton.right{right:30px;bottom:30px;top:auto}.chatbot_FloatButton.left{left:30px;bottom:30px;right:auto;top:auto}.chatbot_FloatButton.removeBtn{display:none}.chatbot_FloatButton .floatTextRight{visibility:hidden;opacity:0;width:0;font-weight:500;font-size:14px;-webkit-animation:floatButtonGrowRight 400ms linear 1.9s forwards;animation:floatButtonGrowRight 400ms linear 1.9s forwards}.chatbot_FloatButton .unreadMsgCount{background-color:#DD4747;border:1.4px solid #FFFFFF;border-radius:100%;width:20px;height:20px;position:absolute;color:#fff;font-size:12px;font-weight:600;text-align:center;box-sizing:border-box;top:0;right:0}.chatbot_FloatButton .unreadMsgCount ._msgCount{vertical-align:middle}.chatbot_FloatButton .floatTextLeft{visibility:hidden;opacity:0;width:0;font-weight:500;font-size:14px;-webkit-animation:floatButtonGrowLeft 300ms linear 1.9s forwards;animation:floatButtonGrowLeft 300ms linear 1.9s forwards}.chatbot_FloatButton .reverseFloatButtonGrow{-webkit-animation-name:revFloatButtonGrow;animation-name:revFloatButtonGrow;-webkit-animation-duration:300ms;animation-duration:300ms;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-delay:0s;animation-delay:0s}.chatbot_FloatButton .chatBot{font-size:28px}@-webkit-keyframes floatButtonGrowRight{0%{visibility:hidden;opacity:0;width:0%}10%,20%,40%,50%,60%,70%,80%,90%{opacity:0;visibility:hidden}100%{margin-right:4px;width:100%;visibility:visible;opacity:1;text-align:start}}@keyframes floatButtonGrowRight{0%{visibility:hidden;opacity:0;width:0%}10%,20%,40%,50%,60%,70%,80%,90%{opacity:0;visibility:hidden}100%{margin-right:4px;width:100%;visibility:visible;opacity:1;text-align:start}}@-webkit-keyframes floatButtonGrowLeft{0%{visibility:hidden;opacity:0;width:0%}10%,20%,40%,50%,60%,70%,80%,90%{opacity:0;visibility:hidden}100%{width:100%;visibility:visible;opacity:1;text-align:end}}@keyframes floatButtonGrowLeft{0%{visibility:hidden;opacity:0;width:0%}10%,20%,40%,50%,60%,70%,80%,90%{opacity:0;visibility:hidden}100%{width:100%;visibility:visible;opacity:1;text-align:end}}@-webkit-keyframes revFloatButtonGrow{0%{width:106px}1%{opacity:0}100%{width:0}}@keyframes revFloatButtonGrow{0%{width:106px}1%{opacity:0}100%{width:0}}@-webkit-keyframes changeBorder{from{border-radius:50%;width:56px;justify-content:center}to{border-radius:28px;width:132px;justif\u2026",
+    "@font-face {\n\tfont-family: \"chatBotIcons\";\n\tsrc: url(\"data:application/vnd.ms-fontobject;charset=utf-8;base64,XCMAAKQiAAABAAIAAAAAAAIABQMAAAAAAAABAJABAAAAAExQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAnXqRrgAAAAAAAAAAAAAAAAAAAAAAABgAYwBoAGEAdABCAG8AdABJAGMAbwBuAHMAAAAOAFIAZQBnAHUAbABhAHIAAAAWAFYAZQByAHMAaQBvAG4AIAAxAC4AMAAAABgAYwBoAGEAdABCAG8AdABJAGMAbwBuAHMAAAAAAAABAAAACwCAAAMAMEdTVUI/kkNeAAABOAAAArxPUy8yVk1W+AAAA/QAAABWY21hcHzDfaEAAAVIAAAErmdseWbmvTUvAAAKeAAAE8BoZWFkejDEgQAAAOAAAAA2aGhlYQs0B4MAAAC8AAAAJGhtdHiSxv/+AAAETAAAAPxsb2Nh1gzaugAACfgAAACAbWF4cAFNAFgAAAEYAAAAIG5hbWXb50mKAAAeOAAAAkZwb3N0kwvtnAAAIIAAAAIkAAEAAAPoAAAAAAdK//7/+QdMAAEAAAAAAAAAAAAAAAAAAAA/AAEAAAABAACukXqdXw889QALA+gAAAFaCeO+gAAAAVoJ476A//7//wdMA+kAAAAIAAIAAAAAAAAAAQAAAD8ATAAEAAAAAAACAAAACgAKAAAA/wAAAAAAAAABAAAACgAwAD4AAkRGTFQADmxhdG4AGgAEAAAAAAAAAAEAAAAEAAAAAAAAAAEAAAABbGlnYQAIAAAAAQAAAAEABAAEAAAAAQAIAAECUgAOACIARABmAJAAqAC6AMgBMgFUAZ4BrAHCAjICQAACAAYAGgABAAkAJgAmACcAKAApACoAKwAmAAIAAwAmACYAAgAGABYAIAAHADgANgA7ACUAKAA7ACEABQAqADAAOAA4AAIABgAaAAMACQAoACgAKQAtAC4AKQAtACsABAAHACgAKAApAC0ALwAwAAEABAARAAkAKQAtACsALAAoACgAKQAtAAEABAAeAAYAOAArADIANQA3AAEABAAFAAQAJQAyADMABgAOACgAOgBGAFIAXgALAAwAOQA4ADIAMwA6ADIANQAoADIANwA4AAkACAAlADcAOAArACYAJQAoAAwABQA5ADgAMgAzAA0ABQA3ACkAMgAzAA4ABQA3ACkANgA4ABAABQAoACkANgA2AAEABAAHAA4AJQAyADMAKgAwADUAMgAnADIAKAApADYANgAEAAoAHAAsADwAGQAIADIAJwAyACgAKQA2ADYAGAAHADIAJwAyADkAJQA7ABsABwAyACcAPAA1ACsANQAXAAYAMgAnADQAKQA7AAEABAAjAAQAOwAlACgAAQAEAB0ACAApADIAJQA7ADUAKQArAAQACgAqAEIAWgASAA8AJgA1ADsAOgAwADgAKwAyADUANwA6ADAALQAlABMACwAmADUAOwA6ADAAOAArADIANQA3ABQACwAoACgAKQAoADoANgA8ACUANwA3ABYACgA9ADAAOAAoADUAOAArADIAOAABAAQAJAAEADUAMgAzAAEABAAiAAYAOAAlACgAMgA5AAEADgAlACgALAAuADAAMQAyADQANQA2ADcAOAA7AD4AAQJUAZAABQAABKACvAAAAIwEoAK8AAAB4AAxAQIAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZADAAC3xHAPoAAAAWgPpAAEAAAABAAAAAAAAAAAAAAPoAAAD6AAABEUAAARFAAAD6AAAA+gAAAPoAAAD6AAAA+gAAAPoAAAD6AAABYIAAAPoAAAD6AAAA+gAAAPoAAAHSgAAA+gAAARlAAAD6AAABHYAAAR2AAAECgAABAoAAAPoAAAD6AAAA+gAAANrAAADawAAA+gAAAPoAAAD6AAAAxEAAAPoAAAETP/+A+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAMAAAAsAAAABAAAAhYAAQAAAAABEAADAAEAAAAsAAMACgAAAhYABADkAAAAGgAQAAMACgAtAEIARABTAFUAXwBlAGkAcAB1AHjxHP//AAAALQBBAEQAUwBVAF8AYQBoAGsAcgB38QH//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABoAGgAcABwAHAAcABwAJAAmADAANgA4AAAAJwAsADEALgA+AC8AOgAlADQAMgAmADgAOQA1ADMANwA8ACsAKQAwACgANgA7ACoALQA9AAEAAgADAAQABQAGAAgACgAMAA0ADgAPABEAEgATABQAFQAXABgAGQAaABwAHgAfACEAIgAjACQAAAEGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnAAAAAAAAAAAAAAAAAAAAAAAAACwxAC4AAAAAAAAAAAAAAAAAAD4ALwAAAAAAAAAAADoAJTQyJjgAADk1ADM3PCspMAAoNjsqAC09AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAApgAAAAAAAAANgAAAC0AAAAtAAAAJwAAAEEAAABBAAAALAAAAEIAAABCAAAAMQAAAEQAAABEAAAALgAAAFMAAABTAAAAPgAAAFUAAABVAAAALwAAAF8AAABfAAAAOgAAAGEAAABhAAAAJQAAAGIAAABiAAAANAAAAGMAAABjAAAAMgAAAGQAAABkAAAAJgAAAGUAAABlAAAAOAAAAGgAAABoAAAAOQAAAGkAAABpAAAANQAAAGsAAABrAAAAMwAAAGwAAABsAAAANwAAAG0AAABtAAAAPAAAAG4AAABuAAAAKwAAAG8AAABvAAAAKQAAAHAAAABwAAAAMAAAAHIAAAByAAAAKAAAAHMAAABzAAAANgAAAHQAAAB0AAAAOwAAAHUAAAB1AAAAKgAAAHcAAAB3AAAALQAAAHgAAAB4AAAAPQAA8QEAAPEBAAAAAQAA8QIAAPECAAAAAgAA8QMAAPEDAAAAAwAA8QQAAPEEAAAABAAA8QUAAPEFAAAABQAA8QYAAPEGAAAABgAA8QcAAPEHAAAACAAA8QgAAPEIAAAACgAA8QkAAPEJAAAADAAA8QoAAPEKAAAADQAA8QsAAPELAAAADgAA8QwAAPEMAAAADwAA8Q0AAPENAAAAEQAA8Q4AAPEOAAAAEgAA8Q8AAPEPAAAAEwAA8RAAAPEQAAAAFAAA8REAAPERAAAAFQAA8RIAAPESAAAAFwAA8RMAAPETAAAAGAAA8RQAAPEUAAAAGQAA8RUAAPEVAAAAGgAA8RYAAPEWAAAAHAAA8RcAAPEXAAAAHgAA8RgAAPEYAAAAHwAA8RkAAPEZAAAAIQAA8RoAAPEaAAAAIgAA8RsAAPEbAAAAIwAA8RwAAPEcAAAAJAAAAAAAAABoAIIAuADuASQBggHgAkgCsALyAzQDSAOoA8oD5AP+BCQEYASMBNIFOAWeBd4GQAZ2BrgG+gdgB8YH7ghSCLYJGglyCbAJ4AngCeAJ4AngCeAJ4AngCeAJ4AngCeAJ4AngCeAJ4AngCeAJ4AngCeAJ4AngCeAJ4AngCeAAAwAAAAADoQOhABsAMABFAAABIzU0JiIGHQEjIgYUFjsBFRQWMjY9ATMyNjQmAyIHBgcGFBcWFxYyNzY3NjQnJicmAyInJicmNDc2NzYyFxYXFhQHBgcGAsqyFR4Vsg8VFQ+yFR4Vsg8VFeV0ZGE5Ozs5YWToZGE5Ozs5YWR0YVNRLzExL1FTwlNRLzExL1FTAhiyDxUVD7IVHhWyDxUVD7IVHhUBiTs5YWToZGE5Ozs5YWToZGE5O/zuMS9RU8JTUS8xMS9RU8JTUS8xAAAAAAEAAAAAA9sD2wALAAABIREjESE1IREzESED2v5fiv5fAaGKAaEBr/5fAaGKAaH+XwAAAAACAAAAAARCA+gAEQAdAAATMhcJATYyFhQHAQYiJwEmNDYBNDYyFhURFAYiJjU0FRAByAHHECogEP4TDyoQ/hQQHwHVHSodHSodAlgQ/jkBxxAfKhD+FBAQAewQKh8BXhUdHRX84BUdHRUAAAACAAAAAARMA+YAEQAdAAABIicJAQYiJjQ3ATYyFwEWFAYBFAYiJjURNDYyFhUEGBUQ/jj+ORAqIBAB7Q8qEAHsEB/+Kx0qHR0qHQGQEAHH/jkQHyoQAewQEP4UECof/qIVHR0VAyAVHR0VAAACAAAAAANrA0cAEQAdAAAlIicBJjQ3ATYyFhQHCQEWFAYBISImNDYzITIWFAYB0AYE/rsEBAFFBAsJBP7EATwECQGI/S4GCAgGAtIGCAihBAFFBAwEAUUECAwE/sX+xQQMCAFFCAwICAwIAAACAAAAAAPpA+gAFAA7AAARFBcWFxYgNzY3NhAnJicmIAcGBwYBBiIvAQcOAS8BJjQ3MTcnLgE/ATYyFzEXNz4BHwEWFAcxBxceAQdEQ3F0ARB0cUNERENxdP7wdHFDRAKlCRoJhYUIFwkECQmFhQgCBwMJGgmFhQgXCQQJCYWFCAIHAfSIdHFDRERDcXQBEHRxQ0REQ3F0/scJCYWFCAIHAwkaCYWFCBcJBAkJhYUIAgcDCRoJhYUIFwkAAAIAAAAAA+kD6AAUADsAABEUFxYXFiA3Njc2ECcmJyYgBwYHBgEGIi8BBw4BLwEmNDcxNycuAT8BNjIXMRc3PgEfARYUBzEHFx4BB0RDcXQBEHRxQ0REQ3F0/vB0cUNEAqUJGgmFhQgXCQQJCYWFCAIHAwkaCYWFCBcJBAkJhYUIAgcB9Ih0cUNERENxdAEQdHFDRERDcXT+xwkJhYUIAgcDCRoJhYUIFwkECQmFhQgCBwMJGgmFhQgXCQAAAwAAAAADyQPJACcAMQBLAAABIzU0JiIGHQEhNTQmIgYdASMiDgIVERQeAjMhMj4CNRE0LgITFAYjISImNREhNSE1NDY7ARUUFjI2PQEhFRQeATY9ATMyFhUDPF4bJxv+5hsnG14cNCcWFic0HAKQHDQnFhYnNBMbFP1wFBsC7v0SGxReGycbARobJxteFBsDay8THBwTLy8THBwTLxUoNBz9zhw0JxYWJzQcAjIcNCgV/UEUGxsUAUhejBQbLxMbGxMvLxMbARwTLxsUAAAAAAMAAAAAA8kDyQAnADEASwAAASM1NCYiBh0BITU0JiIGHQEjIg4CFREUHgIzITI+AjURNC4CExQGIyEiJjURITUhNTQ2OwEVFBYyNj0BIRUUHgE2PQEzMhYVAzxeGycb/uYbJxteHDQnFhYnNBwCkBw0JxYWJzQTGxT9cBQbAu79EhsUXhsnGwEaGycbXhQbA2svExwcEy8vExwcEy8VKDQc/c4cNCcWFic0HAIyHDQoFf1BFBsbFAFIXowUGy8TGxsTLy8TGwEcEy8bFAAAAAACAAD//wPpA+kAFAAmAAARNDc2NzYgFxYXFhAHBgcGICcmJyYBJiIPAScmIgYUHwEWMjcBNjREQ3F0ARB0cUNERENxdP7wdHFDRALWDykP5lAPKR4Pcw8qDgEKDwH0iHRxQ0REQ3F0/vB0cUNERENxdAEwDw/mUA8dKg9zDw8BCQ8qAAACAAD//wPpA+kAFAAmAAARNDc2NzYgFxYXFhAHBgcGICcmJyYBJiIPAScmIgYUHwEWMjcBNjREQ3F0ARB0cUNERENxdP7wdHFDRALWDykP5lAPKR4Pcw8qDgEKDwH0iHRxQ0REQ3F0/vB0cUNERENxdAEwDw/mUA8dKg9zDw8BCQ8qAAABAAAAAAWDA+gABQAAIQE3CQEXAeL+HkcBmwNZSAHiSP5lA1lHAAAAAwAAAAADmgOaABQAKQA8AAABIgcGBwYUFxYXFjI3Njc2NCcmJyYDIicmJyY0NzY3NjIXFhcWFAcGBwY3JzU0JiIGHQEUFh8BFjI2NzYmAfRyY184OTk4X2PkY184OTk4X2NyWU1KLC0tLEpNsk1KLC0tLEpNTpwbJxsVEqILGRUHCgoDmTk4X2PkY184OTk4X2PkY184Of0SLSxKTbJNSiwtLSxKTbJNSiwt7V2yExsbE7kVJQthBwwLECYAAAAAAQAAAAAD6APoAAsAAAEnCQEHCQEXCQE3AQPoZf5x/nFlAY/+cWUBjwGPZf5xA4Nl/nEBj2X+cf5xZQGP/nFlAY8AAAABAAAAAAMYAxgACwAAAScHJwcXBxc3FzcnAxg76ek76ek76ek76QLdO+npO+npO+npO+kAAQAAAAADGAMYAAsAAAEnBycHFwcXNxc3JwMYO+npO+npO+npO+kC3Tvp6Tvp6Tvp6TvpAAEAAP//B0wD6QARAAABJiIHCQEmDgIXARYyNwE2NAc3EzcU/Mz8zRQ0JQIRA2MTNxQDYhQD1RMT/MwDMxECJTQU/J0TEwNjFDcAAAACAAAAAANxA3QAFwAgAAA3IicuAT8BNjcBPgEWFx4BFAYHAQYPAQY3BzcBNjQmIgenFA0JBwMvBAkBwBxMTRsVFhYV/kAJDb0GVBllAbcPHi0QeA4IGAy9DQkBwBsUFBsVNTs2Ff5ACQQvAdRlGQG4DywfDwAAAAADAAAAAAQtA+kABAAPABQAAAEXASM1ASIPARc3NjQvASYHARUzAQKmNP4CMwLIFxFn02cREYMR4v2S0wJuApo0/gkzA0YQZtBmEC4QghCx/ZnQAmYAAAAAAwAAAAAD6QPpABQAIQAqAAABIgcGBwYQFxYXFiA3Njc2ECcmJyYDETQ2MhYVERQGIiY1EyImNDYyFhQGAfSIdHFDRERDcXQBEHRxQ0REQ3F0viAsICAsIDYeKSk8KSkD6ERDcXT+8HRxQ0REQ3F0ARB0cUNE/fcBPxYgIBb+lBYgIBb+4io7Kio7KgAEAAAAAARUA9cAJQApADkARQAAASM1NC4CKwEiDgIdASMiDgIVERQeAjMhMj4CNRE0LgIlMxUjARQGIyEiJjURFxY3ITI/ATUFISU1NDYzITIWFQOyoBEeJxXXFScfEKEgOy0YGC07IALuIDsuGBguO/3+19cCGB8X/RIWH/sICQFBCQj7/uz+z/7sHxYC7hcfAzU2FSgeEBAeKBU2GC07IP4eIDsuGBguOyAB4iA7LRg2Nv1+Fx8fFwEsVgEBA1NxXFxFFh8fFgAAAAAEAAAAAARUA9cAJQApADkARQAAASM1NC4CKwEiDgIdASMiDgIVERQeAjMhMj4CNRE0LgIlMxUjARQGIyEiJjURFxY3ITI/ATUFISU1NDYzITIWFQOyoBEeJxXXFScfEKEgOy0YGC07IALuIDsuGBguO/3+19cCGB8X/RIWH/sICQFBCQj7/uz+z/7sHxYC7hcfAzU2FSgeEBAeKBU2GC07IP4eIDsuGBguOyAB4iA7LRg2Nv1+Fx8fFwEsVgEBA1NxXFxFFh8fFgAAAAABAAAAAAQDA+QAJAAAASYnLgEnJgcGBwYHBhcWFxYXBgcGBwYUFjMWNzY3Fjc2NzY3NgP6BzQxpWRpbHxjYTQ0CActK0oUERIcCQ4LNzlBK4WHfGJgMzQCG2hbV3sZGhEUSklrbXhhVlI+HxQWGQYUDwELDhowGBZLSWptAAAAAAIAAAAABAMD5AAkAEAAAAEmJy4BJyYHBgcGBwYXFhcWFwYHBgcGFBYzFjc2NxY3Njc2NzYlIxUUBiImPQEjIiY0NjsBNTQ2MhYdATMyFhQGA/oHNDGlZGlsfGNhNDQIBy0rShQREhwJDgs3OUErhYd8YmAzNP6lig4VD4oKDw8Kig8VDooLDw8CG2hbV3sZGhEUSklrbXhhVlI+HxQWGQYUDwELDhowGBZLSWptNIMKDg4Kgw4UDoQJDg4JhA4UDgAAAAABAAAAAANsA0IAGwAAATY0JiIHCQEmIgYUFwkBBhQWMjcJARYyNjQnAQNjCA8WCP7L/soHFg8HATb+ygcPFgcBNgE1CBYPCP7LAxUHFg8H/soBNgcPFgf+yv7LCBYPCAE1/ssIDxYIATUAAAACAAAAAAPoA+gAFAAmAAABMhcWFxYQBwYHBiAnJicmEDc2NzYDBhQfARYyPwE2NCYiDwEnJiIB9Ih0cUNERENxdP7wdHFDRERDcXRoCgrXCh4K1woVHgq9vQoeA+hEQ3F0/vB0cUNERENxdAEQdHFDRP5lCh8K2wsL2wofFQvBwQsAAAACAAAAAAPoA+gAFAAmAAABMhcWFxYQBwYHBiAnJicmEDc2NzYDBhQfARYyPwE2NCYiDwEnJiIB9Ih0cUNERENxdP7wdHFDRERDcXRoCgrXCh4K1woVHgq9vQoeA+hEQ3F0/vB0cUNERENxdAEQdHFDRP5lCh8K2wsL2wofFQvBwQsAAAAEAAAAAANDA8kAFQAgADEAPgAAAS4BIg4CFBYfAR4BMjY/AT4BNCYnAwcnLgE+ATIeAQYBDgEUFhceAT4BNzQuAwYXDgEuAT4BHgEVFAYHAs84kp+ScDw8OPcHERMRB/k3PT03Q9fWQSNGmbeZRiP+XB0eHh0reHFEAR84SlFLwBxOQRceRU0xEhADVTc9PW+TnpI49wcHBwf5OJKdkjf+E9fXQbWpZmaptQEjHEtQSh0rGC5lPShLOR8BH/ccCCtLSCUPPScWJw8AAAAEAAAAAANDA8kAFQAgADEAPgAAAS4BIg4CFBYfAR4BMjY/AT4BNCYnAwcnLgE+ATIeAQYBDgEUFhceAT4BNzQuAwYXDgEuAT4BHgEVFAYHAs84kp+ScDw8OPcHERMRB/k3PT03Q9fWQSNGmbeZRiP+XB0eHh0reHFEAR84SlFLwBxOQRceRU0xEhADVTc9PW+TnpI49wcHBwf5OJKdkjf+E9fXQbWpZmaptQEjHEtQSh0rGC5lPShLOR8BH/ccCCtLSCUPPScWJw8AAAADAAAAAANsA2sABAAJABMAABMVMwEnASM1ARc3JyYiDwEXNzY0fZwBzZz+rScBeibvYgwiDE2dTAwBGZwBzZz96icBeSazYgwMTJ1NDCIAAAEAAAAAA5EDgQBEAAABLgErASIHBgc1NCYiBh0BFBY7ATI2NCYrATY3NjsBMhYXHgEGBw4BBwYnJicmJyY1NCYjMSIGFRQWFxYXFjc+ATc2JyYDCziTSgJQSzozFR4VHBSoDxUVD2krMEFFAjx4LjExBB8igU5SSkE0MBsaFQ8PFUY+QVJaYWShJS0ZGQMJOD8mHjJSDxUVD6cUHRUeFS0bJDQuMHuGQEdfDAwbGTUwPz04DxUVD02bOj0bHRERg19xc3AAAAAAAQAAAAADkQOBAEQAAAEuASsBIgcGBzU0JiIGHQEUFjsBMjY0JisBNjc2OwEyFhceAQYHDgEHBicmJyYnJjU0JiMxIgYVFBYXFhcWNz4BNzYnJgMLOJNKAlBLOjMVHhUcFKgPFRUPaSswQUUCPHguMTEEHyKBTlJKQTQwGxoVDw8VRj5BUlphZKElLRkZAwk4PyYeMlIPFRUPpxQdFR4VLRskNC4we4ZAR18MDBsZNTA/PTgPFRUPTZs6PRsdERGDX3FzcAAAAAABAAAAAALdA9cARAAAASMmJzMyNjQmIyEiBhQWOwEyFhchIgYUFjMhDgMrASImBg8BDgIXBhUGFBYfARQXAR4BPgEnAzMyPgI3MzI2NCYCp3cPJqwWHx8W/bIWHx\u2026",
+    ".chatbot_cardItem{margin-left:-16px;margin-right:-16px}.chatbot_ListItem{margin-bottom:12px;max-width:85%}.chatbot_ListItem.botItem{align-self:flex-start}.chatbot_ListItem.userItem{display:flex;align-self:flex-end;margin-top:8px;margin-bottom:20px}.chatbot_ListItem.botChips{align-self:flex-start;width:100%}.chatbot_ListItem.botChips .chipMsg{display:flex;align-items:center;justify-content:center}.chatbot_ListItem.botChips .chipMessage{width:100%}.chatbot_ListItem.editable-listItem{align-items:center}.chatbot_ListItem.editable-listItem .chatBot-edit_pencil_pwa{margin-right:12px}.chatbot_ListItem.editable-listItem .chatBot-edit_pencil_pwa::before{font-size:18px}.chatbot_ListItem .msg{word-break:break-word;font-weight:500;font-size:14px;line-height:18px;color:#121224}.chatbot_ListItem .msg a{color:#275DF5;text-decoration:none}.chatbot_ListItem .chatbot_msgWrapper{position:relative}.chatbot_ListItem .chatbot_Info{position:relative;z-index:10;margin:-10px 0 -5px 4px;align-self:flex-end;color:#979EC2;white-space:nowrap;float:right;font-weight:400;font-size:11px;line-height:14px}.invisibleSpace{width:50px;display:inline-block;vertical-align:middle}.userMsg{background-color:#ECF5FF;padding:14px;border-radius:12px 12px 0px 12px;position:relative}.botMsg{position:relative;padding:14px;border-radius:12px 12px 12px 0px;background-color:#F7F7F9}.editMsg{cursor:pointer;font-size:14px;vertical-align:text-bottom;color:#275DF5}.userMsg .chatbot_msgWrapper span:first-child .progressContentWrapper{margin-right:6px}.userMsg .chatbot_msgWrapper span:first-child:not(:has(.progressContentWrapper)){margin-right:6px}",
+    ".chatbot_Chip{display:flex;align-items:center;justify-content:center;text-align:center;margin-right:12px;margin-bottom:8px;color:#474D6A;font-weight:500;font-size:14px;cursor:pointer;background:#fff;padding:7px 12px;box-sizing:border-box;border:1px solid #979EC2;border-radius:50px;min-width:55px;max-width:100%;min-height:32px;word-break:break-word;overflow:hidden;cursor:pointer}.chatbot_Chip.chatbot_Selected{transition-duration:0.3s;color:#121224;background:#E7E7F1;border:1px solid #121224;font-weight:700}.chatbot_Chip .chatBot{color:#474D6A;margin-left:5px;vertical-align:text-bottom;font-size:8px}.chatbot_Chip .chatBot.chatBot-tick{width:5px;height:5px}.chatbot_Chip .chatBot.chatBot-add{width:6px;height:6px}.chatbot_Chip.cursorDisabled{cursor:not-allowed}",
+    ".chatbot_Chips{display:flex}.chatbot_Chips.chatbot_ChipsInRow{flex-wrap:wrap;align-items:center;justify-content:flex-start}.chatbot_Chips.chatbot_ChipsInCol{flex-direction:column;margin-bottom:8px}.chatbot_Chips.chatbot_ChipsInCol :last-child{margin-bottom:0px}",
+    ".chatbot_MessageContainer{flex-grow:1;overflow:auto;height:350px;-webkit-animation-duration:0.4s;animation-duration:0.4s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-timing-function:linear;animation-timing-function:linear;background:#fff}@-webkit-keyframes chatbot_SlideUp{from{height:0;overflow:hidden}to{height:350px;overflow:auto}}@keyframes chatbot_SlideUp{from{height:0;overflow:hidden}to{height:350px;overflow:auto}}@-webkit-keyframes chatbot_SlideDown{from{overflow:hidden}to{height:0px}}@keyframes chatbot_SlideDown{from{overflow:hidden}to{height:0px}}.chatbot_MessageContainer .list{margin:0px 0 14px 0px;padding:0 24px;display:flex;flex-flow:column;list-style-type:none}.chatbot_MessageContainer .list li:last-child{margin-bottom:0px}.chatbot_MessageContainer.chatbot_Hide{-webkit-animation-name:chatbot_SlideDown;animation-name:chatbot_SlideDown;-webkit-animation-duration:0.4s;animation-duration:0.4s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-timing-function:linear;animation-timing-function:linear;overflow:hidden;flex:none}.chatbot_MessageContainer .naukLogoMsg{background-size:cover;width:50px;height:50px;background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0yNSA1MEMzOC44MDcxIDUwIDUwIDM4LjgwNzEgNTAgMjVDNTAgMTEuMTkyOSAzOC44MDcxIDAgMjUgMEMxMS4xOTI5IDAgMCAxMS4xOTI5IDAgMjVDMCAzOC44MDcxIDExLjE5MjkgNTAgMjUgNTBaIiBmaWxsPSIjRjdGN0Y5Ii8+DQo8cGF0aCBkPSJNMzEgMzQuNTEwOEwzMC45NDgzIDM2Ljg4MzlMMzAuNzk4MiA0My43MzU3VjQ0QzE5LjM0MTYgMzMuOTgwMiAxNy4zODk5IDMxLjUzNjIgMTcuMDUxNSAzMC43OTM1TDE3LjAzOTkgMzAuNzY4M0MxNi45OTkxIDMwLjYyODUgMTYuOTg5NSAzMC40ODExIDE3LjAxMTYgMzAuMzM3MUMxNy4wMTk2IDMwLjI4MzYgMTcuMDMwOCAzMC4yMzA4IDE3LjA0NDkgMzAuMTc4N0MxNy4wNTY1IDMwLjEzNjcgMTcuMDY4MiAzMC4wOTYxIDE3LjA4MzIgMzAuMDUyNEMxNy4yMDY3IDI5LjcyNDcgMTcuMzgxNyAyOS40MTk0IDE3LjYwMTUgMjkuMTQ4QzE3Ljc1OSAyOC45NDI0IDE3LjkzMDUgMjguNzQ4MiAxOC4xMTQ5IDI4LjU2N0MxOC41MDkxIDI4LjE3MyAxOC45MzEzIDI3LjgwODYgMTkuMzc4MiAyNy40NzcxQzE5LjU5OTkgMjcuMzA4OCAxOS44MzE2IDI3LjE0MDIgMjAuMDc2NSAyNi45NzE4QzIwLjU0OTkgMjYuNjQ1MSAyMS4wNjE2IDI2LjMxODQgMjEuNTkxNiAyNkMyNS43MDgzIDI5Ljg4MDcgMzAuOTMzMyAzNC40NDg0IDMxIDM0LjUxMDhaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMjVfMTI4MTQpIi8+DQo8cGF0aCBkPSJNMzEgMTJMMzAuOTQ4OCAxNC40NDU3TDMwLjkyMjQgMTUuNjU2NEwzMC44Njk4IDE4LjA5TDMwLjg0MzMgMTkuMzExMkwzMC43OTIxIDIxLjc0NjVDMzAuNzExNCAyMS43ODExIDI1LjU0MDQgMjMuODg0MiAyMS41NTU1IDI2LjM2OTlDMjEuMDMxMSAyNi42OTY2IDIwLjUyNjQgMjcuMDMyMyAyMC4wNTYzIDI3LjM2NzlDMTkuODE1NSAyNy41NDA3IDE5LjU4NDYgMjcuNzEzNiAxOS4zNjUyIDI3Ljg4NjdDMTguOTIzNiAyOC4yMjggMTguNTA1OSAyOC42MDIgMTguMTE1IDI5LjAwNTdDMTcuOTMzIDI5LjE5MjUgMTcuNzYzMyAyOS4zOTE2IDE3LjYwNyAyOS42MDI2QzE3LjI0NzQgMzAuMDgzNCAxNy4wMzEzIDMwLjU1NTUgMTcgMzFMMTcuMDQyOSAyOC45Njc3VjI4Ljk1MzhMMTcuMDUxMSAyOC42MzlWMjguNTI0OUwxNy4wODU4IDI3LjI0MzNMMTcuMTUxNyAyNC43MDI1TDE3LjE4MzEgMjMuNDYwNUwxNy4yNDkxIDIwLjk0MjJDMTguMDY4OCAxNy40MTcyIDI5LjY0NTggMTIuNTU4NyAzMSAxMloiIGZpbGw9IiMyNjVERjUiLz4NCjxwYXRoIGQ9Ik0yMC41IDE1QzIyLjQzMjkgMTUgMjQgMTMuNDMzIDI0IDExLjVDMjQgOS41NjcwMSAyMi40MzI5IDggMjAuNSA4QzE4LjU2NyA4IDE3IDkuNTY3MDEgMTcgMTEuNUMxNyAxMy40MzMgMTguNTY3IDE1IDIwLjUgMTVaIiBmaWxsPSIjMjY1REY1Ii8+DQo8ZGVmcz4NCjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8yNV8xMjgxNCIgeDE9IjMwLjA1NjUiIHkxPSI0MC4xMTk1IiB4Mj0iMTQuODU5NSIgeTI9IjIyLjQyMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPg0KPHN0b3Agc3RvcC1jb2xvcj0iIzc5QzZFQyIvPg0KPHN0b3Agb2Zmc2V0PSIwLjU4OTA1MSIgc3RvcC1jb2xvcj0iIzAwMjdCNyIvPg0KPC9saW5lYXJHcmFkaWVudD4NCjwvZGVmcz4NCjwvc3ZnPg0K)}.hideBorder{border:none}.chatbot_MessageContainer::-webkit-scrollbar{width:6px}.chatbot_MessageContainer::-webkit-scrollbar-thumb{background:#E7E7F1;border-radius:4px;height:246px}.chatbot_MessageContainer::-webkit-scrollbar-track{background-color:#fff}.sendMsgbtn_container{display:flex;justify-content:flex-end;height:96px;background-color:#fff;width:100%;flex-shrink:0;box-shadow:0px 6px 12px 0px rgba(30,10,58,0.04),0px -6px 25px 0px rgba(30,10,58,0.06);border-radius:20px 0px 0px 20px}.sendMsgbtn_container .send{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;width:100%}.sendMsgbtn_container .send.disabled{opacity:0.3;pointer-events:none}.sendMsgbtn_container .sendMsg{display:flex;align-items:center;justify-content:center;width:calc(100% - 48px);margin:14px auto;height:38px;background-color:#275DF5;color:#fff;border-radius:40px;font-weight:700;font-size:14px;line-height:18px;cursor:pointer}.d-none{display:none}.chipsContainer{padding:0 24px;margin-top:20px;max-width:90%}.chipsContainer .cc__chips-headline{font-size:14px;font-weight:500;line-height:18px;color:#717B9E;margin-bottom:12px}",
+    ".chatbot_SendMessageContainer{display:flex;box-sizing:border-box;max-width:100%;min-height:42px;margin-bottom:10px}.chatbot_SendMessageContainer .chatbot_InputContainer{background-color:#fff;border-radius:20px;max-width:calc(100% - 48px);border:1px solid #979EC2;margin:0 auto;display:flex;flex:1 1}.chatbot_SendMessageContainer .chatbot_InputContainer.inputContainer-focus{border:1px solid #275DF5}.chatbot_SendMessageContainer .chatbot_InputContainer .textAreaWrapper{margin:11px 20px;position:relative;display:flex;flex:1 1;overflow:hidden;cursor:text}.chatbot_SendMessageContainer .chatbot_InputContainer .textAreaWrapper .textArea{position:relative;z-index:1;padding-right:2px;min-height:18px;overflow-x:hidden;overflow-y:auto;word-wrap:break-word;white-space:pre-wrap;outline:none;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;border:none;resize:none;height:auto;font-family:inherit;margin-bottom:0px;background-color:#fff;color:#121224;font-weight:500;font-size:14px;line-height:18px;font-size:14px;caret-color:#275DF5;box-sizing:border-box;flex:1 1}.chatbot_SendMessageContainer .chatbot_InputContainer .textAreaWrapper .textArea:empty:before{content:attr(data-placeholder);color:#979EC2}.chatbot_SendMessageContainer .chatbot_InputContainer input::-webkit-inner-spin-button{-webkit-appearance:none;background-color:red}.chatbot_SendMessageContainer ::-moz-placeholder{color:#C0C8D6}.chatbot_SendMessageContainer :-ms-input-placeholder{color:#C0C8D6}.chatbot_SendMessageContainer ::-ms-input-placeholder{color:#C0C8D6}.chatbot_SendMessageContainer ::placeholder{color:#C0C8D6}.chatbot_SendMessageContainer ::-webkit-input-placeholder{color:#C0C8D6}.chatbot_SendMessageContainer ::-moz-placeholder{color:#C0C8D6}.chatbot_SendMessageContainer :-ms-input-placeholder{color:#C0C8D6 !important}.chatbot_SendMessageContainer ::-ms-clear{display:none}.chatbot_SendMessageContainer ::-ms-reveal{display:none}.chatbot_SendMessageContainer :-moz-placeholder{color:#C0C8D6}.chatbot_Hide{visibility:hidden;-webkit-animation-name:chatbot_SlideDown;animation-name:chatbot_SlideDown;-webkit-animation-duration:0.4s;animation-duration:0.4s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-timing-function:linear;animation-timing-function:linear;overflow:hidden}.d-none{display:none}.visibility-hidden{visibility:hidden}.p-events-none{pointer-events:none}.chatBot-add-round{color:#474D6A;cursor:pointer;align-self:center;margin-left:5px}@-webkit-keyframes chatbot_SlideDown{from{overflow:hidden}to{height:0px}}@keyframes chatbot_SlideDown{from{overflow:hidden}to{height:0px}}.textArea::-webkit-scrollbar{width:4px !important;height:6px !important;background-color:#E7E7F1}.textArea::-webkit-scrollbar-thumb{background:#E7E7F1;border-radius:4px}.textArea::-webkit-scrollbar-track{background-color:#fff}",
+    ".footerWrapper{background:#fff;border-radius:20px 0px 0px 20px}.footerWrapper .footerChips{display:flex;flex-direction:column;margin-bottom:12px;max-height:150px}.footerWrapper .footerChips .footerChipsList{max-height:130px;overflow-y:auto}.footerWrapper .footerChips .footerChipsList::-webkit-scrollbar{width:4px;height:60px}.footerWrapper .footerChips .footerChipsList::-webkit-scrollbar-thumb{height:60px;background:#DFE6ED;border-radius:2px}.footerWrapper .footerChips .footerChipsList::-webkit-scrollbar-track{background:#fff}.footerWrapper .footerInputBoxWrapper{position:relative}.chatbotMinimize{margin-right:2px;margin-bottom:2px;width:20px;height:20px;cursor:pointer;align-self:flex-end}.chatBot-ic-mini::before{color:#C9D2E0;font-size:20px;line-height:normal}",
+    ".chatbot_loadMoreContainer{position:relative;overflow:hidden}.chatbot_loadMoreContainer .chatbot_loadMoreContentWrapper{z-index:9;display:flex;flex-direction:column;height:100%;background:#fff}.chatbot_loadMoreBody{display:block;background-color:#fff;flex:1 1 auto;overflow:auto;padding:0 24px}.chatbot_loadMoreBody .chatbot_loadMoreList{margin:0px;padding:0 0px;display:flex;flex-flow:column;list-style-type:none}.chatbot_loadMoreBody .chatbot_ListItem{box-sizing:border-box;max-width:100%;cursor:pointer;word-break:break-word;margin-top:18px;margin-bottom:0 !important;color:#121224;font-weight:500;font-size:14px;line-height:18px;margin-left:12px}.chatbot_loadMoreBody .chatbot_ListItem:first-child{margin-top:0px}.chatbot_loadMoreBody .chatbot_ListItem .optionVal{vertical-align:middle}.chatbot_loadMoreBody .chatbot_ListItem.chatbot_Selected{transition:background-color 0.3s;color:#121224;background:#E7E7F1;border:1px solid #121224;font-weight:700}.chatbot_loadMoreBody ul .chatbot_IndsutryGroup:first-of-type{margin-top:0px}.chatbot_loadMoreBody .chatbot_IndsutryGroup{display:block;margin-top:6px}.chatbot_loadMoreBody .chatbot_IndsutryGroup .industryGroup{display:inline-block;color:#717B9E;text-align:left;margin-bottom:10px;font-weight:700;font-size:12px;line-height:15px}.chatbot_loadMoreBody .chatbot_IndustryList{cursor:pointer;margin-bottom:18px}.chatbot_loadMoreBody .chatbot_IndustryList .chatbot_IndustryWrapper{text-transform:capitalize;display:flex;flex-flow:column;justify-content:center}.chatbot_loadMoreBody .chatbot_IndustryList .chatbot_IndustryWrapper .chatbot_Industry_heading{text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:500;font-size:14px;line-height:18px;color:#121224;margin-left:10px}.chatbot_loadMoreBody .chatbot_IndustryList .chatbot_IndustryWrapper .chatbot_Industry_subHeading{color:#717B9E;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:500;font-size:12px;line-height:15px;margin-left:10px}.chatbot_loadMoreNav{padding:24px 24px 20px 24px;box-sizing:border-box}.chatbot_loadMoreNav .backButtonContainer{display:flex;cursor:pointer}.chatbot_loadMoreNav .backButtonContainer .chatBot{line-height:unset}.chatbot_loadMoreNav .backButtonContainer .backButton{margin-left:8px}.chatbot_loadMoreNav .chatBot-Back::before{font-weight:bold !important}.chatbot_loadMoreNav .doneSelection{cursor:pointer}.chatbot_loadMoreNav .chatbot_loadMoreInputContainer{display:flex;align-items:center;height:40px;padding:10px 12px;border:1.26923px solid rgba(151,158,194,0.4);border-radius:100px;box-sizing:border-box;color:#121224}.chatbot_loadMoreNav .chatbot_loadMoreInputContainer .chatBot-search{margin-top:4px;width:16px;height:16px;color:#518cff}.chatbot_loadMoreNav .chatbot_loadMoreInputContainer .chatbot_loadMoreTextArea{border:none;resize:none;outline:none;color:#191b1f;margin-bottom:0px;box-sizing:border-box;font-weight:500;font-size:14px;flex:1 1}.chatbot_loadMoreNav .chatbotBackIcon{margin-bottom:17px;width:20px;height:20px;cursor:pointer;color:#121224}.chatbot_loadMoreNav .chatBot-Back::before{font-size:22px}.chatbot_loadMoreNav ::-moz-placeholder{color:#979EC2}.chatbot_loadMoreNav :-ms-input-placeholder{color:#979EC2}.chatbot_loadMoreNav ::-ms-input-placeholder{color:#979EC2}.chatbot_loadMoreNav ::placeholder{color:#979EC2}.chatbot_loadMoreNav ::-webkit-input-placeholder{color:#979EC2}.chatbot_loadMoreNav ::-moz-placeholder{color:#979EC2}.chatbot_loadMoreNav :-ms-input-placeholder{color:#979EC2 !important}.chatbot_loadMoreNav :-moz-placeholder{color:#979EC2}.chatbot_loadMoreBody::-webkit-scrollbar{background-color:#E7E7F1;width:6px}.chatbot_loadMoreBody::-webkit-scrollbar-thumb{background:#E7E7F1;border-radius:4px;height:246px}.chatbot_loadMoreBody::-webkit-scrollbar-track{background-color:#fff}",
+    "Home | Mynaukri"
+  ],
+  "headings": [],
+  "links": [
+    "Link: https://www.naukri.com",
+    "Recommended Jobs \u2192 /mnjuser/recommendedjobs",
+    "Link: /mnjuser/recommendedjobs",
+    "Link: /mnjuser/inbox",
+    "Link: /myapply/historypage",
+    "Link: /mnjuser/savedjobs",
+    "Explore top companies hiring on Naukri \u2192 https://www.naukri.com/companies-hiring-in-india?s",
+    "Unicorn \u2192 https://www.naukri.com/unicorn-companies-in-india-",
+    "MNC \u2192 https://www.naukri.com/mnc-companies-in-india-cat1",
+    "Startup \u2192 https://www.naukri.com/startup-companies-in-india-",
+    "Product based \u2192 https://www.naukri.com/product-companies-in-india-",
+    "Internet \u2192 https://www.naukri.com/internet-companies-in-india",
+    "Top companies \u2192 https://www.naukri.com/companies-hiring-in-india?s",
+    "IT companies \u2192 https://www.naukri.com/it-companies-in-india-cat11",
+    "Fintech companies \u2192 https://www.naukri.com/fintech-and-payments-compan",
+    "Sponsored companies \u2192 https://www.naukri.com/allcompanies?searchType=sta",
+    "Featured companies \u2192 https://www.naukri.com/allcompanies?searchType=pre",
+    "Interview questions \u2192 https://www.ambitionbox.com/interviews?utm_source=",
+    "Company salaries \u2192 https://www.ambitionbox.com/salaries?utm_source=na",
+    "Company reviews \u2192 https://www.ambitionbox.com/reviews?utm_source=nau"
+  ],
+  "actions": [
+    {
+      "text": "Recommended Jobs",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "class": "nI-gNb-menuItems__anchorDropdown",
+        "title": "Recommended Jobs",
+        "href": "/mnjuser/recommendedjobs"
+      }
+    },
+    {
+      "text": "Explore top companies hiring on Naukri",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "class": "nI-gNb-menuItems__anchorDropdown",
+        "title": "Explore top companies hiring on Naukri",
+        "href": "https://www.naukri.com/companies-hiring-in-india?s"
+      }
+    },
+    {
+      "text": "Unicorn",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "data-domain": "https://www.naukri.com/",
+        "href": "https://www.naukri.com/unicorn-companies-in-india-",
+        "title": "Unicorn"
+      }
+    },
+    {
+      "text": "MNC",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://www.naukri.com/mnc-companies-in-india-cat1",
+        "title": "MNC",
+        "aria-label": "MNC"
+      }
+    },
+    {
+      "text": "Startup",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://www.naukri.com/startup-companies-in-india-",
+        "title": "Startup",
+        "aria-label": "Startup"
+      }
+    },
+    {
+      "text": "Product based",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://www.naukri.com/product-companies-in-india-",
+        "title": "Product based",
+        "aria-label": "Product based"
+      }
+    },
+    {
+      "text": "Internet",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://www.naukri.com/internet-companies-in-india",
+        "title": "Internet",
+        "aria-label": "Internet"
+      }
+    },
+    {
+      "text": "Top companies",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://www.naukri.com/companies-hiring-in-india?s",
+        "title": "Top companies",
+        "aria-label": "Top companies"
+      }
+    },
+    {
+      "text": "IT companies",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://www.naukri.com/it-companies-in-india-cat11",
+        "title": "IT companies",
+        "aria-label": "IT companies"
+      }
+    },
+    {
+      "text": "Fintech companies",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://www.naukri.com/fintech-and-payments-compan",
+        "title": "Fintech companies",
+        "aria-label": "Fintech companies"
+      }
+    },
+    {
+      "text": "Sponsored companies",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://www.naukri.com/allcompanies?searchType=sta",
+        "title": "Sponsored companies",
+        "aria-label": "Sponsored companies"
+      }
+    },
+    {
+      "text": "Featured companies",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://www.naukri.com/allcompanies?searchType=pre",
+        "title": "Featured companies",
+        "aria-label": "Featured companies"
+      }
+    },
+    {
+      "text": "Interview questions",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "target": "_blank",
+        "href": "https://www.ambitionbox.com/interviews?utm_source=",
+        "title": "Interview questions"
+      }
+    },
+    {
+      "text": "Company salaries",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "target": "_blank",
+        "href": "https://www.ambitionbox.com/salaries?utm_source=na",
+        "title": "Company salaries"
+      }
+    },
+    {
+      "text": "Company reviews",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "target": "_blank",
+        "href": "https://www.ambitionbox.com/reviews?utm_source=nau",
+        "title": "Company reviews"
+      }
+    },
+    {
+      "text": "Salary Calculator",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "target": "_blank",
+        "href": "https://www.ambitionbox.com/salaries/take-home-sal",
+        "title": "Salary Calculator"
+      }
+    },
+    {
+      "text": "Naukri FastForward- Resume Services",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "class": "nI-gNb-menuItems__anchorDropdown",
+        "title": "Naukri FastForward- Resume Services",
+        "href": "https://resume.naukri.com/?fftid=100001"
+      }
+    },
+    {
+      "text": "Text resume",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://resume.naukri.com/resume-writing-services?",
+        "target": "_blank",
+        "title": "Text resume"
+      }
+    },
+    {
+      "text": "Visual resume",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://resume.naukri.com/visual-resume-writing-se",
+        "target": "_blank",
+        "title": "Visual resume"
+      }
+    },
+    {
+      "text": "Resume critique",
+      "type": "click",
+      "tag": "a",
+      "attributes": {
+        "href": "https://resume.naukri.com/resume-critique?fftid=10",
+        "target": "_blank",
+        "title": "Resume critique"
+      }
+    }
+  ],
+  "forms": [],
+  "extracted_data": {
+    "numbers": [
+      "2-1",
+      "4+",
+      "81+",
+      "4-7",
+      "7-02",
+      "6-11",
+      "1+",
+      "18+",
+      "60-2",
+      "10-15"
+    ],
+    "names": [
+      "Resume Writing",
+      "Internet Explore",
+      "Engineer Leading",
+      "Mehta Self",
+      "Shell Scripting",
+      "Company Pune",
+      "New Delhi",
+      "Careers Employer",
+      "Pune Hiring",
+      "Startup Product"
+    ],
+    "urls": [
+      "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2\")",
+      "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2\")",
+      "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2\")",
+      "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/J64QX5IPOHK56I2KYUNBQ5M2XWZEYKYX.woff2\")",
+      "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2)"
+    ]
+  },
+  "summary": "\ud83d\udccc PAGE: Untitled\n\ud83d\udcc2 TYPE: job_listing\n\ud83c\udfaf PURPOSE: Browse and apply for job opportunities\n\n\u26a1 ACTIONS:\n   \u2022 Recommended Jobs (click)\n   \u2022 Explore top companies hiring on Naukri (click)\n   \u2022 Unicorn (click)\n   \u2022 MNC (click)\n   \u2022 Startup (click)\n   \u2022 Product based (click)\n   \u2022 Internet (click)\n   \u2022 Top companies (click)\n   \u2022 IT companies (click)\n   \u2022 Fintech companies (click)\n\n\ud83d\udd17 LINKS:\n   \u2022 Link: https://www.naukri.com\n   \u2022 Recommended Jobs \u2192 /mnjuser/recommendedjobs\n   \u2022 Link: /mnjuser/recommendedjobs\n   \u2022 Link: /mnjuser/inbox\n   \u2022 Link: /myapply/historypage\n\n\ud83d\udcca EXTRACTED DATA:\n   \u2022 numbers: 2-1, 4+, 81+, 4-7, 7-02\n   \u2022 names: Resume Writing, Internet Explore, Engineer Leading, Mehta Self, Shell Scripting\n   \u2022 urls: https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2\"), https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2\"), https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2\"), https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/J64QX5IPOHK56I2KYUNBQ5M2XWZEYKYX.woff2\"), https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2)"
+}

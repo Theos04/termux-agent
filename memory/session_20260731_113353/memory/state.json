@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "session_id": "20260731_113353",
+    "start_time": "2026-07-31T11:33:53.454285",
+    "end_time": "2026-07-31T11:34:51.682448",
+    "chrome_port": 9248,
+    "tab_url": "https://mca2026.mahacet.org.in/mca_26/candidate/optionForm-select-institute",
+    "tab_title": "Option Form Select Institutes | Dashboard - MCA",
+    "total_commands": 16,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 2,
+      "snapshots": 2,
+      "accessibility": 2
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "memory/session_20260731_113353/dom_trees/dom_113442_948401.json",
+      "metadata": {
+        "session_id": "20260731_113353",
+        "timestamp": "2026-07-31T11:34:42.948570",
+        "tab_url": "https://mca2026.mahacet.org.in/mca_26/candidate/optionForm-select-institute",
+        "tab_title": "Option Form Select Institutes | Dashboard - MCA",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 3124,
+        "command_index": 10
+      }
+    },
+    "last_snapshot": {
+      "file": "memory/session_20260731_113353/snapshots/snapshot_113445_732364.json",
+      "metadata": {
+        "session_id": "20260731_113353",
+        "timestamp": "2026-07-31T11:34:45.732526",
+        "tab_url": "https://mca2026.mahacet.org.in/mca_26/candidate/optionForm-select-institute",
+        "tab_title": "Option Form Select Institutes | Dashboard - MCA",
+        "context": {
+          "method": "DOMSnapshot.getSnapshot",
+          "params": {
+            "computedStyleWhitelist": [],
+            "includeEventListeners": false,
+            "includePaintOrder": false,
+            "includeUserAgentShadowTree": true
+          }
+        },
+        "dom_node_count": 3176,
+        "layout_tree_count": 0,
+        "computed_styles_count": 0,
+        "command_index": 13
+      }
+    },
+    "last_accessibility": {
+      "file": "memory/session_20260731_113353/accessibility/a11y_113448_614608.json",
+      "metadata": {
+        "session_id": "20260731_113353",
+        "timestamp": "2026-07-31T11:34:48.614760",
+        "tab_url": "https://mca2026.mahacet.org.in/mca_26/candidate/optionForm-select-institute",
+        "tab_title": "Option Form Select Institutes | Dashboard - MCA",
+        "context": {
+          "method": "Accessibility.getFullAXTree"
+        },
+        "node_count": 3446,
+        "command_index": 15
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 16,
+  "last_updated": "2026-07-31T11:34:51.683549"
+}

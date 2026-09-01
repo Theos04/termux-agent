@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "session_id": "20260802_185837",
+    "start_time": "2026-08-02T18:58:37.471216",
+    "end_time": null,
+    "chrome_port": 9223,
+    "tab_url": "https://web.whatsapp.com/",
+    "tab_title": "WhatsApp",
+    "total_commands": 16,
+    "snapshots_taken": [],
+    "files_generated": {
+      "interactions": 4,
+      "dom_trees": 1
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "session_20260802_185837/dom_trees/dom_185903_350414.json",
+      "metadata": {
+        "session_id": "20260802_185837",
+        "timestamp": "2026-08-02T18:59:03.350560",
+        "tab_url": "https://web.whatsapp.com/",
+        "tab_title": "WhatsApp",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 442,
+        "command_index": 4
+      }
+    },
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": {
+      "file": "session_20260802_185837/interactions/interaction_190537_935412.json",
+      "metadata": {
+        "session_id": "20260802_185837",
+        "timestamp": "2026-08-02T19:05:37.935848",
+        "tab_url": "devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@07b52360cc15066f987c910ab34dfbcd4a8778d2/&targetType=tab&can_dock=true&panel=elements",
+        "tab_title": "DevTools - web.whatsapp.com/",
+        "context": {
+          "type": "script_execution"
+        },
+        "interaction_number": 4,
+        "command_index": 14
+      }
+    },
+    "interaction_count": 4,
+    "errors": []
+  },
+  "command_count": 16,
+  "last_updated": "2026-08-02T19:06:37.656269"
+}

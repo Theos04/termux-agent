@@ -1,0 +1,4090 @@
+{
+  "noOfJobs": 61,
+  "jobDetails": [
+    {
+      "title": "Artificial Intelligence Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/4586641.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/4586641.gif",
+      "jobId": "050826025010",
+      "currency": "INR",
+      "footerPlaceholderLabel": "5 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Capco",
+      "isSaved": false,
+      "tagsAndSkills": "Pydantic AI,AutoGen,Langfuse,Python,Artificial Intelligence,Intelligence",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-10 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune, Bengaluru"
+        }
+      ],
+      "companyId": 114714,
+      "jdURL": "/job-listings-artificial-intelligence-engineer-capco-pune-bengaluru-5-to-10-years-050826025010",
+      "staticUrl": "capco-jobs-careers-114714",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/capco-technologies-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 711,
+        "AggregateRating": "3.8",
+        "Title": "Capco Technologies Reviews by Employees"
+      },
+      "jobDescription": "Awarded with Consultancy of the year in the British Bank Award and has been ranked Top 100 Best Companies for Women in India 2022 by <br><br>Experience - 5 to 12. Work Mode: Hybrid.",
+      "showMultipleApply": true,
+      "groupId": 4586641,
+      "isTopGroup": 0,
+      "createdDate": 1785922610923,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "10",
+      "applyByTime": "7:06 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI-ML Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/223346.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/223346.gif",
+      "jobId": "060726005571",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Tata Consultancy Services",
+      "isSaved": false,
+      "tagsAndSkills": "Pyspark,AWS,Python,Langchain,Langgraph,LLM",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "8-10 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune, Indore, Hyderabad"
+        }
+      ],
+      "companyId": 892542,
+      "jdURL": "/job-listings-ai-ml-engineer-tata-consultancy-services-indore-hyderabad-pune-8-to-10-years-060726005571",
+      "staticUrl": "tata-consultancy-services-jobs-careers-13542",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/tcs-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 117890,
+        "AggregateRating": "3.3",
+        "Title": "TCS Reviews by Employees"
+      },
+      "jobDescription": "Experience",
+      "showMultipleApply": true,
+      "groupId": 223346,
+      "isTopGroup": 0,
+      "createdDate": 1785843383212,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Senior level",
+      "minimumExperience": "8",
+      "maximumExperience": "10",
+      "applyByTime": "9:06 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "brandedJD": {
+        "templateId": 2949
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Artificial Intelligence Engineer_Python",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/4673477.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/4673477.gif",
+      "jobId": "100826011673",
+      "currency": "INR",
+      "footerPlaceholderLabel": "1 Day Ago",
+      "footerPlaceholderColor": "green",
+      "companyName": "Kairos Technologies",
+      "isSaved": false,
+      "tagsAndSkills": "LLMs,Azure Cloud,Machine Learning,Python,SQL,Artificial Intelligence,Cloud,Machine",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-9 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "20-22.5 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune"
+        }
+      ],
+      "companyId": 123867647,
+      "jdURL": "/job-listings-artificial-intelligence-engineer-python-kairos-technologies-pune-6-to-9-years-100826011673",
+      "staticUrl": "kairos-technologies-jobs-careers-123867647",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/kairos-technologies-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 51,
+        "AggregateRating": "3.9",
+        "Title": "Kairos Technologies Reviews by Employees"
+      },
+      "jobDescription": "<p><strong> Description:</strong><br /></p><p>Python AI Engineer Role<br /></p><p><strong>Mandatory Skills:</strong></p><br /><p>Python, Machine Learning Algorithms,<br />Model Training/Deployment, Computer Vision,<br />LLM, Statistical Analysis,<br />Data Visualization, SQL, Cloud Platform (Azure), MLOps</p><br /><br />",
+      "showMultipleApply": true,
+      "groupId": 4673477,
+      "isTopGroup": 0,
+      "createdDate": 1786354446871,
+      "mode": "jp",
+      "board": "1",
+      "vacancy": 2,
+      "salaryDetail": {
+        "minimumSalary": 2000000,
+        "maximumSalary": 2250000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "9",
+      "applyByTime": "7:04 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/490350.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/490350.gif",
+      "jobId": "070826016191",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Avisoft",
+      "isSaved": false,
+      "tagsAndSkills": "Generative AI,Agentic Ai,Aiml,RAG,Python,AUTO Gen,Semantic Kernel,CrewAI",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "8-12 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Remote"
+        }
+      ],
+      "companyId": 125435326,
+      "jdURL": "/job-listings-ai-engineer-avisoft-delhi-ncr-8-to-12-years-070826016191",
+      "staticUrl": "avisoft-jobs-careers-749606",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/avisoft-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 4,
+        "AggregateRating": "2.6",
+        "Title": "Avisoft Reviews by Employees"
+      },
+      "jobDescription": "<p> <strong>Job Summary</strong></p><p>We are seeking an experienced <strong>AI Engineer</strong> to design, build, and deploy enterprise-grade Generative AI solutions. The ideal candidate should have strong expertise in <strong>LLMs, RAG pipelines, Agentic AI frameworks, Python, and cloud platforms</strong>, with proven experience developing scalable AI applications from architecture to production. This role requires excellent problem-solving, stakeholder communication, and the ability to drive AI initiatives independently.</p><br /><p><strong>Key Responsibilities</strong></p><ul><li>Design and develop production-ready <strong>Generative AI</strong> and <strong>LLM-powered</strong> applications. </li><li>Build scalable <strong>RAG pipelines</strong> using vector databases and retrieval optimization techniques. </li><li>Architect and implement <strong>Agentic AI</strong> solutions using <strong>LangGraph, LangChain, CrewAI, AutoGen, Semantic Kernel</strong>, or similar frameworks. </li><li>Develop multi-agent workflows, tool integrations, memory management, and AI orchestration. </li><li>Build REST APIs using <strong>Python (FastAPI/Flask)</strong> and integrate AI solutions with enterprise systems. </li><li>Optimize AI applications through prompt engineering, evaluation frameworks, guardrails, and hallucination mitigation. </li><li>Deploy and manage AI workloads on <strong>AWS, Azure, or GCP</strong>. </li><li>Collaborate with business stakeholders to gather requirements, propose AI solutions, and drive production deployments. </li></ul><br /><p><strong>Mandatory Skills</strong></p><ul><li>8+ years of software engineering experience with strong expertise in <strong>Generative AI/LLMs</strong>. </li><li>Strong proficiency in <strong>Python</strong>. </li><li>Hands-on experience building <strong>RAG</strong> applications and <strong>Agentic AI</strong> solutions. </li><li>Experience with <strong>LangGraph, LangChain, CrewAI, AutoGen, Semantic Kernel</strong>, or similar frameworks. </li><li>Expertise in <strong>Vector Databases</strong> (Pinecone, Chroma, Weaviate, Milvus, FAISS, pgvector, etc.). </li><li>Strong understanding of embeddings, prompt engineering, retrieval optimization, and LLM evaluation. </li><li>Experience with <strong>FastAPI/Flask</strong>, REST APIs, SQL, and cloud platforms (<strong>AWS/Azure/GCP</strong>). </li><li>Excellent communication and stakeholder management skills. </li></ul><br /><p><strong>Preferred Skills</strong></p><ul><li>Experience with <strong>Master Data Management (MDM)</strong>, data governance, or metadata platforms. </li><li>Exposure to <strong>Collibra</strong>, Tableau, or similar enterprise tools. </li><li>Domain experience in <strong>Pharma, Life Sciences, or Clinical Data</strong>. </li><li>Consulting or client-facing experience.</li></ul><br /><br />",
+      "showMultipleApply": true,
+      "groupId": 490350,
+      "isTopGroup": 0,
+      "createdDate": 1786085347754,
+      "mode": "jp",
+      "board": "1",
+      "vacancy": 4,
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Senior level",
+      "minimumExperience": "8",
+      "maximumExperience": "12",
+      "applyByTime": "4:19 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1019",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Generative AI / Agentic AI Specialist",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/11568578.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/11568578.gif",
+      "jobId": "060826502741",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Sparix Global",
+      "isSaved": false,
+      "tagsAndSkills": "Computer science,GIT,NoSQL,Data modeling,Analytical,Artificial Intelligence,Debugging,Monitoring",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Noida"
+        }
+      ],
+      "companyId": 125545718,
+      "jdURL": "/job-listings-generative-ai-agentic-ai-specialist-sparix-global-private-limited-noida-5-to-8-years-060826502741",
+      "staticUrl": "sparix-global-jobs-careers-124628190",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/sparix-global-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 6,
+        "AggregateRating": "4.3",
+        "Title": "Sparix Global Reviews by Employees"
+      },
+      "jobDescription": "Need MCA / BTech/ Candidate only <br><br> familiarity with MCP and function / tool calling patterns.  . Neo4j & Graph Databases: Practical experience with Neo4j (Cypher query language),graph data modeling,and integrating Graph DBs into AI / LLM workflows (GraphRAG is a strong plus).  <br><br>Required Technical Skills <br><br>Experience - 5-8 Years<br><br>Experience & Qualifications",
+      "showMultipleApply": false,
+      "groupId": 11568578,
+      "isTopGroup": 0,
+      "createdDate": 1786020776000,
+      "mode": "crawled",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "8",
+      "applyByTime": "10:22 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=060826502741&logstr=srprestapi",
+      "applyRedirectUrl": "https://sparixglobal.com/career/?job_id=z5G7h3l6a1kMvyS65NP3cwt2TETmzqDvubJgG0r9ZI8=",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1025",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/5942.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/5942.gif",
+      "jobId": "050826009097",
+      "currency": "INR",
+      "footerPlaceholderLabel": "5 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Dharampal Satyapal Group (DS Group)",
+      "isSaved": false,
+      "tagsAndSkills": "Numerical,Programming,SQL DBA,Machine Learning,Source,Analytical,Database Management,Tables",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-6 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Noida, India"
+        }
+      ],
+      "companyId": 3286,
+      "jdURL": "/job-listings-ai-engineer-dharampal-satyapal-group-ds-group-noida-india-3-to-6-years-050826009097",
+      "staticUrl": "dharampal-satyapal-group-ds-group-jobs-careers-3286",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/ds-group-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 3171,
+        "AggregateRating": "4.0",
+        "Title": "DS Group Reviews by Employees"
+      },
+      "jobDescription": "however,candidates must be able to demonstrate their knowledge through academic projects,internships,personal projects,certifications,or a practical technical assessment.  .  . KEY RESPONSIBILITIES. <br><br>Candidates may also be asked to explain one academic,internship,or personal project in detail,including the problem,data model,code,testing approach,and final outcome",
+      "showMultipleApply": true,
+      "groupId": 5942,
+      "isTopGroup": 0,
+      "createdDate": 1785907977799,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "6",
+      "applyByTime": "3:02 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 10937
+      },
+      "roleCategoryGid": "1025",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Artificial Intelligence / AI Agentic Developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/11859115.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/11859115.gif",
+      "jobId": "060826917353",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Hind Industec",
+      "isSaved": false,
+      "tagsAndSkills": "Artificial Intelligence,LLM,Machine Learning,Python,Generative AI,CrewAI,Vector DB,LangChain",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune(Baner)"
+        }
+      ],
+      "companyId": 125132263,
+      "jdURL": "/job-listings-artificial-intelligence-ai-agentic-developer-hind-industec-pune-3-to-8-years-060826917353",
+      "staticUrl": "hind-industec-jobs-careers-124953083",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/hind-industec-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 34,
+        "AggregateRating": "3.7",
+        "Title": "Hind Industec Reviews by Employees"
+      },
+      "jobDescription": "Experience: 3 to 10 years in AI Software Development with strong focus on GenAI and AI Agents",
+      "showMultipleApply": true,
+      "groupId": 11859115,
+      "isTopGroup": 0,
+      "createdDate": 1786000030572,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "8",
+      "applyByTime": "4:37 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI / Machine Learning Developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/1202812.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/1202812.gif",
+      "jobId": "080826013465",
+      "currency": "INR",
+      "footerPlaceholderLabel": "2 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Thomson Digital",
+      "isSaved": false,
+      "tagsAndSkills": "Artificial Intelligence,Machine Learning,Python,Development,Machine,Intelligence",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-6 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "10-12 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Noida, Chennai"
+        }
+      ],
+      "companyId": 215894,
+      "jdURL": "/job-listings-ai-machine-learning-developer-thomson-digital-noida-chennai-3-to-6-years-080826013465",
+      "staticUrl": "thomson-digital-jobs-careers-215894",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/thomson-digital-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 306,
+        "AggregateRating": "4.0",
+        "Title": "Thomson Digital Reviews by Employees"
+      },
+      "jobDescription": "The candidate should have worked on real-world AI / ML projects and be comfortable taking solutions from experimentation to production.  . responsibilities :  . Design,develop,train,and deploy Machine Learning models<br><br>Preferred candidate profile . .",
+      "showMultipleApply": true,
+      "groupId": 1202812,
+      "isTopGroup": 0,
+      "createdDate": 1786188233773,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 1000000,
+        "maximumSalary": 1200000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "6",
+      "applyByTime": "8:53 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Java or Python Using Agentic AI",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/4156.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/4156.gif",
+      "jobId": "100826019993",
+      "currency": "INR",
+      "footerPlaceholderLabel": "1 Day Ago",
+      "footerPlaceholderColor": "green",
+      "companyName": "Cognizant",
+      "isSaved": false,
+      "tagsAndSkills": "Agentic AI,Langchain,Langraph,Artificial Intelligence,Java,Python",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-11 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Chennai, Bengaluru"
+        }
+      ],
+      "companyId": 2114,
+      "jdURL": "/job-listings-java-or-python-using-agentic-ai-cognizant-pune-chennai-bengaluru-6-to-11-years-100826019993",
+      "staticUrl": "cognizant-jobs-careers-2114",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/cognizant-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 63296,
+        "AggregateRating": "3.7",
+        "Title": "Cognizant Reviews by Employees"
+      },
+      "jobDescription": "<p>Looking for a candidate who has experience in Java or Python using Agentic AI and LLM Frameworks( Lang Chain and Lang Graph).</p><br /><p>Exp: 6 to 11 Yrs</p><br /><p>Location: Bangalore, Chennai & Pune.</p>",
+      "showMultipleApply": true,
+      "groupId": 4156,
+      "isTopGroup": 0,
+      "createdDate": 1786365155593,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "11",
+      "applyByTime": "10:02 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 8927
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Generative Artificial Intelligence Developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/12478904.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/12478904.gif",
+      "jobId": "040826009934",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Lntech System",
+      "isSaved": false,
+      "tagsAndSkills": "Azure OpenAI,embeddings,and prompt engineering,governance principles,GenAI-powered solutions using LLMs and RAG architectures,LangChain,vector databases,Semantic Kerne",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "8-13 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "11.4-18 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Noida"
+        }
+      ],
+      "companyId": 125761988,
+      "jdURL": "/job-listings-generative-artificial-intelligence-developer-lntech-system-private-limited-noida-8-to-13-years-040826009934",
+      "staticUrl": "lntech-system-jobs-careers-125761988",
+      "jobDescription": "<p> </p><p><strong>GenAI Developer | 7+ Years</strong> </p><p>Looking for immediate joiners with expertise in <strong>Azure OpenAI, OpenAI, LangChain, Semantic Kernel, Python, RAG, Embeddings, Vector Databases, Prompt Engineering, and Azure AI Search</strong></p><p>Bengaluru,Chennai,Noida,Pune,Coimbatore</p>",
+      "showMultipleApply": true,
+      "groupId": 12478904,
+      "isTopGroup": 0,
+      "createdDate": 1785819422420,
+      "mode": "jp",
+      "board": "1",
+      "smbJobFields": {
+        "gender": "99"
+      },
+      "salaryDetail": {
+        "minimumSalary": 1140000,
+        "maximumSalary": 1800000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 95000,
+        "maxSalaryPerMonth": 150000
+      },
+      "experienceText": "Senior level",
+      "minimumExperience": "8",
+      "maximumExperience": "13",
+      "applyByTime": "2:27 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Senior Python Data Scraping Engineer (Freelance)",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/10867254.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/10867254.gif",
+      "jobId": "070826502693",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Mindrift",
+      "isSaved": false,
+      "tagsAndSkills": "applied mathematics,csv,data processing,ai,ajax,data collection,data engineering,docker",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-7 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune"
+        }
+      ],
+      "companyId": 124394414,
+      "jdURL": "/job-listings-senior-python-data-scraping-engineer-freelance-mindrift-pune-5-to-7-years-070826502693",
+      "staticUrl": "mindrift-jobs-careers-124342966",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/mindrift-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 2,
+        "AggregateRating": "1.7",
+        "Title": "Mindrift Reviews by Employees"
+      },
+      "jobDescription": "This part-time remote opportunity is ideal for technical professionals with hands-on experience in web scraping,data extraction and processing.  . Key Responsibilities<br><br>Academic and / or Professional Experience. <br><br>Demonstrated experience handling anti-bot mechanisms and dynamic site structures at scale.",
+      "showMultipleApply": false,
+      "groupId": 10867254,
+      "isTopGroup": 0,
+      "createdDate": 1786100861000,
+      "mode": "crawled",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "7",
+      "applyByTime": "8:37 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=070826502693&logstr=srprestapi",
+      "applyRedirectUrl": "https://apply.workable.com/toloka-ai/j/003594A582/",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "Excellent Opportunity For Python Data Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/220402.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/220402.gif",
+      "jobId": "040826009615",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Nous Infosystems",
+      "isSaved": false,
+      "tagsAndSkills": "python,pyspark,aws,ETL,Python Data,Data Engineering,Data",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "7-12 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Hyderabad, Bengaluru"
+        }
+      ],
+      "companyId": 99590,
+      "jdURL": "/job-listings-excellent-opportunity-for-python-data-engineer-nous-infosystems-hyderabad-pune-bengaluru-7-to-12-years-040826009615",
+      "staticUrl": "nous-infosystems-jobs-careers-99590",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/nous-infosystems-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 443,
+        "AggregateRating": "3.5",
+        "Title": "Nous Infosystems Reviews by Employees"
+      },
+      "jobDescription": "We are looking for an experienced Python Data Engineer with strong expertise in PySpark / Spark SQL,AWS cloud services,ETL / ELT pipelines,and serverless data architectures.The ideal candidate will have hands-on experience building scalable data pipelines,designing robust data models,and developing cloud-native data solutions on AWS",
+      "showMultipleApply": true,
+      "groupId": 220402,
+      "isTopGroup": 0,
+      "createdDate": 1785818779123,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "7",
+      "maximumExperience": "12",
+      "applyByTime": "2:16 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Python Software Developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/1463886.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/1463886.gif",
+      "jobId": "070826012525",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "People Prime Worldwide",
+      "isSaved": false,
+      "tagsAndSkills": "generative ai,Python,Pyramid,Python Framework,Django,Aiml,Python Development,Ai Platform",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-11 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "14-24 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Pune, Chennai"
+        }
+      ],
+      "companyId": 889458,
+      "jdURL": "/job-listings-python-software-developer-people-prime-worldwide-pune-chennai-6-to-11-years-070826012525",
+      "staticUrl": "people-prime-worldwide-jobs-careers-889458",
+      "jobDescription": "<p><strong>Role & responsibilities</strong> </p><br /><br /><p><strong>Preferred candidate profile</strong> </p><br /><br />",
+      "showMultipleApply": true,
+      "groupId": 1463886,
+      "isTopGroup": 0,
+      "createdDate": 1786081046371,
+      "hiringFor": "People Prime Worldwide",
+      "consultant": true,
+      "hideClientName": false,
+      "clientCareersUrl": "people-prime-worldwide-jobs-careers-889458",
+      "clientGroupId": 1463886,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/1463886.gif",
+      "board": "1",
+      "clientTitleString": "People Prime Worldwide",
+      "salaryDetail": {
+        "minimumSalary": 1400000,
+        "maximumSalary": 2400000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "11",
+      "applyByTime": "3:07 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 19414
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI Developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/4600965.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/4600965.gif",
+      "jobId": "070826502053",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "IBN Technologies",
+      "isSaved": false,
+      "tagsAndSkills": "cursor,embeddings,cloud services,ai,backend development,cybersecurity,docker,cloud",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune"
+        }
+      ],
+      "companyId": 1961694,
+      "jdURL": "/job-listings-ai-developer-ibn-technologies-ltd-pune-3-to-8-years-070826502053",
+      "staticUrl": "ibn-technologies-jobs-careers-31986",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/ibn-technologies-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 121,
+        "AggregateRating": "3.6",
+        "Title": "IBN Technologies Reviews by Employees"
+      },
+      "jobDescription": "Database Data Layer . Design and manage database schemas (PostgreSQL preferred).  . Write optimized queries,migrations,and integrations.  <br><br>Bachelor s degree in computer science,IT,Engineering,or equivalent experience.  . 3 5 years of hands-on development experience in product or startup environments.  . Ready to Apply .",
+      "showMultipleApply": false,
+      "groupId": 4600965,
+      "isTopGroup": 0,
+      "createdDate": 1786100773000,
+      "mode": "crawled",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "8",
+      "applyByTime": "8:36 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=070826502053&logstr=srprestapi",
+      "applyRedirectUrl": "https://www.ibntech.com/blog/current-job-opening/",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "AI/ML Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/4847169.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/4847169.gif",
+      "jobId": "050826909970",
+      "currency": "INR",
+      "footerPlaceholderLabel": "5 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Optum",
+      "isSaved": false,
+      "tagsAndSkills": "Agile,Azure,Data Engineering,Architecture,Compliance,Cassandra,Ai,Azure Databricks",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "2-6 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Noida"
+        }
+      ],
+      "companyId": 126573,
+      "jdURL": "/job-listings-ai-ml-engineer-optum-global-solutions-india-private-limited-noida-2-to-6-years-050826909970",
+      "staticUrl": "optum-jobs-careers-126573",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/optum-global-solutions-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 8263,
+        "AggregateRating": "4.0",
+        "Title": "Optum Global Solutions Reviews by Employees"
+      },
+      "jobDescription": " Bachelors or masters degree in computer science,Engineering,Data Science,AI / ML,or a related field <br><br>Proven ability to understand the existing application codebase,perform impact analysis and update the code when required based on business logic or for optimization <br><br>3+ years of experience working on MS Sql Server and NoSQL DBs like Cassandra,etc",
+      "showMultipleApply": true,
+      "groupId": 4847169,
+      "isTopGroup": 0,
+      "createdDate": 1785908539330,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "2",
+      "maximumExperience": "6",
+      "applyByTime": "3:12 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=050826909970&logstr=srprestapi",
+      "applyRedirectUrl": "https://ad.doubleclick.net/ddm/clk/630357151;437469774;r?https://careers.unitedhealthgroup.com/job/noida/ai-ml-engineer/34088/98726908112?src=JB-22668&utm_source=naukri.com&utm_medium=job_posting&utm_campaign=India&utm_content=job_board&utm_term=437469774&ss=paid",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "brandedJD": {
+        "templateId": 6788
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "Python + RestAPI",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/11117838.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/11117838.gif",
+      "jobId": "080826007835",
+      "currency": "INR",
+      "footerPlaceholderLabel": "1 Day Ago",
+      "footerPlaceholderColor": "green",
+      "companyName": "Cloudxtreme",
+      "isSaved": false,
+      "tagsAndSkills": "Gen AI,RestApi,Fast API,LLM,Python,Data Engineering,Artificial Intelligence,Gen",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-11 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "7-17 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Chennai, Bengaluru"
+        }
+      ],
+      "companyId": 6358900,
+      "jdURL": "/job-listings-python-restapi-cloudxtreme-pune-chennai-bengaluru-6-to-11-years-080826007835",
+      "staticUrl": "cloudxtreme-jobs-careers-6358900",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/cloudxtreme-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 5,
+        "AggregateRating": "4.6",
+        "Title": "CloudXtreme Reviews by Employees"
+      },
+      "jobDescription": "<p><strong>Python + RestAPI</strong></p><p><strong>Location : PAN INDIA</strong></p><p><strong>Contract to Hire</strong></p><p><strong>Experience : 6 - 13 Years</strong></p><br /><br /><p><strong>Preferred candidate profile</strong> </p><br /><ul><li>Python</li><li>RestAPI</li><li>Fast API</li><li>LLM</li><li>Gen AI</li></ul><br />",
+      "showMultipleApply": true,
+      "groupId": 11117838,
+      "isTopGroup": 0,
+      "createdDate": 1786343483334,
+      "mode": "jp",
+      "board": "1",
+      "vacancy": 8,
+      "salaryDetail": {
+        "minimumSalary": 700000,
+        "maximumSalary": 1700000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "11",
+      "applyByTime": "4:01 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "GEN AI Lead",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/2866966.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/2866966.gif",
+      "jobId": "050826007602",
+      "currency": "INR",
+      "footerPlaceholderLabel": "5 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Iris Software",
+      "isSaved": false,
+      "tagsAndSkills": "Genrative Ai,Django,Python,Pandas,RAG,langchan,Al,LLM",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "8-10 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Noida"
+        }
+      ],
+      "companyId": 604,
+      "jdURL": "/job-listings-gen-ai-lead-iris-software-noida-8-to-10-years-050826007602",
+      "staticUrl": "iris-jobs-careers-604",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/iris-software-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 1982,
+        "AggregateRating": "3.7",
+        "Title": "Iris Software Reviews by Employees"
+      },
+      "jobDescription": "Experience with MLOps and model deployment pipelines <br><br>Extensive experience with Large Language Models (LLMs) <br><br>Proven experience in AI agent development,implementation,agent frameworks,orchestration platforms,AI agent architectures,APIs and design patterns <br><br> Experience with SQL server & database design <br><br> Nice to Have Skills:  . Capital markets experience",
+      "showMultipleApply": true,
+      "groupId": 2866966,
+      "isTopGroup": 0,
+      "createdDate": 1785906001206,
+      "mode": "jp",
+      "board": "1",
+      "vacancy": 2,
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Senior level",
+      "minimumExperience": "8",
+      "maximumExperience": "10",
+      "applyByTime": "2:30 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 10644
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "GEN AI python full stack developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/42932.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/42932.gif",
+      "jobId": "060826017864",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Genpact",
+      "isSaved": false,
+      "tagsAndSkills": "generative ai,Angular,Python,Fullstack Development,Artificial Intelligence,Stack,Gen,Development",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-7 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Noida, Hyderabad"
+        }
+      ],
+      "companyId": 30975,
+      "jdURL": "/job-listings-gen-ai-python-full-stack-developer-genpact-noida-hyderabad-pune-6-to-7-years-060826017864",
+      "staticUrl": "genpact-jobs-careers-25103",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/genpact-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 43905,
+        "AggregateRating": "3.6",
+        "Title": "Genpact Reviews by Employees"
+      },
+      "jobDescription": "Required Skills & QualificationsTechnical Skills <br><br> Strong Full Stack Development experience : Backend: Python,Java / Spring Boot <br><br>Experience with cloud platforms (Azure / AWS)",
+      "showMultipleApply": true,
+      "groupId": 42932,
+      "isTopGroup": 0,
+      "createdDate": 1786000653061,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "7",
+      "applyByTime": "4:47 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 7574
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Senior AI Backend Engineer (AI-First)",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/5772718.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/5772718.gif",
+      "jobId": "040826501994",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Enveu",
+      "isSaved": false,
+      "tagsAndSkills": "hive,algorithms,c++,amazon redshift,data warehousing,data pipeline,docker,sql",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-11 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Noida"
+        }
+      ],
+      "companyId": 7093087,
+      "jdURL": "/job-listings-senior-ai-backend-engineer-ai-first-enveu-noida-6-to-11-years-040826501994",
+      "staticUrl": "enveu-jobs-careers-7093087",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/enveu-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 27,
+        "AggregateRating": "2.3",
+        "Title": "Enveu Reviews by Employees"
+      },
+      "jobDescription": "Experience with deep learning frameworks like TensorFlow or PyTorch.",
+      "showMultipleApply": false,
+      "groupId": 5772718,
+      "isTopGroup": 0,
+      "createdDate": 1785835591000,
+      "mode": "crawled",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "11",
+      "applyByTime": "6:56 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=040826501994&logstr=srprestapi",
+      "applyRedirectUrl": "https://enveu.keka.com/careers/jobdetails/154434",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "Artificial Intelligence Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/5834144.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/5834144.gif",
+      "jobId": "050826039504",
+      "currency": "INR",
+      "footerPlaceholderLabel": "5 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Nxtwave Disruptive Technologies (Hiring for a client)",
+      "isSaved": false,
+      "tagsAndSkills": "Langchain,AI,Retrieval Augmented Generation,Vector,Python,claude,Chatgpt,Fast API",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "20-25 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Pune, Chennai, Bengaluru"
+        }
+      ],
+      "companyId": 124899063,
+      "jdURL": "/job-listings-artificial-intelligence-engineer-nxtwave-disruptive-technologies-hiring-for-a-client-pune-chennai-bengaluru-5-to-8-years-050826039504",
+      "staticUrl": "nxtwave-disruptive-technologies-jobs-careers-124899063",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/nxtwave-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 1352,
+        "AggregateRating": "3.5",
+        "Title": "NxtWave Reviews by Employees"
+      },
+      "jobDescription": "<p><strong>Location</strong>: Pune, Gurgaon, Mohali, Panchkula, Dehradun, Bangalore, Mumbai, Chennai</p><br /><p><strong>Check Points:</strong></p><p>1. VERY STRONG communication skills</p><p>2. Women in general not preferred as the work timings are 4 pm to 1 am, but if women candidates are okay with this shift they can apply.</p><p>3. No cab provision to employee from compan</p><br /><p><strong>Required Skills</strong></p><ul><li> Strong hands-on experience building AI/LLM-based RAG applications and AI agents.</li><li> Experience with LangChain, LangGraph, AutoGen, CrewAI, Semantic Kernel, or similar agent frameworks.</li><li> Experience with MCP servers and MCP client integrations.</li><li> Proficiency in Python and backend/API development.</li><li> Experience building services with FastAPI.</li><li> Strong understanding of LLMs, AI agents, RAG, embeddings, rerankers, vector databases, and retrieval systems.</li><li> Experience with prompt engineering, tool calling, structured outputs, and agent orchestration.</li><li> Experience with foundation models such as GPT, Claude, Llama, Gemini, Amazon Nova, or equivalent.</li><li> Experience with vector databases such as Pinecone, ChromaDB, Qdrant, Weaviate, or similar technologies.</li><li> Experience with object/blob storage such as Amazon S3.</li><li> Experience with search and vector search systems such as Amazon OpenSearch.</li><li> Experience with semantic search, hybrid search, BM25, and retrieval optimization techniques.</li><li> Experience with cross-encoders, bi-encoders, reranking models, and embedding models.</li><li> Experience with AI observability and evaluation tools.</li><li> Experience with Git commands.</li><li> Experience using GitHub and GitHub Actions for version control, CI/CD, and collaboration.</li><li> Experience with SQL and database design.</li><li> Knowledge of cloud security, authentication, authorization, and secure AI application development.</li></ul><br /><p><strong>Responsibilities</strong></p><ul><li> Build AI/LLM applications on AWS using AWS services.</li><li> Prompt engineering and evaluation frameworks</li><li> Build AI agents using frameworks such as LangChain, LangGraph, Amazon Bedrock, AutoGen, or similar tools.</li><li> Develop backend services and APIs using FastAPI.</li><li> Integrate AWS services such as Amazon Bedrock, S3, Lambda, ECS/EKS, OpenSearch, and AWS database services.</li><li> Work with foundation models such as OpenAI GPT, Anthropic Claude, Meta Llama, Amazon Nova, Gemini, or similar models.</li><li> Design and implement AI agent architectures, multi-agent systems, and tool-calling workflows.</li><li> Implement RAG pipelines using blob/object storage, vector search, embeddings, reranking, and document retrieval workflows.</li><li> Build semantic search, hybrid search, and knowledge retrieval systems.</li><li> Implement prompt engineering, prompt management, and LLM evaluation strategies.</li><li> Develop structured output and function/tool-calling capabilities.</li><li> Implement streaming AI responses using SSE or WebSockets.</li><li> Implement AI application monitoring, observability, tracing, and evaluation frameworks.</li><li> Design guardrails, content filtering, hallucination mitigation, and responsible AI controls.</li><li> Optimize AI applications for latency, scalability, reliability, and cost.</li><li> Work with application teams to move AI prototypes into reliable production environments.</li><li> Implement cloud security best practices.</li><li> Collaborate with DevOps and platform teams to deploy, monitor, and scale AIworkloads.</li></ul><br /><p><strong>Nice to Have</strong></p><ul><li> Experience with Node.js and TypeScript.</li><li> Experience with Amazon Bedrock, SageMaker, Azure OpenAI, OpenAI APIs, Anthropic APIs, or Google Vertex AI.</li><li> Experience containerizing and deploying applications using Docker and Kubernetes.</li><li> Experience with AI observability platforms such as Langfuse, Arize Phoenix, Helicone, or similar tools.</li><li> Experience with model evaluation frameworks such as Ragas, DeepEval, LangSmith, or similar tools.</li><li> Experience building multi-agent systems and autonomous workflows.</li><li> Knowledge of enterprise security, compliance, governance, and cost optimization practices.</li><li> Experience deploying production-grade AI solutions on AWS.</li><li> Familiarity with MLOps, LLMOps, CI/CD, and Infrastructure as Code (Terraform, CloudFormation).</li></ul>",
+      "showMultipleApply": true,
+      "groupId": 5834144,
+      "isTopGroup": 0,
+      "createdDate": 1785947153772,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 2000000,
+        "maximumSalary": 2500000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "8",
+      "applyByTime": "1:55 AM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Python AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/10878020.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/10878020.gif",
+      "jobId": "050826014552",
+      "currency": "INR",
+      "footerPlaceholderLabel": "5 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Highbrow Technology Inc",
+      "isSaved": false,
+      "tagsAndSkills": "generative ai,API,MCP,Retrieval Augmented Generation,Python,AI Frameworks,SQL,Artificial Intelligence",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "8-11 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "20-22.5 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Delhi / NCR, Chennai"
+        }
+      ],
+      "companyId": 124271642,
+      "jdURL": "/job-listings-python-ai-engineer-highbrow-technology-inc-pune-chennai-delhi-ncr-8-to-11-years-050826014552",
+      "staticUrl": "highbrow-technology-jobs-careers-124271642",
+      "jobDescription": "<p>Role Overview:</p><p> We are hiring an <strong>AI Engineer  Consultant</strong> for an enterprise AI transformation project with <strong>S&P Global</strong>. This is a hands-on engineering role focused on developing <strong>Python-based AI agents, LLM applications, RAG pipelines, MCP server integrations, and enterprise AI workflows</strong>. You'll build production-ready AI solutions, integrate them with enterprise systems, and work with modern AI frameworks such as LangChain, LlamaIndex, CrewAI, and Semantic Kernel. </p><br />",
+      "showMultipleApply": true,
+      "groupId": 10878020,
+      "isTopGroup": 0,
+      "createdDate": 1785911592817,
+      "hiringFor": "Highbrow Technology Inc",
+      "consultant": true,
+      "hideClientName": false,
+      "clientCareersUrl": "highbrow-technology-jobs-careers-124271642",
+      "clientGroupId": 10878020,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/10878020.gif",
+      "board": "1",
+      "vacancy": 4,
+      "clientTitleString": "Highbrow Technology Inc",
+      "salaryDetail": {
+        "minimumSalary": 2000000,
+        "maximumSalary": 2250000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Senior level",
+      "minimumExperience": "8",
+      "maximumExperience": "11",
+      "applyByTime": "4:03 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 31301
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Forward Deployed AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/10472.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/10472.gif",
+      "jobId": "160726022856",
+      "currency": "INR",
+      "footerPlaceholderLabel": "1 Day Ago",
+      "footerPlaceholderColor": "green",
+      "companyName": "eClerx",
+      "isSaved": false,
+      "tagsAndSkills": "generative ai,Python,Retrieval Augmented Generation,Artificial Intelligence,Deployment,Generation",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "7-12 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune, Navi Mumbai"
+        }
+      ],
+      "companyId": 7679,
+      "jdURL": "/job-listings-forward-deployed-ai-engineer-eclerx-navi-mumbai-pune-7-to-12-years-160726022856",
+      "staticUrl": "eclerx-jobs-careers-7679",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/eclerx-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 6554,
+        "AggregateRating": "3.1",
+        "Title": "eClerx Reviews by Employees"
+      },
+      "jobDescription": "Required Skills & Qualifications <br><br>Preferred Skills <br><br> 713 years of experience in Software Engineering,AI Engineering,or Machine Learning<br><br>Hands-on experience with LLMs,Agentic AI,Generative AI,RAG,Prompt Engineering,and AI Agents<br><br>Experience with AI frameworks such as LangGraph,LangChain,CrewAI,LlamaIndex,or similar orchestration platforms",
+      "showMultipleApply": true,
+      "groupId": 10472,
+      "isTopGroup": 0,
+      "createdDate": 1786344278900,
+      "mode": "jp",
+      "board": "1",
+      "vacancy": 3,
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "7",
+      "maximumExperience": "12",
+      "applyByTime": "4:14 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 7276
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Lead AI Developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/241400.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/241400.gif",
+      "jobId": "090925014991",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Aptara",
+      "isSaved": false,
+      "tagsAndSkills": "Artificial Intelligence,Natural Language Processing,Machine Learning,Cloud Computing,Python,Tensorflow,ML Pipelines,LLM",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-10 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Remote"
+        }
+      ],
+      "companyId": 5459,
+      "jdURL": "/job-listings-lead-ai-developer-aptara-pune-6-to-10-years-090925014991",
+      "staticUrl": "aptara-jobs-careers-5459",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/aptara-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 1374,
+        "AggregateRating": "3.1",
+        "Title": "Aptara Reviews by Employees"
+      },
+      "jobDescription": "Advanced knowledge of Machine Learning and LLMs (e.g.,GPT,Llama),with experience in LangChain,RAG,and model tuning<br><br>Preferred candidate profile . At least 6-10 years of experience deploying Machine Learning and Generative AI models into production with operational support<br><br>Proficient in MLOps tools (e.g.,ML flow) for lifecycle management of machine learning models",
+      "showMultipleApply": true,
+      "groupId": 241400,
+      "isTopGroup": 0,
+      "createdDate": 1785835021723,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "10",
+      "applyByTime": "6:47 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1167",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "ML Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/2619236.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/2619236.gif",
+      "jobId": "040826018779",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "ZeMoSo Technologies",
+      "isSaved": false,
+      "tagsAndSkills": "Machine Learning,Python,Tensorflow,Deep Learning,Machine,Ml",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "4-9 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Hyderabad, Bengaluru"
+        }
+      ],
+      "companyId": 940154,
+      "jdURL": "/job-listings-ml-engineer-zemoso-technologies-hyderabad-pune-bengaluru-4-to-9-years-040826018779",
+      "staticUrl": "zemoso-technologies-jobs-careers-940154",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/zemoso-technologies-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 228,
+        "AggregateRating": "3.0",
+        "Title": "ZeMoSo Technologies Reviews by Employees"
+      },
+      "jobDescription": "Experience: Minimum of 5+ years in machine learning,cloud computing,and software engineering<br><br>Our founders have had past successes - founded a decision management company acquired by SAP AG (now part of Hana Big data stack & NetWeaver BPM),early engineering team of Zoho (leading billion $ SaaS player) & some Private Equity experience",
+      "showMultipleApply": true,
+      "groupId": 2619236,
+      "isTopGroup": 0,
+      "createdDate": 1785832304880,
+      "mode": "jp",
+      "board": "1",
+      "vacancy": 4,
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "4",
+      "maximumExperience": "9",
+      "applyByTime": "6:01 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 27816
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI/ML Tech Lead",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/1729328.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/1729328.gif",
+      "jobId": "050826000032",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Happiest Minds Technologies",
+      "isSaved": false,
+      "tagsAndSkills": "Artificial Intelligence,Machine Learning,Python,Technical analysis,Machine,Intelligence,Ml",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "7-12 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Noida, Bengaluru"
+        }
+      ],
+      "companyId": 890864,
+      "jdURL": "/job-listings-ai-ml-tech-lead-happiest-minds-technologies-noida-pune-bengaluru-7-to-12-years-050826000032",
+      "staticUrl": "happiest-minds-technologies-jobs-careers-890864",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/happiest-minds-technologies-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 1506,
+        "AggregateRating": "3.4",
+        "Title": "Happiest Minds Technologies Reviews by Employees"
+      },
+      "jobDescription": "<p><strong>Role Summary:</strong></p><p><strong>The AI/ML Tech Lead drives the end-to-end architecture, implementation, and scaling of multimodal AI systems in the media organization. They lead teams delivering media understanding, personalization, search, moderation, and automation. This role ensures engineering excellence, scalability, and robustness in all AI systems.</strong></p><br /><p><strong>Detailed Responsibilities</strong></p><p><strong>Architecture & Technical Leadership</strong></p><ul><li><strong> Architect large-scale multimodal AI systems handling video, audio, and image pipelines.</strong></li><li><strong> Design scalable training, inference, and data ingestion systems for media AI.</strong></li><li><strong> Lead design of video AI features such as:</strong></li><li><strong> Scene detection</strong></li><li><strong> Video summarization</strong></li><li><strong> Content moderation</strong></li><li><strong> Annotation workflows</strong></li><li><strong> Multimodal search and discovery</strong></li><li><strong> Design and optimize RAG pipelines pulling from transcripts, frames, subtitles, metadata.</strong></li></ul><br /><p><strong>Execution & Delivery</strong></p><ul><li><strong> Oversee model development, integration, deployment, and monitoring.</strong></li><li><strong> Manage cross-functional delivery with engineers, designers, and media teams.</strong></li><li><strong> Drive sprint planning, architecture reviews, and performance evaluations.</strong></li></ul><br /><p><strong>Technical Excellence & Governance</strong></p><ul><li><strong> Enforce best practices in coding, testing, model governance, and documentation.</strong></li><li><strong> Build and maintain MLOps standards and model lifecycle processes.</strong></li><li><strong> Ensure secure, compliant handling of media assets and user data.</strong></li></ul><br /><p><strong>Team Leadership</strong></p><ul><li><strong> Mentor ML engineers across levels.</strong></li><li><strong> Lead technical interviews, onboarding, and capability building.</strong></li></ul><br /><p><strong>Must-Have Skills</strong></p><ul><li><strong> Expert in CV, NLP, speech models, and multimodal transformer models.</strong></li><li><strong> Strong understanding of GPU optimization, distributed training (DeepSpeed, Horovod).</strong></li><li><strong> Experience with real-time/near-real-time video processing.</strong></li><li><strong> Hands-on with:</strong></li><li><strong> MLflow, Ray, Airflow</strong></li><li><strong> KServe, Triton Inference Server</strong></li><li><strong> Vector DBs, RAG, LangChain</strong></li></ul><br /><p><strong>Preferred Skills</strong></p><ul><li><strong> Experience with broadcast/OTT platforms, MAM systems, and DAM workflows.</strong></li><li><strong> Experience with generative imaging (Stable Diffusion) or video generation.</strong></li></ul><br /><p><strong>Qualifications</strong></p><ul><li><strong> 7-10 years AI/ML experience, including leadership roles.</strong></li><li><strong> 5+ years ML engineering experience.</strong></li><li><strong> Bachelor's/Master's in CS/AI.Role & responsibilities</strong> </li></ul><br /><br /><p><strong>Preferred candidate profile</strong> </p><br /><br />",
+      "showMultipleApply": true,
+      "groupId": 1729328,
+      "isTopGroup": 0,
+      "createdDate": 1785868764688,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "7",
+      "maximumExperience": "12",
+      "applyByTime": "4:09 AM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 3645
+      },
+      "roleCategoryGid": "1019",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Dot NET + AI Full Stack Dev",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/786492.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/786492.gif",
+      "jobId": "070826501922",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Gnxt Systems",
+      "isSaved": false,
+      "tagsAndSkills": "python,data processing,ai,js,llm,dot net,microservices,cloud",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-7 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Noida"
+        }
+      ],
+      "companyId": 3660582,
+      "jdURL": "/job-listings-dot-net-ai-full-stack-dev-gnxt-systems-noida-3-to-7-years-070826501922",
+      "staticUrl": "gnxt-systems-jobs-careers-1131368",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/gnxt-systems-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 23,
+        "AggregateRating": "4.3",
+        "Title": "Gnxt Systems Reviews by Employees"
+      },
+      "jobDescription": "Hands-on experience with Python,Node.js,APIs,microservices,and cloud-based deployments,along with implementing AI automation and data processing solutions using modern LLM frameworks.Passionate about exploring AI,LLM ecosystems,and emerging open technologies to build intelligent and scalable platforms",
+      "showMultipleApply": true,
+      "groupId": 786492,
+      "isTopGroup": 0,
+      "createdDate": 1786100756000,
+      "mode": "crawled",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "7",
+      "applyByTime": "8:35 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Artificial Intelligence Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/12390617.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/12390617.gif",
+      "jobId": "070826027907",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Hack And Grow Consultancy",
+      "isSaved": false,
+      "tagsAndSkills": "Fast API,Deep Learning,Vector Database,Retrieval Augmented Generation,Kubernetes,Tensorflow,Langchain,Artificial Intelligence",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "20-35 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Gurugram"
+        }
+      ],
+      "companyId": 124531496,
+      "jdURL": "/job-listings-artificial-intelligence-engineer-hack-and-grow-consultancy-gurugram-3-to-8-years-070826027907",
+      "staticUrl": "hack-and-grow-consultancy-jobs-careers-124531496",
+      "jobDescription": "Preferred Candidate Profile <br><br>Experience: Minimum 3years of professional experience as an AI / ML Engineer,with at least 10 years focused on Generative AI and LLMs<br><br>Framework Mastery: Hands-on experience with PyTorch / TensorFlow,Hugging Face,LangChain / LlamaIndex,and Vector Databases",
+      "showMultipleApply": true,
+      "groupId": 12390617,
+      "isTopGroup": 0,
+      "createdDate": 1786099308650,
+      "consultant": true,
+      "hideClientName": true,
+      "clientHeadline": "Hack And Grow Consultancy",
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/12390617.gif",
+      "board": "1",
+      "vacancy": 15,
+      "salaryDetail": {
+        "minimumSalary": 2000000,
+        "maximumSalary": 3500000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "8",
+      "applyByTime": "8:11 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1020",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Sr/Lead Genai Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/4592441.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/4592441.gif",
+      "jobId": "080826013111",
+      "currency": "INR",
+      "footerPlaceholderLabel": "2 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Epam Systems",
+      "isSaved": false,
+      "tagsAndSkills": "Python,generative ai,Langgraph,SR,Artificial Intelligence",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "4-9 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune"
+        }
+      ],
+      "companyId": 6411,
+      "jdURL": "/job-listings-sr-lead-genai-engineer-epam-systems-pune-4-to-9-years-080826013111",
+      "staticUrl": "epam-systems-jobs-careers-6411",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/epam-systems-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 2154,
+        "AggregateRating": "3.7",
+        "Title": "EPAM Systems Reviews by Employees"
+      },
+      "jobDescription": "Experience with cloud platforms (AWS,Azure,GCP) and MLOps pipelines.  . Strong problem-solving skills and ability to drive projects independently<br><br>Experience: 5 - 13 Years. <br><br>Experience in prompt engineering,model fine-tuning,and evaluation.",
+      "showMultipleApply": true,
+      "groupId": 4592441,
+      "isTopGroup": 0,
+      "createdDate": 1786186980308,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "4",
+      "maximumExperience": "9",
+      "applyByTime": "8:33 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 11492
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI Ml Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/11697531.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/11697531.gif",
+      "jobId": "040826028184",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Precisiontech Global It Solutions",
+      "isSaved": false,
+      "tagsAndSkills": "Pytorch,MLOps,Machine Learning,Deep Learning,Python,Agentic Ai,generative ai,Retrieval Augmented Generation",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-9 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Gurugram, Bengaluru"
+        }
+      ],
+      "companyId": 124144660,
+      "jdURL": "/job-listings-ai-ml-engineer-precisiontech-global-it-solutions-gurugram-bengaluru-6-to-9-years-040826028184",
+      "staticUrl": "precisiontech-global-it-solutions-jobs-careers-124144660",
+      "jobDescription": "Required Skills<br><br>Strong experience with Agentic AI frameworks: AutoGen,CrewAI,LangGraph",
+      "showMultipleApply": true,
+      "groupId": 11697531,
+      "isTopGroup": 0,
+      "createdDate": 1785845144905,
+      "hiringFor": "Precision Technologies Corp",
+      "consultant": true,
+      "hideClientName": false,
+      "clientCareersUrl": "precision-technologies-corp-jobs-careers-124144660",
+      "clientGroupId": 11697531,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/11697531.gif",
+      "board": "1",
+      "vacancy": 8,
+      "clientTitleString": "Precision Technologies Corp",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "9",
+      "applyByTime": "9:35 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "DE_RCE_Python_AI_Senior_Professional",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/243080.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/243080.gif",
+      "jobId": "040826501735",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "EY",
+      "isSaved": false,
+      "tagsAndSkills": "Manager Quality Assurance,Front end,Functional testing,Postgresql,Consulting,Data structures,Information technology,Analytics",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "4-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Gurugram"
+        }
+      ],
+      "companyId": 1127058,
+      "jdURL": "/job-listings-de-rce-python-ai-senior-professional-ernst-young-gurugram-4-to-8-years-040826501735",
+      "staticUrl": "ey-jobs-careers-9156",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/ernst-young-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 15210,
+        "AggregateRating": "3.4",
+        "Title": "Ernst & Young Reviews by Employees"
+      },
+      "jobDescription": "Certifications: Any of Cloud certifications (Azure preferred but AWS,GCP acceptable). AI or ML Certifications. <br><br>Bachelor s degree in Computer Science,Engineering,Information Technology,or a related field,or equivalent practical experience<br><br>Required Skills<br><br>Preferred Qualifications<br><br>Working experience in Risk domain",
+      "showMultipleApply": false,
+      "groupId": 243080,
+      "isTopGroup": 0,
+      "createdDate": 1785834305000,
+      "mode": "crawled",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "4",
+      "maximumExperience": "8",
+      "applyByTime": "6:35 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=040826501735&logstr=srprestapi",
+      "applyRedirectUrl": "https://careers.ey.com/ey/job/Gurgaon-DE_RCE_Python_AI_Senior_GDSN02-HR-122010/1422104933/",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "brandedJD": {
+        "templateId": 6182
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "Digital Design Engineer OR AI/ML Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/3995988.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/3995988.gif",
+      "jobId": "070826012098",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Quess",
+      "isSaved": false,
+      "tagsAndSkills": "AutoCAD,AI,LLM,RAG,ML,CATIA,Python Based Scripts,Ansys",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "4-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune(Magarpatta)"
+        }
+      ],
+      "companyId": 2496284,
+      "jdURL": "/job-listings-digital-design-engineer-or-ai-ml-engineer-quess-pune-4-to-8-years-070826012098",
+      "staticUrl": "quess-jobs-careers-191185",
+      "jobDescription": "<p><strong>Role & responsibilities</strong> :</p><p> </p><p><strong>Customer: Silicon Stack</strong></p><p><strong>Location: Magarpatta, Pune (Need candidates from Pune only)</strong><br /><strong>Years of experience: 4 to 6 yrs</strong><br /></p><p><strong>Job Description:</strong><br /></p><ul><li>Must have basic understanding of Physics and concepts in Mechanical engineering (Structural, thermal and flow)</li><li>Experience with advanced ML and DL modelling methods and LLM / RAG based workflow development and deployment</li><li>Hands-on experience in development of python-based scripts for engineering automation</li><li>Basic knowledge of CAD tools like AutoCAD, Creo, Catia, NX, Solidworks is preferred</li><li>Basic knowledge of analysis software like ANSYS, MATLAB/Simulink and languages such as VBA/C#</li><li>Participates in internal open innovation events within team</li><li>Gets trained on internal systems & processes and implements them towards projects</li><li>Explore advances in AI in Engineering technologies and evaluate their suitability for Eaton products.</li><li>Works collaboratively with digital design team globally to advance the technology.</li></ul><br /><br />",
+      "showMultipleApply": true,
+      "groupId": 3995988,
+      "isTopGroup": 0,
+      "createdDate": 1786080656969,
+      "hiringFor": "silicon stack",
+      "consultant": true,
+      "hideClientName": false,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/3995988.gif",
+      "board": "1",
+      "vacancy": 2,
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "4",
+      "maximumExperience": "8",
+      "applyByTime": "3 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1060",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI ML Developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/8884141.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/8884141.gif",
+      "jobId": "100826500223",
+      "currency": "INR",
+      "footerPlaceholderLabel": "1 Day Ago",
+      "footerPlaceholderColor": "green",
+      "companyName": "Hopequre Wellness Solutions",
+      "isSaved": false,
+      "tagsAndSkills": "algorithms,python,natural language processing,numpy,machine learning,artificial intelligence,deep learning,tensorflow",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "2-6 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Noida"
+        }
+      ],
+      "companyId": 5361982,
+      "jdURL": "/job-listings-ai-ml-developer-hopequre-wellness-solutions-pvt-ltd-noida-2-to-6-years-100826500223",
+      "staticUrl": "hopequre-wellness-solutions-jobs-careers-5361982",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/hopequre-wellness-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 3,
+        "AggregateRating": "4.0",
+        "Title": "HopeQure Wellness Reviews by Employees"
+      },
+      "jobDescription": "We are looking for a highly skilled AI / ML Developer with 8 to 13 years of experience to join our team at Hopequre Wellness Solutions Pvt<br><br>Experience with deep learning frameworks like TensorFlow or PyTorch",
+      "showMultipleApply": false,
+      "groupId": 8884141,
+      "isTopGroup": 0,
+      "createdDate": 1786347471000,
+      "mode": "crawled",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "2",
+      "maximumExperience": "6",
+      "applyByTime": "5:07 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=100826500223&logstr=srprestapi",
+      "applyRedirectUrl": "https://www.hopequre.com/careers",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1019",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "GenAI / Agentic Ai Developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/13832.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/13832.gif",
+      "jobId": "070826000015",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Infosys",
+      "isSaved": false,
+      "tagsAndSkills": "generative ai,LLM,Data Science,Langgraph,RAG,Tensorflow,Langchain,Artificial Intelligence",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Delhi / NCR, Bengaluru"
+        }
+      ],
+      "companyId": 410527,
+      "jdURL": "/job-listings-genai-agentic-ai-developer-infosys-pune-bengaluru-delhi-ncr-6-to-8-years-070826000015",
+      "staticUrl": "infosys-jobs-careers-11244",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/infosys-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 50390,
+        "AggregateRating": "3.5",
+        "Title": "Infosys Reviews by Employees"
+      },
+      "jobDescription": "<p> </p><p><strong>Responsibilities</strong></p><br /><p>Key Responsibilities:  </p><p>- Design and implement advanced Generative AI models to solve complex problems. </p><p>- Collaborate with cross-functional teams to integrate AI solutions into existing systems.</p><p> - Conduct research and stay updated with the latest advancements in NLP and AI technologies. </p><p>- Develop scalable and efficient AI algorithms to enhance product offerings. </p><p>- Mentor junior team members and share knowledge to foster a culture of learning.  </p><br /><p>Good to have skills:  </p><p>Machine Learning, Data Analysis, Deep Learning, Python Programming, Cloud Computing</p><br /><p><strong>Technical and Professional Requirements:</strong> </p><p>\u2022\tPrimary skills: Machine Learning->Generative AI-> Agentic AI-> Large Language Models-> NLP-> Artificial Intelligence </p><p><br /><strong>Preferred Skills:</strong> </p><p>Technology->AI-Generative AI->Prompt Engineering <br />Technology->AI-Agentic AI->Agent Engineering </p>",
+      "showMultipleApply": true,
+      "groupId": 13832,
+      "isTopGroup": 0,
+      "createdDate": 1786125650830,
+      "brandingTags": [
+        {
+          "id": "1",
+          "label": "women"
+        }
+      ],
+      "exclusive": false,
+      "diversityTagText": "Prefers women",
+      "mode": "jp",
+      "board": "1",
+      "vacancy": 99,
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "8",
+      "applyByTime": "3:30 AM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 15493
+      },
+      "roleCategoryGid": "1020",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "AI / ML / DL Trainer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/6162535.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/6162535.gif",
+      "jobId": "060826926889",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "D-techworks",
+      "isSaved": false,
+      "tagsAndSkills": "Artificial Intelligence,Machine Learning,Java,Matplotlib,C++,C,Scikit-learn,Deep Learning",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-6 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Mumbai, Delhi / NCR"
+        }
+      ],
+      "companyId": 123597557,
+      "jdURL": "/job-listings-ai-ml-dl-trainer-d-techworks-pvt-ltd-mumbai-delhi-ncr-3-to-6-years-060826926889",
+      "staticUrl": "d-techworks-jobs-careers-123597557",
+      "jobDescription": "You should be able to teach,guide,and mentor students from diverse academic and coding backgrounds ensuring conceptual clarity and hands-on learning <br><br>Certification or prior teaching / training experience (preferred but not mandatory) <br><br>Required Skills : . Strong command of Python programming (NumPy,Pandas,Matplotlib,Scikit-learn,TensorFlow,Keras,PyTorch)",
+      "showMultipleApply": true,
+      "groupId": 6162535,
+      "isTopGroup": 0,
+      "createdDate": 1786014555300,
+      "hiringFor": "Leading Client",
+      "consultant": true,
+      "hideClientName": false,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/6162535.gif",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "6",
+      "applyByTime": "8:39 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1160",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/1149902.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/1149902.gif",
+      "jobId": "040826027147",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "FORNAX TECHNOLOGY SERVICES PRIVATE LIMITED",
+      "isSaved": false,
+      "tagsAndSkills": "Artificial Intelligence,LLM,Machine Learning,Python,Fast API,API,Machine,Intelligence",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-10 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Hyderabad, Bengaluru"
+        }
+      ],
+      "companyId": 115820,
+      "jdURL": "/job-listings-ai-engineer-fornax-technology-services-private-limited-hyderabad-pune-bengaluru-5-to-10-years-040826027147",
+      "staticUrl": "fornax-technology-services-jobs-careers-115820",
+      "jobDescription": "Experience with MLOps and model monitoring tools<br><br>Required Qualifications <br><br>Experience with Docker and container orchestration (Kubernetes preferred)<br><br>Preferred Qualifications <br><br> 8 years of full stack software engineering experience<br><br>Experience with ML frameworks (e.g.,scikit-learn,PyTorch,TensorFlow,or equivalent)<br><br>Experience with relational and NoSQL databases",
+      "showMultipleApply": true,
+      "groupId": 1149902,
+      "isTopGroup": 0,
+      "createdDate": 1785843496769,
+      "hiringFor": "Deloitte US-India Offices",
+      "consultant": true,
+      "hideClientName": false,
+      "clientCareersUrl": "deloitte-us-india-offices-jobs-careers-1706",
+      "clientGroupId": 224154,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/224154.gif",
+      "board": "1",
+      "vacancy": 5,
+      "clientTitleString": "Deloitte US-India Offices",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "10",
+      "applyByTime": "9:08 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1045",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/11067324.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/11067324.gif",
+      "jobId": "040826501831",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Invarsys Consultancy",
+      "isSaved": false,
+      "tagsAndSkills": "deep learning,Automation,GCP,Analytical,Machine learning,Cloud,Data structures,Deployment",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-10 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Noida"
+        }
+      ],
+      "companyId": 125753340,
+      "jdURL": "/job-listings-ai-engineer-invarsys-consultancy-pvt-ltd-noida-5-to-10-years-040826501831",
+      "staticUrl": "invarsys-consultancy-jobs-careers-124344136",
+      "jobDescription": "Strong experience in Python,ML frameworks,and problem-solving is essential. Work Arrangement",
+      "showMultipleApply": false,
+      "groupId": 11067324,
+      "isTopGroup": 0,
+      "createdDate": 1785835443000,
+      "mode": "crawled",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "10",
+      "applyByTime": "6:54 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=040826501831&logstr=srprestapi",
+      "applyRedirectUrl": "https://www.invarsys.com/career/ai-engineer",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1019",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/4605167.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/4605167.gif",
+      "jobId": "130726003816",
+      "currency": "INR",
+      "footerPlaceholderLabel": "1 Day Ago",
+      "footerPlaceholderColor": "green",
+      "companyName": "Jet2 Travel Technologies",
+      "isSaved": false,
+      "tagsAndSkills": "Programming,Amazon Cloudwatch,Ci/Cd,Machine Learning,Engineering,S,Docker,AWS Sagemaker",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-6 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune"
+        }
+      ],
+      "companyId": 4973276,
+      "jdURL": "/job-listings-machine-learning-engineer-jet2-travel-technologies-pune-3-to-6-years-130726003816",
+      "staticUrl": "jet2-travel-technologies-jobs-careers-4973276",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/jet2-travel-technologies-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 93,
+        "AggregateRating": "3.0",
+        "Title": "Jet2 Travel Technologies Reviews by Employees"
+      },
+      "jobDescription": "Great work-life balance through permanent work from home arrangement.  <br><br>Jet2holidays is now the UKs largest tour operator,welcoming more than 33 million holidays customers since . We have a devoted team of more than 17,000 colleagues across the UK and overseas,supporting the ever-growing demand of Jetcom and Jet2holidays.  . Our success lies in giving our customers great experience",
+      "showMultipleApply": true,
+      "groupId": 4605167,
+      "isTopGroup": 0,
+      "createdDate": 1786364356258,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "6",
+      "applyByTime": "9:49 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Programming/Data Simulation Expert",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/11450120.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/11450120.gif",
+      "jobId": "100826502690",
+      "currency": "INR",
+      "footerPlaceholderLabel": "1 Day Ago",
+      "footerPlaceholderColor": "green",
+      "companyName": "BMW Techworks India",
+      "isSaved": false,
+      "tagsAndSkills": "github,python,confluence,ai,analytics,scripting,automation,git",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-10 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune"
+        }
+      ],
+      "companyId": 124604040,
+      "jdURL": "/job-listings-programming-data-simulation-expert-bmw-techworks-india-private-limited-pune-3-to-10-years-100826502690",
+      "staticUrl": "bmw-techworks-india-jobs-careers-124467320",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/bmw-techworks-india-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 103,
+        "AggregateRating": "3.0",
+        "Title": "BMW TechWorks India Reviews by Employees"
+      },
+      "jobDescription": "Must have technical skill . Python programming,Tool Scripting in Ansa / Animator. Good to have Technical skills . LS-Dyna,Nastran,Data-analytics,AI. Disclaimer: This job description has been sourced from a public domain and may have been modified by Naukri.com to improve clarity for our users<br><br>Experience in git,VSCode bzw",
+      "showMultipleApply": false,
+      "groupId": 11450120,
+      "isTopGroup": 0,
+      "createdDate": 1786363942000,
+      "mode": "crawled",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "10",
+      "applyByTime": "9:42 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=100826502690&logstr=srprestapi",
+      "applyRedirectUrl": "https://careers-bmwtechworks.peoplestrong.com/portal/job/detail/BTWI_-SE_1729785",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1025",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "Artificial Intelligence Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/11818279.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/11818279.gif",
+      "jobId": "060826025494",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Terra Technology Circle Consulting",
+      "isSaved": false,
+      "tagsAndSkills": "Agentic Ai,Langchain,Langgraph,Large Language Model,MCP,Artificial Intelligence,Python,Languages",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-9 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "18-30 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Remote"
+        }
+      ],
+      "companyId": 124571308,
+      "jdURL": "/job-listings-artificial-intelligence-engineer-terra-technology-circle-consulting-delhi-ncr-6-to-9-years-060826025494",
+      "staticUrl": "terra-technology-circle-consulting-jobs-careers-124571308",
+      "jobDescription": ": . We are looking for strong GenAI / LLM engineers who have good hands- on experience using LangChain,LanGraph,MCP,Agent Harness and Python with 7+ years of experience<br><br>You should have worked extensively as part of the development team and participated in agent design<br><br>Ensure performance,scalability,and reliability of deployed models. Key Skills & Experience",
+      "showMultipleApply": true,
+      "groupId": 11818279,
+      "isTopGroup": 0,
+      "createdDate": 1786012522444,
+      "mode": "jp",
+      "board": "1",
+      "vacancy": 4,
+      "salaryDetail": {
+        "minimumSalary": 1800000,
+        "maximumSalary": 3000000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "9",
+      "applyByTime": "8:05 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/2654.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/2654.gif",
+      "jobId": "070826916753",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Ventures Hrd Centre",
+      "isSaved": false,
+      "tagsAndSkills": "Artificial Intelligence,LLM,Python,Machine Learning,Intelligence,Machine",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "2-6 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "18-25 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Delhi / NCR"
+        }
+      ],
+      "companyId": 553021,
+      "jdURL": "/job-listings-ai-engineer-ventures-hrd-centre-delhi-ncr-2-to-6-years-070826916753",
+      "staticUrl": "ventures-hrd-centre-jobs-careers-1339",
+      "jobDescription": "Experience in AI / ML development with exposure to Generative AI,deep",
+      "showMultipleApply": true,
+      "groupId": 2654,
+      "isTopGroup": 0,
+      "createdDate": 1786085691083,
+      "hiringFor": "A client of Ventures Hrd Centre",
+      "consultant": true,
+      "hideClientName": false,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/2654.gif",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 1800000,
+        "maximumSalary": 2500000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "2",
+      "maximumExperience": "6",
+      "applyByTime": "4:24 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1019",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Conversational AI Developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/11751931.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/11751931.gif",
+      "jobId": "070826911274",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Fan Tv Ai",
+      "isSaved": false,
+      "tagsAndSkills": "ai Development,kubernetes,python,restful,technical leadership,conversational ai,ai,cloud platforms",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "4-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Noida"
+        }
+      ],
+      "companyId": 124777307,
+      "jdURL": "/job-listings-conversational-ai-developer-fan-tv-ai-noida-4-to-8-years-070826911274",
+      "staticUrl": "fan-tv-ai-jobs-careers-124777307",
+      "jobDescription": "Experience with system scaling,performance tuning,and production architecture <br><br> 4-10 years of backend development experience <br><br>Hands-on experience with: LLM integrations,AI APIs,or conversational AI workflows",
+      "showMultipleApply": true,
+      "groupId": 11751931,
+      "isTopGroup": 0,
+      "createdDate": 1786080276394,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "4",
+      "maximumExperience": "8",
+      "applyByTime": "2:54 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Artificial Intelligence & Machine Learning Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/6547643.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/6547643.gif",
+      "jobId": "060826927587",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Clicflyer",
+      "isSaved": false,
+      "tagsAndSkills": "Artificial Intelligence,Business Intelligence,OpenCV,Django,Computer Vision,Machine Learning,Deep Learning,Numpy",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-7 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Gurugram"
+        }
+      ],
+      "companyId": 124522486,
+      "jdURL": "/job-listings-artificial-intelligence-machine-learning-engineer-clicflyer-gurugram-3-to-7-years-060826927587",
+      "staticUrl": "clicflyer-jobs-careers-124522486",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/clicflyer-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 18,
+        "AggregateRating": "3.6",
+        "Title": "ClicFlyer Reviews by Employees"
+      },
+      "jobDescription": "graduate degree in Data Science or other quantitative field is preferred<br><br> . - At least 2 years of experience in computer vision and or deep learning for object detection.  . - Proficiency in Python and related packages like numpy,scikit-image,PIL,opencv,matplotlib,seaborn,etc",
+      "showMultipleApply": true,
+      "groupId": 6547643,
+      "isTopGroup": 0,
+      "createdDate": 1786014949792,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "7",
+      "applyByTime": "8:45 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1019",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Gen AI (Agentic AI) Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/224154.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/224154.gif",
+      "jobId": "180726012102",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Deloitte US-India Offices",
+      "isSaved": false,
+      "tagsAndSkills": "Agentic Ai,Artificial Intelligence,Natural Language Processing,Aiml,Full Stack,Machine Learning,Python,Languages",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Hyderabad, Bengaluru"
+        }
+      ],
+      "companyId": 12386,
+      "jdURL": "/job-listings-gen-ai-agentic-ai-engineer-deloitte-us-india-offices-hyderabad-pune-bengaluru-3-to-8-years-180726012102",
+      "staticUrl": "deloitte-us-india-offices-jobs-careers-1706",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/deloitte-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 24321,
+        "AggregateRating": "3.6",
+        "Title": "Deloitte Reviews by Employees"
+      },
+      "jobDescription": "Our expertise spans the full digital lifecycle,including customer research,experience design,platform development,content production,and marketing automation<br><br> Experience with observability tools (Grafana,Prometheus,AWS CloudWatch)",
+      "showMultipleApply": true,
+      "groupId": 224154,
+      "isTopGroup": 0,
+      "createdDate": 1785843771569,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "8",
+      "applyByTime": "9:12 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1082",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Semantic AI/ML Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/1744734.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/1744734.gif",
+      "jobId": "060826017803",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Luxoft",
+      "isSaved": false,
+      "tagsAndSkills": "Semantic Web,SPARQL,SHACL,OWL/RDF,programming or scripting language (Python/ Java),Python,Artificial Intelligence,Rdf",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-10 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Noida, Hyderabad"
+        }
+      ],
+      "companyId": 3919162,
+      "jdURL": "/job-listings-semantic-ai-ml-engineer-luxoft-noida-hyderabad-5-to-10-years-060826017803",
+      "staticUrl": "luxoft-jobs-careers-210236",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/luxoft-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 865,
+        "AggregateRating": "3.6",
+        "Title": "Luxoft Reviews by Employees"
+      },
+      "jobDescription": "<p>Mandatory Skills:</p><p>Neo4J Resource Description Framework (RDF) SPARQL Web Ontology Language (OWL)</p><p>Mandatory Skills Description:</p><p>Ontology Design & Maintenance: Design, develop, and maintain ontologies (using OWL/RDF or similar).</p><br /><p>Semantic Web Proficiency: Strong knowledge of semantic web technologies and standards - specifically, hands-on proficiency with OWL (Web Ontology Language) and RDF (Resource Description Framework) for ontology modelling, as well as SPARQL for querying graph data.</p><br /><p>Knowledge Graph Experience: Practical experience building or maintaining knowledge graphs or linked data systems in an enterprise setting.</p><br /><p>Data Modelling & Integration Skills: A solid understanding of data modelling principles, data architecture, and integrating heterogeneous data sources. You should be capable of abstracting real-world entities into a semantic schema and mapping relational or NoSQL data to an ontology.</p><br /><br />",
+      "showMultipleApply": true,
+      "groupId": 1744734,
+      "isTopGroup": 0,
+      "createdDate": 1786000558377,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "10",
+      "applyByTime": "4:45 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Software Developer with AI / Java",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/4199768.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/4199768.gif",
+      "jobId": "070826933769",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Purview Services",
+      "isSaved": false,
+      "tagsAndSkills": "Agentic Ai,Java,AI Agents,Retrieval Augmented Generation,React.js,AWS,SQL,Artificial Intelligence",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "8-13 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "15-25 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune"
+        }
+      ],
+      "companyId": 2941692,
+      "jdURL": "/job-listings-software-developer-with-ai-java-purview-services-pune-8-to-13-years-070826933769",
+      "staticUrl": "purview-services-jobs-careers-2941692",
+      "jobDescription": "Proficiency in Java and Web API development,with a solid understanding of building and maintaining scalable,secure,and efficient backend services<br><br>Strong,hands-on experience with React,with a focus on building dynamic,interactive,and high-performance web applications<br><br>Comprehensive experience in a DevOps activities like continuous integration,continuous delivery",
+      "showMultipleApply": true,
+      "groupId": 4199768,
+      "isTopGroup": 0,
+      "createdDate": 1786105094875,
+      "hiringFor": "Purview Service",
+      "consultant": true,
+      "hideClientName": false,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/4199768.gif",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 1500000,
+        "maximumSalary": 2500000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Senior level",
+      "minimumExperience": "8",
+      "maximumExperience": "13",
+      "applyByTime": "9:48 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1167",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Python Software Developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/534960.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/534960.gif",
+      "jobId": "080826007639",
+      "currency": "INR",
+      "footerPlaceholderLabel": "2 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Nitor",
+      "isSaved": false,
+      "tagsAndSkills": "Python,SQL,solution design,Cloud,Flask,Software,Software development,Development",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune"
+        }
+      ],
+      "companyId": 834157,
+      "jdURL": "/job-listings-python-software-developer-nitor-pune-5-to-8-years-080826007639",
+      "staticUrl": "nitor-jobs-careers-798534",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/nitor-infotech-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 331,
+        "AggregateRating": "3.9",
+        "Title": "Nitor Infotech, an Ascendion company Reviews by Employees"
+      },
+      "jobDescription": "<p> </p><p><strong>Required Skill:</strong></p><ol type=\"1\"><li>Strong experience in Python application development.</li><li>Hands-on experience with <strong>Flask and/or FastAPI</strong> for developing RESTful APIs and backend web applications.</li><li>Strong SQL skills with experience in database design, query optimization, and performance tuning.</li><li>Experience working with relational databases such as PostgreSQL, MySQL, Oracle, or SQL Server.</li><li>Hands-on experience with cloud platforms (GCP or AWS).</li><li>Good understanding of software design principles, design patterns, and system design concepts.</li><li>Experience in API design, development, integration, and documentation.</li><li>Strong understanding of Object-Oriented Programming (OOP), data structures, and clean coding practices.</li><li>Experience with Git and version control systems.</li><li>Strong debugging, troubleshooting, and problem-solving skills.</li><li>Experience working in Agile/Scrum development environments.</li></ol><p><strong>Good to have skills:</strong></p><ol type=\"1\"><li>Microservices architecture</li><li>Docker and Kubernetes</li><li>CI/CD tools (Jenkins, Harness, GitHub Actions, Azure DevOps)</li></ol><p><strong>DEI Statement</strong></p><p>At Nitor Infotech, we embrace diversity and inclusion. We actively foster an environment where all voices are heard and valued.</p><p><strong>ISMS Statement</strong></p><p>Nitor Infotech maintains ISO 27001 certification. All employees must adhere to our information security policies.</p><br /><br />",
+      "showMultipleApply": true,
+      "groupId": 534960,
+      "isTopGroup": 0,
+      "createdDate": 1786164747942,
+      "mode": "jp",
+      "board": "1",
+      "vacancy": 2,
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "8",
+      "applyByTime": "2:22 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 4074
+      },
+      "roleCategoryGid": "1167",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Lead AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/4643193.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/4643193.gif",
+      "jobId": "140326013973",
+      "currency": "INR",
+      "footerPlaceholderLabel": "5 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Vconstruct",
+      "isSaved": false,
+      "tagsAndSkills": "generative ai,Machine Learning,Agentic Ai,Python,Predictive Modeling,Tensorflow,Ai Strategy,Artificial Intelligence",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "8-13 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune(Magarpatta +1)"
+        }
+      ],
+      "companyId": 1051046,
+      "jdURL": "/job-listings-lead-ai-engineer-vconstruct-pune-8-to-13-years-140326013973",
+      "staticUrl": "vconstruct-jobs-careers-1051046",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/vconstruct-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 143,
+        "AggregateRating": "3.6",
+        "Title": "vConstruct Reviews by Employees"
+      },
+      "jobDescription": "Experience with MLOps practices including CI / CD,monitoring,and model versioning <br><br>Hands-on experience with deep learning frameworks such as PyTorch and TensorFlow <br><br>Experience with Large Language Models (LLMs),RAG,embeddings,and vector databases <br><br> 8-12 years of experience in AI / ML,data science,or software engineering <br><br>Experience delivering AI systems in production",
+      "showMultipleApply": true,
+      "groupId": 4643193,
+      "isTopGroup": 0,
+      "createdDate": 1785925376862,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Senior level",
+      "minimumExperience": "8",
+      "maximumExperience": "13",
+      "applyByTime": "7:52 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "brandedJD": {
+        "templateId": 4783
+      },
+      "roleCategoryGid": "1020",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Coforge Ltd is Hiring Senior AI Engineer | GenAI, LLM & Agentic AI",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/233334.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/233334.gif",
+      "jobId": "100826023656",
+      "currency": "INR",
+      "footerPlaceholderLabel": "Few Hours Ago",
+      "footerPlaceholderColor": "green",
+      "companyName": "Coforge",
+      "isSaved": false,
+      "tagsAndSkills": "GenAI,CrewAI,AWS Bedrock,LangChain,Hugging Face,Azure OpenAI,LLM,Agentic AI",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-10 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "15-30 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Pune, Hyderabad, Greater Noida"
+        }
+      ],
+      "companyId": 24468,
+      "jdURL": "/job-listings-coforge-ltd-is-hiring-senior-ai-engineer-genai-llm-agentic-ai-coforge-hyderabad-pune-greater-noida-6-to-10-years-100826023656",
+      "staticUrl": "coforge-jobs-careers-24468",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/coforge-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 9215,
+        "AggregateRating": "3.3",
+        "Title": "Coforge Reviews by Employees"
+      },
+      "jobDescription": "Job Location: Greater Noida,Pune & Hyderabad Only<br><br>Required Skills:  . Strong programming expertise in Python,C++,Java,or Scala<br><br>Preferred Qualifications:  . <br><br>Experience: 6 to 8 Years<br><br>Hands-on experience with LLMs,RAG,Agentic AI,PyTorch,and TensorFlow<br><br>Experience with LangChain,LangGraph,Hugging Face,and OpenCV",
+      "showMultipleApply": true,
+      "groupId": 233334,
+      "isTopGroup": 0,
+      "createdDate": 1786377119510,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 1500000,
+        "maximumSalary": 3000000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "10",
+      "applyByTime": "1:21 AM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "brandedJD": {
+        "templateId": 11027
+      },
+      "roleCategoryGid": "1020",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Generative AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/1406470.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/1406470.gif",
+      "jobId": "050826928404",
+      "currency": "INR",
+      "footerPlaceholderLabel": "5 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "BizBrolly",
+      "isSaved": false,
+      "tagsAndSkills": "Generative AI,LangGraph,PyTorch,LangChain,Hugging Face,LlamaIndex,Python,TensorFlow",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "4-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune, Noida"
+        }
+      ],
+      "companyId": 123597413,
+      "jdURL": "/job-listings-generative-ai-engineer-bizbrolly-noida-pune-4-to-8-years-050826928404",
+      "staticUrl": "bizbrolly-jobs-careers-1887234",
+      "jobDescription": "Required Skills",
+      "showMultipleApply": true,
+      "groupId": 1406470,
+      "isTopGroup": 0,
+      "createdDate": 1785926957807,
+      "hiringFor": "Leading Client",
+      "consultant": true,
+      "hideClientName": false,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/1406470.gif",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "4",
+      "maximumExperience": "8",
+      "applyByTime": "8:19 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1019",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI Lead",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/4559328.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/4559328.gif",
+      "jobId": "060826012661",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Amantya Technologies",
+      "isSaved": false,
+      "tagsAndSkills": "AI,LLM,ML,Artificial Intelligence",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "6-9 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Gurugram"
+        }
+      ],
+      "companyId": 5378906,
+      "jdURL": "/job-listings-ai-lead-amantya-technologies-gurugram-6-to-9-years-060826012661",
+      "staticUrl": "amantya-technologies-jobs-careers-5378906",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/amantya-technologies-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 274,
+        "AggregateRating": "4.0",
+        "Title": "Amantya Technologies Reviews by Employees"
+      },
+      "jobDescription": "Proven experience in leading and mentoring technical teams,fostering collaboration,and encouraging continuous learning<br><br>Bachelor s or Master s degree in Computer Science,AI / ML,Data Science,or related field<br><br>Required AI / ML Skills:  . Generative AI (GenAI):  . <br><br>Programming Languages:  . Strong proficiency in Python (preferred),Java,or Go for AI application development",
+      "showMultipleApply": true,
+      "groupId": 4559328,
+      "isTopGroup": 0,
+      "createdDate": 1785993627118,
+      "mode": "jp",
+      "board": "1",
+      "vacancy": 2,
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "6",
+      "maximumExperience": "9",
+      "applyByTime": "2:50 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Artificial Intelligence Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/11637578.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/11637578.gif",
+      "jobId": "080826007305",
+      "currency": "INR",
+      "footerPlaceholderLabel": "2 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Crescendo Global Leadership Hiring India",
+      "isSaved": false,
+      "tagsAndSkills": "Agentic Ai,gen ai,Retrieval Augmented Generation,LLM,Python,Artificial Intelligence,Aiml,Generation",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-10 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Delhi / NCR, Bengaluru, Mumbai (All Areas)"
+        }
+      ],
+      "companyId": 2020094,
+      "jdURL": "/job-listings-artificial-intelligence-engineer-crescendo-global-leadership-hiring-india-bengaluru-delhi-ncr-mumbai-all-areas-5-to-10-years-080826007305",
+      "staticUrl": "crescendo-global-leadership-hiring-india-jobs-careers-2020094",
+      "jobDescription": "Experience building LLM applications (tool calling,RAG,orchestration) and creating eval / quality gates<br><br>Production deployment discipline (CI / CD,environments,containers) and cloud experience (AWS / Azure/GCP)",
+      "showMultipleApply": true,
+      "groupId": 11637578,
+      "isTopGroup": 0,
+      "createdDate": 1786162556144,
+      "hiringFor": "Crescendo Global",
+      "consultant": true,
+      "hideClientName": false,
+      "clientCareersUrl": "crescendo-global-jobs-careers-2861464",
+      "clientGroupId": 4684015,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/4684015.gif",
+      "board": "1",
+      "clientTitleString": "Crescendo Global",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "10",
+      "applyByTime": "1:45 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 26325
+      },
+      "roleCategoryGid": "1060",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Python Software Developer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/4665601.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/4665601.gif",
+      "jobId": "100826001692",
+      "currency": "INR",
+      "footerPlaceholderLabel": "1 Day Ago",
+      "footerPlaceholderColor": "green",
+      "companyName": "Think People Solutions",
+      "isSaved": false,
+      "tagsAndSkills": "AWS,Python,Docker,SRE,Ci/Cd,Continuous Integration,Software,Software development",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-9 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "10-19 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune"
+        }
+      ],
+      "companyId": 22721,
+      "jdURL": "/job-listings-python-software-developer-think-people-solutions-pune-5-to-9-years-100826001692",
+      "staticUrl": "think-people-solutions-jobs-careers-22721",
+      "jobDescription": "Experience with platform engineering,internal developer platforms,or shared runtime platforms <br><br> To be successful as a Python / AWS developer you should have experience with: . Strong Python engineering experience (production grade code)",
+      "showMultipleApply": true,
+      "groupId": 4665601,
+      "isTopGroup": 0,
+      "createdDate": 1786336555622,
+      "hiringFor": "MNC Leads",
+      "consultant": true,
+      "hideClientName": false,
+      "clientCareersUrl": "mnc-leads-jobs-careers-22721",
+      "clientGroupId": 4665601,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/4665601.gif",
+      "board": "1",
+      "clientTitleString": "MNC Leads",
+      "salaryDetail": {
+        "minimumSalary": 1000000,
+        "maximumSalary": 1900000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "9",
+      "applyByTime": "2:05 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "brandedJD": {
+        "templateId": 25240
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Jr. Gen AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/11813145.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/11813145.gif",
+      "jobId": "040826504496",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Neurealm",
+      "isSaved": false,
+      "tagsAndSkills": "embeddings,data preprocessing,ai frameworks,faiss,ai,crewai,docker,ai engineer",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-10 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune"
+        }
+      ],
+      "companyId": 125588662,
+      "jdURL": "/job-listings-jr-gen-ai-engineer-gs-lab-gavs-pune-5-to-10-years-040826504496",
+      "staticUrl": "neurealm-jobs-careers-125588662",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/neurealm-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 807,
+        "AggregateRating": "3.4",
+        "Title": "Neurealm Reviews by Employees"
+      },
+      "jobDescription": "<div> Office location : Gurgaon </div> <div> <br /> </div> <div> Role: Data Scientist  </div> <div> <br /> </div> <div> Experience: 35 Years  </div> <div> <br /> </div> <div> Key Responsibilities  </div> <div> <br /> </div> <div> Design, develop, and deploy Machine Learning and Generative AI solutions.  </div> <div> <br /> </div> <div> Build Retrieval-Augmented Generation (RAG) pipelines using vector databases and enterprise knowledge sources.  </div> <div> <br /> </div> <div> Develop AI agents using Agentic AI frameworks such as LangGraph, LangChain, CrewAI, or similar technologies.  </div> <div> <br /> </div> <div> Integrate AI agents with enterprise APIs, tools, databases, and external services.  </div> <div> <br /> </div> <div> Develop prompts, tool-calling workflows, and structured output pipelines for LLM applications.  </div> <div> <br /> </div> <div> Fine-tune, evaluate, and optimize LLM-powered applications for accuracy, latency, and cost.  </div> <div> <br /> </div> <div> Implement data preprocessing, feature engineering, and ML model training workflows.  </div> <div> <br /> </div> <div> Work with structured and unstructured datasets to solve business problems.  </div> <div> <br /> </div> <div> Collaborate with Product Managers, Software Engineers, and Subject Matter Experts to deliver AI-driven features.  </div> <div> <br /> </div> <div> Monitor model and agent performance and participate in troubleshooting and continuous improvements.  </div> <div> <br /> </div> <div> Write clean, maintainable, and well-tested Python code following engineering best practices.  </div> <div> <br /> </div> <div> Stay updated with the latest advancements in Machine Learning, LLMs, and Agentic AI technologies.  </div> <div> <br /> </div> <div> Required Technical Skills  </div> <div> <br /> </div> <div> Core Skills  </div> <div> <br /> </div> <div> Strong proficiency in Python  </div> <div> <br /> </div> <div> Machine Learning fundamentals  </div> <div> <br /> </div> <div> Natural Language Processing (NLP)  </div> <div> <br /> </div> <div> Generative AI and Large Language Models (LLMs)  </div> <div> <br /> </div> <div> Prompt Engineering  </div> <div> <br /> </div> <div> Retrieval-Augmented Generation (RAG)  </div> <div> <br /> </div> <div> Embeddings and semantic search  </div> <div> <br /> </div> <div> Model evaluation and validation techniques  </div> <div> <br /> </div> <div> Agentic AI Frameworks  </div> <div> <br /> </div> <div> Hands-on experience with LangChain and LangGraph  </div> <div> <br /> </div> <div> Experience building AI agents with tool calling and workflow orchestration  </div> <div> <br /> </div> <div> Familiarity with CrewAI, AutoGen, Semantic Kernel, or similar frameworks  </div> <div> <br /> </div> <div> Understanding of agent memory, planning, state management, and multi-step reasoning  </div> <div> <br /> </div> <div> ML AI Libraries  </div> <div> <br /> </div> <div> Scikit-learn  </div> <div> <br /> </div> <div> XGBoost or LightGBM  </div> <div> <br /> </div> <div> PyTorch or TensorFlow  </div> <div> <br /> </div> <div> Hugging Face Transformers  </div> <div> <br /> </div> <div> OpenAI, Anthropic, Gemini, Bedrock, Azure OpenAI, or similar LLM APIs  </div> <div> <br /> </div> <div> Vector databases such as Pinecone, FAISS, ChromaDB, Weaviate, Milvus, or OpenSearch  </div> <div> <br /> </div> <div> Data Cloud  </div> <div> <br /> </div> <div> SQL and relational databases  </div> <div> <br /> </div> <div> Experience with AWS, Azure, or GCP  </div> <div> <br /> </div> <div> Docker and containerized deployments  </div> <div> <br /> </div> <div> Basic CI/CD knowledge  </div> <div> <br /> </div> <div> MLflow or similar experiment tracking tools  </div> <div> <br /> </div> <div> REST APIs/FastAPI for AI model deployment  </div> <div> <br /> </div> <div> Good to Have  </div> <div> <br /> </div> <div> Experience building production-ready AI or LLM applications.  </div> <div> <br /> </div> <div> Exposure to multi-agent systems and workflow orchestration.  </div> <div> <br /> </div> <div> Knowledge of Model Context Protocol (MCP).  </div> <div> <br /> </div> <div> Experience with AI evaluation frameworks and guardrails.  </div> <div> <br /> </div> <div> Understanding of MLOps and model monitoring.  </div> <div> <br /> </div> <div> Experience with fine-tuning techniques such as LoRA, PEFT, or QLoRA.  </div> <div> <br /> </div> <div> Experience with document processing, OCR, or document intelligence.  </div> <div> <br /> </div> <div> Experience in legal, regulatory, financial, healthcare, or publishing domains. </div>\n\nDisclaimer: This job posting has been aggregated from external source. Role details, content, and availability are subject to change. Applicants are advised to confirm the latest information directly on the company website before applying.",
+      "showMultipleApply": false,
+      "groupId": 11813145,
+      "isTopGroup": 0,
+      "createdDate": 1785846582000,
+      "mode": "crawled",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "10",
+      "applyByTime": "9:59 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=040826504496&logstr=srprestapi",
+      "applyRedirectUrl": "https://neurealm.darwinbox.in/ms/candidatev2/main/careers/jobDetails/a6a70460d5d047",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "Software Development Engineer AI/ML",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/10036880.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/10036880.gif",
+      "jobId": "060826017863",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "NTT DATA, Inc.",
+      "isSaved": false,
+      "tagsAndSkills": "Artificial Intelligence,Aiml,Machine Learning,SQL,Python,Machine,Software engineering,Software development",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "8-13 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Noida, Hyderabad, Gurugram"
+        }
+      ],
+      "companyId": 302585,
+      "jdURL": "/job-listings-software-development-engineer-ai-ml-ntt-data-inc-noida-hyderabad-gurugram-8-to-13-years-060826017863",
+      "staticUrl": "ntt-data-jobs-careers-302585",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/ntt-data-inc-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 3614,
+        "AggregateRating": "3.9",
+        "Title": "NTT DATA, Inc. Reviews by Employees"
+      },
+      "jobDescription": "Your experience with applied machine learning,Generative AI,Large Language Models,and integration of AI capabilities into production systems will be used extensively in this role.  . At S&P Global,we use modern engineering platforms and services such as GitHub,TeamCity,AWS,Datadog,Artifactory,Confluence,Jira,and CI / CD practices to support rapid delivery",
+      "showMultipleApply": true,
+      "groupId": 10036880,
+      "isTopGroup": 0,
+      "createdDate": 1786000651969,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Senior level",
+      "minimumExperience": "8",
+      "maximumExperience": "13",
+      "applyByTime": "4:47 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "brandedJD": {
+        "templateId": 3874
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Gen AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/12460094.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/12460094.gif",
+      "jobId": "060826500468",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Zorba Ai",
+      "isSaved": false,
+      "tagsAndSkills": "cost monitoring,erp,api gateway,generative ai,faiss,ai,cloud platforms,crewai",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "1-6 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Gurugram"
+        }
+      ],
+      "companyId": 125731668,
+      "jdURL": "/job-listings-gen-ai-engineer-zorba-ai-gurugram-1-to-6-years-060826500468",
+      "staticUrl": "zorba-ai-jobs-careers-125731668",
+      "jobDescription": "Preferred . AutoGen. CrewAI. MLflow",
+      "showMultipleApply": false,
+      "groupId": 12460094,
+      "isTopGroup": 0,
+      "createdDate": 1786019319000,
+      "mode": "crawled",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "1-6 Yrs",
+      "minimumExperience": "1",
+      "maximumExperience": "6",
+      "applyByTime": "9:58 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=060826500468&logstr=srprestapi",
+      "applyRedirectUrl": "https://app.pyjamahr.com/careers?company=zorba-consulting-india&job_id=387030&company_uuid=A7DEFF2C5C",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "Python ML Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/216316.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/216316.gif",
+      "jobId": "070826032460",
+      "currency": "INR",
+      "footerPlaceholderLabel": "3 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "UST",
+      "isSaved": false,
+      "tagsAndSkills": "Azure Open AI,Large Language Model,Azure Ai,Python Development,Retrieval Augmented Generation,Python,Artificial Intelligence,Generation",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Chennai, Bengaluru"
+        }
+      ],
+      "companyId": 1316,
+      "jdURL": "/job-listings-python-ml-engineer-ust-pune-chennai-bengaluru-5-to-8-years-070826032460",
+      "staticUrl": "ust-jobs-careers-1316",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/ust-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 5891,
+        "AggregateRating": "3.7",
+        "Title": "UST Reviews by Employees"
+      },
+      "jobDescription": "This role requires a strong software engineering foundation combined with hands-on experience building production-grade AI solutions.  . Design and develop Agentic AI solutions using modern AI frameworks",
+      "showMultipleApply": true,
+      "groupId": 216316,
+      "isTopGroup": 0,
+      "createdDate": 1786104304273,
+      "mode": "jp",
+      "board": "1",
+      "vacancy": 2,
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "8",
+      "applyByTime": "9:35 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 9018
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Data Science Trainer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/3612930.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/3612930.gif",
+      "jobId": "100826006100",
+      "currency": "INR",
+      "footerPlaceholderLabel": "1 Day Ago",
+      "footerPlaceholderColor": "green",
+      "companyName": "Itvedant",
+      "isSaved": false,
+      "tagsAndSkills": "Training,Data Science,Machine Learning,SQL,Python,Artificial Intelligence,Natural Language Processing,IT Training",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "1-6 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "3-8 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Pune, Mumbai (All Areas)"
+        }
+      ],
+      "companyId": 4436674,
+      "jdURL": "/job-listings-data-science-trainer-itvedant-pune-mumbai-all-areas-1-to-6-years-100826006100",
+      "staticUrl": "itvedant-jobs-careers-2494108",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/itvedant-education-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 247,
+        "AggregateRating": "3.7",
+        "Title": "Itvedant Education Reviews by Employees"
+      },
+      "jobDescription": "18 years of experience in teaching technical courses at an EdTech or educational institute,with a strong passion for teaching and empowering students to build successful careers in Data Science <br><br>Bachelors or Masters degree in Computer Science,Data Science,Information Technology,Statistics,or a related field",
+      "showMultipleApply": true,
+      "groupId": 3612930,
+      "isTopGroup": 0,
+      "createdDate": 1786344152807,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 300000,
+        "maximumSalary": 800000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "1-6 Yrs",
+      "minimumExperience": "1",
+      "maximumExperience": "6",
+      "applyByTime": "4:12 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1160",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Gen AI Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/10004212.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/10004212.gif",
+      "jobId": "270326034390",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Innodata India",
+      "isSaved": false,
+      "tagsAndSkills": "generative ai,Chatbot Development,Retrieval Augmented Generation,LLM,Python,API,Artificial Intelligence,Chatbot",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "4-6 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Noida"
+        }
+      ],
+      "companyId": 5245,
+      "jdURL": "/job-listings-gen-ai-engineer-innodata-india-noida-4-to-6-years-270326034390",
+      "staticUrl": "innodata-india-jobs-careers-5245",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/innodata-isogen-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 1167,
+        "AggregateRating": "3.7",
+        "Title": "Innodata India Private Limited Reviews by Employees"
+      },
+      "jobDescription": "Experience with LLM APIs (OpenAI / Azure) . <br><br>Required Qualifications <br><br> 3 to 6 years of experience in AI / ML or backend development . Strong Python programming skills . <br><br>Experience building chatbot or RAG systems . Understanding of API security",
+      "showMultipleApply": true,
+      "groupId": 10004212,
+      "isTopGroup": 0,
+      "createdDate": 1785999242770,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "4",
+      "maximumExperience": "6",
+      "applyByTime": "4:24 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "brandedJD": {
+        "templateId": 16989
+      },
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "Data Scientist-Artificial Intelligence",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/19288.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/19288.gif",
+      "jobId": "040826926635",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "IBM",
+      "isSaved": false,
+      "tagsAndSkills": "data,security management,python,data analytics,data analysis,natural language processing,power bi,machine learning",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "5-7 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune"
+        }
+      ],
+      "companyId": 16987,
+      "jdURL": "/job-listings-data-scientist-artificial-intelligence-ibm-india-pvt-limited-pune-5-to-7-years-040826926635",
+      "staticUrl": "ibm-jobs-careers-16987",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/ibm-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 26527,
+        "AggregateRating": "3.9",
+        "Title": "IBM Reviews by Employees"
+      },
+      "jobDescription": "Required education . Bachelors Degree . <br><br>Required technical and professional expertise <br><br>Preferred technical and professional experience <br><br> Design AI Solutions: Architect and deliver AI solutions using cutting-edge technologies,with a strong focus on foundation models and large language models,and experience in tools like Github Copilot and Amazon Code Whisperer",
+      "showMultipleApply": true,
+      "groupId": 19288,
+      "isTopGroup": 0,
+      "createdDate": 1785843052102,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Mid level",
+      "minimumExperience": "5",
+      "maximumExperience": "7",
+      "applyByTime": "9 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=040826926635&logstr=srprestapi",
+      "applyRedirectUrl": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=90291&source=JB_Naukri.com+%28India%29",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "brandedJD": {
+        "templateId": 10201
+      },
+      "roleCategoryGid": "1019",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    },
+    {
+      "title": "AI developer, or Agentic AI",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/12002673.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/12002673.gif",
+      "jobId": "040826019920",
+      "currency": "INR",
+      "footerPlaceholderLabel": "6 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Pineq Technology Labs",
+      "isSaved": false,
+      "tagsAndSkills": "Large Language Model,Artificial Intelligence,Development,Ai Platform,Machine Learning,Python,Machine,Intelligence",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "4-9 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "12-22 Lacs PA"
+        },
+        {
+          "type": "location",
+          "label": "Hybrid - Pune, Hyderabad, Bengaluru"
+        }
+      ],
+      "companyId": 124905107,
+      "jdURL": "/job-listings-ai-developer-or-agentic-ai-pineq-technology-labs-hyderabad-pune-bengaluru-4-to-9-years-040826019920",
+      "staticUrl": "pineq-technology-labs-jobs-careers-124905107",
+      "jobDescription": "Must To Have Skills: Proficiency in Data & AI Solution Architecture.  . - Strong understanding of software development methodologies and best practices.  . - Experience with modern programming languages and frameworks.  . - Ability to design and implement scalable software architectures.  . - Familiarity with cloud computing platforms and services",
+      "showMultipleApply": true,
+      "groupId": 12002673,
+      "isTopGroup": 0,
+      "createdDate": 1785834255357,
+      "hiringFor": "Accenture",
+      "consultant": true,
+      "hideClientName": false,
+      "clientCareersUrl": "accenture-jobs-careers-7682",
+      "clientGroupId": 10476,
+      "mode": "jp",
+      "clientLogo": "https://img.naukimg.com/logo_images/groups/v1/10476.gif",
+      "board": "1",
+      "clientTitleString": "Accenture",
+      "salaryDetail": {
+        "minimumSalary": 1200000,
+        "maximumSalary": 2200000,
+        "currency": "INR",
+        "hideSalary": false,
+        "variablePercentage": 0.0
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "4",
+      "maximumExperience": "9",
+      "applyByTime": "6:34 PM",
+      "companyApplyJob": false,
+      "walkinJob": false,
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": true,
+      "roleCategoryGid": "1028",
+      "todaysJob": false,
+      "jobAgentEligle": true,
+      "saved": false
+    },
+    {
+      "title": "AI / ML Engineer",
+      "logoPath": "https://img.naukimg.com/logo_images/groups/v1/10476.gif",
+      "logoPathV3": "https://img.naukimg.com/logo_images/groups/v1/10476.gif",
+      "jobId": "060826921256",
+      "currency": "INR",
+      "footerPlaceholderLabel": "4 Days Ago",
+      "footerPlaceholderColor": "grey",
+      "companyName": "Accenture",
+      "isSaved": false,
+      "tagsAndSkills": "Ai,Ml Engineer,Generative Ai,Architecture,Langchain,Artificial Intelligence,Neural Networks,Chatbot",
+      "placeholders": [
+        {
+          "type": "experience",
+          "label": "3-8 Yrs"
+        },
+        {
+          "type": "salary",
+          "label": "Not disclosed"
+        },
+        {
+          "type": "location",
+          "label": "Pune"
+        }
+      ],
+      "companyId": 27117,
+      "jdURL": "/job-listings-ai-ml-engineer-accenture-solutions-pvt-ltd-pune-3-to-8-years-060826921256",
+      "staticUrl": "accenture-jobs-careers-7682",
+      "ambitionBoxData": {
+        "Url": "https://www.ambitionbox.com/reviews/accenture-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+        "ReviewsCount": 76022,
+        "AggregateRating": "3.7",
+        "Title": "Accenture Reviews by Employees"
+      },
+      "jobDescription": "<b>Project Role : </b>AI / ML Engineer<br /> <b>Project Role Description : </b>Develops applications and systems that utilize AI tools, Cloud AI services, with proper cloud or on-prem application pipeline with production ready quality. Be able to apply GenAI models as part of the solution. Could also include but not limited to deep learning, neural networks, chatbots, image processing.                                                                                                                                                                                                                        <br /> <b>Must have skills : </b>Python Frameworks, Python (advanced level - perfo, Agentic AI (LangChain / LangGr<br /> <b>Good to have skills : </b>NAMinimum <br /> <b>3</b> year(s) of experience is required<br /> <b>Educational Qualification : </b>15 years full time education<br /> <b>Summary: </b>As an AI / ML Engineer, a typical day involves designing and building advanced applications and systems that leverage artificial intelligence technologies and cloud-based AI services. The role requires managing end-to-end application pipelines, ensuring solutions are production-ready and scalable. Daily activities may include integrating generative AI models into various projects, working with deep learning architectures, developing neural network solutions, and implementing intelligent systems such as chatbots and image processing tools. Collaboration with cross-functional teams to align AI capabilities with business needs is also a key part of the role, fostering innovation and continuous improvement in AI-driven solutions.<br /> <b>Roles Responsibilities: </b> <li> Expected to perform independently and become an SME.</li><li> Required active participation/contribution in team discussions.</li><li> Contribute in providing solutions to work related problems.</li><li> Collaborate with stakeholders to understand project requirements and translate them into technical solutions.</li><li> Continuously research and evaluate emerging AI technologies to enhance existing systems.</li><li> Assist junior team members by sharing knowledge and providing guidance on AI and machine learning best practices.<br /> <b>Professional Technical Skills: </b> </li><li> Agentic AI (LangChain / LangGraph/DAG/workflow engines)</li><li> Python (advanced level - performance optimization)</li><li> LangSmith / tracing tools</li><li> ML flow / weights Biases</li><li> RAG - VectorDB - PG Vector preferred<br /> <b>Must To Have Skills:</b> <br /></li><li> Proficiency in Python Frameworks.</li><li> Strong experience in developing and deploying AI and machine learning models using Python-based tools and libraries.</li><li> Familiarity with cloud AI services and integrating them into application pipelines.</li><li> Knowledge of deep learning techniques including neural networks and generative AI models.</li><li> Ability to design and implement production-quality AI systems with scalable architecture.</li><li> Experience with chatbot development and image processing applications.</li><li> The candidate should have minimum 3 years of experience in Python Frameworks.</li><li> This position is based at our Pune office.</li><li> A 15 years full time education is required.<br /> <b>Qualification</b> 15 years full time education</li>",
+      "showMultipleApply": true,
+      "groupId": 10476,
+      "isTopGroup": 0,
+      "createdDate": 1786006339079,
+      "mode": "jp",
+      "board": "1",
+      "salaryDetail": {
+        "minimumSalary": 0,
+        "maximumSalary": 0,
+        "currency": "INR",
+        "hideSalary": true,
+        "variablePercentage": 0.0,
+        "minSalaryPerMonth": 0,
+        "maxSalaryPerMonth": 0,
+        "ctcBreakup": {}
+      },
+      "experienceText": "Associate level",
+      "minimumExperience": "3",
+      "maximumExperience": "8",
+      "applyByTime": "6:22 PM",
+      "companyApplyJob": true,
+      "walkinJob": false,
+      "companyApplyUrl": "https://www.naukri.com/cloudgateway-apply/apply-services/v0/apply/saveCompanyApply?id=&file=060826921256&logstr=srprestapi",
+      "applyRedirectUrl": "https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5708148-S2062651_en&title=AI+%2F+ML+Engineer&SRC=RECNau",
+      "segmentedTemplateId": "Template1",
+      "questionnaireIdPresent": false,
+      "roleCategoryGid": "1019",
+      "todaysJob": false,
+      "jobAgentEligle": false,
+      "saved": false
+    }
+  ],
+  "sid": "17863969506988082",
+  "isLoggedIn": true,
+  "recommendedClusters": [
+    {
+      "clusterName": "Searches",
+      "clusterTitle": "Based on searches",
+      "clusterMainPageTitle": "Jobs based on your searches",
+      "clusterId": "Search",
+      "clusterTemplateId": "template5",
+      "jobIds": [
+        "050826025010",
+        "060726005571",
+        "100826011673",
+        "070826016191",
+        "060826502741",
+        "050826009097",
+        "060826917353",
+        "080826013465",
+        "100826019993",
+        "040826009934",
+        "070826502693",
+        "040826009615",
+        "070826012525",
+        "070826502053",
+        "050826909970",
+        "080826007835",
+        "050826007602",
+        "060826017864",
+        "040826501994",
+        "050826039504",
+        "050826014552",
+        "160726022856",
+        "090925014991",
+        "040826018779",
+        "050826000032",
+        "070826501922",
+        "070826027907",
+        "080826013111",
+        "040826028184",
+        "040826501735",
+        "070826012098",
+        "100826500223",
+        "070826000015",
+        "060826926889",
+        "040826027147",
+        "040826501831",
+        "130726003816",
+        "100826502690",
+        "060826025494",
+        "070826916753",
+        "070826911274",
+        "060826927587",
+        "180726012102",
+        "060826017803",
+        "070826933769",
+        "080826007639",
+        "140326013973",
+        "100826023656",
+        "050826928404",
+        "060826012661",
+        "080826007305",
+        "100826001692",
+        "040826504496",
+        "060826017863",
+        "060826500468",
+        "070826032460",
+        "100826006100",
+        "270326034390",
+        "040826926635",
+        "040826019920",
+        "060826921256"
+      ],
+      "jobCount": 61,
+      "display": true,
+      "clusterTrackingId": "search",
+      "subClusters": [],
+      "recoLowCountSuggester": null,
+      "topApplicantTagEnable": false,
+      "topApplicantJobIds": null,
+      "agentEligibleJobExists": false,
+      "jobsMetadata": {}
+    },
+    {
+      "clusterName": "Applies",
+      "clusterTitle": "Based on applies",
+      "clusterMainPageTitle": "Jobs based on your applies",
+      "clusterId": "apply",
+      "clusterTemplateId": "template4",
+      "jobIds": null,
+      "jobCount": 63,
+      "display": false,
+      "clusterTrackingId": "apply",
+      "subClusters": null,
+      "recoLowCountSuggester": null,
+      "topApplicantTagEnable": false,
+      "topApplicantJobIds": null,
+      "agentEligibleJobExists": false,
+      "jobsMetadata": null
+    },
+    {
+      "clusterName": "Preferences",
+      "clusterTitle": "Based on preferences",
+      "clusterMainPageTitle": "Jobs based on your preferences",
+      "clusterId": "preference",
+      "clusterTemplateId": "template3",
+      "jobIds": null,
+      "jobCount": 75,
+      "display": false,
+      "clusterTrackingId": "preference",
+      "subClusters": null,
+      "recoLowCountSuggester": null,
+      "topApplicantTagEnable": false,
+      "topApplicantJobIds": null,
+      "agentEligibleJobExists": false,
+      "jobsMetadata": null
+    },
+    {
+      "clusterName": "You might like",
+      "clusterTitle": "Jobs you might like",
+      "clusterMainPageTitle": "Jobs you might like",
+      "clusterId": "similar_jobs",
+      "clusterTemplateId": "template1",
+      "jobIds": null,
+      "jobCount": 75,
+      "display": false,
+      "clusterTrackingId": "mightlike",
+      "subClusters": null,
+      "recoLowCountSuggester": null,
+      "topApplicantTagEnable": false,
+      "topApplicantJobIds": null,
+      "agentEligibleJobExists": false,
+      "jobsMetadata": null
+    }
+  ],
+  "listingTitle": "Recommended Jobs",
+  "internshipSRP": false,
+  "showAgentPickedTag": false
+}

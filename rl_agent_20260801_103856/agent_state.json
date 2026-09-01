@@ -1,0 +1,12 @@
+{
+  "cycle": 6,
+  "q_stats": {
+    "state_count": 4,
+    "total_q_values": 45,
+    "exploration_rate": 0.47549502494999996,
+    "total_actions": 5,
+    "unique_actions": 31
+  },
+  "episodes": 5,
+  "timestamp": "2026-08-01T10:39:17.762897"
+}

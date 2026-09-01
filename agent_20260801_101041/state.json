@@ -1,0 +1,23 @@
+{
+  "action_count": 7,
+  "success_count": 7,
+  "experiences": 7,
+  "mab_stats": {
+    "total_arms": 2,
+    "total_pulls": 7,
+    "avg_reward": 1.4285714285714286,
+    "arms": {
+      "click": {
+        "success": 4,
+        "total": 4,
+        "rate": 1.0
+      },
+      "navigate": {
+        "success": 3,
+        "total": 3,
+        "rate": 1.0
+      }
+    }
+  },
+  "timestamp": "2026-08-01T10:13:37.188260"
+}

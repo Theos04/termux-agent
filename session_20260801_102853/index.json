@@ -1,0 +1,74 @@
+{
+  "accessibility": [
+    {
+      "filename": "a11y_102854_853940.json",
+      "timestamp": "2026-08-01T10:28:54.854078",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_102910_216610.json",
+      "timestamp": "2026-08-01T10:29:10.216749",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_102910_853118.json",
+      "timestamp": "2026-08-01T10:29:10.853269",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_102926_676001.json",
+      "timestamp": "2026-08-01T10:29:26.676152",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_102928_920010.json",
+      "timestamp": "2026-08-01T10:29:28.920165",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_102944_625706.json",
+      "timestamp": "2026-08-01T10:29:44.625854",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_102945_887160.json",
+      "timestamp": "2026-08-01T10:29:45.887292",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_103001_470723.json",
+      "timestamp": "2026-08-01T10:30:01.470879",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_103002_935775.json",
+      "timestamp": "2026-08-01T10:30:02.936016",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_103020_491807.json",
+      "timestamp": "2026-08-01T10:30:20.491952",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    }
+  ]
+}

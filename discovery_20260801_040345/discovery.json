@@ -1,0 +1,19 @@
+{
+  "urls": [],
+  "ax_tree": {
+    "nodes": []
+  },
+  "interactive_elements": [],
+  "page_context": {
+    "type": "unknown",
+    "purpose": "",
+    "has_login": false,
+    "has_search": false,
+    "has_pagination": false,
+    "is_listing": false,
+    "is_detail": false,
+    "has_forms": false,
+    "word_count": 0
+  },
+  "timestamp": "2026-08-01T04:03:50.371708"
+}

@@ -1,0 +1,2536 @@
+#!/usr/bin/env python3
+"""
+Enhanced Chrome CDP Controller - ULTIMATE EDITION
+Features: Console Hijacking, HAR Recording, XSS Detection, DOM Time-Travel,
+          Selector Generator, Session Recording, Data Extraction
+"""
+
+import json
+import subprocess
+import sys
+import os
+import time
+import base64
+from typing import Optional, Dict, List, Any
+from dataclasses import dataclass, field
+from datetime import datetime
+from collections import defaultdict
+
+try:
+    import requests
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
+    import requests
+
+try:
+    import websocket
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "websocket-client"])
+    import websocket
+
+@dataclass
+class LayoutSnapshot:
+    """Complete layout and style information"""
+    dom_nodes: List[Dict]
+    layout_tree: List[Dict]
+    computed_styles: List[Dict]
+
+@dataclass
+class HAREntry:
+    """HAR entry for network recording"""
+    startedDateTime: str
+    time: float
+    request: Dict
+    response: Dict = field(default_factory=dict)
+    timings: Dict = field(default_factory=dict)
+
+class EnhancedChromeCDP:
+    def __init__(self, port: int = 9227):
+        self.port = port
+        self.base_url = f"http://127.0.0.1:{port}"
+        self.ws_url = None
+        self.tabs = []
+        self.connection_timeout = 10
+        self._command_counter = 0
+        self._dom_enabled = False
+        self._css_enabled = False
+        self._ax_enabled = False
+        self._network_enabled = False
+        self._har_entries = []
+        self._recording_active = False
+        self._console_messages = []
+        self._session_recording = []
+        self._is_recording_session = False
+
+    def get_tabs(self) -> List[Dict]:
+        """Get all tabs from Chrome with enhanced info"""
+        try:
+            response = requests.get(f"{self.base_url}/json", timeout=5)
+            if response.status_code == 200:
+                tabs = response.json()
+                self.tabs = [t for t in tabs if t.get('type') == 'page']
+                print(f"🔍 Found {len(self.tabs)} tabs")
+                return self.tabs
+            return []
+        except Exception as e:
+            print(f"❌ Error fetching tabs: {e}")
+            return []
+
+    def get_websocket_url(self, tab_index: int = 0) -> Optional[str]:
+        """Get WebSocket URL for a specific tab - refreshes to avoid stale URLs"""
+        self.get_tabs()
+
+        if not self.tabs:
+            print("❌ No tabs found")
+            return None
+
+        if tab_index >= len(self.tabs):
+            print(f"❌ Tab index {tab_index} out of range")
+            return None
+
+        ws_url = self.tabs[tab_index].get('webSocketDebuggerUrl')
+        if ws_url:
+            self.ws_url = ws_url
+            print(f"🔗 WebSocket URL: {ws_url[:50]}...")
+            return ws_url
+        print("❌ No WebSocket URL found for tab")
+        return None
+
+    def _connect_websocket(self) -> Optional[websocket.WebSocket]:
+        """Establish WebSocket connection with proper headers"""
+        ws_url = self.ws_url
+        if not ws_url:
+            print("❌ No WebSocket URL available")
+            return None
+
+        try:
+            print(f"🔌 Connecting to WebSocket...")
+            ws = websocket.create_connection(
+                ws_url,
+                timeout=self.connection_timeout,
+                header={"Origin": f"http://127.0.0.1:{self.port}"}
+            )
+            print("✅ WebSocket connected")
+            self._dom_enabled = False
+            self._css_enabled = False
+            self._ax_enabled = False
+            self._network_enabled = False
+            return ws
+        except Exception as e:
+            print(f"❌ WebSocket connection error: {e}")
+            return None
+
+    def _send_cdp_command(self, ws: websocket.WebSocket, method: str, params: Dict = None) -> Dict:
+        """Send CDP command and get response with full error visibility"""
+        self._command_counter += 1
+        cmd_id = self._command_counter
+
+        cmd = {
+            "id": cmd_id,
+            "method": method,
+            "params": params or {}
+        }
+
+        print(f"📤 Sending: {method}")
+        if params:
+            print(f"   Params: {json.dumps(params)[:200]}")
+
+        try:
+            ws.send(json.dumps(cmd))
+        except Exception as e:
+            print(f"❌ Failed to send command: {e}")
+            return None
+
+        start_time = time.time()
+        while time.time() - start_time < 30:
+            try:
+                response = ws.recv()
+                data = json.loads(response)
+
+                if 'id' in data and data['id'] == cmd_id:
+                    if 'error' in data:
+                        print(f"❌ CDP Error: {json.dumps(data['error'], indent=2)}")
+                    elif 'result' in data:
+                        print(f"✅ Received response for {method}")
+                    return data
+                else:
+                    if 'method' in data:
+                        print(f"ℹ️ Notification: {data['method']}")
+                    continue
+
+            except websocket.WebSocketTimeoutException:
+                print("⏳ Waiting for response...")
+                continue
+            except Exception as e:
+                print(f"⚠️ Response parsing error: {e}")
+                continue
+
+        print(f"❌ Timeout waiting for response to {method}")
+        return None
+
+    def _enable_domain(self, ws: websocket.WebSocket, domain: str) -> bool:
+        """Enable a CDP domain with full error visibility"""
+        if domain == "DOM" and self._dom_enabled:
+            print(f"✅ {domain} already enabled")
+            return True
+        if domain == "CSS" and self._css_enabled:
+            print(f"✅ {domain} already enabled")
+            return True
+        if domain == "Accessibility" and self._ax_enabled:
+            print(f"✅ {domain} already enabled")
+            return True
+        if domain == "Network" and self._network_enabled:
+            print(f"✅ {domain} already enabled")
+            return True
+
+        print(f"🔧 Enabling domain: {domain}")
+        try:
+            result = self._send_cdp_command(ws, f"{domain}.enable")
+            if result and 'error' not in result:
+                print(f"✅ {domain} enabled")
+                if domain == "DOM":
+                    self._dom_enabled = True
+                elif domain == "CSS":
+                    self._css_enabled = True
+                elif domain == "Accessibility":
+                    self._ax_enabled = True
+                elif domain == "Network":
+                    self._network_enabled = True
+                return True
+            else:
+                print(f"❌ Failed to enable {domain}")
+                return False
+        except Exception as e:
+            print(f"❌ Exception enabling {domain}: {e}")
+            return False
+
+    # ==================== DOM Domain Methods ====================
+
+    def get_document(self, tab_index: int = 0, depth: int = -1,
+                     pierce: bool = True) -> Optional[Dict]:
+        """Get full DOM tree with node IDs (CDP DOM.getDocument)"""
+        print("\n📄 DOM.getDocument - Fetching DOM tree...")
+
+        ws_url = self.get_websocket_url(tab_index)
+        if not ws_url:
+            return None
+
+        ws = self._connect_websocket()
+        if not ws:
+            return None
+
+        try:
+            if not self._enable_domain(ws, "DOM"):
+                ws.close()
+                return None
+
+            params = {"depth": depth, "pierce": pierce}
+            result = self._send_cdp_command(ws, "DOM.getDocument", params)
+            ws.close()
+
+            if result and 'result' in result:
+                root = result['result']['root']
+                print(f"✅ DOM tree retrieved! Root: {root.get('nodeName')} (ID: {root.get('nodeId')})")
+                return root
+            return None
+        except Exception as e:
+            print(f"❌ DOM.getDocument error: {e}")
+            if ws:
+                ws.close()
+            return None
+
+    def get_dom_snapshot(self, tab_index: int = 0) -> Optional[LayoutSnapshot]:
+        """Capture complete DOM snapshot using getSnapshot (simpler API)"""
+        print("\n📸 DOMSnapshot.getSnapshot - Capturing snapshot...")
+
+        ws_url = self.get_websocket_url(tab_index)
+        if not ws_url:
+            return None
+
+        ws = self._connect_websocket()
+        if not ws:
+            return None
+
+        try:
+            print("🔧 Enabling required domains...")
+            self._enable_domain(ws, "DOM")
+            self._enable_domain(ws, "CSS")
+
+            params = {
+                "computedStyleWhitelist": [],
+                "includeEventListeners": False,
+                "includePaintOrder": False,
+                "includeUserAgentShadowTree": True
+            }
+            result = self._send_cdp_command(ws, "DOMSnapshot.getSnapshot", params)
+            ws.close()
+
+            if result and 'result' in result:
+                snapshot_data = result['result']
+                print(f"✅ Snapshot captured!")
+                print(f"   DOM nodes: {len(snapshot_data.get('domNodes', []))}")
+                print(f"   Layout tree: {len(snapshot_data.get('layoutTree', []))}")
+                return LayoutSnapshot(
+                    dom_nodes=snapshot_data.get('domNodes', []),
+                    layout_tree=snapshot_data.get('layoutTree', []),
+                    computed_styles=snapshot_data.get('computedStyles', [])
+                )
+            return None
+        except Exception as e:
+            print(f"❌ DOMSnapshot.getSnapshot error: {e}")
+            if ws:
+                ws.close()
+            return None
+
+    def get_accessibility_tree(self, tab_index: int = 0) -> Optional[Dict]:
+        """Get accessibility tree with semantic roles"""
+        print("\n♿ Accessibility.getFullAXTree - Getting accessibility tree...")
+
+        ws_url = self.get_websocket_url(tab_index)
+        if not ws_url:
+            return None
+
+        ws = self._connect_websocket()
+        if not ws:
+            return None
+
+        try:
+            if not self._enable_domain(ws, "Accessibility"):
+                ws.close()
+                return None
+
+            result = self._send_cdp_command(ws, "Accessibility.getFullAXTree")
+            ws.close()
+
+            if result and 'result' in result:
+                nodes = result['result'].get('nodes', [])
+                print(f"✅ Accessibility tree retrieved! Found {len(nodes)} nodes")
+                return result['result']
+            return None
+        except Exception as e:
+            print(f"❌ Accessibility.getFullAXTree error: {e}")
+            if ws:
+                ws.close()
+            return None
+
+    # ==================== CSS Domain Methods ====================
+
+    def get_computed_styles(self, tab_index: int = 0,
+                           node_id: int = None) -> Optional[List[Dict]]:
+        """Get computed styles for a specific node"""
+        print("\n🎨 CSS.getComputedStyleForNode - Getting computed styles...")
+
+        ws_url = self.get_websocket_url(tab_index)
+        if not ws_url:
+            return None
+
+        ws = self._connect_websocket()
+        if not ws:
+            return None
+
+        try:
+            # Need DOM enabled first
+            self._enable_domain(ws, "DOM")
+            self._enable_domain(ws, "CSS")
+
+            if node_id is None:
+                # Get the first element node (not document)
+                root = self.get_document(tab_index)
+                if root:
+                    # Find first element node
+                    node_id = self._find_first_element(root)
+                    if node_id:
+                        print(f"   Using first element node ID: {node_id}")
+                    else:
+                        print("❌ Could not find any element nodes")
+                        ws.close()
+                        return None
+                else:
+                    ws.close()
+                    return None
+
+            params = {"nodeId": node_id}
+            result = self._send_cdp_command(ws, "CSS.getComputedStyleForNode", params)
+            ws.close()
+
+            if result and 'result' in result:
+                styles = result['result'].get('computedStyle', [])
+                print(f"✅ Retrieved {len(styles)} computed styles")
+                return styles
+            return None
+        except Exception as e:
+            print(f"❌ CSS.getComputedStyleForNode error: {e}")
+            if ws:
+                ws.close()
+            return None
+
+    def _find_first_element(self, node: Dict) -> Optional[int]:
+        """Find the first element node (nodeType 1) in the DOM tree"""
+        if node.get('nodeType') == 1:  # Element node
+            return node.get('nodeId')
+
+        for child in node.get('children', []):
+            result = self._find_first_element(child)
+            if result:
+                return result
+        return None
+
+    # ==================== Combined Methods ====================
+
+    def analyze_page_structure(self, tab_index: int = 0) -> Dict:
+        """Comprehensive page analysis using multiple CDP domains"""
+        print("\n🔬 Performing complete page analysis...")
+        result = {
+            "timestamp": datetime.now().isoformat(),
+            "dom_tree": None,
+            "snapshot": None,
+            "accessibility": None,
+            "metadata": {}
+        }
+
+        dom_root = self.get_document(tab_index)
+        if dom_root:
+            result["dom_tree"] = dom_root
+            result["metadata"]["node_count"] = self._count_nodes(dom_root)
+
+        snapshot = self.get_dom_snapshot(tab_index)
+        if snapshot:
+            result["snapshot"] = snapshot
+            result["metadata"]["layout_count"] = len(snapshot.layout_tree)
+
+        ax_tree = self.get_accessibility_tree(tab_index)
+        if ax_tree:
+            result["accessibility"] = ax_tree
+            result["metadata"]["ax_nodes"] = len(ax_tree.get('nodes', []))
+
+        print(f"\n✅ Analysis complete!")
+        return result
+
+    def _count_nodes(self, node: Dict) -> int:
+        """Count total nodes in DOM tree"""
+        count = 1
+        for child in node.get('children', []):
+            count += self._count_nodes(child)
+        return count
+
+    def extract_semantic_elements(self, tab_index: int = 0) -> List[Dict]:
+        """Extract semantic elements using accessibility tree"""
+        ax_tree = self.get_accessibility_tree(tab_index)
+        if not ax_tree:
+            return []
+
+        semantic_elements = []
+        for node in ax_tree.get('nodes', []):
+            role = node.get('role', {}).get('value', '')
+            if role in ['button', 'heading', 'list', 'dialog', 'link', 'textbox', 'checkbox', 'radio']:
+                name = node.get('name', {}).get('value', '')
+                semantic_elements.append({
+                    'role': role,
+                    'name': name,
+                    'node_id': node.get('nodeId'),
+                    'backend_node_id': node.get('backendDOMNodeId')
+                })
+
+        return semantic_elements
+
+    def evaluate_script(self, script: str, tab_index: int = 0,
+                       return_by_value: bool = True,
+                       await_promise: bool = True) -> Optional[Any]:
+        """Execute JavaScript (original Runtime.evaluate)"""
+        print("\n⚡ Runtime.evaluate - Executing script...")
+
+        ws_url = self.get_websocket_url(tab_index)
+        if not ws_url:
+            return None
+
+        ws = self._connect_websocket()
+        if not ws:
+            return None
+
+        try:
+            self._enable_domain(ws, "Runtime")
+
+            params = {
+                "expression": script,
+                "returnByValue": return_by_value,
+                "awaitPromise": await_promise
+            }
+            result = self._send_cdp_command(ws, "Runtime.evaluate", params)
+            ws.close()
+
+            if result and 'result' in result:
+                if 'result' in result['result']:
+                    value = result['result']['result'].get('value')
+                    print(f"✅ Script executed successfully")
+                    return value
+                elif 'error' in result['result']:
+                    print(f"⚠️ Script error: {result['result']['error']}")
+            return None
+        except Exception as e:
+            print(f"❌ Runtime.evaluate error: {e}")
+            if ws:
+                ws.close()
+            return None
+
+    # ==================== 🆕 CONSOLE HIJACKING ====================
+
+    def hijack_console(self, tab_index: int = 0) -> Dict:
+        """Hijack ALL console messages and stream them back"""
+        print("\n🎤 Hijacking console...")
+
+        js = """
+        (function() {
+            // Store original console methods
+            const originalLog = console.log;
+            const originalError = console.error;
+            const originalWarn = console.warn;
+            const originalInfo = console.info;
+            const originalDebug = console.debug;
+            
+            // Create a queue for messages
+            window.__consoleMessages = [];
+            window.__maxConsoleMessages = 1000;
+            
+            // Override console methods
+            ['log', 'error', 'warn', 'info', 'debug'].forEach(method => {
+                console[method] = function(...args) {
+                    // Call original
+                    const original = eval('original' + method.charAt(0).toUpperCase() + method.slice(1));
+                    original.apply(console, args);
+                    
+                    // Store message
+                    const msg = {
+                        type: method,
+                        timestamp: Date.now(),
+                        args: args.map(a => {
+                            try {
+                                return typeof a === 'object' ? JSON.stringify(a) : String(a);
+                            } catch(e) {
+                                return String(a);
+                            }
+                        })
+                    };
+                    window.__consoleMessages.push(msg);
+                    
+                    // Keep only last 1000 messages
+                    if (window.__consoleMessages.length > window.__maxConsoleMessages) {
+                        window.__consoleMessages.shift();
+                    }
+                };
+            });
+            
+            return { 
+                status: 'Console hijacked', 
+                timestamp: Date.now(),
+                message: 'All console output is now being captured'
+            };
+        })();
+        """
+        
+        result = self.evaluate_script(js, tab_index)
+        if result:
+            self._console_messages = []
+            print("✅ Console hijacked! All logs will be captured.")
+            return result
+        return None
+
+    def get_console_messages(self, tab_index: int = 0) -> List[Dict]:
+        """Retrieve all hijacked console messages"""
+        print("\n📋 Retrieving console messages...")
+
+        js = """
+        (function() {
+            return {
+                messages: window.__consoleMessages || [],
+                count: (window.__consoleMessages || []).length,
+                timestamp: Date.now()
+            };
+        })();
+        """
+        
+        result = self.evaluate_script(js, tab_index)
+        if result:
+            messages = result.get('messages', [])
+            print(f"✅ Retrieved {len(messages)} console messages")
+            return messages
+        return []
+
+    def clear_console_messages(self, tab_index: int = 0) -> bool:
+        """Clear hijacked console messages"""
+        print("\n🗑️ Clearing console messages...")
+
+        js = """
+        (function() {
+            window.__consoleMessages = [];
+            return { status: 'Cleared', timestamp: Date.now() };
+        })();
+        """
+        
+        result = self.evaluate_script(js, tab_index)
+        return result is not None
+
+    # ==================== 🆕 HAR RECORDING ====================
+
+    def start_har_recording(self, tab_index: int = 0) -> Dict:
+        """Start recording network activity as HAR format"""
+        print("\n📡 Starting HAR recording...")
+
+        ws_url = self.get_websocket_url(tab_index)
+        if not ws_url:
+            return None
+
+        ws = self._connect_websocket()
+        if not ws:
+            return None
+
+        try:
+            # Enable Network domain
+            self._enable_domain(ws, "Network")
+            
+            # Enable all network events
+            self._send_cdp_command(ws, "Network.enable", {
+                "maxResourceBufferSize": 10000000,
+                "maxTotalBufferSize": 10000000
+            })
+            
+            # Setup HAR data structure
+            self._har_entries = []
+            self._recording_active = True
+            self._har_start_time = time.time()
+            
+            print("📡 HAR recording started!")
+            
+            # Return the HAR structure
+            return {
+                "status": "Recording started",
+                "timestamp": datetime.now().isoformat(),
+                "entries": []
+            }
+        except Exception as e:
+            print(f"❌ HAR recording error: {e}")
+            return None
+
+    def stop_har_recording(self, tab_index: int = 0) -> Dict:
+        """Stop HAR recording and return the data"""
+        print("\n⏹️ Stopping HAR recording...")
+
+        self._recording_active = False
+        
+        # Execute JS to get network data
+        js = """
+        (function() {
+            // Get performance entries
+            const entries = performance.getEntries();
+            return {
+                entries: entries.map(e => ({
+                    name: e.name,
+                    entryType: e.entryType,
+                    startTime: e.startTime,
+                    duration: e.duration,
+                    initiatorType: e.initiatorType || 'unknown'
+                })),
+                count: entries.length
+            };
+        })();
+        """
+        
+        result = self.evaluate_script(js, tab_index)
+        
+        har_data = {
+            "log": {
+                "version": "1.2",
+                "creator": {
+                    "name": "CDP Dynamic Har Recorder",
+                    "version": "1.0"
+                },
+                "browser": {
+                    "name": "Chrome",
+                    "version": "CDP"
+                },
+                "entries": self._har_entries,
+                "performance": result if result else {},
+                "recording_duration": time.time() - self._har_start_time,
+                "timestamp": datetime.now().isoformat()
+            }
+        }
+        
+        print(f"✅ HAR recording stopped. Captured {len(self._har_entries)} entries")
+        return har_data
+
+    # ==================== 🆕 XSS DETECTION ====================
+
+    def detect_xss_vulnerabilities(self, tab_index: int = 0) -> Dict:
+        """Detect potential XSS vulnerabilities in the page"""
+        print("\n🔍 Scanning for XSS vulnerabilities...")
+
+        js = """
+        (function() {
+            const results = {
+                vulnerabilities: [],
+                forms: [],
+                scripts: [],
+                urls: [],
+                summary: {}
+            };
+            
+            // Check all forms for potential XSS
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                const inputs = form.querySelectorAll('input, textarea');
+                const formData = {
+                    action: form.action || '',
+                    method: form.method || 'GET',
+                    inputs: [],
+                    vulnerable: false
+                };
+                
+                inputs.forEach(input => {
+                    const type = input.type || 'text';
+                    const name = input.name || '';
+                    const value = input.value || '';
+                    
+                    formData.inputs.push({ type, name, value });
+                    
+                    // Check for common injection patterns
+                    if (value && /<script|<img|onerror=|javascript:/i.test(value)) {
+                        formData.vulnerable = true;
+                        results.vulnerabilities.push({
+                            type: 'Reflected XSS',
+                            location: `Form: ${form.action}`,
+                            input: name,
+                            value: value.substring(0, 100),
+                            severity: 'HIGH'
+                        });
+                    }
+                });
+                
+                results.forms.push(formData);
+            });
+            
+            // Check all script tags for suspicious content
+            const scripts = document.querySelectorAll('script');
+            scripts.forEach(script => {
+                const content = script.textContent || '';
+                if (content) {
+                    results.scripts.push({
+                        src: script.src || 'inline',
+                        content_length: content.length
+                    });
+                    
+                    // Check for dangerous patterns
+                    if (/document\\.cookie|document\\.write|eval\\(|setTimeout\\(/i.test(content)) {
+                        results.vulnerabilities.push({
+                            type: 'Potentially Dangerous Script',
+                            location: script.src || 'inline script',
+                            severity: 'MEDIUM'
+                        });
+                    }
+                }
+            });
+            
+            // Check all URLs for suspicious parameters
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.href || '';
+                if (href && /[?&].*=/i.test(href)) {
+                    results.urls.push(href);
+                }
+            });
+            
+            results.summary = {
+                total_forms: forms.length,
+                total_scripts: scripts.length,
+                total_links: links.length,
+                vulnerabilities_found: results.vulnerabilities.length,
+                risk_level: results.vulnerabilities.length > 0 ? 'HIGH' : 'LOW'
+            };
+            
+            return results;
+        })();
+        """
+        
+        result = self.evaluate_script(js, tab_index)
+        if result:
+            print(f"\n🛡️ XSS Scan Results:")
+            print(f"   Forms scanned: {result.get('summary', {}).get('total_forms', 0)}")
+            print(f"   Scripts scanned: {result.get('summary', {}).get('total_scripts', 0)}")
+            print(f"   Vulnerabilities found: {result.get('summary', {}).get('vulnerabilities_found', 0)}")
+            print(f"   Risk Level: {result.get('summary', {}).get('risk_level', 'UNKNOWN')}")
+            
+            if result.get('vulnerabilities'):
+                print("\n   ⚠️ Vulnerabilities:")
+                for vuln in result['vulnerabilities'][:10]:
+                    print(f"     - {vuln.get('type')} ({vuln.get('severity')})")
+                    print(f"       Location: {vuln.get('location', 'Unknown')}")
+            
+            return result
+        return None
+
+    # ==================== 🆕 DOM TIME-TRAVEL ====================
+
+    def capture_dom_snapshot_history(self, tab_index: int = 0, interval: int = 5, duration: int = 60) -> List[Dict]:
+        """Capture DOM snapshots over time - create a timeline"""
+        print(f"\n📸 Starting DOM time-lapse (interval: {interval}s, duration: {duration}s)")
+        
+        snapshots = []
+        start_time = time.time()
+        
+        while time.time() - start_time < duration:
+            snapshot = {
+                'timestamp': datetime.now().isoformat(),
+                'time': time.time() - start_time,
+                'dom': self.get_document(tab_index)
+            }
+            
+            if snapshot['dom']:
+                # Count nodes for quick diff
+                node_count = self._count_nodes(snapshot['dom'])
+                snapshot['node_count'] = node_count
+                snapshots.append(snapshot)
+                print(f"   📸 Snapshot {len(snapshots)}: {node_count} nodes")
+            else:
+                print(f"   ❌ Failed to capture snapshot at {time.time() - start_time:.1f}s")
+                break
+            
+            time.sleep(interval)
+        
+        print(f"\n✅ Captured {len(snapshots)} snapshots over {duration}s")
+        return snapshots
+
+    def diff_snapshots(self, snapshot1: Dict, snapshot2: Dict) -> Dict:
+        """Compare two DOM snapshots"""
+        if not snapshot1 or not snapshot2:
+            return None
+        
+        diff = {
+            'timestamp1': snapshot1.get('timestamp'),
+            'timestamp2': snapshot2.get('timestamp'),
+            'time_diff': snapshot2.get('time', 0) - snapshot1.get('time', 0),
+            'node_count_diff': snapshot2.get('node_count', 0) - snapshot1.get('node_count', 0),
+            'changes': []
+        }
+        
+        # Simple diff - compare node structures
+        def compare_nodes(node1, node2, path=''):
+            if not node1 or not node2:
+                return
+            
+            # Compare basic properties
+            if node1.get('nodeName') != node2.get('nodeName'):
+                diff['changes'].append({
+                    'type': 'node_name_changed',
+                    'path': path,
+                    'from': node1.get('nodeName'),
+                    'to': node2.get('nodeName')
+                })
+            
+            # Compare attributes
+            attrs1 = node1.get('attributes', [])
+            attrs2 = node2.get('attributes', [])
+            
+            if attrs1 != attrs2:
+                diff['changes'].append({
+                    'type': 'attributes_changed',
+                    'path': path,
+                    'from': attrs1[:10],
+                    'to': attrs2[:10]
+                })
+            
+            # Recurse children
+            children1 = node1.get('children', [])
+            children2 = node2.get('children', [])
+            
+            for i, (child1, child2) in enumerate(zip(children1, children2)):
+                compare_nodes(child1, child2, f"{path}/{i}")
+        
+        compare_nodes(snapshot1['dom'], snapshot2['dom'])
+        
+        print(f"\n📊 Diff Results:")
+        print(f"   Changes detected: {len(diff['changes'])}")
+        print(f"   Node count change: {diff['node_count_diff']}")
+        
+        return diff
+
+    # ==================== 🆕 SELECTOR GENERATOR ====================
+
+    def generate_element_selector(self, element_index: int = 0, tab_index: int = 0) -> Dict:
+        """Generate multiple unique selectors for an element"""
+        print(f"\n🎯 Generating selectors for element {element_index}...")
+        
+        js = f"""
+        (function() {{
+            const selectors = [
+                'button',
+                'input[type="button"]',
+                'input[type="submit"]',
+                'a[href]',
+                '[role="button"]',
+                '[onclick]',
+                '.btn',
+                '[class*="button"]'
+            ];
+            
+            const elements = document.querySelectorAll(selectors.join(','));
+            const el = elements[{element_index}];
+            
+            if (!el) return {{ error: 'Element not found' }};
+            
+            const selectors = {{
+                id: el.id ? '#' + el.id : null,
+                classes: el.className ? '.' + el.className.split(' ').join('.') : null,
+                tag: el.tagName.toLowerCase(),
+                xpath: '',
+                cssPath: '',
+                attributes: {{}},
+                dataAttributes: {{}},
+                ariaAttributes: {{}}
+            }};
+            
+            // Generate XPath
+            let xpath = '';
+            let current = el;
+            let path = [];
+            while (current && current !== document.body) {{
+                let tag = current.tagName.toLowerCase();
+                let siblings = current.parentElement ? 
+                    Array.from(current.parentElement.children).filter(c => c.tagName === current.tagName) : [];
+                let index = siblings.indexOf(current) + 1;
+                path.push(tag + (siblings.length > 1 ? '[' + index + ']' : ''));
+                current = current.parentElement;
+            }}
+            selectors.xpath = '/' + path.reverse().join('/');
+            
+            // Generate CSS path
+            let cssPath = '';
+            current = el;
+            while (current && current !== document.body) {{
+                let tag = current.tagName.toLowerCase();
+                let id = current.id ? '#' + current.id : '';
+                let cls = current.className ? '.' + current.className.split(' ').join('.') : '';
+                let part = tag + id + cls;
+                cssPath = (cssPath ? ' > ' : '') + part;
+                current = current.parentElement;
+            }}
+            selectors.cssPath = cssPath;
+            
+            // Get all attributes
+            Array.from(el.attributes).forEach(attr => {{
+                if (attr.name.startsWith('data-')) {{
+                    selectors.dataAttributes[attr.name] = attr.value;
+                }} else if (attr.name.startsWith('aria-')) {{
+                    selectors.ariaAttributes[attr.name] = attr.value;
+                }} else {{
+                    selectors.attributes[attr.name] = attr.value;
+                }}
+            }});
+            
+            // Generate attribute-based selectors
+            if (el.hasAttribute('data-action')) {{
+                selectors.dataAction = `[data-action="${{el.getAttribute('data-action')}}"]`;
+            }}
+            if (el.hasAttribute('aria-label')) {{
+                selectors.ariaLabel = `[aria-label="${{el.getAttribute('aria-label')}}"]`;
+            }}
+            if (el.hasAttribute('data-testid')) {{
+                selectors.dataTestId = `[data-testid="${{el.getAttribute('data-testid')}}"]`;
+            }}
+            
+            selectors.isUnique = {{
+                id: !!(el.id && document.querySelectorAll('#' + el.id).length === 1),
+                classes: !!(el.className && document.querySelectorAll('.' + el.className.split(' ').join('.')).length === 1),
+                xpath: document.evaluate(selectors.xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue === el
+            }};
+            
+            selectors.recommended = selectors.id || selectors.dataTestId || selectors.ariaLabel || selectors.xpath;
+            
+            return selectors;
+        }})();
+        """
+        
+        result = self.evaluate_script(js, tab_index)
+        if result and not 'error' in result:
+            print("\n📋 Generated Selectors:")
+            print("=" * 60)
+            for key, value in result.items():
+                if key in ['attributes', 'dataAttributes', 'ariaAttributes']:
+                    print(f"{key}:")
+                    for k, v in value.items():
+                        print(f"  {k}: {v}")
+                elif key == 'isUnique':
+                    print(f"Unique Selectors:")
+                    for uk, uv in value.items():
+                        print(f"  {uk}: {'✅' if uv else '❌'}")
+                else:
+                    print(f"{key}: {value}")
+            return result
+        return None
+
+    # ==================== 🆕 SESSION RECORDING ====================
+
+    def start_session_recording(self, tab_index: int = 0, max_events: int = 1000) -> bool:
+        """Record user interactions for replay"""
+        print("\n🎬 Starting session recording...")
+        
+        inject_js = f"""
+        (function() {{
+            window.__recording = [];
+            window.__isRecording = true;
+            window.__maxEvents = {max_events};
+            
+            // Track clicks
+            document.addEventListener('click', function(e) {{
+                if (!window.__isRecording) return;
+                const target = e.target;
+                const rect = target.getBoundingClientRect();
+                
+                const event = {{
+                    type: 'click',
+                    timestamp: Date.now(),
+                    target: {{
+                        tag: target.tagName.toLowerCase(),
+                        id: target.id || null,
+                        classes: target.className || null,
+                        text: target.textContent.trim().slice(0, 100),
+                        xpath: getXPath(target),
+                        rect: {{
+                            x: Math.round(rect.x),
+                            y: Math.round(rect.y),
+                            width: Math.round(rect.width),
+                            height: Math.round(rect.height)
+                        }}
+                    }},
+                    mouse: {{
+                        clientX: e.clientX,
+                        clientY: e.clientY,
+                        pageX: e.pageX,
+                        pageY: e.pageY
+                    }}
+                }};
+                
+                window.__recording.push(event);
+                if (window.__recording.length > window.__maxEvents) {{
+                    window.__recording.shift();
+                }}
+            }}, true);
+            
+            // Track input changes
+            document.addEventListener('input', function(e) {{
+                if (!window.__isRecording) return;
+                const target = e.target;
+                if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.tagName === 'SELECT') {{
+                    const event = {{
+                        type: 'input',
+                        timestamp: Date.now(),
+                        target: {{
+                            tag: target.tagName.toLowerCase(),
+                            id: target.id || null,
+                            name: target.name || null,
+                            value: target.value.slice(0, 100),
+                            type: target.type || null,
+                            xpath: getXPath(target)
+                        }}
+                    }};
+                    window.__recording.push(event);
+                    if (window.__recording.length > window.__maxEvents) {{
+                        window.__recording.shift();
+                    }}
+                }}
+            }}, true);
+            
+            // Track scroll
+            let scrollTimeout;
+            window.addEventListener('scroll', function(e) {{
+                if (!window.__isRecording) return;
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {{
+                    const event = {{
+                        type: 'scroll',
+                        timestamp: Date.now(),
+                        scroll: {{
+                            x: window.scrollX,
+                            y: window.scrollY,
+                            maxX: document.documentElement.scrollWidth - window.innerWidth,
+                            maxY: document.documentElement.scrollHeight - window.innerHeight
+                        }}
+                    }};
+                    window.__recording.push(event);
+                    if (window.__recording.length > window.__maxEvents) {{
+                        window.__recording.shift();
+                    }}
+                }}, 200);
+            }}, true);
+            
+            // Helper function for XPath
+            function getXPath(element) {{
+                if (element.id) {{
+                    return '//*[@id="' + element.id + '"]';
+                }}
+                if (element === document.body) {{
+                    return '/html/body';
+                }}
+                let index = 1;
+                let siblings = element.parentNode.childNodes;
+                for (let i = 0; i < siblings.length; i++) {{
+                    let sibling = siblings[i];
+                    if (sibling === element) {{
+                        return getXPath(element.parentNode) + '/' + element.tagName.toLowerCase() + '[' + index + ']';
+                    }}
+                    if (sibling.nodeType === 1 && sibling.tagName === element.tagName) {{
+                        index++;
+                    }}
+                }}
+                return getXPath(element.parentNode) + '/' + element.tagName.toLowerCase() + '[' + index + ']';
+            }}
+            
+            return {{ status: 'Recording started', timestamp: Date.now() }};
+        }})();
+        """
+        
+        result = self.evaluate_script(inject_js, tab_index)
+        if result:
+            self._is_recording_session = True
+            print("✅ Session recording started!")
+            return True
+        return False
+
+    def stop_session_recording(self, tab_index: int = 0) -> List[Dict]:
+        """Stop recording and return the recorded events"""
+        print("\n⏹️ Stopping session recording...")
+        
+        js = """
+        (function() {
+            window.__isRecording = false;
+            const recording = window.__recording || [];
+            return {
+                events: recording,
+                count: recording.length,
+                duration: recording.length > 0 ? 
+                    recording[recording.length - 1].timestamp - recording[0].timestamp : 0,
+                summary: {
+                    clicks: recording.filter(e => e.type === 'click').length,
+                    inputs: recording.filter(e => e.type === 'input').length,
+                    scrolls: recording.filter(e => e.type === 'scroll').length
+                }
+            };
+        })();
+        """
+        
+        result = self.evaluate_script(js, tab_index)
+        if result:
+            self._is_recording_session = False
+            print(f"\n📊 Recording Summary:")
+            print(f"   Total events: {result.get('count', 0)}")
+            print(f"   Clicks: {result.get('summary', {}).get('clicks', 0)}")
+            print(f"   Inputs: {result.get('summary', {}).get('inputs', 0)}")
+            print(f"   Scrolls: {result.get('summary', {}).get('scrolls', 0)}")
+            print(f"   Duration: {result.get('duration', 0) / 1000:.2f}s")
+            
+            return result.get('events', [])
+        return []
+
+    # ==================== 🆕 ADVANCED DATA EXTRACTION ====================
+
+    def extract_all_data(self, tab_index: int = 0) -> Dict:
+        """Extract EVERYTHING from the page"""
+        print("\n📊 Extracting all page data...")
+        
+        js = """
+        (function() {
+            const data = {
+                meta: {
+                    title: document.title,
+                    url: window.location.href,
+                    referrer: document.referrer,
+                    timestamp: Date.now()
+                },
+                links: [],
+                images: [],
+                forms: [],
+                scripts: [],
+                styles: [],
+                metaTags: {},
+                dataAttributes: {},
+                localStorage: {},
+                sessionStorage: {},
+                cookies: document.cookie,
+                performance: {},
+                text: document.body.textContent.replace(/\\s+/g, ' ').trim().slice(0, 10000)
+            };
+            
+            // Extract all links
+            document.querySelectorAll('a[href]').forEach(a => {
+                data.links.push({
+                    href: a.href,
+                    text: a.textContent.trim().slice(0, 100),
+                    target: a.target || '_self',
+                    rel: a.rel || '',
+                    classes: a.className || ''
+                });
+            });
+            
+            // Extract images
+            document.querySelectorAll('img').forEach(img => {
+                data.images.push({
+                    src: img.src,
+                    alt: img.alt || '',
+                    width: img.width,
+                    height: img.height,
+                    classes: img.className || ''
+                });
+            });
+            
+            // Extract forms
+            document.querySelectorAll('form').forEach(form => {
+                const formData = {
+                    action: form.action || '',
+                    method: form.method || 'GET',
+                    inputs: []
+                };
+                form.querySelectorAll('input, textarea, select').forEach(input => {
+                    formData.inputs.push({
+                        type: input.type || 'text',
+                        name: input.name || '',
+                        value: input.value || '',
+                        placeholder: input.placeholder || '',
+                        required: input.required || false
+                    });
+                });
+                data.forms.push(formData);
+            });
+            
+            // Extract scripts
+            document.querySelectorAll('script').forEach(script => {
+                data.scripts.push({
+                    src: script.src || 'inline',
+                    type: script.type || 'text/javascript',
+                    content_length: (script.textContent || '').length
+                });
+            });
+            
+            // Extract styles
+            document.querySelectorAll('style, link[rel="stylesheet"]').forEach(style => {
+                data.styles.push({
+                    type: style.tagName.toLowerCase() === 'style' ? 'inline' : 'external',
+                    href: style.href || '',
+                    content_length: (style.textContent || '').length
+                });
+            });
+            
+            // Extract meta tags
+            document.querySelectorAll('meta').forEach(meta => {
+                const name = meta.getAttribute('name') || meta.getAttribute('property') || '';
+                const content = meta.getAttribute('content') || '';
+                if (name && content) {
+                    data.metaTags[name] = content;
+                }
+            });
+            
+            // Extract data attributes from body
+            Array.from(document.body.attributes).forEach(attr => {
+                if (attr.name.startsWith('data-')) {
+                    data.dataAttributes[attr.name] = attr.value;
+                }
+            });
+            
+            // Extract localStorage
+            if (window.localStorage) {
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key) {
+                        data.localStorage[key] = localStorage.getItem(key);
+                    }
+                }
+            }
+            
+            // Extract sessionStorage
+            if (window.sessionStorage) {
+                for (let i = 0; i < sessionStorage.length; i++) {
+                    const key = sessionStorage.key(i);
+                    if (key) {
+                        data.sessionStorage[key] = sessionStorage.getItem(key);
+                    }
+                }
+            }
+            
+            // Extract performance metrics
+            if (window.performance) {
+                const perf = window.performance.timing || {};
+                data.performance = {
+                    loadTime: perf.loadEventEnd - perf.navigationStart,
+                    domReady: perf.domContentLoadedEventEnd - perf.navigationStart,
+                    responseTime: perf.responseEnd - perf.requestStart,
+                    redirectTime: perf.redirectEnd - perf.redirectStart
+                };
+            }
+            
+            return data;
+        })();
+        """
+        
+        result = self.evaluate_script(js, tab_index)
+        if result:
+            print("\n📊 Data Extraction Summary:")
+            print(f"   Links: {len(result.get('links', []))}")
+            print(f"   Images: {len(result.get('images', []))}")
+            print(f"   Forms: {len(result.get('forms', []))}")
+            print(f"   Scripts: {len(result.get('scripts', []))}")
+            print(f"   Meta tags: {len(result.get('metaTags', {}))}")
+            print(f"   localStorage items: {len(result.get('localStorage', {}))}")
+            print(f"   sessionStorage items: {len(result.get('sessionStorage', {}))}")
+            
+            return result
+        return None
+
+    # ==================== 🆕 E-COMMERCE INTELLIGENCE ====================
+
+    def extract_ecommerce_data(self, tab_index: int = 0) -> Dict:
+        """Extract product data from e-commerce sites"""
+        print("\n🛒 Extracting e-commerce intelligence...")
+        
+        js = """
+        (function() {
+            const data = {
+                products: [],
+                prices: [],
+                reviews: [],
+                productCount: 0,
+                totalPrice: 0,
+                avgPrice: 0
+            };
+            
+            // Common product selectors across sites
+            const productSelectors = [
+                '.product', '.item', '.listing', '.card',
+                '[data-product]', '[data-item]', '[data-sku]',
+                '.product-card', '.product-item', '.product-listing'
+            ];
+            
+            const products = document.querySelectorAll(productSelectors.join(','));
+            data.productCount = products.length;
+            
+            products.forEach(product => {
+                // Try to find price
+                const priceSelectors = ['.price', '.product-price', '.amount', '[data-price]', '.cost', '.price-now', '.final-price'];
+                let price = null;
+                for (const sel of priceSelectors) {
+                    const el = product.querySelector(sel);
+                    if (el) {
+                        const text = el.textContent.trim();
+                        const match = text.match(/[\\d,]+(?:[.][\\d]+)?/);
+                        if (match) {
+                            price = parseFloat(match[0].replace(/,/g, ''));
+                            break;
+                        }
+                    }
+                }
+                
+                // Try to find name/title
+                const nameSelectors = ['.title', '.name', '.product-title', '.product-name', 'h3', 'h4', '.item-title'];
+                let name = '';
+                for (const sel of nameSelectors) {
+                    const el = product.querySelector(sel);
+                    if (el) {
+                        name = el.textContent.trim();
+                        break;
+                    }
+                }
+                
+                // Try to find image
+                const img = product.querySelector('img');
+                const image = img ? img.src : '';
+                
+                // Try to find description
+                const desc = product.querySelector('.description, .product-description, .desc');
+                const description = desc ? desc.textContent.trim() : '';
+                
+                // Try to find link
+                const link = product.querySelector('a');
+                const url = link ? link.href : '';
+                
+                if (name || price) {
+                    data.products.push({
+                        name: name || 'Unknown Product',
+                        price: price,
+                        image: image,
+                        description: description.slice(0, 200),
+                        url: url
+                    });
+                    
+                    if (price) {
+                        data.prices.push(price);
+                        data.totalPrice += price;
+                    }
+                }
+            });
+            
+            if (data.prices.length > 0) {
+                data.avgPrice = data.totalPrice / data.prices.length;
+                data.minPrice = Math.min(...data.prices);
+                data.maxPrice = Math.max(...data.prices);
+            }
+            
+            // Check for reviews/ratings
+            const reviewSelectors = ['.review', '.rating', '.stars', '[data-rating]', '.reviews', '.rating-value'];
+            reviewSelectors.forEach(sel => {
+                const el = document.querySelector(sel);
+                if (el) {
+                    const text = el.textContent.trim();
+                    const match = text.match(/[\\d.]+/);
+                    if (match) {
+                        data.reviews.push({
+                            selector: sel,
+                            value: parseFloat(match[0]),
+                            text: text
+                        });
+                    }
+                }
+            });
+            
+            // Check for best seller / popular items
+            const popularSelectors = ['.best-seller', '.bestseller', '.popular', '[data-popular]'];
+            const popularItems = document.querySelectorAll(popularSelectors.join(','));
+            data.popular_count = popularItems.length;
+            
+            return data;
+        })();
+        """
+        
+        result = self.evaluate_script(js, tab_index)
+        if result:
+            print("\n🛒 E-Commerce Intelligence:")
+            print(f"   Products found: {result.get('productCount', 0)}")
+            print(f"   Products with price: {len(result.get('prices', []))}")
+            print(f"   Average price: ${result.get('avgPrice', 0):.2f}")
+            if result.get('minPrice') is not None:
+                print(f"   Price range: ${result.get('minPrice', 0):.2f} - ${result.get('maxPrice', 0):.2f}")
+            print(f"   Popular items: {result.get('popular_count', 0)}")
+            
+            return result
+        return None
+
+    # ==================== Interactive Button Methods ====================
+
+    def find_interactive_elements(self, tab_index: int = 0) -> List[Dict]:
+        """Find all interactive elements on the page using IIFE"""
+        print("\n🔍 Finding interactive elements...")
+
+        js_script = """
+        (function() {
+            const results = [];
+            const selectors = [
+                'button',
+                'input[type="button"]',
+                'input[type="submit"]',
+                'input[type="reset"]',
+                'a[href]',
+                '[role="button"]',
+                '[role="link"]',
+                '[onclick]',
+                '[data-action]',
+                '.btn',
+                '[class*="button"]',
+                '[class*="btn"]',
+                '[data-testid*="button"]'
+            ];
+
+            const elements = document.querySelectorAll(selectors.join(','));
+
+            elements.forEach((el, index) => {
+                const rect = el.getBoundingClientRect();
+                const isVisible = rect.width > 0 && rect.height > 0;
+
+                // Get all relevant attributes
+                const attrs = {};
+                ['id', 'class', 'data-action', 'data-testid', 'aria-label',
+                 'title', 'type', 'value', 'href', 'name', 'role'].forEach(attr => {
+                    if (el.hasAttribute(attr)) {
+                        attrs[attr] = el.getAttribute(attr);
+                    }
+                });
+
+                // Get text content
+                let text = el.textContent.trim();
+                if (!text && el.tagName === 'INPUT') {
+                    text = el.value || el.getAttribute('placeholder') || '';
+                }
+
+                // Determine element type
+                let type = el.tagName.toLowerCase();
+                if (type === 'input') {
+                    type = `input[${el.type || 'text'}]`;
+                }
+
+                // Get click handlers
+                let hasClickHandler = false;
+                try {
+                    hasClickHandler = typeof el.onclick === 'function' ||
+                                     el.getAttribute('onclick') !== null ||
+                                     el._onclick !== undefined;
+                } catch(e) {
+                    // Cross-origin restrictions may apply
+                }
+
+                results.push({
+                    index: index,
+                    tag: el.tagName.toLowerCase(),
+                    type: type,
+                    text: text.substring(0, 100),
+                    visible: isVisible,
+                    hasClickHandler: hasClickHandler,
+                    attributes: attrs,
+                    selector: el.id ? `#${el.id}` : null,
+                    canClick: true
+                });
+            });
+
+            return results;
+        })();
+        """
+
+        result = self.evaluate_script(js_script, tab_index)
+        if result and isinstance(result, list):
+            print(f"✅ Found {len(result)} interactive elements")
+            return result
+        return []
+
+    def interact_with_element(self, tab_index: int = 0, element_index: int = 0,
+                             action: str = 'click', value: str = None,
+                             delay: float = 0.5) -> Optional[Any]:
+        """Interact with a specific element using IIFE with delay support"""
+        print(f"\n🎯 Interacting with element #{element_index}...")
+
+        # First, verify the element exists and get its properties
+        verify_script = f"""
+        (function() {{
+            const selectors = [
+                'button',
+                'input[type="button"]',
+                'input[type="submit"]',
+                'input[type="reset"]',
+                'a[href]',
+                '[role="button"]',
+                '[role="link"]',
+                '[onclick]',
+                '[data-action]',
+                '.btn',
+                '[class*="button"]',
+                '[class*="btn"]'
+            ];
+
+            const elements = document.querySelectorAll(selectors.join(','));
+
+            if ({element_index} >= elements.length) {{
+                return {{ error: 'Element index out of range' }};
+            }}
+
+            const el = elements[{element_index}];
+
+            // Scroll into view if needed
+            el.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
+
+            return {{
+                tag: el.tagName.toLowerCase(),
+                text: el.textContent.trim().substring(0, 100),
+                visible: el.offsetParent !== null,
+                canInteract: true
+            }};
+        }})();
+        """
+
+        verify_result = self.evaluate_script(verify_script, tab_index)
+        if verify_result and 'error' in verify_result:
+            print(f"❌ {verify_result['error']}")
+            return None
+
+        print(f"   Element: {verify_result.get('tag', 'unknown')}")
+        print(f"   Text: {verify_result.get('text', '')}")
+        print(f"   Visible: {verify_result.get('visible', False)}")
+
+        # Wait a moment for scroll to complete
+        time.sleep(delay)
+
+        # Perform the action
+        if action == 'click':
+            click_script = f"""
+            (function() {{
+                const selectors = [
+                    'button',
+                    'input[type="button"]',
+                    'input[type="submit"]',
+                    'input[type="reset"]',
+                    'a[href]',
+                    '[role="button"]',
+                    '[role="link"]',
+                    '[onclick]',
+                    '[data-action]',
+                    '.btn',
+                    '[class*="button"]',
+                    '[class*="btn"]'
+                ];
+
+                const elements = document.querySelectorAll(selectors.join(','));
+                const el = elements[{element_index}];
+
+                if (!el) return {{ error: 'Element not found' }};
+
+                // Simulate click with events
+                const event = new MouseEvent('click', {{
+                    view: window,
+                    bubbles: true,
+                    cancelable: true
+                }});
+
+                el.dispatchEvent(event);
+                // Also try native click for links and buttons
+                if (typeof el.click === 'function') {{
+                    el.click();
+                }}
+                return {{ success: true, tag: el.tagName.toLowerCase() }};
+            }})();
+            """
+            result = self.evaluate_script(click_script, tab_index)
+            if result and result.get('success'):
+                print(f"✅ Clicked element successfully")
+            else:
+                print(f"❌ Failed to click element")
+
+        elif action == 'type' and value is not None:
+            type_script = f"""
+            (function() {{
+                const selectors = [
+                    'input[type="text"]',
+                    'input[type="email"]',
+                    'input[type="password"]',
+                    'input[type="number"]',
+                    'input[type="tel"]',
+                    'textarea',
+                    '[contenteditable="true"]'
+                ];
+
+                const elements = document.querySelectorAll(selectors.join(','));
+                const el = elements[{element_index}];
+
+                if (!el) return {{ error: 'Element not found' }};
+
+                // Focus the element
+                el.focus();
+
+                // Set value
+                const value = `{value}`;
+                el.value = value;
+
+                // Dispatch input events
+                el.dispatchEvent(new Event('input', {{ bubbles: true }}));
+                el.dispatchEvent(new Event('change', {{ bubbles: true }}));
+
+                return {{ success: true, value: value }};
+            }})();
+            """
+            result = self.evaluate_script(type_script, tab_index)
+            if result and result.get('success'):
+                print(f"✅ Typed '{value}' into element")
+            else:
+                print(f"❌ Failed to type into element")
+
+        elif action == 'hover':
+            hover_script = f"""
+            (function() {{
+                const selectors = [
+                    'button',
+                    'input[type="button"]',
+                    'input[type="submit"]',
+                    'input[type="reset"]',
+                    'a[href]',
+                    '[role="button"]',
+                    '[role="link"]',
+                    '[onclick]',
+                    '[data-action]',
+                    '.btn',
+                    '[class*="button"]',
+                    '[class*="btn"]'
+                ];
+
+                const elements = document.querySelectorAll(selectors.join(','));
+                const el = elements[{element_index}];
+
+                if (!el) return {{ error: 'Element not found' }};
+
+                // Simulate hover
+                const event = new MouseEvent('mouseover', {{
+                    view: window,
+                    bubbles: true,
+                    cancelable: true
+                }});
+
+                el.dispatchEvent(event);
+                return {{ success: true }};
+            }})();
+            """
+            result = self.evaluate_script(hover_script, tab_index)
+            if result and result.get('success'):
+                print(f"✅ Hovered over element")
+            else:
+                print(f"❌ Failed to hover over element")
+
+        return result
+
+    # ==================== Enhanced Interactive Methods ====================
+
+    def interactive_element_explorer(self, tab_index: int = 0):
+        """Interactive element explorer with better control"""
+        print("\n🎯 Interactive Elements Explorer")
+        print("-" * 60)
+
+        elements = self.find_interactive_elements(tab_index)
+        if not elements:
+            print("❌ No interactive elements found")
+            return
+
+        # Display elements with pagination
+        page_size = 10
+        total_pages = (len(elements) + page_size - 1) // page_size
+        current_page = 0
+        selected_indices = []
+
+        while True:
+            start = current_page * page_size
+            end = min(start + page_size, len(elements))
+
+            print(f"\n📋 Elements (Page {current_page+1}/{total_pages}):")
+            print("=" * 70)
+            for i in range(start, end):
+                elem = elements[i]
+                text = elem.get('text', '')[:40]
+                tag = elem.get('tag', 'unknown')
+                visible = "👁️" if elem.get('visible') else "🚫"
+                handler = "⚡" if elem.get('hasClickHandler') else "  "
+                print(f"  [{i:2d}] {handler} {visible} {tag:10s}: {text}")
+                if elem.get('attributes'):
+                    attrs = elem.get('attributes', {})
+                    if 'id' in attrs:
+                        print(f"        ID: {attrs['id']}")
+                    if 'class' in attrs:
+                        print(f"        Class: {attrs['class'][:40]}")
+
+            print("\n📌 Commands:")
+            print("  [n] Next page  [p] Previous page  [q] Quit")
+            print("  [index] Interact with element")
+            print("  [index1,index2] Multiple indices (comma-separated)")
+            print("  [range] e.g., 5-10 for a range")
+            print("  [all] All elements in current page")
+            cmd = input("\nEnter command: ").strip()
+
+            if cmd.lower() == 'q':
+                break
+            elif cmd.lower() == 'n' and current_page < total_pages - 1:
+                current_page += 1
+            elif cmd.lower() == 'p' and current_page > 0:
+                current_page -= 1
+            elif cmd.lower() == 'all':
+                # Select all elements on current page
+                selected_indices = list(range(start, end))
+                print(f"✅ Selected {len(selected_indices)} elements on this page")
+
+                # Ask for action
+                print("\n🎮 What to do with selected elements?")
+                print("  1. Click all (with delay)")
+                print("  2. Get info for all")
+                print("  3. Generate script")
+                print("  4. Cancel")
+                action = input("Select action: ").strip()
+
+                if action == '1':
+                    delay = float(input("Delay between clicks (seconds, default 0.5): ").strip() or "0.5")
+                    for idx in selected_indices:
+                        print(f"\n--- Clicking element {idx} ---")
+                        self.interact_with_element(tab_index, idx, 'click', delay=delay)
+                        time.sleep(delay)
+                elif action == '2':
+                    for idx in selected_indices:
+                        print(f"\n--- Info for element {idx} ---")
+                        self.get_element_info(tab_index, idx)
+                elif action == '3':
+                    self.generate_interaction_script(tab_index, selected_indices)
+
+            elif '-' in cmd:
+                # Range selection
+                try:
+                    parts = cmd.split('-')
+                    if len(parts) == 2:
+                        start_idx = int(parts[0].strip())
+                        end_idx = int(parts[1].strip())
+                        if 0 <= start_idx < len(elements) and 0 <= end_idx < len(elements):
+                            selected_indices = list(range(start_idx, end_idx + 1))
+                            print(f"✅ Selected elements {start_idx}-{end_idx} ({len(selected_indices)} elements)")
+
+                            # Ask for action
+                            print("\n🎮 What to do with selected elements?")
+                            print("  1. Click all (with delay)")
+                            print("  2. Get info for all")
+                            print("  3. Generate script")
+                            print("  4. Cancel")
+                            action = input("Select action: ").strip()
+
+                            if action == '1':
+                                delay = float(input("Delay between clicks (seconds, default 0.5): ").strip() or "0.5")
+                                for idx in selected_indices:
+                                    print(f"\n--- Clicking element {idx} ---")
+                                    self.interact_with_element(tab_index, idx, 'click', delay=delay)
+                                    time.sleep(delay)
+                            elif action == '2':
+                                for idx in selected_indices:
+                                    print(f"\n--- Info for element {idx} ---")
+                                    self.get_element_info(tab_index, idx)
+                            elif action == '3':
+                                self.generate_interaction_script(tab_index, selected_indices)
+                except Exception as e:
+                    print(f"❌ Invalid range: {e}")
+
+            elif ',' in cmd:
+                # Multiple comma-separated indices
+                try:
+                    indices = [int(x.strip()) for x in cmd.split(',')]
+                    selected_indices = [i for i in indices if 0 <= i < len(elements)]
+                    if selected_indices:
+                        print(f"✅ Selected {len(selected_indices)} elements: {selected_indices}")
+
+                        # Ask for action
+                        print("\n🎮 What to do with selected elements?")
+                        print("  1. Click all (with delay)")
+                        print("  2. Get info for all")
+                        print("  3. Generate script")
+                        print("  4. Cancel")
+                        action = input("Select action: ").strip()
+
+                        if action == '1':
+                            delay = float(input("Delay between clicks (seconds, default 0.5): ").strip() or "0.5")
+                            for idx in selected_indices:
+                                print(f"\n--- Clicking element {idx} ---")
+                                self.interact_with_element(tab_index, idx, 'click', delay=delay)
+                                time.sleep(delay)
+                        elif action == '2':
+                            for idx in selected_indices:
+                                print(f"\n--- Info for element {idx} ---")
+                                self.get_element_info(tab_index, idx)
+                        elif action == '3':
+                            self.generate_interaction_script(tab_index, selected_indices)
+                except Exception as e:
+                    print(f"❌ Invalid indices: {e}")
+
+            elif cmd.isdigit():
+                elem_index = int(cmd)
+                if 0 <= elem_index < len(elements):
+                    # Interactive element menu
+                    self.interactive_element_menu(tab_index, elem_index)
+                else:
+                    print("❌ Invalid index")
+            else:
+                print("❌ Invalid command")
+
+    def interactive_element_menu(self, tab_index: int = 0, element_index: int = 0):
+        """Interactive menu for a single element"""
+        while True:
+            print(f"\n🎮 Interacting with element {element_index}")
+            print("  1. Click")
+            print("  2. Type text")
+            print("  3. Hover")
+            print("  4. Get detailed info")
+            print("  5. Generate script for this element")
+            print("  6. Generate selectors for this element 🆕")
+            print("  7. Back to explorer")
+
+            action = input("Select action: ").strip()
+
+            if action == '1':
+                self.interact_with_element(tab_index, element_index, 'click')
+                print("\nPress Enter to continue...")
+                input()
+            elif action == '2':
+                text = input("📝 Enter text to type: ")
+                self.interact_with_element(tab_index, element_index, 'type', text)
+                print("\nPress Enter to continue...")
+                input()
+            elif action == '3':
+                self.interact_with_element(tab_index, element_index, 'hover')
+                print("\nPress Enter to continue...")
+                input()
+            elif action == '4':
+                self.get_element_info(tab_index, element_index)
+                print("\nPress Enter to continue...")
+                input()
+            elif action == '5':
+                self.generate_interaction_script(tab_index, [element_index])
+                print("\nPress Enter to continue...")
+                input()
+            elif action == '6':
+                self.generate_element_selector(element_index, tab_index)
+                print("\nPress Enter to continue...")
+                input()
+            elif action == '7':
+                break
+            else:
+                print("❌ Invalid choice")
+
+    def get_element_info(self, tab_index: int = 0, element_index: int = 0) -> Optional[Dict]:
+        """Get detailed information about an element"""
+        print(f"\n📋 Getting detailed info for element {element_index}...")
+
+        info_script = f"""
+        (function() {{
+            const selectors = [
+                'button',
+                'input[type="button"]',
+                'input[type="submit"]',
+                'input[type="reset"]',
+                'a[href]',
+                '[role="button"]',
+                '[role="link"]',
+                '[onclick]',
+                '[data-action]',
+                '.btn',
+                '[class*="button"]',
+                '[class*="btn"]'
+            ];
+
+            const elements = document.querySelectorAll(selectors.join(','));
+            const el = elements[{element_index}];
+
+            if (!el) {{
+                return {{ error: 'Element not found' }};
+            }}
+
+            const rect = el.getBoundingClientRect();
+            const style = window.getComputedStyle(el);
+
+            return {{
+                tag: el.tagName.toLowerCase(),
+                text: el.textContent.trim().substring(0, 200),
+                innerHTML: el.innerHTML.substring(0, 200),
+                visible: rect.width > 0 && rect.height > 0,
+                rect: {{
+                    x: Math.round(rect.x),
+                    y: Math.round(rect.y),
+                    width: Math.round(rect.width),
+                    height: Math.round(rect.height)
+                }},
+                style: {{
+                    color: style.color,
+                    backgroundColor: style.backgroundColor,
+                    fontSize: style.fontSize,
+                    fontFamily: style.fontFamily,
+                    display: style.display,
+                    visibility: style.visibility,
+                    opacity: style.opacity,
+                    cursor: style.cursor,
+                    pointerEvents: style.pointerEvents
+                }},
+                attributes: {{
+                    id: el.id || null,
+                    class: el.className || null,
+                    role: el.getAttribute('role'),
+                    'aria-label': el.getAttribute('aria-label'),
+                    type: el.getAttribute('type'),
+                    value: el.value || null,
+                    href: el.getAttribute('href'),
+                    target: el.getAttribute('target'),
+                    disabled: el.disabled || false,
+                    readonly: el.readOnly || false
+                }},
+                onClickHandler: typeof el.onclick === 'function',
+                isFormElement: ['input', 'textarea', 'select', 'button'].includes(el.tagName.toLowerCase()),
+                isLink: el.tagName.toLowerCase() === 'a' && el.hasAttribute('href')
+            }};
+        }})();
+        """
+
+        result = self.evaluate_script(info_script, tab_index)
+        if result and not 'error' in result:
+            print("\n📋 Element Details:")
+            print("=" * 60)
+            for key, value in result.items():
+                if isinstance(value, dict):
+                    print(f"{key}:")
+                    for subkey, subvalue in value.items():
+                        print(f"  {subkey}: {subvalue}")
+                else:
+                    print(f"{key}: {value}")
+            print("=" * 60)
+            return result
+        else:
+            print(f"❌ Failed to get info: {result.get('error', 'Unknown error')}")
+            return None
+
+    def generate_interaction_script(self, tab_index: int = 0, indices: List[int] = None):
+        """Generate a safe IIFE script for specified elements"""
+        if not indices:
+            print("❌ No indices specified")
+            return
+
+        # Get elements first to display info
+        elements = self.find_interactive_elements(tab_index)
+
+        print(f"\n📜 Generating IIFE Script for {len(indices)} elements...")
+
+        script_lines = [
+            "// Generated IIFE Script for Element Interaction",
+            "// =============================================",
+            "(function() {",
+            "    const results = [];",
+            "    const selectors = [",
+            "        'button',",
+            "        'input[type=\"button\"]',",
+            "        'input[type=\"submit\"]',",
+            "        'input[type=\"reset\"]',",
+            "        'a[href]',",
+            "        '[role=\"button\"]',",
+            "        '[role=\"link\"]',",
+            "        '[onclick]'",
+            "    ];",
+            "",
+            "    const elements = document.querySelectorAll(selectors.join(','));",
+            "    const delay = ms => new Promise(resolve => setTimeout(resolve, ms));",
+            "",
+            "    // Helper function to click an element safely",
+            "    async function clickElement(el, index) {",
+            "        try {",
+            "            if (!el) return { success: false, index, error: 'Element not found' };",
+            "            // Scroll into view",
+            "            el.scrollIntoView({ behavior: 'smooth', block: 'center' });",
+            "            await delay(100);",
+            "            // Try multiple click methods",
+            "            try {",
+            "                const clickEvent = new MouseEvent('click', {",
+            "                    view: window,",
+            "                    bubbles: true,",
+            "                    cancelable: true",
+            "                });",
+            "                el.dispatchEvent(clickEvent);",
+            "            } catch(e) {}",
+            "            try {",
+            "                if (typeof el.click === 'function') el.click();",
+            "            } catch(e) {}",
+            "            return { success: true, index, tag: el.tagName.toLowerCase() };",
+            "        } catch(e) {",
+            "            return { success: false, index, error: e.message };",
+            "        }",
+            "    }",
+            "",
+            "    // Main execution",
+            "    async function execute() {",
+        ]
+
+        # Add click operations for each selected index
+        for idx in indices:
+            elem = elements[idx] if idx < len(elements) else None
+            elem_text = elem.get('text', '')[:30] if elem else 'unknown'
+            script_lines.append(f"        // Element {idx}: {elem_text}")
+            script_lines.append(f"        const result_{idx} = await clickElement(elements[{idx}], {idx});")
+            script_lines.append(f"        results.push(result_{idx});")
+            script_lines.append(f"        await delay(300); // Delay between clicks")
+            script_lines.append("")
+
+        script_lines.extend([
+            "        return results;",
+            "    }",
+            "",
+            "    // Execute and return results",
+            "    return execute();",
+            "})();"
+        ])
+
+        full_script = "\n".join(script_lines)
+
+        print("\n📜 Generated IIFE Script:")
+        print("=" * 60)
+        print(full_script)
+        print("=" * 60)
+
+        execute = input("\n🔧 Execute this script? (y/n): ").strip().lower()
+        if execute == 'y':
+            print("\n⚡ Executing script...")
+            # The script returns a promise since it's async
+            result = self.evaluate_script(full_script, tab_index, await_promise=True)
+            if result:
+                print(f"\n📊 Execution Results:")
+                if isinstance(result, list):
+                    for res in result:
+                        if res.get('success'):
+                            print(f"  ✅ Element {res.get('index')}: Clicked ({res.get('tag')})")
+                        else:
+                            print(f"  ❌ Element {res.get('index')}: {res.get('error')}")
+                else:
+                    print(f"Result: {result}")
+            else:
+                print("❌ Script execution failed")
+
+        save = input("\n💾 Save this script to file? (y/n): ").strip().lower()
+        if save == 'y':
+            filename = f"interaction_script_{datetime.now().strftime('%Y%m%d_%H%M%S')}.js"
+            with open(filename, 'w') as f:
+                f.write(full_script)
+            print(f"✅ Saved to {filename}")
+
+    # ==================== Utility Methods ====================
+
+    def list_tabs(self):
+        """Display all available tabs"""
+        self.get_tabs()
+
+        if not self.tabs:
+            print("❌ No tabs found")
+            return
+
+        print("\n📑 Available Tabs:")
+        print("=" * 60)
+        for i, tab in enumerate(self.tabs):
+            title = tab.get('title', 'Untitled')[:50]
+            url = tab.get('url', '')[:50]
+            ws_url = tab.get('webSocketDebuggerUrl', 'No WebSocket')
+            print(f"  [{i}] {title}")
+            print(f"      URL: {url}")
+            print(f"      WS: {ws_url[:60] if ws_url else 'None'}...")
+            print()
+
+def main():
+    print("🚀 Enhanced Chrome CDP Controller - ULTIMATE EDITION")
+    print("=" * 60)
+    print("Features: DOM | CSS | Accessibility | Runtime | Console Hijack | HAR | XSS | Time-Travel | Selectors | Recording | Data Extraction")
+    print("=" * 60)
+
+    port_input = input("🔌 Chrome debug port (default 9227): ").strip()
+    port = int(port_input) if port_input else 9227
+
+    chrome = EnhancedChromeCDP(port)
+
+    print(f"\n📡 Connecting to Chrome on port {port}...")
+    tabs = chrome.get_tabs()
+
+    if not tabs:
+        print("❌ No tabs found. Make sure Chrome is running with:")
+        print(f"   chromium-browser --remote-debugging-port={port}")
+        return
+
+    print(f"✅ Found {len(tabs)} tabs")
+    chrome.list_tabs()
+
+    tab_input = input(f"\n📑 Select tab (0-{len(tabs)-1}, default 0): ").strip()
+    tab_index = int(tab_input) if tab_input else 0
+
+    while True:
+        print("\n" + "=" * 60)
+        print("📝 CDP Commands:")
+        print("  1. Execute JavaScript (Runtime.evaluate)")
+        print("  2. Get DOM Tree (DOM.getDocument)")
+        print("  3. Get DOM Snapshot (DOMSnapshot.getSnapshot)")
+        print("  4. Get Accessibility Tree (Accessibility.getFullAXTree)")
+        print("  5. Complete Page Analysis (All Domains)")
+        print("  6. Extract Semantic Elements (Accessibility)")
+        print("  7. Get Computed Styles (CSS.getComputedStyleForNode)")
+        print("  ============ 🆕 ULTIMATE FEATURES ============")
+        print(" 12. Hijack Console (Capture all logs) 🆕")
+        print(" 13. Start HAR Recording (Network capture) 🆕")
+        print(" 14. Stop HAR Recording & Export 🆕")
+        print(" 15. Detect XSS Vulnerabilities 🆕")
+        print(" 16. DOM Time-Travel (Capture snapshots) 🆕")
+        print(" 17. Generate Element Selectors 🆕")
+        print(" 18. Start Session Recording (Record interactions) 🆕")
+        print(" 19. Stop Session Recording & Export 🆕")
+        print(" 20. Extract All Page Data 🆕")
+        print(" 21. E-Commerce Intelligence 🆕")
+        print("  ============ ORIGINAL FEATURES ============")
+        print("  8. List Tabs")
+        print("  9. Change Tab (refreshes WebSocket URL)")
+        print(" 10. Interactive Element Explorer")
+        print(" 11. Generate Custom Interaction Script")
+        print("  0. Exit")
+        print("=" * 60)
+
+        choice = input("Select option: ").strip()
+
+        if choice == "0":
+            print("👋 Goodbye!")
+            break
+
+        elif choice == "1":
+            print("\n📝 Enter JavaScript (type 'END' on a new line when done):")
+            lines = []
+            while True:
+                line = input()
+                if line.strip() == "END":
+                    break
+                lines.append(line)
+            script = "\n".join(lines)
+
+            if script:
+                result = chrome.evaluate_script(script, tab_index)
+                if result is not None:
+                    print(f"\n✅ Result: {json.dumps(result, indent=2, default=str)[:3000]}")
+                else:
+                    print("\n❌ No result returned")
+
+        elif choice == "2":
+            dom_root = chrome.get_document(tab_index)
+            if dom_root:
+                node_count = chrome._count_nodes(dom_root)
+                print(f"\n📊 DOM Statistics:")
+                print(f"   Total nodes: {node_count}")
+                print(f"   Root node: {dom_root.get('nodeName')} (ID: {dom_root.get('nodeId')})")
+
+                save = input("\n💾 Save DOM tree to file? (y/n): ").strip().lower()
+                if save == 'y':
+                    filename = f"dom_tree_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+                    with open(filename, 'w') as f:
+                        json.dump(dom_root, f, indent=2)
+                    print(f"✅ Saved to {filename}")
+            else:
+                print("❌ Failed to get DOM tree")
+
+        elif choice == "3":
+            snapshot = chrome.get_dom_snapshot(tab_index)
+            if snapshot:
+                print(f"\n📊 Snapshot Statistics:")
+                print(f"   DOM nodes: {len(snapshot.dom_nodes)}")
+                print(f"   Layout tree: {len(snapshot.layout_tree)}")
+                print(f"   Computed styles: {len(snapshot.computed_styles)}")
+
+                save = input("\n💾 Save snapshot to file? (y/n): ").strip().lower()
+                if save == 'y':
+                    filename = f"snapshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+                    with open(filename, 'w') as f:
+                        json.dump({
+                            'dom_nodes': snapshot.dom_nodes,
+                            'layout_tree': snapshot.layout_tree,
+                            'computed_styles': snapshot.computed_styles
+                        }, f, indent=2)
+                    print(f"✅ Saved to {filename}")
+            else:
+                print("❌ Failed to capture snapshot")
+
+        elif choice == "4":
+            ax_tree = chrome.get_accessibility_tree(tab_index)
+            if ax_tree:
+                nodes = ax_tree.get('nodes', [])
+                print(f"\n📊 Accessibility Statistics:")
+                print(f"   Total accessible nodes: {len(nodes)}")
+
+                roles = {}
+                for node in nodes:
+                    role = node.get('role', {}).get('value', 'unknown')
+                    roles[role] = roles.get(role, 0) + 1
+
+                print("\n   Role distribution (top 10):")
+                for role, count in sorted(roles.items(), key=lambda x: x[1], reverse=True)[:10]:
+                    print(f"     {role}: {count}")
+
+                save = input("\n💾 Save accessibility tree to file? (y/n): ").strip().lower()
+                if save == 'y':
+                    filename = f"ax_tree_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+                    with open(filename, 'w') as f:
+                        json.dump(ax_tree, f, indent=2)
+                    print(f"✅ Saved to {filename}")
+            else:
+                print("❌ Failed to get accessibility tree")
+
+        elif choice == "5":
+            print("\n🔬 Performing complete page analysis...")
+            analysis = chrome.analyze_page_structure(tab_index)
+
+            print(f"\n📊 Analysis Summary:")
+            for key, value in analysis.get('metadata', {}).items():
+                print(f"   {key}: {value}")
+
+            save = input("\n💾 Save analysis to file? (y/n): ").strip().lower()
+            if save == 'y':
+                filename = f"page_analysis_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+                analysis_serializable = analysis.copy()
+                if analysis_serializable.get('snapshot'):
+                    snap = analysis_serializable['snapshot']
+                    analysis_serializable['snapshot'] = {
+                        'dom_nodes': snap.dom_nodes,
+                        'layout_tree': snap.layout_tree,
+                        'computed_styles': snap.computed_styles
+                    }
+                with open(filename, 'w') as f:
+                    json.dump(analysis_serializable, f, indent=2, default=str)
+                print(f"✅ Saved to {filename}")
+
+        elif choice == "6":
+            elements = chrome.extract_semantic_elements(tab_index)
+            if elements:
+                print(f"✅ Found {len(elements)} semantic elements:")
+                for elem in elements[:20]:
+                    name = elem['name'][:50] if elem['name'] else '(unnamed)'
+                    print(f"   [{elem['role']}] {name}")
+                if len(elements) > 20:
+                    print(f"   ... and {len(elements)-20} more")
+
+                save = input("\n💾 Save semantic elements to file? (y/n): ").strip().lower()
+                if save == 'y':
+                    filename = f"semantic_elements_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+                    with open(filename, 'w') as f:
+                        json.dump(elements, f, indent=2)
+                    print(f"✅ Saved to {filename}")
+            else:
+                print("❌ No semantic elements found")
+
+        elif choice == "7":
+            styles = chrome.get_computed_styles(tab_index)
+            if styles:
+                print(f"✅ Retrieved {len(styles)} computed styles (showing first 20):")
+                for style in styles[:20]:
+                    name = style.get('name', '')
+                    value = style.get('value', '')[:50]
+                    print(f"   {name}: {value}")
+                if len(styles) > 20:
+                    print(f"   ... and {len(styles)-20} more styles")
+            else:
+                print("❌ Failed to get computed styles")
+
+        # ==================== 🆕 ULTIMATE FEATURES ====================
+
+        elif choice == "12":
+            result = chrome.hijack_console(tab_index)
+            if result:
+                print(f"\n✅ Console hijacked successfully!")
+                print(f"   Status: {result.get('message', 'Active')}")
+                
+                # Show some initial messages
+                messages = chrome.get_console_messages(tab_index)
+                if messages:
+                    print(f"\n📋 Recent console messages (last 5):")
+                    for msg in messages[-5:]:
+                        print(f"   [{msg.get('type')}] {msg.get('args', [''])[0][:100]}")
+
+        elif choice == "13":
+            result = chrome.start_har_recording(tab_index)
+            if result:
+                print("\n📡 HAR Recording started!")
+                print("   Network requests will be captured.")
+                print("   Use option 14 to stop and export.")
+
+        elif choice == "14":
+            har_data = chrome.stop_har_recording(tab_index)
+            if har_data:
+                print(f"\n📊 HAR Data captured:")
+                print(f"   Entries: {len(har_data.get('log', {}).get('entries', []))}")
+                print(f"   Duration: {har_data.get('log', {}).get('recording_duration', 0):.2f}s")
+                
+                save = input("\n💾 Save HAR to file? (y/n): ").strip().lower()
+                if save == 'y':
+                    filename = f"har_recording_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+                    with open(filename, 'w') as f:
+                        json.dump(har_data, f, indent=2)
+                    print(f"✅ Saved to {filename}")
+
+        elif choice == "15":
+            xss_results = chrome.detect_xss_vulnerabilities(tab_index)
+            if xss_results:
+                save = input("\n💾 Save XSS scan results to file? (y/n): ").strip().lower()
+                if save == 'y':
+                    filename = f"xss_scan_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+                    with open(filename, 'w') as f:
+                        json.dump(xss_results, f, indent=2)
+                    print(f"✅ Saved to {filename}")
+
+        elif choice == "16":
+            print("\n🕰️ DOM Time-Travel Setup:")
+            try:
+                interval = int(input("📊 Snapshot interval (seconds, default 5): ").strip() or "5")
+                duration = int(input("⏱️ Total duration (seconds, default 60): ").strip() or "60")
+                
+                snapshots = chrome.capture_dom_snapshot_history(tab_index, interval, duration)
+                if snapshots:
+                    print(f"\n✅ Captured {len(snapshots)} snapshots")
+                    
+                    save = input("\n💾 Save snapshots to file? (y/n): ").strip().lower()
+                    if save == 'y':
+                        filename = f"dom_timeline_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+                        with open(filename, 'w') as f:
+                            json.dump(snapshots, f, indent=2, default=str)
+                        print(f"✅ Saved to {filename}")
+                    
+                    if len(snapshots) >= 2:
+                        print("\n📊 Diff Analysis:")
+                        diff = chrome.diff_snapshots(snapshots[0], snapshots[-1])
+                        if diff:
+                            print(f"   Total changes: {len(diff['changes'])}")
+                            if diff['changes']:
+                                print("   Sample changes:")
+                                for change in diff['changes'][:5]:
+                                    print(f"     - {change.get('type')} at {change.get('path', 'root')}")
+            except ValueError:
+                print("❌ Invalid input. Please enter numbers.")
+
+        elif choice == "17":
+            print("\n🎯 Element Selector Generator:")
+            try:
+                # First, find elements
+                elements = chrome.find_interactive_elements(tab_index)
+                if not elements:
+                    print("❌ No interactive elements found")
+                    continue
+                    
+                print("\n📋 Available elements:")
+                for i, elem in enumerate(elements[:15]):
+                    text = elem.get('text', '')[:30]
+                    tag = elem.get('tag', 'unknown')
+                    print(f"  [{i}] {tag}: {text}")
+                if len(elements) > 15:
+                    print(f"  ... and {len(elements)-15} more")
+                    
+                elem_idx = int(input("\nEnter element index: ").strip())
+                chrome.generate_element_selector(elem_idx, tab_index)
+            except ValueError:
+                print("❌ Invalid input. Please enter a number.")
+
+        elif choice == "18":
+            try:
+                max_events = int(input("📊 Max events to record (default 1000): ").strip() or "1000")
+                result = chrome.start_session_recording(tab_index, max_events)
+                if result:
+                    print("\n🎬 Session recording started!")
+                    print("   All clicks, inputs, and scrolls will be recorded.")
+                    print("   Use option 19 to stop and export.")
+            except ValueError:
+                print("❌ Invalid input. Please enter a number.")
+
+        elif choice == "19":
+            events = chrome.stop_session_recording(tab_index)
+            if events:
+                print(f"\n✅ Recorded {len(events)} events")
+                
+                save = input("\n💾 Save recording to file? (y/n): ").strip().lower()
+                if save == 'y':
+                    filename = f"session_recording_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+                    with open(filename, 'w') as f:
+                        json.dump(events, f, indent=2)
+                    print(f"✅ Saved to {filename}")
+
+        elif choice == "20":
+            data = chrome.extract_all_data(tab_index)
+            if data:
+                save = input("\n💾 Save extracted data to file? (y/n): ").strip().lower()
+                if save == 'y':
+                    filename = f"page_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+                    with open(filename, 'w') as f:
+                        json.dump(data, f, indent=2, default=str)
+                    print(f"✅ Saved to {filename}")
+
+        elif choice == "21":
+            ecommerce_data = chrome.extract_ecommerce_data(tab_index)
+            if ecommerce_data:
+                print(f"\n🛒 E-Commerce Data Extracted!")
+                if ecommerce_data.get('products'):
+                    print("\n📦 Sample Products:")
+                    for product in ecommerce_data['products'][:5]:
+                        print(f"   - {product.get('name', 'Unknown')}: ${product.get('price', 'N/A')}")
+                
+                save = input("\n💾 Save e-commerce data to file? (y/n): ").strip().lower()
+                if save == 'y':
+                    filename = f"ecommerce_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+                    with open(filename, 'w') as f:
+                        json.dump(ecommerce_data, f, indent=2, default=str)
+                    print(f"✅ Saved to {filename}")
+
+        elif choice == "8":
+            chrome.list_tabs()
+
+        elif choice == "9":
+            chrome.tabs = []
+            chrome.ws_url = None
+            chrome._dom_enabled = False
+            chrome._css_enabled = False
+            chrome._ax_enabled = False
+            tabs = chrome.get_tabs()
+            chrome.list_tabs()
+            tab_input = input(f"\n📑 Select tab (0-{len(chrome.tabs)-1}): ").strip()
+            if tab_input:
+                tab_index = int(tab_input)
+                ws_url = chrome.get_websocket_url(tab_index)
+                if ws_url:
+                    print(f"✅ Switched to tab {tab_index}")
+                else:
+                    print(f"❌ Invalid tab index")
+
+        elif choice == "10":
+            chrome.interactive_element_explorer(tab_index)
+
+        elif choice == "11":
+            print("\n🚀 Generate Custom Interaction Script")
+            print("-" * 60)
+
+            # First find elements
+            elements = chrome.find_interactive_elements(tab_index)
+            if not elements:
+                print("❌ No interactive elements found")
+                continue
+
+            print("\n📋 Available elements:")
+            for i, elem in enumerate(elements[:20]):
+                text = elem.get('text', '')[:40]
+                tag = elem.get('tag', 'unknown')
+                handler = "⚡" if elem.get('hasClickHandler') else "  "
+                print(f"  [{i:2d}] {handler} {tag:10s}: {text}")
+            if len(elements) > 20:
+                print(f"  ... and {len(elements)-20} more")
+
+            print("\n📌 Enter element indices (comma-separated, range, or 'all'):")
+            print("  Example: 1,3,5")
+            print("  Example: 5-10")
+            print("  Example: all")
+            indices_input = input("Indices: ").strip()
+
+            selected_indices = []
+
+            if indices_input.lower() == 'all':
+                selected_indices = list(range(len(elements)))
+            elif '-' in indices_input:
+                try:
+                    parts = indices_input.split('-')
+                    if len(parts) == 2:
+                        start = int(parts[0].strip())
+                        end = int(parts[1].strip())
+                        selected_indices = list(range(start, end + 1))
+                except:
+                    print("❌ Invalid range format")
+                    continue
+            else:
+                try:
+                    selected_indices = [int(x.strip()) for x in indices_input.split(',') if x.strip()]
+                except:
+                    print("❌ Invalid indices format")
+                    continue
+
+            if not selected_indices:
+                print("❌ No valid indices selected")
+                continue
+
+            # Filter to valid indices
+            selected_indices = [i for i in selected_indices if 0 <= i < len(elements)]
+
+            if not selected_indices:
+                print("❌ No valid indices in range")
+                continue
+
+            print(f"\n✅ Selected {len(selected_indices)} elements:")
+            for idx in selected_indices[:10]:
+                elem = elements[idx]
+                print(f"  [{idx}] {elem.get('tag')}: {elem.get('text')[:40]}")
+            if len(selected_indices) > 10:
+                print(f"  ... and {len(selected_indices)-10} more")
+
+            chrome.generate_interaction_script(tab_index, selected_indices)
+
+        else:
+            print("❌ Invalid choice")
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\n👋 Interrupted. Goodbye!")
+        sys.exit(0)
+    except Exception as e:
+        print(f"\n❌ Error: {e}")
+        import traceback
+        traceback.print_exc()

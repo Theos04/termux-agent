@@ -1,0 +1,57 @@
+{
+  "cycle": 20,
+  "goal_achieved": false,
+  "best_reward": 10.35,
+  "discovery_count": 6,
+  "q_stats": {
+    "state_count": 3,
+    "total_q_values": 90,
+    "exploration_rate": 0.6364093831077713,
+    "learning_rate": 0.22499999999999998,
+    "total_actions": 90,
+    "unique_actions": 90,
+    "consecutive_repeats": 3,
+    "stuck_count": 3,
+    "episodes": 19,
+    "successful_episodes": 19,
+    "avg_reward": 4.855263157894737,
+    "max_reward": 10.35,
+    "min_reward": 4.05
+  },
+  "reward_progress": [
+    4.35,
+    4.35,
+    5.85,
+    4.35,
+    5.85,
+    4.05,
+    4.05,
+    4.05,
+    4.05,
+    4.05,
+    10.35,
+    5.55,
+    4.05,
+    5.55,
+    4.05,
+    5.55,
+    4.05,
+    4.05,
+    4.05
+  ],
+  "episodes": 19,
+  "best_path": {
+    "actions": [
+      "click|Graphic Design Internship|authentication",
+      "click|Graphic Design Internship|authentication",
+      "click|Graphic Design Internship|authentication",
+      "click|Graphic Design Internship|authentication",
+      "click|More|pagination"
+    ],
+    "reward": 10.35,
+    "cycle": 11
+  },
+  "success_count": 19,
+  "visited_urls": [],
+  "timestamp": "2026-08-01T12:31:08.272314"
+}

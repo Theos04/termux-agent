@@ -1,0 +1,38 @@
+{
+  "accessibility": [
+    {
+      "filename": "a11y_040606_106343.json",
+      "timestamp": "2026-08-01T04:06:06.106481",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_040619_350036.json",
+      "timestamp": "2026-08-01T04:06:19.350176",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    }
+  ],
+  "dom_trees": [
+    {
+      "filename": "dom_040607_604673.json",
+      "timestamp": "2026-08-01T04:06:07.604820",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_040620_999096.json",
+      "timestamp": "2026-08-01T04:06:20.999234",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ]
+}

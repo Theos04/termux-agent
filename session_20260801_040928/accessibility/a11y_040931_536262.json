@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "session_id": "20260801_040928",
+    "timestamp": "2026-08-01T04:09:31.536625",
+    "tab_url": "https://www.naukri.com/sitemap/sitemap.php",
+    "tab_title": "HTML Sitemap - Naukri.com",
+    "context": {
+      "method": "Accessibility.getFullAXTree"
+    },
+    "node_count": 3,
+    "command_index": 16
+  },
+  "data": {
+    "nodes": [
+      {
+        "nodeId": "2719",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "RootWebArea"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 144
+        },
+        "name": {
+          "type": "computedString",
+          "value": "HTML Sitemap - Naukri.com",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label",
+              "superseded": true
+            },
+            {
+              "type": "relatedElement",
+              "value": {
+                "type": "computedString",
+                "value": "HTML Sitemap - Naukri.com"
+              },
+              "nativeSource": "title"
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "focused",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "busy",
+            "value": {
+              "type": "boolean",
+              "value": 1
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.naukri.com/sitemap/sitemap.php"
+            }
+          }
+        ],
+        "childIds": [
+          "2720"
+        ],
+        "backendDOMNodeId": 2719,
+        "frameId": "36AA1851ED99D4DE2D2CF606616A99F6"
+      },
+      {
+        "nodeId": "2720",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "2719",
+        "childIds": [
+          "2736"
+        ],
+        "backendDOMNodeId": 2720
+      },
+      {
+        "nodeId": "2736",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "2720",
+        "childIds": [],
+        "backendDOMNodeId": 2736
+      }
+    ]
+  }
+}

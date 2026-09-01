@@ -1,0 +1,2189 @@
+{
+  "metadata": {
+    "session_id": "20260821_221447",
+    "timestamp": "2026-08-21T22:15:23.378946",
+    "tab_url": "https://www.reddit.com/",
+    "tab_title": "Reddit - The heart of the internet",
+    "context": {
+      "patterns": [
+        "EMAIL",
+        "URL",
+        "PHONE",
+        "UUID"
+      ]
+    },
+    "pattern_count": 4,
+    "total_matches": 0,
+    "command_index": 5
+  },
+  "data": {
+    "patterns": {
+      "EMAIL": [],
+      "URL": [],
+      "PHONE": [],
+      "UUID": []
+    },
+    "detailed": {
+      "EMAIL": [
+        {
+          "value": "9f057df6115a4bb488c08ea12a835e6e@error-tracking.reddit.com",
+          "start": 4976,
+          "end": 5034,
+          "groups": {}
+        },
+        {
+          "value": "112489a1da354154aa9116028b27ed7b@error-tracking.reddit.com",
+          "start": 359362,
+          "end": 359420,
+          "groups": {}
+        }
+      ],
+      "URL": [
+        {
+          "value": "https://ogp.me/ns#",
+          "start": 163,
+          "end": 181,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/favicon/192x192.png",
+          "start": 1147,
+          "end": 1211,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/",
+          "start": 1510,
+          "end": 1533,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/favicon/192x192.png",
+          "start": 1615,
+          "end": 1679,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/",
+          "start": 1814,
+          "end": 1837,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/discover.rss",
+          "start": 1937,
+          "end": 1972,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/",
+          "start": 2050,
+          "end": 2079,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/",
+          "start": 2145,
+          "end": 2174,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/svc/events/preload-head?renderId=32608e72-65dd-4d71-b90f-2011cbe75366&amp;pageType=home",
+          "start": 2232,
+          "end": 2342,
+          "groups": {}
+        },
+        {
+          "value": "https://www.gstatic.com/recaptcha/releases/xg_pWYS8-HRESiV6Rdg4aY_R/recaptcha__en.js",
+          "start": 2421,
+          "end": 2505,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/svc/events/preload-head?renderId=32608e72-65dd-4d71-b90f-2011cbe75366&pageType=home",
+          "start": 2699,
+          "end": 2805,
+          "groups": {}
+        },
+        {
+          "value": "https://lit.dev/docs/api/LitElement/#LitElement.styles",
+          "start": 4049,
+          "end": 4103,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com",
+          "start": 4247,
+          "end": 4269,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/",
+          "start": 4392,
+          "end": 4421,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/",
+          "start": 4443,
+          "end": 4481,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/",
+          "start": 4513,
+          "end": 4551,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat",
+          "start": 4580,
+          "end": 4618,
+          "groups": {}
+        },
+        {
+          "value": "https://w3-reporting.reddit.com/reports",
+          "start": 4658,
+          "end": 4697,
+          "groups": {}
+        },
+        {
+          "value": "https://devvit-gateway.reddit.com",
+          "start": 4724,
+          "end": 4757,
+          "groups": {}
+        },
+        {
+          "value": "https://9f057df6115a4bb488c08ea12a835e6e@error-tracking.reddit.com/o418887/5810803",
+          "start": 4968,
+          "end": 5050,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat",
+          "start": 54912,
+          "end": 54950,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=C7C5MjAIvC,mdusrK3uu9",
+          "start": 55101,
+          "end": 55186,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/experiences-renderer-client-css-OJSYAmcy.css",
+          "start": 55295,
+          "end": 55377,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/action-bar-client-css-Bux5jrvN.css",
+          "start": 55408,
+          "end": 55480,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/comment-preview-unit-client-css-CES0qfzD.css",
+          "start": 55511,
+          "end": 55593,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/search-sdui-post-client-css-0B8IOQg7.css",
+          "start": 55624,
+          "end": 55702,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/search-sdui-answers-preview-client-css-CW4kZZH8.css",
+          "start": 55733,
+          "end": 55822,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/search-input-desktop-client-css-DBPFc5WK.css",
+          "start": 55853,
+          "end": 55935,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/human-verification-dialog-client-css-DzNZyEjU.css",
+          "start": 55966,
+          "end": 56053,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/notifications-inbox-client-css-BfS9bLyt.css",
+          "start": 56084,
+          "end": 56165,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/header-large-client-css-Du4QHoPm.css",
+          "start": 56196,
+          "end": 56270,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/header-client-css-0q6V8RwT.css",
+          "start": 56301,
+          "end": 56369,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/hui-grid-client-css-ocX_mC3X.css",
+          "start": 56400,
+          "end": 56470,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/ads-rbl-survey-client-css-B_SY1GJM.css",
+          "start": 56501,
+          "end": 56577,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/styles-css-D5x5FsAx.css",
+          "start": 56617,
+          "end": 56678,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/favicon/64x64.png",
+          "start": 292457,
+          "end": 292519,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/favicon/128x128.png",
+          "start": 292570,
+          "end": 292634,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/favicon/192x192.png",
+          "start": 292687,
+          "end": 292751,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/favicon/76x76.png",
+          "start": 292804,
+          "end": 292866,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/favicon/120x120.png",
+          "start": 292920,
+          "end": 292984,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/favicon/152x152.png",
+          "start": 293040,
+          "end": 293104,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/favicon/180x180.png",
+          "start": 293160,
+          "end": 293224,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/favicon/manifest.json",
+          "start": 293311,
+          "end": 293377,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=-0oJe1P8AF,2RXAv_rjB5,4elSaZH8xD,564Klh1Ggj,7b63CFSH9q,8GlTXF_uYU,Aq0wavIxn3,B0ZH-0l9za,B0rbx7cyiN,B1CUJMThI8,B1VbwVCOpB,B1a6wTz7F2,B2KPTcvWuD,B6A7btTMhZ,B6NlbwCGfe,B6VkR4FsBn,B79C6R5DI-,B89QtfhB11,B9N9np7ReP,BAfPg8zgqe,BAlrATKeX2,BAr_2M9m9u,BDERGLR0a5,BEfIgFMhkC,BEl6BkbuDW,BF-tX6gVR9,BFcmnQ4R8q,BHKOmfpAsz,BHOncKxE8d,BHr-qhnX_s,BJ4nLwM7JQ,BJDMIp20Kd,BJJdykHqaJ,BJVmKioNZ0,BKNLEDgLs3,BPq_mLpglr,BQP1BNYjDL,BRSrKFGka3,BReDecJdBJ,BSsEDc6pfs,BTe8BIBJqz,BUJfSyA35u,BUlz6Y5ELd,BViUpdh8fD,BW8BC7E8i8,BWt1wQinBt,BX8pu3iLCU,BYTNmflTWY,B_RqL5JpZ0,Bcb-CyzJkK,Bd0B16WOrZ,Bd9oG-ccf7,BdQq2MkIVI,BddJcE9NLh,Bf5vzaViXA,BfeIs4TOpA,BgPMZGQTRP,BhU94r8KKh,BkfvZsuzid,BnT74Gbm-b,BqJUCs45gC,Bqo4GFoT7K,BrNIFk_Nii,Brq4-mpgCz,BuKmHgmoAA,BvPkRoE08M,BvWNOQIc4u,BwGRDhIYAL,BxdkLqzgMa,By-jUDMuv3,By2AJxkBCg,ByvpBbXcV2,C2ZtEDh2wh,C5wKwvEtI-,C6M57TSbm9,C9r3D2Pu-s,C9szpcJD12,CEAxDXEy1O,CEX_grTtQ3,CHnj_Oz3j2,CIMVcPviBw,CIuoRyJIWC,CIvIvDzsG1,CJ1vEESKwJ,CK9VceAyu4,CLa_jC-9K8,CM-tgXXAcZ,CP3tCVAeTT,CPFI1WKcL5,CQ86DstHXM,CRr0exdPOH,CS13SvKA3k,CSfLwHJmpj,CT5GxpEOVx,CT85br_xep,CU4tkzcmmc,CVyhduUMQ3,CWg1tPJKbH,CY3xVJD7VQ,CYN_bntlvI,CZBOWm85R2,CZbHkL2jeE,C_Fji335pi,C_IJdn7__m,CcYumuDuN9,Ccw5UzlnAc,Cdrcw7qRWv,Cf5RRnckw_,CfGYMYdFJ2,CgCLZcYnd8,CgP2g0p-yf,CgaZkpJka2,CgmXj2zi09,ChQtR1FtXO,CidGekMODR,CiyVHInWNn,CjC6l5simf,Ck3X9Q4FWh,CkJpvBDoO9,Ckha6Ry9N5,CliaIrgCYx,CmkWW1TdWj,CnYz0b9L5B,Co-yAGRJx2,CoM6tXCUmL,CrDUBcbc34,Cs6IyiUBNv,Ct1JSE3npr,CtnfkLYgdV,CvOjGMHE5i,CvQ62k4VLt,Cy7ZSlCnk2,CyjWpnjf9v,Cz0PZ8JGus,D1OozUiTDI,D2ybOru8JV,D3pE70faMO,D49A_55Mkg,D4Rw0m7CYn,D6sFLy9g9I,D8akl9B08Y,DAQbrqlcwy,DBJJf4Mbnp,DD5ScBLfUe,DDOY5WqqCl,DDRPI8zUXA,DFTLYPolHv,DLTN6xH7IT,DNijWffL_e,DOzTtIjkXV,DQ3EPHStLS,DQElWQfrmX,DRogEP4iCc,DSm4Kh2nq2,DT0M17jqmu,DT5sJYIo0O,DTVI8eFPKm,DTd6p03Zds,DTsGZHwFaT,DVjkG2H4kd,DWbKuoWZ8D,DaNePvXF77,DaZBXmfmih,DbVjXBU2Pr,DcHYyoOaQR,Deck8km6vL,DerJsYH6pz,Df_KEkdj3r,DgH2g3Cu4j,Dkv2OTEQO5,Dl-5wR_ySV,DlI0CY9db-,DltmSlhIFV,DlysxD2kWw,Dm3VD__R1I,DnmZCWB4SZ,DoLbwQVv8A,DogIeJuhIi,DpEsU8OFSD,Drrg6O9gne,DsFMQDJlO5,DsRarWlGHG,Dts153iOq9,DwNCRTdZe8,FJVWk4hz1F,GclIDesJdP,HQUEaVMudO,J2g_28ARRe,K1hBsqffWV,NNrem9Pkvu,PFrioPoWvL,PGEOgA62lJ,QoKGQnMTw3,R6hHJpWYCs,R97-nhuCte,RRO4hhPO47,SXBPL_Y9Tk,TIHXSxk7Uw,VLM9fi8aeM,Vo5kD6a-Jo,Vrh692qYoj,W6hyS8BHYe,Wef8r6dnwj,X2dkYoPlLK,X9JPZgw0TG,YBmZhHiW91,ZCPAxS9L7G,aAuDTm6uhq,bLmHIsjkyA,bh87Uvak42,eDcr-IlJnB,eQWAkrqHB6,f7sFAKtdg2,hcTCoqdqu9,iG022VeOuX,j7wnq1Dj_4,l-IGlA2UBF,l0cANNhlkJ,o0qSjb6Ahc,oabm6GYlt9,ohj6iE5-pS,ov6hWVPdYo,p5vvvxIQuy,qny5416diM,r0Eeiai5gb,rGTTYChMTT,scEMMaCprI,tf_hefJPgF,vhwnr0f638,wGAsqN3V-R,wIyoRL58he,yHDoGODcPU,zLSsxKxgSX",
+          "start": 293560,
+          "end": 296186,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=6jZUh1KuPy,BAlNvUL6a7,BV6kVQHpZS,Bo93bwgfrp,BwPdUKW3ji,BzeSQtErmo,C30tP9NXdH,C4mPeSBInC,CP47YEmGZV,CjPcGG3MqI,Cku_mvKSPX,D1b0rEoTsQ,D1rc5IDScX,DAcb3mdwOv,DX6Tuy98G3,DiR0qOKI6q,DouwGbj8L_,Dtrlig13bv,HJ4P44Pvpt,PO8LJatGp8,YMtBuWyXFP,n3gZXBG2Zl,rpA_F9n3Sa,y_K9yfaff6",
+          "start": 296277,
+          "end": 296604,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=0OAGtvtMWK,B4e77z48Ef,BKABtXmQth,BLhOySo_SM,BosB_ZwQiE,CBfkYbIow5,CI5NFah8Pt,CKgLWZcMSo,CgYHPxla5k,ChJySCAFCI,Cmo7FJJXe_,Cnrrci8SC0,CpYMVvrbcd,CqLb0W7EDQ,D39jca7GkT,DDATuwijFv,DWJ8Tic-vh,DbLyvXxcN1,nCRU_ETw5X,oWxxAZJJla,uHd4Aa53zv",
+          "start": 296695,
+          "end": 296989,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=DI6vbEgQIy,DM6xAhgfde,DiznOZoSd4,LmwHjoKm00,V_T4s7pdri",
+          "start": 297080,
+          "end": 297198,
+          "groups": {}
+        },
+        {
+          "value": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/788729857/?random=1787330513053&amp;cv=11&amp;fst=1787330513053&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be68j1h2v9217137991za200zd9217137991xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=115616985~115938466~115938468~118897920~118897930~119367802~119367810~120315470~120385422&amp;u_w=1366&amp;u_h=768&amp;url=https%3A%2F%2Fwww.reddit.com%2F&amp;rcb=9&amp;frm=0&amp;tiba=Reddit%20-%20The%20heart%20of%20the%20internet&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1730210716.1782056195&amp;uaa=arm&amp;uab=64&amp;uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Linux&amp;uapv=&amp;uaw=0&amp;data=event%3Dgtag.config&amp;ept=9&amp;rfmt=3&amp;fmt=4",
+          "start": 297871,
+          "end": 298671,
+          "groups": {}
+        },
+        {
+          "value": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/788729857/?random=1787330513372&amp;cv=11&amp;fst=1787330513372&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=page_view&amp;gtm=45be68j1h2v9217137991za200zd9217137991xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=115616985~115938466~115938468~118897920~118897930~119367802~119367810~120315470~120385422&amp;u_w=1366&amp;u_h=768&amp;url=https%3A%2F%2Fwww.reddit.com%2F&amp;rcb=9&amp;frm=0&amp;tiba=Reddit%20-%20The%20heart%20of%20the%20internet&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1730210716.1782056195&amp;uaa=arm&amp;uab=64&amp;uafvl=Chromium%3B149.0.7827.155%7CNot)A%253BBrand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Linux&amp;uapv=&amp;uaw=0&amp;data=event%3Dpage_view%3Buser_status%3Dlogged_in&amp;ept=9&amp;rfmt=3&amp;fmt=4",
+          "start": 298736,
+          "end": 299558,
+          "groups": {}
+        },
+        {
+          "value": "https://accounts.google.com/gsi/style",
+          "start": 309426,
+          "end": 309463,
+          "groups": {}
+        },
+        {
+          "value": "https://pi.reddit.com/v4/p",
+          "start": 311097,
+          "end": 311123,
+          "groups": {}
+        },
+        {
+          "value": "https://www.googletagmanager.com/gtag/js?id=AW-788729857",
+          "start": 314126,
+          "end": 314182,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 322707,
+          "end": 322733,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/",
+          "start": 324437,
+          "end": 324460,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 324557,
+          "end": 324583,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 329862,
+          "end": 329888,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/1999/xlink",
+          "start": 329946,
+          "end": 329974,
+          "groups": {}
+        },
+        {
+          "value": "https://ads.reddit.com/register?utm_source=web3x_consumer&amp;utm_name=nav_cta",
+          "start": 339965,
+          "end": 340043,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 340274,
+          "end": 340300,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 344516,
+          "end": 344542,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 346300,
+          "end": 346326,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 349878,
+          "end": 349904,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png",
+          "start": 352421,
+          "end": 352490,
+          "groups": {}
+        },
+        {
+          "value": "https://matrix.redditspace.com",
+          "start": 357466,
+          "end": 357496,
+          "groups": {}
+        },
+        {
+          "value": "https://chat.reddit.com",
+          "start": 358926,
+          "end": 358949,
+          "groups": {}
+        },
+        {
+          "value": "https://112489a1da354154aa9116028b27ed7b@error-tracking.reddit.com/o418887/4504057396854784",
+          "start": 359354,
+          "end": 359445,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/human-verification-dialog-client-css-DzNZyEjU.css",
+          "start": 360516,
+          "end": 360603,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/award-dialog-client-css-DqycbD7p.css",
+          "start": 363095,
+          "end": 363169,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 378742,
+          "end": 378768,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 380125,
+          "end": 380151,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 383291,
+          "end": 383317,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 384191,
+          "end": 384217,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/gallery/1vt687n",
+          "start": 400961,
+          "end": 400999,
+          "groups": {}
+        },
+        {
+          "value": "https://i.redd.it/snoovatar/snoo_assets/marketing/Heartwarming_40.png",
+          "start": 401194,
+          "end": 401263,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfZWI5NTlhNzE1ZGZmZmU2ZjgyZjQ2MDU1MzM5ODJjNDg1OWNiMTRmZV8yNDExMTY4Nw_rare_ddab5fbc-2914-454d-8c1f-f353f7854f24-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=7daeed48d4afba8885316d90563f20dd15e18118",
+          "start": 401925,
+          "end": 402213,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 402982,
+          "end": 403008,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/interesting/comments/1vt687n/a_couple_on_a_japanese_bullet_train_noticed_a/",
+          "start": 404115,
+          "end": 404215,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/interesting/",
+          "start": 405234,
+          "end": 405271,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2qib0/styles/communityIcon_s4g0fz2yssma1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;s=84916159fab79ec753c01095d7f555289e3f76b0",
+          "start": 405771,
+          "end": 405945,
+          "groups": {}
+        },
+        {
+          "value": "https://emoji.redditmedia.com/dhbi1omcaezz_t5_3nqvj/snoo_simple_smile",
+          "start": 407046,
+          "end": 407115,
+          "groups": {}
+        },
+        {
+          "value": "https://emoji.redditmedia.com/dhbi1omcaezz_t5_3nqvj/snoo_simple_smile",
+          "start": 407418,
+          "end": 407487,
+          "groups": {}
+        },
+        {
+          "value": "https://i.redd.it/snoovatar/snoo_assets/marketing/Heartwarming_40.png",
+          "start": 410315,
+          "end": 410384,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 411736,
+          "end": 411762,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/interesting/comments/1vt687n/a_couple_on_a_japanese_bullet_train_noticed_a/",
+          "start": 412187,
+          "end": 412287,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-bc8u5etysfkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=45db243e08f0d38d43b49daf1887bc029babb1e9",
+          "start": 416047,
+          "end": 416233,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-bc8u5etysfkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=5b42603ef47044c07c9452f6e855959d8af39cda",
+          "start": 416269,
+          "end": 416455,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-bc8u5etysfkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=45db243e08f0d38d43b49daf1887bc029babb1e9",
+          "start": 416462,
+          "end": 416648,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-bc8u5etysfkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=5103987a9f8fb0b0656130c7d688b6e3c2b2c650",
+          "start": 416655,
+          "end": 416842,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-bc8u5etysfkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=45db243e08f0d38d43b49daf1887bc029babb1e9",
+          "start": 417138,
+          "end": 417324,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-bc8u5etysfkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=5b42603ef47044c07c9452f6e855959d8af39cda",
+          "start": 417360,
+          "end": 417546,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-bc8u5etysfkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=45db243e08f0d38d43b49daf1887bc029babb1e9",
+          "start": 417553,
+          "end": 417739,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-bc8u5etysfkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=5103987a9f8fb0b0656130c7d688b6e3c2b2c650",
+          "start": 417746,
+          "end": 417933,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-2p61vetysfkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=ac7f86ac5f40eebb1f28463c8f6efcf4d7402fe2",
+          "start": 418747,
+          "end": 418933,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-2p61vetysfkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=ceaf7d63697f150acda662baf74b10a74d630755",
+          "start": 418943,
+          "end": 419129,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-2p61vetysfkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=ac7f86ac5f40eebb1f28463c8f6efcf4d7402fe2",
+          "start": 419136,
+          "end": 419322,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-2p61vetysfkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=cd58d75b91decb4ef924440a1ad437853723e10b",
+          "start": 419329,
+          "end": 419516,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-2p61vetysfkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=ac7f86ac5f40eebb1f28463c8f6efcf4d7402fe2",
+          "start": 419941,
+          "end": 420127,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-2p61vetysfkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=ceaf7d63697f150acda662baf74b10a74d630755",
+          "start": 420137,
+          "end": 420323,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-2p61vetysfkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=ac7f86ac5f40eebb1f28463c8f6efcf4d7402fe2",
+          "start": 420330,
+          "end": 420516,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/a-couple-on-a-japanese-bullet-train-noticed-a-passenger-v0-2p61vetysfkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=cd58d75b91decb4ef924440a1ad437853723e10b",
+          "start": 420523,
+          "end": 420710,
+          "groups": {}
+        },
+        {
+          "value": "https://alb.reddit.com/i.gif?za=7jaJi2v_c--L4icN93Wh1i66pDZ_M75X6HAbJkdR4x6DfQrol_8Eg0yAmUnRFjqHyNVmhcIT2oJBF4SVhBk_aOqNVwdJi2IYI4eBBoxJeRty-KtWzYpBQZADX3BODxkh3Q4KW-ZebA-NRsns2NJ6AIrSgxRvvKv-rDaRlN5Z4L257jXbOochRX_5r-GLKHvGAtDGAB5TAG5Ey30vo6LGdDNVJ9n4TZD-1FPYFchxH8B2kzR8l__kRv0FBYhm8YUwmx-me4e3FDdJG9jvW1XKUC2szFj9jFlCMgCuqIFFw5tKcVa131UYlYwsiE8XxZYjwqzxujVic9V5raMkeovRog_hAri5U7dAiOF17ojBh0FJmE8H9lCgiIR-lApF2BqRvKIPa8XXrw7JxKw3808RtQMW7hqkAVpZrwutsh3zOoI4F2oL9nNUyvr9NntisgCYKNAYqATa95HlD_QXfeBM7CjQu8JCqxld2j0IjvJgZdzivE03wPHdqq2HhfgCxKhshA_u38RnP3rX6eWcHiMBBwTlPRr6ojV6tHENG9wID-g3v2QdODl476MLPpo-8n5EzXM_r804bPynYDV0RuG4Y_ggumxOhmJCML_DC_woUVn8yikrVMzPb4AChtvhps_v68izfPB5zyfcMgYYl81_NamTA77YvZXJzMs1oMsKZ8Q66oCAJaY4fw0etdSPiVWHyLTkKEolh-HFQY_YUrVa3lM3O0J2uw&amp;zp=H_tA9nx5o7YBFxNhPs8FcHCqGCBFLbaoqc-UPhL6qYE2sGDY_V0yKBtC1dYI1mAvAq9AG-Ozk8Chgq95lkjroHqtJ9WrLHDrTnxGa8he-jZoEQK0FNQyrRmpVaPzFA&quot;,&quot;encryptedTrackingId&quot;:null",
+          "start": 422236,
+          "end": 423179,
+          "groups": {}
+        },
+        {
+          "value": "https://alb.reddit.com/i.gif?za=7jaJi2v_c--L4icN93Wh1i66pDZ_M75X6HAbJkdR4x6DfQrol_8Eg0yAmUnRFjqHyNVmhcIT2oJBF4SVhBk_aOqNVwdJi2IYI4eBBoxJeRty-KtWzYpBQZADX3BODxkh3Q4KW-ZebA-NRsns2NJ6AIrSgxRvvKv-rDaRlN5Z4L257jXbOochRX_5r-GLKHvGAtDGAB5TAG5Ey30vo6LGdDNVJ9n4TZD-1FPYFchxH8B2kzR8l__kRv0FBYhm8YUwmx-me4e3FDdJG9jvW1XKUC2szFj9jFlCMgCuqIFFw5tKcVa131UYlYwsiE8XxZYjwqzxujVic9V5raMkeovRog_hAri5U7dAiOF17ojBh0FJmE8H9lCgiIR-lApF2BqRvKIPa8XXrw7JxKw3808RtQMW7hqkAVpZrwutsh3zOoI4F2oL9nNUyvr9NntisgCYKNAYqATa95HlD_QXfeBM7CjQu8JCqxld2j0IjvJgZdzivE03wPHdqq2HhfgCxKhshA_u38RnP3rX6eWcHiMBBwTlPRr6ojV6tHENG9wID-g3v2QdODl476MLPpo-8n5EzXM_r804bPynYDV0RuG4Y_ggumxOhmJCML_DC_woUVn8yikrVMzPb4AChtvhps_v68izfPB5zyfcMgYYl81_NamTA77YvZXJzMs1oMsKZ8Q66oCAJaY4fw0etdSPiVWHyLTkKEolh-HFQY_YUrVa3lM3O0J2uw&amp;zp=peSfAqdspwB4ATvkGPf3cW56eMSxKmIRRBCUYssFFo_JEP2qOhVTOb3CaSiCTjzHSsPVvyElNbzaF7_yFxYrvpmZV3pxYMj0X-5rmv2W_95pKQcG7MaabRzqy2Swmae9_9E3o4nuD17yTKvCAlEUwvJjm1O_-OLuFjhXWhKVSV6AVvYCUmpSHYakijk0vF5o&quot;,&quot;encryptedTrackingId&quot;:null",
+          "start": 423259,
+          "end": 424268,
+          "groups": {}
+        },
+        {
+          "value": "https://alb.reddit.com/i.gif?za=7jaJi2v_c--L4icN93Wh1i66pDZ_M75X6HAbJkdR4x6DfQrol_8Eg0yAmUnRFjqHyNVmhcIT2oJBF4SVhBk_aOqNVwdJi2IYI4eBBoxJeRty-KtWzYpBQZADX3BODxkh3Q4KW-ZebA-NRsns2NJ6AIrSgxRvvKv-rDaRlN5Z4L257jXbOochRX_5r-GLKHvGAtDGAB5TAG5Ey30vo6LGdDNVJ9n4TZD-1FPYFchxH8B2kzR8l__kRv0FBYhm8YUwmx-me4e3FDdJG9jvW1XKUC2szFj9jFlCMgCuqIFFw5tKcVa131UYlYwsiE8XxZYjwqzxujVic9V5raMkeovRog_hAri5U7dAiOF17ojBh0FJmE8H9lCgiIR-lApF2BqRvKIPa8XXrw7JxKw3808RtQMW7hqkAVpZrwutsh3zOoI4F2oL9nNUyvr9NntisgCYKNAYqATa95HlD_QXfeBM7CjQu8JCqxld2j0IjvJgZdzivE03wPHdqq2HhfgCxKhshA_u38RnP3rX6eWcHiMBBwTlPRr6ojV6tHENG9wID-g3v2QdODl476MLPpo-8n5EzXM_r804bPynYDV0RuG4Y_ggumxOhmJCML_DC_woUVn8yikrVMzPb4AChtvhps_v68izfPB5zyfcMgYYl81_NamTA77YvZXJzMs1oMsKZ8Q66oCAJaY4fw0etdSPiVWHyLTkKEolh-HFQY_YUrVa3lM3O0J2uw&amp;zp=6Io_1oTRlDSouFr_VWrhdIPHqLBdaBs946Qgri93wSj1jBo97Qdllt4AI7JryTVYjLp9lZ_ACq899hQuv_gA6xEN1q2rqirAAMtylVfKhzHevO71_R-S-i9h2aEeWKTE1XcjU4ecUdKoyaZVTaTHo1xR21a7TnnpyyFoxB0Vq9iCQIXLOrBDodkfzXgV6BHw&quot;,&quot;encryptedTrackingId&quot;:null",
+          "start": 424352,
+          "end": 425361,
+          "groups": {}
+        },
+        {
+          "value": "https://alb.reddit.com/i.gif?za=7jaJi2v_c--L4icN93Wh1i66pDZ_M75X6HAbJkdR4x6DfQrol_8Eg0yAmUnRFjqHyNVmhcIT2oJBF4SVhBk_aOqNVwdJi2IYI4eBBoxJeRty-KtWzYpBQZADX3BODxkh3Q4KW-ZebA-NRsns2NJ6AIrSgxRvvKv-rDaRlN5Z4L257jXbOochRX_5r-GLKHvGAtDGAB5TAG5Ey30vo6LGdDNVJ9n4TZD-1FPYFchxH8B2kzR8l__kRv0FBYhm8YUwmx-me4e3FDdJG9jvW1XKUC2szFj9jFlCMgCuqIFFw5tKcVa131UYlYwsiE8XxZYjwqzxujVic9V5raMkeovRog_hAri5U7dAiOF17ojBh0FJmE8H9lCgiIR-lApF2BqRvKIPa8XXrw7JxKw3808RtQMW7hqkAVpZrwutsh3zOoI4F2oL9nNUyvr9NntisgCYKNAYqATa95HlD_QXfeBM7CjQu8JCqxld2j0IjvJgZdzivE03wPHdqq2HhfgCxKhshA_u38RnP3rX6eWcHiMBBwTlPRr6ojV6tHENG9wID-g3v2QdODl476MLPpo-8n5EzXM_r804bPynYDV0RuG4Y_ggumxOhmJCML_DC_woUVn8yikrVMzPb4AChtvhps_v68izfPB5zyfcMgYYl81_NamTA77YvZXJzMs1oMsKZ8Q66oCAJaY4fw0etdSPiVWHyLTkKEolh-HFQY_YUrVa3lM3O0J2uw&amp;zp=CJo1HrAGj07kNfYp744A1i9Gu5v94ECZGrRTDIlzmSOcQsHtnHEiqfYc9oKPzyYGntxOpkke0BaaAl74kIzon4J4_MkPITJrDzLVXNlGY_4qwj9rUvNjQKLkU9yuE8VscgfZ3q1cuu6oUsoQ2WLJFlpjo0DKzyib3xgi4VF3NBqs448nfcvG7WBlWPnaHko5&quot;,&quot;encryptedTrackingId&quot;:null",
+          "start": 425446,
+          "end": 426455,
+          "groups": {}
+        },
+        {
+          "value": "https://alb.reddit.com/cr?za=7jaJi2v_c--L4icN93Wh1i66pDZ_M75X6HAbJkdR4x6DfQrol_8Eg0yAmUnRFjqHyNVmhcIT2oJBF4SVhBk_aOqNVwdJi2IYI4eBBoxJeRty-KtWzYpBQZADX3BODxkh3Q4KW-ZebA-NRsns2NJ6AIrSgxRvvKv-rDaRlN5Z4L257jXbOochRX_5r-GLKHvGAtDGAB5TAG5Ey30vo6LGdDNVJ9n4TZD-1FPYFchxH8B2kzR8l__kRv0FBYhm8YUwmx-me4e3FDdJG9jvW1XKUC2szFj9jFlCMgCuqIFFw5tKcVa131UYlYwsiE8XxZYjwqzxujVic9V5raMkeovRog_hAri5U7dAiOF17ojBh0FJmE8H9lCgiIR-lApF2BqRvKIPa8XXrw7JxKw3808RtQMW7hqkAVpZrwutsh3zOoI4F2oL9nNUyvr9NntisgCYKNAYqATa95HlD_QXfeBM7CjQu8JCqxld2j0IjvJgZdzivE03wPHdqq2HhfgCxKhshA_u38RnP3rX6eWcHiMBBwTlPRr6ojV6tHENG9wID-g3v2QdODl476MLPpo-8n5EzXM_r804bPynYDV0RuG4Y_ggumxOhmJCML_DC_woUVn8yikrVMzPb4AChtvhps_v68izfPB5zyfcMgYYl81_NamTA77YvZXJzMs1oMsKZ8Q66oCAJaY4fw0etdSPiVWHyLTkKEolh-HFQY_YUrVa3lM3O0J2uw&amp;zp=Q16T4UXRWbabv8QaFGLgjr64WVKGBvZIxml5gjrPhBpthl9lMkuMDf-HIXVle_UH4-auPPHsUiq1XyFA1vC0afJ7wJl0Tpb9BYGrx2ggkDS6VIMqTRfX0nCHvyR6A237Ng1T7nweG_yedpZNyaQOjA13BE0aXGaD37zeB5EkUFIhXtSuNfh4qFhcZhk8rZr1p2kHSbhQUaWbp9OBt0zppQyonurjRmYVN_MnB82MObo33aR4E_QXx23CiuRzSRu9gZZl3u4VId-0qfo91NhWzpWeXYjRC-ICxrq11oc_tzMg0zonAMl_HIQNLG_TC9XPrOM8fF5U0uynmelWa6c6CKpLPQ_Tb2mhP1vk8aLxcCbu0eEZawsD1qG8MxkRgn5Di1QKvcyKjHa4z2YnGCfIwlnqICSH7e3pzW870rzXhna_1b-bAA9YP5nSk-SCaAdC_0FqoF6O5_0Qis0psdDhJ7wX4fZkwf2BscTMI2GL0JkuwVBaLG9NCqfpDJAbrlaW5GAr1i0GPLjGa6GVT-1nEZ5XXn_6LE8-KOzGB9VuI2eJP3Hv2P4uTbhkFVTXSVO7wayPbMQ4ACwwGRjyG79jaTAsZ2ZAcn7WyLTbkZGWoEeHxROcWBMvDRP9",
+          "start": 435233,
+          "end": 436636,
+          "groups": {}
+        },
+        {
+          "value": "https://i.redd.it/bbdg3zmb00jh1.png",
+          "start": 438042,
+          "end": 438077,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_396gli/styles/profileIcon_7yxkkbt6oacg1.jpg?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=fb691ab1f2df029a49fafcc705452a5d373b70b5",
+          "start": 438575,
+          "end": 438773,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_396gli/styles/profileIcon_7yxkkbt6oacg1.jpg?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=fb691ab1f2df029a49fafcc705452a5d373b70b5",
+          "start": 440583,
+          "end": 440781,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 443484,
+          "end": 443510,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/bbdg3zmb00jh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=c7bc08a7c33f6184bf4957446994e08f699f0b7b",
+          "start": 445392,
+          "end": 445519,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/bbdg3zmb00jh1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=a0807872c87e4b3eb1132937287d22fbc2066dec",
+          "start": 445529,
+          "end": 445656,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/bbdg3zmb00jh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=c7bc08a7c33f6184bf4957446994e08f699f0b7b",
+          "start": 445663,
+          "end": 445790,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/bbdg3zmb00jh1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=3a1f05ff699dacc7ff57a52b97e3527854408cf7",
+          "start": 445797,
+          "end": 445925,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/bbdg3zmb00jh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=c7bc08a7c33f6184bf4957446994e08f699f0b7b",
+          "start": 446363,
+          "end": 446490,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/bbdg3zmb00jh1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=a0807872c87e4b3eb1132937287d22fbc2066dec",
+          "start": 446500,
+          "end": 446627,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/bbdg3zmb00jh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=c7bc08a7c33f6184bf4957446994e08f699f0b7b",
+          "start": 446634,
+          "end": 446761,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/bbdg3zmb00jh1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=3a1f05ff699dacc7ff57a52b97e3527854408cf7",
+          "start": 446768,
+          "end": 446896,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/gallery/1vu4xmu",
+          "start": 449317,
+          "end": 449355,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_bxegnk/styles/profileIcon_3qrl5p4t0cvg1.jpeg?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64%3A64%2Csmart&amp;s=8e7328f8646c7f5c8bc0ecb458795afe222b5c99",
+          "start": 450062,
+          "end": 450261,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 450995,
+          "end": 451021,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/IncredibleIndia/comments/1vu4xmu/shri_mamleshwar_mahadev_temple_5000_year_old/",
+          "start": 451970,
+          "end": 452073,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/IncredibleIndia/",
+          "start": 453001,
+          "end": 453042,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2vlfx/styles/communityIcon_3w5qpsujhd9g1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;s=e5d762b182be363be2ee21684f0b0cf688e01c4a",
+          "start": 453542,
+          "end": 453716,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 457005,
+          "end": 457031,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/IncredibleIndia/comments/1vu4xmu/shri_mamleshwar_mahadev_temple_5000_year_old/",
+          "start": 457456,
+          "end": 457559,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-nn41gqltdnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=de2c033e6d4ab36f47b4b08a8037dec3099e015e",
+          "start": 461227,
+          "end": 461415,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-nn41gqltdnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=79a28bab06c3962636c33b028e88e6b32d4f25ad",
+          "start": 461452,
+          "end": 461640,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-nn41gqltdnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=de2c033e6d4ab36f47b4b08a8037dec3099e015e",
+          "start": 461647,
+          "end": 461835,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-nn41gqltdnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=50d8e59cfb58490efdaed081ecac39a95d6b69fb",
+          "start": 461842,
+          "end": 462031,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-nn41gqltdnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=de2c033e6d4ab36f47b4b08a8037dec3099e015e",
+          "start": 462327,
+          "end": 462515,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-nn41gqltdnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=79a28bab06c3962636c33b028e88e6b32d4f25ad",
+          "start": 462552,
+          "end": 462740,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-nn41gqltdnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=de2c033e6d4ab36f47b4b08a8037dec3099e015e",
+          "start": 462747,
+          "end": 462935,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-nn41gqltdnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=50d8e59cfb58490efdaed081ecac39a95d6b69fb",
+          "start": 462942,
+          "end": 463131,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tti64sstdnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=36f53b1c6a37be2b641831066187759670d235f3",
+          "start": 463854,
+          "end": 464042,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tti64sstdnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=e71d888770aa362b20a1a3d9dd523a7d5d392f97",
+          "start": 464052,
+          "end": 464240,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tti64sstdnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=36f53b1c6a37be2b641831066187759670d235f3",
+          "start": 464247,
+          "end": 464435,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tti64sstdnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=12f0d6d812ef7988eab2a3ca63ab59ca09c5bc3e",
+          "start": 464442,
+          "end": 464631,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tti64sstdnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=36f53b1c6a37be2b641831066187759670d235f3",
+          "start": 464965,
+          "end": 465153,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tti64sstdnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=e71d888770aa362b20a1a3d9dd523a7d5d392f97",
+          "start": 465163,
+          "end": 465351,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tti64sstdnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=36f53b1c6a37be2b641831066187759670d235f3",
+          "start": 465358,
+          "end": 465546,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tti64sstdnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=12f0d6d812ef7988eab2a3ca63ab59ca09c5bc3e",
+          "start": 465553,
+          "end": 465742,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-deqvr70udnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=297bbdc3a6f47c1a1b8e6e71e101555c3fed398f",
+          "start": 466257,
+          "end": 466445,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-deqvr70udnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=d38273baf2be6bb33ea44834c6b39abba665e810",
+          "start": 466455,
+          "end": 466643,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-deqvr70udnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=297bbdc3a6f47c1a1b8e6e71e101555c3fed398f",
+          "start": 466650,
+          "end": 466838,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-deqvr70udnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=7fe06be2a908ee3602e45a40ffe33cbee7ef9310",
+          "start": 466845,
+          "end": 467034,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-deqvr70udnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=297bbdc3a6f47c1a1b8e6e71e101555c3fed398f",
+          "start": 467368,
+          "end": 467556,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-deqvr70udnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=d38273baf2be6bb33ea44834c6b39abba665e810",
+          "start": 467566,
+          "end": 467754,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-deqvr70udnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=297bbdc3a6f47c1a1b8e6e71e101555c3fed398f",
+          "start": 467761,
+          "end": 467949,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-deqvr70udnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=7fe06be2a908ee3602e45a40ffe33cbee7ef9310",
+          "start": 467956,
+          "end": 468145,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h1mm068udnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=0b539f328aaf0a6c42f244cb8c7c68c8b1da7781",
+          "start": 468660,
+          "end": 468848,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h1mm068udnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=f4f57bb110ffc419a2de48bce36384881808f7bd",
+          "start": 468858,
+          "end": 469046,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h1mm068udnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=0b539f328aaf0a6c42f244cb8c7c68c8b1da7781",
+          "start": 469053,
+          "end": 469241,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h1mm068udnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=13341c61891b0dc52dd4a50355e3865d3b29e12f",
+          "start": 469248,
+          "end": 469437,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h1mm068udnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=0b539f328aaf0a6c42f244cb8c7c68c8b1da7781",
+          "start": 469771,
+          "end": 469959,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h1mm068udnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=f4f57bb110ffc419a2de48bce36384881808f7bd",
+          "start": 469969,
+          "end": 470157,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h1mm068udnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=0b539f328aaf0a6c42f244cb8c7c68c8b1da7781",
+          "start": 470164,
+          "end": 470352,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h1mm068udnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=13341c61891b0dc52dd4a50355e3865d3b29e12f",
+          "start": 470359,
+          "end": 470548,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-8zwew7eudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=519583606c2360c673a3159284bba215984b3071",
+          "start": 471010,
+          "end": 471198,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-8zwew7eudnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=a79600df7a95fc8eaf441b4fc0c9d1b395f79697",
+          "start": 471218,
+          "end": 471406,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-8zwew7eudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=519583606c2360c673a3159284bba215984b3071",
+          "start": 471413,
+          "end": 471601,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-8zwew7eudnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=8a6fb9f309deae34e45bec4c11f8ce0b02e262af",
+          "start": 471608,
+          "end": 471797,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-8zwew7eudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=519583606c2360c673a3159284bba215984b3071",
+          "start": 472063,
+          "end": 472251,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-8zwew7eudnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=a79600df7a95fc8eaf441b4fc0c9d1b395f79697",
+          "start": 472271,
+          "end": 472459,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-8zwew7eudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=519583606c2360c673a3159284bba215984b3071",
+          "start": 472466,
+          "end": 472654,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-8zwew7eudnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=8a6fb9f309deae34e45bec4c11f8ce0b02e262af",
+          "start": 472661,
+          "end": 472850,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xgruc8ludnkh1.jpg?width=450&amp;format=pjpg&amp;auto=webp&amp;s=6fa7940bc71e9d9c74120ad5c39c85a0aa00a19a",
+          "start": 473451,
+          "end": 473640,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xgruc8ludnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=50a401384111d85a0d124c2f988478ff519b19b3",
+          "start": 473660,
+          "end": 473848,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xgruc8ludnkh1.jpg?width=450&amp;format=pjpg&amp;auto=webp&amp;s=6fa7940bc71e9d9c74120ad5c39c85a0aa00a19a",
+          "start": 473855,
+          "end": 474044,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xgruc8ludnkh1.jpg?width=450&amp;format=pjpg&amp;auto=webp&amp;s=6fa7940bc71e9d9c74120ad5c39c85a0aa00a19a",
+          "start": 474307,
+          "end": 474496,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xgruc8ludnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=50a401384111d85a0d124c2f988478ff519b19b3",
+          "start": 474516,
+          "end": 474704,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xgruc8ludnkh1.jpg?width=450&amp;format=pjpg&amp;auto=webp&amp;s=6fa7940bc71e9d9c74120ad5c39c85a0aa00a19a",
+          "start": 474711,
+          "end": 474900,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tsbe0aoudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=bcff30520eb8b79ffa4d642dee40d8355ffe4f1c",
+          "start": 475501,
+          "end": 475689,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tsbe0aoudnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=7453fa663ad7207458f5d8938fb5cb53016ad753",
+          "start": 475709,
+          "end": 475897,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tsbe0aoudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=bcff30520eb8b79ffa4d642dee40d8355ffe4f1c",
+          "start": 475904,
+          "end": 476092,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tsbe0aoudnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=c56c28c5ae9442ad113d1d58b4f31761af7a52b4",
+          "start": 476099,
+          "end": 476288,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tsbe0aoudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=bcff30520eb8b79ffa4d642dee40d8355ffe4f1c",
+          "start": 476553,
+          "end": 476741,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tsbe0aoudnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=7453fa663ad7207458f5d8938fb5cb53016ad753",
+          "start": 476761,
+          "end": 476949,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tsbe0aoudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=bcff30520eb8b79ffa4d642dee40d8355ffe4f1c",
+          "start": 476956,
+          "end": 477144,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-tsbe0aoudnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=c56c28c5ae9442ad113d1d58b4f31761af7a52b4",
+          "start": 477151,
+          "end": 477340,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h6dmy7sudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=312cf7310a716bcf50a19a1354696e85c44ed7a3",
+          "start": 477943,
+          "end": 478131,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h6dmy7sudnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=e1a6b89b3152fa6f16594430f9c5958df64f24d5",
+          "start": 478151,
+          "end": 478339,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h6dmy7sudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=312cf7310a716bcf50a19a1354696e85c44ed7a3",
+          "start": 478346,
+          "end": 478534,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h6dmy7sudnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=49bd09c4abf797d44cf0b27627adb2c5b806187a",
+          "start": 478541,
+          "end": 478730,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h6dmy7sudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=312cf7310a716bcf50a19a1354696e85c44ed7a3",
+          "start": 478996,
+          "end": 479184,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h6dmy7sudnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=e1a6b89b3152fa6f16594430f9c5958df64f24d5",
+          "start": 479204,
+          "end": 479392,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h6dmy7sudnkh1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=312cf7310a716bcf50a19a1354696e85c44ed7a3",
+          "start": 479399,
+          "end": 479587,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-h6dmy7sudnkh1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=49bd09c4abf797d44cf0b27627adb2c5b806187a",
+          "start": 479594,
+          "end": 479783,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xzmv2ezudnkh1.jpg?width=480&amp;format=pjpg&amp;auto=webp&amp;s=67dad3460d93bed8cecf955addee65f1aad0c8d7",
+          "start": 480384,
+          "end": 480573,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xzmv2ezudnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=912ed2a28c8bc89d3008457562b15f5f2a34483c",
+          "start": 480593,
+          "end": 480781,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xzmv2ezudnkh1.jpg?width=480&amp;format=pjpg&amp;auto=webp&amp;s=67dad3460d93bed8cecf955addee65f1aad0c8d7",
+          "start": 480788,
+          "end": 480977,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xzmv2ezudnkh1.jpg?width=480&amp;format=pjpg&amp;auto=webp&amp;s=67dad3460d93bed8cecf955addee65f1aad0c8d7",
+          "start": 481240,
+          "end": 481429,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xzmv2ezudnkh1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=912ed2a28c8bc89d3008457562b15f5f2a34483c",
+          "start": 481449,
+          "end": 481637,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/shri-mamleshwar-mahadev-temple-5000-year-old-karsog-mandi-v0-xzmv2ezudnkh1.jpg?width=480&amp;format=pjpg&amp;auto=webp&amp;s=67dad3460d93bed8cecf955addee65f1aad0c8d7",
+          "start": 481644,
+          "end": 481833,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/productdesignjobs/comments/1vtrds7/hiring_remote_uiux_designer_first_design_hire_at/",
+          "start": 483659,
+          "end": 483768,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png",
+          "start": 484490,
+          "end": 484559,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 485315,
+          "end": 485341,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/productdesignjobs/comments/1vtrds7/hiring_remote_uiux_designer_first_design_hire_at/",
+          "start": 486316,
+          "end": 486425,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/productdesignjobs/",
+          "start": 487380,
+          "end": 487423,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_b4p0hg/styles/communityIcon_t91qj9apz2qc1.jpg?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;s=8c229980fd0528e770f906d3fc0dc2a2cf2aeb1a",
+          "start": 487923,
+          "end": 488098,
+          "groups": {}
+        },
+        {
+          "value": "https://weloveproduct.co",
+          "start": 488960,
+          "end": 488984,
+          "groups": {}
+        },
+        {
+          "value": "https://emoji.redditmedia.com/f0fypg8k1guz_t5_3nqvj/doge",
+          "start": 489252,
+          "end": 489308,
+          "groups": {}
+        },
+        {
+          "value": "https://emoji.redditmedia.com/f0fypg8k1guz_t5_3nqvj/doge",
+          "start": 489598,
+          "end": 489654,
+          "groups": {}
+        },
+        {
+          "value": "https://weloveproduct.co",
+          "start": 490209,
+          "end": 490233,
+          "groups": {}
+        },
+        {
+          "value": "https://weloveproduct.co",
+          "start": 490291,
+          "end": 490315,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 493967,
+          "end": 493993,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/productdesignjobs/comments/1vtrds7/hiring_remote_uiux_designer_first_design_hire_at/",
+          "start": 494418,
+          "end": 494527,
+          "groups": {}
+        },
+        {
+          "value": "https://alb.reddit.com/i.gif?za=qWDySccVy03JkbNDb-Iot-IwcisCRZ41-vFpEL6640PC4KQj08MI5aIvvDr5YV49bUE-qIhD-jf9C9KZIgT5uktLF_52pVcYzjeqtQKKHaZ0SqHnsl5EdtKurSV0GuMTfdmHQ6Tkh4tujO482_YLdex-bPEQornqomL077a56UJQv3ArS2tHwlBXcajFiulnCQFdPR93JQpm47bRLw3slhew-Auan7o-y9ClSARjS-MhMZ-zK4HBlolQwbCTZ2xmQUT9dA5-fEaBKM8GDJ_3OojXvfAKldo2lD1lXFAfYkMMdIx80cD-8nj_DkH-ueiOo8sTrQ&amp;zp=cuoM7_709moenzKa_zpJlwZu-oq88rFULuhiwqWLMoraENb7pvo_OvNPDz7lRRF8gqhwo_GLux_stcO9g2kRnpAF64YuyxeNMw22vMPy3mN0Siz4H9mRuLCeZOzgCg&quot;,&quot;encryptedTrackingId&quot;:null",
+          "start": 502068,
+          "end": 502603,
+          "groups": {}
+        },
+        {
+          "value": "http://www.reddit.com/r/askreddit",
+          "start": 502624,
+          "end": 502657,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/right-rail/streetwear.jpg",
+          "start": 502675,
+          "end": 502745,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/EntrepreneurRideAlong/",
+          "start": 505517,
+          "end": 505564,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2twzl/styles/communityIcon_t2a0ic3xi6md1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;s=d289924daa2342afa467e9839c5198154c0f3a4a",
+          "start": 506085,
+          "end": 506259,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/interesting/",
+          "start": 509939,
+          "end": 509976,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2qib0/styles/communityIcon_s4g0fz2yssma1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;s=84916159fab79ec753c01095d7f555289e3f76b0",
+          "start": 510497,
+          "end": 510671,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/71pack2n6lkh1.jpeg?width=140&amp;height=140&amp;crop=1%3A1%2Csmart&amp;auto=webp&amp;s=488180b58e8c034ce13c83e5aa69135c878c996c",
+          "start": 513457,
+          "end": 513608,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/KollyGossips/",
+          "start": 515117,
+          "end": 515155,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_btk2u0/styles/communityIcon_lczd89v9fa5h1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;s=fcf0c970b49232315d7782021be1c58160d301dd",
+          "start": 515676,
+          "end": 515851,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/y9fibwfoo4eh1.png?width=140&amp;height=140&amp;crop=1%3A1%2Csmart&amp;auto=webp&amp;s=f63af1b88c686f714284e43a33ef08618126ce73",
+          "start": 518443,
+          "end": 518593,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 519136,
+          "end": 519162,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/IncredibleIndia/",
+          "start": 521016,
+          "end": 521057,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2vlfx/styles/communityIcon_3w5qpsujhd9g1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;s=e5d762b182be363be2ee21684f0b0cf688e01c4a",
+          "start": 521578,
+          "end": 521752,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/pune/",
+          "start": 525418,
+          "end": 525448,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2qvrw/styles/communityIcon_uwr47y152rbf1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;s=9ee03ed719e41dfceb95d989b7cefdc6c9be3217",
+          "start": 525969,
+          "end": 526143,
+          "groups": {}
+        },
+        {
+          "value": "https://preview.redd.it/crwkelz5e69h1.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=fb54eb6943d96424dc5789bad8fbcdbeb868a008",
+          "start": 528703,
+          "end": 528830,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/DebateReligion/",
+          "start": 530255,
+          "end": 530295,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2snuc/styles/communityIcon_3prg350ydq851.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;s=5487c015c7a442de3cc1fe11e864d973e0a06ee0",
+          "start": 530816,
+          "end": 530990,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/askdentists/",
+          "start": 534585,
+          "end": 534622,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_38bow/styles/communityIcon_uthv67yz2bf61.jpg?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;s=1cf72fd27f4e57aad7cf2ab4849969a5c3ce1eaf",
+          "start": 535143,
+          "end": 535317,
+          "groups": {}
+        },
+        {
+          "value": "https://b.thumbs.redditmedia.com/0Stz8A8noE4-wk3nwU8uQbj-mr2DXFKnPRQTGAlYrTQ.jpg",
+          "start": 537940,
+          "end": 538020,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/askdentists/",
+          "start": 539602,
+          "end": 539639,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_38bow/styles/communityIcon_uthv67yz2bf61.jpg?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;s=1cf72fd27f4e57aad7cf2ab4849969a5c3ce1eaf",
+          "start": 540160,
+          "end": 540334,
+          "groups": {}
+        },
+        {
+          "value": "https://b.thumbs.redditmedia.com/WtCuffDndddM5klO2eqB81luG1IZHHRbZC6NiD9oYkE.jpg",
+          "start": 542895,
+          "end": 542975,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 543500,
+          "end": 543526,
+          "groups": {}
+        },
+        {
+          "value": "https://alb.reddit.com/i.gif?za=sC_NvbL_ElaNgw2KXQOsiXZW1Yro4cBIJYedeL8bZuJkxI94FmoCXCMfS1HT6rTsIIh2-QDF0hcpTB2Ct0sogI0UmK08NILfTaz5klXS7vmv6s0WMZUBVdZrqw4OmVqZPxVsDxnxPG-PQjJlwoydgAG6TQZhLTbjgGiKkW9qIXJK8NsrCTDMT35T--3AE3Wg00NSOUdHXmOQi8sO40YAOg2sOssWFUKK7VqqOJd9L_uSIzPhEs1DHUtPfU9RyAdCmHhEIvBXQHHMnZxiLWHn9pukKRzH2RdIRuYCX2JbAW6fsvV1kysPFzsmLOSLwYFy_dBlAw&amp;zp=IEkao4wZ4lpozTlyICaW3vJfLzTmhAvlkrRTBX6pBDhrVO4C45sPjr_P4ASvNS8ga_3s8xxkGL96d89xQF26FcpK2q6hPdx-yB-saUiaACTXyrnl0mB8Xif58JVdFA&quot;,&quot;encryptedTrackingId&quot;:null",
+          "start": 545045,
+          "end": 545580,
+          "groups": {}
+        },
+        {
+          "value": "http://www.reddit.com/r/askreddit",
+          "start": 545621,
+          "end": 545654,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/assets/right-rail/eatcheapandhealthy.jpg",
+          "start": 545672,
+          "end": 545750,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditinc.com/policies/content-policy",
+          "start": 546745,
+          "end": 546794,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/policies/privacy-policy",
+          "start": 547312,
+          "end": 547358,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditinc.com/policies/user-agreement",
+          "start": 547878,
+          "end": 547927,
+          "groups": {}
+        },
+        {
+          "value": "https://support.reddithelp.com/hc/sections/38303584022676-Accessibility",
+          "start": 548446,
+          "end": 548517,
+          "groups": {}
+        },
+        {
+          "value": "https://redditinc.com",
+          "start": 548957,
+          "end": 548978,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 550054,
+          "end": 550080,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 550994,
+          "end": 551020,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 557102,
+          "end": 557128,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 560305,
+          "end": 560331,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/SwordAndSupperGame/comments/1vugrdb?entry_point=games_drawer_featured_game",
+          "start": 561478,
+          "end": 561577,
+          "groups": {}
+        },
+        {
+          "value": "https://i.redd.it/pq6tl503vekh1.png')",
+          "start": 561945,
+          "end": 561982,
+          "groups": {}
+        },
+        {
+          "value": "https://i.redd.it/rokn078duekh1.png",
+          "start": 562119,
+          "end": 562154,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_h4goge/styles/communityIcon_q1w2ozlx0dch1.png?width=64&amp;frame=1&amp;auto=webp&amp;s=d64b50ca6823ad25ba261995dbd2138a6658f9ec",
+          "start": 563070,
+          "end": 563231,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/TasteTrails/comments/1vtub7v",
+          "start": 563282,
+          "end": 563335,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_ipfs9z/styles/communityIcon_c8s3280036ah1.png?width=64&amp;frame=1&amp;auto=webp&amp;s=252d119913d880f1d83a512051ccd6df9a142b29",
+          "start": 563452,
+          "end": 563613,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/CozySpacesGame/comments/1vuke0o",
+          "start": 563667,
+          "end": 563723,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_gbkus9/styles/communityIcon_2ddsl7yq5meg1.png?width=64&amp;frame=1&amp;auto=webp&amp;s=ef0a3109d160d8452c0bd85d142b5211a690bbd7",
+          "start": 563840,
+          "end": 564001,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/r/HitOrQuit/comments/1qj3558",
+          "start": 564050,
+          "end": 564101,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 565004,
+          "end": 565030,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 570083,
+          "end": 570109,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 571787,
+          "end": 571813,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 575287,
+          "end": 575313,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_btk2u0/styles/communityIcon_lczd89v9fa5h1.png?width=128&amp;frame=1&amp;auto=webp&amp;s=cf5922655ff25aa2213f2a20de623106c44e1360",
+          "start": 577024,
+          "end": 577186,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2qvrw/styles/communityIcon_uwr47y152rbf1.png?width=128&amp;frame=1&amp;auto=webp&amp;s=e86839101a01e3950831327231b48bdcd021b778",
+          "start": 578666,
+          "end": 578827,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 581344,
+          "end": 581370,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 582853,
+          "end": 582879,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2r0ij/styles/communityIcon_yor9myhxz5x11.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;s=ca799267e37bbc3a1894315372e4ff3588645f9b&quot;,&quot;primaryColor&quot;:&quot;#FC471E&quot;,&quot;legacyIcon&quot;:",
+          "start": 584839,
+          "end": 585088,
+          "groups": {}
+        },
+        {
+          "value": "https://b.thumbs.redditmedia.com/iTldIIlQVSoH6SPlH9iiPZZVzFWubJU7cOM__uqSOqU.png&quot;",
+          "start": 585111,
+          "end": 585197,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_34a0t/styles/communityIcon_lcsfvr774d931.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;s=066bdf10d47b541efeff3dcafd8bf66817a75e30&quot;,&quot;primaryColor&quot;:&quot;#0509FA&quot;,&quot;legacyIcon&quot;:null",
+          "start": 585409,
+          "end": 585662,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2qh9z/styles/communityIcon_rke0til8qkw61.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;s=4552a12c141c1c88fdd1afe2df08a2ac4a9f2125&quot;,&quot;primaryColor&quot;:&quot;#0068B3&quot;,&quot;legacyIcon&quot;:",
+          "start": 585867,
+          "end": 586116,
+          "groups": {}
+        },
+        {
+          "value": "https://b.thumbs.redditmedia.com/viHmUX8kA39kq-Gp1ImwfOs8iB8KaYpHjm88ubvTkCU.png&quot;",
+          "start": 586139,
+          "end": 586225,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2vlfx/styles/communityIcon_3w5qpsujhd9g1.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;s=b7b84c6b97866fe8c911baad84c89ed515a663b0&quot;,&quot;primaryColor&quot;:null,&quot;legacyIcon&quot;:null",
+          "start": 586440,
+          "end": 586678,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2qh41/styles/communityIcon_x4pa3xf5z4d11.jpg?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;s=40cfb578e874f1e6f9747923b64d23b938b1c134&quot;,&quot;primaryColor&quot;:&quot;#0079D3&quot;,&quot;legacyIcon&quot;:null",
+          "start": 586883,
+          "end": 587136,
+          "groups": {}
+        },
+        {
+          "value": "https://styles.redditmedia.com/t5_2rb3y/styles/communityIcon_iz3ptbftzki41.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;s=621872f0a8cbbda59d2f7765dac8c3d524dc77ce&quot;,&quot;primaryColor&quot;:&quot;#005BA1&quot;,&quot;legacyIcon&quot;:null",
+          "start": 587604,
+          "end": 587857,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 590178,
+          "end": 590204,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditinc.com",
+          "start": 591367,
+          "end": 591392,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 591692,
+          "end": 591718,
+          "groups": {}
+        },
+        {
+          "value": "https://ads.reddit.com/register?utm_source=web3x_consumer&amp;utm_name=left_nav_cta",
+          "start": 593528,
+          "end": 593611,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 593935,
+          "end": 593961,
+          "groups": {}
+        },
+        {
+          "value": "https://developers.reddit.com/?utm_source=reddit&amp;utm_medium=left_nav_resources",
+          "start": 595521,
+          "end": 595603,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 595904,
+          "end": 595930,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 597907,
+          "end": 597933,
+          "groups": {}
+        },
+        {
+          "value": "https://support.reddithelp.com/hc?utm_source=reddit&amp;utm_medium=footer&amp;utm_campaign=evergreen",
+          "start": 599345,
+          "end": 599445,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 599765,
+          "end": 599791,
+          "groups": {}
+        },
+        {
+          "value": "https://redditblog.com/",
+          "start": 601576,
+          "end": 601599,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 601924,
+          "end": 601950,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditinc.com/careers",
+          "start": 603691,
+          "end": 603724,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 604027,
+          "end": 604053,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditinc.com/press",
+          "start": 605486,
+          "end": 605517,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 605839,
+          "end": 605865,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/posts/2026/global/",
+          "start": 607455,
+          "end": 607496,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 607795,
+          "end": 607821,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/posts/2026/tl-pt-BR/",
+          "start": 609523,
+          "end": 609566,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 609870,
+          "end": 609896,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/posts/2026/tl-de/",
+          "start": 611392,
+          "end": 611432,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 611736,
+          "end": 611762,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditinc.com/policies/content-policy",
+          "start": 613264,
+          "end": 613313,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 613638,
+          "end": 613664,
+          "groups": {}
+        },
+        {
+          "value": "https://www.reddit.com/policies/privacy-policy",
+          "start": 615420,
+          "end": 615466,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 615791,
+          "end": 615817,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditinc.com/policies/user-agreement",
+          "start": 617575,
+          "end": 617624,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 617949,
+          "end": 617975,
+          "groups": {}
+        },
+        {
+          "value": "https://support.reddithelp.com/hc/sections/38303584022676-Accessibility",
+          "start": 619732,
+          "end": 619803,
+          "groups": {}
+        },
+        {
+          "value": "http://www.w3.org/2000/svg",
+          "start": 620111,
+          "end": 620137,
+          "groups": {}
+        },
+        {
+          "value": "https://redditinc.com",
+          "start": 621402,
+          "end": 621423,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/community-guide-client-css-BWv-033d.css,https://www.redditstatic.com/shreddit/reddit-pro-promo-client-css-I3gTGEQ7.css",
+          "start": 621649,
+          "end": 621805,
+          "groups": {}
+        },
+        {
+          "value": "https://accounts.google.com/gsi/client",
+          "start": 629317,
+          "end": 629355,
+          "groups": {}
+        },
+        {
+          "value": "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js",
+          "start": 629425,
+          "end": 629509,
+          "groups": {}
+        },
+        {
+          "value": "https://id.rlcdn.com/472486.gif",
+          "start": 629542,
+          "end": 629573,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=C7C5MjAIvC,mdusrK3uu9",
+          "start": 629860,
+          "end": 629945,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=-0oJe1P8AF,2RXAv_rjB5,4elSaZH8xD,564Klh1Ggj,7b63CFSH9q,8GlTXF_uYU,Aq0wavIxn3,B0ZH-0l9za,B0rbx7cyiN,B1CUJMThI8,B1VbwVCOpB,B1a6wTz7F2,B2KPTcvWuD,B6A7btTMhZ,B6NlbwCGfe,B6VkR4FsBn,B79C6R5DI-,B89QtfhB11,B9N9np7ReP,BAfPg8zgqe,BAlrATKeX2,BAr_2M9m9u,BDERGLR0a5,BEfIgFMhkC,BEl6BkbuDW,BF-tX6gVR9,BFcmnQ4R8q,BHKOmfpAsz,BHOncKxE8d,BHr-qhnX_s,BJ4nLwM7JQ,BJDMIp20Kd,BJJdykHqaJ,BJVmKioNZ0,BKNLEDgLs3,BPq_mLpglr,BQP1BNYjDL,BRSrKFGka3,BReDecJdBJ,BSsEDc6pfs,BTe8BIBJqz,BUJfSyA35u,BUlz6Y5ELd,BViUpdh8fD,BW8BC7E8i8,BWt1wQinBt,BX8pu3iLCU,BYTNmflTWY,B_RqL5JpZ0,Bcb-CyzJkK,Bd0B16WOrZ,Bd9oG-ccf7,BdQq2MkIVI,BddJcE9NLh,Bf5vzaViXA,BfeIs4TOpA,BgPMZGQTRP,BhU94r8KKh,BkfvZsuzid,BnT74Gbm-b,BqJUCs45gC,Bqo4GFoT7K,BrNIFk_Nii,Brq4-mpgCz,BuKmHgmoAA,BvPkRoE08M,BvWNOQIc4u,BwGRDhIYAL,BxdkLqzgMa,By-jUDMuv3,By2AJxkBCg,ByvpBbXcV2,C2ZtEDh2wh,C5wKwvEtI-,C6M57TSbm9,C9r3D2Pu-s,C9szpcJD12,CEAxDXEy1O,CEX_grTtQ3,CHnj_Oz3j2,CIMVcPviBw,CIuoRyJIWC,CIvIvDzsG1,CJ1vEESKwJ,CK9VceAyu4,CLa_jC-9K8,CM-tgXXAcZ,CP3tCVAeTT,CPFI1WKcL5,CQ86DstHXM,CRr0exdPOH,CS13SvKA3k,CSfLwHJmpj,CT5GxpEOVx,CT85br_xep,CU4tkzcmmc,CVyhduUMQ3,CWg1tPJKbH,CY3xVJD7VQ,CYN_bntlvI,CZBOWm85R2,CZbHkL2jeE,C_Fji335pi,C_IJdn7__m,CcYumuDuN9,Ccw5UzlnAc,Cdrcw7qRWv,Cf5RRnckw_,CfGYMYdFJ2,CgCLZcYnd8,CgP2g0p-yf,CgaZkpJka2,CgmXj2zi09,ChQtR1FtXO,CidGekMODR,CiyVHInWNn,CjC6l5simf,Ck3X9Q4FWh,CkJpvBDoO9,Ckha6Ry9N5,CliaIrgCYx,CmkWW1TdWj,CnYz0b9L5B,Co-yAGRJx2,CoM6tXCUmL,CrDUBcbc34,Cs6IyiUBNv,Ct1JSE3npr,CtnfkLYgdV,CvOjGMHE5i,CvQ62k4VLt,Cy7ZSlCnk2,CyjWpnjf9v,Cz0PZ8JGus,D1OozUiTDI,D2ybOru8JV,D3pE70faMO,D49A_55Mkg,D4Rw0m7CYn,D6sFLy9g9I,D8akl9B08Y,DAQbrqlcwy,DBJJf4Mbnp,DD5ScBLfUe,DDOY5WqqCl,DDRPI8zUXA,DFTLYPolHv,DLTN6xH7IT,DNijWffL_e,DOzTtIjkXV,DQ3EPHStLS,DQElWQfrmX,DRogEP4iCc,DSm4Kh2nq2,DT0M17jqmu,DT5sJYIo0O,DTVI8eFPKm,DTd6p03Zds,DTsGZHwFaT,DVjkG2H4kd,DWbKuoWZ8D,DaNePvXF77,DaZBXmfmih,DbVjXBU2Pr,DcHYyoOaQR,Deck8km6vL,DerJsYH6pz,Df_KEkdj3r,DgH2g3Cu4j,Dkv2OTEQO5,Dl-5wR_ySV,DlI0CY9db-,DltmSlhIFV,DlysxD2kWw,Dm3VD__R1I,DnmZCWB4SZ,DoLbwQVv8A,DogIeJuhIi,DpEsU8OFSD,Drrg6O9gne,DsFMQDJlO5,DsRarWlGHG,Dts153iOq9,DwNCRTdZe8,FJVWk4hz1F,GclIDesJdP,HQUEaVMudO,J2g_28ARRe,K1hBsqffWV,NNrem9Pkvu,PFrioPoWvL,PGEOgA62lJ,QoKGQnMTw3,R6hHJpWYCs,R97-nhuCte,RRO4hhPO47,SXBPL_Y9Tk,TIHXSxk7Uw,VLM9fi8aeM,Vo5kD6a-Jo,Vrh692qYoj,W6hyS8BHYe,Wef8r6dnwj,X2dkYoPlLK,X9JPZgw0TG,YBmZhHiW91,ZCPAxS9L7G,aAuDTm6uhq,bLmHIsjkyA,bh87Uvak42,eDcr-IlJnB,eQWAkrqHB6,f7sFAKtdg2,hcTCoqdqu9,iG022VeOuX,j7wnq1Dj_4,l-IGlA2UBF,l0cANNhlkJ,o0qSjb6Ahc,oabm6GYlt9,ohj6iE5-pS,ov6hWVPdYo,p5vvvxIQuy,qny5416diM,r0Eeiai5gb,rGTTYChMTT,scEMMaCprI,tf_hefJPgF,vhwnr0f638,wGAsqN3V-R,wIyoRL58he,yHDoGODcPU,zLSsxKxgSX",
+          "start": 630004,
+          "end": 632630,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=6jZUh1KuPy,BAlNvUL6a7,BV6kVQHpZS,Bo93bwgfrp,BwPdUKW3ji,BzeSQtErmo,C30tP9NXdH,C4mPeSBInC,CP47YEmGZV,CjPcGG3MqI,Cku_mvKSPX,D1b0rEoTsQ,D1rc5IDScX,DAcb3mdwOv,DX6Tuy98G3,DiR0qOKI6q,DouwGbj8L_,Dtrlig13bv,HJ4P44Pvpt,PO8LJatGp8,YMtBuWyXFP,n3gZXBG2Zl,rpA_F9n3Sa,y_K9yfaff6",
+          "start": 632689,
+          "end": 633016,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=0OAGtvtMWK,B4e77z48Ef,BKABtXmQth,BLhOySo_SM,BosB_ZwQiE,CBfkYbIow5,CI5NFah8Pt,CKgLWZcMSo,CgYHPxla5k,ChJySCAFCI,Cmo7FJJXe_,Cnrrci8SC0,CpYMVvrbcd,CqLb0W7EDQ,D39jca7GkT,DDATuwijFv,DWJ8Tic-vh,DbLyvXxcN1,nCRU_ETw5X,oWxxAZJJla,uHd4Aa53zv",
+          "start": 633075,
+          "end": 633369,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=DI6vbEgQIy,DM6xAhgfde,DiznOZoSd4,LmwHjoKm00,V_T4s7pdri",
+          "start": 633428,
+          "end": 633546,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=Br8v7P_Rrl",
+          "start": 633605,
+          "end": 633679,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=B5ghRma1YD,BFJHJ8LiUi,BQDhsVLDRK,BfrbEk1_tk,D-msB4R0_P,DEmxin_ICy,Da1vTqWvo3",
+          "start": 633738,
+          "end": 633878,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=2N4zUZOxNk,6GJMD5got-,B9scADqRgI,BygHFRGT0S,CplgWekMuF,DqcPyS4CF0,NKnAmd7voi,bfcurG-mUm,kw1XzBGqOu",
+          "start": 633937,
+          "end": 634099,
+          "groups": {}
+        },
+        {
+          "value": "https://accounts.google.com/gsi/client",
+          "start": 634144,
+          "end": 634182,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=Bz_qypUe1N,Cb49ZyRfcB,CbyykLiDHD,Ci08ru4KX5,Cv8gloWX-1",
+          "start": 634237,
+          "end": 634355,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=-9mCAzowdK,BFAvllxNzT,BKE6s8clx8,BQfI21cvnj,BtuTZR54MC,C7Y2PMuJia,CGV0hxllVa,ChSxEVjYS9,Cls07iiGym,D3TykLX4eQ,DBt88_mlLI,DfYqmKvAYw,PZXrH_-7bg,Wgn5pvpLXr,rbBuy4pEOc",
+          "start": 634414,
+          "end": 634642,
+          "groups": {}
+        },
+        {
+          "value": "https://www.google.com/recaptcha/enterprise.js?render=6LfirrMoAAAAAHZOipvza4kpp_VtTwLNuXVwURNQ",
+          "start": 634687,
+          "end": 634781,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/shreddit/notifications-inbox-client-css-BfS9bLyt.css",
+          "start": 634830,
+          "end": 634911,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=B07QmDRrHL,B0szvXgV9X,BD5LTMgXsd,BIAq4QBHq4,C-CdpZ5uyP,CJUpWuZhiv,COJom5IOBe,CRtb1caQ1Q,CaiWf9IqVe,CohhD5SW5P,CrmFMnLbCP,Cxs4gKZdKH,D1ufRzY6s5,DPNYOWYGyC,DfRMBO3W5-,DfzhjMKgE1,DyOGInKyjm,QFI1zcRyWL,f82vNt3bcy,sS8OHgbeTn",
+          "start": 634940,
+          "end": 635223,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=DCTR1NUnbQ",
+          "start": 635282,
+          "end": 635356,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=ASX3RC-Pwh,B2ZZrS-xFO,BGnevOejye,CXecxrxU59,D-eexY562M,DPVi9ciLGV,DS27IYdxAu,D_PnuURyQv,gSv4akvuCh",
+          "start": 635415,
+          "end": 635577,
+          "groups": {}
+        },
+        {
+          "value": "https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6LfirrMoAAAAAHZOipvza4kpp_VtTwLNuXVwURNQ&amp;co=aHR0cHM6Ly93d3cucmVkZGl0LmNvbTo0NDM.&amp;hl=en&amp;v=xg_pWYS8-HRESiV6Rdg4aY_R&amp;size=invisible&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=do8j241h7jku",
+          "start": 636188,
+          "end": 636455,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=B2mprxqVmz",
+          "start": 636834,
+          "end": 636908,
+          "groups": {}
+        },
+        {
+          "value": "https://www.redditstatic.com/js/concat?prefix=en-US/&amp;chunks=BSTrP1-XkS,BUUu-Z0GUu,BVlfNbJEl4,BiBkdIYSfU,Bv5qYe97XX,CERHwhnmSB,CKvfEqq3Lv,CMmPLj22y_,Cjc5yuTV0f,Cqrzxbi3R0,Cvs5Y1wK9o,D44tv4CCoD,D7J9HP_N_N,DAYEA0Ed95,DH27qNlQD5,DNFaNKPo5n,DTlxLB0gdW,DXqup1hJcd,D_st8gAGEp,DelxtzYGLi,F96LEz7KOH,LKRjfXPazg,LqKw7aPTLk,NmDjR8G5Lc,W_1ZGrN-mL,bh9ykRGQlo,r9umJ2M4kA",
+          "start": 636967,
+          "end": 637327,
+          "groups": {}
+        }
+      ],
+      "PHONE": [
+        {
+          "value": "705819728788",
+          "start": 4295,
+          "end": 4307,
+          "groups": {}
+        },
+        {
+          "value": "1787330513053",
+          "start": 297954,
+          "end": 297967,
+          "groups": {}
+        },
+        {
+          "value": "1787330513053",
+          "start": 297986,
+          "end": 297999,
+          "groups": {}
+        },
+        {
+          "value": "1730210716",
+          "start": 298448,
+          "end": 298458,
+          "groups": {}
+        },
+        {
+          "value": "1782056195",
+          "start": 298459,
+          "end": 298469,
+          "groups": {}
+        },
+        {
+          "value": "1787330513372",
+          "start": 298819,
+          "end": 298832,
+          "groups": {}
+        },
+        {
+          "value": "1787330513372",
+          "start": 298851,
+          "end": 298864,
+          "groups": {}
+        },
+        {
+          "value": "1730210716",
+          "start": 299311,
+          "end": 299321,
+          "groups": {}
+        },
+        {
+          "value": "1782056195",
+          "start": 299322,
+          "end": 299332,
+          "groups": {}
+        },
+        {
+          "value": "1710522197825",
+          "start": 310291,
+          "end": 310304,
+          "groups": {}
+        },
+        {
+          "value": "1787416910107",
+          "start": 311462,
+          "end": 311475,
+          "groups": {}
+        },
+        {
+          "value": "1787330508754",
+          "start": 312189,
+          "end": 312202,
+          "groups": {}
+        },
+        {
+          "value": "1787416909000",
+          "start": 357026,
+          "end": 357039,
+          "groups": {}
+        }
+      ],
+      "UUID": [
+        {
+          "value": "32608e72-65dd-4d71-b90f-2011cbe75366",
+          "start": 2288,
+          "end": 2324,
+          "groups": {}
+        },
+        {
+          "value": "32608e72-65dd-4d71-b90f-2011cbe75366",
+          "start": 2755,
+          "end": 2791,
+          "groups": {}
+        },
+        {
+          "value": "846920d4-b293-426c-8154-56e6c744f550",
+          "start": 310532,
+          "end": 310568,
+          "groups": {}
+        },
+        {
+          "value": "012e8810-1d5f-47ee-95fc-0f10cbff694d",
+          "start": 310591,
+          "end": 310627,
+          "groups": {}
+        },
+        {
+          "value": "32608e72-65dd-4d71-b90f-2011cbe75366",
+          "start": 310645,
+          "end": 310681,
+          "groups": {}
+        },
+        {
+          "value": "846920d4-b293-426c-8154-56e6c744f550",
+          "start": 311289,
+          "end": 311325,
+          "groups": {}
+        },
+        {
+          "value": "012e8810-1d5f-47ee-95fc-0f10cbff694d",
+          "start": 311383,
+          "end": 311419,
+          "groups": {}
+        },
+        {
+          "value": "32608e72-65dd-4d71-b90f-2011cbe75366",
+          "start": 313132,
+          "end": 313168,
+          "groups": {}
+        },
+        {
+          "value": "846920d4-b293-426c-8154-56e6c744f550",
+          "start": 313319,
+          "end": 313355,
+          "groups": {}
+        },
+        {
+          "value": "012e8810-1d5f-47ee-95fc-0f10cbff694d",
+          "start": 313378,
+          "end": 313414,
+          "groups": {}
+        },
+        {
+          "value": "0f6f308a-63b1-4708-ad6b-1380a511c187",
+          "start": 357177,
+          "end": 357213,
+          "groups": {}
+        },
+        {
+          "value": "0f6f308a-63b1-4708-ad6b-1380a511c187",
+          "start": 357314,
+          "end": 357350,
+          "groups": {}
+        },
+        {
+          "value": "012e8810-1d5f-47ee-95fc-0f10cbff694d",
+          "start": 400301,
+          "end": 400337,
+          "groups": {}
+        },
+        {
+          "value": "46e2ff6d-1ea7-47f1-9314-7806113ffb98",
+          "start": 437845,
+          "end": 437881,
+          "groups": {}
+        },
+        {
+          "value": "012e8810-1d5f-47ee-95fc-0f10cbff694d",
+          "start": 501034,
+          "end": 501070,
+          "groups": {}
+        },
+        {
+          "value": "a198141f-4f84-49cf-965f-f2ae26c1fe01",
+          "start": 502914,
+          "end": 502950,
+          "groups": {}
+        },
+        {
+          "value": "a198141f-4f84-49cf-965f-f2ae26c1fe01",
+          "start": 545927,
+          "end": 545963,
+          "groups": {}
+        },
+        {
+          "value": "be8a63d5-8a9e-11f1-902f-32c7cda0827a",
+          "start": 623845,
+          "end": 623881,
+          "groups": {}
+        },
+        {
+          "value": "be8a63d5-8a9e-11f1-902f-32c7cda0827a",
+          "start": 623964,
+          "end": 624000,
+          "groups": {}
+        },
+        {
+          "value": "be8a63d5-8a9e-11f1-902f-32c7cda0827a",
+          "start": 624064,
+          "end": 624100,
+          "groups": {}
+        }
+      ]
+    },
+    "total_matches": 0,
+    "pattern_count": 4,
+    "timestamp": "2026-08-21T22:15:23.377441",
+    "tab_url": "https://www.reddit.com/"
+  }
+}

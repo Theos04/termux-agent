@@ -1,0 +1,27 @@
+{
+  "iterations": 2,
+  "mab": {
+    "total_arms": 11,
+    "total_pulls": 2,
+    "unique_contexts": 1,
+    "avg_reward": 1.0,
+    "best_action": "unknown"
+  },
+  "patterns": {
+    "total_patterns": 7,
+    "success_rate": {
+      "click_login": 1,
+      "click_login_success": 1,
+      "click_signup": 1,
+      "click_signup_success": 1
+    }
+  },
+  "reward_weights": {
+    "success": 1.0,
+    "data_extracted": 0.5,
+    "navigation": 0.3,
+    "time_efficiency": 0.2
+  },
+  "experiences": 2,
+  "timestamp": "2026-08-01T03:59:51.636950"
+}

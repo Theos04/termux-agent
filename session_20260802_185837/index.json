@@ -1,0 +1,50 @@
+{
+  "interactions": [
+    {
+      "filename": "interaction_185845_362665.json",
+      "timestamp": "2026-08-02T18:58:45.362960",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_190327_753248.json",
+      "timestamp": "2026-08-02T19:03:27.753555",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_190515_378236.json",
+      "timestamp": "2026-08-02T19:05:15.380093",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_190537_935412.json",
+      "timestamp": "2026-08-02T19:05:37.935848",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_190637_662988.json",
+      "timestamp": "2026-08-02T19:06:37.663413",
+      "context": {
+        "type": "script_execution"
+      }
+    }
+  ],
+  "dom_trees": [
+    {
+      "filename": "dom_185903_350414.json",
+      "timestamp": "2026-08-02T18:59:03.350560",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ]
+}

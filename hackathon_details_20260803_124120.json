@@ -1,0 +1,101 @@
+{
+  "scraped_at": "2026-08-03T12:41:20.419067",
+  "total": 5,
+  "successful": 5,
+  "failed": 0,
+  "hackathons": [
+    {
+      "url": "https://unstop.com/hackathons",
+      "title": "2540+ Hackathons in India 2026 \u2013 Online & Student Challenges",
+      "organizer": "Unknown",
+      "team_size": "Unknown",
+      "status": "Unknown",
+      "prizes": [],
+      "dates": [],
+      "eligibility": "Unknown",
+      "has_register_button": true,
+      "already_registered": false,
+      "hackathon_id": null,
+      "word_count": 137,
+      "registration_deadline": null,
+      "location": null,
+      "description": null
+    },
+    {
+      "url": "https://unstop.com/hackathons/codessiance-2026-thadomal-shahani-engineering-college-tsec-mumbai-1729289",
+      "title": "Codeissance 2026 - 2026",
+      "organizer": "Harsh Mehta",
+      "team_size": "2 - 4 Members",
+      "status": "Unknown",
+      "prizes": [],
+      "dates": [
+        "21 August 2026"
+      ],
+      "eligibility": "Undergraduate",
+      "has_register_button": true,
+      "already_registered": false,
+      "hackathon_id": null,
+      "word_count": 336,
+      "registration_deadline": null,
+      "location": "Thadomal Shahani Engineering College, Mumbai, Maharashtra, India",
+      "description": "Codeissance 2026"
+    },
+    {
+      "url": "https://unstop.com/hackathons/trivarna-ctf-international-ctf-championship-astitwam-1724784",
+      "title": "Trivarna CTF \u2014 International CTF Championship - 2026",
+      "organizer": "Astitwam, scheduled for 15\u201316 August 2026.",
+      "team_size": "1 - 4 Members",
+      "status": "Unknown",
+      "prizes": [
+        "Certification vouchers"
+      ],
+      "dates": [
+        "16 August 2026"
+      ],
+      "eligibility": "Undergraduate",
+      "has_register_button": true,
+      "already_registered": false,
+      "hackathon_id": null,
+      "word_count": 346,
+      "registration_deadline": null,
+      "location": null,
+      "description": "Trivarna CTF \u2014 International CTF Championship"
+    },
+    {
+      "url": "https://unstop.com/hackathons/echosphere-agora-conversational-ai-hackathon-knotic-1723695",
+      "title": "EchoSphere: Agora Conversational AI Hackathon - 2026",
+      "organizer": "Harsh Mehta",
+      "team_size": "2 - 4 Members",
+      "status": "Unknown",
+      "prizes": [],
+      "dates": [
+        "21 July 2026"
+      ],
+      "eligibility": "Unknown",
+      "has_register_button": true,
+      "already_registered": false,
+      "hackathon_id": null,
+      "word_count": 785,
+      "registration_deadline": null,
+      "location": null,
+      "description": "EchoSphere: Agora Conversational AI Hackathon"
+    },
+    {
+      "url": "https://unstop.com/hackathons/python-basic-programming-competition-bvc-college-of-engineering-rajamahendravaram-andhra-pradesh-1729093",
+      "title": "Python Basic Programming Competition - 2026",
+      "organizer": "Harsh Mehta",
+      "team_size": "Individual Participation",
+      "status": "Unknown",
+      "prizes": [],
+      "dates": [],
+      "eligibility": "Undergraduate",
+      "has_register_button": true,
+      "already_registered": false,
+      "hackathon_id": null,
+      "word_count": 384,
+      "registration_deadline": null,
+      "location": null,
+      "description": "Python Basic Programming Competition"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "dom_trees": [
+    {
+      "filename": "dom_132423_400517.json",
+      "timestamp": "2026-08-03T13:24:23.400659",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_132534_315423.json",
+      "timestamp": "2026-08-03T13:25:34.315559",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_132827_787815.json",
+      "timestamp": "2026-08-03T13:28:27.787984",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_133213_877711.json",
+      "timestamp": "2026-08-03T13:32:13.878579",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_133340_791883.json",
+      "timestamp": "2026-08-03T13:33:40.792803",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_133346_102359.json",
+      "timestamp": "2026-08-03T13:33:46.102521",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_133418_086746.json",
+      "timestamp": "2026-08-03T13:34:18.086906",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_133430_259960.json",
+      "timestamp": "2026-08-03T13:34:30.260112",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_133501_105004.json",
+      "timestamp": "2026-08-03T13:35:01.105196",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_133601_077675.json",
+      "timestamp": "2026-08-03T13:36:01.077832",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_133628_774501.json",
+      "timestamp": "2026-08-03T13:36:28.774673",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "filename": "snapshot_132424_611618.json",
+      "timestamp": "2026-08-03T13:24:24.611751",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    },
+    {
+      "filename": "snapshot_132535_402198.json",
+      "timestamp": "2026-08-03T13:25:35.402333",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    },
+    {
+      "filename": "snapshot_132828_988917.json",
+      "timestamp": "2026-08-03T13:28:28.989146",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "filename": "a11y_132425_036781.json",
+      "timestamp": "2026-08-03T13:24:25.036943",
+      "context": {
+        "method": "Comprehensive_AX_Tree"
+      }
+    },
+    {
+      "filename": "a11y_132535_614124.json",
+      "timestamp": "2026-08-03T13:25:35.614333",
+      "context": {
+        "method": "Comprehensive_AX_Tree"
+      }
+    },
+    {
+      "filename": "a11y_132829_294708.json",
+      "timestamp": "2026-08-03T13:28:29.294880",
+      "context": {
+        "method": "Comprehensive_AX_Tree"
+      }
+    }
+  ]
+}

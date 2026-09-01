@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "session_id": "20260731_061442",
+    "timestamp": "2026-07-31T06:16:59.254499",
+    "tab_url": "https://www.naukri.com/mnjuser/homepage",
+    "tab_title": "Home | Mynaukri",
+    "context": {
+      "action": "click",
+      "element_info": {
+        "tag": "a",
+        "text": "Jobs2",
+        "visible": true,
+        "canInteract": true
+      }
+    },
+    "interaction_number": 1,
+    "command_index": 18
+  },
+  "data": {
+    "element_index": 1,
+    "action": "click",
+    "value": null,
+    "result": {
+      "success": true,
+      "tag": "a"
+    },
+    "verification": {
+      "tag": "a",
+      "text": "Jobs2",
+      "visible": true,
+      "canInteract": true
+    }
+  }
+}

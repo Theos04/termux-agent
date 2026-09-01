@@ -1,0 +1,66 @@
+{
+  "dom_trees": [
+    {
+      "filename": "dom_113400_702491.json",
+      "timestamp": "2026-07-31T11:34:00.702691",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_113442_948401.json",
+      "timestamp": "2026-07-31T11:34:42.948570",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "filename": "snapshot_113403_985830.json",
+      "timestamp": "2026-07-31T11:34:03.985991",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    },
+    {
+      "filename": "snapshot_113445_732364.json",
+      "timestamp": "2026-07-31T11:34:45.732526",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "filename": "a11y_113406_180254.json",
+      "timestamp": "2026-07-31T11:34:06.180417",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_113448_614608.json",
+      "timestamp": "2026-07-31T11:34:48.614760",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    }
+  ]
+}

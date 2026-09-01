@@ -1,0 +1,1801 @@
+[
+  {
+    "type": "click",
+    "target": "",
+    "text": "",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === '') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "",
+    "text": "",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === '') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "For Business",
+    "text": "For Business",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'For Business') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Talent",
+    "text": "Talent",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Talent') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Mentor",
+    "text": "Mentor",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Mentor') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Recruiter",
+    "text": "Recruiter",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Recruiter') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Notification",
+    "text": "Notification",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Notification') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Chat",
+    "text": "Chat",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Chat') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Harsh Mehta",
+    "text": "Harsh Mehta",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Harsh Mehta') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "#host_btn_component",
+    "text": "Post",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const el = document.querySelector('#host_btn_component');\n                if (el) {\n                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                    setTimeout(() => el.click(), 100);\n                    return { success: true };\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "navigate",
+    "target": "/",
+    "text": "Home",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship",
+    "text": "Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job",
+    "text": "Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/competitions",
+    "text": "Competitions",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/competitions';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/mentor",
+    "text": "Mentorship",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/mentor';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/ai-powered-role-based-mock-tests",
+    "text": "Mock Tests",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/ai-powered-role-based-mock-tests';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/ai-mock-interview",
+    "text": "Mock Interview",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/ai-mock-interview';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/100-days-of-code",
+    "text": "100 Days to Code",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/100-days-of-code';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/courses",
+    "text": "Courses",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/courses';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "click",
+    "target": "More",
+    "text": "More",
+    "priority": "medium",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'More') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "My Activity",
+    "text": "My Activity",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'My Activity') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/my-referrals",
+    "text": "Referrals",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/my-referrals';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/nominations",
+    "text": "Unstop Awards",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/nominations';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/notifications",
+    "text": "Settings",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/notifications';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/unstop-pro-subscription",
+    "text": "Unstop Pro",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/unstop-pro-subscription';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship",
+    "text": "Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job",
+    "text": "Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/competitions",
+    "text": "Competitions",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/competitions';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/ai-powered-role-based-mock-tests",
+    "text": "Mock Tests",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/ai-powered-role-based-mock-tests';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/ai-mock-interview",
+    "text": "Mock Interviews",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/ai-mock-interview';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/mentor",
+    "text": "Mentorships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/mentor';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/courses",
+    "text": "Courses",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/courses';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/100-days-of-code",
+    "text": "100 Days to Code",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/100-days-of-code';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "click",
+    "target": "TA  TA Hackathon",
+    "text": "TA  TA Hackathon",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'TA  TA Hackathon') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now!  Grad 3.0 - Galderma Rising Achievers in Dermatology",
+    "text": "Register Now!  Grad 3.0 - Galderma Rising Achievers in Dermatology",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now!  Grad 3.0 - Galderma Rising Achievers in Dermatology') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now!  Adobe University Hackathon 2026",
+    "text": "Register Now!  Adobe University Hackathon 2026",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now!  Adobe University Hackathon 2026') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now! | PPIs  HUL FinAce Season 10",
+    "text": "Register Now! | PPIs  HUL FinAce Season 10",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now! | PPIs  HUL FinAce Season 10') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Online Free Asian Paints Alchemy 2026",
+    "text": "Online Free Asian Paints Alchemy 2026",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Online Free Asian Paints Alchemy 2026') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  Accenture Innovation Challenge 2026",
+    "text": "Register Now  Accenture Innovation Challenge 2026",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  Accenture Innovation Challenge 2026') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  Pep Sales Stars",
+    "text": "Register Now  Pep Sales Stars",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  Pep Sales Stars') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  Join our Exclusive Event on August 21",
+    "text": "Register Now  Join our Exclusive Event on August 21",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  Join our Exclusive Event on August 21') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  TVS Credit E.P.I.C 8.0",
+    "text": "Register Now  TVS Credit E.P.I.C 8.0",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  TVS Credit E.P.I.C 8.0') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  Marico Over the Wall Season 14",
+    "text": "Register Now  Marico Over the Wall Season 14",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  Marico Over the Wall Season 14') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now!  Amazon Customer Excellence (ACE) Challenge 2026",
+    "text": "Register Now!  Amazon Customer Excellence (ACE) Challenge 2026",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now!  Amazon Customer Excellence (ACE) Challenge 2026') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Free Unstop Career League 2.0",
+    "text": "Free Unstop Career League 2.0",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Free Unstop Career League 2.0') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  Join our Exclusive Event on August 18",
+    "text": "Register Now  Join our Exclusive Event on August 18",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  Join our Exclusive Event on August 18') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "WFH Free Unstop Campus Champions",
+    "text": "WFH Free Unstop Campus Champions",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'WFH Free Unstop Campus Champions') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now! | PPOs  HUL TechTonic Season 8",
+    "text": "Register Now! | PPOs  HUL TechTonic Season 8",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now! | PPOs  HUL TechTonic Season 8') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "TA  TA Hackathon",
+    "text": "TA  TA Hackathon",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'TA  TA Hackathon') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now!  Grad 3.0 - Galderma Rising Achievers in Dermatology",
+    "text": "Register Now!  Grad 3.0 - Galderma Rising Achievers in Dermatology",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now!  Grad 3.0 - Galderma Rising Achievers in Dermatology') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now!  Adobe University Hackathon 2026",
+    "text": "Register Now!  Adobe University Hackathon 2026",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now!  Adobe University Hackathon 2026') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now! | PPIs  HUL FinAce Season 10",
+    "text": "Register Now! | PPIs  HUL FinAce Season 10",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now! | PPIs  HUL FinAce Season 10') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Online Free Asian Paints Alchemy 2026",
+    "text": "Online Free Asian Paints Alchemy 2026",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Online Free Asian Paints Alchemy 2026') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  Accenture Innovation Challenge 2026",
+    "text": "Register Now  Accenture Innovation Challenge 2026",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  Accenture Innovation Challenge 2026') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  Pep Sales Stars",
+    "text": "Register Now  Pep Sales Stars",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  Pep Sales Stars') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  Join our Exclusive Event on August 21",
+    "text": "Register Now  Join our Exclusive Event on August 21",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  Join our Exclusive Event on August 21') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  TVS Credit E.P.I.C 8.0",
+    "text": "Register Now  TVS Credit E.P.I.C 8.0",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  TVS Credit E.P.I.C 8.0') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  Marico Over the Wall Season 14",
+    "text": "Register Now  Marico Over the Wall Season 14",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  Marico Over the Wall Season 14') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now!  Amazon Customer Excellence (ACE) Challenge 2026",
+    "text": "Register Now!  Amazon Customer Excellence (ACE) Challenge 2026",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now!  Amazon Customer Excellence (ACE) Challenge 2026') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Free Unstop Career League 2.0",
+    "text": "Free Unstop Career League 2.0",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Free Unstop Career League 2.0') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now  Join our Exclusive Event on August 18",
+    "text": "Register Now  Join our Exclusive Event on August 18",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now  Join our Exclusive Event on August 18') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "WFH Free Unstop Campus Champions",
+    "text": "WFH Free Unstop Campus Champions",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'WFH Free Unstop Campus Champions') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "Register Now! | PPOs  HUL TechTonic Season 8",
+    "text": "Register Now! | PPOs  HUL TechTonic Season 8",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Register Now! | PPOs  HUL TechTonic Season 8') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "TA  TA Hackathon",
+    "text": "TA  TA Hackathon",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'TA  TA Hackathon') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/recently-viewed",
+    "text": "View All",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/recently-viewed';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "jobs/ai-training-specialist-marathi-joblet-1724177",
+    "text": "AI Training Specialist (Marathi)  Joblet",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'jobs/ai-training-specialist-marathi-joblet-1724177';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "jobs/ai-language-evaluator-bengali-joblet-1724175",
+    "text": "AI Language Evaluator (Bengali)  Joblet",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'jobs/ai-language-evaluator-bengali-joblet-1724175';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "jobs/sales-internship-sabpaisa-1723969",
+    "text": "Sales Internship  Sabpaisa",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'jobs/sales-internship-sabpaisa-1723969';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "click",
+    "target": "View All",
+    "text": "View All",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'View All') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "View All",
+    "text": "View All",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'View All') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "click",
+    "target": "View All",
+    "text": "View All",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'View All') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "navigate",
+    "target": "/pro",
+    "text": "",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/pro';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/100-days-of-code",
+    "text": "100 Days Coding Sprint  Level up your skills daily with  our 100-Day Coding Sprint  Start Now",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/100-days-of-code';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "click",
+    "target": "Start Now",
+    "text": "Start Now",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Start Now') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/coding",
+    "text": "Code Conquest  Pick your topics, set your difficulty,  and master key concepts with ease!  Start Now",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/coding';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "click",
+    "target": "Start Now",
+    "text": "Start Now",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Start Now') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "navigate",
+    "target": "https://play.google.com/store/apps/details?id=com.dare2compete.app",
+    "text": "Download Unstop App",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'https://play.google.com/store/apps/details?id=com.dare2compete.app';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/refer-and-earn",
+    "text": "Refer & Win MacBook, iPhone, Apple Watch, AirPods, Cash Rewards and more! Refer Now",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/refer-and-earn';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "click",
+    "target": "Refer Now",
+    "text": "Refer Now",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Refer Now') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "navigate",
+    "target": "https://twitter.com/Unstop_World",
+    "text": "",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'https://twitter.com/Unstop_World';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "https://www.instagram.com/unstop.world/",
+    "text": "",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'https://www.instagram.com/unstop.world/';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "https://www.linkedin.com/company/unstop",
+    "text": "",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'https://www.linkedin.com/company/unstop';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "https://www.facebook.com/Unstop.world",
+    "text": "",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'https://www.facebook.com/Unstop.world';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "https://t.me/+ON15qceSy-IyZjY9",
+    "text": "",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'https://t.me/+ON15qceSy-IyZjY9';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "https://discord.com/invite/DvYWXNr4yR",
+    "text": "",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'https://discord.com/invite/DvYWXNr4yR';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "https://www.youtube.com/c/Unstop_World",
+    "text": "",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'https://www.youtube.com/c/Unstop_World';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/employers/employer-branding",
+    "text": "Engage Talent",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/employers/employer-branding';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/employers/ai-sourcing-agent",
+    "text": "AI Sourcing Agent",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/employers/ai-sourcing-agent';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/employers/ai-screening-agent",
+    "text": "AI Screening Agent",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/employers/ai-screening-agent';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/employers/ai-assessment-agent",
+    "text": "AI Assessment Agent",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/employers/ai-assessment-agent';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/employers/ai-interview-agent",
+    "text": "AI Interview Agent",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/employers/ai-interview-agent';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/employers/ai-proctoring-agent",
+    "text": "AI Proctoring Agent",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/employers/ai-proctoring-agent';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/mentor/become-mentor",
+    "text": "Be a Mentor",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/mentor/become-mentor';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/find-a-mentor",
+    "text": "Explore Mentors",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/find-a-mentor';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/mentor/faqs",
+    "text": "Mentorship FAQs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/mentor/faqs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/t/mentorship-22718",
+    "text": "Mentorship Blogs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/t/mentorship-22718';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/awards/2026",
+    "text": "Unstop Talent Awards 2026",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/awards/2026';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/unstop-talent-meet-2026",
+    "text": "Unstop Talent Meet 2026",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/unstop-talent-meet-2026';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/talent-report-2026",
+    "text": "Unstop Talent Report 2026",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/talent-report-2026';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/tools/education-loan-emi-calculator",
+    "text": "Education Loan  EMI Calculator",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/tools/education-loan-emi-calculator';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/unstop-igniters-club",
+    "text": "Unstop Igniters Club",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/unstop-igniters-club';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/online-quizzing-festival",
+    "text": "Online Quizzing Festival",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/online-quizzing-festival';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "https://unstop.com/legal/terms-of-use",
+    "text": "Terms & Conditions",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'https://unstop.com/legal/terms-of-use';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "https://unstop.com/legal/privacy-policy",
+    "text": "Privacy Policy",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'https://unstop.com/legal/privacy-policy';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/directory/competitions/a/1",
+    "text": "Sitemap",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/directory/competitions/a/1';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/competitions",
+    "text": "Competitions & Challenges",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/competitions';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/quiz",
+    "text": "Assessments",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/quiz';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/hackathons",
+    "text": "Hackathons",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/hackathons';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/workshops",
+    "text": "Workshops & Webinars",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/workshops';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/conferences",
+    "text": "Conferences",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/conferences';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/events",
+    "text": "Cultural Events",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/events';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/college-fests",
+    "text": "College Festivals",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/college-fests';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship",
+    "text": "Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job",
+    "text": "Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/scholarships",
+    "text": "Scholarships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/scholarships';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/summer",
+    "text": "Summer Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/summer';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/ppo",
+    "text": "PPO Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/ppo';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/government-jobs",
+    "text": "Government Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/government-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/government-internship",
+    "text": "Government Internship",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/government-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/international",
+    "text": "International Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/international';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/employers/clients",
+    "text": "Clientele",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/employers/clients';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/our-partners/become-a-partner",
+    "text": "Partner With Us",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/our-partners/become-a-partner';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/our-partners",
+    "text": "Partners",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/our-partners';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/employers/testimonials",
+    "text": "Testimonials",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/employers/testimonials';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/employers/case-studies",
+    "text": "Case Studies",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/employers/case-studies';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/post-now",
+    "text": "Post now",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/post-now';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/courses",
+    "text": "Courses",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/courses';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/blog",
+    "text": "Articles",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/blog';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/blog-series",
+    "text": "Blog Series",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/blog-series';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/workshops",
+    "text": "Workshops",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/workshops';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/resources",
+    "text": "Resources",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/resources';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/college-fests/5dayinterviewprep-unstop-254952",
+    "text": "5 Days Interview Prep",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/college-fests/5dayinterviewprep-unstop-254952';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/coding",
+    "text": "Code & Ace Hiring  Assessments",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/coding';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/100-days-of-code",
+    "text": "100-Day of Coding  Sprint",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/100-days-of-code';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/about",
+    "text": "About Us",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/about';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/about/unstop-careers",
+    "text": "Careers",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/about/unstop-careers';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/about/life-at-unstop",
+    "text": "Life at Unstop",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/about/life-at-unstop';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/faq",
+    "text": "FAQs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/faq';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/our-partners/branding-guidelines",
+    "text": "Branding Guidelines",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/our-partners/branding-guidelines';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/unstop-rewards-program",
+    "text": "Unstop Rewards Program",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/unstop-rewards-program';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/unstoppitchsharktank",
+    "text": "Unstop on Shark Tank",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/unstoppitchsharktank';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/refer-and-earn",
+    "text": "Refer & Earn",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/refer-and-earn';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "https://campuschampions.unstop.com/",
+    "text": "Unstop Campus Champions",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'https://campuschampions.unstop.com/';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "click",
+    "target": "Request a Feature",
+    "text": "Request a Feature",
+    "priority": "low",
+    "iife": "\n            (function() {\n                const elements = document.querySelectorAll('button, a, [role=\"button\"]');\n                for (let el of elements) {\n                    if (el.textContent.trim() === 'Request a Feature') {\n                        el.scrollIntoView({ behavior: 'smooth', block: 'center' });\n                        setTimeout(() => el.click(), 100);\n                        return { success: true };\n                    }\n                }\n                return { success: false };\n            })()\n            "
+  },
+  {
+    "type": "navigate",
+    "target": "/resume-builder",
+    "text": "Build your Resume",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/resume-builder';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "about/unstop-careers",
+    "text": "",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = 'about/unstop-careers';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/contact-us",
+    "text": "Contact Us",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/contact-us';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/share-your-story-and-get-featured",
+    "text": "Share Your Story Now",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/share-your-story-and-get-featured';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/about/newsletter",
+    "text": "Subscribe to our newsletter! send",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/about/newsletter';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-hyderabad",
+    "text": "Jobs in Hyderabad\u200b",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-hyderabad';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-bangalore",
+    "text": "Jobs in Bangalore",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-bangalore';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-mumbai",
+    "text": "Jobs in Mumbai\u200b",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-mumbai';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-delhi",
+    "text": "Jobs in Delhi",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-delhi';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-kolkata",
+    "text": "Jobs in Kolkata",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-kolkata';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-chennai",
+    "text": "Jobs in Chennai\u200b",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-chennai';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-pune",
+    "text": "Jobs in Pune",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-pune';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-ahmedabad",
+    "text": "Jobs in Ahmedabad",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-ahmedabad';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-jaipur",
+    "text": "Jobs in Jaipur",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-jaipur';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-chandigarh",
+    "text": "Jobs in Chandigarh",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-chandigarh';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-noida",
+    "text": "Jobs in Noida",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-noida';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/jobs-in-gurgaon",
+    "text": "Jobs in Gurgaon",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/jobs-in-gurgaon';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/content-writing-jobs",
+    "text": "Content Writing Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/content-writing-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/digital-marketing-jobs",
+    "text": "Digital Marketing Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/digital-marketing-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/data-science-jobs",
+    "text": "Data Science Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/data-science-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/accounting-jobs",
+    "text": "Accounting Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/accounting-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/backend-development-jobs",
+    "text": "Backend Developer Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/backend-development-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/electrical-engineer-jobs",
+    "text": "Electrical Engineer Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/electrical-engineer-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/frontend-development-jobs",
+    "text": "Frontend Developer Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/frontend-development-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/graphic-design-jobs",
+    "text": "Graphic Designer Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/graphic-design-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/growth-marketing-jobs",
+    "text": "Growth Marketing Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/growth-marketing-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/machine-learning-engineering-jobs",
+    "text": "Machine Learning Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/machine-learning-engineering-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/mechanical-engineer-jobs",
+    "text": "Mechanical Engineer Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/mechanical-engineer-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/civil-engineer-jobs",
+    "text": "Civil Engineer Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/civil-engineer-jobs';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-bangalore",
+    "text": "Internship in Bangalore",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-bangalore';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-chennai",
+    "text": "Internship in Chennai",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-chennai';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-pune",
+    "text": "Internship in Pune",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-pune';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-hyderabad",
+    "text": "Internship in Hyderabad",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-hyderabad';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-delhi",
+    "text": "Internship in Delhi",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-delhi';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-mumbai",
+    "text": "Internship in Mumbai",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-mumbai';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-noida",
+    "text": "Internship in Noida",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-noida';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-jaipur",
+    "text": "Internship in Jaipur",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-jaipur';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-chandigarh",
+    "text": "Internship in Chandigarh",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-chandigarh';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-coimbatore",
+    "text": "Internship in Coimbatore",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-coimbatore';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-ahmedabad",
+    "text": "Internship in Ahmedabad",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-ahmedabad';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/internship-in-kolkata",
+    "text": "Internship in Kolkata",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/internship-in-kolkata';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/data-analysis-internship",
+    "text": "Data Analysis Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/data-analysis-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/data-science-internship",
+    "text": "Data Science Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/data-science-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/software-development-internship",
+    "text": "Software Development Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/software-development-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/digital-marketing-internship",
+    "text": "Digital Marketing Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/digital-marketing-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/web-development-internship",
+    "text": "Web Development Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/web-development-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/uiux-design-internship",
+    "text": "UI/UX Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/uiux-design-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/human-resources-hr-internship",
+    "text": "HR Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/human-resources-hr-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/finance-internship",
+    "text": "Finance Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/finance-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/devops-internship",
+    "text": "DevOps Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/devops-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/artificial-intelligence-internship",
+    "text": "AI Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/artificial-intelligence-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship/graphic-design-internship",
+    "text": "Graphic Design Internship",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship/graphic-design-internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-bangalore",
+    "text": "Work from Home Jobs in Bangalore",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-bangalore';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-chennai",
+    "text": "Work from Home Jobs in Chennai",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-chennai';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-hyderabad",
+    "text": "Work from Home Jobs in Hyderabad",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-hyderabad';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-delhi",
+    "text": "Work from Home Jobs in Delhi",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-delhi';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-pune",
+    "text": "Work from Home Jobs in Pune",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-pune';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-mumbai",
+    "text": "Work from Home Jobs in Mumbai",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-mumbai';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-kolkata",
+    "text": "Work from Home Jobs in Kolkata",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-kolkata';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-ahmedabad",
+    "text": "Work from Home Jobs in Ahmedabad",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-ahmedabad';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-noida",
+    "text": "Work from Home Jobs in Noida",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-noida';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-jaipur",
+    "text": "Work from Home Jobs in Jaipur",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-jaipur';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-chandigarh",
+    "text": "Work from Home Jobs in Chandigarh",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-chandigarh';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job/work-from-home-jobs-in-coimbatore",
+    "text": "Work from Home Jobs in Coimbatore",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job/work-from-home-jobs-in-coimbatore';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/find-a-mentor?skills=resume-cv-review:career-advice",
+    "text": "CV Review",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/find-a-mentor?skills=resume-cv-review:career-advice';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/find-a-mentor?skills=cat-preparation:xat-preparation",
+    "text": "MBA Preparation",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/find-a-mentor?skills=cat-preparation:xat-preparation';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/find-a-mentor?skills=case-study-competitions-and-innovation-challenges",
+    "text": "Case Competition",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/find-a-mentor?skills=case-study-competitions-and-innovation-challenges';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/find-a-mentor?skills=placement-support",
+    "text": "Placement Support",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/find-a-mentor?skills=placement-support';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/find-a-mentor?skills=mock-interviews:interview-preparation:interview-preparations:how-to-get-high-impact-jobs-vcs-strategy",
+    "text": "Interview Preparation",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/find-a-mentor?skills=mock-interviews:interview-preparation:interview-preparations:how-to-get-high-impact-jobs-vcs-strategy';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/find-a-mentor?skills=career-development:career-growth:career-coaching:career-advice",
+    "text": "Career Guidance",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/find-a-mentor?skills=career-development:career-growth:career-coaching:career-advice';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/find-a-mentor?skills=personal-branding-on-linkedin-and-other-social-media-platforms:public-speaking",
+    "text": "Personal Branding",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/find-a-mentor?skills=personal-branding-on-linkedin-and-other-social-media-platforms:public-speaking';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/find-a-mentor?skills=study-abroad:gmat-gre-preparation",
+    "text": "Study Abroad",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/find-a-mentor?skills=study-abroad:gmat-gre-preparation';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/find-a-mentor?skills=coding:hackathons-and-coding-challenges:software-development:software-engineering:software-architecture:mobile-app-development:web-development:product-development:c:programming-languages:programming:prototyping",
+    "text": "Coding & Software",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/find-a-mentor?skills=coding:hackathons-and-coding-challenges:software-development:software-engineering:software-architecture:mobile-app-development:web-development:product-development:c:programming-languages:programming:prototyping';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/mock-test",
+    "text": "Skill Based Mock Assessments",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/mock-test';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/company-preparation",
+    "text": "Company Preparation",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/company-preparation';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/machine-learning-ai-project",
+    "text": "Machine Learning Projects",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/machine-learning-ai-project';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/ai-powered-role-based-mock-tests",
+    "text": "AI-Powered Mock Tests",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/ai-powered-role-based-mock-tests';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/ai-mock-interview",
+    "text": "AI-Powered Mock Interview",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/ai-mock-interview';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/100-days-of-code",
+    "text": "100 Days Coding Sprint",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/100-days-of-code';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/ai-powered-skill-based-mock-tests",
+    "text": "AI-Powered Skill-Based Mock Tests",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/ai-powered-skill-based-mock-tests';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/coding",
+    "text": "Code Conquest",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/coding';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/",
+    "text": "FLIVE Consulting Pvt Ltd",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/",
+    "text": "Home",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/internship",
+    "text": "Internships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/internship';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/job",
+    "text": "Jobs",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/job';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/competitions",
+    "text": "Competitions",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/competitions';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/mentor",
+    "text": "Mentorship",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/mentor';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/ai-powered-role-based-mock-tests",
+    "text": "Mock Tests",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/ai-powered-role-based-mock-tests';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/ai-mock-interview",
+    "text": "Mock Interview",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/ai-mock-interview';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice/100-days-of-code",
+    "text": "100 Days to Code",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice/100-days-of-code';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/courses",
+    "text": "Courses",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/courses';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/practice",
+    "text": "Practice",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/practice';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/hackathons",
+    "text": "Hackathons",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/hackathons';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/quiz",
+    "text": "Quizzes",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/quiz';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/scholarships",
+    "text": "Scholarships",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/scholarships';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/workshops-webinars",
+    "text": "Workshops",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/workshops-webinars';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/conferences",
+    "text": "Conferences",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/conferences';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/events",
+    "text": "Cultural Events",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/events';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/college-fests",
+    "text": "College Festivals",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/college-fests';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/articles",
+    "text": "Articles",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/articles';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/resources",
+    "text": "Resources",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/resources';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/registrations",
+    "text": "My Applications",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/registrations';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/rounds/all/live",
+    "text": "My Rounds",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/rounds/all/live';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/myCourses/all/all",
+    "text": "My Courses",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/myCourses/all/all';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/mentor-sessions/all",
+    "text": "My Sessions",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/mentor-sessions/all';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/certificates",
+    "text": "My Certificates",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/certificates';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/recently-viewed",
+    "text": "Recently Viewed",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/recently-viewed';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/watchlist",
+    "text": "Watchlist",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/watchlist';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/starred-questions",
+    "text": "Bookmarked Ques...",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/starred-questions';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/my-referrals",
+    "text": "Referrals",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/my-referrals';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/nominations",
+    "text": "Unstop Awards",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/nominations';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/notifications",
+    "text": "Settings",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/notifications';\n            return { success: true };\n        })()\n        "
+  },
+  {
+    "type": "navigate",
+    "target": "/user/unstop-pro-subscription",
+    "text": "Unstop Pro",
+    "priority": "medium",
+    "iife": "\n        (function() {\n            window.location.href = '/user/unstop-pro-subscription';\n            return { success: true };\n        })()\n        "
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "cycle": 5,
+  "q_agent_stats": {
+    "total_actions": 4,
+    "episode_count": 0,
+    "goal_count": 0,
+    "state_count": 3,
+    "total_q_values": 18,
+    "exploration_rate": 0.2985,
+    "learning_rate": 0.1,
+    "experience_buffer_size": 1,
+    "is_converged": false,
+    "memory_usage_mb": 34.78125
+  },
+  "episodes": 1,
+  "timestamp": "2026-08-01T10:32:23.115052",
+  "is_converged": false
+}

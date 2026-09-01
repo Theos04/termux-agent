@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "session_id": "20260730_195917",
+    "start_time": "2026-07-30T19:59:17.818994",
+    "end_time": "2026-07-30T19:59:38.358178",
+    "chrome_port": 9258,
+    "tab_url": "https://unstop.com/",
+    "tab_title": "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+    "total_commands": 8,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 1,
+      "snapshots": 1,
+      "accessibility": 1
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "memory/session_20260730_195917/dom_trees/dom_195931_097579.json",
+      "metadata": {
+        "session_id": "20260730_195917",
+        "timestamp": "2026-07-30T19:59:31.097713",
+        "tab_url": "https://unstop.com/",
+        "tab_title": "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 3282,
+        "command_index": 2
+      }
+    },
+    "last_snapshot": {
+      "file": "memory/session_20260730_195917/snapshots/snapshot_195933_704630.json",
+      "metadata": {
+        "session_id": "20260730_195917",
+        "timestamp": "2026-07-30T19:59:33.704793",
+        "tab_url": "https://unstop.com/",
+        "tab_title": "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+        "context": {
+          "method": "DOMSnapshot.getSnapshot",
+          "params": {
+            "computedStyleWhitelist": [],
+            "includeEventListeners": false,
+            "includePaintOrder": false,
+            "includeUserAgentShadowTree": true
+          }
+        },
+        "dom_node_count": 3559,
+        "layout_tree_count": 0,
+        "computed_styles_count": 0,
+        "command_index": 5
+      }
+    },
+    "last_accessibility": {
+      "file": "memory/session_20260730_195917/accessibility/a11y_195935_466453.json",
+      "metadata": {
+        "session_id": "20260730_195917",
+        "timestamp": "2026-07-30T19:59:35.466613",
+        "tab_url": "https://unstop.com/",
+        "tab_title": "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+        "context": {
+          "method": "Accessibility.getFullAXTree"
+        },
+        "node_count": 2081,
+        "command_index": 7
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 8,
+  "last_updated": "2026-07-30T19:59:38.358926"
+}

@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "session_id": "20260803_131826",
+    "start_time": "2026-08-03T13:18:26.739419",
+    "end_time": "2026-08-03T13:23:56.086517",
+    "chrome_port": 9223,
+    "tab_url": "https://www.hackerone.com/",
+    "tab_title": "HackerOne | Leader in Continuous Threat Exposure Management | Security for AI",
+    "total_commands": 0,
+    "snapshots_taken": [],
+    "files_generated": {}
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 0,
+  "last_updated": "2026-08-03T13:23:56.104616"
+}

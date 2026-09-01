@@ -1,0 +1,47 @@
+{
+  "cycle": 10,
+  "goal_achieved": false,
+  "best_reward": 14.0,
+  "q_stats": {
+    "state_count": 6,
+    "total_q_values": 64,
+    "exploration_rate": 0.6657770913260403,
+    "learning_rate": 0.22499999999999998,
+    "total_actions": 54,
+    "unique_actions": 54,
+    "consecutive_repeats": 0,
+    "stuck_count": 0,
+    "episodes": 10,
+    "successful_episodes": 7,
+    "avg_reward": 7.13,
+    "max_reward": 14.0,
+    "min_reward": 3.6
+  },
+  "reward_progress": [
+    3.9,
+    8.0,
+    8.0,
+    8.0,
+    8.0,
+    8.0,
+    14.0,
+    5.9,
+    3.9,
+    3.6
+  ],
+  "episodes": 10,
+  "best_path": {
+    "actions": [
+      "navigate|https://www.naukri.com|navigation",
+      "click|Complete profile|generic",
+      "navigate|https://www.naukri.com|navigation",
+      "click|Complete profile|generic",
+      "navigate|NVites2 New|navigation"
+    ],
+    "reward": 14.0,
+    "cycle": 7
+  },
+  "success_count": 6,
+  "unique_states": 6,
+  "timestamp": "2026-08-01T13:43:12.050189"
+}

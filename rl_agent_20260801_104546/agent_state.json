@@ -1,0 +1,22 @@
+{
+  "cycle": 8,
+  "q_stats": {
+    "state_count": 4,
+    "total_q_values": 50,
+    "exploration_rate": 0.5592392087441939,
+    "total_actions": 7,
+    "unique_actions": 50,
+    "consecutive_repeats": 0
+  },
+  "reward_progress": [
+    0.7,
+    0.2,
+    11.0,
+    0.2,
+    7.5,
+    10.5,
+    7.5
+  ],
+  "episodes": 7,
+  "timestamp": "2026-08-01T10:46:13.347583"
+}

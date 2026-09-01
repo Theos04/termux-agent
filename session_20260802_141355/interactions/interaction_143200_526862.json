@@ -1,0 +1,447 @@
+{
+  "metadata": {
+    "session_id": "20260802_141355",
+    "timestamp": "2026-08-02T14:32:00.527077",
+    "tab_url": "https://www.naukri.com/mnjuser/homepage",
+    "tab_title": "Home | Mynaukri",
+    "context": {
+      "type": "script_execution"
+    },
+    "interaction_number": 2,
+    "command_index": 44
+  },
+  "data": {
+    "script_file": "/data/data/com.termux/files/home/automation/chrome-launcher/scripts-library/naukari/nested_url.js",
+    "script_content": "// ============================================================\n// SIMPLE NESTED URL TABLE PRINTER\n// ============================================================\n\n(function() {\n    const urls = [];\n    const seen = new Set();\n    \n    // Extract URLs\n    document.querySelectorAll('li a').forEach(link => {\n        const href = link.href;\n        if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {\n            const li = link.closest('li');\n            let depth = 0;\n          ...",
+    "result": [
+      {
+        "#": 1,
+        "Depth": 1,
+        "Text": "Jobs1",
+        "URL": "https://www.naukri.com/mnjuser/recommendedjobs",
+        "Parent": "Jobs1Recommended jobsNVites2 N"
+      },
+      {
+        "#": 6,
+        "Depth": 1,
+        "Text": "Companies",
+        "URL": "https://www.naukri.com/companies-hiring-in-india?s",
+        "Parent": "CompaniesExplore categoriesUni"
+      },
+      {
+        "#": 21,
+        "Depth": 1,
+        "Text": "Services",
+        "URL": "https://resume.naukri.com/?fftid=100001",
+        "Parent": "ServicesResume writingText res"
+      },
+      {
+        "#": 34,
+        "Depth": 1,
+        "Text": "Neo-AI Job Agent",
+        "URL": "https://www.naukri.com/job-apply-agent?utmTerm=Job",
+        "Parent": "Neo-AI Job Agent"
+      },
+      {
+        "#": 35,
+        "Depth": 1,
+        "Text": "Naukri Pro",
+        "URL": "https://www.naukri.com/naukri360-pro?utm_term=N360",
+        "Parent": "Naukri Pro"
+      },
+      {
+        "#": 36,
+        "Depth": 1,
+        "Text": "Resume Pro",
+        "URL": "https://www.naukri.com/resume-maker?utm_term=Resum",
+        "Parent": "Resume Pro"
+      },
+      {
+        "#": 37,
+        "Depth": 1,
+        "Text": "Resume Writing Service",
+        "URL": "https://www.naukri.com/resume-writing-service?utmT",
+        "Parent": "Resume Writing Service"
+      },
+      {
+        "#": 38,
+        "Depth": 1,
+        "Text": "Interview Pro",
+        "URL": "https://www.naukri.com/mock-interview-questions?sk",
+        "Parent": "Interview Pro"
+      },
+      {
+        "#": 39,
+        "Depth": 1,
+        "Text": "About us",
+        "URL": "https://infoedge.in/",
+        "Parent": "About us"
+      },
+      {
+        "#": 40,
+        "Depth": 1,
+        "Text": "Careers",
+        "URL": "https://careers.infoedge.com/",
+        "Parent": "Careers"
+      },
+      {
+        "#": 41,
+        "Depth": 1,
+        "Text": "Employer home",
+        "URL": "https://www.naukri.com/recruit/login",
+        "Parent": "Employer home"
+      },
+      {
+        "#": 42,
+        "Depth": 1,
+        "Text": "Sitemap",
+        "URL": "https://www.naukri.com/sitemap/sitemap.php",
+        "Parent": "Sitemap"
+      },
+      {
+        "#": 43,
+        "Depth": 1,
+        "Text": "Credits",
+        "URL": "https://www.naukri.com/credits",
+        "Parent": "Credits"
+      },
+      {
+        "#": 44,
+        "Depth": 1,
+        "Text": "Help center",
+        "URL": "https://www.naukri.com/faq/job-seeker?utm_source=f",
+        "Parent": "Help center"
+      },
+      {
+        "#": 45,
+        "Depth": 1,
+        "Text": "Summons/Notices",
+        "URL": "https://w5.naukri.com/summons-notices-form/",
+        "Parent": "Summons/Notices"
+      },
+      {
+        "#": 46,
+        "Depth": 1,
+        "Text": "Grievances",
+        "URL": "https://w5.naukri.com/grievances-form/",
+        "Parent": "Grievances"
+      },
+      {
+        "#": 47,
+        "Depth": 1,
+        "Text": "Report issue",
+        "URL": "https://w5.naukri.com/fdbck/main/feedback.php?app_",
+        "Parent": "Report issue"
+      },
+      {
+        "#": 48,
+        "Depth": 1,
+        "Text": "Privacy policy",
+        "URL": "https://www.naukri.com/privacypolicy",
+        "Parent": "Privacy policy"
+      },
+      {
+        "#": 49,
+        "Depth": 1,
+        "Text": "Terms & conditions",
+        "URL": "https://www.naukri.com/termsconditions",
+        "Parent": "Terms & conditions"
+      },
+      {
+        "#": 50,
+        "Depth": 1,
+        "Text": "Fraud alert",
+        "URL": "https://www.naukri.com/imposter/report-fake-job-re",
+        "Parent": "Fraud alert"
+      },
+      {
+        "#": 51,
+        "Depth": 1,
+        "Text": "Trust & safety",
+        "URL": "https://www.naukri.com/jobsearch/trust-safety",
+        "Parent": "Trust & safety"
+      },
+      {
+        "#": 52,
+        "Depth": 1,
+        "Text": "",
+        "URL": "https://www.99acres.com/",
+        "Parent": ""
+      },
+      {
+        "#": 53,
+        "Depth": 1,
+        "Text": "",
+        "URL": "https://www.jeevansathi.com/",
+        "Parent": ""
+      },
+      {
+        "#": 54,
+        "Depth": 1,
+        "Text": "",
+        "URL": "https://www.naukrigulf.com/",
+        "Parent": ""
+      },
+      {
+        "#": 55,
+        "Depth": 1,
+        "Text": "",
+        "URL": "https://www.shiksha.com/",
+        "Parent": ""
+      },
+      {
+        "#": 56,
+        "Depth": 1,
+        "Text": "",
+        "URL": "https://www.iimjobs.com/",
+        "Parent": ""
+      },
+      {
+        "#": 57,
+        "Depth": 1,
+        "Text": "",
+        "URL": "https://www.hirist.tech/",
+        "Parent": ""
+      },
+      {
+        "#": 58,
+        "Depth": 1,
+        "Text": "",
+        "URL": "https://www.jobhai.com/",
+        "Parent": ""
+      },
+      {
+        "#": 59,
+        "Depth": 1,
+        "Text": "",
+        "URL": "https://doselect.com/",
+        "Parent": ""
+      },
+      {
+        "#": 60,
+        "Depth": 1,
+        "Text": "",
+        "URL": "https://www.naukri.com/minis",
+        "Parent": ""
+      },
+      {
+        "#": 61,
+        "Depth": 1,
+        "Text": "",
+        "URL": "https://www.codingninjas.com/?utm_source=naukri&ut",
+        "Parent": ""
+      },
+      {
+        "#": 2,
+        "Depth": 2,
+        "Text": "Recommended jobs",
+        "URL": "https://www.naukri.com/mnjuser/recommendedjobs",
+        "Parent": "Recommended jobs"
+      },
+      {
+        "#": 3,
+        "Depth": 2,
+        "Text": "NVites2 New",
+        "URL": "https://www.naukri.com/mnjuser/inbox",
+        "Parent": "NVites2 New"
+      },
+      {
+        "#": 4,
+        "Depth": 2,
+        "Text": "Application status",
+        "URL": "https://www.naukri.com/myapply/historypage",
+        "Parent": "Application status"
+      },
+      {
+        "#": 5,
+        "Depth": 2,
+        "Text": "Saved jobs",
+        "URL": "https://www.naukri.com/mnjuser/savedjobs",
+        "Parent": "Saved jobs"
+      },
+      {
+        "#": 7,
+        "Depth": 2,
+        "Text": "Unicorn",
+        "URL": "https://www.naukri.com/unicorn-companies-in-india-",
+        "Parent": "Unicorn"
+      },
+      {
+        "#": 8,
+        "Depth": 2,
+        "Text": "MNC",
+        "URL": "https://www.naukri.com/mnc-companies-in-india-cat1",
+        "Parent": "MNC"
+      },
+      {
+        "#": 9,
+        "Depth": 2,
+        "Text": "Startup",
+        "URL": "https://www.naukri.com/startup-companies-in-india-",
+        "Parent": "Startup"
+      },
+      {
+        "#": 10,
+        "Depth": 2,
+        "Text": "Product based",
+        "URL": "https://www.naukri.com/product-companies-in-india-",
+        "Parent": "Product based"
+      },
+      {
+        "#": 11,
+        "Depth": 2,
+        "Text": "Internet",
+        "URL": "https://www.naukri.com/internet-companies-in-india",
+        "Parent": "Internet"
+      },
+      {
+        "#": 12,
+        "Depth": 2,
+        "Text": "Top companies",
+        "URL": "https://www.naukri.com/companies-hiring-in-india?s",
+        "Parent": "Top companies"
+      },
+      {
+        "#": 13,
+        "Depth": 2,
+        "Text": "IT companies",
+        "URL": "https://www.naukri.com/it-companies-in-india-cat11",
+        "Parent": "IT companies"
+      },
+      {
+        "#": 14,
+        "Depth": 2,
+        "Text": "Fintech companies",
+        "URL": "https://www.naukri.com/fintech-and-payments-compan",
+        "Parent": "Fintech companies"
+      },
+      {
+        "#": 15,
+        "Depth": 2,
+        "Text": "Sponsored companies",
+        "URL": "https://www.naukri.com/allcompanies?searchType=sta",
+        "Parent": "Sponsored companies"
+      },
+      {
+        "#": 16,
+        "Depth": 2,
+        "Text": "Featured companies",
+        "URL": "https://www.naukri.com/allcompanies?searchType=pre",
+        "Parent": "Featured companies"
+      },
+      {
+        "#": 17,
+        "Depth": 2,
+        "Text": "Interview questions",
+        "URL": "https://www.ambitionbox.com/interviews?utm_source=",
+        "Parent": "Interview questions"
+      },
+      {
+        "#": 18,
+        "Depth": 2,
+        "Text": "Company salaries",
+        "URL": "https://www.ambitionbox.com/salaries?utm_source=na",
+        "Parent": "Company salaries"
+      },
+      {
+        "#": 19,
+        "Depth": 2,
+        "Text": "Company reviews",
+        "URL": "https://www.ambitionbox.com/reviews?utm_source=nau",
+        "Parent": "Company reviews"
+      },
+      {
+        "#": 20,
+        "Depth": 2,
+        "Text": "Salary Calculator",
+        "URL": "https://www.ambitionbox.com/salaries/take-home-sal",
+        "Parent": "Salary Calculator"
+      },
+      {
+        "#": 22,
+        "Depth": 2,
+        "Text": "Text resume",
+        "URL": "https://resume.naukri.com/resume-writing-services?",
+        "Parent": "Text resume"
+      },
+      {
+        "#": 23,
+        "Depth": 2,
+        "Text": "Visual resume",
+        "URL": "https://resume.naukri.com/visual-resume-writing-se",
+        "Parent": "Visual resume"
+      },
+      {
+        "#": 24,
+        "Depth": 2,
+        "Text": "Resume critique",
+        "URL": "https://resume.naukri.com/resume-critique?fftid=10",
+        "Parent": "Resume critique"
+      },
+      {
+        "#": 25,
+        "Depth": 2,
+        "Text": "Jobs4u",
+        "URL": "https://resume.naukri.com/job-alerts-on-mobile-mai",
+        "Parent": "Jobs4u"
+      },
+      {
+        "#": 26,
+        "Depth": 2,
+        "Text": "Priority applicant",
+        "URL": "https://resume.naukri.com/priority-job-application",
+        "Parent": "Priority applicant"
+      },
+      {
+        "#": 27,
+        "Depth": 2,
+        "Text": "Contact us",
+        "URL": "https://resume.naukri.com/contact-us?fftid=101015",
+        "Parent": "Contact us"
+      },
+      {
+        "#": 28,
+        "Depth": 2,
+        "Text": "Resume display",
+        "URL": "https://resume.naukri.com/resume-display?fftid=101",
+        "Parent": "Resume display"
+      },
+      {
+        "#": 29,
+        "Depth": 2,
+        "Text": "Basic & premium plans",
+        "URL": "https://resume.naukri.com/subscription-product?fft",
+        "Parent": "Basic & premium plans"
+      },
+      {
+        "#": 30,
+        "Depth": 2,
+        "Text": "Resume maker",
+        "URL": "https://www.naukri.com/resume-maker?utmTerm=Resume",
+        "Parent": "Resume maker"
+      },
+      {
+        "#": 31,
+        "Depth": 2,
+        "Text": "Resume quality score",
+        "URL": "https://resume.naukri.com/resume-quality-score?fft",
+        "Parent": "Resume quality score"
+      },
+      {
+        "#": 32,
+        "Depth": 2,
+        "Text": "Resume samples",
+        "URL": "https://resume.naukri.com/resume-samples?fftid=101",
+        "Parent": "Resume samples"
+      },
+      {
+        "#": 33,
+        "Depth": 2,
+        "Text": "Job letter samples",
+        "URL": "https://resume.naukri.com/job-letter-format",
+        "Parent": "Job letter samples"
+      }
+    ],
+    "execution_time": "2026-08-02T14:32:00.526800"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "session_id": "20260803_132403",
+    "start_time": "2026-08-03T13:24:03.935547",
+    "end_time": null,
+    "chrome_port": 9223,
+    "tab_url": "https://hackerone.com/verily_life_sciences?type=team",
+    "tab_title": "Verily Life Sciences | Bounty Policy | HackerOne",
+    "total_commands": 40,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 10,
+      "snapshots": 3,
+      "accessibility": 3
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "session_20260803_132403/dom_trees/dom_133601_077675.json",
+      "metadata": {
+        "session_id": "20260803_132403",
+        "timestamp": "2026-08-03T13:36:01.077832",
+        "tab_url": "https://hackerone.com/opportunities/all/search?bbp=true&industries=Healthcare&ordering=Newest+programs",
+        "tab_title": "Opportunity Discovery | HackerOne",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 1419,
+        "command_index": 38
+      }
+    },
+    "last_snapshot": {
+      "file": "session_20260803_132403/snapshots/snapshot_132828_988917.json",
+      "metadata": {
+        "session_id": "20260803_132403",
+        "timestamp": "2026-08-03T13:28:28.989146",
+        "tab_url": "https://hackerone.com/2fa/setup?security_key_enabled=true",
+        "tab_title": "Setup Two-factor authentication | HackerOne",
+        "context": {
+          "method": "DOMSnapshot.getSnapshot",
+          "params": {
+            "computedStyleWhitelist": [],
+            "includeEventListeners": false,
+            "includePaintOrder": false,
+            "includeUserAgentShadowTree": true
+          }
+        },
+        "dom_node_count": 350,
+        "layout_tree_count": 0,
+        "computed_styles_count": 0,
+        "command_index": 21
+      }
+    },
+    "last_accessibility": {
+      "file": "session_20260803_132403/accessibility/a11y_132829_294708.json",
+      "metadata": {
+        "session_id": "20260803_132403",
+        "timestamp": "2026-08-03T13:28:29.294880",
+        "tab_url": "https://hackerone.com/2fa/setup?security_key_enabled=true",
+        "tab_title": "Setup Two-factor authentication | HackerOne",
+        "context": {
+          "method": "Comprehensive_AX_Tree"
+        },
+        "node_count": 0,
+        "command_index": 23
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 40,
+  "last_updated": "2026-08-03T13:36:28.772522"
+}

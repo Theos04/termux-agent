@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ workflow.name }} - Workflow Builder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .header h1 { color: #1a1a2e; }
+        .badge {
+            background: #FF6B35;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .btn-primary { background: #4CAF50; color: white; }
+        .btn-primary:hover { background: #45a049; }
+        .btn-secondary { background: #2196F3; color: white; }
+        .btn-secondary:hover { background: #1976D2; }
+        .btn-danger { background: #f44336; color: white; }
+        .btn-danger:hover { background: #da190b; }
+        
+        .workflow-area {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            min-height: 500px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .add-box-form {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .add-box-form form {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+        .add-box-form .form-group { flex: 1; min-width: 150px; }
+        .add-box-form label { display: block; font-size: 12px; color: #666; margin-bottom: 4px; }
+        .add-box-form input[type="text"],
+        .add-box-form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .add-box-form input[type="color"] {
+            width: 50px;
+            height: 38px;
+            padding: 2px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .boxes-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            min-height: 200px;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 8px;
+            border: 2px dashed #ddd;
+        }
+        
+        .box {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            min-width: 200px;
+            max-width: 300px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            cursor: grab;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+            border-left: 4px solid #4CAF50;
+            user-select: none;
+        }
+        .box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .box .box-title { font-weight: 600; margin-bottom: 8px; font-size: 16px; }
+        .box .box-content { color: #666; font-size: 14px; word-wrap: break-word; }
+        .box .box-actions {
+            margin-top: 12px;
+            display: flex;
+            gap: 8px;
+        }
+        .box .box-actions button {
+            padding: 4px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.2s;
+        }
+        .box .box-actions .edit-btn { background: #2196F3; color: white; }
+        .box .box-actions .edit-btn:hover { background: #1976D2; }
+        .box .box-actions .delete-btn { background: #f44336; color: white; }
+        .box .box-actions .delete-btn:hover { background: #da190b; }
+        .empty-boxes { width: 100%; text-align: center; padding: 40px; color: #999; }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal.active { display: flex; }
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+        }
+        .modal-content h2 { margin-bottom: 20px; }
+        .modal-content input,
+        .modal-content textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .modal-content .modal-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 {{ workflow.name }}</h1>
+            <div>
+                <span class="badge">FastAPI</span>
+                <a href="/" class="btn btn-secondary">← Back</a>
+                <button onclick="deleteWorkflow({{ workflow.id }})" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+
+        <div class="workflow-area">
+            <div class="add-box-form">
+                <h3>Add New Box</h3>
+                <form action="/api/workflows/{{ workflow.id }}/boxes" method="post">
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" name="title" placeholder="Box title" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Content</label>
+                        <textarea name="content" placeholder="Box content" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Color</label>
+                        <input type="color" name="color" value="#4CAF50">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Box</button>
+                </form>
+            </div>
+
+            <div class="boxes-container" id="boxesContainer">
+                {% if boxes %}
+                    {% for box in boxes %}
+                        <div class="box" data-id="{{ box.id }}" draggable="true" style="border-left-color: {{ box.color }};">
+                            <div class="box-title">{{ box.title }}</div>
+                            <div class="box-content">{{ box.content }}</div>
+                            <div class="box-actions">
+                                <button class="edit-btn" onclick="editBox({{ box.id }}, '{{ box.title }}', '{{ box.content }}', '{{ box.color }}')">Edit</button>
+                                <button class="delete-btn" onclick="deleteBox({{ box.id }})">Delete</button>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="empty-boxes">No boxes yet. Add your first box above!</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <h2>Edit Box</h2>
+            <form id="editForm">
+                <input type="text" id="editTitle" placeholder="Title" required>
+                <textarea id="editContent" placeholder="Content" rows="3"></textarea>
+                <input type="color" id="editColor" value="#4CAF50">
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeEditModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let editingBoxId = null;
+        let draggedElement = null;
+        const container = document.getElementById('boxesContainer');
+
+        container.addEventListener('dragstart', function(e) {
+            if (e.target.classList.contains('box')) {
+                draggedElement = e.target;
+                e.dataTransfer.effectAllowed = 'move';
+                e.dataTransfer.setData('text/plain', e.target.dataset.id);
+            }
+        });
+
+        container.addEventListener('dragover', function(e) {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+        });
+
+        container.addEventListener('drop', function(e) {
+            e.preventDefault();
+            if (draggedElement && draggedElement !== e.target && e.target.classList.contains('box')) {
+                const items = Array.from(container.children);
+                const draggedIndex = items.indexOf(draggedElement);
+                const targetIndex = items.indexOf(e.target);
+                
+                if (draggedIndex < targetIndex) {
+                    container.insertBefore(draggedElement, e.target.nextSibling);
+                } else {
+                    container.insertBefore(draggedElement, e.target);
+                }
+                saveOrder();
+            }
+        });
+
+        async function saveOrder() {
+            const boxElements = container.querySelectorAll('.box:not(.empty-boxes)');
+            const boxData = Array.from(boxElements).map((box, index) => ({
+                id: parseInt(box.dataset.id),
+                order: index,
+                position_x: 50 + (index * 20),
+                position_y: 50 + (index * 20)
+            }));
+
+            try {
+                const response = await fetch('/api/boxes/reorder', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ boxes: boxData })
+                });
+                if (!response.ok) console.error('Failed to save order');
+            } catch (error) {
+                console.error('Error saving order:', error);
+            }
+        }
+
+        async function deleteBox(id) {
+            if (confirm('Delete this box?')) {
+                const response = await fetch(`/api/boxes/${id}`, { method: 'DELETE' });
+                if (response.ok) window.location.reload();
+            }
+        }
+
+        async function deleteWorkflow(id) {
+            if (confirm('Delete this workflow?')) {
+                const response = await fetch(`/api/workflows/${id}`, { method: 'DELETE' });
+                if (response.ok) window.location.href = '/';
+            }
+        }
+
+        function editBox(id, title, content, color) {
+            editingBoxId = id;
+            document.getElementById('editTitle').value = title;
+            document.getElementById('editContent').value = content;
+            document.getElementById('editColor').value = color;
+            document.getElementById('editModal').classList.add('active');
+        }
+
+        function closeEditModal() {
+            document.getElementById('editModal').classList.remove('active');
+            editingBoxId = null;
+        }
+
+        document.getElementById('editForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData();
+            formData.append('title', document.getElementById('editTitle').value);
+            formData.append('content', document.getElementById('editContent').value);
+            formData.append('color', document.getElementById('editColor').value);
+
+            try {
+                const response = await fetch(`/api/boxes/${editingBoxId}`, {
+                    method: 'PUT',
+                    body: formData
+                });
+                if (response.ok) window.location.reload();
+            } catch (error) {
+                console.error('Error updating box:', error);
+                alert('Error updating box');
+            }
+            closeEditModal();
+        });
+
+        document.getElementById('editModal').addEventListener('click', function(e) {
+            if (e.target === this) closeEditModal();
+        });
+    </script>
+</body>
+</html>

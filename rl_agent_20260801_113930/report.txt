@@ -1,0 +1,33 @@
+================================================================================
+🚀 STRUCTURAL RL AGENT - FINAL REPORT
+================================================================================
+Total Cycles: 30
+Goal Achieved: 🔄 Still learning
+Best Reward: 8.00
+Success Events: 1
+
+📊 Q-LEARNING STATS:
+  States Discovered: 2
+  Q-Values Learned: 3
+  Exploration Rate: 0.697
+  Learning Rate: 0.225
+  Total Actions: 3
+  Unique Actions: 3
+  Episodes: 1
+  Successful Episodes: 1
+  Avg Reward: 8.00
+  Max Reward: 8.00
+  Min Reward: 8.00
+
+🏆 BEST PATH FOUND:
+  click|Complete profile|generic
+  Reward: 8.00
+
+📈 Recent Performance (last 1):
+  Avg Reward: 8.00
+  Success Rate: 100.0%
+
+📋 Action Distribution:
+  click|complete profile|generic: 1 times
+
+================================================================================

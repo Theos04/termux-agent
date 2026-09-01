@@ -1,0 +1,188 @@
+{
+  "metrics": {
+    "dom_nodes": 2588,
+    "ax_nodes": 14157,
+    "text_snippets": 36214,
+    "unique_texts": 3989,
+    "discovered_domain": "news_site",
+    "structure_types": {
+      "dom": 1,
+      "dict_3": 1,
+      "accessibility": 1
+    },
+    "text_stats": {
+      "total": 36214,
+      "unique": 3989,
+      "min_length": 1,
+      "max_length": 105795,
+      "avg_length": 27.271221074722483
+    },
+    "common_words": [
+      [
+        "internalrole",
+        3354
+      ],
+      [
+        "div",
+        2832
+      ],
+      [
+        "computedstring",
+        2338
+      ],
+      [
+        "gnb",
+        2214
+      ],
+      [
+        "box",
+        1900
+      ],
+      [
+        "font",
+        1883
+      ],
+      [
+        "webkit",
+        1630
+      ],
+      [
+        "aria",
+        1551
+      ],
+      [
+        "text",
+        1547
+      ],
+      [
+        "class",
+        1508
+      ],
+      [
+        "role",
+        1493
+      ],
+      [
+        "color",
+        1249
+      ],
+      [
+        "display",
+        1217
+      ],
+      [
+        "none",
+        1177
+      ],
+      [
+        "height",
+        1121
+      ],
+      [
+        "attribute",
+        1109
+      ],
+      [
+        "container",
+        1061
+      ],
+      [
+        "flex",
+        1016
+      ],
+      [
+        "width",
+        959
+      ],
+      [
+        "background",
+        919
+      ]
+    ],
+    "discovered_patterns": {
+      "common_attributes": [
+        [
+          "nodeId",
+          1
+        ],
+        [
+          "backendNodeId",
+          1
+        ],
+        [
+          "nodeType",
+          1
+        ],
+        [
+          "nodeName",
+          1
+        ],
+        [
+          "localName",
+          1
+        ],
+        [
+          "nodeValue",
+          1
+        ],
+        [
+          "childNodeCount",
+          1
+        ],
+        [
+          "children",
+          1
+        ],
+        [
+          "documentURL",
+          1
+        ],
+        [
+          "baseURL",
+          1
+        ]
+      ]
+    }
+  },
+  "node_samples": [
+    {
+      "file": "dom_191252_752541.json",
+      "type": "dom",
+      "keys": [
+        "nodeId",
+        "backendNodeId",
+        "nodeType",
+        "nodeName",
+        "localName",
+        "nodeValue",
+        "childNodeCount",
+        "children",
+        "documentURL",
+        "baseURL",
+        "xmlVersion",
+        "compatibilityMode",
+        "isScrollable"
+      ],
+      "sample": "{'nodeId': 1, 'backendNodeId': 1, 'nodeType': 9, 'nodeName': '#document', 'localName': '', 'nodeValue': '', 'childNodeCount': 2, 'children': [{'nodeId': 2, 'parentId': 1, 'backendNodeId': 320, 'nodeTy"
+    },
+    {
+      "file": "snapshot_191254_828358.json",
+      "type": "dict_3",
+      "keys": [
+        "dom_nodes",
+        "layout_tree",
+        "computed_styles"
+      ],
+      "sample": "{'dom_nodes': [{'nodeType': 9, 'nodeName': '#document', 'nodeValue': '', 'backendNodeId': 1, 'childNodeIndexes': [1, 2], 'layoutNodeIndex': 0, 'documentURL': 'https://www.naukri.com/mnjuser/homepage',"
+    },
+    {
+      "file": "a11y_191256_499421.json",
+      "type": "accessibility",
+      "keys": [
+        "nodes"
+      ],
+      "sample": "{'nodes': [{'nodeId': '1', 'ignored': False, 'role': {'type': 'internalRole', 'value': 'RootWebArea'}, 'chromeRole': {'type': 'internalRole', 'value': 144}, 'name': {'type': 'computedString', 'value':"
+    }
+  ],
+  "timestamp": "2026-07-30T19:54:22.822037"
+}

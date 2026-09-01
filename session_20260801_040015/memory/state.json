@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "session_id": "20260801_040015",
+    "start_time": "2026-08-01T04:00:15.750901",
+    "end_time": null,
+    "chrome_port": 9257,
+    "tab_url": "https://www.naukri.com/mnjuser/homepage",
+    "tab_title": "Home | Mynaukri",
+    "total_commands": 2,
+    "snapshots_taken": [],
+    "files_generated": {}
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 2,
+  "last_updated": "2026-08-01T04:00:20.280481"
+}

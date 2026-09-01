@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-01T03:48:56.018065",
+  "captures": [
+    {
+      "har_file": "har_20260801_034338.har",
+      "entries": 3,
+      "duration": 30,
+      "tab_title": "Home | Mynaukri",
+      "tab_url": "https://www.naukri.com/mnjuser/homepage",
+      "timestamp": "2026-08-01T03:43:38.622285"
+    }
+  ],
+  "analyses": [],
+  "clients": []
+}

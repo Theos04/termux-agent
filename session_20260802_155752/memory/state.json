@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "session_id": "20260802_155752",
+    "start_time": "2026-08-02T15:57:52.620352",
+    "end_time": "2026-08-02T15:59:20.499037",
+    "chrome_port": 9260,
+    "tab_url": "https://www.naukri.com/mnjuser/recommendedjobs",
+    "tab_title": "Recommended Jobs | Mynaukri",
+    "total_commands": 2,
+    "snapshots_taken": [],
+    "files_generated": {
+      "interactions": 1
+    }
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": {
+      "file": "session_20260802_155752/interactions/interaction_155841_745131.json",
+      "metadata": {
+        "session_id": "20260802_155752",
+        "timestamp": "2026-08-02T15:58:41.745262",
+        "tab_url": "https://www.naukri.com/mnjuser/recommendedjobs",
+        "tab_title": "Recommended Jobs | Mynaukri",
+        "context": {
+          "type": "script_execution"
+        },
+        "interaction_number": 1,
+        "command_index": 2
+      }
+    },
+    "interaction_count": 1,
+    "errors": []
+  },
+  "command_count": 2,
+  "last_updated": "2026-08-02T15:59:20.502912"
+}

@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "session_id": "20260803_170104",
+    "start_time": "2026-08-03T17:01:04.684104",
+    "end_time": null,
+    "chrome_port": 9262,
+    "tab_url": "https://www.google.com/maps/search/hotels+in+411019/@18.6418884,73.7770914,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D",
+    "tab_title": "hotels in 411019 - Google Maps",
+    "total_commands": 31,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 2,
+      "snapshots": 2,
+      "accessibility": 4
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "session_20260803_170104/dom_trees/dom_170349_435722.json",
+      "metadata": {
+        "session_id": "20260803_170104",
+        "timestamp": "2026-08-03T17:03:49.438711",
+        "tab_url": "https://www.google.com/maps/search/hotels+in+411019/@18.6418884,73.7770914,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D",
+        "tab_title": "hotels in 411019 - Google Maps",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 1403,
+        "command_index": 13
+      }
+    },
+    "last_snapshot": {
+      "file": "session_20260803_170104/snapshots/snapshot_170353_758413.json",
+      "metadata": {
+        "session_id": "20260803_170104",
+        "timestamp": "2026-08-03T17:03:53.758609",
+        "tab_url": "https://www.google.com/maps/search/hotels+in+411019/@18.6418884,73.7770914,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D",
+        "tab_title": "hotels in 411019 - Google Maps",
+        "context": {
+          "method": "DOMSnapshot.getSnapshot",
+          "params": {
+            "computedStyleWhitelist": [],
+            "includeEventListeners": false,
+            "includePaintOrder": false,
+            "includeUserAgentShadowTree": true
+          }
+        },
+        "dom_node_count": 1494,
+        "layout_tree_count": 0,
+        "computed_styles_count": 0,
+        "command_index": 16
+      }
+    },
+    "last_accessibility": {
+      "file": "session_20260803_170104/accessibility/a11y_170412_682958.json",
+      "metadata": {
+        "session_id": "20260803_170104",
+        "timestamp": "2026-08-03T17:04:12.683137",
+        "tab_url": "https://www.google.com/maps/search/hotels+in+411019/@18.6418884,73.7770914,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D",
+        "tab_title": "hotels in 411019 - Google Maps",
+        "context": {
+          "method": "Comprehensive_AX_Tree"
+        },
+        "node_count": 0,
+        "command_index": 20
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": [
+      {
+        "timestamp": "2026-08-03T17:04:37.552406",
+        "error": "{\"code\": -32000, \"message\": \"Could not find node with given id\"}",
+        "context": {
+          "command": "CSS.getComputedStyleForNode"
+        }
+      }
+    ]
+  },
+  "command_count": 31,
+  "last_updated": "2026-08-03T17:08:37.416034"
+}

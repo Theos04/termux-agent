@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "session_id": "20260802_222509",
+    "timestamp": "2026-08-02T22:35:11.447013",
+    "tab_url": "https://web.whatsapp.com/",
+    "tab_title": "WhatsApp",
+    "context": {
+      "type": "script_execution"
+    },
+    "interaction_number": 4,
+    "command_index": 8
+  },
+  "data": {
+    "script_file": "/data/data/com.termux/files/home/automation/chrome-launcher/scripts-library/whatsapp/mynumber_next_1.js",
+    "script_content": "// WhatsApp Web - Enter phone number (Fixed version)\n(function() {\n    console.log('\ud83d\udcf1 WhatsApp Web - Enter Phone Number');\n    const phoneNumber = '7888139676';\n    const fullNumber = '+917888139676';\n    \n    // Debug function to analyze the page\n    function analyzePage() {\n        const inputs = document.querySelectorAll('input');\n        const inputInfo = [];\n        inputs.forEach((input, i) => {\n            inputInfo.push({\n                index: i,\n                type: input.type,\n      ...",
+    "result": {
+      "success": false,
+      "message": "Phone input not found",
+      "analysis": {
+        "inputs": [
+          {
+            "index": 0,
+            "type": "text",
+            "placeholder": "",
+            "id": "",
+            "name": "",
+            "className": "selectable-text x1n2onr6 x14ug900 x1n327nk xh8yej3 x972fbf x10w94by x1qhh985 x14e42zd xjbqb8w x1uvtmcs x1jchvi3 xss6m8b xexx8yu xyri2b x18d9i69 x1c1uobl",
+            "inputMode": "",
+            "value": "+91 ",
+            "visible": true,
+            "rect": {}
+          }
+        ],
+        "buttons": [
+          {
+            "index": 0,
+            "text": "Indiachevron",
+            "tag": "BUTTON",
+            "role": null,
+            "className": "x889kno x1a8lsjc xb0esv5 xyo0t3i x1n2onr6 x1rg5ohu xk50ysn x1f6kntn xyesn5m x1hl8ikr xfagghw x9dyr19 x9lcvmn xo1mcw5 xjbqb8w xfrlarv x1f47i5p xnk0c1z x1s31tdy x1ao7u56 xz3waxf x1npidv xuxw1ft xv52azi x178xt8z x1lun4ml xso031l xpilrb4 x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x18aof6w xoz6bk6 x1ct8bjc x357qen x1g83kfv x3qq2k7 x2x8art x1qor8vf",
+            "visible": true
+          },
+          {
+            "index": 1,
+            "text": "Next",
+            "tag": "BUTTON",
+            "role": null,
+            "className": "html-button xdj266r x14z9mp xat24cr x1lziwak xexx8yu x18d9i69 x178xt8z x1lun4ml xso031l xpilrb4 x1n2onr6 x1ejq31n x18oe1m7 x1sy0etr xstzfhl x1so62im x1syfmzz x1ja2u2z x1ypdohk x1s928wv x1j6awrg x4eaejv x1wsn0xg x1r0yslu x2q1x1w xapdjt xr6f91l x5rv0tg x1akc3lz xikp0eg x1xl5mkn x1mfml39 x1l5mzlr xgmdoj8 x1f1wgk5 x1x3ic1u xfn3atn x1pse0pq x1yxkqql xtnn1bt x9v5kkp xmw7ebm xrdum7p x3oybdh x13t8fmb x11xpdln xum2xem x2lah0s xeq5yr9 x1lliihq xk8lq53 x9f619 xt8t1vi x1xc408v x129tdwq x15urzxu x1vqgdyp xyo0t3i xb0esv5",
+            "visible": true
+          },
+          {
+            "index": 2,
+            "text": "Log in with QR codewa-brand-arrow-right",
+            "tag": "DIV",
+            "role": "button",
+            "className": "x1ypdohk xujl8zx x1vs5fdg xewurvo x3pynha xowvryd xk50ysn xcul1l7 x90lxvo",
+            "visible": true
+          },
+          {
+            "index": 3,
+            "text": "Get startedwa-brand-arrow-out",
+            "tag": "DIV",
+            "role": "button",
+            "className": "x1ypdohk x1rg5ohu xowvryd xk50ysn xcul1l7 x90lxvo xujl8zx x1vs5fdg xewurvo x3pynha",
+            "visible": true
+          },
+          {
+            "index": 4,
+            "text": "Terms & Privacy Policy",
+            "tag": "DIV",
+            "role": "button",
+            "className": "x1ypdohk x65c15g x2b8uid x1pg5gke xo1l8bm xetkqiv xqhqf4p xt0b8zv",
+            "visible": true
+          }
+        ],
+        "bodyText": "Enter phone number\nSelect a country and enter your phone number.\n India\n+91 \nValid phone number is required.\nNext\nLog in with QR code\nDon't have a WhatsApp account?\nGet started\nYour personal messages are end-to-end encrypted\nTerms & Privacy Policy"
+      }
+    },
+    "execution_time": "2026-08-02T22:35:11.445493"
+  }
+}

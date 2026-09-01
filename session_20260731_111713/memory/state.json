@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "session_id": "20260731_111713",
+    "start_time": "2026-07-31T11:17:13.065768",
+    "end_time": "2026-07-31T11:17:36.744418",
+    "chrome_port": 9257,
+    "tab_url": "https://www.naukri.com/mnjuser/homepage",
+    "tab_title": "Home | Mynaukri",
+    "total_commands": 8,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 1,
+      "snapshots": 1,
+      "accessibility": 1
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "session_20260731_111713/dom_trees/dom_111720_097733.json",
+      "metadata": {
+        "session_id": "20260731_111713",
+        "timestamp": "2026-07-31T11:17:20.097876",
+        "tab_url": "https://www.naukri.com/mnjuser/homepage",
+        "tab_title": "Home | Mynaukri",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 2354,
+        "command_index": 2
+      }
+    },
+    "last_snapshot": {
+      "file": "session_20260731_111713/snapshots/snapshot_111722_216971.json",
+      "metadata": {
+        "session_id": "20260731_111713",
+        "timestamp": "2026-07-31T11:17:22.217110",
+        "tab_url": "https://www.naukri.com/mnjuser/homepage",
+        "tab_title": "Home | Mynaukri",
+        "context": {
+          "method": "DOMSnapshot.getSnapshot",
+          "params": {
+            "computedStyleWhitelist": [],
+            "includeEventListeners": false,
+            "includePaintOrder": false,
+            "includeUserAgentShadowTree": true
+          }
+        },
+        "dom_node_count": 2654,
+        "layout_tree_count": 0,
+        "computed_styles_count": 0,
+        "command_index": 5
+      }
+    },
+    "last_accessibility": {
+      "file": "session_20260731_111713/accessibility/a11y_111723_862857.json",
+      "metadata": {
+        "session_id": "20260731_111713",
+        "timestamp": "2026-07-31T11:17:23.863005",
+        "tab_url": "https://www.naukri.com/mnjuser/homepage",
+        "tab_title": "Home | Mynaukri",
+        "context": {
+          "method": "Accessibility.getFullAXTree"
+        },
+        "node_count": 2443,
+        "command_index": 7
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 8,
+  "last_updated": "2026-07-31T11:17:36.745651"
+}

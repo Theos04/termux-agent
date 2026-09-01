@@ -1,0 +1,5 @@
+index.php
+admin/
+up/
+https://hackerone.com/alsco
+https://securegateway.com

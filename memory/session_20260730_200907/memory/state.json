@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "session_id": "20260730_200907",
+    "start_time": "2026-07-30T20:09:07.717574",
+    "end_time": "2026-07-30T20:09:53.393626",
+    "chrome_port": 9246,
+    "tab_url": "https://www.quora.com/",
+    "tab_title": "(11) Quora",
+    "total_commands": 8,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 1,
+      "snapshots": 1,
+      "accessibility": 1
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "memory/session_20260730_200907/dom_trees/dom_200914_126846.json",
+      "metadata": {
+        "session_id": "20260730_200907",
+        "timestamp": "2026-07-30T20:09:14.127034",
+        "tab_url": "https://www.quora.com/",
+        "tab_title": "(11) Quora",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 3186,
+        "command_index": 2
+      }
+    },
+    "last_snapshot": {
+      "file": "memory/session_20260730_200907/snapshots/snapshot_200916_841336.json",
+      "metadata": {
+        "session_id": "20260730_200907",
+        "timestamp": "2026-07-30T20:09:16.841499",
+        "tab_url": "https://www.quora.com/",
+        "tab_title": "(11) Quora",
+        "context": {
+          "method": "DOMSnapshot.getSnapshot",
+          "params": {
+            "computedStyleWhitelist": [],
+            "includeEventListeners": false,
+            "includePaintOrder": false,
+            "includeUserAgentShadowTree": true
+          }
+        },
+        "dom_node_count": 3272,
+        "layout_tree_count": 0,
+        "computed_styles_count": 0,
+        "command_index": 5
+      }
+    },
+    "last_accessibility": {
+      "file": "memory/session_20260730_200907/accessibility/a11y_200918_981843.json",
+      "metadata": {
+        "session_id": "20260730_200907",
+        "timestamp": "2026-07-30T20:09:18.981986",
+        "tab_url": "https://www.quora.com/",
+        "tab_title": "(11) Quora",
+        "context": {
+          "method": "Accessibility.getFullAXTree"
+        },
+        "node_count": 2817,
+        "command_index": 7
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 8,
+  "last_updated": "2026-07-30T20:09:53.395767"
+}

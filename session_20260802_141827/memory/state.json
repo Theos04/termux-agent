@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "session_id": "20260802_141827",
+    "start_time": "2026-08-02T14:18:27.851447",
+    "end_time": "2026-08-02T14:18:46.202707",
+    "chrome_port": 9260,
+    "tab_url": "https://www.naukri.com/mnjuser/homepage",
+    "tab_title": "Home | Mynaukri",
+    "total_commands": 2,
+    "snapshots_taken": [],
+    "files_generated": {
+      "accessibility": 1
+    }
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": {
+      "file": "/data/data/com.termux/files/home/automation/chrome-launcher/session_20260802_141827/accessibility/a11y_141842_629920.json",
+      "metadata": {
+        "session_id": "20260802_141827",
+        "timestamp": "2026-08-02T14:18:42.630107",
+        "tab_url": "https://www.naukri.com/mnjuser/homepage",
+        "tab_title": "Home | Mynaukri",
+        "context": {
+          "method": "Comprehensive_AX_Tree"
+        },
+        "node_count": 0,
+        "command_index": 2
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 2,
+  "last_updated": "2026-08-02T14:18:46.203480"
+}

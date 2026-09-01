@@ -1,0 +1,60 @@
+{
+  "dom_trees": [
+    {
+      "filename": "dom_131850_331040.json",
+      "timestamp": "2026-08-12T13:18:50.331228",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_132034_058751.json",
+      "timestamp": "2026-08-12T13:20:34.058924",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "filename": "a11y_131903_193546.json",
+      "timestamp": "2026-08-12T13:19:03.193818",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_131923_197860.json",
+      "timestamp": "2026-08-12T13:19:23.198333",
+      "context": {
+        "method": "Comprehensive_AX_Tree"
+      }
+    },
+    {
+      "filename": "a11y_132052_021849.json",
+      "timestamp": "2026-08-12T13:20:52.022150",
+      "context": {
+        "method": "Comprehensive_AX_Tree"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "filename": "snapshot_132040_947183.json",
+      "timestamp": "2026-08-12T13:20:40.947364",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+/**
+ * Auto-generated TypeScript API client from HAR analysis
+ * Generated: {{ generated_at }}
+ * Total Endpoints: {{ total_endpoints }}
+ */
+
+interface RequestOptions {
+  headers?: Record<string, string>;
+  params?: Record<string, string>;
+  body?: any;
+}
+
+class APIError extends Error {
+  constructor(
+    public status: number,
+    public statusText: string,
+    public data?: any
+  ) {
+    super(`API Error: ${status} ${statusText}`);
+    this.name = 'APIError';
+  }
+}
+
+export class {{ class_name }} {
+  private baseURL: string = '{{ base_url }}';
+  private defaultHeaders: Record<string, string> = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'User-Agent': 'APIClient/1.0'
+  };
+  private token?: string;
+  private apiKey?: string;
+
+  constructor(options: {
+    token?: string;
+    apiKey?: string;
+    baseURL?: string;
+    headers?: Record<string, string>;
+  } = {}) {
+    if (options.token) {
+      this.token = options.token;
+      this.defaultHeaders['Authorization'] = `Bearer ${options.token}`;
+    }
+    if (options.apiKey) {
+      this.apiKey = options.apiKey;
+      this.defaultHeaders['X-API-Key'] = options.apiKey;
+    }
+    if (options.baseURL) {
+      this.baseURL = options.baseURL;
+    }
+    if (options.headers) {
+      this.defaultHeaders = { ...this.defaultHeaders, ...options.headers };
+    }
+  }
+
+  private async request<T = any>(
+    method: string,
+    path: string,
+    options: RequestOptions = {}
+  ): Promise<T> {
+    const url = `${this.baseURL}${path}`;
+    const headers = { ...this.defaultHeaders, ...options.headers };
+
+    // Build query string
+    let queryString = '';
+    if (options.params) {
+      const params = new URLSearchParams();
+      for (const [key, value] of Object.entries(options.params)) {
+        if (value !== undefined && value !== null) {
+          params.append(key, String(value));
+        }
+      }
+      queryString = params.toString() ? `?${params.toString()}` : '';
+    }
+
+    const init: RequestInit = {
+      method,
+      headers,
+    };
+
+    if (options.body) {
+      init.body = JSON.stringify(options.body);
+    }
+
+    try {
+      const response = await fetch(`${url}${queryString}`, init);
+      
+      if (!response.ok) {
+        let errorData;
+        try {
+          errorData = await response.json();
+        } catch {
+          errorData = undefined;
+        }
+        throw new APIError(response.status, response.statusText, errorData);
+      }
+
+      const contentType = response.headers.get('content-type');
+      if (contentType && contentType.includes('application/json')) {
+        return await response.json();
+      }
+      
+      return await response.text() as any;
+    } catch (error) {
+      if (error instanceof APIError) {
+        throw error;
+      }
+      throw new Error(`Request failed: ${error.message}`);
+    }
+  }
+
+  {% for method in methods %}
+  /**
+   * {{ method.method }} {{ method.path }}
+   {% if method.query_params %}
+   * @param params - Query parameters
+   {% endif %}
+   {% if method.has_body %}
+   * @param body - Request body
+   {% endif %}
+   */
+  async {{ method.name }}(
+    {% if method.query_params %}
+    params: {
+      {% for param in method.query_params %}
+      {{ param }}?: string;
+      {% endfor %}
+    } = {},
+    {% endif %}
+    {% if method.has_body %}
+    body?: any,
+    {% endif %}
+    options: Omit<RequestOptions, 'params' | 'body'> = {}
+  ): Promise<any> {
+    return this.request(
+      '{{ method.method }}',
+      '{{ method.path }}',
+      {
+        {% if method.query_params %}
+        params: params,
+        {% endif %}
+        {% if method.has_body %}
+        body: body,
+        {% endif %}
+        ...options
+      }
+    );
+  }
+  {% endfor %}
+
+  /**
+   * Fetch data from all endpoints in parallel
+   */
+  async getAllData(maxWorkers: number = 5): Promise<Record<string, any>> {
+    const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(this))
+      .filter(m => m.startsWith('get') && typeof this[m] === 'function');
+    
+    const results: Record<string, any> = {};
+    const batchSize = maxWorkers;
+    
+    for (let i = 0; i < methods.length; i += batchSize) {
+      const batch = methods.slice(i, i + batchSize);
+      const promises = batch.map(async (method) => {
+        try {
+          results[method] = await this[method]();
+        } catch (error) {
+          results[method] = { error: error.message };
+        }
+      });
+      await Promise.all(promises);
+    }
+    
+    return results;
+  }
+
+  /**
+   * Generate OpenAPI specification
+   */
+  toOpenAPI(): Record<string, any> {
+    return {
+      openapi: '3.0.0',
+      info: {
+        title: '{{ class_name }} API',
+        version: '1.0.0',
+        description: 'Auto-generated from HAR analysis'
+      },
+      servers: [{ url: this.baseURL }],
+      paths: {
+        {% for method in methods %}
+        '{{ method.path }}': {
+          '{{ method.method.lower() }}': {
+            summary: '{{ method.name }}',
+            parameters: [
+              {% for param in method.query_params %}
+              {
+                name: '{{ param }}',
+                in: 'query',
+                schema: { type: 'string' }
+              }{% if not loop.last %},{% endif %}
+              {% endfor %}
+            ]
+          }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      }
+    };
+  }
+}

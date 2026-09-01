@@ -1,0 +1,51 @@
+{
+  "cycle": 30,
+  "goal_achieved": false,
+  "best_reward": 8.0,
+  "q_stats": {
+    "state_count": 10,
+    "total_q_values": 247,
+    "exploration_rate": 0.6113940672177709,
+    "learning_rate": 0.22499999999999998,
+    "total_actions": 27,
+    "unique_actions": 217,
+    "consecutive_repeats": 0,
+    "successful_paths": 8,
+    "best_sequences": 8,
+    "goal_achieved": false,
+    "stuck_count": 0
+  },
+  "reward_progress": [
+    8.0,
+    5.85,
+    0.85,
+    0.85,
+    8.0,
+    0.85,
+    0.85,
+    0.85,
+    0.85,
+    0.85,
+    8.0,
+    5.85,
+    0.85,
+    0.5499999999999999,
+    0.85,
+    0.85,
+    0.5499999999999999,
+    0.5499999999999999,
+    0.5499999999999999,
+    0.85
+  ],
+  "episodes": 27,
+  "best_path": {
+    "actions": [
+      "click|submit|job_application",
+      "click|application status|job_application"
+    ],
+    "reward": 8.0,
+    "success_count": 1
+  },
+  "success_count": 5,
+  "timestamp": "2026-08-01T11:11:11.864803"
+}

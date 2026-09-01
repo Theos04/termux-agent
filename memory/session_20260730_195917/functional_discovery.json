@@ -1,0 +1,432 @@
+{
+  "total_actions": 201,
+  "clickable": 200,
+  "typeable": 1,
+  "selectable": 0,
+  "forms": 0,
+  "navigation": 2,
+  "discovered_functions": {
+    "action_keywords": {
+      "go": 21,
+      "view": 27,
+      "upload": 11,
+      "prev": 4,
+      "back": 49,
+      "add": 45,
+      "search": 7,
+      "login": 4,
+      "register": 3,
+      "update": 5,
+      "share": 3,
+      "next": 4,
+      "apply": 3
+    },
+    "button_labels": [
+      "Toggle Sidebar",
+      "Unstop Logo",
+      "Search Opportunities",
+      "For Business",
+      "Talent",
+      "Mentor",
+      "Recruiter",
+      "Notification",
+      "Chat",
+      "User Profile",
+      "Host",
+      "More",
+      "My Activity",
+      "Download Unstop Apps on Google Play",
+      "Follow on twitter",
+      "Follow on Instagram",
+      "Follow on LinkedIn",
+      "Follow on Facebook",
+      "Follow on Telegram",
+      "Follow on Discord"
+    ]
+  },
+  "sample_actions": [
+    {
+      "type": "click",
+      "element": "button",
+      "label": "",
+      "id": "",
+      "classes": [
+        "moe-chrome-style-notification-btn",
+        "moe-btn-close",
+        "moe-block-class",
+        "ng-tns-c3378727620-0"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c3378727620": "",
+        "class": "moe-chrome-style-notification-btn moe-btn-close mo"
+      },
+      "parent_text": "",
+      "confidence": 1.0
+    },
+    {
+      "type": "click",
+      "element": "button",
+      "label": "",
+      "id": "",
+      "classes": [
+        "moe-chrome-style-notification-btn",
+        "moe-btn-allow",
+        "moe-allow-class",
+        "ng-tns-c3378727620-0"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c3378727620": "",
+        "class": "moe-chrome-style-notification-btn moe-btn-allow mo"
+      },
+      "parent_text": "",
+      "confidence": 1.0
+    },
+    {
+      "type": "click",
+      "element": "button",
+      "label": "",
+      "id": "",
+      "classes": [
+        "ng-tns-c3378727620-0"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c3378727620": "",
+        "class": "ng-tns-c3378727620-0"
+      },
+      "parent_text": "",
+      "confidence": 1.0
+    },
+    {
+      "type": "click",
+      "element": "un-icon",
+      "label": "Toggle Sidebar",
+      "id": "",
+      "classes": [
+        "cursor",
+        "sidebar_toggle"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c2603885445": "",
+        "asbtn": "",
+        "tabindex": "0",
+        "role": "button",
+        "aria-label": "Toggle Sidebar"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "div",
+      "label": "Unstop Logo",
+      "id": "",
+      "classes": [
+        "logo",
+        "ng-star-inserted"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c698521875": "",
+        "role": "button",
+        "tabindex": "0",
+        "aria-label": "Unstop Logo",
+        "class": "logo ng-star-inserted"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "type",
+      "element": "input",
+      "label": "Search Opportunities",
+      "id": "un-input-0",
+      "classes": [
+        "rounded"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c3667168809": "",
+        "type": "text",
+        "placeholder": "Search Opportunities",
+        "pattern": ".*",
+        "min": "false"
+      },
+      "parent_text": "",
+      "confidence": 1.0
+    },
+    {
+      "type": "click",
+      "element": "span",
+      "label": "For Business",
+      "id": "",
+      "classes": [
+        "business-btn",
+        "ng-star-inserted"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c698521875": "",
+        "role": "button",
+        "tabindex": "0",
+        "aria-label": "For Business",
+        "class": "business-btn ng-star-inserted"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "div",
+      "label": "Talent",
+      "id": "",
+      "classes": [
+        "primary-menu-item",
+        "d-flex",
+        "flex-column",
+        "align-center",
+        "gap2"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c4106289674": "",
+        "tabindex": "0",
+        "role": "button",
+        "class": "primary-menu-item d-flex flex-column align-center ",
+        "aria-label": "Talent"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "div",
+      "label": "Mentor",
+      "id": "",
+      "classes": [
+        "primary-menu-item",
+        "d-flex",
+        "flex-column",
+        "align-center",
+        "gap2"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c4106289674": "",
+        "tabindex": "0",
+        "role": "button",
+        "class": "primary-menu-item d-flex flex-column align-center ",
+        "aria-label": "Mentor"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "div",
+      "label": "Recruiter",
+      "id": "",
+      "classes": [
+        "primary-menu-item",
+        "d-flex",
+        "flex-column",
+        "align-center",
+        "gap2"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c4106289674": "",
+        "tabindex": "0",
+        "role": "button",
+        "class": "primary-menu-item d-flex flex-column align-center ",
+        "aria-label": "Recruiter"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "span",
+      "label": "Notification",
+      "id": "",
+      "classes": [
+        "menu-item",
+        "ng-star-inserted"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c2462887907": "",
+        "tabindex": "0",
+        "role": "button",
+        "class": "menu-item ng-star-inserted",
+        "aria-label": "Notification"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "span",
+      "label": "Chat",
+      "id": "",
+      "classes": [
+        "menu-item",
+        "ng-star-inserted"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c2462887907": "",
+        "tabindex": "0",
+        "role": "button",
+        "class": "menu-item ng-star-inserted",
+        "aria-label": "Chat"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "div",
+      "label": "User Profile",
+      "id": "",
+      "classes": [
+        "profile_summary",
+        "cursor",
+        "ng-star-inserted"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c4172894661": "",
+        "role": "button",
+        "tabindex": "0",
+        "aria-label": "User Profile",
+        "aria-haspopup": "true"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "div",
+      "label": "Host",
+      "id": "host_btn_component",
+      "classes": [
+        "host_btn"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c1103493167": "",
+        "id": "host_btn_component",
+        "role": "button",
+        "tabindex": "0",
+        "aria-label": "Host"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "a",
+      "label": "",
+      "id": "Home",
+      "classes": [
+        "menu-item",
+        "active",
+        "ng-star-inserted"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c2462887907": "",
+        "class": "menu-item active ng-star-inserted",
+        "id": "Home",
+        "href": "/",
+        "style": "cursor: pointer;"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "a",
+      "label": "",
+      "id": "Internships",
+      "classes": [
+        "menu-item",
+        "ng-star-inserted"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c2462887907": "",
+        "class": "menu-item ng-star-inserted",
+        "id": "Internships",
+        "href": "/internship",
+        "style": "cursor: pointer;"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "a",
+      "label": "",
+      "id": "Jobs",
+      "classes": [
+        "menu-item",
+        "ng-star-inserted"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c2462887907": "",
+        "class": "menu-item ng-star-inserted",
+        "id": "Jobs",
+        "href": "/job",
+        "style": "cursor: pointer;"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "a",
+      "label": "",
+      "id": "Competitions",
+      "classes": [
+        "menu-item",
+        "ng-star-inserted"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c2462887907": "",
+        "class": "menu-item ng-star-inserted",
+        "id": "Competitions",
+        "href": "/competitions",
+        "style": "cursor: pointer;"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "a",
+      "label": "",
+      "id": "Mentors",
+      "classes": [
+        "menu-item",
+        "ng-star-inserted"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c2462887907": "",
+        "class": "menu-item ng-star-inserted",
+        "id": "Mentors",
+        "href": "/mentor",
+        "style": "cursor: pointer;"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    },
+    {
+      "type": "click",
+      "element": "a",
+      "label": "",
+      "id": "mock_tests",
+      "classes": [
+        "menu-item",
+        "ng-star-inserted"
+      ],
+      "attributes": {
+        "_ngcontent-ng-c2462887907": "",
+        "class": "menu-item ng-star-inserted",
+        "id": "mock_tests",
+        "href": "/practice/ai-powered-role-based-mock-tests",
+        "style": "cursor: pointer;"
+      },
+      "parent_text": "",
+      "confidence": 0.8
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+================================================================================
+🚀 GENERIC WEB RL AGENT - FINAL REPORT
+================================================================================
+Total Cycles: 20
+Goal Achieved: 🔄 Still learning
+Best Reward: 10.35
+Success Events: 19
+Pages Discovered: 0
+States Discovered: 6
+
+📊 Q-LEARNING STATS:
+  States Discovered: 3
+  Q-Values Learned: 90
+  Exploration Rate: 0.636
+  Learning Rate: 0.225
+  Total Actions: 90
+  Unique Actions: 90
+  Episodes: 19
+  Successful Episodes: 19
+  Avg Reward: 4.86
+  Max Reward: 10.35
+  Min Reward: 4.05
+
+🏆 BEST PATH FOUND:
+  click|Graphic Design Internship|authentication → click|Graphic Design Internship|authentication → click|Graphic Design Internship|authentication → click|Graphic Design Internship|authentication → click|More|pagination
+  Reward: 10.35
+
+📈 Recent Performance (last 19):
+  Avg Reward: 4.86
+  Success Rate: 100.0%
+
+📈 Learning Progress:
+  First Half Avg: 4.55
+  Second Half Avg: 5.13
+  ✅ Agent is learning slowly
+
+📋 Action Distribution:
+  click|graphic design internship|authentication: 13 times
+  click|more|pagination: 6 times
+
+🌐 Visited Pages:
+
+================================================================================

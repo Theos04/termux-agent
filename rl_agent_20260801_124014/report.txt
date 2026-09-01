@@ -1,0 +1,37 @@
+================================================================================
+🚀 GENERIC WEB RL AGENT - FINAL REPORT
+================================================================================
+Total Cycles: 30
+Goal Achieved: 🔄 Still learning
+Best Reward: 5.90
+Success Events: 0
+States Discovered: 3
+
+📊 Q-LEARNING STATS:
+  States in Q-Table: 4
+  Q-Values Learned: 49
+  Exploration Rate: 0.693
+  Learning Rate: 0.225
+  Total Actions: 41
+  Unique Actions: 41
+  Episodes: 2
+  Successful Episodes: 1
+  Avg Reward: 4.40
+  Max Reward: 5.90
+  Min Reward: 2.90
+
+🏆 BEST PATH FOUND:
+  navigate|English|navigation → navigate|English|navigation
+  Reward: 5.90
+
+📈 Recent Performance (last 2):
+  Avg Reward: 4.40
+  Success Rate: 100.0%
+
+📋 Action Distribution:
+  navigate|english|navigation: 2 times
+
+🌐 Visited Pages:
+  1. https://www.moneycontrol.com/
+
+================================================================================

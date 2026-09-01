@@ -1,0 +1,607 @@
+{
+  "metadata": {
+    "session_id": "20260802_141355",
+    "timestamp": "2026-08-02T14:21:33.260685",
+    "tab_url": "https://www.naukri.com/mnjuser/homepage",
+    "tab_title": "Home | Mynaukri",
+    "context": {
+      "type": "script_execution"
+    },
+    "interaction_number": 1,
+    "command_index": 40
+  },
+  "data": {
+    "script_file": "/data/data/com.termux/files/home/automation/chrome-launcher/scripts-library/naukari/print_list_item.js",
+    "script_content": "// Print all list items from accessibility tree\n(function() {\n    // Method 1: Get all list items from DOM\n    const listItems = document.querySelectorAll('li');\n    const results = {\n        total_li_elements: listItems.length,\n        list_items: []\n    };\n    \n    listItems.forEach((item, index) => {\n        const text = item.textContent.trim();\n        const hasSubList = item.querySelector('ul, ol') !== null;\n        const classes = item.className || '';\n        const id = item.id || '';\n   ...",
+    "result": {
+      "total_li_elements": 73,
+      "list_items": [
+        {
+          "index": 0,
+          "text": "Jobs1Recommended jobsNVites2 NewApplication statusSaved jobs",
+          "has_sub_list": true,
+          "class": "nI-gNb-custom-Jobs nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a class=\"nI-gNb-menuItems__anchorDropdown\" title=\"Recommended Jobs\" href=\"/mnjuser/recommendedjobs\" aria-expanded=\"false\"><div class=\"\"><span class=\"\">Jobs</span></div><span class=\"nI-gNb-icon-badge "
+        },
+        {
+          "index": 1,
+          "text": "Recommended jobs",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"/mnjuser/recommendedjobs\"><div class=\"\"><div class=\"\"><div class=\"\">Recommended jobs</div></div></div></a>"
+        },
+        {
+          "index": 2,
+          "text": "NVites2 New",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"/mnjuser/inbox\"><div class=\"\"><div class=\"\"><div class=\"\">NVites</div></div></div><div class=\"nI-gNb-menuItems__item-count\" title=\"2 New\">2 New</div></a>"
+        },
+        {
+          "index": 3,
+          "text": "Application status",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"/myapply/historypage\"><div class=\"\"><div class=\"\"><div class=\"\">Application status</div></div></div></a>"
+        },
+        {
+          "index": 4,
+          "text": "Saved jobs",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"/mnjuser/savedjobs\"><div class=\"\"><div class=\"\"><div class=\"\">Saved jobs</div></div></div></a>"
+        },
+        {
+          "index": 5,
+          "text": "CompaniesExplore categoriesUnicornMNCStartupProduct basedInternetExplore collectionsTop companiesIT companiesFintech companiesSponsored companiesFeatured companiesResearch companies  by  AmbitionboxIn",
+          "has_sub_list": true,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a class=\"nI-gNb-menuItems__anchorDropdown\" title=\"Explore top companies hiring on Naukri\" href=\"https://www.naukri.com/companies-hiring-in-india?src=gnbCompanies_homepage_srch\" aria-expanded=\"false\">"
+        },
+        {
+          "index": 6,
+          "text": "Explore categories",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a class=\"nI-gNb-header1__headerAnchor\">Explore categories</a>"
+        },
+        {
+          "index": 7,
+          "text": "Unicorn",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a data-domain=\"https://www.naukri.com/\" href=\"https://www.naukri.com/unicorn-companies-in-india-cat102?title=Unicorns%20actively%20hiring&amp;src=gnbCompanies_homepage_srch\" title=\"Unicorn\" aria-labe"
+        },
+        {
+          "index": 8,
+          "text": "MNC",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/mnc-companies-in-india-cat101?title=MNCs%20actively%20hiring&amp;src=gnbCompanies_homepage_srch\" title=\"MNC\" aria-label=\"MNC\"><div class=\"\"><div class=\"\"><div class=\"\">"
+        },
+        {
+          "index": 9,
+          "text": "Startup",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/startup-companies-in-india-cat103?title=Startups%20actively%20hiring&amp;src=gnbCompanies_homepage_srch\" title=\"Startup\" aria-label=\"Startup\"><div class=\"\"><div class=\""
+        },
+        {
+          "index": 10,
+          "text": "Product based",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/product-companies-in-india-cat106?title=Product%20companies%20actively%20hiring&amp;src=gnbCompanies_homepage_srch\" title=\"Product based\" aria-label=\"Product based\"><di"
+        },
+        {
+          "index": 11,
+          "text": "Internet",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/internet-companies-in-india-cat105?title=Internet%20companies%20actively%20hiring&amp;src=gnbCompanies_homepage_srch\" title=\"Internet\" aria-label=\"Internet\"><div class="
+        },
+        {
+          "index": 12,
+          "text": "Explore collections",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a class=\"nI-gNb-header1__headerAnchor\">Explore collections</a>"
+        },
+        {
+          "index": 13,
+          "text": "Top companies",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/companies-hiring-in-india?src=gnbCompanies_homepage_srch\" title=\"Top companies\" aria-label=\"Top companies\"><div class=\"\"><div class=\"\"><div class=\"\">Top companies</div>"
+        },
+        {
+          "index": 14,
+          "text": "IT companies",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/it-companies-in-india-cat116?src=gnbCompanies_homepage_srch&amp;title=IT%20Companies%20Hiring\" title=\"IT companies\" aria-label=\"IT companies\"><div class=\"\"><div class=\""
+        },
+        {
+          "index": 15,
+          "text": "Fintech companies",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/fintech-and-payments-companies-in-india-cat108?title=Fintech%20%26%20Payments%20companies%20actively%20hiring&amp;src=gnbCompanies_homepage_srch\" title=\"Fintech compani"
+        },
+        {
+          "index": 16,
+          "text": "Sponsored companies",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/allcompanies?searchType=standardLogo&amp;title=Sponsored+companies&amp;branding=%257B%2522pagename%2522%253A%2522ni-desktop-standard-viewAll%2522%257D&amp;pageNo=1&amp;"
+        },
+        {
+          "index": 17,
+          "text": "Featured companies",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/allcompanies?searchType=premiumLogo&amp;title=Featured+companies+actively+hiring&amp;branding=%257B%2522pagename%2522%253A%2522ni-desktop-premium-viewAll%2522%257D&amp;"
+        },
+        {
+          "index": 18,
+          "text": "Research companies  by  Ambitionbox",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a class=\"nI-gNb-header1__headerAnchor\">Research companies<span class=\"ambox-by nI-gNb-dropdown__by\">  by</span><img class=\"ambox-icon nI-gNb-dropdown__icon\" src=\"https://static.naukimg.com/s/0/0/i/am"
+        },
+        {
+          "index": 19,
+          "text": "Interview questions",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a target=\"_blank\" href=\"https://www.ambitionbox.com/interviews?utm_source=naukri&amp;utm_medium=desktop&amp;utm_campaign=gnb\" title=\"Interview questions\" aria-label=\"Interview questions\"><div class=\""
+        },
+        {
+          "index": 20,
+          "text": "Company salaries",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a target=\"_blank\" href=\"https://www.ambitionbox.com/salaries?utm_source=naukri&amp;utm_medium=desktop&amp;utm_campaign=gnb\" title=\"Company salaries\" aria-label=\"Company salaries\"><div class=\"\"><div c"
+        },
+        {
+          "index": 21,
+          "text": "Company reviews",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a target=\"_blank\" href=\"https://www.ambitionbox.com/reviews?utm_source=naukri&amp;utm_medium=desktop&amp;utm_campaign=gnb\" title=\"Company reviews\" aria-label=\"Company reviews\"><div class=\"\"><div clas"
+        },
+        {
+          "index": 22,
+          "text": "Salary Calculator",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a target=\"_blank\" href=\"https://www.ambitionbox.com/salaries/take-home-salary-calculator?utm_campaign=gnb&amp;utm_source=naukri&amp;utm_medium=desktop\" title=\"Salary Calculator\" aria-label=\"Salary Ca"
+        },
+        {
+          "index": 23,
+          "text": "ServicesResume writingText resumeVisual resumeResume critiqueFind JobsJobs4uPriority applicantContact usGet recruiter's attentionResume displayMonthly subscriptionsBasic & premium plansFree resume res",
+          "has_sub_list": true,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a class=\"nI-gNb-menuItems__anchorDropdown\" title=\"Naukri FastForward- Resume Services\" href=\"https://resume.naukri.com/?fftid=100001\" target=\"_blank\" aria-expanded=\"false\"><div class=\"\"><span class=\""
+        },
+        {
+          "index": 24,
+          "text": "Resume writing",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a class=\"nI-gNb-header1__headerAnchor\">Resume writing</a>"
+        },
+        {
+          "index": 25,
+          "text": "Text resume",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://resume.naukri.com/resume-writing-services?fftid=101001\" target=\"_blank\" title=\"Text resume\" aria-label=\"Text resume\"><div class=\"\"><div class=\"\"><div class=\"\">Text resume</div></div><"
+        },
+        {
+          "index": 26,
+          "text": "Visual resume",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://resume.naukri.com/visual-resume-writing-services?fftid=101002\" target=\"_blank\" title=\"Visual resume\" aria-label=\"Visual resume\"><div class=\"\"><div class=\"\"><div class=\"\">Visual resume"
+        },
+        {
+          "index": 27,
+          "text": "Resume critique",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://resume.naukri.com/resume-critique?fftid=101006\" target=\"_blank\" title=\"Resume critique\" aria-label=\"Resume critique\"><div class=\"\"><div class=\"\"><div class=\"\">Resume critique</div></d"
+        },
+        {
+          "index": 28,
+          "text": "Find Jobs",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a class=\"nI-gNb-header1__headerAnchor\">Find Jobs</a>"
+        },
+        {
+          "index": 29,
+          "text": "Jobs4u",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://resume.naukri.com/job-alerts-on-mobile-mail?fftid=101011#jobmail\" target=\"_blank\" title=\"Jobs4u\" aria-label=\"Jobs4u\"><div class=\"\"><div class=\"\"><div class=\"\">Jobs4u</div></div></div>"
+        },
+        {
+          "index": 30,
+          "text": "Priority applicant",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://resume.naukri.com/priority-job-application?fftid=101019\" target=\"_blank\" title=\"Priority applicant\" aria-label=\"Priority applicant\"><div class=\"\"><div class=\"\"><div class=\"\">Priority "
+        },
+        {
+          "index": 31,
+          "text": "Contact us",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://resume.naukri.com/contact-us?fftid=101015\" target=\"_blank\" title=\"Contact us\" aria-label=\"Contact us\"><div class=\"\"><div class=\"\"><div class=\"\">Contact us</div></div></div></a>"
+        },
+        {
+          "index": 32,
+          "text": "Get recruiter's attention",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a class=\"nI-gNb-header1__headerAnchor\">Get recruiter's attention</a>"
+        },
+        {
+          "index": 33,
+          "text": "Resume display",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://resume.naukri.com/resume-display?fftid=101009\" target=\"_blank\" title=\"Resume display\" aria-label=\"Resume display\"><div class=\"\"><div class=\"\"><div class=\"\">Resume display</div></div><"
+        },
+        {
+          "index": 34,
+          "text": "Monthly subscriptions",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a class=\"nI-gNb-header1__headerAnchor\">Monthly subscriptions</a>"
+        },
+        {
+          "index": 35,
+          "text": "Basic & premium plans",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://resume.naukri.com/subscription-product?fftid=101025\" target=\"_blank\" title=\"Basic &amp; premium plans\" aria-label=\"Basic &amp; premium plans\"><div class=\"\"><div class=\"\"><div class=\"\""
+        },
+        {
+          "index": 36,
+          "text": "Free resume resources",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a class=\"nI-gNb-header1__headerAnchor\">Free resume resources</a>"
+        },
+        {
+          "index": 37,
+          "text": "Resume maker",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/resume-maker?utmTerm=ResumePro_Gnb&amp;utmContent=gnbServices\" target=\"_blank\" title=\"Resume maker\" aria-label=\"Resume maker\"><div class=\"\"><div class=\"\"><div class=\"\">"
+        },
+        {
+          "index": 38,
+          "text": "Resume quality score",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://resume.naukri.com/resume-quality-score?fftid=101003\" target=\"_blank\" title=\"Resume quality score\" aria-label=\"Resume quality score\"><div class=\"\"><div class=\"\"><div class=\"\">Resume qu"
+        },
+        {
+          "index": 39,
+          "text": "Resume samples",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://resume.naukri.com/resume-samples?fftid=101004\" target=\"_blank\" title=\"Resume samples\" aria-label=\"Resume samples\"><div class=\"\"><div class=\"\"><div class=\"\">Resume samples</div></div><"
+        },
+        {
+          "index": 40,
+          "text": "Job letter samples",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://resume.naukri.com/job-letter-format\" target=\"_blank\" title=\"Job letter samples\" aria-label=\"Job letter samples\"><div class=\"\"><div class=\"\"><div class=\"\">Job letter samples</div></div"
+        },
+        {
+          "index": 41,
+          "text": "Neo-AI Job Agent",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/job-apply-agent?utmTerm=JobAgent_gnb&amp;utmContent=gnbV1\" title=\"Neo-AI Job Agent\" aria-label=\"Neo-AI Job Agent\"><div class=\"nI-gNb-menuItems__link-content\"><div class"
+        },
+        {
+          "index": 42,
+          "text": "Naukri Pro",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/naukri360-pro?utm_term=N360Pro_gnb&amp;utm_content=gnbV1\" title=\"Naukri Pro\" aria-label=\"Naukri Pro\"><div class=\"nI-gNb-menuItems__link-content\"><div class=\"\"><div clas"
+        },
+        {
+          "index": 43,
+          "text": "Resume Pro",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/resume-maker?utm_term=ResumePro_gnb&amp;utm_content=gnbV1\" title=\"Resume Pro\" aria-label=\"Resume Pro\"><div class=\"nI-gNb-menuItems__link-content\"><div class=\"\"><div cla"
+        },
+        {
+          "index": 44,
+          "text": "Resume Writing Service",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/resume-writing-service?utmTerm=resume_gnb&amp;utmContent=gnbV1\" title=\"Resume Writing Service\" aria-label=\"Resume Writing Service\"><div class=\"nI-gNb-menuItems__link-co"
+        },
+        {
+          "index": 45,
+          "text": "Interview Pro",
+          "has_sub_list": false,
+          "class": "nI-gNb-menuItems",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/mock-interview-questions?skipRole=true&amp;utmTerm=InterviewPro_gnb&amp;utmContent=gnbV1\" title=\"Interview Pro\" aria-label=\"Interview Pro\"><div class=\"nI-gNb-menuItems_"
+        },
+        {
+          "index": 46,
+          "text": "My home",
+          "has_sub_list": false,
+          "class": "tabs-li highlighted",
+          "id": "",
+          "inner_html": "<img src=\"https://static.naukimg.com/s/9/105/_next/static/assets/home.svg\"><span>My home</span>"
+        },
+        {
+          "index": 47,
+          "text": "Jobs",
+          "has_sub_list": false,
+          "class": "tabs-li",
+          "id": "",
+          "inner_html": "<img src=\"https://static.naukimg.com/s/9/105/_next/static/assets/jobs.svg\"><span>Jobs</span>"
+        },
+        {
+          "index": 48,
+          "text": "Companies",
+          "has_sub_list": false,
+          "class": "tabs-li",
+          "id": "",
+          "inner_html": "<img src=\"https://static.naukimg.com/s/9/105/_next/static/assets/company.svg\"><span>Companies</span>"
+        },
+        {
+          "index": 49,
+          "text": "Blogs",
+          "has_sub_list": false,
+          "class": "tabs-li",
+          "id": "",
+          "inner_html": "<img src=\"https://static.naukimg.com/s/9/105/_next/static/assets/blog.svg\"><span>Blogs</span>"
+        },
+        {
+          "index": 50,
+          "text": "About us",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a target=\"_blank\" href=\"https://infoedge.in\" title=\"About us\">About us</a>"
+        },
+        {
+          "index": 51,
+          "text": "Careers",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a target=\"_blank\" href=\"https://careers.infoedge.com/\" title=\"Careers\">Careers</a>"
+        },
+        {
+          "index": 52,
+          "text": "Employer home",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/recruit/login\" title=\"Employer home\">Employer home</a>"
+        },
+        {
+          "index": 53,
+          "text": "Sitemap",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/sitemap/sitemap.php\" title=\"Sitemap\">Sitemap</a>"
+        },
+        {
+          "index": 54,
+          "text": "Credits",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/credits\" title=\"Credits\">Credits</a>"
+        },
+        {
+          "index": 55,
+          "text": "Help center",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/faq/job-seeker?utm_source=footer\" title=\"Help center\">Help center</a>"
+        },
+        {
+          "index": 56,
+          "text": "Summons/Notices",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a href=\"https://w5.naukri.com/summons-notices-form/\" title=\"Summons/Notices\">Summons/Notices</a>"
+        },
+        {
+          "index": 57,
+          "text": "Grievances",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a href=\"https://w5.naukri.com/grievances-form/\" title=\"Grievances\">Grievances</a>"
+        },
+        {
+          "index": 58,
+          "text": "Report issue",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a href=\"https://w5.naukri.com/fdbck/main/feedback.php?app_id=15\" title=\"Report issue\">Report issue</a>"
+        },
+        {
+          "index": 59,
+          "text": "Privacy policy",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/privacypolicy\" title=\"Privacy policy\">Privacy policy</a>"
+        },
+        {
+          "index": 60,
+          "text": "Terms & conditions",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/termsconditions\" title=\"Terms &amp; conditions\">Terms &amp; conditions</a>"
+        },
+        {
+          "index": 61,
+          "text": "Fraud alert",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/imposter/report-fake-job-recruiter\" title=\"Fraud alert\">Fraud alert</a>"
+        },
+        {
+          "index": 62,
+          "text": "Trust & safety",
+          "has_sub_list": false,
+          "class": "",
+          "id": "",
+          "inner_html": "<a href=\"https://www.naukri.com/jobsearch/trust-safety\" title=\"Trust &amp; safety\">Trust &amp; safety</a>"
+        },
+        {
+          "index": 63,
+          "text": "",
+          "has_sub_list": false,
+          "class": "slide-item",
+          "id": "",
+          "inner_html": "<div class=\"item\"><a target=\"_blank\" title=\"99acres.com\" href=\"https://www.99acres.com/\"><img loading=\"lazy\" src=\"https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/nnacres.png\" alt=\"99acres"
+        },
+        {
+          "index": 64,
+          "text": "",
+          "has_sub_list": false,
+          "class": "slide-item",
+          "id": "",
+          "inner_html": "<div class=\"item\"><a target=\"_blank\" title=\"Jeevansathi.com\" href=\"https://www.jeevansathi.com/\"><img loading=\"lazy\" src=\"https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jeevansathi.png\" "
+        },
+        {
+          "index": 65,
+          "text": "",
+          "has_sub_list": false,
+          "class": "slide-item",
+          "id": "",
+          "inner_html": "<div class=\"item\"><a target=\"_blank\" title=\"NaukriGulf.com\" href=\"https://www.naukrigulf.com/\"><img loading=\"lazy\" src=\"https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/ng_v1.png\" alt=\"Nau"
+        },
+        {
+          "index": 66,
+          "text": "",
+          "has_sub_list": false,
+          "class": "slide-item",
+          "id": "",
+          "inner_html": "<div class=\"item\"><a target=\"_blank\" title=\"Shiksha.com\" href=\"https://www.shiksha.com/\"><img loading=\"lazy\" src=\"https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png\" alt=\"Shiksha"
+        },
+        {
+          "index": 67,
+          "text": "",
+          "has_sub_list": false,
+          "class": "slide-item",
+          "id": "",
+          "inner_html": "<div class=\"item\"><a target=\"_blank\" title=\"IIMJobs.com\" rel=\"nofollow\" href=\"https://www.iimjobs.com\"><img loading=\"lazy\" src=\"https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/iimjobs.png"
+        },
+        {
+          "index": 68,
+          "text": "",
+          "has_sub_list": false,
+          "class": "slide-item",
+          "id": "",
+          "inner_html": "<div class=\"item\"><a target=\"_blank\" title=\"hirist.tech\" rel=\"nofollow\" href=\"https://www.hirist.tech/\"><img loading=\"lazy\" src=\"https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/hirist_v1."
+        },
+        {
+          "index": 69,
+          "text": "",
+          "has_sub_list": false,
+          "class": "slide-item",
+          "id": "",
+          "inner_html": "<div class=\"item\"><a target=\"_blank\" title=\"JobHai.com\" rel=\"nofollow\" href=\"https://www.jobhai.com\"><img loading=\"lazy\" src=\"https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jobhai.png\" a"
+        },
+        {
+          "index": 70,
+          "text": "",
+          "has_sub_list": false,
+          "class": "slide-item",
+          "id": "",
+          "inner_html": "<div class=\"item\"><a target=\"_blank\" title=\"Doselect.com\" href=\"https://doselect.com/\"><img loading=\"lazy\" src=\"https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/doselect.png\" alt=\"Doselect"
+        },
+        {
+          "index": 71,
+          "text": "",
+          "has_sub_list": false,
+          "class": "slide-item",
+          "id": "",
+          "inner_html": "<div class=\"item\"><a target=\"_blank\" title=\"naukri.com/minis\" href=\"https://www.naukri.com/minis\"><img loading=\"lazy\" src=\"https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/minis.png\" alt=\""
+        },
+        {
+          "index": 72,
+          "text": "",
+          "has_sub_list": false,
+          "class": "slide-item",
+          "id": "",
+          "inner_html": "<div class=\"item\"><a target=\"_blank\" title=\"codingninjas.com\" href=\"https://www.codingninjas.com/?utm_source=naukri&amp;utm_medium=desktop-footer\"><img loading=\"lazy\" src=\"https://static.naukimg.com/s"
+        }
+      ]
+    },
+    "execution_time": "2026-08-02T14:21:33.258806"
+  }
+}

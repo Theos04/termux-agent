@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "session_id": "20260801_145056",
+    "start_time": "2026-08-01T14:50:56.470359",
+    "end_time": null,
+    "chrome_port": 9259,
+    "tab_url": "https://www.moneycontrolpay.com/",
+    "tab_title": "Home | Digital Loan Process Get Upto 50 Lakhs | Personal Loan and Business Loan Moneycontrolpay - Moneycontrolpay.com",
+    "total_commands": 6,
+    "snapshots_taken": [],
+    "files_generated": {}
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 6,
+  "last_updated": "2026-08-01T14:51:08.695313"
+}

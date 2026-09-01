@@ -1,0 +1,3586 @@
+{
+  "metadata": {
+    "session_id": "20260801_040928",
+    "timestamp": "2026-08-01T04:09:44.058762",
+    "tab_url": "",
+    "tab_title": "Salary calculator 2025-26 | Take Home Salary Calculator India | AmbitionBox",
+    "context": {
+      "method": "Accessibility.getFullAXTree"
+    },
+    "node_count": 106,
+    "command_index": 68
+  },
+  "data": {
+    "nodes": [
+      {
+        "nodeId": "1464",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "RootWebArea"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 144
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Company Reviews and Ratings By Employees | AmbitionBox",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label",
+              "superseded": true
+            },
+            {
+              "type": "relatedElement",
+              "value": {
+                "type": "computedString",
+                "value": "Company Reviews and Ratings By Employees | AmbitionBox"
+              },
+              "nativeSource": "title"
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "focused",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "busy",
+            "value": {
+              "type": "boolean",
+              "value": 1
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.ambitionbox.com/reviews?campaign=desktop_nav"
+            }
+          }
+        ],
+        "childIds": [
+          "1478"
+        ],
+        "backendDOMNodeId": 1464,
+        "frameId": "36AA1851ED99D4DE2D2CF606616A99F6"
+      },
+      {
+        "nodeId": "1478",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1464",
+        "childIds": [
+          "1565"
+        ],
+        "backendDOMNodeId": 1478
+      },
+      {
+        "nodeId": "1565",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1478",
+        "childIds": [
+          "1476",
+          "1566"
+        ],
+        "backendDOMNodeId": 1565
+      },
+      {
+        "nodeId": "1476",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "image"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 99
+        },
+        "name": {
+          "type": "computedString",
+          "value": "loader",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "value": {
+                "type": "computedString",
+                "value": "loader"
+              },
+              "attribute": "alt",
+              "attributeValue": {
+                "type": "string",
+                "value": "loader"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAASwCAYAAADrIbPPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAABXxSURBVHgB7MCBAAAAAICg/akXqQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgduCQAAAAAEDQ/9d+MAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX+3JAAH2y713AAAAAElFTkSuQmCC"
+            }
+          }
+        ],
+        "parentId": "1565",
+        "childIds": [],
+        "backendDOMNodeId": 1476
+      },
+      {
+        "nodeId": "1566",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1565",
+        "childIds": [
+          "1567"
+        ],
+        "backendDOMNodeId": 1566
+      },
+      {
+        "nodeId": "1567",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1566",
+        "childIds": [
+          "1568",
+          "1588"
+        ],
+        "backendDOMNodeId": 1567
+      },
+      {
+        "nodeId": "1568",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1567",
+        "childIds": [
+          "1569"
+        ],
+        "backendDOMNodeId": 1568
+      },
+      {
+        "nodeId": "1588",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "complementary"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 22
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Main navigation",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "value": {
+                "type": "computedString",
+                "value": "Main navigation"
+              },
+              "attribute": "aria-label",
+              "attributeValue": {
+                "type": "string",
+                "value": "Main navigation"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1567",
+        "childIds": [
+          "1589"
+        ],
+        "backendDOMNodeId": 1588
+      },
+      {
+        "nodeId": "1569",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1568",
+        "childIds": [
+          "1570",
+          "1573",
+          "1574"
+        ],
+        "backendDOMNodeId": 1569
+      },
+      {
+        "nodeId": "1570",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1569",
+        "childIds": [
+          "1571"
+        ],
+        "backendDOMNodeId": 1570
+      },
+      {
+        "nodeId": "1571",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 9
+        },
+        "name": {
+          "type": "computedString",
+          "value": "AmbitionBox Logo AmbitionBox",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "AmbitionBox Logo AmbitionBox"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ],
+        "parentId": "1570",
+        "childIds": [
+          "1465",
+          "1572"
+        ],
+        "backendDOMNodeId": 1571
+      },
+      {
+        "nodeId": "1573",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1569",
+        "childIds": [],
+        "backendDOMNodeId": 1573
+      },
+      {
+        "nodeId": "1574",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1569",
+        "childIds": [
+          "1575"
+        ],
+        "backendDOMNodeId": 1574
+      },
+      {
+        "nodeId": "1575",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1574",
+        "childIds": [
+          "1576",
+          "1580",
+          "1583",
+          "1585"
+        ],
+        "backendDOMNodeId": 1575
+      },
+      {
+        "nodeId": "1576",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1575",
+        "childIds": [
+          "1577"
+        ],
+        "backendDOMNodeId": 1576
+      },
+      {
+        "nodeId": "1580",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1575",
+        "childIds": [
+          "1581"
+        ],
+        "backendDOMNodeId": 1580
+      },
+      {
+        "nodeId": "1581",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 9
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Messages",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Messages"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ],
+        "parentId": "1580",
+        "childIds": [
+          "1582"
+        ],
+        "backendDOMNodeId": 1581
+      },
+      {
+        "nodeId": "1583",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 9
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Notification",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Notification"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ],
+        "parentId": "1575",
+        "childIds": [
+          "1584"
+        ],
+        "backendDOMNodeId": 1583
+      },
+      {
+        "nodeId": "1585",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1575",
+        "childIds": [
+          "1586"
+        ],
+        "backendDOMNodeId": 1585
+      },
+      {
+        "nodeId": "1586",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 9
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Login",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "value": {
+                "type": "computedString",
+                "value": "Login"
+              },
+              "attribute": "aria-label",
+              "attributeValue": {
+                "type": "string",
+                "value": "Login"
+              }
+            },
+            {
+              "type": "relatedElement",
+              "superseded": true,
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Login"
+              },
+              "superseded": true
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ],
+        "parentId": "1585",
+        "childIds": [
+          "1587"
+        ],
+        "backendDOMNodeId": 1586
+      },
+      {
+        "nodeId": "1589",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "navigation"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 130
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "title"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1588",
+        "childIds": [
+          "1590",
+          "1595",
+          "1600",
+          "1605",
+          "1610",
+          "1615",
+          "1620",
+          "1621"
+        ],
+        "backendDOMNodeId": 1589
+      },
+      {
+        "nodeId": "1465",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "image"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 99
+        },
+        "name": {
+          "type": "computedString",
+          "value": "AmbitionBox Logo",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "value": {
+                "type": "computedString",
+                "value": "AmbitionBox Logo"
+              },
+              "attribute": "alt",
+              "attributeValue": {
+                "type": "string",
+                "value": "AmbitionBox Logo"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://static.ambitionbox.com/alpha/community/assets/icon-ab.png"
+            }
+          }
+        ],
+        "parentId": "1571",
+        "childIds": [],
+        "backendDOMNodeId": 1465
+      },
+      {
+        "nodeId": "1572",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1571",
+        "childIds": [
+          "1638"
+        ],
+        "backendDOMNodeId": 1572
+      },
+      {
+        "nodeId": "1577",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 9
+        },
+        "name": {
+          "type": "computedString",
+          "value": "+ Contribute",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "+ Contribute"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ],
+        "parentId": "1576",
+        "childIds": [
+          "1578",
+          "1579"
+        ],
+        "backendDOMNodeId": 1577
+      },
+      {
+        "nodeId": "1582",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1581",
+        "childIds": [
+          "1466"
+        ],
+        "backendDOMNodeId": 1582
+      },
+      {
+        "nodeId": "1584",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1583",
+        "childIds": [
+          "1467"
+        ],
+        "backendDOMNodeId": 1584
+      },
+      {
+        "nodeId": "1587",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1586",
+        "childIds": [
+          "1641"
+        ],
+        "backendDOMNodeId": 1587
+      },
+      {
+        "nodeId": "1590",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1589",
+        "childIds": [
+          "1591"
+        ],
+        "backendDOMNodeId": 1590
+      },
+      {
+        "nodeId": "1591",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Home",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Home"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.ambitionbox.com/"
+            }
+          }
+        ],
+        "parentId": "1590",
+        "childIds": [
+          "1592"
+        ],
+        "backendDOMNodeId": 1591
+      },
+      {
+        "nodeId": "1595",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1589",
+        "childIds": [
+          "1596"
+        ],
+        "backendDOMNodeId": 1595
+      },
+      {
+        "nodeId": "1596",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Companies",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Companies"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.ambitionbox.com/list-of-companies?campaign=desktop_nav"
+            }
+          }
+        ],
+        "parentId": "1595",
+        "childIds": [
+          "1597"
+        ],
+        "backendDOMNodeId": 1596
+      },
+      {
+        "nodeId": "1600",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1589",
+        "childIds": [
+          "1477"
+        ],
+        "backendDOMNodeId": 1600
+      },
+      {
+        "nodeId": "1477",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Reviews",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Reviews"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.ambitionbox.com/reviews?campaign=desktop_nav"
+            }
+          }
+        ],
+        "parentId": "1600",
+        "childIds": [
+          "1601"
+        ],
+        "backendDOMNodeId": 1477
+      },
+      {
+        "nodeId": "1605",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1589",
+        "childIds": [
+          "1606"
+        ],
+        "backendDOMNodeId": 1605
+      },
+      {
+        "nodeId": "1606",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Salaries",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Salaries"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.ambitionbox.com/salaries?campaign=desktop_nav"
+            }
+          }
+        ],
+        "parentId": "1605",
+        "childIds": [
+          "1607"
+        ],
+        "backendDOMNodeId": 1606
+      },
+      {
+        "nodeId": "1610",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1589",
+        "childIds": [
+          "1611"
+        ],
+        "backendDOMNodeId": 1610
+      },
+      {
+        "nodeId": "1611",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Interview Questions",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Interview Questions"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.ambitionbox.com/interviews?campaign=desktop_nav"
+            }
+          }
+        ],
+        "parentId": "1610",
+        "childIds": [
+          "1612"
+        ],
+        "backendDOMNodeId": 1611
+      },
+      {
+        "nodeId": "1615",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1589",
+        "childIds": [
+          "1616"
+        ],
+        "backendDOMNodeId": 1615
+      },
+      {
+        "nodeId": "1616",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Jobs",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Jobs"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.ambitionbox.com/jobs?campaign=desktop_nav"
+            }
+          }
+        ],
+        "parentId": "1615",
+        "childIds": [
+          "1617"
+        ],
+        "backendDOMNodeId": 1616
+      },
+      {
+        "nodeId": "1620",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1589",
+        "childIds": [],
+        "backendDOMNodeId": 1620
+      },
+      {
+        "nodeId": "1621",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1589",
+        "childIds": [
+          "1622"
+        ],
+        "backendDOMNodeId": 1621
+      },
+      {
+        "nodeId": "1622",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1621",
+        "childIds": [
+          "1623",
+          "1626"
+        ],
+        "backendDOMNodeId": 1622
+      },
+      {
+        "nodeId": "1623",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 9
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Collapse Tools",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "value": {
+                "type": "computedString",
+                "value": "Collapse Tools"
+              },
+              "attribute": "aria-label",
+              "attributeValue": {
+                "type": "string",
+                "value": "Collapse Tools"
+              }
+            },
+            {
+              "type": "relatedElement",
+              "superseded": true,
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "TOOLS"
+              },
+              "superseded": true
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "expanded",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ],
+        "parentId": "1622",
+        "childIds": [
+          "1624"
+        ],
+        "backendDOMNodeId": 1623
+      },
+      {
+        "nodeId": "1626",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1622",
+        "childIds": [
+          "1627",
+          "1630",
+          "1634",
+          "1637"
+        ],
+        "backendDOMNodeId": 1626
+      },
+      {
+        "nodeId": "1627",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Compare Companies",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Compare Companies"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.ambitionbox.com/compare?campaign=desktop_nav"
+            }
+          }
+        ],
+        "parentId": "1626",
+        "childIds": [
+          "1628"
+        ],
+        "backendDOMNodeId": 1627
+      },
+      {
+        "nodeId": "1630",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Salary Calculator",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Salary Calculator"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.ambitionbox.com/salaries/take-home-salary-calculator?campaign=desktop_nav"
+            }
+          }
+        ],
+        "parentId": "1626",
+        "childIds": [
+          "1631"
+        ],
+        "backendDOMNodeId": 1630
+      },
+      {
+        "nodeId": "1634",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Are you paid fairly?",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Are you paid fairly?"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.ambitionbox.com/are-you-paid-fairly?campaign=desktop_nav"
+            }
+          }
+        ],
+        "parentId": "1626",
+        "childIds": [
+          "1635"
+        ],
+        "backendDOMNodeId": 1634
+      },
+      {
+        "nodeId": "1637",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "link"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 110
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents"
+            },
+            {
+              "type": "attribute",
+              "attribute": "title"
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://www.ambitionbox.com/tools/offer-letter-comparison?campaign=desktop_nav"
+            }
+          }
+        ],
+        "parentId": "1626",
+        "childIds": [],
+        "backendDOMNodeId": 1637
+      },
+      {
+        "nodeId": "1638",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "AmbitionBox",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "AmbitionBox"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1572",
+        "childIds": [
+          "-1000000559"
+        ],
+        "backendDOMNodeId": 1638
+      },
+      {
+        "nodeId": "1578",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1577",
+        "childIds": [
+          "1639"
+        ],
+        "backendDOMNodeId": 1578
+      },
+      {
+        "nodeId": "1579",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1577",
+        "childIds": [
+          "1640"
+        ],
+        "backendDOMNodeId": 1579
+      },
+      {
+        "nodeId": "1466",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "image"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 99
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Messages",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "value": {
+                "type": "computedString",
+                "value": "Messages"
+              },
+              "attribute": "alt",
+              "attributeValue": {
+                "type": "string",
+                "value": "Messages"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://static.ambitionbox.com/alpha/community/assets/dm/message-default.svg"
+            }
+          }
+        ],
+        "parentId": "1582",
+        "childIds": [],
+        "backendDOMNodeId": 1466
+      },
+      {
+        "nodeId": "1467",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "image"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 99
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Notification",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "value": {
+                "type": "computedString",
+                "value": "Notification"
+              },
+              "attribute": "alt",
+              "attributeValue": {
+                "type": "string",
+                "value": "Notification"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "https://static.ambitionbox.com/static/anonymous_chat/notification-circle-default.png"
+            }
+          }
+        ],
+        "parentId": "1584",
+        "childIds": [],
+        "backendDOMNodeId": 1467
+      },
+      {
+        "nodeId": "1641",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Login",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Login"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1587",
+        "childIds": [
+          "-1000000562"
+        ],
+        "backendDOMNodeId": 1641
+      },
+      {
+        "nodeId": "1592",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1591",
+        "childIds": [
+          "1593"
+        ],
+        "backendDOMNodeId": 1592
+      },
+      {
+        "nodeId": "1593",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1592",
+        "childIds": [
+          "1594"
+        ],
+        "backendDOMNodeId": 1593
+      },
+      {
+        "nodeId": "1594",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1593",
+        "childIds": [
+          "1642"
+        ],
+        "backendDOMNodeId": 1594
+      },
+      {
+        "nodeId": "1642",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Home",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Home"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1594",
+        "childIds": [
+          "-1000000563"
+        ],
+        "backendDOMNodeId": 1642
+      },
+      {
+        "nodeId": "1597",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1596",
+        "childIds": [
+          "1598"
+        ],
+        "backendDOMNodeId": 1597
+      },
+      {
+        "nodeId": "1598",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1597",
+        "childIds": [
+          "1599"
+        ],
+        "backendDOMNodeId": 1598
+      },
+      {
+        "nodeId": "1599",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1598",
+        "childIds": [
+          "1643"
+        ],
+        "backendDOMNodeId": 1599
+      },
+      {
+        "nodeId": "1643",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Companies",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Companies"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1599",
+        "childIds": [
+          "-1000000564"
+        ],
+        "backendDOMNodeId": 1643
+      },
+      {
+        "nodeId": "1601",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1477",
+        "childIds": [
+          "1603"
+        ],
+        "backendDOMNodeId": 1601
+      },
+      {
+        "nodeId": "1603",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1601",
+        "childIds": [
+          "1604"
+        ],
+        "backendDOMNodeId": 1603
+      },
+      {
+        "nodeId": "1604",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1603",
+        "childIds": [
+          "1644"
+        ],
+        "backendDOMNodeId": 1604
+      },
+      {
+        "nodeId": "1644",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Reviews",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Reviews"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1604",
+        "childIds": [
+          "-1000000565"
+        ],
+        "backendDOMNodeId": 1644
+      },
+      {
+        "nodeId": "1607",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1606",
+        "childIds": [
+          "1608"
+        ],
+        "backendDOMNodeId": 1607
+      },
+      {
+        "nodeId": "1608",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1607",
+        "childIds": [
+          "1609"
+        ],
+        "backendDOMNodeId": 1608
+      },
+      {
+        "nodeId": "1609",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1608",
+        "childIds": [
+          "1645"
+        ],
+        "backendDOMNodeId": 1609
+      },
+      {
+        "nodeId": "1645",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Salaries",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Salaries"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1609",
+        "childIds": [
+          "-1000000566"
+        ],
+        "backendDOMNodeId": 1645
+      },
+      {
+        "nodeId": "1612",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1611",
+        "childIds": [
+          "1613"
+        ],
+        "backendDOMNodeId": 1612
+      },
+      {
+        "nodeId": "1613",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1612",
+        "childIds": [
+          "1614"
+        ],
+        "backendDOMNodeId": 1613
+      },
+      {
+        "nodeId": "1614",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1613",
+        "childIds": [
+          "1646"
+        ],
+        "backendDOMNodeId": 1614
+      },
+      {
+        "nodeId": "1646",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Interview Questions",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Interview Questions"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1614",
+        "childIds": [
+          "-1000000567"
+        ],
+        "backendDOMNodeId": 1646
+      },
+      {
+        "nodeId": "1617",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1616",
+        "childIds": [
+          "1618"
+        ],
+        "backendDOMNodeId": 1617
+      },
+      {
+        "nodeId": "1618",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1617",
+        "childIds": [
+          "1619"
+        ],
+        "backendDOMNodeId": 1618
+      },
+      {
+        "nodeId": "1619",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1618",
+        "childIds": [
+          "1647"
+        ],
+        "backendDOMNodeId": 1619
+      },
+      {
+        "nodeId": "1647",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Jobs",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Jobs"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1619",
+        "childIds": [
+          "-1000000568"
+        ],
+        "backendDOMNodeId": 1647
+      },
+      {
+        "nodeId": "1624",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1623",
+        "childIds": [
+          "1625"
+        ],
+        "backendDOMNodeId": 1624
+      },
+      {
+        "nodeId": "1625",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1624",
+        "childIds": [
+          "1648"
+        ],
+        "backendDOMNodeId": 1625
+      },
+      {
+        "nodeId": "1648",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TOOLS",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "TOOLS"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1625",
+        "childIds": [
+          "-1000000569"
+        ],
+        "backendDOMNodeId": 1648
+      },
+      {
+        "nodeId": "1628",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1627",
+        "childIds": [
+          "1629"
+        ],
+        "backendDOMNodeId": 1628
+      },
+      {
+        "nodeId": "1629",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1628",
+        "childIds": [
+          "1649"
+        ],
+        "backendDOMNodeId": 1629
+      },
+      {
+        "nodeId": "1649",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Compare Companies",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Compare Companies"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1629",
+        "childIds": [
+          "-1000000570"
+        ],
+        "backendDOMNodeId": 1649
+      },
+      {
+        "nodeId": "1631",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1630",
+        "childIds": [
+          "1633"
+        ],
+        "backendDOMNodeId": 1631
+      },
+      {
+        "nodeId": "1633",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1631",
+        "childIds": [
+          "1650"
+        ],
+        "backendDOMNodeId": 1633
+      },
+      {
+        "nodeId": "1650",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Salary Calculator",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Salary Calculator"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1633",
+        "childIds": [
+          "-1000000571"
+        ],
+        "backendDOMNodeId": 1650
+      },
+      {
+        "nodeId": "1635",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1634",
+        "childIds": [
+          "1636"
+        ],
+        "backendDOMNodeId": 1635
+      },
+      {
+        "nodeId": "1636",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "1635",
+        "childIds": [
+          "1651"
+        ],
+        "backendDOMNodeId": 1636
+      },
+      {
+        "nodeId": "1651",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Are you paid fairly?",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Are you paid fairly?"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1636",
+        "childIds": [
+          "-1000000572"
+        ],
+        "backendDOMNodeId": 1651
+      },
+      {
+        "nodeId": "-1000000559",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "AmbitionBox"
+        },
+        "properties": [],
+        "parentId": "1638",
+        "childIds": []
+      },
+      {
+        "nodeId": "1639",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "+",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "+"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1578",
+        "childIds": [
+          "-1000000560"
+        ],
+        "backendDOMNodeId": 1639
+      },
+      {
+        "nodeId": "1640",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Contribute",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Contribute"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "1579",
+        "childIds": [
+          "-1000000561"
+        ],
+        "backendDOMNodeId": 1640
+      },
+      {
+        "nodeId": "-1000000562",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Login"
+        },
+        "properties": [],
+        "parentId": "1641",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000563",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Home"
+        },
+        "properties": [],
+        "parentId": "1642",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000564",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Companies"
+        },
+        "properties": [],
+        "parentId": "1643",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000565",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Reviews"
+        },
+        "properties": [],
+        "parentId": "1644",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000566",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Salaries"
+        },
+        "properties": [],
+        "parentId": "1645",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000567",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Interview Questions"
+        },
+        "properties": [],
+        "parentId": "1646",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000568",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Jobs"
+        },
+        "properties": [],
+        "parentId": "1647",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000569",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TOOLS"
+        },
+        "properties": [],
+        "parentId": "1648",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000570",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Compare Companies"
+        },
+        "properties": [],
+        "parentId": "1649",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000571",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Salary Calculator"
+        },
+        "properties": [],
+        "parentId": "1650",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000572",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Are you paid fairly?"
+        },
+        "properties": [],
+        "parentId": "1651",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000560",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "+"
+        },
+        "properties": [],
+        "parentId": "1639",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000561",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Contribute"
+        },
+        "properties": [],
+        "parentId": "1640",
+        "childIds": []
+      }
+    ]
+  }
+}

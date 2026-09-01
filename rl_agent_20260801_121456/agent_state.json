@@ -1,0 +1,27 @@
+{
+  "cycle": 1,
+  "goal_achieved": true,
+  "best_reward": -Infinity,
+  "discovery_count": 0,
+  "q_stats": {
+    "state_count": 0,
+    "total_q_values": 0,
+    "exploration_rate": 0.7,
+    "learning_rate": 0.15,
+    "total_actions": 0,
+    "unique_actions": 0,
+    "consecutive_repeats": 0,
+    "stuck_count": 0,
+    "episodes": 0,
+    "successful_episodes": 0,
+    "avg_reward": 0,
+    "max_reward": 0,
+    "min_reward": 0
+  },
+  "reward_progress": [],
+  "episodes": 0,
+  "best_path": {},
+  "success_count": 0,
+  "visited_urls": [],
+  "timestamp": "2026-08-01T12:15:00.337933"
+}

@@ -1,0 +1,1458 @@
+{
+  "timestamp": "2026-08-02T16:50:52.779640",
+  "total_real_apis": 9,
+  "api_categories": {
+    "cloudgateway-mynaukri": 3,
+    "cloudgateway-ccs": 2,
+    "cloudgateway-chatbot": 1,
+    "www.naukri.com": 2,
+    "cloudgateway-nc-js": 1
+  },
+  "apis": [
+    {
+      "endpoint": "www.naukri.com/cloudgateway-mynaukri/notification-center-services/v0/naukrinotificationcentre/user/self/count",
+      "method": "GET"
+    },
+    {
+      "endpoint": "www.naukri.com/cloudgateway-mynaukri/resman-aggregator-services/v1/users/self/dashboard",
+      "method": "GET"
+    },
+    {
+      "endpoint": "www.naukri.com/cloudgateway-mynaukri/resman-aggregator-services/v2/users/self",
+      "method": "GET"
+    },
+    {
+      "endpoint": "www.naukri.com/cloudgateway-ccs/inventory-management-services/v2/page/pagename/ni-desktop-reco-v2",
+      "method": "GET"
+    },
+    {
+      "endpoint": "www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond",
+      "method": "GET"
+    },
+    {
+      "endpoint": "www.naukri.com/servicegateway-mynaukri/resman-aggregator-services/v1/users/self/dashboard",
+      "method": "GET"
+    },
+    {
+      "endpoint": "www.naukri.com/servicegateway-mynaukri/jobseeker-engagement-services/v0/profileservice/users/self/recommendedactions",
+      "method": "GET"
+    },
+    {
+      "endpoint": "www.naukri.com/cloudgateway-nc-js/nc-services/v0/template/ni-desktop-pre-purchase-naukri-pro-acp-wdgt-svc-tmpl_v0",
+      "method": "GET"
+    },
+    {
+      "endpoint": "www.naukri.com/cloudgateway-ccs/inventory-management-services/v2/page/pagename/ni-desktop-acp-v1",
+      "method": "GET"
+    }
+  ],
+  "sensitive_data": {
+    "type": 50,
+    "value": 50,
+    "location": 50,
+    "url": 50,
+    "entry": 1182
+  },
+  "all_data": {
+    "summary": {
+      "total_entries": 264,
+      "api_endpoints": 140,
+      "tokens_correlated": 9,
+      "sensitive_data_found": 1205,
+      "security_issues": 0
+    },
+    "api_endpoints": {
+      "POST /uba": {
+        "count": 17,
+        "methods": [
+          "POST"
+        ],
+        "statuses": [
+          204,
+          204,
+          204,
+          204,
+          204,
+          204,
+          204,
+          204,
+          204,
+          204,
+          204,
+          204,
+          204,
+          204,
+          204,
+          204,
+          204
+        ]
+      },
+      "POST /{token}/chatbot-services/botapi/v5/respond": {
+        "count": 12,
+        "methods": [
+          "POST"
+        ],
+        "statuses": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          401,
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "GET /logo_images/groups/v1/{id}": {
+        "count": 10,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "GET /pagead/{id}p-user-list/{id}/": {
+        "count": 8,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "GET /gtag/js": {
+        "count": 6,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "POST /collectorapi/v1/uba/bulk": {
+        "count": 6,
+        "methods": [
+          "POST"
+        ],
+        "statuses": [
+          204,
+          204,
+          204,
+          204,
+          204,
+          204
+        ]
+      },
+      "GET /s/{id}/{id}/c/fonts/static/satoshi/{token}.woff2": {
+        "count": 4,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "POST /ccm/collect": {
+        "count": 4,
+        "methods": [
+          "POST"
+        ],
+        "statuses": [
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "POST /rmkt/collect/{id}/": {
+        "count": 4,
+        "methods": [
+          "POST"
+        ],
+        "statuses": [
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "GET /pagead/{token}/{id}/": {
+        "count": 4,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/j/widget-client-ni.min": {
+        "count": 3,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200,
+          200
+        ]
+      },
+      "POST /cloudgateway-ccs/{token}/v2/page/pagename/ni-desktop-acp-v1": {
+        "count": 3,
+        "methods": [
+          "POST"
+        ],
+        "statuses": [
+          200,
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/j/customElements.min": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/c/fonts/static/satoshi/{id}AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/j/ub_v1.16.min": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET font/woff2;charset=utf-8;base64,d09GMgABAAAAAAy8AAsAAAAAGGQAAAxrAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHIN4BmAAh0AKmHiUMQE2AiQDgSgLVgAEIAWERgeCUhsCFTOjdpOTSpTsvzzgDhOTX7CJENkScS8FZS3mF87+xT+zVx4zoY8Yonti7PChg1+zOvvEfDd44Ndq78/Omo+InQPRNGkStUbUkinxIiESsrhCY2078xczxFIkZUom/eY0o66NiwyI0wGftxtN+ufY8vhzrFRWxiNShssD/akvY+HSmOQikpyHPlCERmtYLMECWtRrBgD4DtGpl1yF/{id}itA1VKO3z9KZ10YDrIwcAMzABmoufVpS+1bCdsCONUmADIUIKDAoDUv0nvb5IdJPLd0X7f6nv/{token}+UJFm5mkuxDRDI0USIWYCaXhf7IpL0FaTzDP2Ae/knZM/{token}/{token}/{token}/Zgc/vJO/{token}+BsOmyLFXDmGWgDLaDZPAPFtVlvSxJsIhVUiyv/MOK2xekfLkm2r/b/{token}/RVV+5YwO+RPE7WmbeyGkGqKJ8QQu6um5Fg7APBe5NDbDEbhUSExMXoyjRgYosp4uSICREh0UHBe5Fn2FUxp6Yn8ZIEqzwXYELRqwoEBaMLEwNtUVyWV66ohXFludoeeWZ+f0iVc+WO/yPTO1qdmvS09rRzoos+IGlFLSmK3Jtf2TV/{token}/T7z8JakV6G/{token}/{token}/{token}+Ng7R/{token}+Wf6f6S//X3fK/{id}lb/X6QgFCRqJJw86hbpEZp+/{token}/{token}+SsaLC/Rp6pCsBwQN9WKgxpA+gv6FT1fz4h4LN1LZzZHkYj+NSb9PpLZsZ5T/qs41uoBq4yfE5/{token}/{token}+1duFpEut5dlKPx+Z1Yb0+2nX5lekWsTnVVZxHDVkQ2c7dWT6D/p+iF4GTxMrsxRXp0gFOXUzZGFrJY4gTQUYLXV9MPryfz38iPraXZh9APS2QCkbeX0d1I5WMUYwhbDB/H9+Dfte9ziemLUg+GTruPgpnHnHgjApYon9TUHL+3IBFVm18XqY+xqc1Xph+22yB4fY/oc8ntUlKwJ+fQ03f+1jqy4csLXRQGBOzeXqEdqiES1QfVAPmQ5L4CQP874ZdMaCzAMOxBsrFdmKErzEgPBdn6OC6zRFc4AIRjSWG8vn6i81NHzon0iig6MAPGjmOtRq8iKBjsheTkrN6f/CfvrR86i/{token}+kHqQAEpuhCpzXu0av8YYS3pOFHsJ/aHkGqF+YVUo70feWm8Er2+tcaTeQMz4Wzgm2eeYLBJmI9ueyPyE/kPgOYLQcxjgXdq2tF+JQZDwFyqJ8JD5S5ccC+cHPF2wUJu8URAp6b2p72j9ddoBTbH2Gz21bQgaQkdgVaWWNmCwO/{token}+ppRV9k6je8C4+/h34/{token}+sKKtXFOiVpdoyi/BCZ3UyW/{id}v51ttwPrk7Ie/{token}+Z4/{token}/{token}/r1wl+uubI/{id}jsm0nrwnzievz78jP/ldlwvvBZLqEFywNk/{id}WSvAmDUWyxq/{id}wHDdKfDdiJ8QuDUlOHmmrGKaXCUvqlJPwpOU4ytMQ9PmRo4IXywzYZ/{token}+tilnDzBzdgK9ihLTHtO3x9GJuR60tmoW5GwE6agZcpilREArfC/aH/{token}+wqBhRcgCM+AvHq103W3lef1turQ6syJ+x3qATkJkFTqK8gfS/{token}//{token}+7acIVy1wWcZZPjzbH5pZG9kstCCoPS6YbB/FeLQ+cMfagtic/{token}/{token}/wX8HPB0x59pNaGJX/{id}ifJGHIObj5yiKp830CHs0AihxsKn7r8jwG+iA1sTXvfcXnInFBVBFIxhmJGAgdwC/{token}+YGBm/{id}XH+p5YBdTDxp7a4BQPEEa+2yrnG3Qhr6CMfYLgt8o/{token}+5we5JirqLkZR92BPWJCNoFPdVtUp3It45Zl69UjFuKucSQ1MG7TSRpFhdRPbbN1Ea6lvikS7pehoVmGRqT7g6dCNMoMJa8QX/{id}FYlc6HTtmwap1oP6lC7mgI5OSqbSDPTCe591yKp7zFGekph7t5RMwc6aQeq80Gsly3bncwg5U1uambVNVOnO7fMopNtVrRbatIoqSipqGlo2dgZGJmYWUzt7CkUGl0BpPF5nB5fIFQJJZIZXKFUqVOHl2/+o5/{token}+meGPe8+a2n3veIB6PcAY1yTqI5hSiGmeaDoW/{token}/{token}=": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/j/naukri-widget_v12.36-modern.min": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /gtm": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/j/ni-gnb-sse-comp.bf7d5fa8.min": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/j/vendors~ni-desktop-gnb-notif-center-revamped~ni-gnb-drawer~ni-gnb-notif-center~ni-gnb-search-bar.cee72e6a.min": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/j/ni-gnb-search-bar.4a1e6db1.min": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/j/vendors~ni-desktop-gnb-notif-center-revamped~ni-gnb-drawer~ni-gnb-login-layer.6af41edd.min": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/j/{token}.300225ad.min": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/j/vendors~ni-gnb-search-bar.6fb99408.min": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/j/ni-gnb-drawer.dbb973e4.min": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/i/ni-gnb-revamped/userdp_v1": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/i/naukri-identity/naukri_gnb_logo": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/i/ambitionBoxLogo": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/i/new-homepage/facebook": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      },
+      "GET /s/{id}/{id}/i/new-homepage/instagram": {
+        "count": 2,
+        "methods": [
+          "GET"
+        ],
+        "statuses": [
+          200,
+          200
+        ]
+      }
+    },
+    "token_correlation": {
+      "www.naukri.com/cloudgateway-mynaukri/notification-center-services/v0/naukrinotificationcentre/user/self/count": [
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-mynaukri/notification-center-services/v0/naukrinotificationcentre/user/self/count"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-mynaukri/notification-center-services/v0/naukrinotificationcentre/user/self/count"
+        }
+      ],
+      "www.naukri.com/cloudgateway-mynaukri/resman-aggregator-services/v1/users/self/dashboard": [
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-mynaukri/resman-aggregator-services/v1/users/self/dashboard?properties=userDetails,incompleteSection,isPaidUser,profileSegment,lookupData,res360NotifType,photoInfo,campusData,aiInterviewEligibility,aiInterviewEligibility"
+        }
+      ],
+      "www.naukri.com/cloudgateway-mynaukri/resman-aggregator-services/v2/users/self": [
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-mynaukri/resman-aggregator-services/v2/users/self?expand_level=3"
+        }
+      ],
+      "www.naukri.com/cloudgateway-ccs/inventory-management-services/v2/page/pagename/ni-desktop-reco-v2": [
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-ccs/inventory-management-services/v2/page/pagename/ni-desktop-reco-v2?partial=true&rules=true&sync=true"
+        }
+      ],
+      "www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond": [
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond"
+        }
+      ],
+      "www.naukri.com/servicegateway-mynaukri/resman-aggregator-services/v1/users/self/dashboard": [
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/servicegateway-mynaukri/resman-aggregator-services/v1/users/self/dashboard?properties=incompleteSection,lookupData"
+        }
+      ],
+      "www.naukri.com/servicegateway-mynaukri/jobseeker-engagement-services/v0/profileservice/users/self/recommendedactions": [
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/servicegateway-mynaukri/jobseeker-engagement-services/v0/profileservice/users/self/recommendedactions?appInstallWidget=true"
+        }
+      ],
+      "www.naukri.com/cloudgateway-nc-js/nc-services/v0/template/ni-desktop-pre-purchase-naukri-pro-acp-wdgt-svc-tmpl_v0": [
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-nc-js/nc-services/v0/template/ni-desktop-pre-purchase-naukri-pro-acp-wdgt-svc-tmpl_v0"
+        }
+      ],
+      "www.naukri.com/cloudgateway-ccs/inventory-management-services/v2/page/pagename/ni-desktop-acp-v1": [
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-ccs/inventory-management-services/v2/page/pagename/ni-desktop-acp-v1"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-ccs/inventory-management-services/v2/page/pagename/ni-desktop-acp-v1?partial=true&rules=true&sync=true"
+        },
+        {
+          "type": "Bearer",
+          "value": "eyJraWQiOiIzIiwidHlw...",
+          "url": "https://www.naukri.com/cloudgateway-ccs/inventory-management-services/v2/page/pagename/ni-desktop-acp-v1?partial=true&rules=true&sync=true"
+        }
+      ]
+    },
+    "sensitive_data": [
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://www.naukri.com/mnjuser/recommendedjobs",
+        "entry": 0
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/vendors~main.b0cec1e0.min.js",
+        "entry": 1
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/main.0618c2ed.min.js",
+        "entry": 2
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/j/nLoggerJB_v3.4.min.js",
+        "entry": 3
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/c/main.1d58d7c1.min.css",
+        "entry": 4
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/0/j/widget-client-ni.min.js",
+        "entry": 5
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/j/customElements.min.js",
+        "entry": 6
+      },
+      {
+        "type": "credit_card",
+        "value": "5718547946799104",
+        "location": "Intervention header",
+        "url": "https://static.naukimg.com/s/0/0/j/customElements.min.js",
+        "entry": 6
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2",
+        "entry": 7
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2",
+        "entry": 8
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2",
+        "entry": 9
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/c/webfonts/fontIcons.74303c38d38c8aaa3e64380d7d71d9cd.woff",
+        "entry": 10
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/1/j/ub_v1.16.min.js",
+        "entry": 11
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAAy8AAsAAAAAGGQAAAxrAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "entry": 12
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/c/vendors~recommendedJobs.a3e49a79.min.css",
+        "entry": 13
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/c/recommendedJobs.9ba53e01.min.css",
+        "entry": 14
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/0/j/naukri-widget_v12.36-modern.min.js",
+        "entry": 15
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/vendors~recommendedJobs.ebba1154.min.js",
+        "entry": 16
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/recommendedJobs.6b2e6e28.min.js",
+        "entry": 17
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NX744H",
+        "entry": 18
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/ni-gnb-sse-comp.bf7d5fa8.min.js",
+        "entry": 19
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/vendors~ni-desktop-gnb-notif-center-revamped~ni-gnb-drawer~ni-g",
+        "entry": 20
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/ni-gnb-search-bar.4a1e6db1.min.js",
+        "entry": 21
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/vendors~ni-desktop-gnb-notif-center-revamped~ni-gnb-drawer~ni-g",
+        "entry": 22
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/ni-desktop-gnb-notif-center-revamped.300225ad.min.js",
+        "entry": 23
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/vendors~ni-gnb-search-bar.6fb99408.min.js",
+        "entry": 24
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/ni-gnb-drawer.dbb973e4.min.js",
+        "entry": 25
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/ni-gnb-revamped/userdp_v1.svg",
+        "entry": 26
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/naukri-identity/naukri_gnb_logo.svg",
+        "entry": 27
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/ambitionBoxLogo.png",
+        "entry": 28
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/facebook.svg",
+        "entry": 29
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/instagram.svg",
+        "entry": 30
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/twitter_v1.svg",
+        "entry": 31
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/linkedin.svg",
+        "entry": 32
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/android-app_v1.png",
+        "entry": 33
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/ios-app_v1.png",
+        "entry": 34
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/infoedge-logo.svg",
+        "entry": 35
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/nnacres.png",
+        "entry": 36
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jeevansathi.png",
+        "entry": 37
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/ng_v1.png",
+        "entry": 38
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png",
+        "entry": 39
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/iimjobs.png",
+        "entry": 40
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/hirist_v1.png",
+        "entry": 41
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jobhai.png",
+        "entry": 42
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/doselect.png",
+        "entry": 43
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/minis.png",
+        "entry": 44
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/coding_ninjas.png",
+        "entry": 45
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-10857553821&cx=c&gtm=4e67t1h1",
+        "entry": 46
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-854187457&cx=c&gtm=4e67t1h1",
+        "entry": 47
+      },
+      {
+        "type": "ip_address",
+        "value": "149.0.0.0",
+        "location": "User-Agent header",
+        "url": "https://static.naukimg.com/s/7/105/j/ni-gnb-collated-pill.94a2736f.min.js",
+        "entry": 48
+      }
+    ],
+    "session_flow": {
+      "navigation_events": 65,
+      "api_calls": 51,
+      "navigations": [
+        {
+          "timestamp": "2026-08-02T16:12:05.858939",
+          "url": "https://www.naukri.com/mnjuser/recommendedjobs",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:07.939481",
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/facebook.svg",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:07.948942",
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/instagram.svg",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:07.958694",
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/twitter_v1.svg",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:07.974316",
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/linkedin.svg",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:07.986181",
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/android-app_v1.png",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:07.991866",
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/ios-app_v1.png",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:07.996075",
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/infoedge-logo.svg",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:08.000636",
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/nnacres.png",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:08.005023",
+          "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jeevansathi.png",
+          "status": 200
+        }
+      ],
+      "apis": [
+        {
+          "timestamp": "2026-08-02T16:12:08.094847",
+          "method": "GET",
+          "url": "https://www.naukri.com/cloudgateway-mynaukri/notification-center-services/v0/naukrinotificationcentr",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:08.097830",
+          "method": "GET",
+          "url": "https://www.naukri.com/cloudgateway-mynaukri/resman-aggregator-services/v1/users/self/dashboard?prop",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:08.109713",
+          "method": "POST",
+          "url": "https://www.naukri.com/jobapi/v2/search/recom-jobs",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:09.970028",
+          "method": "GET",
+          "url": "https://img.naukimg.com/logo_images/groups/v1/1186200.gif",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:09.974173",
+          "method": "GET",
+          "url": "https://img.naukimg.com/logo_images/groups/v1/445380.gif",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:09.947583",
+          "method": "GET",
+          "url": "https://www.naukri.com/cloudgateway-mynaukri/resman-aggregator-services/v2/users/self?expand_level=3",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:11.950305",
+          "method": "POST",
+          "url": "https://www.naukri.com/cloudgateway-ccs/inventory-management-services/v2/page/pagename/ni-desktop-re",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:12.597437",
+          "method": "POST",
+          "url": "https://logs.naukri.com/collectorapi/v1/uba/bulk",
+          "status": 204
+        },
+        {
+          "timestamp": "2026-08-02T16:12:12.806982",
+          "method": "GET",
+          "url": "https://img.naukimg.com/logo_images/groups/v1/11809885.gif",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:17.749446",
+          "method": "POST",
+          "url": "https://analytics.google.com/g/collect?v=2&tid=G-K2YBNZVRLL&gtm=45je67t1h1v898603917z86678154za20gzb",
+          "status": 204
+        },
+        {
+          "timestamp": "2026-08-02T16:12:38.975901",
+          "method": "POST",
+          "url": "https://www.naukri.com/cloudgateway-workflow/workflow-services/apply-workflow/v1/apply",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:12:40.914107",
+          "method": "GET",
+          "url": "data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAABJsAAsAAAAAI9wAAQAAAAAAAAAAAAAAAAAAAAAA",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:13:07.209939",
+          "method": "POST",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:13:19.547904",
+          "method": "POST",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:13:24.040620",
+          "method": "POST",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:13:27.295462",
+          "method": "POST",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:13:32.324975",
+          "method": "POST",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:13:37.946481",
+          "method": "POST",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:13:44.631532",
+          "method": "POST",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond",
+          "status": 200
+        },
+        {
+          "timestamp": "2026-08-02T16:13:52.992256",
+          "method": "POST",
+          "url": "https://www.naukri.com/cloudgateway-chatbot/chatbot-services/botapi/v5/respond",
+          "status": 401
+        }
+      ]
+    },
+    "timeline": [
+      {
+        "time": "2026-08-02T16:12:05.858939",
+        "method": "GET",
+        "url": "https://www.naukri.com/mnjuser/recommendedjobs",
+        "status": 200,
+        "duration_ms": 578.2182216644287
+      },
+      {
+        "time": "2026-08-02T16:12:06.803289",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/vendors~main.b0cec1e0.min.js",
+        "status": 200,
+        "duration_ms": 9.491443634033203
+      },
+      {
+        "time": "2026-08-02T16:12:06.820487",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/main.0618c2ed.min.js",
+        "status": 200,
+        "duration_ms": 8.032560348510742
+      },
+      {
+        "time": "2026-08-02T16:12:06.833666",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/j/nLoggerJB_v3.4.min.js",
+        "status": 200,
+        "duration_ms": 7.258415222167969
+      },
+      {
+        "time": "2026-08-02T16:12:06.799051",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/c/main.1d58d7c1.min.css",
+        "status": 200,
+        "duration_ms": 54.44192886352539
+      },
+      {
+        "time": "2026-08-02T16:12:06.846946",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/0/j/widget-client-ni.min.js",
+        "status": 200,
+        "duration_ms": 15.571117401123047
+      },
+      {
+        "time": "2026-08-02T16:12:06.875824",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/j/customElements.min.js",
+        "status": 200,
+        "duration_ms": 4.666805267333984
+      },
+      {
+        "time": "2026-08-02T16:12:06.882891",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/KFIAZD4RUMEZIYV6FQ3T3GP5",
+        "status": 200,
+        "duration_ms": 1.9297599792480469
+      },
+      {
+        "time": "2026-08-02T16:12:06.886938",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/7AHDUZ4A7LFLVFUIFSARGIWC",
+        "status": 200,
+        "duration_ms": 1.844644546508789
+      },
+      {
+        "time": "2026-08-02T16:12:06.890973",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/GHM6WVH6MILNYOOCXHXB5GTS",
+        "status": 200,
+        "duration_ms": 1.6608238220214844
+      },
+      {
+        "time": "2026-08-02T16:12:06.894623",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/c/webfonts/fontIcons.74303c38d38c8aaa3e64380d",
+        "status": 200,
+        "duration_ms": 2.921581268310547
+      },
+      {
+        "time": "2026-08-02T16:12:06.872458",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/1/j/ub_v1.16.min.js",
+        "status": 200,
+        "duration_ms": 28.624534606933594
+      },
+      {
+        "time": "2026-08-02T16:12:07.197223",
+        "method": "GET",
+        "url": "data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAAy8AAsAAAAAGGQAAAxrAAEAAAAAAAA",
+        "status": 200,
+        "duration_ms": 11.118173599243164
+      },
+      {
+        "time": "2026-08-02T16:12:07.175283",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/c/vendors~recommendedJobs.a3e49a79.min.css",
+        "status": 200,
+        "duration_ms": 40.87686538696289
+      },
+      {
+        "time": "2026-08-02T16:12:07.181392",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/c/recommendedJobs.9ba53e01.min.css",
+        "status": 200,
+        "duration_ms": 43.126821517944336
+      },
+      {
+        "time": "2026-08-02T16:12:06.903550",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/0/j/naukri-widget_v12.36-modern.min.js",
+        "status": 200,
+        "duration_ms": 329.8954963684082
+      },
+      {
+        "time": "2026-08-02T16:12:07.178392",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/vendors~recommendedJobs.ebba1154.min.js",
+        "status": 200,
+        "duration_ms": 100.43621063232422
+      },
+      {
+        "time": "2026-08-02T16:12:07.185011",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/recommendedJobs.6b2e6e28.min.js",
+        "status": 200,
+        "duration_ms": 102.48517990112305
+      },
+      {
+        "time": "2026-08-02T16:12:06.869270",
+        "method": "GET",
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NX744H",
+        "status": 200,
+        "duration_ms": 426.0427951812744
+      },
+      {
+        "time": "2026-08-02T16:12:07.262950",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/ni-gnb-sse-comp.bf7d5fa8.min.js",
+        "status": 200,
+        "duration_ms": 179.09693717956543
+      },
+      {
+        "time": "2026-08-02T16:12:07.253387",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/vendors~ni-desktop-gnb-notif-center-revampe",
+        "status": 200,
+        "duration_ms": 192.81911849975586
+      },
+      {
+        "time": "2026-08-02T16:12:07.259819",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/ni-gnb-search-bar.4a1e6db1.min.js",
+        "status": 200,
+        "duration_ms": 190.4010772705078
+      },
+      {
+        "time": "2026-08-02T16:12:07.266230",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/vendors~ni-desktop-gnb-notif-center-revampe",
+        "status": 200,
+        "duration_ms": 188.0953311920166
+      },
+      {
+        "time": "2026-08-02T16:12:07.269379",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/ni-desktop-gnb-notif-center-revamped.300225",
+        "status": 200,
+        "duration_ms": 194.39005851745605
+      },
+      {
+        "time": "2026-08-02T16:12:07.256590",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/vendors~ni-gnb-search-bar.6fb99408.min.js",
+        "status": 200,
+        "duration_ms": 211.17806434631348
+      },
+      {
+        "time": "2026-08-02T16:12:07.272322",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/ni-gnb-drawer.dbb973e4.min.js",
+        "status": 200,
+        "duration_ms": 199.49007034301758
+      },
+      {
+        "time": "2026-08-02T16:12:07.772015",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/ni-gnb-revamped/userdp_v1.svg",
+        "status": 200,
+        "duration_ms": 7.130861282348633
+      },
+      {
+        "time": "2026-08-02T16:12:07.911016",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/naukri-identity/naukri_gnb_logo.svg",
+        "status": 200,
+        "duration_ms": 6.912946701049805
+      },
+      {
+        "time": "2026-08-02T16:12:07.922837",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/ambitionBoxLogo.png",
+        "status": 200,
+        "duration_ms": 8.958101272583008
+      },
+      {
+        "time": "2026-08-02T16:12:07.939481",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/facebook.svg",
+        "status": 200,
+        "duration_ms": 4.42051887512207
+      },
+      {
+        "time": "2026-08-02T16:12:07.948942",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/instagram.svg",
+        "status": 200,
+        "duration_ms": 4.277467727661133
+      },
+      {
+        "time": "2026-08-02T16:12:07.958694",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/twitter_v1.svg",
+        "status": 200,
+        "duration_ms": 6.267786026000977
+      },
+      {
+        "time": "2026-08-02T16:12:07.974316",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/linkedin.svg",
+        "status": 200,
+        "duration_ms": 5.671977996826172
+      },
+      {
+        "time": "2026-08-02T16:12:07.986181",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/android-app_v1.png",
+        "status": 200,
+        "duration_ms": 3.618001937866211
+      },
+      {
+        "time": "2026-08-02T16:12:07.991866",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/ios-app_v1.png",
+        "status": 200,
+        "duration_ms": 1.7905235290527344
+      },
+      {
+        "time": "2026-08-02T16:12:07.996075",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/infoedge-logo.svg",
+        "status": 200,
+        "duration_ms": 1.9373893737792969
+      },
+      {
+        "time": "2026-08-02T16:12:08.000636",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/nnacres.png",
+        "status": 200,
+        "duration_ms": 2.0515918731689453
+      },
+      {
+        "time": "2026-08-02T16:12:08.005023",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jeevansathi.png",
+        "status": 200,
+        "duration_ms": 2.0110607147216797
+      },
+      {
+        "time": "2026-08-02T16:12:08.009354",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/ng_v1.png",
+        "status": 200,
+        "duration_ms": 1.8758773803710938
+      },
+      {
+        "time": "2026-08-02T16:12:08.013564",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png",
+        "status": 200,
+        "duration_ms": 1.9831657409667969
+      },
+      {
+        "time": "2026-08-02T16:12:08.018047",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/iimjobs.png",
+        "status": 200,
+        "duration_ms": 1.878499984741211
+      },
+      {
+        "time": "2026-08-02T16:12:08.022350",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/hirist_v1.png",
+        "status": 200,
+        "duration_ms": 1.8923282623291016
+      },
+      {
+        "time": "2026-08-02T16:12:08.026604",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jobhai.png",
+        "status": 200,
+        "duration_ms": 2.002716064453125
+      },
+      {
+        "time": "2026-08-02T16:12:08.031049",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/doselect.png",
+        "status": 200,
+        "duration_ms": 1.8513202667236328
+      },
+      {
+        "time": "2026-08-02T16:12:08.035325",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/minis.png",
+        "status": 200,
+        "duration_ms": 2.0723342895507812
+      },
+      {
+        "time": "2026-08-02T16:12:08.039922",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/coding_ninjas.png",
+        "status": 200,
+        "duration_ms": 3.270864486694336
+      },
+      {
+        "time": "2026-08-02T16:12:07.607157",
+        "method": "GET",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-10857553821&cx=c&gtm=4e67t1h1",
+        "status": 200,
+        "duration_ms": 439.8825168609619
+      },
+      {
+        "time": "2026-08-02T16:12:07.610020",
+        "method": "GET",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-854187457&cx=c&gtm=4e67t1h1",
+        "status": 200,
+        "duration_ms": 490.673303604126
+      },
+      {
+        "time": "2026-08-02T16:12:07.936459",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/7/105/j/ni-gnb-collated-pill.94a2736f.min.js",
+        "status": 200,
+        "duration_ms": 169.61073875427246
+      },
+      {
+        "time": "2026-08-02T16:12:08.604300",
+        "method": "GET",
+        "url": "https://static.naukimg.com/s/0/0/i/gnb-pills/naukri360.png",
+        "status": 200,
+        "duration_ms": 2.203226089477539
+      }
+    ],
+    "security_report": {
+      "issues": [
+        "Found 264 occurrences of ip_address in responses",
+        "Found 23 occurrences of credit_card in responses",
+        "Found 22 occurrences of bearer_token in responses",
+        "Found 506 occurrences of api_key in responses",
+        "Found 24 occurrences of jwt in responses",
+        "Found 244 occurrences of phone in responses",
+        "Found 118 occurrences of aadhar in responses",
+        "Found 1 authentication failures (401)"
+      ],
+      "recommendations": [
+        "Review ip_address exposure in API responses",
+        "Review credit_card exposure in API responses",
+        "Review bearer_token exposure in API responses",
+        "Review api_key exposure in API responses",
+        "Review jwt exposure in API responses",
+        "Review phone exposure in API responses",
+        "Review aadhar exposure in API responses",
+        "Check token expiration and refresh mechanisms"
+      ],
+      "security_headers_present": 4,
+      "missing_headers": [],
+      "auth_failures": 1,
+      "tokens_in_url": 0
+    },
+    "timestamp": "2026-08-02T16:28:28.104740"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "dom_trees": [
+    {
+      "filename": "dom_133627_961453.json",
+      "timestamp": "2026-08-04T13:36:27.961711",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ]
+}

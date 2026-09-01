@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "session_id": "20260730_201025",
+    "start_time": "2026-07-30T20:10:25.383668",
+    "end_time": "2026-07-30T20:10:54.889332",
+    "chrome_port": 9244,
+    "tab_url": "https://seostudio.tools/",
+    "tab_title": "SEOStudio - 100% Free Online Tools Collection",
+    "total_commands": 8,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 1,
+      "snapshots": 1,
+      "accessibility": 1
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "memory/session_20260730_201025/dom_trees/dom_201040_871513.json",
+      "metadata": {
+        "session_id": "20260730_201025",
+        "timestamp": "2026-07-30T20:10:40.871702",
+        "tab_url": "https://seostudio.tools/",
+        "tab_title": "SEOStudio - 100% Free Online Tools Collection",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 2192,
+        "command_index": 2
+      }
+    },
+    "last_snapshot": {
+      "file": "memory/session_20260730_201025/snapshots/snapshot_201044_728215.json",
+      "metadata": {
+        "session_id": "20260730_201025",
+        "timestamp": "2026-07-30T20:10:44.728502",
+        "tab_url": "https://seostudio.tools/",
+        "tab_title": "SEOStudio - 100% Free Online Tools Collection",
+        "context": {
+          "method": "DOMSnapshot.getSnapshot",
+          "params": {
+            "computedStyleWhitelist": [],
+            "includeEventListeners": false,
+            "includePaintOrder": false,
+            "includeUserAgentShadowTree": true
+          }
+        },
+        "dom_node_count": 5722,
+        "layout_tree_count": 0,
+        "computed_styles_count": 0,
+        "command_index": 5
+      }
+    },
+    "last_accessibility": {
+      "file": "memory/session_20260730_201025/accessibility/a11y_201048_259717.json",
+      "metadata": {
+        "session_id": "20260730_201025",
+        "timestamp": "2026-07-30T20:10:48.259883",
+        "tab_url": "https://seostudio.tools/",
+        "tab_title": "SEOStudio - 100% Free Online Tools Collection",
+        "context": {
+          "method": "Accessibility.getFullAXTree"
+        },
+        "node_count": 2602,
+        "command_index": 7
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 8,
+  "last_updated": "2026-07-30T20:10:54.890100"
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "session_id": "20260801_042908",
+    "start_time": "2026-08-01T04:29:08.860878",
+    "end_time": null,
+    "chrome_port": 9257,
+    "tab_url": "https://www.hirist.tech/talent-bridge-detail/gurgaon?ref=bridge_online",
+    "tab_title": "Talent Bridge Live Hiring Drive \u2013 Tech Jobs | Hirist",
+    "total_commands": 378,
+    "snapshots_taken": [],
+    "files_generated": {
+      "accessibility": 29
+    }
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": {
+      "file": "/data/data/com.termux/files/home/automation/chrome-launcher/session_20260801_042908/accessibility/a11y_043325_072399.json",
+      "metadata": {
+        "session_id": "20260801_042908",
+        "timestamp": "2026-08-01T04:33:25.072553",
+        "tab_url": "https://www.hirist.tech/talent-bridge-detail/gurgaon?ref=bridge_online",
+        "tab_title": "Talent Bridge Live Hiring Drive \u2013 Tech Jobs | Hirist",
+        "context": {
+          "method": "Accessibility.getFullAXTree"
+        },
+        "node_count": 2771,
+        "command_index": 366
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 378,
+  "last_updated": "2026-08-01T04:33:25.975228"
+}

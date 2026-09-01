@@ -1,0 +1,11 @@
+{
+  "iterations": 1,
+  "experiences": 1,
+  "actions": 257,
+  "mab_stats": {
+    "total_arms": 1,
+    "total_pulls": 1,
+    "avg_reward": 1.0
+  },
+  "timestamp": "2026-08-01T04:06:53.102717"
+}

@@ -1,0 +1,51 @@
+================================================================================
+🚀 GENERIC WEB RL AGENT - FINAL REPORT
+================================================================================
+Total Cycles: 30
+Goal Achieved: 🔄 Still learning
+Best Reward: 14.00
+Success Events: 1
+States Discovered: 12
+
+📊 Q-LEARNING STATS:
+  States in Q-Table: 13
+  Q-Values Learned: 319
+  Exploration Rate: 0.618
+  Learning Rate: 0.225
+  Total Actions: 282
+  Unique Actions: 282
+  Episodes: 25
+  Successful Episodes: 10
+  Avg Reward: 4.48
+  Max Reward: 14.00
+  Min Reward: 0.90
+
+🏆 BEST PATH FOUND:
+  click|Watch more|pagination → click|Watch more|pagination → click|Watch more|pagination → navigate|English|navigation → navigate|Hindi|navigation
+  Reward: 14.00
+
+📈 Recent Performance (last 20):
+  Avg Reward: 5.17
+  Success Rate: 100.0%
+
+📈 Learning Progress:
+  First Half Avg: 4.33
+  Second Half Avg: 4.62
+  ✅ Agent is learning slowly
+
+📋 Action Distribution:
+  click|गैजेट|generic: 5 times
+  click|gold-silver price|generic: 5 times
+  click|वर्ल्ड|generic: 5 times
+  click|watch more|pagination: 3 times
+  click|stock market: 3 अगस्त को कै...|search: 3 times
+  click|jefferies' chris wood on re...|search: 1 times
+  navigate|english|navigation: 1 times
+  navigate|hindi|navigation: 1 times
+  click|stock market: 30 जुलाई को क...|search: 1 times
+
+🌐 Visited Pages:
+  1. https://www.moneycontrol.com/
+  2. https://hindi.moneycontrol.com/
+
+================================================================================

@@ -1,0 +1,136 @@
+{
+  "interactions": [
+    {
+      "filename": "interaction_222754_122137.json",
+      "timestamp": "2026-08-02T22:27:54.125604",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_222930_269800.json",
+      "timestamp": "2026-08-02T22:29:30.272358",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_223001_507740.json",
+      "timestamp": "2026-08-02T22:30:01.508264",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_223511_445715.json",
+      "timestamp": "2026-08-02T22:35:11.447013",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_223627_023507.json",
+      "timestamp": "2026-08-02T22:36:27.024093",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_223705_464553.json",
+      "timestamp": "2026-08-02T22:37:05.464716",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_223730_980449.json",
+      "timestamp": "2026-08-02T22:37:30.980615",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_223814_189164.json",
+      "timestamp": "2026-08-02T22:38:14.189331",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_223856_690218.json",
+      "timestamp": "2026-08-02T22:38:56.690384",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_223920_852997.json",
+      "timestamp": "2026-08-02T22:39:20.853451",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_224206_270924.json",
+      "timestamp": "2026-08-02T22:42:06.271214",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_224435_547372.json",
+      "timestamp": "2026-08-02T22:44:35.547844",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_224627_806681.json",
+      "timestamp": "2026-08-02T22:46:27.806858",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_224707_520820.json",
+      "timestamp": "2026-08-02T22:47:07.521482",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_225225_338689.json",
+      "timestamp": "2026-08-02T22:52:25.339072",
+      "context": {
+        "type": "script_execution"
+      }
+    },
+    {
+      "filename": "interaction_225633_431412.json",
+      "timestamp": "2026-08-02T22:56:33.431777",
+      "context": {
+        "type": "script_execution"
+      }
+    }
+  ],
+  "dom_trees": [
+    {
+      "filename": "dom_230044_930397.json",
+      "timestamp": "2026-08-02T23:00:44.930549",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_230433_906480.json",
+      "timestamp": "2026-08-02T23:04:33.906700",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ]
+}

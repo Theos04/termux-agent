@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "session_id": "20260731_113121",
+    "start_time": "2026-07-31T11:31:21.350803",
+    "end_time": "2026-07-31T11:33:37.973272",
+    "chrome_port": 9248,
+    "tab_url": "https://mca2026.mahacet.org.in/mca_26/candidate",
+    "tab_title": "Dashboard - MCA",
+    "total_commands": 0,
+    "snapshots_taken": [],
+    "files_generated": {}
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 0,
+  "last_updated": "2026-07-31T11:33:37.977890"
+}

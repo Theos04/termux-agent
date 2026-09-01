@@ -1,0 +1,33 @@
+{
+  "cycle": 30,
+  "goal_achieved": false,
+  "best_reward": 8.0,
+  "q_stats": {
+    "state_count": 2,
+    "total_q_values": 3,
+    "exploration_rate": 0.6965,
+    "learning_rate": 0.22499999999999998,
+    "total_actions": 3,
+    "unique_actions": 3,
+    "consecutive_repeats": 0,
+    "stuck_count": 0,
+    "episodes": 1,
+    "successful_episodes": 1,
+    "avg_reward": 8.0,
+    "max_reward": 8.0,
+    "min_reward": 8.0
+  },
+  "reward_progress": [
+    8.0
+  ],
+  "episodes": 1,
+  "best_path": {
+    "actions": [
+      "click|Complete profile|generic"
+    ],
+    "reward": 8.0,
+    "cycle": 1
+  },
+  "success_count": 1,
+  "timestamp": "2026-08-01T11:41:19.835747"
+}

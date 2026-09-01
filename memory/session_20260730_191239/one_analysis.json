@@ -1,0 +1,280 @@
+{
+  "page_type": "job_listing",
+  "total_texts": 572,
+  "total_headings": 0,
+  "total_links": 62,
+  "total_actions": 19,
+  "headings": [],
+  "links": [
+    "Recommended Jobs \u2192 /mnjuser/recommendedjobs",
+    "Explore top companies hiring on Naukri \u2192 https://www.naukri.com/companies-hiring-in-india?src=gnbCompanies_homepage_srch",
+    "Unicorn \u2192 https://www.naukri.com/unicorn-companies-in-india-cat102?title=Unicorns%20actively%20hiring&src=gnbCompanies_homepage_srch",
+    "MNC \u2192 https://www.naukri.com/mnc-companies-in-india-cat101?title=MNCs%20actively%20hiring&src=gnbCompanies_homepage_srch",
+    "Startup \u2192 https://www.naukri.com/startup-companies-in-india-cat103?title=Startups%20actively%20hiring&src=gnbCompanies_homepage_srch",
+    "Product based \u2192 https://www.naukri.com/product-companies-in-india-cat106?title=Product%20companies%20actively%20hiring&src=gnbCompanies_homepage_srch",
+    "Internet \u2192 https://www.naukri.com/internet-companies-in-india-cat105?title=Internet%20companies%20actively%20hiring&src=gnbCompanies_homepage_srch",
+    "Top companies \u2192 https://www.naukri.com/companies-hiring-in-india?src=gnbCompanies_homepage_srch",
+    "IT companies \u2192 https://www.naukri.com/it-companies-in-india-cat116?src=gnbCompanies_homepage_srch&title=IT%20Companies%20Hiring",
+    "Fintech companies \u2192 https://www.naukri.com/fintech-and-payments-companies-in-india-cat108?title=Fintech%20%26%20Payments%20companies%20actively%20hiring&src=gnbCompanies_homepage_srch"
+  ],
+  "actions": [
+    {
+      "text": "Search jobs here",
+      "type": "click",
+      "tag": "button"
+    },
+    {
+      "text": "Enter keyword, designation, or companies",
+      "type": "type",
+      "tag": "input"
+    },
+    {
+      "text": "Select experience",
+      "type": "type",
+      "tag": "input"
+    },
+    {
+      "text": "Enter location",
+      "type": "type",
+      "tag": "input"
+    },
+    {
+      "text": "Search",
+      "type": "click",
+      "tag": "button"
+    },
+    {
+      "text": "Notifications, 21 unread",
+      "type": "click",
+      "tag": "button"
+    },
+    {
+      "text": "Open profile menu",
+      "type": "click",
+      "tag": "button"
+    },
+    {
+      "text": "play on remote device",
+      "type": "input",
+      "tag": "input"
+    },
+    {
+      "text": "enter full screen",
+      "type": "input",
+      "tag": "input"
+    },
+    {
+      "text": "show more media controls",
+      "type": "input",
+      "tag": "input"
+    },
+    {
+      "text": "video time scrubber",
+      "type": "input",
+      "tag": "input"
+    },
+    {
+      "text": "enter full screen",
+      "type": "input",
+      "tag": "input"
+    },
+    {
+      "text": "download media",
+      "type": "input",
+      "tag": "input"
+    },
+    {
+      "text": "play on remote device",
+      "type": "input",
+      "tag": "input"
+    },
+    {
+      "text": "show closed captions menu",
+      "type": "input",
+      "tag": "input"
+    },
+    {
+      "text": "show playback speed menu",
+      "type": "input",
+      "tag": "input"
+    },
+    {
+      "text": "show video track selection menu",
+      "type": "input",
+      "tag": "input"
+    },
+    {
+      "text": "show audio track selection menu",
+      "type": "input",
+      "tag": "input"
+    },
+    {
+      "text": "enter picture-in-picture",
+      "type": "input",
+      "tag": "input"
+    }
+  ],
+  "patterns": {
+    "common_phrases": {
+      ".drawer-wrapper>.login-layer form": 49,
+      "6px 12px": 47,
+      "6px 25px": 37,
+      ".drawer-wrapper>.login-layer form .otpmobileverifycontainer": 29,
+      "form .otpmobileverifycontainer": 29,
+      "form .otpmobileverifycontainer .col": 24,
+      ".otpmobileverifycontainer .col": 24,
+      "cubic-bezier(0.22, 1,": 20,
+      "cubic-bezier(0.22, 1, 0.36,": 20,
+      "1, 0.36,": 20,
+      "lacs p.a.": 20,
+      ".container .cardscontainer": 19,
+      ".spc__carousel-wrapper .dashboard-s2j-tuple": 17,
+      "{ content:": 16,
+      "+ var(--dip)))": 16,
+      ".suggestor-wrapper .suggestor-box": 15,
+      ".progress-bar-cont .prog-bar-cont": 15,
+      "ease-out,visibility 0s": 14,
+      "hiring for": 14,
+      ".ni-gnb-de__profile .ni-gnb-profile-details": 13
+    },
+    "top_words": [
+      [
+        "solid",
+        105
+      ],
+      [
+        ".drawer-wrapper>.login-layer",
+        56
+      ],
+      [
+        "12px",
+        50
+      ],
+      [
+        "form",
+        49
+      ],
+      [
+        "25px",
+        38
+      ],
+      [
+        ".container",
+        36
+      ],
+      [
+        ".suggestor-wrapper",
+        30
+      ],
+      [
+        ".otpmobileverifycontainer",
+        29
+      ],
+      [
+        ".spc__carousel-wrapper",
+        29
+      ],
+      [
+        ".col",
+        24
+      ],
+      [
+        ".tc-carousel",
+        22
+      ],
+      [
+        "companies",
+        22
+      ],
+      [
+        ".ni-gnb-de__profile",
+        20
+      ],
+      [
+        "cubic-bezier(0.22,",
+        20
+      ],
+      [
+        "0.36,",
+        20
+      ],
+      [
+        "lacs",
+        20
+      ],
+      [
+        "p.a.",
+        20
+      ],
+      [
+        "0.2s",
+        19
+      ],
+      [
+        ".cardscontainer",
+        19
+      ],
+      [
+        "jobs",
+        19
+      ]
+    ]
+  },
+  "extracted": {
+    "numbers": [
+      "0152-0153",
+      "8+",
+      "7-02",
+      "6-11",
+      "4-7",
+      "00-1",
+      "18+",
+      "0+",
+      "10-15",
+      "15-22"
+    ],
+    "names": [
+      "Careers Employer",
+      "Domain Leading",
+      "Top Rated",
+      "Promotional Offer",
+      "Owner Self",
+      "Work Experience",
+      "Research Centre",
+      "Leading Company",
+      "Personnel Services",
+      "Navi Mumbai"
+    ],
+    "urls": [
+      "https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2\")",
+      "https://static.naukimg.com/s/0/0/c/fonts/static/figtree/_Xms-HUzqDCFdgfMm4q9DbZs.woff2)",
+      "https://static.naukimg.com/s/0/0/c/fonts/static/figtree/_Xmu-HUzqDCFdgfMm4GNAa5o_ik.woff2)",
+      "https://static.naukimg.com/s/0/0/c/fonts/static/figtree/_Xms-HUzqDCFdgfMm4S9DQ.woff2)",
+      "https://static.naukimg.com/s/9/105/_next/static/gnb/j/../../build/assets/images/expand_more.svg);color:#ccc;cursor:pointer;font-family:Arial,Helvetica,sans-serif;font-size:23px;height:15px;position:absolute;right:7px;top:12px;-webkit-transform:none!important;-ms-transform:none!important;transform:none!important;width:15px}.dropdownMainContainer.focus{border-color:#4a90e2}.dropdownMainContainer.disabled{cursor:not-allowed;opacity:.5}.dropdownMainContainer.disabled"
+    ],
+    "companies": [
+      "Consultancy Services",
+      "IT Services",
+      "Savic Technologies",
+      "Rang Technologies",
+      "ASM Technologies",
+      "Minds Technologies",
+      "Hexaware Technologies",
+      "Allstate Solutions",
+      "IT Consulting",
+      "Sasken Technologies"
+    ],
+    "salaries": [
+      "15-20",
+      "8-12",
+      "11-14",
+      "17-27",
+      "6-11",
+      "11-16",
+      "5-10",
+      "10-15",
+      "15-22"
+    ]
+  },
+  "summary": "\ud83d\udccc PAGE TYPE: JOB_LISTING\n\n\u26a1 ACTIONS:\n   \u2022 Search jobs here (click)\n   \u2022 Enter keyword, designation, or companies (type)\n   \u2022 Select experience (type)\n   \u2022 Enter location (type)\n   \u2022 Search (click)\n   \u2022 Notifications, 21 unread (click)\n   \u2022 Open profile menu (click)\n   \u2022 play on remote device (input)\n   \u2022 enter full screen (input)\n   \u2022 show more media controls (input)\n\n\ud83d\udcca EXTRACTED:\n   numbers: 0152-0153, 8+, 7-02, 6-11, 4-7\n   names: Careers Employer, Domain Leading, Top Rated, Promotional Offer, Owner Self\n   urls: https://static.naukimg.com/s/0/0/c/fonts/static/satoshi/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2\"), https://static.naukimg.com/s/0/0/c/fonts/static/figtree/_Xms-HUzqDCFdgfMm4q9DbZs.woff2), https://static.naukimg.com/s/0/0/c/fonts/static/figtree/_Xmu-HUzqDCFdgfMm4GNAa5o_ik.woff2), https://static.naukimg.com/s/0/0/c/fonts/static/figtree/_Xms-HUzqDCFdgfMm4S9DQ.woff2), https://static.naukimg.com/s/9/105/_next/static/gnb/j/../../build/assets/images/expand_more.svg);color:#ccc;cursor:pointer;font-family:Arial,Helvetica,sans-serif;font-size:23px;height:15px;position:absolute;right:7px;top:12px;-webkit-transform:none!important;-ms-transform:none!important;transform:none!important;width:15px}.dropdownMainContainer.focus{border-color:#4a90e2}.dropdownMainContainer.disabled{cursor:not-allowed;opacity:.5}.dropdownMainContainer.disabled\n   companies: Consultancy Services, IT Services, Savic Technologies, Rang Technologies, ASM Technologies\n   salaries: 15-20, 8-12, 11-14, 17-27, 6-11\n\n\ud83d\udca1 YOU CAN:\n   \u2022 Click on 4 elements\n   \u2022 Type into 3 fields"
+}

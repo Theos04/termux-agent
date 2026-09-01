@@ -1,0 +1,1872 @@
+#!/usr/bin/env python3
+"""
+Enhanced Chrome CDP Controller - With Session Management & Memory
+"""
+
+import json
+import subprocess
+import sys
+import os
+import time
+from pathlib import Path
+from typing import Optional, Dict, List, Any
+from dataclasses import dataclass, asdict, field
+from datetime import datetime
+from collections import defaultdict
+
+try:
+    import requests
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
+    import requests
+
+try:
+    import websocket
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "websocket-client"])
+    import websocket
+
+@dataclass
+class LayoutSnapshot:
+    """Complete layout and style information"""
+    dom_nodes: List[Dict]
+    layout_tree: List[Dict]
+    computed_styles: List[Dict]
+
+@dataclass
+class CommandLog:
+    """Log entry for a CDP command"""
+    timestamp: str
+    command: str
+    params: Dict = field(default_factory=dict)
+    success: bool = False
+    result_summary: str = ""
+    duration_ms: float = 0.0
+
+@dataclass
+class SessionMetadata:
+    """Track session information"""
+    session_id: str
+    start_time: str
+    end_time: Optional[str] = None
+    chrome_port: int = 0
+    tab_url: str = ""
+    tab_title: str = ""
+    total_commands: int = 0
+    snapshots_taken: List[Dict] = field(default_factory=list)
+    files_generated: Dict[str, int] = field(default_factory=dict)
+
+class SessionManager:
+    """Manages session data, logging, and file organization"""
+    
+    def __init__(self, base_dir: str = "."):
+        self.base_dir = Path(base_dir)
+        self.base_dir.mkdir(parents=True, exist_ok=True)
+        
+        self.session_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.session_dir = self.base_dir / f"session_{self.session_id}"
+        
+        # Create session directory structure
+        self.dirs = {
+            'dom_trees': self.session_dir / 'dom_trees',
+            'snapshots': self.session_dir / 'snapshots',
+            'accessibility': self.session_dir / 'accessibility',
+            'computed_styles': self.session_dir / 'computed_styles',
+            'scripts': self.session_dir / 'scripts',
+            'interactions': self.session_dir / 'interactions',
+            'logs': self.session_dir / 'logs',
+            'exports': self.session_dir / 'exports',
+            'memory': self.session_dir / 'memory'  # For state persistence
+        }
+        
+        for dir_path in self.dirs.values():
+            dir_path.mkdir(parents=True, exist_ok=True)
+        
+        # Initialize metadata
+        self.metadata = SessionMetadata(
+            session_id=self.session_id,
+            start_time=datetime.now().isoformat(),
+        )
+        
+        # Command history
+        self.command_history: List[CommandLog] = []
+        
+        # Memory/state tracking
+        self.state = {
+            'last_dom_tree': None,
+            'last_snapshot': None,
+            'last_accessibility': None,
+            'last_styles': None,
+            'last_interaction': None,
+            'interaction_count': 0,
+            'errors': []
+        }
+        
+        # Initialize session log
+        self._log_event('session_start', {
+            'session_id': self.session_id,
+            'base_dir': str(self.base_dir)
+        })
+        
+        # Save initial state
+        self._save_state()
+    
+    def _log_event(self, event_type: str, data: Dict = None):
+        """Log an event to the session log"""
+        log_file = self.dirs['logs'] / "session.jsonl"
+        entry = {
+            'timestamp': datetime.now().isoformat(),
+            'event': event_type,
+            'data': data or {}
+        }
+        with open(log_file, 'a') as f:
+            f.write(json.dumps(entry) + '\n')
+    
+    def log_command(self, command: str, params: Dict = None, 
+                    success: bool = False, result_summary: str = "",
+                    duration_ms: float = 0.0):
+        """Log a command execution"""
+        cmd_log = CommandLog(
+            timestamp=datetime.now().isoformat(),
+            command=command,
+            params=params or {},
+            success=success,
+            result_summary=result_summary,
+            duration_ms=duration_ms
+        )
+        
+        self.command_history.append(cmd_log)
+        self.metadata.total_commands += 1
+        
+        # Log to file
+        self._log_event('command', asdict(cmd_log))
+        
+        # Save state after each command
+        self._save_state()
+    
+    def save_dom_tree(self, dom_data: Dict, context: Dict = None):
+        """Save DOM tree with full metadata"""
+        timestamp = datetime.now().strftime("%H%M%S_%f")
+        filename = self.dirs['dom_trees'] / f"dom_{timestamp}.json"
+        
+        metadata = {
+            'session_id': self.session_id,
+            'timestamp': datetime.now().isoformat(),
+            'tab_url': self.metadata.tab_url,
+            'tab_title': self.metadata.tab_title,
+            'context': context or {},
+            'node_count': self._count_nodes(dom_data) if dom_data else 0,
+            'command_index': len(self.command_history)
+        }
+        
+        payload = {
+            'metadata': metadata,
+            'data': dom_data
+        }
+        
+        with open(filename, 'w') as f:
+            json.dump(payload, f, indent=2)
+        
+        # Update state
+        self.state['last_dom_tree'] = {
+            'file': str(filename),
+            'metadata': metadata
+        }
+        
+        # Update session index
+        self._update_index('dom_trees', filename.name, metadata)
+        self._increment_file_count('dom_trees')
+        
+        print(f"💾 DOM tree saved: {filename.name}")
+        return filename
+    
+    def save_snapshot(self, snapshot: LayoutSnapshot, context: Dict = None):
+        """Save DOM snapshot with full metadata"""
+        timestamp = datetime.now().strftime("%H%M%S_%f")
+        filename = self.dirs['snapshots'] / f"snapshot_{timestamp}.json"
+        
+        metadata = {
+            'session_id': self.session_id,
+            'timestamp': datetime.now().isoformat(),
+            'tab_url': self.metadata.tab_url,
+            'tab_title': self.metadata.tab_title,
+            'context': context or {},
+            'dom_node_count': len(snapshot.dom_nodes),
+            'layout_tree_count': len(snapshot.layout_tree),
+            'computed_styles_count': len(snapshot.computed_styles),
+            'command_index': len(self.command_history)
+        }
+        
+        payload = {
+            'metadata': metadata,
+            'data': {
+                'dom_nodes': snapshot.dom_nodes,
+                'layout_tree': snapshot.layout_tree,
+                'computed_styles': snapshot.computed_styles
+            }
+        }
+        
+        with open(filename, 'w') as f:
+            json.dump(payload, f, indent=2)
+        
+        self.state['last_snapshot'] = {
+            'file': str(filename),
+            'metadata': metadata
+        }
+        
+        self._update_index('snapshots', filename.name, metadata)
+        self._increment_file_count('snapshots')
+        
+        print(f"💾 Snapshot saved: {filename.name}")
+        return filename
+    
+    def save_accessibility_tree(self, ax_data: Dict, context: Dict = None):
+        """Save accessibility tree with full metadata"""
+        timestamp = datetime.now().strftime("%H%M%S_%f")
+        filename = self.dirs['accessibility'] / f"a11y_{timestamp}.json"
+        
+        metadata = {
+            'session_id': self.session_id,
+            'timestamp': datetime.now().isoformat(),
+            'tab_url': self.metadata.tab_url,
+            'tab_title': self.metadata.tab_title,
+            'context': context or {},
+            'node_count': len(ax_data.get('nodes', [])),
+            'command_index': len(self.command_history)
+        }
+        
+        payload = {
+            'metadata': metadata,
+            'data': ax_data
+        }
+        
+        with open(filename, 'w') as f:
+            json.dump(payload, f, indent=2)
+        
+        self.state['last_accessibility'] = {
+            'file': str(filename),
+            'metadata': metadata
+        }
+        
+        self._update_index('accessibility', filename.name, metadata)
+        self._increment_file_count('accessibility')
+        
+        print(f"💾 Accessibility tree saved: {filename.name}")
+        return filename
+    
+    def save_computed_styles(self, styles: List[Dict], context: Dict = None):
+        """Save computed styles with full metadata"""
+        timestamp = datetime.now().strftime("%H%M%S_%f")
+        filename = self.dirs['computed_styles'] / f"styles_{timestamp}.json"
+        
+        metadata = {
+            'session_id': self.session_id,
+            'timestamp': datetime.now().isoformat(),
+            'tab_url': self.metadata.tab_url,
+            'tab_title': self.metadata.tab_title,
+            'context': context or {},
+            'style_count': len(styles),
+            'command_index': len(self.command_history)
+        }
+        
+        payload = {
+            'metadata': metadata,
+            'data': styles
+        }
+        
+        with open(filename, 'w') as f:
+            json.dump(payload, f, indent=2)
+        
+        self.state['last_styles'] = {
+            'file': str(filename),
+            'metadata': metadata
+        }
+        
+        self._update_index('computed_styles', filename.name, metadata)
+        self._increment_file_count('computed_styles')
+        
+        print(f"💾 Computed styles saved: {filename.name}")
+        return filename
+    
+    def save_interaction(self, interaction_data: Dict, context: Dict = None):
+        """Save interaction results"""
+        timestamp = datetime.now().strftime("%H%M%S_%f")
+        filename = self.dirs['interactions'] / f"interaction_{timestamp}.json"
+        
+        metadata = {
+            'session_id': self.session_id,
+            'timestamp': datetime.now().isoformat(),
+            'tab_url': self.metadata.tab_url,
+            'tab_title': self.metadata.tab_title,
+            'context': context or {},
+            'interaction_number': self.state['interaction_count'] + 1,
+            'command_index': len(self.command_history)
+        }
+        
+        payload = {
+            'metadata': metadata,
+            'data': interaction_data
+        }
+        
+        with open(filename, 'w') as f:
+            json.dump(payload, f, indent=2)
+        
+        self.state['last_interaction'] = {
+            'file': str(filename),
+            'metadata': metadata
+        }
+        self.state['interaction_count'] += 1
+        
+        self._update_index('interactions', filename.name, metadata)
+        self._increment_file_count('interactions')
+        
+        print(f"💾 Interaction saved: {filename.name}")
+        return filename
+    
+    def save_script(self, script_content: str, script_type: str = "javascript", context: Dict = None):
+        """Save generated scripts"""
+        timestamp = datetime.now().strftime("%H%M%S_%f")
+        ext = '.js' if script_type == 'javascript' else '.txt'
+        filename = self.dirs['scripts'] / f"script_{timestamp}{ext}"
+        
+        metadata = {
+            'session_id': self.session_id,
+            'timestamp': datetime.now().isoformat(),
+            'tab_url': self.metadata.tab_url,
+            'tab_title': self.metadata.tab_title,
+            'context': context or {},
+            'script_type': script_type,
+            'command_index': len(self.command_history)
+        }
+        
+        # Save script with metadata header
+        with open(filename, 'w') as f:
+            f.write(f"// Session: {self.session_id}\n")
+            f.write(f"// Timestamp: {metadata['timestamp']}\n")
+            f.write(f"// Tab: {self.metadata.tab_url}\n")
+            f.write(f"// Type: {script_type}\n")
+            f.write("// " + "="*50 + "\n\n")
+            f.write(script_content)
+        
+        self._update_index('scripts', filename.name, metadata)
+        self._increment_file_count('scripts')
+        
+        print(f"💾 Script saved: {filename.name}")
+        return filename
+    
+    def log_error(self, error_msg: str, context: Dict = None):
+        """Log an error"""
+        error_entry = {
+            'timestamp': datetime.now().isoformat(),
+            'error': error_msg,
+            'context': context or {}
+        }
+        self.state['errors'].append(error_entry)
+        self._log_event('error', error_entry)
+    
+    def _update_index(self, category: str, filename: str, metadata: Dict):
+        """Update the session index file"""
+        index_file = self.session_dir / "index.json"
+        
+        index = {}
+        if index_file.exists():
+            with open(index_file, 'r') as f:
+                index = json.load(f)
+        
+        if category not in index:
+            index[category] = []
+        
+        index[category].append({
+            'filename': filename,
+            'timestamp': metadata.get('timestamp'),
+            'context': metadata.get('context', {})
+        })
+        
+        with open(index_file, 'w') as f:
+            json.dump(index, f, indent=2, default=str)
+    
+    def _increment_file_count(self, category: str):
+        """Track file counts"""
+        if category not in self.metadata.files_generated:
+            self.metadata.files_generated[category] = 0
+        self.metadata.files_generated[category] += 1
+    
+    def _count_nodes(self, node: Dict) -> int:
+        """Count total nodes in DOM tree"""
+        if not node:
+            return 0
+        count = 1
+        for child in node.get('children', []):
+            count += self._count_nodes(child)
+        return count
+    
+    def _save_state(self):
+        """Save current session state to memory"""
+        state_file = self.dirs['memory'] / "state.json"
+        state_data = {
+            'metadata': asdict(self.metadata),
+            'state': self.state,
+            'command_count': len(self.command_history),
+            'last_updated': datetime.now().isoformat()
+        }
+        with open(state_file, 'w') as f:
+            json.dump(state_data, f, indent=2, default=str)
+    
+    def get_latest(self, category: str) -> Optional[Path]:
+        """Get the latest file in a category"""
+        dir_path = self.dirs.get(category)
+        if not dir_path or not dir_path.exists():
+            return None
+        
+        files = list(dir_path.glob('*'))
+        if not files:
+            return None
+        
+        return max(files, key=lambda p: p.stat().st_mtime)
+    
+    def export_session(self, format: str = 'json'):
+        """Export entire session data"""
+        export_file = self.dirs['exports'] / f"session_export_{self.session_id}.{format}"
+        
+        # Collect all data
+        session_data = {
+            'metadata': asdict(self.metadata),
+            'state': self.state,
+            'command_history': [asdict(cmd) for cmd in self.command_history],
+            'files': {}
+        }
+        
+        # List all files
+        for category, dir_path in self.dirs.items():
+            if category != 'exports' and dir_path.exists():
+                files = list(dir_path.glob('*'))
+                session_data['files'][category] = [f.name for f in files]
+        
+        with open(export_file, 'w') as f:
+            json.dump(session_data, f, indent=2, default=str)
+        
+        print(f"📦 Session exported to: {export_file}")
+        return export_file
+    
+    def generate_report(self) -> str:
+        """Generate a comprehensive session report"""
+        report = []
+        report.append("=" * 70)
+        report.append(f"📊 SESSION REPORT: {self.session_id}")
+        report.append("=" * 70)
+        report.append(f"Start Time: {self.metadata.start_time}")
+        report.append(f"End Time: {self.metadata.end_time or 'In progress'}")
+        report.append(f"Chrome Port: {self.metadata.chrome_port}")
+        report.append(f"Tab URL: {self.metadata.tab_url}")
+        report.append(f"Tab Title: {self.metadata.tab_title}")
+        report.append(f"\n📈 Statistics:")
+        report.append(f"  Total Commands: {self.metadata.total_commands}")
+        report.append(f"  Interactions: {self.state['interaction_count']}")
+        report.append(f"  Errors: {len(self.state['errors'])}")
+        
+        # Command type breakdown
+        cmd_types = defaultdict(int)
+        for cmd in self.command_history:
+            cmd_type = cmd.command.split('.')[0] if '.' in cmd.command else cmd.command
+            cmd_types[cmd_type] += 1
+        
+        report.append(f"\n📋 Command Types:")
+        for cmd_type, count in sorted(cmd_types.items()):
+            report.append(f"  {cmd_type}: {count}")
+        
+        # Files generated
+        report.append(f"\n📁 Files Generated:")
+        for category, count in self.metadata.files_generated.items():
+            report.append(f"  {category}: {count} files")
+        
+        # Latest snapshots
+        report.append(f"\n🔍 Latest Snapshots:")
+        for category in ['dom_trees', 'snapshots', 'accessibility', 'computed_styles']:
+            latest = self.state.get(f'last_{category.rstrip("s")}')
+            if latest:
+                report.append(f"  {category}: {latest['file']}")
+        
+        # Errors summary
+        if self.state['errors']:
+            report.append(f"\n⚠️ Recent Errors:")
+            for error in self.state['errors'][-5:]:  # Last 5 errors
+                report.append(f"  [{error['timestamp']}] {error['error'][:100]}")
+        
+        report.append(f"\n📂 Session Directory: {self.session_dir}")
+        report.append("=" * 70)
+        
+        # Save report
+        report_file = self.dirs['logs'] / "report.txt"
+        report_text = "\n".join(report)
+        with open(report_file, 'w') as f:
+            f.write(report_text)
+        
+        return report_text
+    
+    def close(self):
+        """Close the session"""
+        self.metadata.end_time = datetime.now().isoformat()
+        self._log_event('session_end', {
+            'total_commands': self.metadata.total_commands,
+            'duration': str(datetime.now() - datetime.fromisoformat(self.metadata.start_time))
+        })
+        self._save_state()
+        
+        # Generate final report
+        self.generate_report()
+        
+        print(f"\n✅ Session {self.session_id} closed")
+        print(f"📂 Data saved to: {self.session_dir}")
+
+
+class EnhancedChromeCDP:
+    """def __init__(self, port: int = 9227, session_dir: str = None):"""
+    
+
+    def __init__(self, port: int = 9227, session_dir: str = None):
+	    self.port = port
+	    self.base_url = f"http://127.0.0.1:{port}"
+	    self.ws_url = None
+	    self.tabs = []
+	    self.connection_timeout = 10
+	    self._command_counter = 0
+	    self._dom_enabled = False      # ✅ Add this
+	    self._css_enabled = False      # ✅ Add this
+	    self._ax_enabled = False       # ✅ Add this
+
+	    # Initialize session manager
+	    if session_dir is None:
+	        session_dir = os.getcwd()
+	    self.session = SessionManager(session_dir)
+	    self.session.metadata.chrome_port = port
+
+	    # Auto-save feature
+	    self.auto_save = True
+
+    def get_tabs(self) -> List[Dict]:
+        """Get all tabs from Chrome with enhanced info"""
+        try:
+            response = requests.get(f"{self.base_url}/json", timeout=5)
+            if response.status_code == 200:
+                tabs = response.json()
+                self.tabs = [t for t in tabs if t.get('type') == 'page']
+                
+                # Update session metadata
+                if self.tabs:
+                    self.session.metadata.tab_url = self.tabs[0].get('url', '')
+                    self.session.metadata.tab_title = self.tabs[0].get('title', '')
+                
+                print(f"🔍 Found {len(self.tabs)} tabs")
+                return self.tabs
+            return []
+        except Exception as e:
+            error_msg = f"Error fetching tabs: {e}"
+            print(f"❌ {error_msg}")
+            self.session.log_error(error_msg)
+            return []
+
+    # [Previous methods remain the same: get_websocket_url, _connect_websocket, 
+    #  _send_cdp_command, _enable_domain]
+    
+    def get_websocket_url(self, tab_index: int = 0) -> Optional[str]:
+        """Get WebSocket URL for a specific tab - refreshes to avoid stale URLs"""
+        self.get_tabs()
+
+        if not self.tabs:
+            print("❌ No tabs found")
+            return None
+
+        if tab_index >= len(self.tabs):
+            print(f"❌ Tab index {tab_index} out of range")
+            return None
+
+        ws_url = self.tabs[tab_index].get('webSocketDebuggerUrl')
+        if ws_url:
+            self.ws_url = ws_url
+            # Update session metadata
+            self.session.metadata.tab_url = self.tabs[tab_index].get('url', '')
+            self.session.metadata.tab_title = self.tabs[tab_index].get('title', '')
+            print(f"🔗 WebSocket URL: {ws_url[:50]}...")
+            return ws_url
+        print("❌ No WebSocket URL found for tab")
+        return None
+
+    def _connect_websocket(self) -> Optional[websocket.WebSocket]:
+        """Establish WebSocket connection with proper headers"""
+        ws_url = self.ws_url
+        if not ws_url:
+            print("❌ No WebSocket URL available")
+            return None
+
+        try:
+            print(f"🔌 Connecting to WebSocket...")
+            ws = websocket.create_connection(
+                ws_url,
+                timeout=self.connection_timeout,
+                header={"Origin": f"http://127.0.0.1:{self.port}"}
+            )
+            print("✅ WebSocket connected")
+            self._dom_enabled = False
+            self._css_enabled = False
+            self._ax_enabled = False
+            return ws
+        except Exception as e:
+            error_msg = f"WebSocket connection error: {e}"
+            print(f"❌ {error_msg}")
+            self.session.log_error(error_msg)
+            return None
+    def _send_cdp_command(self, ws: websocket.WebSocket, method: str, params: Dict = None) -> Dict:
+        """Send CDP command and get response with full error visibility"""
+        self._command_counter += 1
+        cmd_id = self._command_counter
+        start_time = time.time()
+    
+        cmd = {
+            "id": cmd_id,
+            "method": method,
+            "params": params or {}
+        }
+    
+        print(f"📤 Sending: {method}")
+        if params:
+            print(f"   Params: {json.dumps(params)[:200]}")
+    
+        try:
+            ws.send(json.dumps(cmd))
+        except Exception as e:
+            error_msg = f"Failed to send command: {e}"
+            print(f"❌ {error_msg}")
+            self.session.log_error(error_msg, {'command': method, 'params': params})
+            self.session.log_command(method, params, False, error_msg, (time.time() - start_time) * 1000)
+            return None
+    
+        while time.time() - start_time < 30:
+            try:
+                response = ws.recv()
+                data = json.loads(response)
+    
+                if 'id' in data and data['id'] == cmd_id:
+                    duration_ms = (time.time() - start_time) * 1000
+    
+                    if 'error' in data:
+                        error_msg = json.dumps(data['error'])
+                        print(f"❌ CDP Error: {error_msg}")
+                        self.session.log_error(error_msg, {'command': method})
+                        self.session.log_command(method, params, False, error_msg, duration_ms)
+                    elif 'result' in data:
+                        print(f"✅ Received response for {method}")
+                        result_summary = f"Success - Type: {type(data['result']).__name__}"
+                        self.session.log_command(method, params, True, result_summary, duration_ms)
+    
+                    return data
+                else:
+                    # Handle events/notifications
+                    if 'method' in data:
+                        print(f"ℹ️ Notification: {data['method']}")
+                        # Save notification if it's important
+                        if data['method'] in ['Runtime.executionContextCreated', 
+                                             'Runtime.executionContextDestroyed']:
+                            self.session._log_event('cdp_notification', data)
+                    continue
+    
+            except websocket.WebSocketTimeoutException:
+                print("⏳ Waiting for response...")
+                continue
+            except Exception as e:
+                error_msg = f"Response parsing error: {e}"
+                print(f"⚠️ {error_msg}")
+                self.session.log_error(error_msg)
+                continue
+    
+        error_msg = f"Timeout waiting for response to {method}"
+        print(f"❌ {error_msg}")
+        self.session.log_error(error_msg, {'command': method})
+        self.session.log_command(method, params, False, error_msg, 30000)
+        return None
+
+
+    def _enable_domain(self, ws: websocket.WebSocket, domain: str) -> bool:
+        """Enable a CDP domain with full error visibility"""
+        if domain == "DOM" and self._dom_enabled:
+            return True
+        if domain == "CSS" and self._css_enabled:
+            return True
+        if domain == "Accessibility" and self._ax_enabled:
+            return True
+
+        print(f"🔧 Enabling domain: {domain}")
+        try:
+            result = self._send_cdp_command(ws, f"{domain}.enable")
+            if result and 'error' not in result:
+                print(f"✅ {domain} enabled")
+                if domain == "DOM":
+                    self._dom_enabled = True
+                elif domain == "CSS":
+                    self._css_enabled = True
+                elif domain == "Accessibility":
+                    self._ax_enabled = True
+                return True
+            else:
+                print(f"❌ Failed to enable {domain}")
+                return False
+        except Exception as e:
+            error_msg = f"Exception enabling {domain}: {e}"
+            print(f"❌ {error_msg}")
+            self.session.log_error(error_msg)
+            return False
+
+    # ==================== Enhanced DOM Methods with Auto-Save ====================
+
+    def get_document(self, tab_index: int = 0, depth: int = -1,
+                     pierce: bool = True, auto_save: bool = None) -> Optional[Dict]:
+        """Get full DOM tree with auto-save to session"""
+        print("\n📄 DOM.getDocument - Fetching DOM tree...")
+
+        ws_url = self.get_websocket_url(tab_index)
+        if not ws_url:
+            return None
+
+        ws = self._connect_websocket()
+        if not ws:
+            return None
+
+        try:
+            if not self._enable_domain(ws, "DOM"):
+                ws.close()
+                return None
+
+            params = {"depth": depth, "pierce": pierce}
+            result = self._send_cdp_command(ws, "DOM.getDocument", params)
+            ws.close()
+
+            if result and 'result' in result:
+                root = result['result']['root']
+                print(f"✅ DOM tree retrieved! Root: {root.get('nodeName')} (ID: {root.get('nodeId')})")
+                
+                # Auto-save if enabled
+                save = auto_save if auto_save is not None else self.auto_save
+                if save:
+                    context = {
+                        'depth': depth,
+                        'pierce': pierce,
+                        'method': 'DOM.getDocument'
+                    }
+                    self.session.save_dom_tree(root, context)
+                
+                return root
+            return None
+        except Exception as e:
+            error_msg = f"DOM.getDocument error: {e}"
+            print(f"❌ {error_msg}")
+            self.session.log_error(error_msg)
+            if ws:
+                ws.close()
+            return None
+
+    def get_dom_snapshot(self, tab_index: int = 0, auto_save: bool = None) -> Optional[LayoutSnapshot]:
+        """Capture complete DOM snapshot with auto-save"""
+        print("\n📸 DOMSnapshot.getSnapshot - Capturing snapshot...")
+
+        ws_url = self.get_websocket_url(tab_index)
+        if not ws_url:
+            return None
+
+        ws = self._connect_websocket()
+        if not ws:
+            return None
+
+        try:
+            print("🔧 Enabling required domains...")
+            self._enable_domain(ws, "DOM")
+            self._enable_domain(ws, "CSS")
+
+            params = {
+                "computedStyleWhitelist": [],
+                "includeEventListeners": False,
+                "includePaintOrder": False,
+                "includeUserAgentShadowTree": True
+            }
+            result = self._send_cdp_command(ws, "DOMSnapshot.getSnapshot", params)
+            ws.close()
+
+            if result and 'result' in result:
+                snapshot_data = result['result']
+                snapshot = LayoutSnapshot(
+                    dom_nodes=snapshot_data.get('domNodes', []),
+                    layout_tree=snapshot_data.get('layoutTree', []),
+                    computed_styles=snapshot_data.get('computedStyles', [])
+                )
+                print(f"✅ Snapshot captured!")
+                print(f"   DOM nodes: {len(snapshot.dom_nodes)}")
+                print(f"   Layout tree: {len(snapshot.layout_tree)}")
+                
+                # Auto-save
+                save = auto_save if auto_save is not None else self.auto_save
+                if save:
+                    context = {
+                        'method': 'DOMSnapshot.getSnapshot',
+                        'params': params
+                    }
+                    self.session.save_snapshot(snapshot, context)
+                
+                return snapshot
+            return None
+        except Exception as e:
+            error_msg = f"DOMSnapshot.getSnapshot error: {e}"
+            print(f"❌ {error_msg}")
+            self.session.log_error(error_msg)
+            if ws:
+                ws.close()
+            return None
+
+    def get_accessibility_tree(self, tab_index: int = 0, auto_save: bool = None) -> Optional[Dict]:
+        """Get accessibility tree with auto-save"""
+        print("\n♿ Accessibility.getFullAXTree - Getting accessibility tree...")
+
+        ws_url = self.get_websocket_url(tab_index)
+        if not ws_url:
+            return None
+
+        ws = self._connect_websocket()
+        if not ws:
+            return None
+
+        try:
+            if not self._enable_domain(ws, "Accessibility"):
+                ws.close()
+                return None
+
+            result = self._send_cdp_command(ws, "Accessibility.getFullAXTree")
+            ws.close()
+
+            if result and 'result' in result:
+                nodes = result['result'].get('nodes', [])
+                print(f"✅ Accessibility tree retrieved! Found {len(nodes)} nodes")
+                
+                # Auto-save
+                save = auto_save if auto_save is not None else self.auto_save
+                if save:
+                    context = {'method': 'Accessibility.getFullAXTree'}
+                    self.session.save_accessibility_tree(result['result'], context)
+                
+                return result['result']
+            return None
+        except Exception as e:
+            error_msg = f"Accessibility.getFullAXTree error: {e}"
+            print(f"❌ {error_msg}")
+            self.session.log_error(error_msg)
+            if ws:
+                ws.close()
+            return None
+
+    def get_computed_styles(self, tab_index: int = 0,
+                           node_id: int = None, auto_save: bool = None) -> Optional[List[Dict]]:
+        """Get computed styles with auto-save"""
+        print("\n🎨 CSS.getComputedStyleForNode - Getting computed styles...")
+
+        ws_url = self.get_websocket_url(tab_index)
+        if not ws_url:
+            return None
+
+        ws = self._connect_websocket()
+        if not ws:
+            return None
+
+        try:
+            self._enable_domain(ws, "DOM")
+            self._enable_domain(ws, "CSS")
+
+            if node_id is None:
+                root = self.get_document(tab_index, auto_save=False)
+                if root:
+                    node_id = self._find_first_element(root)
+                    if node_id:
+                        print(f"   Using first element node ID: {node_id}")
+                    else:
+                        print("❌ Could not find any element nodes")
+                        ws.close()
+                        return None
+                else:
+                    ws.close()
+                    return None
+
+            params = {"nodeId": node_id}
+            result = self._send_cdp_command(ws, "CSS.getComputedStyleForNode", params)
+            ws.close()
+
+            if result and 'result' in result:
+                styles = result['result'].get('computedStyle', [])
+                print(f"✅ Retrieved {len(styles)} computed styles")
+                
+                # Auto-save
+                save = auto_save if auto_save is not None else self.auto_save
+                if save:
+                    context = {
+                        'method': 'CSS.getComputedStyleForNode',
+                        'node_id': node_id
+                    }
+                    self.session.save_computed_styles(styles, context)
+                
+                return styles
+            return None
+        except Exception as e:
+            error_msg = f"CSS.getComputedStyleForNode error: {e}"
+            print(f"❌ {error_msg}")
+            self.session.log_error(error_msg)
+            if ws:
+                ws.close()
+            return None
+
+    def _find_first_element(self, node: Dict) -> Optional[int]:
+        """Find the first element node (nodeType 1) in the DOM tree"""
+        if node.get('nodeType') == 1:
+            return node.get('nodeId')
+
+        for child in node.get('children', []):
+            result = self._find_first_element(child)
+            if result:
+                return result
+        return None
+
+    def _count_nodes(self, node: Dict) -> int:
+        """Count total nodes in DOM tree"""
+        count = 1
+        for child in node.get('children', []):
+            count += self._count_nodes(child)
+        return count
+
+    def analyze_page_structure(self, tab_index: int = 0, auto_save: bool = None) -> Dict:
+        """Comprehensive page analysis with full session logging"""
+        print("\n🔬 Performing complete page analysis...")
+        result = {
+            "timestamp": datetime.now().isoformat(),
+            "dom_tree": None,
+            "snapshot": None,
+            "accessibility": None,
+            "metadata": {}
+        }
+
+        dom_root = self.get_document(tab_index, auto_save=auto_save)
+        if dom_root:
+            result["dom_tree"] = dom_root
+            result["metadata"]["node_count"] = self._count_nodes(dom_root)
+
+        snapshot = self.get_dom_snapshot(tab_index, auto_save=auto_save)
+        if snapshot:
+            result["snapshot"] = snapshot
+            result["metadata"]["layout_count"] = len(snapshot.layout_tree)
+
+        ax_tree = self.get_accessibility_tree(tab_index, auto_save=auto_save)
+        if ax_tree:
+            result["accessibility"] = ax_tree
+            result["metadata"]["ax_nodes"] = len(ax_tree.get('nodes', []))
+
+        print(f"\n✅ Analysis complete!")
+        
+        # Log the analysis
+        self.session.log_command('analyze_page_structure', 
+                                {'tab_index': tab_index}, 
+                                True, 
+                                f"Analysis complete: {result['metadata']}")
+        
+        return result
+
+    def evaluate_script(self, script: str, tab_index: int = 0,
+                       return_by_value: bool = True,
+                       await_promise: bool = True) -> Optional[Any]:
+        """Execute JavaScript with session logging"""
+        print("\n⚡ Runtime.evaluate - Executing script...")
+
+        ws_url = self.get_websocket_url(tab_index)
+        if not ws_url:
+            return None
+
+        ws = self._connect_websocket()
+        if not ws:
+            return None
+
+        try:
+            self._enable_domain(ws, "Runtime")
+
+            params = {
+                "expression": script,
+                "returnByValue": return_by_value,
+                "awaitPromise": await_promise
+            }
+            result = self._send_cdp_command(ws, "Runtime.evaluate", params)
+            ws.close()
+
+            if result and 'result' in result:
+                if 'result' in result['result']:
+                    value = result['result']['result'].get('value')
+                    print(f"✅ Script executed successfully")
+                    return value
+                elif 'error' in result['result']:
+                    error_msg = f"Script error: {result['result']['error']}"
+                    print(f"⚠️ {error_msg}")
+                    self.session.log_error(error_msg, {'script': script[:100]})
+            return None
+        except Exception as e:
+            error_msg = f"Runtime.evaluate error: {e}"
+            print(f"❌ {error_msg}")
+            self.session.log_error(error_msg, {'script': script[:100]})
+            if ws:
+                ws.close()
+            return None
+
+    # [Keep all the interactive methods from the original - find_interactive_elements,
+    #  interact_with_element, interactive_element_explorer, etc.]
+    # [Just add session.save_interaction() calls after interactions]
+    
+    def find_interactive_elements(self, tab_index: int = 0) -> List[Dict]:
+        """Find all interactive elements on the page using IIFE"""
+        print("\n🔍 Finding interactive elements...")
+
+        js_script = """
+        (function() {
+            const results = [];
+            const selectors = [
+                'button', 'input[type="button"]', 'input[type="submit"]',
+                'input[type="reset"]', 'a[href]', '[role="button"]',
+                '[role="link"]', '[onclick]', '[data-action]', '.btn',
+                '[class*="button"]', '[class*="btn"]', '[data-testid*="button"]'
+            ];
+
+            const elements = document.querySelectorAll(selectors.join(','));
+
+            elements.forEach((el, index) => {
+                const rect = el.getBoundingClientRect();
+                const isVisible = rect.width > 0 && rect.height > 0;
+
+                const attrs = {};
+                ['id', 'class', 'data-action', 'data-testid', 'aria-label',
+                 'title', 'type', 'value', 'href', 'name', 'role'].forEach(attr => {
+                    if (el.hasAttribute(attr)) {
+                        attrs[attr] = el.getAttribute(attr);
+                    }
+                });
+
+                let text = el.textContent.trim();
+                if (!text && el.tagName === 'INPUT') {
+                    text = el.value || el.getAttribute('placeholder') || '';
+                }
+
+                let type = el.tagName.toLowerCase();
+                if (type === 'input') {
+                    type = `input[${el.type || 'text'}]`;
+                }
+
+                let hasClickHandler = false;
+                try {
+                    hasClickHandler = typeof el.onclick === 'function' ||
+                                     el.getAttribute('onclick') !== null;
+                } catch(e) {}
+
+                results.push({
+                    index: index, tag: el.tagName.toLowerCase(), type: type,
+                    text: text.substring(0, 100), visible: isVisible,
+                    hasClickHandler: hasClickHandler, attributes: attrs,
+                    selector: el.id ? `#${el.id}` : null, canClick: true
+                });
+            });
+
+            return results;
+        })();
+        """
+
+        result = self.evaluate_script(js_script, tab_index)
+        if result and isinstance(result, list):
+            print(f"✅ Found {len(result)} interactive elements")
+            return result
+        return []
+
+    def interact_with_element(self, tab_index: int = 0, element_index: int = 0,
+                             action: str = 'click', value: str = None,
+                             delay: float = 0.5) -> Optional[Any]:
+        """Interact with a specific element with session logging"""
+        print(f"\n🎯 Interacting with element #{element_index}...")
+
+        verify_script = f"""
+        (function() {{
+            const selectors = [
+                'button', 'input[type="button"]', 'input[type="submit"]',
+                'input[type="reset"]', 'a[href]', '[role="button"]',
+                '[role="link"]', '[onclick]', '[data-action]', '.btn',
+                '[class*="button"]', '[class*="btn"]'
+            ];
+
+            const elements = document.querySelectorAll(selectors.join(','));
+            if ({element_index} >= elements.length) {{
+                return {{ error: 'Element index out of range' }};
+            }}
+
+            const el = elements[{element_index}];
+            el.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
+
+            return {{
+                tag: el.tagName.toLowerCase(),
+                text: el.textContent.trim().substring(0, 100),
+                visible: el.offsetParent !== null,
+                canInteract: true
+            }};
+        }})();
+        """
+
+        verify_result = self.evaluate_script(verify_script, tab_index)
+        if verify_result and 'error' in verify_result:
+            print(f"❌ {verify_result['error']}")
+            return None
+
+        print(f"   Element: {verify_result.get('tag', 'unknown')}")
+        print(f"   Text: {verify_result.get('text', '')}")
+        print(f"   Visible: {verify_result.get('visible', False)}")
+
+        time.sleep(delay)
+
+        # Perform the action
+        result = None
+        if action == 'click':
+            click_script = f"""
+            (function() {{
+                const selectors = [
+                    'button', 'input[type="button"]', 'input[type="submit"]',
+                    'input[type="reset"]', 'a[href]', '[role="button"]',
+                    '[role="link"]', '[onclick]', '[data-action]', '.btn',
+                    '[class*="button"]', '[class*="btn"]'
+                ];
+
+                const elements = document.querySelectorAll(selectors.join(','));
+                const el = elements[{element_index}];
+                if (!el) return {{ error: 'Element not found' }};
+
+                const event = new MouseEvent('click', {{
+                    view: window, bubbles: true, cancelable: true
+                }});
+                el.dispatchEvent(event);
+                if (typeof el.click === 'function') el.click();
+                
+                return {{ success: true, tag: el.tagName.toLowerCase() }};
+            }})();
+            """
+            result = self.evaluate_script(click_script, tab_index)
+            if result and result.get('success'):
+                print(f"✅ Clicked element successfully")
+            else:
+                print(f"❌ Failed to click element")
+
+        elif action == 'type' and value is not None:
+            type_script = f"""
+            (function() {{
+                const selectors = [
+                    'input[type="text"]', 'input[type="email"]',
+                    'input[type="password"]', 'input[type="number"]',
+                    'input[type="tel"]', 'textarea', '[contenteditable="true"]'
+                ];
+
+                const elements = document.querySelectorAll(selectors.join(','));
+                const el = elements[{element_index}];
+                if (!el) return {{ error: 'Element not found' }};
+
+                el.focus();
+                el.value = `{value}`;
+                el.dispatchEvent(new Event('input', {{ bubbles: true }}));
+                el.dispatchEvent(new Event('change', {{ bubbles: true }}));
+
+                return {{ success: true, value: `{value}` }};
+            }})();
+            """
+            result = self.evaluate_script(type_script, tab_index)
+            if result and result.get('success'):
+                print(f"✅ Typed '{value}' into element")
+            else:
+                print(f"❌ Failed to type into element")
+
+        elif action == 'hover':
+            hover_script = f"""
+            (function() {{
+                const selectors = [
+                    'button', 'input[type="button"]', 'input[type="submit"]',
+                    'input[type="reset"]', 'a[href]', '[role="button"]',
+                    '[role="link"]', '[onclick]', '[data-action]', '.btn',
+                    '[class*="button"]', '[class*="btn"]'
+                ];
+
+                const elements = document.querySelectorAll(selectors.join(','));
+                const el = elements[{element_index}];
+                if (!el) return {{ error: 'Element not found' }};
+
+                const event = new MouseEvent('mouseover', {{
+                    view: window, bubbles: true, cancelable: true
+                }});
+                el.dispatchEvent(event);
+                
+                return {{ success: true }};
+            }})();
+            """
+            result = self.evaluate_script(hover_script, tab_index)
+            if result and result.get('success'):
+                print(f"✅ Hovered over element")
+            else:
+                print(f"❌ Failed to hover over element")
+
+        # Save interaction to session
+        if result:
+            interaction_data = {
+                'element_index': element_index,
+                'action': action,
+                'value': value,
+                'result': result,
+                'verification': verify_result
+            }
+            context = {
+                'action': action,
+                'element_info': verify_result
+            }
+            self.session.save_interaction(interaction_data, context)
+
+        return result
+
+    # [Keep all the remaining interactive methods from original - 
+    #  interactive_element_explorer, interactive_element_menu, 
+    #  get_element_info, generate_interaction_script]
+    # [They remain the same but will use the updated interact_with_element]
+
+    def interactive_element_explorer(self, tab_index: int = 0):
+        """Interactive element explorer with better control"""
+        print("\n🎯 Interactive Elements Explorer")
+        print("-" * 60)
+
+        elements = self.find_interactive_elements(tab_index)
+        if not elements:
+            print("❌ No interactive elements found")
+            return
+
+        page_size = 10
+        total_pages = (len(elements) + page_size - 1) // page_size
+        current_page = 0
+        selected_indices = []
+
+        while True:
+            start = current_page * page_size
+            end = min(start + page_size, len(elements))
+
+            print(f"\n📋 Elements (Page {current_page+1}/{total_pages}):")
+            print("=" * 70)
+            for i in range(start, end):
+                elem = elements[i]
+                text = elem.get('text', '')[:40]
+                tag = elem.get('tag', 'unknown')
+                visible = "👁️" if elem.get('visible') else "🚫"
+                handler = "⚡" if elem.get('hasClickHandler') else "  "
+                print(f"  [{i:2d}] {handler} {visible} {tag:10s}: {text}")
+                if elem.get('attributes'):
+                    attrs = elem.get('attributes', {})
+                    if 'id' in attrs:
+                        print(f"        ID: {attrs['id']}")
+                    if 'class' in attrs:
+                        print(f"        Class: {attrs['class'][:40]}")
+
+            print("\n📌 Commands:")
+            print("  [n] Next page  [p] Previous page  [q] Quit")
+            print("  [index] Interact with element")
+            print("  [index1,index2] Multiple indices (comma-separated)")
+            print("  [range] e.g., 5-10 for a range")
+            print("  [all] All elements in current page")
+            print("  [s] Session report")
+            cmd = input("\nEnter command: ").strip()
+
+            if cmd.lower() == 'q':
+                break
+            elif cmd.lower() == 's':
+                report = self.session.generate_report()
+                print("\n" + report)
+            elif cmd.lower() == 'n' and current_page < total_pages - 1:
+                current_page += 1
+            elif cmd.lower() == 'p' and current_page > 0:
+                current_page -= 1
+            elif cmd.lower() == 'all':
+                selected_indices = list(range(start, end))
+                print(f"✅ Selected {len(selected_indices)} elements on this page")
+                self._handle_batch_actions(tab_index, selected_indices)
+            elif '-' in cmd:
+                try:
+                    parts = cmd.split('-')
+                    if len(parts) == 2:
+                        start_idx = int(parts[0].strip())
+                        end_idx = int(parts[1].strip())
+                        if 0 <= start_idx < len(elements) and 0 <= end_idx < len(elements):
+                            selected_indices = list(range(start_idx, end_idx + 1))
+                            print(f"✅ Selected elements {start_idx}-{end_idx} ({len(selected_indices)} elements)")
+                            self._handle_batch_actions(tab_index, selected_indices)
+                except Exception as e:
+                    print(f"❌ Invalid range: {e}")
+            elif ',' in cmd:
+                try:
+                    indices = [int(x.strip()) for x in cmd.split(',')]
+                    selected_indices = [i for i in indices if 0 <= i < len(elements)]
+                    if selected_indices:
+                        print(f"✅ Selected {len(selected_indices)} elements: {selected_indices}")
+                        self._handle_batch_actions(tab_index, selected_indices)
+                except Exception as e:
+                    print(f"❌ Invalid indices: {e}")
+            elif cmd.isdigit():
+                elem_index = int(cmd)
+                if 0 <= elem_index < len(elements):
+                    self.interactive_element_menu(tab_index, elem_index)
+                else:
+                    print("❌ Invalid index")
+            else:
+                print("❌ Invalid command")
+
+    def _handle_batch_actions(self, tab_index: int, indices: List[int]):
+        """Handle batch actions on multiple elements"""
+        print("\n🎮 What to do with selected elements?")
+        print("  1. Click all (with delay)")
+        print("  2. Get info for all")
+        print("  3. Generate script")
+        print("  4. Cancel")
+        action = input("Select action: ").strip()
+
+        if action == '1':
+            delay = float(input("Delay between clicks (seconds, default 0.5): ").strip() or "0.5")
+            for idx in indices:
+                print(f"\n--- Clicking element {idx} ---")
+                self.interact_with_element(tab_index, idx, 'click', delay=delay)
+                time.sleep(delay)
+        elif action == '2':
+            for idx in indices:
+                print(f"\n--- Info for element {idx} ---")
+                self.get_element_info(tab_index, idx)
+        elif action == '3':
+            self.generate_interaction_script(tab_index, indices)
+
+    def interactive_element_menu(self, tab_index: int = 0, element_index: int = 0):
+        """Interactive menu for a single element"""
+        while True:
+            print(f"\n🎮 Interacting with element {element_index}")
+            print("  1. Click")
+            print("  2. Type text")
+            print("  3. Hover")
+            print("  4. Get detailed info")
+            print("  5. Generate script for this element")
+            print("  6. Back to explorer")
+
+            action = input("Select action: ").strip()
+
+            if action == '1':
+                self.interact_with_element(tab_index, element_index, 'click')
+                print("\nPress Enter to continue...")
+                input()
+            elif action == '2':
+                text = input("📝 Enter text to type: ")
+                self.interact_with_element(tab_index, element_index, 'type', text)
+                print("\nPress Enter to continue...")
+                input()
+            elif action == '3':
+                self.interact_with_element(tab_index, element_index, 'hover')
+                print("\nPress Enter to continue...")
+                input()
+            elif action == '4':
+                self.get_element_info(tab_index, element_index)
+                print("\nPress Enter to continue...")
+                input()
+            elif action == '5':
+                self.generate_interaction_script(tab_index, [element_index])
+                print("\nPress Enter to continue...")
+                input()
+            elif action == '6':
+                break
+            else:
+                print("❌ Invalid choice")
+
+    def get_element_info(self, tab_index: int = 0, element_index: int = 0) -> Optional[Dict]:
+        """Get detailed information about an element"""
+        print(f"\n📋 Getting detailed info for element {element_index}...")
+
+        info_script = f"""
+        (function() {{
+            const selectors = [
+                'button', 'input[type="button"]', 'input[type="submit"]',
+                'input[type="reset"]', 'a[href]', '[role="button"]',
+                '[role="link"]', '[onclick]', '[data-action]', '.btn',
+                '[class*="button"]', '[class*="btn"]'
+            ];
+
+            const elements = document.querySelectorAll(selectors.join(','));
+            const el = elements[{element_index}];
+            if (!el) return {{ error: 'Element not found' }};
+
+            const rect = el.getBoundingClientRect();
+            const style = window.getComputedStyle(el);
+
+            return {{
+                tag: el.tagName.toLowerCase(),
+                text: el.textContent.trim().substring(0, 200),
+                innerHTML: el.innerHTML.substring(0, 200),
+                visible: rect.width > 0 && rect.height > 0,
+                rect: {{
+                    x: Math.round(rect.x), y: Math.round(rect.y),
+                    width: Math.round(rect.width), height: Math.round(rect.height)
+                }},
+                style: {{
+                    color: style.color, backgroundColor: style.backgroundColor,
+                    fontSize: style.fontSize, fontFamily: style.fontFamily,
+                    display: style.display, visibility: style.visibility,
+                    opacity: style.opacity, cursor: style.cursor,
+                    pointerEvents: style.pointerEvents
+                }},
+                attributes: {{
+                    id: el.id || null, class: el.className || null,
+                    role: el.getAttribute('role'),
+                    'aria-label': el.getAttribute('aria-label'),
+                    type: el.getAttribute('type'), value: el.value || null,
+                    href: el.getAttribute('href'), target: el.getAttribute('target'),
+                    disabled: el.disabled || false, readonly: el.readOnly || false
+                }},
+                onClickHandler: typeof el.onclick === 'function',
+                isFormElement: ['input', 'textarea', 'select', 'button'].includes(el.tagName.toLowerCase()),
+                isLink: el.tagName.toLowerCase() === 'a' && el.hasAttribute('href')
+            }};
+        }})();
+        """
+
+        result = self.evaluate_script(info_script, tab_index)
+        if result and 'error' not in result:
+            print("\n📋 Element Details:")
+            print("=" * 60)
+            for key, value in result.items():
+                if isinstance(value, dict):
+                    print(f"{key}:")
+                    for subkey, subvalue in value.items():
+                        print(f"  {subkey}: {subvalue}")
+                else:
+                    print(f"{key}: {value}")
+            print("=" * 60)
+            return result
+        else:
+            print(f"❌ Failed to get info: {result.get('error', 'Unknown error')}")
+            return None
+
+    def generate_interaction_script(self, tab_index: int = 0, indices: List[int] = None):
+        """Generate a safe IIFE script for specified elements"""
+        if not indices:
+            print("❌ No indices specified")
+            return
+
+        elements = self.find_interactive_elements(tab_index)
+
+        print(f"\n📜 Generating IIFE Script for {len(indices)} elements...")
+
+        script_lines = [
+            "// Generated IIFE Script for Element Interaction",
+            "// =============================================",
+            f"// Session: {self.session.session_id}",
+            f"// Timestamp: {datetime.now().isoformat()}",
+            f"// Tab: {self.session.metadata.tab_url}",
+            "// =============================================",
+            "(function() {",
+            "    const results = [];",
+            "    const selectors = [",
+            "        'button', 'input[type=\"button\"]', 'input[type=\"submit\"]',",
+            "        'input[type=\"reset\"]', 'a[href]', '[role=\"button\"]',",
+            "        '[role=\"link\"]', '[onclick]'",
+            "    ];",
+            "",
+            "    const elements = document.querySelectorAll(selectors.join(','));",
+            "    const delay = ms => new Promise(resolve => setTimeout(resolve, ms));",
+            "",
+            "    async function clickElement(el, index) {",
+            "        try {",
+            "            if (!el) return { success: false, index, error: 'Element not found' };",
+            "            el.scrollIntoView({ behavior: 'smooth', block: 'center' });",
+            "            await delay(100);",
+            "            try {",
+            "                const clickEvent = new MouseEvent('click', {",
+            "                    view: window, bubbles: true, cancelable: true",
+            "                });",
+            "                el.dispatchEvent(clickEvent);",
+            "            } catch(e) {}",
+            "            try {",
+            "                if (typeof el.click === 'function') el.click();",
+            "            } catch(e) {}",
+            "            return { success: true, index, tag: el.tagName.toLowerCase() };",
+            "        } catch(e) {",
+            "            return { success: false, index, error: e.message };",
+            "        }",
+            "    }",
+            "",
+            "    async function execute() {",
+        ]
+
+        for idx in indices:
+            elem = elements[idx] if idx < len(elements) else None
+            elem_text = elem.get('text', '')[:30] if elem else 'unknown'
+            script_lines.append(f"        // Element {idx}: {elem_text}")
+            script_lines.append(f"        const result_{idx} = await clickElement(elements[{idx}], {idx});")
+            script_lines.append(f"        results.push(result_{idx});")
+            script_lines.append(f"        await delay(300);")
+            script_lines.append("")
+
+        script_lines.extend([
+            "        return results;",
+            "    }",
+            "",
+            "    return execute();",
+            "})();"
+        ])
+
+        full_script = "\n".join(script_lines)
+
+        print("\n📜 Generated IIFE Script:")
+        print("=" * 60)
+        print(full_script)
+        print("=" * 60)
+
+        # Auto-save script
+        context = {
+            'element_indices': indices,
+            'script_type': 'interaction_iife'
+        }
+        self.session.save_script(full_script, "javascript", context)
+
+        execute = input("\n🔧 Execute this script? (y/n): ").strip().lower()
+        if execute == 'y':
+            print("\n⚡ Executing script...")
+            result = self.evaluate_script(full_script, tab_index, await_promise=True)
+            if result:
+                print(f"\n📊 Execution Results:")
+                if isinstance(result, list):
+                    for res in result:
+                        if res.get('success'):
+                            print(f"  ✅ Element {res.get('index')}: Clicked ({res.get('tag')})")
+                        else:
+                            print(f"  ❌ Element {res.get('index')}: {res.get('error')}")
+                else:
+                    print(f"Result: {result}")
+            else:
+                print("❌ Script execution failed")
+
+    def extract_semantic_elements(self, tab_index: int = 0) -> List[Dict]:
+	    """Extract semantic elements with role, name, and properties"""
+	    print("\n🔍 Extracting semantic elements...")
+	    
+	    js_script = """
+	    (function() {
+	        const elements = [];
+	        
+	        // Get all elements with ARIA roles or semantic tags
+	        const allElements = document.querySelectorAll('*');
+	        const semanticTags = ['header', 'nav', 'main', 'article', 'section', 
+	                             'aside', 'footer', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+	                             'button', 'a', 'input', 'select', 'textarea', 'form',
+	                             'table', 'ul', 'ol', 'dl', 'figure', 'figcaption'];
+	        
+	        allElements.forEach(el => {
+	            let role = el.getAttribute('role');
+	            let tag = el.tagName.toLowerCase();
+	            
+	            // Determine role
+	            if (!role && semanticTags.includes(tag)) {
+	                role = tag;
+	            }
+	            if (!role) return;
+	            
+	            // Get name
+	            let name = '';
+	            if (el.hasAttribute('aria-label')) {
+	                name = el.getAttribute('aria-label');
+	            } else if (el.hasAttribute('aria-labelledby')) {
+	                const labelId = el.getAttribute('aria-labelledby');
+	                const labelEl = document.getElementById(labelId);
+	                if (labelEl) name = labelEl.textContent.trim();
+	            } else if (el.hasAttribute('title')) {
+	                name = el.getAttribute('title');
+	            } else if (tag === 'button' || tag === 'a') {
+	                name = el.textContent.trim();
+	            } else if (tag === 'input') {
+	                name = el.getAttribute('placeholder') || el.getAttribute('value') || '';
+	            }
+	            
+	            // Check visibility
+	            const rect = el.getBoundingClientRect();
+	            const visible = rect.width > 0 && rect.height > 0 && 
+	                           window.getComputedStyle(el).display !== 'none' &&
+	                           window.getComputedStyle(el).visibility !== 'hidden';
+	            
+	            elements.push({
+	                role: role,
+	                name: name.substring(0, 200),
+	                tag: tag,
+	                visible: visible,
+	                id: el.id || '',
+	                className: el.className || '',
+	                selector: el.id ? '#' + el.id : null,
+	                hasChildren: el.children.length > 0,
+	                isInteractive: ['button', 'a', 'input', 'select', 'textarea'].includes(tag)
+	            });
+	        });
+	        
+	        return elements;
+	    })();
+	    """
+	    
+	    result = self.evaluate_script(js_script, tab_index)
+	    if result and isinstance(result, list):
+	        print(f"✅ Extracted {len(result)} semantic elements")
+	        return result
+	    return []
+
+    
+
+
+
+
+    
+    def list_tabs(self):
+        """Display all available tabs"""
+        self.get_tabs()
+
+        if not self.tabs:
+            print("❌ No tabs found")
+            return
+
+        print("\n📑 Available Tabs:")
+        print("=" * 60)
+        for i, tab in enumerate(self.tabs):
+            title = tab.get('title', 'Untitled')[:50]
+            url = tab.get('url', '')[:50]
+            ws_url = tab.get('webSocketDebuggerUrl', 'No WebSocket')
+            print(f"  [{i}] {title}")
+            print(f"      URL: {url}")
+            print(f"      WS: {ws_url[:60] if ws_url else 'None'}...")
+            print()
+
+    def close_session(self):
+        """Close the current session properly"""
+        self.session.close()
+
+
+def main():
+    print("🚀 Enhanced Chrome CDP Controller - With Session Management")
+    print("=" * 60)
+    print("Features: Auto-save, Session tracking, Organized storage")
+    print("=" * 60)
+
+    port_input = input("🔌 Chrome debug port (default 9227): ").strip()
+    port = int(port_input) if port_input else 9227
+
+    # Set session directory
+    session_dir = input("📁 Session directory (default: current): ").strip()
+    if not session_dir:
+        session_dir = "."
+
+    chrome = EnhancedChromeCDP(port, session_dir)
+
+    print(f"\n📡 Connecting to Chrome on port {port}...")
+    print(f"📁 Session ID: {chrome.session.session_id}")
+    print(f"📂 Session directory: {chrome.session.session_dir}")
+    
+    tabs = chrome.get_tabs()
+
+    if not tabs:
+        print("❌ No tabs found. Make sure Chrome is running with:")
+        print(f"   chromium-browser --remote-debugging-port={port}")
+        return
+
+    print(f"✅ Found {len(tabs)} tabs")
+    chrome.list_tabs()
+
+    tab_input = input(f"\n📑 Select tab (0-{len(tabs)-1}, default 0): ").strip()
+    tab_index = int(tab_input) if tab_input else 0
+
+    while True:
+        print("\n" + "=" * 60)
+        print(f"📁 Session: {chrome.session.session_id}")
+        print(f"📊 Commands: {chrome.session.metadata.total_commands}")
+        print("=" * 60)
+        print("📝 CDP Commands:")
+        print("  1. Execute JavaScript (Runtime.evaluate)")
+        print("  2. Get DOM Tree (DOM.getDocument) - Auto-save ✅")
+        print("  3. Get DOM Snapshot (DOMSnapshot.getSnapshot) - Auto-save ✅")
+        print("  4. Get Accessibility Tree - Auto-save ✅")
+        print("  5. Complete Page Analysis (All Domains)")
+        print("  6. Extract Semantic Elements")
+        print("  7. Get Computed Styles - Auto-save ✅")
+        print("  8. List Tabs")
+        print("  9. Change Tab")
+        print(" 10. Interactive Element Explorer 🎯")
+        print(" 11. Generate Custom Interaction Script")
+        print(" 12. View Session Report 📊")
+        print(" 13. Export Session Data 📦")
+        print(" 14. Toggle Auto-Save 🔄")
+        print("  0. Exit & Close Session")
+        print("=" * 60)
+
+        choice = input("Select option: ").strip()
+
+        if choice == "0":
+            print("👋 Closing session...")
+            chrome.close_session()
+            print("Goodbye!")
+            break
+
+        elif choice == "1":
+            print("\n📝 Enter JavaScript (type 'END' on a new line when done):")
+            lines = []
+            while True:
+                line = input()
+                if line.strip() == "END":
+                    break
+                lines.append(line)
+            script = "\n".join(lines)
+
+            if script:
+                result = chrome.evaluate_script(script, tab_index)
+                if result is not None:
+                    print(f"\n✅ Result: {json.dumps(result, indent=2, default=str)[:3000]}")
+                else:
+                    print("\n❌ No result returned")
+
+        elif choice == "2":
+            dom_root = chrome.get_document(tab_index)
+            if dom_root:
+                node_count = chrome._count_nodes(dom_root)
+                print(f"\n📊 DOM Statistics:")
+                print(f"   Total nodes: {node_count}")
+                print(f"   Root node: {dom_root.get('nodeName')} (ID: {dom_root.get('nodeId')})")
+
+        elif choice == "3":
+            snapshot = chrome.get_dom_snapshot(tab_index)
+            if snapshot:
+                print(f"\n📊 Snapshot Statistics:")
+                print(f"   DOM nodes: {len(snapshot.dom_nodes)}")
+                print(f"   Layout tree: {len(snapshot.layout_tree)}")
+                print(f"   Computed styles: {len(snapshot.computed_styles)}")
+
+        elif choice == "4":
+            ax_tree = chrome.get_accessibility_tree(tab_index)
+            if ax_tree:
+                nodes = ax_tree.get('nodes', [])
+                print(f"\n📊 Accessibility Statistics:")
+                print(f"   Total accessible nodes: {len(nodes)}")
+
+        elif choice == "5":
+            print("\n🔬 Performing complete page analysis...")
+            analysis = chrome.analyze_page_structure(tab_index)
+            print(f"\n📊 Analysis Summary:")
+            for key, value in analysis.get('metadata', {}).items():
+                print(f"   {key}: {value}")
+
+        elif choice == "6":
+            elements = chrome.extract_semantic_elements(tab_index)
+            if elements:
+                print(f"✅ Found {len(elements)} semantic elements:")
+                for elem in elements[:20]:
+                    name = elem['name'][:50] if elem['name'] else '(unnamed)'
+                    print(f"   [{elem['role']}] {name}")
+
+        elif choice == "7":
+            styles = chrome.get_computed_styles(tab_index)
+            if styles:
+                print(f"✅ Retrieved {len(styles)} computed styles (showing first 20):")
+                for style in styles[:20]:
+                    name = style.get('name', '')
+                    value = style.get('value', '')[:50]
+                    print(f"   {name}: {value}")
+
+        elif choice == "8":
+            chrome.list_tabs()
+
+        elif choice == "9":
+            chrome.tabs = []
+            chrome.ws_url = None
+            chrome._dom_enabled = False
+            chrome._css_enabled = False
+            chrome._ax_enabled = False
+            chrome.list_tabs()
+            tab_input = input(f"\n📑 Select tab (0-{len(chrome.tabs)-1}): ").strip()
+            if tab_input:
+                tab_index = int(tab_input)
+                ws_url = chrome.get_websocket_url(tab_index)
+                if ws_url:
+                    print(f"✅ Switched to tab {tab_index}")
+
+        elif choice == "10":
+            chrome.interactive_element_explorer(tab_index)
+
+        elif choice == "11":
+            print("\n🚀 Generate Custom Interaction Script")
+            print("-" * 60)
+            
+            elements = chrome.find_interactive_elements(tab_index)
+            if not elements:
+                print("❌ No interactive elements found")
+                continue
+
+            print("\n📋 Available elements:")
+            for i, elem in enumerate(elements[:20]):
+                text = elem.get('text', '')[:40]
+                tag = elem.get('tag', 'unknown')
+                handler = "⚡" if elem.get('hasClickHandler') else "  "
+                print(f"  [{i:2d}] {handler} {tag:10s}: {text}")
+
+            print("\n📌 Enter element indices (comma-separated, range, or 'all'):")
+            indices_input = input("Indices: ").strip()
+
+            selected_indices = []
+            if indices_input.lower() == 'all':
+                selected_indices = list(range(len(elements)))
+            elif '-' in indices_input:
+                try:
+                    parts = indices_input.split('-')
+                    if len(parts) == 2:
+                        start = int(parts[0].strip())
+                        end = int(parts[1].strip())
+                        selected_indices = list(range(start, end + 1))
+                except:
+                    print("❌ Invalid range format")
+                    continue
+            else:
+                try:
+                    selected_indices = [int(x.strip()) for x in indices_input.split(',') if x.strip()]
+                except:
+                    print("❌ Invalid indices format")
+                    continue
+
+            selected_indices = [i for i in selected_indices if 0 <= i < len(elements)]
+            if selected_indices:
+                print(f"\n✅ Selected {len(selected_indices)} elements")
+                chrome.generate_interaction_script(tab_index, selected_indices)
+
+        elif choice == "12":
+            report = chrome.session.generate_report()
+            print("\n" + report)
+
+        elif choice == "13":
+            export_file = chrome.session.export_session()
+            print(f"📦 Session exported to: {export_file}")
+
+        elif choice == "14":
+            chrome.auto_save = not chrome.auto_save
+            status = "ON" if chrome.auto_save else "OFF"
+            print(f"🔄 Auto-save is now {status}")
+
+        else:
+            print("❌ Invalid choice")
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\n👋 Interrupted. Closing session...")
+        if 'chrome' in locals():
+            chrome.close_session()
+        print("Goodbye!")
+        sys.exit(0)
+    except Exception as e:
+        print(f"\n❌ Error: {e}")
+        import traceback
+        traceback.print_exc()
+        if 'chrome' in locals():
+            chrome.close_session()
+        sys.exit(1)

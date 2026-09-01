@@ -1,0 +1,563 @@
+{
+  "summary": {
+    "total_entries": 264,
+    "total_tokens": 58,
+    "total_payloads": 0,
+    "unique_tokens": 10,
+    "unique_urls": 183
+  },
+  "token_statistics": {
+    "total_entries_scanned": 264,
+    "total_tokens_found": 58,
+    "token_types": {
+      "JWT": 27,
+      "Session_Token": 16,
+      "Base64": 14,
+      "Hex64": 1
+    },
+    "unique_tokens": 10,
+    "by_source": {
+      "header": 6,
+      "url": 52
+    },
+    "by_type": {
+      "JWT": 27,
+      "Session_Token": 16,
+      "Base64": 14,
+      "Hex64": 1
+    }
+  },
+  "payload_statistics": {
+    "total_payloads": 0,
+    "total_size_bytes": 0,
+    "by_type": {},
+    "by_direction": {},
+    "payloads_with_sensitive": 0
+  },
+  "tokens": [
+    {
+      "type": "JWT",
+      "source": "header",
+      "location": "authorization",
+      "url": "https://www.naukri.com/cloudgateway-mynaukri/notification-center-services/v0/naukrinotificationcentr",
+      "masked_value": "eyJraWQi...-5gA",
+      "confidence": 0.95,
+      "timestamp": "2026-08-02T16:12:08.094847"
+    },
+    {
+      "type": "JWT",
+      "source": "header",
+      "location": "authorization",
+      "url": "https://www.naukri.com/cloudgateway-mynaukri/resman-aggregator-services/v1/users/self/dashboard?prop",
+      "masked_value": "eyJraWQi...-5gA",
+      "confidence": 0.95,
+      "timestamp": "2026-08-02T16:12:08.097830"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.googleadservices.com/ccm/conversion/854187457/?random=1785667328504&cv=11&fst=1785667328",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.574869"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "scrsrc",
+      "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&auid=682076935.1784153450&dt=Recommended%20Jobs%20%7",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.317371"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&auid=682076935.1784153450&dt=Recommended%20Jobs%20%7",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.317371"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/rmkt/collect/10857553821/?random=1785667328199&cv=11&fst=1785667328199&fmt=8&",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.315371"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.com/rmkt/collect/10857553821/?random=1785667328199&cv=11&fst=1785667328199&fmt=8&",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.315371"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10857553821/?random=1785667328199&c",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.313480"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10857553821/?random=1785667328199&c",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.313480"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=682076935.1784153450&gtm=45be67t1h1v9165556708z8667815",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.311464"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/854187457/?random=1785667328383&cv=",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.558080"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/854187457/?random=1785667328383&cv=",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.558080"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/rmkt/collect/854187457/?random=1785667328383&cv=11&fst=1785667328383&fmt=8&bg",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.562323"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.com/rmkt/collect/854187457/?random=1785667328383&cv=11&fst=1785667328383&fmt=8&bg",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.562323"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "scrsrc",
+      "url": "https://www.google.com/ccm/collect?rcb=19&frm=0&auid=682076935.1784153450&dt=Recommended%20Jobs%20%7",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.570549"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/ccm/collect?rcb=19&frm=0&auid=682076935.1784153450&dt=Recommended%20Jobs%20%7",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.570549"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.googleadservices.com/pagead/conversion/854187457/?random=1785667328504&cv=11&fst=1785667",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:08.566751"
+    },
+    {
+      "type": "JWT",
+      "source": "header",
+      "location": "authorization",
+      "url": "https://www.naukri.com/cloudgateway-mynaukri/resman-aggregator-services/v2/users/self?expand_level=3",
+      "masked_value": "eyJraWQi...-5gA",
+      "confidence": 0.95,
+      "timestamp": "2026-08-02T16:12:09.947583"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/pagead/1p-user-list/10857553821/?random=1785667328199&cv=11&fst=1785664800000",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:11.030791"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.com/pagead/1p-user-list/10857553821/?random=1785667328199&cv=11&fst=1785664800000",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:11.030791"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.co.in/pagead/1p-user-list/10857553821/?random=1785667328199&cv=11&fst=17856648000",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:11.035408"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.co.in/pagead/1p-user-list/10857553821/?random=1785667328199&cv=11&fst=17856648000",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:11.035408"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/pagead/1p-user-list/854187457/?random=1785667328383&cv=11&fst=1785664800000&b",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:11.232940"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.com/pagead/1p-user-list/854187457/?random=1785667328383&cv=11&fst=1785664800000&b",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:11.232940"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.co.in/pagead/1p-user-list/854187457/?random=1785667328383&cv=11&fst=1785664800000",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:11.235182"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.co.in/pagead/1p-user-list/854187457/?random=1785667328383&cv=11&fst=1785664800000",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:11.235182"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.co.in/pagead/1p-conversion/854187457/?random=1572506649&cv=11&fst=1785667328504&f",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:12.027622"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-K2YBNZVRLL&gtm=45je67t1h1v898603917z86678154za20gzb",
+      "masked_value": "45je67t1...8154",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:12:17.749446"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10857553821/?random=1785667450966&c",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:11.073245"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10857553821/?random=1785667450966&c",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:11.073245"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "scrsrc",
+      "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&auid=682076935.1784153450&dt=Save%20Apply%20%7C%20Nau",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:11.083757"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&auid=682076935.1784153450&dt=Save%20Apply%20%7C%20Nau",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:11.083757"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/rmkt/collect/10857553821/?random=1785667450966&cv=11&fst=1785667450966&fmt=8&",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:11.078739"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.com/rmkt/collect/10857553821/?random=1785667450966&cv=11&fst=1785667450966&fmt=8&",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:11.078739"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=682076935.1784153450&gtm=45be67t1h1v9165556708z8667815",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:11.067942"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.googleadservices.com/ccm/conversion/854187457/?random=1785667452073&cv=11&fst=1785667452",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:12.132887"
+    },
+    {
+      "type": "JWT",
+      "source": "header",
+      "location": "authorization",
+      "url": "https://www.naukri.com/servicegateway-mynaukri/resman-aggregator-services/v1/users/self/dashboard?pr",
+      "masked_value": "eyJraWQi...CMoA",
+      "confidence": 0.95,
+      "timestamp": "2026-08-02T16:14:12.012611"
+    },
+    {
+      "type": "JWT",
+      "source": "header",
+      "location": "authorization",
+      "url": "https://www.naukri.com/servicegateway-mynaukri/jobseeker-engagement-services/v0/profileservice/users",
+      "masked_value": "eyJraWQi...CMoA",
+      "confidence": 0.95,
+      "timestamp": "2026-08-02T16:14:12.021485"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/rmkt/collect/854187457/?random=1785667451978&cv=11&fst=1785667451978&fmt=8&bg",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:12.125181"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.com/rmkt/collect/854187457/?random=1785667451978&cv=11&fst=1785667451978&fmt=8&bg",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:12.125181"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "scrsrc",
+      "url": "https://www.google.com/ccm/collect?rcb=0&frm=0&auid=682076935.1784153450&dt=Apply%20Confirmation&en=",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:12.130156"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/ccm/collect?rcb=0&frm=0&auid=682076935.1784153450&dt=Apply%20Confirmation&en=",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:12.130156"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.googleadservices.com/pagead/conversion/854187457/?random=1785667452073&cv=11&fst=1785667",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:12.127861"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/854187457/?random=1785667451978&cv=",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:12.122748"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/854187457/?random=1785667451978&cv=",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:12.122748"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/pagead/1p-user-list/10857553821/?random=1785667450966&cv=11&fst=1785664800000",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:14.282498"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.com/pagead/1p-user-list/10857553821/?random=1785667450966&cv=11&fst=1785664800000",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:14.282498"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.co.in/pagead/1p-user-list/10857553821/?random=1785667450966&cv=11&fst=17856648000",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:14.285425"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.co.in/pagead/1p-user-list/10857553821/?random=1785667450966&cv=11&fst=17856648000",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:14.285425"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "domain",
+      "url": "https://connect.facebook.net/signals/config/282225171957352?v=2.9.368&r=stable&domain=www.naukri.com",
+      "masked_value": "www.nauk....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:14.665068"
+    },
+    {
+      "type": "Hex64",
+      "source": "url",
+      "location": "hme",
+      "url": "https://connect.facebook.net/signals/config/282225171957352?v=2.9.368&r=stable&domain=www.naukri.com",
+      "masked_value": "78c3d709...568a",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:14.665068"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.com/pagead/1p-user-list/854187457/?random=1785667451978&cv=11&fst=1785664800000&b",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:15.609718"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.com/pagead/1p-user-list/854187457/?random=1785667451978&cv=11&fst=1785664800000&b",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:15.609718"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.co.in/pagead/1p-user-list/854187457/?random=1785667451978&cv=11&fst=1785664800000",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:15.618155"
+    },
+    {
+      "type": "JWT",
+      "source": "url",
+      "location": "hn",
+      "url": "https://www.google.co.in/pagead/1p-user-list/854187457/?random=1785667451978&cv=11&fst=1785664800000",
+      "masked_value": "www.goog....com",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:15.618155"
+    },
+    {
+      "type": "JWT",
+      "source": "header",
+      "location": "authorization",
+      "url": "https://www.naukri.com/cloudgateway-mynaukri/notification-center-services/v0/naukrinotificationcentr",
+      "masked_value": "eyJraWQi...CMoA",
+      "confidence": 0.95,
+      "timestamp": "2026-08-02T16:14:15.872963"
+    },
+    {
+      "type": "Session_Token",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://www.google.co.in/pagead/1p-conversion/854187457/?random=738661749&cv=11&fst=1785667452073&fm",
+      "masked_value": "45be67t1...4xec",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:16.931808"
+    },
+    {
+      "type": "Base64",
+      "source": "url",
+      "location": "gtm",
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-K2YBNZVRLL&gtm=45je67t1h1v898603917z86678154za20gzb",
+      "masked_value": "45je67t1...8154",
+      "confidence": 0.7,
+      "timestamp": "2026-08-02T16:14:18.710717"
+    }
+  ],
+  "payloads": [],
+  "timestamp": "2026-08-02T16:14:34.288308"
+}

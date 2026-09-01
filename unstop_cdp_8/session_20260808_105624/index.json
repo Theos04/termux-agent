@@ -1,0 +1,104 @@
+{
+  "regex": [
+    {
+      "filename": "regex_105655_527877.json",
+      "timestamp": "2026-08-08T10:56:55.528048",
+      "context": {
+        "patterns": [
+          "email"
+        ]
+      }
+    }
+  ],
+  "dom_trees": [
+    {
+      "filename": "dom_105725_611504.json",
+      "timestamp": "2026-08-08T10:57:25.611685",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_105922_323931.json",
+      "timestamp": "2026-08-08T10:59:22.324106",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "filename": "snapshot_105841_167578.json",
+      "timestamp": "2026-08-08T10:58:41.167767",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    },
+    {
+      "filename": "snapshot_105925_364506.json",
+      "timestamp": "2026-08-08T10:59:25.364674",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "filename": "a11y_105849_708085.json",
+      "timestamp": "2026-08-08T10:58:49.708581",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_105902_123269.json",
+      "timestamp": "2026-08-08T10:59:02.123495",
+      "context": {
+        "method": "Comprehensive_AX_Tree"
+      }
+    },
+    {
+      "filename": "a11y_105931_057428.json",
+      "timestamp": "2026-08-08T10:59:31.057791",
+      "context": {
+        "method": "Comprehensive_AX_Tree"
+      }
+    },
+    {
+      "filename": "a11y_110046_110809.json",
+      "timestamp": "2026-08-08T11:00:46.111015",
+      "context": {
+        "method": "Comprehensive_AX_Tree"
+      }
+    }
+  ],
+  "scripts": [
+    {
+      "filename": "script_110021_296303.js",
+      "timestamp": "2026-08-08T11:00:21.296472",
+      "context": {
+        "element_indices": [
+          19
+        ],
+        "script_type": "interaction_iife",
+        "element_count": 1
+      }
+    }
+  ]
+}

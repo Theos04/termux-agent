@@ -1,0 +1,455 @@
+{
+  "metadata": {
+    "session_id": "20260801_124014",
+    "start_time": "2026-08-01T12:40:14.536863",
+    "end_time": null,
+    "chrome_port": 9259,
+    "tab_url": "https://www.moneycontrol.com/",
+    "tab_title": "Business News: Stock and Share Market News, Economy and Finance News, Sensex, Nifty, Global Market, NSE, BSE Live IPO News - Moneycontrol.com",
+    "total_commands": 132,
+    "snapshots_taken": [],
+    "files_generated": {}
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": [
+      {
+        "timestamp": "2026-08-01T12:43:10.599641",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:10.610864",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:12.136379",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:12.141774",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:15.162419",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:15.168326",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:19.684012",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:19.690083",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:21.718273",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:21.724280",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:21.739923",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:21.745265",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:23.774039",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:23.784381",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:23.811633",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:23.817496",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:25.830192",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:25.834984",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:25.846671",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:25.851192",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:27.878631",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:27.884531",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:27.900186",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:27.905677",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:29.446958",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:29.452622",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:32.461618",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:32.465340",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:36.971901",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:36.974872",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:38.995788",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:39.003449",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:39.025056",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:39.030604",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:41.039611",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:41.044012",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:41.051833",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:41.055980",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:43.064827",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:43.070607",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:43.084131",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:43.090088",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:45.100590",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:45.103144",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:45.110047",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:45.114187",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:46.624721",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:46.633999",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:49.649213",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:49.651657",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:54.166776",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:54.171942",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:56.184621",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:56.190495",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:56.204043",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:56.208307",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:58.217846",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:58.223869",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:58.230994",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:43:58.233722",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:00.240469",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:00.246397",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:00.264663",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:00.271202",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:02.283720",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:02.287757",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:02.298124",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:02.302275",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:03.830467",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:03.841935",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:06.867209",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:06.877514",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:11.394098",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:11.399396",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:13.430899",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:13.437756",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:13.453763",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:13.458799",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:15.480753",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:15.487896",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:15.511124",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:15.531226",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:17.543440",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:17.548474",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:17.562671",
+        "error": "Error fetching tabs: HTTPConnectionPool(host='127.0.0.1', port=9259): Max retries exceeded with url: /json (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=9259): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+        "context": {}
+      },
+      {
+        "timestamp": "2026-08-01T12:44:17.567778",
+        "error": "WebSocket connection error: [Errno 111] Connection refused",
+        "context": {}
+      }
+    ]
+  },
+  "command_count": 132,
+  "last_updated": "2026-08-01T12:44:30.611511"
+}

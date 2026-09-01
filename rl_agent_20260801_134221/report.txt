@@ -1,0 +1,42 @@
+================================================================================
+🚀 GENERIC WEB RL AGENT - FINAL REPORT
+================================================================================
+Total Cycles: 10
+Goal Achieved: 🔄 Still learning
+Best Reward: 14.00
+Success Events: 6
+States Discovered: 6
+
+📊 Q-LEARNING STATS:
+  States in Q-Table: 6
+  Q-Values Learned: 64
+  Exploration Rate: 0.666
+  Learning Rate: 0.225
+  Total Actions: 54
+  Unique Actions: 54
+  Episodes: 10
+  Successful Episodes: 7
+  Avg Reward: 7.13
+  Max Reward: 14.00
+  Min Reward: 3.60
+
+🏆 BEST PATH FOUND:
+  navigate|https://www.naukri.com|navigation → click|Complete profile|generic → navigate|https://www.naukri.com|navigation → click|Complete profile|generic → navigate|NVites2 New|navigation
+  Reward: 14.00
+
+📈 Recent Performance (last 10):
+  Avg Reward: 7.13
+  Success Rate: 100.0%
+
+📋 Action Distribution:
+  click|know more|pagination: 4 times
+  click|complete profile|generic: 3 times
+  navigate|https://www.naukri.com|navigation: 2 times
+  navigate|nvites2 new|navigation: 1 times
+
+🌐 Visited Pages:
+  1. https://www.naukri.com/mnjuser/homepage
+  2. https://www.naukri.com/mnjuser/profile
+  3. https://www.naukri.com/mnjuser/inbox
+
+================================================================================

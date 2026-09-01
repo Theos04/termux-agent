@@ -1,0 +1,656 @@
+{
+  "summary": {
+    "total_texts": 36685,
+    "unique_texts": 3946,
+    "files_analyzed": 3
+  },
+  "structure_metrics": {
+    "text_lengths": {
+      "total": 36685,
+      "unique": 3946,
+      "min": 1,
+      "max": 44169,
+      "avg": 30.834373722229795,
+      "median": 8
+    },
+    "common_patterns": {
+      "Jobs in": 160,
+      "> .brz-bg": 126,
+      "> .brz-bg >": 126,
+      ".brz-bg >": 126,
+      "Work from": 86,
+      "Home Jobs": 84,
+      "Work from Home": 78,
+      "from Home": 78,
+      "from Home Jobs": 78,
+      "cursor: pointer;": 74,
+      "Internship in": 72,
+      "Home Jobs in": 72,
+      "Register Now": 66,
+      "Register Now!": 60,
+      "Follow on": 56,
+      "ng-trigger ng-trigger-autoHeight": 53,
+      "margin-right: 16px;": 53,
+      "{ font-family:": 52,
+      "400, \"wdth\"": 49,
+      "400, \"wdth\" 100,": 49,
+      "\"wdth\" 100,": 49,
+      "\"wdth\" 100, \"SOFT\"": 49,
+      "100, \"SOFT\"": 49,
+      "and (max-width:": 47,
+      "screen and": 43,
+      "and (min-width:": 43,
+      "ng-tns-c1392897182-1 ng-star-inserted": 41,
+      "> .brz-container__wrap": 38,
+      ".brz-css-d-row-row >": 38,
+      "ng-trigger ng-trigger-autoHeight ng-star-inserted": 37,
+      "ng-trigger-autoHeight ng-star-inserted": 37,
+      "only screen": 36,
+      "only screen and": 36,
+      "{ font-family: 'Montserrat',": 36,
+      "font-family: 'Montserrat',": 36,
+      "font-family: 'Montserrat', sans-serif;font-size:": 36,
+      "'Montserrat', sans-serif;font-size:": 36,
+      "Unstop Campus": 35,
+      "menu-icon ng-star-inserted": 35,
+      "align-center gap6": 35,
+      "} @media": 32,
+      "} @media (max-width:": 32,
+      "@media (max-width:": 32,
+      "Mock Tests": 32,
+      "menu-item ng-star-inserted": 32,
+      "align-center gap6 ng-star-inserted": 32,
+      "gap6 ng-star-inserted": 32,
+      "Challenge 2026": 32,
+      "Join our": 32,
+      "Join our Exclusive": 32
+    },
+    "common_keys": [
+      [
+        "value",
+        13737
+      ],
+      [
+        "type",
+        10298
+      ],
+      [
+        "name",
+        6990
+      ],
+      [
+        "backendNodeId",
+        6895
+      ],
+      [
+        "nodeType",
+        6895
+      ],
+      [
+        "nodeName",
+        6895
+      ],
+      [
+        "nodeValue",
+        6895
+      ],
+      [
+        "nodeId",
+        5417
+      ],
+      [
+        "parentId",
+        5364
+      ],
+      [
+        "localName",
+        3336
+      ],
+      [
+        "attributes",
+        3086
+      ],
+      [
+        "ignored",
+        2081
+      ],
+      [
+        "role",
+        2081
+      ],
+      [
+        "chromeRole",
+        2081
+      ],
+      [
+        "childIds",
+        2081
+      ],
+      [
+        "attribute",
+        1972
+      ],
+      [
+        "properties",
+        1656
+      ],
+      [
+        "childNodeCount",
+        1607
+      ],
+      [
+        "layoutNodeIndex",
+        1599
+      ],
+      [
+        "children",
+        1558
+      ]
+    ],
+    "value_patterns": {
+      "value": {
+        "frequency": 13737
+      },
+      "type": {
+        "frequency": 10298
+      },
+      "name": {
+        "frequency": 6990
+      },
+      "backendNodeId": {
+        "frequency": 6895
+      },
+      "nodeType": {
+        "frequency": 6895
+      },
+      "nodeName": {
+        "frequency": 6895
+      },
+      "nodeValue": {
+        "frequency": 6895
+      },
+      "nodeId": {
+        "frequency": 5417
+      },
+      "parentId": {
+        "frequency": 5364
+      },
+      "localName": {
+        "frequency": 3336
+      }
+    }
+  },
+  "discovered_categories": {
+    "by_length": {
+      "short (labels/names)": 32805,
+      "medium (titles/phrases)": 3513,
+      "long (descriptions/content)": 367
+    },
+    "by_type": {
+      "numeric_values": 3925,
+      "urls_links": 589,
+      "email_addresses": 106,
+      "other_text": 32065
+    },
+    "top_topics": {
+      "internalrole": 3022,
+      "computedstring": 2406,
+      "comment": 1923,
+      "role": 1285,
+      "div": 1261,
+      "attribute": 1253,
+      "ngcontentngc": 1188,
+      "class": 1033,
+      "text": 991,
+      "arialabel": 742,
+      "relatedelement": 740,
+      "arialabelledby": 717,
+      "contents": 641,
+      "inlinetextbox": 596,
+      "ngstarinserted": 509,
+      "none": 500,
+      "title": 498,
+      "boolean": 429,
+      "style": 418,
+      "link": 415,
+      "uninteresting": 396,
+      "string": 346,
+      "jobs": 336,
+      "statictext": 336,
+      "maxwidth": 300,
+      "generic": 266,
+      "url": 257,
+      "img": 238,
+      "solid": 237,
+      "span": 232
+    }
+  },
+  "text_clusters": {
+    "https://unstop.com/": [
+      "https://unstop.com/",
+      "https://unstop.com/",
+      "https://unstop.com/",
+      "https://unstop.com/",
+      "https://unstop.com/"
+    ],
+    "#comment": [
+      "#comment",
+      "#comment",
+      "#comment",
+      "#comment",
+      "#comment"
+    ],
+    "script": [
+      "SCRIPT",
+      "script",
+      "SCRIPT",
+      "script",
+      "SCRIPT"
+    ],
+    "#text": [
+      "#text",
+      "#text",
+      "#text",
+      "#text",
+      "#text"
+    ],
+    "function": [
+      "function getCookie(cookieName) {\n        const name = cookieName + \"=\";\n        const decodedCookie = decodeURIComponent(document.cookie);\n        const cookieArray = decodedCookie.split(';');\n\n        for (let i = 0; i < cookieArray.length; i++) {\n          let cookie = cookieArray[i].trim();\n          if (cookie.indexOf(name) === 0) {\n            return cookie.substring(name.length, cookie.length);\n          }\n        }\n\n        return null;\n      }\n        const countryCookie = getCookie('country');\n        window['userCountry'] = countryCookie ? countryCookie : null;",
+      "function reloadOnClick() {\n       location.reload();\n    }\n   \n\n    if ('serviceWorker' in navigator && navigator.webkitTemporaryStorage) {\n      navigator.webkitTemporaryStorage.queryUsageAndQuota(\n        function (bytesUsed, bytesRemaining) {\n          if (bytesUsed == bytesRemaining) {\n            alert('Your System is low on space. Please refresh or clear your temporary storage.');\n            unregisterServiceWorker();\n          }\n        },\n        function () {\n          console.log(e)\n        }\n      );\n    }\n\n    function unregisterServiceWorker() {\n\n      if ('serviceWorker' in navigator) {\n        navigator.serviceWorker.getRegistrations().then(function (registrations) {\n          registrations.forEach(function (registration) {\n            registration.unregister().then(function (register) {\n              // if boolean = true, unregister is successful\n              localStorage.setItem('worker_reset', '11062018')\n              console.log(register);\n            }).catch(function (error) {\n              // registration failed\n              console.log('Registration failed with ' + error);\n            });\n          });\n        });\n      }\n    }",
+      "function areCookiesEnabled() {\n      // 1. Always trust React Native app / WebView environments where cookies are managed natively\n      if (window.isApp || (typeof window.ReactNativeWebView !== 'undefined')) {\n        return true;\n      }\n      try {\n        // 2. If navigator explicitly states cookies are disabled, return false\n        if (navigator.cookieEnabled === false) {\n          return false;\n        }\n        // 3. Test setting a cookie with path=/ and SameSite=Lax (avoids SameSite=Strict rejections in embedded contexts/Android WebViews)\n        document.cookie = \"cookieEnabled=1; path=/; SameSite=Lax\";\n        const cookiesEnabled = document.cookie.indexOf(\"cookieEnabled=\") !== -1 || navigator.cookieEnabled;\n        document.cookie = \"cookieEnabled=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;\";\n        return cookiesEnabled;\n      } catch (e) {\n        return navigator.cookieEnabled !== false;\n      }\n    }\n\n      if (!areCookiesEnabled()) {\n        document.getElementById('cookieDisabled').style.display = 'block';\n        document.getElementById('reload-mode').style.display = 'none';\n      }",
+      "function getCookie(cookieName) {\n        const name = cookieName + \"=\";\n        const decodedCookie = decodeURIComponent(document.cookie);\n        const cookieArray = decodedCookie.split(';');\n\n        for (let i = 0; i < cookieArray.length; i++) {\n          let cookie = cookieArray[i].trim();\n          if (cookie.indexOf(name) === 0) {\n            return cookie.substring(name.length, cookie.length);\n          }\n        }\n\n        return null;\n      }\n        const countryCookie = getCookie('country');\n        window['userCountry'] = countryCookie ? countryCookie : null;",
+      "function reloadOnClick() {\n       location.reload();\n    }\n   \n\n    if ('serviceWorker' in navigator && navigator.webkitTemporaryStorage) {\n      navigator.webkitTemporaryStorage.queryUsageAndQuota(\n        function (bytesUsed, bytesRemaining) {\n          if (bytesUsed == bytesRemaining) {\n            alert('Your System is low on space. Please refresh or clear your temporary storage.');\n            unregisterServiceWorker();\n          }\n        },\n        function () {\n          console.log(e)\n        }\n      );\n    }\n\n    function unregisterServiceWorker() {\n\n      if ('serviceWorker' in navigator) {\n        navigator.serviceWorker.getRegistrations().then(function (registrations) {\n          registrations.forEach(function (registration) {\n            registration.unregister().then(function (register) {\n              // if boolean = true, unregister is successful\n              localStorage.setItem('worker_reset', '11062018')\n              console.log(register);\n            }).catch(function (error) {\n              // registration failed\n              console.log('Registration failed with ' + error);\n            });\n          });\n        });\n      }\n    }"
+    ],
+    "meta": [
+      "META",
+      "meta",
+      "META",
+      "meta",
+      "META"
+    ],
+    "<meta": [
+      "<meta name=\"viewport\" content=\"height=device-height,\n  width=device-width, initial-scale=1.0,\n  minimum-scale=1.0, maximum-scale=1.0,\n  user-scalable=no, target-densitydpi=device-dpi\" />",
+      "<meta name=\"viewport\" content=\"height=device-height,width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, target-densitydpi=device-dpi, viewport-fit=cover\">",
+      "<meta name=\"description\"\n    content=\"Explore student/corporate competitions & engagements for B-schools, Engineering & Graduate colleges. We are an employer branding consultant & help conceptualize & organize these engagements | Unstop  - India\">",
+      "<meta name=\"facebook-domain-verification\" content=\"7ebin8ynh2d288edj99dy4h7iczojs\" />",
+      "<meta name=\"robots\" content=\"max-image-preview:standard\">"
+    ],
+    "<link": [
+      "<link async rel=\"preconnect\" href=\"//fonts.googleapis.com/\">",
+      "<link rel=\"preconnect\" href=\"https://d8it4huxumps7.cloudfront.net/\" crossorigin=\"\">\n  <link rel=\"dns-prefetch\" href=\"https://d8it4huxumps7.cloudfront.net/\">",
+      "<link rel=\"preload\" href=\"https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg\" as=\"image\" crossorigin=\"anonymous\"/>",
+      "<link rel=\"preload\" href=\"https://d8it4huxumps7.cloudfront.net/font/fontawesome-webfont.woff2\" as=\"font\"\n      type=\"font/woff2\" crossorigin=\"anonymous\">",
+      "<link rel=\"preload\" href=\"https://d8it4huxumps7.cloudfront.net/font/competition-icons.woff\" as=\"font\"\n    type=\"font/woff2\" crossorigin=\"anonymous\">"
+    ],
+    "link": [
+      "LINK",
+      "link",
+      "LINK",
+      "link",
+      "LINK"
+    ],
+    "title": [
+      "TITLE",
+      "title",
+      "TITLE",
+      "title single-wrap",
+      "title single-wrap"
+    ],
+    "internships": [
+      "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+      "Internships",
+      "Internships",
+      "Internships",
+      "Internships by Location"
+    ],
+    "style": [
+      "STYLE",
+      "style",
+      "STYLE",
+      "style",
+      "STYLE"
+    ],
+    "noscript": [
+      "NOSCRIPT",
+      "noscript",
+      "NOSCRIPT",
+      "noscript",
+      "NOSCRIPT"
+    ],
+    "div": [
+      "DIV",
+      "div",
+      "DIV",
+      "div",
+      "DIV"
+    ],
+    ".brz": [
+      ".brz .brz-css-d-sectionpopup2 > .brz-bg > .brz-bg-image{-webkit-mask-image: none;\n                      mask-image: none;}.brz .brz-css-d-sectionpopup2 > .brz-bg > .brz-bg-image{background-image:none;filter:none;}.brz .brz-css-d-sectionpopup2 > .brz-bg > .brz-bg-image:after{content: \"\";background-image:none;}.brz .brz-css-d-sectionpopup2 > .brz-bg > .brz-bg-color, .brz.brz-css-d-sectionpopup2 > .brz-bg > .brz-bg-color{-webkit-mask-image: none;\n                      mask-image: none;}.brz .brz-css-d-sectionpopup2 > .brz-bg > .brz-bg-color, .brz.brz-css-d-sectionpopup2:hover > .brz-bg > .brz-bg-color{background-color:rgba(0, 0, 0, 0);background-image:none;}",
+      ".brz .brz-css-d-sectionpopup2-bg{justify-content:center;align-items:center;}.brz .brz-css-d-sectionpopup2-bg > .brz-container__wrap{width:1170px;}.brz .brz-css-d-sectionpopup2-bg > .brz-container__wrap .brz-popup2__close{display:block;top:-36px;right:-36px;left:auto;bottom:auto;transition-duration:0.50s;}.brz .brz-css-d-sectionpopup2-bg > .brz-container__wrap .brz-popup2__close{color:rgba(255, 255, 255, 1);}.brz .brz-css-d-sectionpopup2-bg > .brz-container__wrap .brz-popup2__close .brz-icon-svg, .brz.brz-css-d-sectionpopup2-bg > .brz-container__wrap .brz-popup2__close .brz-icon-svg{font-size:16px;padding:0px;border-radius:0px;}.brz .brz-css-d-sectionpopup2-bg > .brz-container__wrap .brz-popup2__close .brz-icon-svg, .brz.brz-css-d-sectionpopup2-bg > .brz-container__wrap .brz-popup2__close:hover .brz-icon-svg{background-color:rgba(0, 0, 0, 0);box-shadow:none;}.brz .brz-css-d-sectionpopup2-bg .brz-container > .brz-row__container{min-height: auto;align-items:center;}",
+      ".brz .brz-css-d-row-row{margin:0;z-index: auto;align-items:flex-start;}.brz .brz-css-d-row-row > .brz-bg{border-radius: 0px;max-width:100%;mix-blend-mode:normal;}.brz .brz-css-d-row-row > .brz-bg{border:0px solid rgba(102, 115, 141, 0);box-shadow:none;}.brz .brz-css-d-row-row > .brz-bg > .brz-bg-image{background-size:cover;background-repeat: no-repeat;-webkit-mask-image: none;\n                      mask-image: none;}.brz .brz-css-d-row-row > .brz-bg > .brz-bg-image{background-image:none;filter:none;display:block;}.brz .brz-css-d-row-row > .brz-bg > .brz-bg-image:after{content: \"\";background-image:none;}.brz .brz-css-d-row-row > .brz-bg > .brz-bg-color{-webkit-mask-image: none;\n                      mask-image: none;}.brz .brz-css-d-row-row > .brz-bg > .brz-bg-color{background-color:rgba(0, 0, 0, 0);background-image:none;}.brz .brz-css-d-row-row > .brz-bg > .brz-bg-map{display:none;}.brz .brz-css-d-row-row > .brz-bg > .brz-bg-map{filter:none;}.brz .brz-css-d-row-row > .brz-bg > .brz-bg-video{display:none;}.brz .brz-css-d-row-row > .brz-bg > .brz-bg-video{filter:none;}.brz .brz-css-d-row-row > .brz-row{border:0px solid transparent;}.brz .brz-css-d-row-row > .brz-row, .brz .brz-css-d-row-row > .brz-bg > .brz-bg-video, .brz .brz-css-d-row-row > .brz-bg, .brz .brz-css-d-row-row > .brz-bg > .brz-bg-image, .brz .brz-css-d-row-row > .brz-bg > .brz-bg-color{transition-duration:0.50s;transition-property: filter, box-shadow, background, border-radius, border-color;}@media(min-width:991px){.brz .brz-css-d-row-row{min-height: auto;display:flex;}}@media(max-width:991px) and (min-width:768px){.brz .brz-css-d-row-row > .brz-row{flex-direction:row;flex-wrap:wrap;justify-content:flex-start;}}@media(max-width:991px) and (min-width:768px){.brz .brz-css-d-row-row{min-height: auto;display:flex;}}@media(max-width:767px){.brz .brz-css-d-row-row > .brz-row{flex-direction:row;flex-wrap:wrap;justify-content:flex-start;}}@media(max-width:767px){.brz .brz-css-d-row-row{min-height: auto;display:flex;}}",
+      ".brz .brz-css-d-row-container{padding:10px;max-width:100%;}@media(max-width:991px) and (min-width:768px){.brz .brz-css-d-row-container{padding:0;}}@media(max-width:767px){.brz .brz-css-d-row-container{padding:0;}}",
+      ".brz .brz-css-d-column-column{z-index: auto;flex:1 1 50%;max-width:50%;justify-content:flex-start;max-height:none;}.brz .brz-css-d-column-column .brz-columns__scroll-effect{justify-content:flex-start;}.brz .brz-css-d-column-column > .brz-bg{margin:0;mix-blend-mode:normal;border-radius: 0px;}.brz .brz-css-d-column-column > .brz-bg{border:0px solid rgba(102, 115, 141, 0);box-shadow:none;}.brz .brz-css-d-column-column > .brz-bg > .brz-bg-image{background-size:cover;background-repeat: no-repeat;-webkit-mask-image: none;\n                      mask-image: none;}.brz .brz-css-d-column-column > .brz-bg > .brz-bg-image{background-image:none;filter:none;display:block;}.brz .brz-css-d-column-column > .brz-bg > .brz-bg-image:after{content: \"\";background-image:none;}.brz .brz-css-d-column-column > .brz-bg > .brz-bg-color{-webkit-mask-image: none;\n                      mask-image: none;}.brz .brz-css-d-column-column > .brz-bg > .brz-bg-color{background-color:rgba(0, 0, 0, 0);background-image:none;}.brz .brz-css-d-column-column > .brz-bg > .brz-bg-map{display:none;}.brz .brz-css-d-column-column > .brz-bg > .brz-bg-map{filter:none;}.brz .brz-css-d-column-column > .brz-bg > .brz-bg-video{display:none;}.brz .brz-css-d-column-column > .brz-bg > .brz-bg-video{filter:none;}.brz .brz-css-d-column-column > .brz-bg, .brz .brz-css-d-column-column > .brz-bg > .brz-bg-image, .brz .brz-css-d-column-column > .brz-bg > .brz-bg-color{transition-duration:0.50s;transition-property: filter, box-shadow, background, border-radius, border-color;}@media(max-width:767px){.brz .brz-css-d-column-column{flex:1 1 100%;max-width:100%;}.brz .brz-css-d-column-column > .brz-bg{margin:10px 0px 10px 0px;}}"
+    ],
+    "@media(min-width:991px){.brz": [
+      "@media(min-width:991px){.brz .brz-css-1lq5yeq{padding:10px;max-width:100%;}}",
+      "@media(min-width:991px){.brz .brz-css-1k1sylg:not(.brz-image--hovered){max-width: 100%;}.brz .brz-css-1k1sylg{height: auto;border-radius: 0px;mix-blend-mode:normal;}.brz .brz-css-1k1sylg:hover{box-shadow:none;border:0px solid rgba(102, 115, 141, 0);}.brz .brz-css-1k1sylg .brz-picture:after{border-radius: 0px;}.brz .brz-css-1k1sylg:hover .brz-picture:after{box-shadow:none;background-color:rgba(255, 255, 255, 0);background-image:none;}.brz .brz-css-1k1sylg .brz-picture{-webkit-mask-image: none;\n                      mask-image: none;}.brz .brz-css-1k1sylg:hover .brz-picture{filter:none;}.brz .brz-css-1k1sylg, .brz .brz-css-1k1sylg .brz-picture:after, .brz .brz-css-1k1sylg .brz-picture, .brz .brz-css-1k1sylg.brz-image--withHover img.brz-img, .brz .brz-css-1k1sylg.brz-image--withHover img.dynamic-image, .brz .brz-css-1k1sylg.brz-image--withHover .brz-img__hover{transition-duration:0.50s;transition-property: filter, box-shadow, background, border-radius, border-color;}}",
+      "@media(min-width:991px){.brz .brz-css-125y0pf.brz-hover-animation__container{max-width: 100%;}}",
+      "@media(min-width:991px){.brz .brz-css-qfxfu5{padding-top: 50%;}.brz .brz-css-qfxfu5 > .brz-img{position:absolute;width: 100%;}}",
+      "@media(min-width:991px){.brz .brz-css-q1cw9g{width: 562px;height: 281px;margin-inline-start: 0px;margin-top: 0px;}}"
+    ],
+    "img": [
+      "IMG",
+      "img",
+      "IMG",
+      "img",
+      "IMG"
+    ],
+    "span": [
+      "SPAN",
+      "span",
+      "SPAN",
+      "span",
+      "SPAN"
+    ],
+    "p": [
+      "P",
+      "p",
+      "P",
+      "p",
+      "P"
+    ],
+    "button": [
+      "BUTTON",
+      "button",
+      "BUTTON",
+      "button",
+      "BUTTON"
+    ]
+  },
+  "common_patterns": [
+    [
+      "Jobs in",
+      160
+    ],
+    [
+      "> .brz-bg",
+      126
+    ],
+    [
+      "> .brz-bg >",
+      126
+    ],
+    [
+      ".brz-bg >",
+      126
+    ],
+    [
+      "Work from",
+      86
+    ],
+    [
+      "Home Jobs",
+      84
+    ],
+    [
+      "Work from Home",
+      78
+    ],
+    [
+      "from Home",
+      78
+    ],
+    [
+      "from Home Jobs",
+      78
+    ],
+    [
+      "cursor: pointer;",
+      74
+    ],
+    [
+      "Internship in",
+      72
+    ],
+    [
+      "Home Jobs in",
+      72
+    ],
+    [
+      "Register Now",
+      66
+    ],
+    [
+      "Register Now!",
+      60
+    ],
+    [
+      "Follow on",
+      56
+    ],
+    [
+      "ng-trigger ng-trigger-autoHeight",
+      53
+    ],
+    [
+      "margin-right: 16px;",
+      53
+    ],
+    [
+      "{ font-family:",
+      52
+    ],
+    [
+      "400, \"wdth\"",
+      49
+    ],
+    [
+      "400, \"wdth\" 100,",
+      49
+    ],
+    [
+      "\"wdth\" 100,",
+      49
+    ],
+    [
+      "\"wdth\" 100, \"SOFT\"",
+      49
+    ],
+    [
+      "100, \"SOFT\"",
+      49
+    ],
+    [
+      "and (max-width:",
+      47
+    ],
+    [
+      "screen and",
+      43
+    ],
+    [
+      "and (min-width:",
+      43
+    ],
+    [
+      "ng-tns-c1392897182-1 ng-star-inserted",
+      41
+    ],
+    [
+      "> .brz-container__wrap",
+      38
+    ],
+    [
+      ".brz-css-d-row-row >",
+      38
+    ],
+    [
+      "ng-trigger ng-trigger-autoHeight ng-star-inserted",
+      37
+    ],
+    [
+      "ng-trigger-autoHeight ng-star-inserted",
+      37
+    ],
+    [
+      "only screen",
+      36
+    ],
+    [
+      "only screen and",
+      36
+    ],
+    [
+      "{ font-family: 'Montserrat',",
+      36
+    ],
+    [
+      "font-family: 'Montserrat',",
+      36
+    ],
+    [
+      "font-family: 'Montserrat', sans-serif;font-size:",
+      36
+    ],
+    [
+      "'Montserrat', sans-serif;font-size:",
+      36
+    ],
+    [
+      "Unstop Campus",
+      35
+    ],
+    [
+      "menu-icon ng-star-inserted",
+      35
+    ],
+    [
+      "align-center gap6",
+      35
+    ],
+    [
+      "} @media",
+      32
+    ],
+    [
+      "} @media (max-width:",
+      32
+    ],
+    [
+      "@media (max-width:",
+      32
+    ],
+    [
+      "Mock Tests",
+      32
+    ],
+    [
+      "menu-item ng-star-inserted",
+      32
+    ],
+    [
+      "align-center gap6 ng-star-inserted",
+      32
+    ],
+    [
+      "gap6 ng-star-inserted",
+      32
+    ],
+    [
+      "Challenge 2026",
+      32
+    ],
+    [
+      "Join our",
+      32
+    ],
+    [
+      "Join our Exclusive",
+      32
+    ]
+  ],
+  "top_keys": [
+    [
+      "value",
+      13737
+    ],
+    [
+      "type",
+      10298
+    ],
+    [
+      "name",
+      6990
+    ],
+    [
+      "backendNodeId",
+      6895
+    ],
+    [
+      "nodeType",
+      6895
+    ],
+    [
+      "nodeName",
+      6895
+    ],
+    [
+      "nodeValue",
+      6895
+    ],
+    [
+      "nodeId",
+      5417
+    ],
+    [
+      "parentId",
+      5364
+    ],
+    [
+      "localName",
+      3336
+    ],
+    [
+      "attributes",
+      3086
+    ],
+    [
+      "ignored",
+      2081
+    ],
+    [
+      "role",
+      2081
+    ],
+    [
+      "chromeRole",
+      2081
+    ],
+    [
+      "childIds",
+      2081
+    ],
+    [
+      "attribute",
+      1972
+    ],
+    [
+      "properties",
+      1656
+    ],
+    [
+      "childNodeCount",
+      1607
+    ],
+    [
+      "layoutNodeIndex",
+      1599
+    ],
+    [
+      "children",
+      1558
+    ]
+  ],
+  "timestamp": "2026-07-30T20:00:01.765158",
+  "no_assumptions": true
+}

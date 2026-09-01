@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "session_id": "20260803_120425",
+    "start_time": "2026-08-03T12:04:25.420422",
+    "end_time": "2026-08-03T13:11:22.597170",
+    "chrome_port": 9258,
+    "tab_url": "https://unstop.com/",
+    "tab_title": "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+    "total_commands": 0,
+    "snapshots_taken": [],
+    "files_generated": {}
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 0,
+  "last_updated": "2026-08-03T13:11:22.618283"
+}

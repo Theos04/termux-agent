@@ -1,0 +1,101 @@
+{
+  "vulnerabilities": [
+    {
+      "type": "Potentially Dangerous Script",
+      "location": "inline script",
+      "severity": "MEDIUM"
+    }
+  ],
+  "forms": [],
+  "scripts": [
+    {
+      "src": "inline",
+      "content_length": 230
+    },
+    {
+      "src": "inline",
+      "content_length": 1179
+    },
+    {
+      "src": "inline",
+      "content_length": 548
+    },
+    {
+      "src": "inline",
+      "content_length": 334
+    },
+    {
+      "src": "inline",
+      "content_length": 435
+    },
+    {
+      "src": "inline",
+      "content_length": 853
+    },
+    {
+      "src": "inline",
+      "content_length": 372
+    },
+    {
+      "src": "inline",
+      "content_length": 1239
+    },
+    {
+      "src": "inline",
+      "content_length": 475
+    },
+    {
+      "src": "inline",
+      "content_length": 1027
+    }
+  ],
+  "urls": [
+    "https://www.naukri.com/companies-hiring-in-india?src=gnbCompanies_homepage_srch",
+    "https://www.naukri.com/unicorn-companies-in-india-cat102?title=Unicorns%20actively%20hiring&src=gnbCompanies_homepage_srch",
+    "https://www.naukri.com/mnc-companies-in-india-cat101?title=MNCs%20actively%20hiring&src=gnbCompanies_homepage_srch",
+    "https://www.naukri.com/startup-companies-in-india-cat103?title=Startups%20actively%20hiring&src=gnbCompanies_homepage_srch",
+    "https://www.naukri.com/product-companies-in-india-cat106?title=Product%20companies%20actively%20hiring&src=gnbCompanies_homepage_srch",
+    "https://www.naukri.com/internet-companies-in-india-cat105?title=Internet%20companies%20actively%20hiring&src=gnbCompanies_homepage_srch",
+    "https://www.naukri.com/companies-hiring-in-india?src=gnbCompanies_homepage_srch",
+    "https://www.naukri.com/it-companies-in-india-cat116?src=gnbCompanies_homepage_srch&title=IT%20Companies%20Hiring",
+    "https://www.naukri.com/fintech-and-payments-companies-in-india-cat108?title=Fintech%20%26%20Payments%20companies%20actively%20hiring&src=gnbCompanies_homepage_srch",
+    "https://www.naukri.com/allcompanies?searchType=standardLogo&title=Sponsored+companies&branding=%257B%2522pagename%2522%253A%2522ni-desktop-standard-viewAll%2522%257D&pageNo=1&qcount=47&src=gnbCompanies_homepage_srch",
+    "https://www.naukri.com/allcompanies?searchType=premiumLogo&title=Featured+companies+actively+hiring&branding=%257B%2522pagename%2522%253A%2522ni-desktop-premium-viewAll%2522%257D&pageNo=1&qcount=47&src=gnbCompanies_homepage_srch",
+    "https://www.ambitionbox.com/interviews?utm_source=naukri&utm_medium=desktop&utm_campaign=gnb",
+    "https://www.ambitionbox.com/salaries?utm_source=naukri&utm_medium=desktop&utm_campaign=gnb",
+    "https://www.ambitionbox.com/reviews?utm_source=naukri&utm_medium=desktop&utm_campaign=gnb",
+    "https://www.ambitionbox.com/salaries/take-home-salary-calculator?utm_campaign=gnb&utm_source=naukri&utm_medium=desktop",
+    "https://resume.naukri.com/?fftid=100001",
+    "https://resume.naukri.com/resume-writing-services?fftid=101001",
+    "https://resume.naukri.com/visual-resume-writing-services?fftid=101002",
+    "https://resume.naukri.com/resume-critique?fftid=101006",
+    "https://resume.naukri.com/job-alerts-on-mobile-mail?fftid=101011#jobmail",
+    "https://resume.naukri.com/priority-job-application?fftid=101019",
+    "https://resume.naukri.com/contact-us?fftid=101015",
+    "https://resume.naukri.com/resume-display?fftid=101009",
+    "https://resume.naukri.com/subscription-product?fftid=101025",
+    "https://www.naukri.com/resume-maker?utmTerm=ResumePro_Gnb&utmContent=gnbServices",
+    "https://resume.naukri.com/resume-quality-score?fftid=101003",
+    "https://resume.naukri.com/resume-samples?fftid=101004",
+    "https://resume.naukri.com/resume-display?fftid=notf_nauk_promo_rd",
+    "https://www.naukri.com/job-apply-agent?utmTerm=JobAgent_gnb&utmContent=gnbV1",
+    "https://www.naukri.com/naukri360-pro?utm_term=N360Pro_gnb&utm_content=gnbV1",
+    "https://www.naukri.com/resume-maker?utm_term=ResumePro_gnb&utm_content=gnbV1",
+    "https://www.naukri.com/resume-writing-service?utmTerm=resume_gnb&utmContent=gnbV1",
+    "https://www.naukri.com/mock-interview-questions?skipRole=true&utmTerm=InterviewPro_gnb&utmContent=gnbV1",
+    "https://www.ambitionbox.com/reviews/apollo-hospitals-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe",
+    "https://my.naukri.com/faq/faq.php?pgid=9",
+    "https://www.naukri.com/faq/job-seeker?utm_source=footer",
+    "https://w5.naukri.com/fdbck/main/feedback.php?app_id=15",
+    "https://play.google.com/store/apps/details?id=naukriApp.appModules.login&hl=en&utm_source=naukri&utm_medium=footer",
+    "https://itunes.apple.com/in/app/naukri.com-job-search/id482877505?mt=8",
+    "https://www.codingninjas.com/?utm_source=naukri&utm_medium=desktop-footer"
+  ],
+  "summary": {
+    "total_forms": 0,
+    "total_scripts": 39,
+    "total_links": 75,
+    "vulnerabilities_found": 1,
+    "risk_level": "HIGH"
+  }
+}

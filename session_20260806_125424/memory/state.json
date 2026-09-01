@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "session_id": "20260806_125424",
+    "start_time": "2026-08-06T12:54:24.047258",
+    "end_time": null,
+    "chrome_port": 9264,
+    "tab_url": "https://www.agoda.com/book/?masterRoomTypeId=3168255&roomToken=8b%3A0;c%3A1D1N_1N;cid%3A-1;dmc%3A0;dmcid%3A332;h%3A178188;o%3A2;p%3A0;pu%3A0;pm%3A1;r%3A3168255;rp%3A241;rc%3A957756;rid%3A0;uid%3Ab69ece2f-61e2-db7d-17e8-95c813500dc3;mc%3A0;mo%3A2;eb%3A0;mri%3A3168255;bor%3A0;dtr%3A0;fsc%3A1;rft%3A2;avr%3A18;ri%3AChwI%2Ft%2BCAxACIOIDKPj0dDAESgcxRDFOXzFOUJgFEgYIASICBGwaBhACKAQwASIECAQYAg%3D%3D;ec%3A0;thgc%3A0;sai%3A9213.37;rcy%3AINR&roomId=3168255&roomName=Luxury%20Room&isBOR=false&isBookNowPayLater=false&isNoCcRequired=false&isEasyCancel=false&isBreakfastIncluded=false&campaignCid=&campaignId=&promotionCode=&campaignName=&autoApplied=&campaignType=&secdat=mW3RQTQJhUJh5hpAzw7OyvDbv8K6DXqB9SiT3O%252F8n9qVjCfcuYV5Eo04UBNye5dRF5Ra%252FM2cff149HhqYrWIFJskIBdFT%252FzDITaS%252BBiD7kaXrm%252FVaZ9c7OPJ7rRXaZMN7IVNBHpv%252Bvhpke5a24OoIYLDb9XlBUuowscN%252B5JoMXuuGaH%252FvsA%252BwrTvU%252F%252FejpnkVTl3ePJxNk28oOsAOcb%252BwiTZlD4CO9flEi7%252BEpqsyLM%253D&cnIcp=0&cnty=35&v=29&ori=IN&finc=false&siteId=-1&dclid=-1&gclid=-1&ame=&aso=&aca=&aco=&ate=&r0=RO6h4jH1nc3XAeX1KDGIo7nNU6nJiMXFrUA81GF%252FtguTQrWmgcg7oBAwEzWqP4rLwAbpbnTuTH3s1Fi12zUvPOCAbqDMGtKJptzmtGlQ%252BZGp%252FG8nqiGSl1XdZZB%252BR8Qh43lZU3fp%252BYDiFX%252FCxlZuBylXazlzdNCkGWLRt4vmSz3MYkMdPgUPU%252F6bPHZf5j2RBhLfp3CP7cMh%252BQEJ4TbIbv%252FhIbPhCqEkEzQiYW99x1y5Doc%252B1XfMwpaNuT4JMrq%252BSyABViN0RKnQRgBuG9NjwBbT2NH6GINAePyqYQF7mOc%253D&nr0=1&xbr0=&sarg=wkrzR25HR8AvuqBZhjHV1cxnQ6IjbQfue66cnUnS9MG%252BO8QBJ0Wi8vXbhRGWivW4t%252F9kwBUY8wkZ9WT%252FxgOul6i5jSl%252BspfbsYWvaqr3dKZ0s5zqeIZlVcuW7qVJDuDiJ3G8VQVb4vKUO%252BI7VMnNneuKsAqNqwvO9pj6D3PPVJLjCnHvPTMTlXa%252FCRcSJ%252BkuqIqSqQtEgOGkUmecTZ13Xe7GSO%252BlnAOULlR96E2OjQ4W09jR%252BhiDQHj8qmEBe5jn",
+    "tab_title": "Don&#39;t forget your booking",
+    "total_commands": 6,
+    "snapshots_taken": [],
+    "files_generated": {}
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 6,
+  "last_updated": "2026-08-06T12:57:05.128777"
+}

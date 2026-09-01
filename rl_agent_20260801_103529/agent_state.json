@@ -1,0 +1,15 @@
+{
+  "cycle": 5,
+  "q_agent_stats": {
+    "total_actions": 5,
+    "state_count": 2,
+    "total_q_values": 18,
+    "exploration_rate": 0.29257462593656247,
+    "learning_rate": 0.1,
+    "experience_buffer_size": 5,
+    "is_converged": false
+  },
+  "episodes": 5,
+  "timestamp": "2026-08-01T10:35:58.166452",
+  "is_converged": false
+}

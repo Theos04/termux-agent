@@ -1,0 +1,1612 @@
+{
+  "metadata": {
+    "session_id": "20260802_155752",
+    "timestamp": "2026-08-02T15:58:41.745262",
+    "tab_url": "https://www.naukri.com/mnjuser/recommendedjobs",
+    "tab_title": "Recommended Jobs | Mynaukri",
+    "context": {
+      "type": "script_execution"
+    },
+    "interaction_number": 1,
+    "command_index": 2
+  },
+  "data": {
+    "script_file": "/data/data/com.termux/files/home/automation/chrome-launcher/scripts-library/naukari/jobs_url_1.js",
+    "script_content": "// Save as: /data/data/com.termux/files/home/automation/chrome-launcher/scripts-library/naukri/extract_jobs_cleaned.js\n\n(() => {\n    'use strict';\n    \n    const jobCards = document.querySelectorAll('[data-job-id]');\n    \n    if (!jobCards.length) {\n        return {\n            success: false,\n            error: 'No job cards found',\n            timestamp: new Date().toISOString()\n        };\n    }\n    \n    const jobs = Array.from(jobCards).map((card, index) => {\n        // Helper to clean text\n ...",
+    "result": {
+      "success": true,
+      "stats": {
+        "totalJobs": 75,
+        "withCompany": 75,
+        "withSalary": 23,
+        "withLocation": 75,
+        "withSkills": 0,
+        "uniqueCompanies": 75,
+        "averageSkills": 0
+      },
+      "topCompanies": [
+        {
+          "name": "Virtusa",
+          "count": 1
+        },
+        {
+          "name": "IT Services & Consulting",
+          "count": 1
+        },
+        {
+          "name": "Info Edge",
+          "count": 1
+        },
+        {
+          "name": "Tata Consultancy Services",
+          "count": 1
+        },
+        {
+          "name": "Returnonweb Consulting Services",
+          "count": 1
+        },
+        {
+          "name": "THERMAX",
+          "count": 1
+        },
+        {
+          "name": "Peoplefy Infosolutions",
+          "count": 1
+        },
+        {
+          "name": "KPIT",
+          "count": 1
+        },
+        {
+          "name": "Talent Corner HR Services",
+          "count": 1
+        },
+        {
+          "name": "BriskWin IT (BWIT)",
+          "count": 1
+        }
+      ],
+      "jobs": [
+        {
+          "index": 1,
+          "jobId": "260726002733",
+          "title": "Python AIML",
+          "company": "Virtusa",
+          "location": "Pune, Chennai",
+          "salary": "Not disclosed",
+          "experience": "6-10 Yrs",
+          "rating": "",
+          "reviews": "6298 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "6298 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/virtusa-consulting-services-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Python AIMLVirtusa3.76298 Reviews6-10 YrsNot disclosedPune, ChennaiExperience working with big data technologies like Hadoop / Hive/Pig / Sqoop/Impala / Redshift/Snowflake etc. Bachelors degree in Computer Science or related fieldStrong proficiency in Python development with knowledge of popular libraries such as...PythonPysparkgenerative aiArtificial IntelligenceAimlBig DataGEN AIMLPython Development7 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 2,
+          "jobId": "280726033125",
+          "title": "AI/ML Lead | IT Industry | PUNE",
+          "company": "IT Services & Consulting",
+          "location": "Hybrid - Pune",
+          "salary": "15-20 Lacs PA",
+          "experience": "5-7 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "AI/ML Lead | IT Industry | PUNEIT Services & ConsultingPosted by GenNext India Private Limited5-7 Yrs15-20 Lacs PAHybrid - Pune5 7 years of experience in Python, Machine Learning, Deep Learning, TensorFlow / PyTorch, Computer Vision, and CNNTensorflowPytorchMachine LearningDeep LearningPythonCNNOpencvGCP4 Days AgosaveHide",
+          "salaryRange": "15-20 Lacs PA"
+        },
+        {
+          "index": 3,
+          "jobId": "310726025825",
+          "title": "Lead Engineer - AI/ML",
+          "company": "Info Edge",
+          "location": "Noida",
+          "salary": "Not disclosed",
+          "experience": "4-6 Yrs",
+          "rating": "",
+          "reviews": "2443 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "2443 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/info-edge-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Lead Engineer - AI/MLInfo Edge3.82443 Reviews4-6 YrsNot disclosedNoidaWhat you will do\u2022 Improve the quality of search results, so that the most relevant jobs appear at the top.\u2022 Work out what a user actually means when they type a search \u2014 the role, the locality, the experience level, the pay they expect \u2014 even when...generative aiMachine LearningPythonAgentic AiSolrLearning to RankOpensearchProduction ML Models1 Day AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 4,
+          "jobId": "290726006004",
+          "title": "Gen AI Engineer",
+          "company": "Tata Consultancy Services",
+          "location": "Kochi, Gurugram, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "6-11 Yrs",
+          "rating": "",
+          "reviews": "117634 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "117634 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/tcs-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Gen AI EngineerTata Consultancy Services3.3117634 Reviews6-11 YrsNot disclosedKochi, Gurugram, BengaluruGen AI Expertise Deep knowledge of Generative AI (pure Gen AI, no ML required) Application Types Experience with both SDLC tools and business solutions Authentication Experience with authentication mechanisms and protocolsArtificial IntelligenceStatistical ModelingData AnalyticsMachine LearningPredictive AnalyticsPythonModelingIntelligence4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 5,
+          "jobId": "290726012379",
+          "title": "Artificial Intelligence Engineer + Product Manager",
+          "company": "Returnonweb Consulting Services",
+          "location": "Pune(Baner)",
+          "salary": "5-12 Lacs PA",
+          "experience": "5-8 Yrs",
+          "rating": "",
+          "reviews": "33 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "33 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/returnonweb-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Artificial Intelligence Engineer + Product ManagerReturnonweb Consulting Services4.133 Reviews5-8 Yrs5-12 Lacs PAPune(Baner)We're hiring an AI Developer to build AI solutions from scratch. The role includes developing and managing AI products, understanding client requirements, leading a team, and delivering scalable solutions that meet business needs and drive results.Project ManagementAi BuilderMachine LearningData ScienceProduct DevelopmentProduct ManagementLarge Language ModelArtificial Inte",
+          "salaryRange": "5-12 Lacs PA"
+        },
+        {
+          "index": 6,
+          "jobId": "280726012860",
+          "title": "GenAI Architect",
+          "company": "THERMAX",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "6-11 Yrs",
+          "rating": "",
+          "reviews": "4441 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "4441 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/thermax-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "GenAI ArchitectTHERMAX4.24441 Reviews6-11 YrsNot disclosedPuneThis is a hands-on role: you will not only define standards and patterns, but also build reference implementations, prototypes, and production-ready components alongside engineering teamsProgramming: Python (required) 10+ years of total experience...Enterprise ArchitectureAi SolutionsGenerative Ai ToolsRetrieval Augmented GenerationAi PlatformOpensource AutomationLangchainArtificial Intelligence4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 7,
+          "jobId": "280726005343",
+          "title": "Data Scientist - IV - AI/ML Ops Engineer",
+          "company": "Peoplefy Infosolutions",
+          "location": "Hybrid - Pune(Hinjewadi Phase 2)",
+          "salary": "Not disclosed",
+          "experience": "5-9 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Data Scientist - IV - AI/ML Ops EngineerPeoplefy InfosolutionsPosted by Peoplefy Infosolutions5-9 YrsNot disclosedHybrid - Pune(Hinjewadi Phase 2)Preferred candidate profile . MLOps and AI platform exposure (model deployment / monitoring, tools like SageMaker, Vertex AI, MLflow)AI PlatformData ScienceMLOpsUnixtracesanomaly detectionBashData & AI basics5 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 8,
+          "jobId": "040626033481",
+          "title": "AI Tech Lead",
+          "company": "KPIT",
+          "location": "Hybrid - Pune",
+          "salary": "Not disclosed",
+          "experience": "4-8 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "AI Tech LeadKPITPosted by BharatHire.Com Private Limited4-8 YrsNot disclosedHybrid - PuneAI Technical Lead with expertise in Python, Multi-Agent Systems, RAG, MCP, LLM Fine-Tuning, LangChain, LangGraph, Context Engineering, Neo4j, Azure AI, and enterprise GenAI solutions.Hiring AI Technical Lead (4\u20137 Yrs) for Pune. Strong exp in Pytho...AI Technical LeadRAGAzure AIVector DBLLM Fine-TuningHuggingFacePEFTLangChain4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 9,
+          "jobId": "290726005085",
+          "title": "Ai Ml Engineer",
+          "company": "Talent Corner HR Services",
+          "location": "Pune",
+          "salary": "12-15 Lacs PA",
+          "experience": "5-7 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Ai Ml EngineerTalent Corner HR ServicesPosted by Talent Corner Hr Services5-7 Yrs12-15 Lacs PAPuneRole & responsibilities We are seeking an experienced AI/ML Engineer to design, develop, and integrate intelligent AI solutions across our platform. The ideal candidate will work on cutting-edge AI initiatives, including model experimentation, fin...Artificial IntelligenceNatural Language ProcessingMachine LearningVertex AiPythonTensorflowRestfull APILangchain4 Days AgosaveHide",
+          "salaryRange": "12-15 Lacs PA"
+        },
+        {
+          "index": 10,
+          "jobId": "280726035634",
+          "title": "Gen AI Developer",
+          "company": "BriskWin IT (BWIT)",
+          "location": "Hybrid - Pune",
+          "salary": "Not disclosed",
+          "experience": "4-9 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Gen AI DeveloperBriskWin IT (BWIT)Posted by BriskWin IT (BWIT)4-9 YrsNot disclosedHybrid - PuneThe candidate must have hands-on exposure to Agentic AI and Multi-Agent Systems.Experience working in multi-cloud environments is required, with proficiency in at least two of the following platforms: Azure, AWS, Databricks, and GCP Experience: 4 ...Agentic AIGen AIMulti AgentGen AI DeveloperGenDevelopmentArtificial Intelligence4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 11,
+          "jobId": "270726006760",
+          "title": "Agentic AI Developer - Senior Consultant",
+          "company": "Deloitte US-India Offices",
+          "location": "Pune, Hyderabad, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "6-9 Yrs",
+          "rating": "",
+          "reviews": "24219 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "24219 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/deloitte-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Agentic AI Developer - Senior ConsultantDeloitte US-India Offices3.624219 Reviews6-9 YrsNot disclosedPune, Hyderabad, BengaluruSuperior client communication and stakeholder management skills. Good to Have Skills / Project Experience / Certifications Bachelor s or Master s degree in Computer Science, Engineering, or closely aligned technical discipline (BE, BTech, MCA) 6-9...Agentic Aigenerative aiLarge Language ModelSoftware EngineeringArtificial IntelligenceLanggraphArchitectureGithub Copilot6 ",
+          "salaryRange": null
+        },
+        {
+          "index": 12,
+          "jobId": "290726015492",
+          "title": "Senior Applied AI Engineer",
+          "company": "phData",
+          "location": "Remote",
+          "salary": "Not disclosed",
+          "experience": "4-7 Yrs",
+          "rating": "",
+          "reviews": "55 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "55 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/phdata-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Senior Applied AI EngineerphData4.055 Reviews4-7 YrsNot disclosedRemoteExperience designing evaluation, guardrail, and observability strategics for LLM and agent systems (LLMOps / AgentOps) . Hands-on experience in modern programming languages, such as Python, including developing APIs . Experience . 4+ years of expe...Agentic AiLarge Language ModelArtificial IntelligenceRetrieval Augmented GenerationMachine LearningCloudInfrastructureDeployment4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 13,
+          "jobId": "280726020846",
+          "title": "Python Gen AI Developer",
+          "company": "People Prime Worldwide",
+          "location": "Pune, Chennai",
+          "salary": "20-27.5 Lacs PA",
+          "experience": "6-10 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Python Gen AI DeveloperPeople Prime WorldwidePosted by People Prime Worldwide6-10 Yrs20-27.5 Lacs PAPune, ChennaiThe ideal candidate will have strong expertise in AI / ML, data engineering, and system architecture, with experience building scalable, production-ready AI solutions. Required Skills . PythonExperience: 610+ Years Good to Have Skills . FastAPI / ...generative aiPythonPandasAimlnumpyPython DevelopmentMachine LearningArtificial Intelligence5 Days AgosaveHide",
+          "salaryRange": "20-27.5 Lacs PA"
+        },
+        {
+          "index": 14,
+          "jobId": "280726035412",
+          "title": "Area Head || Health Insurance || Agency Channel",
+          "company": "Policybazaar",
+          "location": "Hybrid - New Delhi",
+          "salary": "7-10 Lacs PA",
+          "experience": "4-9 Yrs",
+          "rating": "",
+          "reviews": "6371 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "6371 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/policybazaar-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Area Head || Health Insurance || Agency ChannelPolicybazaar3.76371 Reviews4-9 Yrs7-10 Lacs PAHybrid - New DelhiThe selected candidate will be responsible for coaching, mentoring, and handholding newly hired RMs (freshers), enabling them to build a strong insurance agency network and achieve business targets.This is a 100% field-based, travel-intensive role...Team HandlingAgency ChannelHealth InsuranceTeam LeadingVehicle InsuranceSales CoachingSalesCoaching4 Days AgosaveHide",
+          "salaryRange": "7-10 Lacs PA"
+        },
+        {
+          "index": 15,
+          "jobId": "280726022164",
+          "title": "Area Sales Manager - Agency Motor",
+          "company": "Tata AIG General Insurance Company",
+          "location": "New Delhi(Kirti Nagar)",
+          "salary": "6.5-11 Lacs PA",
+          "experience": "6-11 Yrs",
+          "rating": "",
+          "reviews": "3363 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "3363 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/tata-aig-general-insurance-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Area Sales Manager - Agency MotorTata AIG General Insurance Company 4.03363 Reviews6-11 Yrs6.5-11 Lacs PANew Delhi(Kirti Nagar)Area Sales Manager - Agency MotorRoles and responsibilities:Drive business through existing channel partners Review business performance on a timely basis to ensure alignment of business with the annual targets and take corrective actions if requi...Team HandlingAgency ChannelMotor InsuranceAgency salesAgencyManagementSalesMotors4 Days AgosaveHide",
+          "salaryRange": "6.5-11 Lacs PA"
+        },
+        {
+          "index": 16,
+          "jobId": "300726018748",
+          "title": "GEN AI Data Scientist",
+          "company": "US MNC (analytics)",
+          "location": "Hybrid - Gurugram, Bengaluru",
+          "salary": "20-35 Lacs PA",
+          "experience": "3-8 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "GEN AI Data ScientistUS MNC (analytics)Posted by Aspyra Hr Services3-8 Yrs20-35 Lacs PAHybrid - Gurugram, BengaluruEnsure model performance, scalability, and responsible AI practices. . Desired Candidate Profile . 3+ years of experience in Artificial Intelligence Engineering or a related fieldExperience working with Large Language Models like GEN AI or similar...LangchainArtificial IntelligenceLarge Language ModelRetrieval Augmented GenerationPythonNatural Language ProcessingRisk ModelingMachine",
+          "salaryRange": "20-35 Lacs PA"
+        },
+        {
+          "index": 17,
+          "jobId": "310726010226",
+          "title": "Senior Software Engineer - AI",
+          "company": "Futops",
+          "location": "Hybrid - Gurugram",
+          "salary": "Not disclosed",
+          "experience": "4-6 Yrs",
+          "rating": "",
+          "reviews": "32 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "32 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/futops-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Senior Software Engineer - AIFutops4.032 Reviews4-6 YrsNot disclosedHybrid - GurugramHiring for our esteemed clientWhat you will do (Immediate Joiners only)We are seeking a highly skilled Machine Learning Engineer to design, develop and deploy machine learning models and AI-driven solutions. You will work closely with clients, sof...generative aiAgentic AiRetrieval Augmented GenerationLLMPythonSoftwareArtificial IntelligenceGeneration2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 18,
+          "jobId": "310726018709",
+          "title": "Data Entry Specialist",
+          "company": "Programmers io",
+          "location": "Remote",
+          "salary": "Not disclosed",
+          "experience": "3-6 Yrs",
+          "rating": "",
+          "reviews": "246 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "246 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/programmers-dot-io-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Data Entry SpecialistProgrammers io3.9246 Reviews3-6 YrsNot disclosedRemoteAbility to work independently during US shift hoursRequired Skills. 35 years of experience in Data Entry, Data Processing, Back Office Operations, or similar rolesGood written and verbal English communication skillsData EntryData Entry OperationTypingBack Office ProcessingData ProcessingOfficeOperationsProcessing2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 19,
+          "jobId": "030626026287",
+          "title": "Python Developer",
+          "company": "Black and white Business Solutions",
+          "location": "Pune, Hyderabad, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "4-9 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Python DeveloperBlack and white Business SolutionsPosted by Black And White Business Solutions4-9 YrsNot disclosedPune, Hyderabad, BengaluruHIRING FOR ONE OF THE TOP REPUTED MNC'S!Python DeveloperJob Title: Python DeveloperExperience: 4 to 10 YearsLocation: Bangalore / Pune / HyderabadNotice Period: Immediate Joiners to 30 DaysEducation: Any UG(Full-Time) / PG DegreeJob SummaryWe are ...Django FrameworkNumpyPythonPandasSQLDjangoFrameworkPython Development1 Day AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 20,
+          "jobId": "300726023158",
+          "title": "Artificial Intelligence Engineer",
+          "company": "Koantek",
+          "location": "Navi Mumbai, Gurugram, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "6-10 Yrs",
+          "rating": "",
+          "reviews": "71 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "71 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/koantek-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Artificial Intelligence EngineerKoantek2.971 Reviews6-10 YrsNot disclosedNavi Mumbai, Gurugram, BengaluruWe are looking for 6+ years of hands-on experience in Generative AI, Data Science, Machine Learning, and MLOps in Hyderabad, Bangalore, Navi Mumbai and GurgaonExperience: 6+ years of hands-on experience in Data Science, Machine Learning, Gen AI, a...Data ScienceGen AIML OpsMachine LearningData BricksTensorflowNatural Language ProcessingAiml3 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 21,
+          "jobId": "310726022595",
+          "title": "GCP GenAI Engineer",
+          "company": "Impetus Technologies",
+          "location": "Hybrid - Delhi / NCR, Chennai, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "4-9 Yrs",
+          "rating": "",
+          "reviews": "710 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "710 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/impetus-technologies-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "GCP GenAI EngineerImpetus Technologies3.2710 Reviews4-9 YrsNot disclosedHybrid - Delhi / NCR, Chennai, BengaluruJob DescriptionWe are seeking a talented and passionate GenAI Developer with strong expertise in Google Cloud Platform (GCP) and Python to design, develop, and deploy cutting-edge generative AI solutions. The ideal candidate will be instrumental i...generative aiBigqueryLLMGCPRAGGKEGenAIAPI Integration1 Day AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 22,
+          "jobId": "010826005217",
+          "title": "Artificial Intelligence Engineer",
+          "company": "Evoke HR solution",
+          "location": "Pune",
+          "salary": "8-13 Lacs PA",
+          "experience": "4-7 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Artificial Intelligence EngineerEvoke HR solutionPosted by Evoke HR4-7 Yrs8-13 Lacs PAPuneThe ideal candidate should have hands-on experience with LLMs, LangChain, LangGraph, and Databricks AI Suite to develop scalable Generative AI solutions. . Key Responsibilities Required Skillsgenerative aiData BricksClaude AILangchainLanggraphAI AgentsMLflowAzure OpenAI1 Day AgosaveHide",
+          "salaryRange": "8-13 Lacs PA"
+        },
+        {
+          "index": 23,
+          "jobId": "290726026920",
+          "title": "Team Lead",
+          "company": "Krezig Consultants",
+          "location": "Noida",
+          "salary": "8.5-10 Lacs PA",
+          "experience": "2-6 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Team LeadKrezig ConsultantsPosted by Krezig Consultants2-6 Yrs8.5-10 Lacs PANoidaAge: 35 years maximum Work with a leading EdTech brand >EdTech / B2C Sales experience preferredteam leadTarget AchievementTeam ManagementTeam Handlingsales team leadEducational SalesEdtech SalesTeam Building3 Days AgosaveHide",
+          "salaryRange": "8.5-10 Lacs PA"
+        },
+        {
+          "index": 24,
+          "jobId": "270726028965",
+          "title": "Premia Relationship Manager-Rohini",
+          "company": "Yes Bank",
+          "location": "New Delhi",
+          "salary": "Not disclosed",
+          "experience": "4-9 Yrs",
+          "rating": "",
+          "reviews": "10565 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "10565 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/yes-bank-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Premia Relationship Manager-RohiniYes Bank3.710565 Reviews4-9 YrsNot disclosedNew DelhiBachelor s degree SECTION III: KNOWLEDGE & EXPERIENCE Minimum Qualifications Master s degree is preferred Years of Experience A minimum of 4 years of relevant experience with at least 2 years in a similar role . .HNI Client HandlingWealth ManagementPortfolio ManagementMutual FundsPrivate BankingUltra HNIPriority BankingHNI AcquisitionPrefers women+15 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 25,
+          "jobId": "280726030342",
+          "title": "Affluent Relationship Manager || Delhi Location",
+          "company": "Kotak Mahindra Bank",
+          "location": "New Delhi, Delhi / NCR",
+          "salary": "9-18 Lacs PA",
+          "experience": "4-9 Yrs",
+          "rating": "",
+          "reviews": "23211 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "23211 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/kotak-mahindra-bank-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Affluent Relationship Manager || Delhi LocationKotak Mahindra Bank3.623211 Reviews4-9 Yrs9-18 Lacs PANew Delhi, Delhi / NCRLocation: Delhi. Employment: Full Time . Graduate/ Postgraduate Preferred candidate profile MBA / PGDM (Preferred)At least 4 years of experience managing HNI clients is requiredGood Communication Skills RequiredPortfolio ManagementHNI Client HandlingSaving AccountWealth ManagementHNI AcquisitionCurrent AccountManagementClient4 Days AgosaveHide",
+          "salaryRange": "9-18 Lacs PA"
+        },
+        {
+          "index": 26,
+          "jobId": "280726921115",
+          "title": "Team Leader NCR - O&G Adjacent -3",
+          "company": "Paytm",
+          "location": "Noida",
+          "salary": "Not disclosed",
+          "experience": "1-6 Yrs",
+          "rating": "",
+          "reviews": "9606 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "9606 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/paytm-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Team Leader NCR - O&G Adjacent -3Paytm3.29606 Reviews1-6 YrsNot disclosedNoidaSeek references of other good merchants from the converted clients . Willingness to experiment and improve continuously Education: Applicants must possess bachelors degree or aboveb2bmobile paymentscold callingbrand ambassadormerchant onboardinguser experiencefinancial servicesretail4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 27,
+          "jobId": "310726022957",
+          "title": "Coforge Hiring | Python GenAI / Agentic AI Engineer | Pune|Hyd|Noida",
+          "company": "Coforge",
+          "location": "Pune, Hyderabad, Bengaluru",
+          "salary": "15-30 Lacs PA",
+          "experience": "3-6 Yrs",
+          "rating": "",
+          "reviews": "9177 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "9177 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/coforge-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Coforge Hiring | Python GenAI / Agentic AI Engineer | Pune|Hyd|NoidaCoforge3.39177 Reviews3-6 Yrs15-30 Lacs PAPune, Hyderabad, BengaluruKey Skills Required: . Python Development Experience: 5-10 YearsGEN AIpythonAGENTIC AIHiringGenArtificial Intelligence1 Day AgosaveHide",
+          "salaryRange": "15-30 Lacs PA"
+        },
+        {
+          "index": 28,
+          "jobId": "270726018378",
+          "title": "Ai Ml Engineer",
+          "company": "Optum",
+          "location": "Hybrid - Gurugram",
+          "salary": "15-25 Lacs PA",
+          "experience": "6-9 Yrs",
+          "rating": "",
+          "reviews": "8237 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "8237 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/optum-global-solutions-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Ai Ml EngineerOptum4.08237 Reviews6-9 Yrs15-25 Lacs PAHybrid - GurugramPrimary Responsibilities:Lead the design, development, and implementation of scalable AI/ML solutions, leveraging Python, SQL, pandas, numpy, and modern ML frameworks (TensorFlow, PyTorch, ScikitLearn).Oversee endtoend ML workflowsfrom data prepar...NLPHealthcareLLMGenAIGenerative AiAI/MLMachine LearningMl5 Days AgosaveHide",
+          "salaryRange": "15-25 Lacs PA"
+        },
+        {
+          "index": 29,
+          "jobId": "290726010885",
+          "title": "International Healthcare Process",
+          "company": "SPES Manning Solution LLP",
+          "location": "Pune(Viman Nagar)",
+          "salary": "3-7.5 Lacs PA",
+          "experience": "3-5 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "International Healthcare ProcessSPES Manning Solution LLPPosted by Spes Staffing Solutions3-5 Yrs3-7.5 Lacs PAPune(Viman Nagar)Willingness to work in rotational shifts. Undergraduate or Graduate candidatesMinimum 3 years of Healthcare Claims experience is mandatoryBlended ProcessNon VoiceInternational Chat ProcessVoice ProcessChat ProcessInternationalExpression blendProcess4 Days AgosaveHide",
+          "salaryRange": "3-7.5 Lacs PA"
+        },
+        {
+          "index": 30,
+          "jobId": "290726013898",
+          "title": "IDPMS Trade Analyst",
+          "company": "Sumitomo Mitsui Banking Corporation (SMBC)",
+          "location": "New Delhi",
+          "salary": "Not disclosed",
+          "experience": "2-7 Yrs",
+          "rating": "",
+          "reviews": "139 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "139 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/sumitomo-mitsui-banking-corporation-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "IDPMS Trade AnalystSumitomo Mitsui Banking Corporation (SMBC)2.7139 Reviews2-7 YrsNot disclosedNew DelhiDownload and save IDPMS reports required on daily basis. .IDPMSTrade OperationsTrade ImportTrade IDPMSTrade FinanceTrade Finance OperationsImportFinancial operations4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 31,
+          "jobId": "310726009336",
+          "title": "Generative AI Software Engineer Senior Associate",
+          "company": "PwC",
+          "location": "Hybrid - Hyderabad, Gurugram, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "4-8 Yrs",
+          "rating": "",
+          "reviews": "13223 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "13223 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/pwc-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Generative AI Software Engineer Senior AssociatePwC3.313223 Reviews4-8 YrsNot disclosedHybrid - Hyderabad, Gurugram, BengaluruPreferred candidate profile . At least a Bachelors & Masters degree At least 4 years of experience. .Generative AIPythonPysparkSoftware EngineerSoftwareArtificial IntelligenceSeniorSoftware engineering2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 32,
+          "jobId": "280726503164",
+          "title": "Senior AI/ Machine Learning Engineer",
+          "company": "Aera Software Technology",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "5-8 Yrs",
+          "rating": "",
+          "reviews": "57 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "57 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/aera-software-technology-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Senior AI/ Machine Learning EngineerAera Software Technology4.257 Reviews5-8 YrsNot disclosedPuneexperience with large datasets and ML pipelines (Ray, Spark, or equivalent). . Hands-on with PyTorch, Hugging Face, scikit-learn, pandas. . Containerized microservices (Docker, Kubernetes) and CI / CD (Git, Jenkins, Jira). . Humble and adaptable a...checkpointfaissgolangaiai infrastructurecraftcomputer engineeringcaching4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 33,
+          "jobId": "310726018756",
+          "title": "Ai Ml Engineer",
+          "company": "Bahwan CyberTek",
+          "location": "Remote",
+          "salary": "Not disclosed",
+          "experience": "5-7 Yrs",
+          "rating": "",
+          "reviews": "741 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "741 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/bahwan-cybertek-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Ai Ml EngineerBahwan CyberTek3.3741 Reviews5-7 YrsNot disclosedRemotePreferred candidate profile Essential Skills: o Deep knowledge of working principles behind agents and experience in building Agents and / or Skills Experience with model evaluation and A / B testing . .pandasGenerative AIArtificial IntelligenceRetrieval-Augmented Generation (RAG)Large Language Models (LLMs)Fleet Management AnalyticsKnowledge Retrieval SystemsAPI Integration2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 34,
+          "jobId": "240726023350",
+          "title": "Senior AI/ML Engineer - MLOps & Generative AI",
+          "company": "TOP MNC COMPANY",
+          "location": "Hybrid - Pune, Hyderabad, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "5-10 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Senior AI/ML Engineer - MLOps & Generative AITOP MNC COMPANYPosted by Lecan Solutions5-10 YrsNot disclosedHybrid - Pune, Hyderabad, BengaluruProject Role: AI / ML Engineer (MLOps)Project Role Description:Design, develop, and deploy production-ready AI/ML solutions using cloud AI services and MLOps best practices. Build scalable machine learning pipelines, deploy models, and ensure reli...Genrative AiNatural Language ProcessingMachine Learning OperationsMachine LearningMlLanguagesOperationsProces",
+          "salaryRange": null
+        },
+        {
+          "index": 35,
+          "jobId": "310726502678",
+          "title": "Chat Agent Analyst II",
+          "company": "Allstate Insurance Company",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "3-6 Yrs",
+          "rating": "",
+          "reviews": "30 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "30 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/allstate-insurance-company-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Chat Agent Analyst IIAllstate Insurance Company3.630 Reviews3-6 YrsNot disclosedPuneProficiency in CRMS, Outlook, and internal claim systems Primary Requirement . Willingness to work in a dynamic 24 / 7 environment . Ability to prioritize, multitask and work independently . Knowledge / Skills / Abilities / Experience . Strong und...Business servicesglobal operationsSolution designClaimsTime managementAccountingManager TechnologyTransition1 Day AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 36,
+          "jobId": "310726501177",
+          "title": "Claims Operations Associate III",
+          "company": "Elixir 360",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "5-8 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Claims Operations Associate IIIElixir 3605-8 YrsNot disclosedPuneShift TimeShift A (India) 0-18 months of related experience. . Bachelors degree or equivalent experience Bachelors degree preferred. . Intermediate proficiency in Microsoft Office suite. . Intermediate computer skills with Microsoft Office (Word, ...global operationsBusiness servicesSolution designData validationClaims Operations AssociateAnalyticalSupport servicesTelematics1 Day AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 37,
+          "jobId": "290726008123",
+          "title": "AI / Machine Learning Specialist",
+          "company": "Persistent",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "5-8 Yrs",
+          "rating": "",
+          "reviews": "5248 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "5248 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/persistent-systems-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "AI / Machine Learning SpecialistPersistent3.65248 Reviews5-8 YrsNot disclosedPuneExperience with Python development and modern AI / ML ecosystemsWe invite applications from all qualified individuals, including those with disabilities, and regardless of gender or gender preferenceUnderstanding of cloud platforms with strong pre...AI / Machine LearningRPA AutomationRobotic Process AutomationRpaRobotic ProcessArtificial IntelligenceProcessProcess automation4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 38,
+          "jobId": "290726017206",
+          "title": "AI Platform Architect",
+          "company": "Net Connect",
+          "location": "Pune, Gurugram, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "3-6 Yrs",
+          "rating": "",
+          "reviews": "641 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "641 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/net-connect-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "AI Platform ArchitectNet Connect3.1641 Reviews3-6 YrsNot disclosedPune, Gurugram, BengaluruThis position not only involves building and mentoring a high-performing team of AI, ML, and platform engineers but also emphasizes the importance of responsible AI practices, security, and governance 8+ years of experience in AI / ML with a focus...ProgrammingMicroservicesSystemCloud PlatformsEngineeringDockerJavascriptMicrosoft Azure4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 39,
+          "jobId": "280726020861",
+          "title": "Python Software Developer",
+          "company": "Cloudxtreme",
+          "location": "Pune, Hyderabad, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "2-5 Yrs",
+          "rating": "",
+          "reviews": "4 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "4 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/cloudxtreme-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Python Software DeveloperCloudxtreme4.24 Reviews2-5 YrsNot disclosedPune, Hyderabad, BengaluruEducational Qualification : 15 years full time education Required active participation and contribution in team discussionsMust have skills : Python (Programming Language)Minimum 2 year(s) of experience is requiredGood to have skills : NA Experien...DjangoArtificial IntelligenceAimlPython DevelopmentMachine LearningAPIAi PlatformFlask2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 40,
+          "jobId": "280726024543",
+          "title": "Gen AI Engineer",
+          "company": "Kaizen SRA Technologies",
+          "location": "Pune, Hyderabad, Chennai",
+          "salary": "10-17 Lacs PA",
+          "experience": "5-10 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Gen AI EngineerKaizen SRA TechnologiesPosted by Kaizen Sra Technologies5-10 Yrs10-17 Lacs PAPune, Hyderabad, Chennai. CERTIFICATIONS: . Databricks Certified Generative AI Engineer Associate NVIDIA Certified Professional - Agentic AI (NCP-AAI) AWS Certified AI PractitionerData ScienceLarge Language ModelAimlRetrieval Augmented GenerationGen AI EngineerArtificial IntelligenceMachine LearningML4 Days AgosaveHide",
+          "salaryRange": "10-17 Lacs PA"
+        },
+        {
+          "index": 41,
+          "jobId": "280726914594",
+          "title": "Relationship Manager",
+          "company": "NBFC",
+          "location": "Pune",
+          "salary": "3-7 Lacs PA",
+          "experience": "2-7 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Relationship ManagerNBFCPosted by Abacus Consultants2-7 Yrs3-7 Lacs PAPuneRole & responsibilities To effectively contribute towards building the Mortgages line of business and loan book by marketing/ selling all products and solutions to potential and existing customers at targeted yields and fee through a strong distri...lapsalesdsaMortgageLoan against PropertyOpen MarketManagementOpen5 Days AgosaveHide",
+          "salaryRange": "3-7 Lacs PA"
+        },
+        {
+          "index": 42,
+          "jobId": "310726013463",
+          "title": "GenAI Developer | Gurgaon | EPAM Systems",
+          "company": "Epam Systems",
+          "location": "Hybrid - Gurugram",
+          "salary": "Not disclosed",
+          "experience": "4-9 Yrs",
+          "rating": "",
+          "reviews": "2142 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "2142 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/epam-systems-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "GenAI Developer | Gurgaon | EPAM SystemsEpam Systems3.72142 Reviews4-9 YrsNot disclosedHybrid - GurugramQualifications: . Education: Bachelors degree in Computer Science, Engineering, or a related fieldExperience: Minimum 4 years in software development, focusing on Python, backend development, and Generative AI technologiesTechnical Skills: 4+ year...Agentic Aigenerative aiLanggraphPythonAzure Ai ServicesLangchainAWS BedrockGoogle ADK2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 43,
+          "jobId": "290726035192",
+          "title": "Python Gen AI Engineer at Globant in Pune",
+          "company": "Globant",
+          "location": "Hybrid - Pune",
+          "salary": "15-27.5 Lacs PA",
+          "experience": "4-9 Yrs",
+          "rating": "",
+          "reviews": "1353 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "1353 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/globant-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Python Gen AI Engineer at Globant in PuneGlobant3.31353 Reviews4-9 Yrs15-27.5 Lacs PAHybrid - PuneRequired QualificationsStrong understanding of agentic development and autonomous AI workflows. candidates should have experience with: . - Python development 4 to 9 years of professional software development experience with a focus on AI / MLHand...generative aiRetrieval Augmented GenerationPythonArtificial IntelligenceGenGeneration3 Days AgosaveHide",
+          "salaryRange": "15-27.5 Lacs PA"
+        },
+        {
+          "index": 44,
+          "jobId": "310726017331",
+          "title": "Polish Speaker",
+          "company": "Transcom",
+          "location": "Remote",
+          "salary": "8.5-14 Lacs PA",
+          "experience": "0-5 Yrs",
+          "rating": "",
+          "reviews": "67 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "67 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/vertex-cosmos-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Polish SpeakerTranscom2.567 Reviews0-5 Yrs8.5-14 Lacs PARemoteCompany - Transcom. Work Mode - Remote / Work from Home. Office Location - Gurgaon . Shift 9-hour window . Maintain records of all interactions with customers using CRM software. . Desired Candidate Profile . 0-5 years of experience in a similar r...Customer ServicePolish LanguageCustomer SupportInternational ProcessInternational BPOBPOPolishingInternational2 Days AgosaveHide",
+          "salaryRange": "8.5-14 Lacs PA"
+        },
+        {
+          "index": 45,
+          "jobId": "010426029310",
+          "title": "AI Lead",
+          "company": "Amantya Technologies",
+          "location": "Gurugram",
+          "salary": "Not disclosed",
+          "experience": "3-8 Yrs",
+          "rating": "",
+          "reviews": "274 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "274 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/amantya-technologies-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "AI LeadAmantya Technologies3.9274 Reviews3-8 YrsNot disclosedGurugramTeam Collaboration: Proven experience in leading and mentoring technical teams, fostering collaboration, and encouraging continuous learningBachelors or Masters degree in Computer Science, AI / ML, Data Science, or related field AI Frameworks and ...generative aiRAGLLMAgentic AiLangchainArtificial Intelligence2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 46,
+          "jobId": "300726028462",
+          "title": "Machine Learning (ML)",
+          "company": "Pineq Technology Labs",
+          "location": "Hybrid - Bhubaneswar, Indore, Gurugram",
+          "salary": "6-16 Lacs PA",
+          "experience": "4-9 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Machine Learning (ML)Pineq Technology LabsPosted by Pineq Technology Labs4-9 Yrs6-16 Lacs PAHybrid - Bhubaneswar, Indore, GurugramMachine Learning (ML) Short Job DescriptionDesigns, develops, and deploys machine learning models to solve business problems using data. Works with large datasets, builds predictive algorithms, evaluates model performance, and collaborates with cr...Machine Learning (ML)AlMachine LearningMlMachine2 Days AgosaveHide",
+          "salaryRange": "6-16 Lacs PA"
+        },
+        {
+          "index": 47,
+          "jobId": "010826012829",
+          "title": "Generative Ai_S",
+          "company": "Infosys",
+          "location": "Hybrid - Pune, Delhi / NCR, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "3-5 Yrs",
+          "rating": "",
+          "reviews": "50252 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "50252 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/infosys-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Generative Ai_SInfosys3.550252 Reviews3-5 YrsNot disclosedHybrid - Pune, Delhi / NCR, BengaluruResponsibilitiesKey Responsibilities: - Design and implement advanced Generative AI models to solve complex problems. - Collaborate with cross-functional teams to integrate AI solutions into existing systems. - Conduct research and stay updated wi...generative aiLangchainArtificial IntelligenceLLMAgentic AiTensorflowNatural Language ProcessingChatbot1 Day AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 48,
+          "jobId": "310726029326",
+          "title": "Automation Test Engineer",
+          "company": "Paxcom India",
+          "location": "Mohali, Gurugram",
+          "salary": "Not disclosed",
+          "experience": "3-5 Yrs",
+          "rating": "",
+          "reviews": "79 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "79 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/paxcom-india-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Automation Test EngineerPaxcom India3.379 Reviews3-5 YrsNot disclosedMohali, GurugramStrong experience with Database testing and writing scripts3 5 years of exp in Automation Testing with Java, Selenium, Good understanding of Java and / or JavaScript for writing automation scriptsDatabase TestingAutomation TestingJavaCI CD PipelineRest AssuredBDD FrameworkTestngPlaywright1 Day AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 49,
+          "jobId": "280726011200",
+          "title": "Artificial Intelligence Engineer",
+          "company": "Aziro",
+          "location": "Hybrid - Pune, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "5-8 Yrs",
+          "rating": "",
+          "reviews": "241 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "241 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/aziro-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Artificial Intelligence EngineerAziro3.5241 Reviews5-8 YrsNot disclosedHybrid - Pune, Bengaluru2 3+ years of hands-on Generative AI, LLM experience You must be able to gather requirements from technical leads, ask effective questions, explain and defend technical trade-offs, negotiate scope, and document decisions clearly. Agentic system de...GEN AILLMPYTHONAWSAI ENGINEERAgentic AiRAGIntelligence5 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 50,
+          "jobId": "310726025547",
+          "title": "Ai Ml Engineer",
+          "company": "Caprus It",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "3-8 Yrs",
+          "rating": "",
+          "reviews": "49 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "49 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/caprus-it-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Ai Ml EngineerCaprus It3.349 Reviews3-8 YrsNot disclosedPuneExperience working with various image processing tasks including Object Detection, Classification, Segmentation etcPytorchCNNArtificial IntelligenceImage ProcessingMachine LearningProcessMachineIntelligence1 Day AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 51,
+          "jobId": "310726924721",
+          "title": "Pricing Analyst",
+          "company": "Avantor",
+          "location": "Gurugram",
+          "salary": "Not disclosed",
+          "experience": "1-6 Yrs",
+          "rating": "",
+          "reviews": "356 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "356 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/avantor-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Pricing AnalystAvantor3.6356 Reviews1-6 YrsNot disclosedGurugramRequirements . Education: Bachelors degree from a Tier-1 college an MBA from a Tier-1 or Tier-2 business school is preferred but not mandatory. Experience with pricing tools is an added advantage. . Strong analytical and problem-solving skills, wi...Advanced AnalyticsMargin AnalysisCost AnalysisErpCostingBpsFinanceCustomer Satisfaction1 Day AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 52,
+          "jobId": "310726019847",
+          "title": "AI/ML Engineer - Document Intelligence",
+          "company": "Kairos Technologies",
+          "location": "Hybrid - Pune, Chennai, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "5-10 Yrs",
+          "rating": "",
+          "reviews": "50 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "50 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/kairos-technologies-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "AI/ML Engineer - Document IntelligenceKairos Technologies3.950 Reviews5-10 YrsNot disclosedHybrid - Pune, Chennai, BengaluruRequired Skills & Qualifications: Strong experience in Python and ML libraries (e.g., TensorFlow, PyTorch, Scikit-learn)AI / ML Engineer with doc parsing experience. Experience: 5+ Years Hands-on experience with document parsingExperience with reg...RustNatural Language ProcessingAimlMachine LearningArtificial IntelligenceDocumentsProcessingIntelligence2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 53,
+          "jobId": "270726919053",
+          "title": "AI / ML Engineer",
+          "company": "Accenture",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "5-10 Yrs",
+          "rating": "",
+          "reviews": "75792 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "75792 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/accenture-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "AI / ML EngineerAccenture3.775792 Reviews5-10 YrsNot disclosedPuneA 15 years full time education is required. . Qualification 15 years full time education Must have skills : Generative AI. Good to have skills : NA.ml engineerimage processingpythoncloud servicesgenerative aineural networksaiprogramming languages5 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 54,
+          "jobId": "290726010838",
+          "title": "Machine Learning Engineer Snowflake Platform Data and ML Flow",
+          "company": "Ekloud Data Labs",
+          "location": "Remote",
+          "salary": "Not disclosed",
+          "experience": "5-10 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Machine Learning Engineer Snowflake Platform Data and ML FlowEkloud Data Labs5-10 YrsNot disclosedRemoteRequired Experience: . Strong background in Machine Learning and Data Analysis . Ability to understand business need and proactively propose technical solutions . Preferred: . Fluent user of AI coding tool . Experience using Snowflake and Dataiku .Machine Learningsnowflake platform dataSnowflakeData Analysisdata scientistai codingpfizerml flow4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 55,
+          "jobId": "160326008574",
+          "title": "Quality Assurance Engineer",
+          "company": "Advantage Club",
+          "location": "Gurugram",
+          "salary": "Not disclosed",
+          "experience": "2-5 Yrs",
+          "rating": "",
+          "reviews": "97 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "97 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/advantage-club-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Quality Assurance EngineerAdvantage Club4.197 Reviews2-5 YrsNot disclosedGurugramYou should have a keen eye for detail and excellent communication skillsProficient in API Testing using Postman5 Years of relevant experience Experience in project management and QA methodologyWorking knowledge of test management software (e.g., J...JavaQA AutomationPostmanSQLAutomationQA TestingPlaywrightAPI Testing2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 56,
+          "jobId": "270726033213",
+          "title": "Executive | Sr. Executive | AML - KYC - CDD | Pune Location",
+          "company": "Deloitte Shared Services India",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "1-6 Yrs",
+          "rating": "",
+          "reviews": "24219 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "24219 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/deloitte-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Executive | Sr. Executive | AML - KYC - CDD | Pune LocationDeloitte Shared Services India3.624219 Reviews1-6 YrsNot disclosedPuneCFE / ACAMS or any Financial Crime certification will be an added advantageTo be considered for the role, your competencies will cover the broad scope of business modelling services, leveraging your professional background and skills such as: . An...CddKYCSRAml5 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 57,
+          "jobId": "310726011982",
+          "title": "Senior Automation QA Engineer (3 Month Contract)",
+          "company": "VML ES",
+          "location": "Remote",
+          "salary": "Not disclosed",
+          "experience": "5-10 Yrs",
+          "rating": "",
+          "reviews": "328 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "328 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/vml-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Senior Automation QA Engineer (3 Month Contract)VML ES3.5328 Reviews5-10 YrsNot disclosedRemoteExperience with performance or security testingTypeScriptAI toolsPlaywrightAutomation Testingshift-leftGithubE-commerceContracts2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 58,
+          "jobId": "310726009792",
+          "title": "Medical Reviewer- Clinical Research -MBBS- 1 Years -Remote",
+          "company": "Crescendo Global",
+          "location": "Remote",
+          "salary": "Not disclosed",
+          "experience": "1-6 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Medical Reviewer- Clinical Research -MBBS- 1 Years -RemoteCrescendo GlobalPosted by Crescendo Global Leadership Hiring India1-6 YrsNot disclosedRemoteLocation- Remote (Work from Home), IndiaFixed day shift with weekends off for better work-life balanceProfile Keywords- Physician Reviewer, MBBS, Medical Records Review, Clinical Documentation, Clinical Summary, US Healthcare, Medical Review, Heal...Clinical ResearchMedical WritingDrug SafetyClinical OperationsMedical reviewerClinical Data Manageme",
+          "salaryRange": null
+        },
+        {
+          "index": 59,
+          "jobId": "270726915039",
+          "title": "MLops Engineer",
+          "company": "Capgemini",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "1-6 Yrs",
+          "rating": "",
+          "reviews": "55238 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "55238 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/capgemini-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "MLops EngineerCapgemini3.655238 Reviews1-6 YrsNot disclosedPune. 4+ years of hands-on experience deploying and managing Machine Learning models in production environments. . Strong expertise in Python and ML / DL frameworks such as TensorFlow, PyTorch, and scikit-learn, along with MLOps platforms like MLflow,...pythoncdcontinuous integrationkubernetesorchestrationversion controlci/cdcloud platforms6 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 60,
+          "jobId": "300726502158",
+          "title": "Data Analyst",
+          "company": "Neutrino Tech Systems",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "2-7 Yrs",
+          "rating": "",
+          "reviews": "78 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "78 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/neutrino-tech-systems-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Data AnalystNeutrino Tech Systems3.278 Reviews2-7 YrsNot disclosedPuneAnalyze complex data sets to identify trends and patterns, providing insights to stakeholders. Develop and maintain databases and data systems to support business operations. Create reports and dashboards to communicate findings and recommendation...data analysispower bicommunication and interpersonal skillsmachine learningdata analystdata qualitytableauoperations2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 61,
+          "jobId": "270726024739",
+          "title": "Returnship - TL-Claims HC",
+          "company": "Cognizant",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "4-5 Yrs",
+          "rating": "",
+          "reviews": "63147 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "63147 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/cognizant-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Returnship - TL-Claims HCCognizant3.763147 Reviews4-5 YrsNot disclosedPuneThis hybrid role focuses on transactional leadership in health care claims operations for both provider and payer functions ensuring precise HIPAA compliant claims adjudication during night shifts Guide a team of claims analysts in day to day clai...RegulationsLeadershipRevenue Cycle ManagementClaimsCoordinationComplianceHealthSpreadsheets5 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 62,
+          "jobId": "290726006425",
+          "title": "Motor insurance - Head",
+          "company": "Liontree Hr Consultants",
+          "location": "Pune",
+          "salary": "10-12 Lacs PA",
+          "experience": "5-8 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Motor insurance - HeadLiontree Hr ConsultantsPosted by Liontree Hr Consultants5-8 Yrs10-12 Lacs PAPuneFinalize the best terms, coverage, and premium as per client requirement Graduate (preferably Insurance / Commerce / Management)Certification like III / IRDAI training is an advantageEnsure documentation for audits and regulatory requirements. Key...Motor InsuranceInsurance AdvisoryGeneral InsuranceInsurance UnderwritingInsurance BrokingInsurance SalesBrokingSales4 Days AgosaveHide",
+          "salaryRange": "10-12 Lacs PA"
+        },
+        {
+          "index": 63,
+          "jobId": "300726021581",
+          "title": "Job Opportunity With Maplelabs For K8s With Playwright",
+          "company": "Xoriant",
+          "location": "Pune, Chennai, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "3-6 Yrs",
+          "rating": "",
+          "reviews": "2372 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "2372 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/xoriant-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Job Opportunity With Maplelabs For K8s With PlaywrightXoriant4.02372 Reviews3-6 YrsNot disclosedPune, Chennai, BengaluruDear Applicants, We have an exciting opportunity For UI Automation Playwright.Looking For Immediate joiners Skill Sets Required:Python UI Automation - Playwright hands-on ExperienceAI ExperiencePython TestingPlaywrightKubernetes DeploymentSelenium TestingAutomation TestingSeleniumPythonKubernetes3 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 64,
+          "jobId": "300726031086",
+          "title": "gen Ai Developer",
+          "company": "HR SOLUTIONS",
+          "location": "Pune, Noida, Mumbai (All Areas)",
+          "salary": "15-27.5 Lacs PA",
+          "experience": "4-9 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "gen Ai DeveloperHR SOLUTIONSPosted by HR Solutions4-9 Yrs15-27.5 Lacs PAPune, Noida, Mumbai (All Areas)Cloud Platforms: Extensive experience with Azure, GCP, and AWS for deploying and managing GenAI applicationsExperience Required - 4+ years Required Skills : Python Programming: Deep expertise in Python for building GenAI applications and automatio...Natural Language Processingraggen AiArtificial IntelligenceProcessingGenDevelopmentLanguages2 Days AgosaveHide",
+          "salaryRange": "15-27.5 Lacs PA"
+        },
+        {
+          "index": 65,
+          "jobId": "290726931819",
+          "title": "Quality Analyst",
+          "company": "Crimson Interactive",
+          "location": "Remote",
+          "salary": "Not disclosed",
+          "experience": "1-6 Yrs",
+          "rating": "",
+          "reviews": "210 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "210 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/crimson-interactive-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Quality AnalystCrimson Interactive2.5210 Reviews1-6 YrsNot disclosedRemoteThe candidate will play a key role in driving continuous learning and development initiatives for editors, contributing to special client projects, participating in process improvement and developmental activities, and preparing data-driven analys...Quality AnalysisgrammarQuality checkmanuscriptsQuality AnalystLanguage editingcopy editingLanguages3 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 66,
+          "jobId": "310726016011",
+          "title": "Loan Syndication specialist",
+          "company": "Hexaware Technologies",
+          "location": "Pune, Pimpri-Chinchwad",
+          "salary": "Not disclosed",
+          "experience": "1-6 Yrs",
+          "rating": "",
+          "reviews": "7969 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "7969 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/hexaware-technologies-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Loan Syndication specialistHexaware Technologies3.47969 Reviews1-6 YrsNot disclosedPune, Pimpri-ChinchwadBachelors degree in finance, accounting, or a related fieldPreferred candidate profile Proven experience in loan syndication, loan operations, and reconciliation processesLoan OperationsLoan syndicationSyndicationOperations2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 67,
+          "jobId": "160626016625",
+          "title": "Walk-in || Business Analyst",
+          "company": "ATA Freight",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "",
+          "rating": "",
+          "reviews": "138 Reviews",
+          "posted": "03 Aug - 06 Aug",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "138 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/ata-freight-line-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Walk-in || Business AnalystATA Freight3.2138 Reviews03 Aug - 06 AugNot disclosedPuneDomain Knowledge in logistics, SCM areas. Bachelors / masters degree in business administration, Computer Science, or related field. 4-5 years of experience as a Business Analyst. Exposure to Salesforce or other CRM system would be a plus. CSPO, C...Business AnalyticsRequirement Gatheringscrum masterAgileUATFreight ForwardingSupply Chain ManagementProcess ImprovementsWalk-in1 Day AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 68,
+          "jobId": "290726010182",
+          "title": "Customer Support Representative (International HR Voice Process)",
+          "company": "Trigent Software",
+          "location": "Pune",
+          "salary": "5-7 Lacs PA",
+          "experience": "3-8 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Customer Support Representative (International HR Voice Process)Trigent SoftwarePosted by Trigent Software3-8 Yrs5-7 Lacs PAPuneJob Description: Please find the detailed job description attached for your reference.Working Hours:\u2022 Shift will be in any of United States of America time zones\u2022 Open to work in rotating work week (Mon-Fri, Tue-Sat, Wed-Sun)Overall Purpose of Job...US Voice ProcessInternational Voice ProcessInternational BPOInbound Voice ProcessInternational VoiceVoice processInbound p",
+          "salaryRange": "5-7 Lacs PA"
+        },
+        {
+          "index": 69,
+          "jobId": "300726500494",
+          "title": "Test Engineer",
+          "company": "Capita",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "2-7 Yrs",
+          "rating": "",
+          "reviews": "2713 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "2713 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/capita-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Test EngineerCapita3.52713 Reviews2-7 YrsNot disclosedPune. Time Type: Full timeExperience in Manual Testing (Desktop, Web Application). . ISTQB Preferred . Good understanding of all phases of testing life cycle. . Experience of performance, cross browser, mainframe, iOS and Android device testing. Exper...Manual testingTest scriptsXMLProject managementSeleniumTest casesJIRATesting2 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 70,
+          "jobId": "280726004068",
+          "title": "WFH - US Mortgage / Underwriting / Live Underwriting",
+          "company": "Creative Hands HR",
+          "location": "Hybrid - Pune, Delhi / NCR, Noida",
+          "salary": "6-8 Lacs PA",
+          "experience": "2-6 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "WFH - US Mortgage / Underwriting / Live UnderwritingCreative Hands HRPosted by Creative Hands HR2-6 Yrs6-8 Lacs PAHybrid - Pune, Delhi / NCR, NoidaPermanent work from home. Excellent communication is required. Work from home - Immediate joining is required. Only Immediate joining is required. Rotational Shift2 days rotational off. Graduation is mandatory Minimum 2+ yrs of Experience is manda...Live UnderwritingUnderwritingMortgage UnderwritingUS Mortgage4cMortgageUS Mortgage UnderwritingResident",
+          "salaryRange": "6-8 Lacs PA"
+        },
+        {
+          "index": 71,
+          "jobId": "280726504315",
+          "title": "Senior Analyst - Claims Service",
+          "company": "Marsh McLennan",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "3-8 Yrs",
+          "rating": "",
+          "reviews": "1018 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "1018 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/mmc-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Senior Analyst - Claims ServiceMarsh McLennan3.81018 Reviews3-8 YrsNot disclosedPuneProvide ideas and suggestions for improving working methods taking into account client and member experience, where appropriate implement and document to line manager for adoption across the business What makes you stand out: . CII certification ....management consultingprocess trainingsubject matterinsurance brokerclient service managementcompliancepeople managementinsurance broking4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 72,
+          "jobId": "300726026521",
+          "title": "Hiring For a Specialist - US Retirement - Salary Upto 10lpa",
+          "company": "NA",
+          "location": "Pune, Delhi / NCR, Kochi, Kolkata, Hyderabad, Chennai, Bengaluru, Thiruvananthapuram, Mumbai (All Areas)",
+          "salary": "8-10 Lacs PA",
+          "experience": "3-8 Yrs",
+          "rating": "",
+          "reviews": "",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [],
+          "description": "Hiring For a Specialist - US Retirement - Salary Upto 10lpaNAPosted by Titanium Consulting Mumbai3-8 Yrs8-10 Lacs PAPune, Delhi / NCR, Kochi, Kolkata, Hyderabad, Chennai, Bengaluru, Thiruvananthapuram, Mumbai (All Areas)Shift - Rotational Shifts Must have hands-on experience with the ASC tool and strong knowledge of retirement plan administration, compliance, and client servicingExperience in BPO / KPO is preferredHiring candidates with 3+ years of experience in ...ASCDefined ContributionRetirem",
+          "salaryRange": "8-10 Lacs PA"
+        },
+        {
+          "index": 73,
+          "jobId": "280726024326",
+          "title": "Lead - SOP - US Retirement Service",
+          "company": "Voya India",
+          "location": "Pune, Noida, Bengaluru",
+          "salary": "Not disclosed",
+          "experience": "8-13 Yrs",
+          "rating": "",
+          "reviews": "559 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "559 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/voya-india-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Lead - SOP - US Retirement ServiceVoya India3.7559 Reviews8-13 YrsNot disclosedPune, Noida, BengaluruKnowledge of U.S. Retirement Services processes and regulations is preferredPreferred knowledge of U.S. Retirement Services and related participant communication processesSOPUS Retirement401kStakeholder ManagementManagementLeadershipRetirementPrefers women4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 74,
+          "jobId": "290726012225",
+          "title": "AIML Developer @ Pune",
+          "company": "Technosoft Engineering",
+          "location": "Pune(Bavdhan)",
+          "salary": "Not disclosed",
+          "experience": "2-5 Yrs",
+          "rating": "",
+          "reviews": "339 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "339 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/technosoft-engineering-projects-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "AIML Developer @ PuneTechnosoft Engineering3.7339 Reviews2-5 YrsNot disclosedPune(Bavdhan)Design, develop, deploy ML & DL models for real-world applications like YOLO Work extensively with computer vision techniques including CNNs, OpenCV, image preprocessing pipelines Collect, clean, annotate datasets for model training , evaluation2 ...Object DetectionAimlComputer VisionMachine LearningCNNOpencvImage ProcessingLLM4 Days AgosaveHide",
+          "salaryRange": null
+        },
+        {
+          "index": 75,
+          "jobId": "200726019489",
+          "title": "Clinical Analyst I",
+          "company": "Cotiviti",
+          "location": "Pune",
+          "salary": "Not disclosed",
+          "experience": "1-5 Yrs",
+          "rating": "",
+          "reviews": "737 Reviews",
+          "posted": "",
+          "skills": [],
+          "applyUrl": "",
+          "links": [
+            {
+              "text": "737 Reviews",
+              "href": "https://www.ambitionbox.com/reviews/cotiviti-reviews?utm_campaign=srp_ratings&utm_medium=desktop&utm_source=naukri&cvid=ec32dea2a6fd455b919d1c67f6afb8fe"
+            }
+          ],
+          "description": "Clinical Analyst ICotiviti3.5737 Reviews1-5 YrsNot disclosedPuneShift: Rotational (Including Night Shifts). Job Responsibilities: . Review medical records and assign accurate diagnosis / procedure codesWilling to work rotational / night shiftsCPC Certification (Mandatory) Proficient in MS OfficeGood knowledge ...CPC CertifiedMBBABHMSClinical ResearchClinicalBAMSUS HealthcareMedical Coding1 Day AgosaveHide",
+          "salaryRange": null
+        }
+      ],
+      "timestamp": "2026-08-02T10:28:41.588Z",
+      "url": "https://www.naukri.com/mnjuser/recommendedjobs",
+      "totalJobCards": 75
+    },
+    "execution_time": "2026-08-02T15:58:41.745081"
+  }
+}

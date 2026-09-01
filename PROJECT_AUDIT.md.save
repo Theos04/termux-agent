@@ -1,0 +1,40 @@
+# Project Audit
+
+## Chrome / CDP
+
+- [ ] dynamic_chrome_executor.py
+- [ ] dynamic_cdp.py
+- [ ] dynamic_cdp_1.py
+- [ ] dynamic_cdp_2.py
+- [ ] dynamic_cdp_3.py
+- [ ] dynamic_cdp_4.py
+- [ ] dynamic_cdp_5.py
+- [ ] launch-chrome.py
+- [ ] fix_devtools.py
+
+## Scrapers
+
+- [ ] unstop_job_scraper.py
+- [ ] unstop_job_detail_scraper.py
+- [ ] fetch_jobs_unstop.py
+
+## YouTube
+
+- [ ] youtube_script.py
+- [ ] youtube_script_1.py
+- [ ] youtube_script_2.py
+
+## Workflow
+
+- [ ] workflow.py
+- [ ] workflow1.py
+- [ ] workflow2.py
+- [ ] workflow3.py
+- [ ] workflow4.py
+- [ ] workflow5.py
+- [ ] workflow6.py
+
+## API 
+
+- [ ] api-server-9226.py 
+

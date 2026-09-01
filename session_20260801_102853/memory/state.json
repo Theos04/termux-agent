@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "session_id": "20260801_102853",
+    "start_time": "2026-08-01T10:28:53.229164",
+    "end_time": null,
+    "chrome_port": 9257,
+    "tab_url": "https://www.naukri.com/allcompanies?searchType=premiumLogo&title=Featured+companies+actively+hiring&branding=%257B%2522pagename%2522%253A%2522ni-desktop-premium-viewAll%2522%257D&pageNo=1&qcount=47&src=gnbCompanies_homepage_srch",
+    "tab_title": "naukri.com/allcompanies?searchType=premiumLogo&amp;title=Featured+companies+actively+hiring&amp;branding=%257B%2522pagename%2522%253A%2522ni-desktop-premium-viewAll%2522%257D&amp;pageNo=1&amp;qcount=47&amp;src=gnbCompanies_homepage_srch",
+    "total_commands": 130,
+    "snapshots_taken": [],
+    "files_generated": {
+      "accessibility": 10
+    }
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": {
+      "file": "/data/data/com.termux/files/home/automation/chrome-launcher/session_20260801_102853/accessibility/a11y_103020_491807.json",
+      "metadata": {
+        "session_id": "20260801_102853",
+        "timestamp": "2026-08-01T10:30:20.491952",
+        "tab_url": "https://www.naukri.com/allcompanies?searchType=premiumLogo&title=Featured+companies+actively+hiring&branding=%257B%2522pagename%2522%253A%2522ni-desktop-premium-viewAll%2522%257D&pageNo=1&qcount=47&src=gnbCompanies_homepage_srch",
+        "tab_title": "naukri.com/allcompanies?searchType=premiumLogo&amp;title=Featured+companies+actively+hiring&amp;branding=%257B%2522pagename%2522%253A%2522ni-desktop-premium-viewAll%2522%257D&amp;pageNo=1&amp;qcount=47&amp;src=gnbCompanies_homepage_srch",
+        "context": {
+          "method": "Accessibility.getFullAXTree"
+        },
+        "node_count": 1636,
+        "command_index": 120
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 130,
+  "last_updated": "2026-08-01T10:30:21.088532"
+}

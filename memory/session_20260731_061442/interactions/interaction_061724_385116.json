@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "session_id": "20260731_061442",
+    "timestamp": "2026-07-31T06:17:24.385447",
+    "tab_url": "https://www.naukri.com/mnjuser/recommendedjobs",
+    "tab_title": "Recommended Jobs | Mynaukri",
+    "context": {
+      "action": "click",
+      "element_info": {
+        "tag": "a",
+        "text": "Recommended jobs",
+        "visible": true,
+        "canInteract": true
+      }
+    },
+    "interaction_number": 2,
+    "command_index": 24
+  },
+  "data": {
+    "element_index": 2,
+    "action": "click",
+    "value": null,
+    "result": {
+      "success": true,
+      "tag": "a"
+    },
+    "verification": {
+      "tag": "a",
+      "text": "Recommended jobs",
+      "visible": true,
+      "canInteract": true
+    }
+  }
+}

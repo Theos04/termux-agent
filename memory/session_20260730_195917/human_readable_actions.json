@@ -1,0 +1,190 @@
+{
+  "total_actions": 11,
+  "action_categories": {
+    "Search for content": [
+      {
+        "text": "Search Opportunities",
+        "context": "",
+        "type": "Type",
+        "purpose": "Search for content",
+        "tag": "input",
+        "node_id": 316
+      }
+    ],
+    "File action": [
+      {
+        "text": "Download Unstop Apps on Google Play",
+        "context": "",
+        "type": "Navigate",
+        "purpose": "File action",
+        "tag": "a",
+        "node_id": 2724
+      },
+      {
+        "text": "Download Unstop Apps on Google Play",
+        "context": "",
+        "type": "Navigate",
+        "purpose": "File action",
+        "tag": "a",
+        "node_id": 3059
+      },
+      {
+        "text": "Download Unstop Apps on App Store",
+        "context": "",
+        "type": "Navigate",
+        "purpose": "File action",
+        "tag": "a",
+        "node_id": 3061
+      }
+    ],
+    "Social action": [
+      {
+        "text": "Follow on twitter",
+        "context": "",
+        "type": "Navigate",
+        "purpose": "Social action",
+        "tag": "a",
+        "node_id": 2845
+      },
+      {
+        "text": "Follow on Instagram",
+        "context": "",
+        "type": "Navigate",
+        "purpose": "Social action",
+        "tag": "a",
+        "node_id": 2847
+      },
+      {
+        "text": "Follow on LinkedIn",
+        "context": "",
+        "type": "Navigate",
+        "purpose": "Social action",
+        "tag": "a",
+        "node_id": 2849
+      },
+      {
+        "text": "Follow on Facebook",
+        "context": "",
+        "type": "Navigate",
+        "purpose": "Social action",
+        "tag": "a",
+        "node_id": 2851
+      },
+      {
+        "text": "Follow on Telegram",
+        "context": "",
+        "type": "Navigate",
+        "purpose": "Social action",
+        "tag": "a",
+        "node_id": 2853
+      },
+      {
+        "text": "Follow on Discord",
+        "context": "",
+        "type": "Navigate",
+        "purpose": "Social action",
+        "tag": "a",
+        "node_id": 2855
+      },
+      {
+        "text": "Follow on YouTube",
+        "context": "",
+        "type": "Navigate",
+        "purpose": "Social action",
+        "tag": "a",
+        "node_id": 2857
+      }
+    ]
+  },
+  "summary": "\ud83d\udd0d This page allows you to:\n   \u2022 File action (3 elements)\n   \u2022 Search for content (1 element)\n   \u2022 Social action (7 elements)\n\n\ud83d\udccc For example:\n   \u2022 Click 'Search Opportunities'\n   \u2022 Click 'Download Unstop Apps on Google Play'\n   \u2022 Click 'Follow on twitter'\n   \u2022 Click 'Follow on Instagram'\n   \u2022 Click 'Follow on LinkedIn'",
+  "actions": [
+    {
+      "text": "Search Opportunities",
+      "context": "",
+      "type": "Type",
+      "purpose": "Search for content",
+      "tag": "input",
+      "node_id": 316
+    },
+    {
+      "text": "Download Unstop Apps on Google Play",
+      "context": "",
+      "type": "Navigate",
+      "purpose": "File action",
+      "tag": "a",
+      "node_id": 2724
+    },
+    {
+      "text": "Follow on twitter",
+      "context": "",
+      "type": "Navigate",
+      "purpose": "Social action",
+      "tag": "a",
+      "node_id": 2845
+    },
+    {
+      "text": "Follow on Instagram",
+      "context": "",
+      "type": "Navigate",
+      "purpose": "Social action",
+      "tag": "a",
+      "node_id": 2847
+    },
+    {
+      "text": "Follow on LinkedIn",
+      "context": "",
+      "type": "Navigate",
+      "purpose": "Social action",
+      "tag": "a",
+      "node_id": 2849
+    },
+    {
+      "text": "Follow on Facebook",
+      "context": "",
+      "type": "Navigate",
+      "purpose": "Social action",
+      "tag": "a",
+      "node_id": 2851
+    },
+    {
+      "text": "Follow on Telegram",
+      "context": "",
+      "type": "Navigate",
+      "purpose": "Social action",
+      "tag": "a",
+      "node_id": 2853
+    },
+    {
+      "text": "Follow on Discord",
+      "context": "",
+      "type": "Navigate",
+      "purpose": "Social action",
+      "tag": "a",
+      "node_id": 2855
+    },
+    {
+      "text": "Follow on YouTube",
+      "context": "",
+      "type": "Navigate",
+      "purpose": "Social action",
+      "tag": "a",
+      "node_id": 2857
+    },
+    {
+      "text": "Download Unstop Apps on Google Play",
+      "context": "",
+      "type": "Navigate",
+      "purpose": "File action",
+      "tag": "a",
+      "node_id": 3059
+    },
+    {
+      "text": "Download Unstop Apps on App Store",
+      "context": "",
+      "type": "Navigate",
+      "purpose": "File action",
+      "tag": "a",
+      "node_id": 3061
+    }
+  ]
+}

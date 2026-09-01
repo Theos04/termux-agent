@@ -1,0 +1,44 @@
+{
+  "dom_trees": [
+    {
+      "filename": "dom_182207_144136.json",
+      "timestamp": "2026-08-02T18:22:07.144305",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "filename": "snapshot_182209_770890.json",
+      "timestamp": "2026-08-02T18:22:09.771022",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "filename": "a11y_182213_838866.json",
+      "timestamp": "2026-08-02T18:22:13.839042",
+      "context": {
+        "method": "Comprehensive_AX_Tree"
+      }
+    },
+    {
+      "filename": "a11y_182346_034939.json",
+      "timestamp": "2026-08-02T18:23:46.035078",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    }
+  ]
+}

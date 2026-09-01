@@ -1,0 +1,51 @@
+================================================================================
+🚀 STRUCTURAL RL AGENT - FINAL REPORT
+================================================================================
+Total Cycles: 30
+Goal Achieved: 🔄 Still learning
+Best Reward: 5.85
+Success Events: 0
+
+📊 Q-LEARNING STATS:
+  States Discovered: 6
+  Q-Values Learned: 150
+  Exploration Rate: 0.602
+  Learning Rate: 0.225
+  Total Actions: 126
+  Unique Actions: 126
+  Episodes: 30
+  Successful Episodes: 2
+  Avg Reward: 1.32
+  Max Reward: 5.85
+  Min Reward: 0.55
+
+📈 SPA/LOADING METRICS:
+  SPA Loading Events: 0
+  Login Wall Events: 0
+
+🏆 BEST PATH FOUND:
+  click|Watch more|pagination
+  Reward: 5.85
+
+📈 Recent Performance (last 20):
+  Avg Reward: 0.76
+  Success Rate: 100.0%
+
+📈 Learning Progress:
+  First Half Avg: 1.92
+  Second Half Avg: 0.73
+  ⚠️ Agent needs more exploration
+
+📋 Action Distribution:
+  click|in this message forum we fi...|search: 9 times
+  click|daily stock, futures & opti...|search: 3 times
+  click|watch more|pagination: 2 times
+  click|uti elss tax saver fund - g...|save_content: 2 times
+  click|jefferies' chris wood on re...|search: 2 times
+  click|motilal oswal elss tax save...|save_content: 1 times
+  click|research reports|search: 1 times
+  click|find your fund|search: 1 times
+  click|next|pagination: 1 times
+  click|financial changes from augu...|pagination: 1 times
+
+================================================================================

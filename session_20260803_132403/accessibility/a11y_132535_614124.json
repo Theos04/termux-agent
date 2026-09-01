@@ -1,0 +1,2018 @@
+{
+  "metadata": {
+    "session_id": "20260803_132403",
+    "timestamp": "2026-08-03T13:25:35.614333",
+    "tab_url": "https://hackerone.com/users/sign_up",
+    "tab_title": "HackerOne",
+    "context": {
+      "method": "Comprehensive_AX_Tree"
+    },
+    "node_count": 0,
+    "command_index": 15
+  },
+  "data": {
+    "total_nodes": 87,
+    "nodes_by_role": {
+      "RootWebArea": 1,
+      "none": 17,
+      "generic": 27,
+      "banner": 1,
+      "main": 1,
+      "link": 9,
+      "strong": 1,
+      "heading": 1,
+      "paragraph": 2,
+      "image": 1,
+      "StaticText": 10,
+      "InlineTextBox": 16
+    },
+    "nodes_by_property": {
+      "focusable": 10,
+      "focused": 1,
+      "url": 11,
+      "level": 1
+    },
+    "tree_structure": [
+      {
+        "node_id": "20",
+        "role": "RootWebArea",
+        "name": "HackerOne",
+        "depth": 0,
+        "children": [
+          {
+            "node_id": "37",
+            "role": "none",
+            "name": "",
+            "depth": 1,
+            "children": [
+              {
+                "node_id": "224",
+                "role": "generic",
+                "name": "",
+                "depth": 2,
+                "children": [
+                  {
+                    "node_id": "26",
+                    "role": "generic",
+                    "name": "",
+                    "depth": 3,
+                    "children": [
+                      {
+                        "node_id": "225",
+                        "role": "generic",
+                        "name": "",
+                        "depth": 4,
+                        "children": [
+                          {
+                            "node_id": "226",
+                            "role": "none",
+                            "name": "",
+                            "depth": 5,
+                            "children": [
+                              {
+                                "node_id": "227",
+                                "role": "banner",
+                                "name": "",
+                                "depth": 6,
+                                "children": [
+                                  {
+                                    "node_id": "228",
+                                    "role": "generic",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": []
+                                  },
+                                  {
+                                    "node_id": "229",
+                                    "role": "generic",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": [
+                                      {
+                                        "node_id": "230",
+                                        "role": "generic",
+                                        "name": "",
+                                        "depth": 8,
+                                        "children": [
+                                          {
+                                            "node_id": "231",
+                                            "role": "link",
+                                            "name": "Skip to main content \u00a0>",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "232",
+                                                "role": "StaticText",
+                                                "name": "Skip to main content \u00a0>",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "-1000000053",
+                                                    "role": "InlineTextBox",
+                                                    "name": "Skip to ",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  },
+                                                  {
+                                                    "node_id": "-1000000054",
+                                                    "role": "InlineTextBox",
+                                                    "name": "main ",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  },
+                                                  {
+                                                    "node_id": "-1000000055",
+                                                    "role": "InlineTextBox",
+                                                    "name": "content ",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  },
+                                                  {
+                                                    "node_id": "-1000000056",
+                                                    "role": "InlineTextBox",
+                                                    "name": "\u00a0>",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "node_id": "233",
+                                        "role": "none",
+                                        "name": "",
+                                        "depth": 8,
+                                        "children": [
+                                          {
+                                            "node_id": "234",
+                                            "role": "none",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "235",
+                                                "role": "link",
+                                                "name": "Go back to homepage",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "22",
+                                                    "role": "image",
+                                                    "name": "Hackerone logo",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "node_id": "237",
+                                            "role": "none",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": []
+                                          },
+                                          {
+                                            "node_id": "23",
+                                            "role": "none",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "238",
+                                                "role": "generic",
+                                                "name": "",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "240",
+                                                    "role": "link",
+                                                    "name": "",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "node_id": "247",
+                                                "role": "generic",
+                                                "name": "",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "249",
+                                                    "role": "link",
+                                                    "name": "",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "node_id": "256",
+                                                "role": "generic",
+                                                "name": "",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "258",
+                                                    "role": "link",
+                                                    "name": "",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "node_id": "265",
+                                                "role": "generic",
+                                                "name": "",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "267",
+                                                    "role": "link",
+                                                    "name": "",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "node_id": "274",
+                                    "role": "none",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": [
+                                      {
+                                        "node_id": "275",
+                                        "role": "link",
+                                        "name": "Learn more about HackerOne",
+                                        "depth": 8,
+                                        "children": [
+                                          {
+                                            "node_id": "276",
+                                            "role": "generic",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": []
+                                          },
+                                          {
+                                            "node_id": "281",
+                                            "role": "strong",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "282",
+                                                "role": "StaticText",
+                                                "name": "Learn more about HackerOne",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "-1000000057",
+                                                    "role": "InlineTextBox",
+                                                    "name": "Learn more about HackerOne",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "node_id": "283",
+                                        "role": "generic",
+                                        "name": "",
+                                        "depth": 8,
+                                        "children": [
+                                          {
+                                            "node_id": "284",
+                                            "role": "link",
+                                            "name": "Log in",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "285",
+                                                "role": "none",
+                                                "name": "",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "287",
+                                                    "role": "StaticText",
+                                                    "name": "Log in",
+                                                    "depth": 11,
+                                                    "children": [
+                                                      {
+                                                        "node_id": "-1000000058",
+                                                        "role": "InlineTextBox",
+                                                        "name": "Log in",
+                                                        "depth": 12,
+                                                        "children": []
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "node_id": "293",
+                                    "role": "generic",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "node_id": "294",
+                                "role": "none",
+                                "name": "",
+                                "depth": 6,
+                                "children": []
+                              },
+                              {
+                                "node_id": "21",
+                                "role": "main",
+                                "name": "",
+                                "depth": 6,
+                                "children": [
+                                  {
+                                    "node_id": "295",
+                                    "role": "none",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": [
+                                      {
+                                        "node_id": "296",
+                                        "role": "none",
+                                        "name": "",
+                                        "depth": 8,
+                                        "children": [
+                                          {
+                                            "node_id": "297",
+                                            "role": "generic",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "298",
+                                                "role": "none",
+                                                "name": "",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "299",
+                                                    "role": "none",
+                                                    "name": "",
+                                                    "depth": 11,
+                                                    "children": [
+                                                      {
+                                                        "node_id": "300",
+                                                        "role": "none",
+                                                        "name": "",
+                                                        "depth": 12,
+                                                        "children": [
+                                                          {
+                                                            "node_id": "301",
+                                                            "role": "none",
+                                                            "name": "",
+                                                            "depth": 13,
+                                                            "children": [
+                                                              {
+                                                                "node_id": "480",
+                                                                "role": "none",
+                                                                "name": "",
+                                                                "depth": 14,
+                                                                "children": [
+                                                                  {
+                                                                    "node_id": "475",
+                                                                    "role": "generic",
+                                                                    "name": "",
+                                                                    "depth": 15,
+                                                                    "children": [
+                                                                      {
+                                                                        "node_id": "481",
+                                                                        "role": "generic",
+                                                                        "name": "",
+                                                                        "depth": 16,
+                                                                        "children": [
+                                                                          {
+                                                                            "node_id": "-1000000059",
+                                                                            "role": "StaticText",
+                                                                            "name": "\uf108",
+                                                                            "depth": 17,
+                                                                            "children": [
+                                                                              {
+                                                                                "node_id": "-1000000060",
+                                                                                "role": "InlineTextBox",
+                                                                                "name": "\uf108",
+                                                                                "depth": 18,
+                                                                                "children": []
+                                                                              },
+                                                                              {
+                                                                                "node_id": "-1000000060",
+                                                                                "role": "InlineTextBox",
+                                                                                "name": "\uf108",
+                                                                                "depth": 18,
+                                                                                "children": []
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "node_id": "476",
+                                                                    "role": "heading",
+                                                                    "name": "Your account has been created! Please verify your email.",
+                                                                    "depth": 15,
+                                                                    "children": [
+                                                                      {
+                                                                        "node_id": "482",
+                                                                        "role": "StaticText",
+                                                                        "name": "Your account has been created! Please verify your email.",
+                                                                        "depth": 16,
+                                                                        "children": [
+                                                                          {
+                                                                            "node_id": "-1000000061",
+                                                                            "role": "InlineTextBox",
+                                                                            "name": "Your account has been created! Please ",
+                                                                            "depth": 17,
+                                                                            "children": []
+                                                                          },
+                                                                          {
+                                                                            "node_id": "-1000000062",
+                                                                            "role": "InlineTextBox",
+                                                                            "name": "verify your email.",
+                                                                            "depth": 17,
+                                                                            "children": []
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "node_id": "477",
+                                                                    "role": "paragraph",
+                                                                    "name": "",
+                                                                    "depth": 15,
+                                                                    "children": [
+                                                                      {
+                                                                        "node_id": "483",
+                                                                        "role": "StaticText",
+                                                                        "name": "A verification email has been sent. Please check your email and click on the link.",
+                                                                        "depth": 16,
+                                                                        "children": [
+                                                                          {
+                                                                            "node_id": "-1000000063",
+                                                                            "role": "InlineTextBox",
+                                                                            "name": "A verification email has been sent. Please check your email ",
+                                                                            "depth": 17,
+                                                                            "children": []
+                                                                          },
+                                                                          {
+                                                                            "node_id": "-1000000064",
+                                                                            "role": "InlineTextBox",
+                                                                            "name": "and click on the link.",
+                                                                            "depth": 17,
+                                                                            "children": []
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "node_id": "478",
+                                                                    "role": "paragraph",
+                                                                    "name": "",
+                                                                    "depth": 15,
+                                                                    "children": [
+                                                                      {
+                                                                        "node_id": "484",
+                                                                        "role": "StaticText",
+                                                                        "name": "To resend email verification,",
+                                                                        "depth": 16,
+                                                                        "children": [
+                                                                          {
+                                                                            "node_id": "-1000000065",
+                                                                            "role": "InlineTextBox",
+                                                                            "name": "To resend email verification,",
+                                                                            "depth": 17,
+                                                                            "children": []
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "node_id": "488",
+                                                                        "role": "StaticText",
+                                                                        "name": " ",
+                                                                        "depth": 16,
+                                                                        "children": [
+                                                                          {
+                                                                            "node_id": "-1000000066",
+                                                                            "role": "InlineTextBox",
+                                                                            "name": " ",
+                                                                            "depth": 17,
+                                                                            "children": []
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "node_id": "485",
+                                                                        "role": "link",
+                                                                        "name": "click here",
+                                                                        "depth": 16,
+                                                                        "children": [
+                                                                          {
+                                                                            "node_id": "486",
+                                                                            "role": "StaticText",
+                                                                            "name": "click here",
+                                                                            "depth": 17,
+                                                                            "children": [
+                                                                              {
+                                                                                "node_id": "-1000000067",
+                                                                                "role": "InlineTextBox",
+                                                                                "name": "click here",
+                                                                                "depth": 18,
+                                                                                "children": []
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "node_id": "487",
+                                                                        "role": "StaticText",
+                                                                        "name": ".",
+                                                                        "depth": 16,
+                                                                        "children": [
+                                                                          {
+                                                                            "node_id": "-1000000068",
+                                                                            "role": "InlineTextBox",
+                                                                            "name": ".",
+                                                                            "depth": 17,
+                                                                            "children": []
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "node_id": "426",
+                    "role": "generic",
+                    "name": "",
+                    "depth": 3,
+                    "children": []
+                  },
+                  {
+                    "node_id": "427",
+                    "role": "generic",
+                    "name": "",
+                    "depth": 3,
+                    "children": [
+                      {
+                        "node_id": "429",
+                        "role": "generic",
+                        "name": "",
+                        "depth": 4,
+                        "children": [
+                          {
+                            "node_id": "432",
+                            "role": "generic",
+                            "name": "",
+                            "depth": 5,
+                            "children": [
+                              {
+                                "node_id": "433",
+                                "role": "none",
+                                "name": "",
+                                "depth": 6,
+                                "children": [
+                                  {
+                                    "node_id": "434",
+                                    "role": "generic",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "node_id": "435",
+                                "role": "generic",
+                                "name": "",
+                                "depth": 6,
+                                "children": [
+                                  {
+                                    "node_id": "436",
+                                    "role": "generic",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "node_id": "437",
+                                "role": "generic",
+                                "name": "",
+                                "depth": 6,
+                                "children": []
+                              },
+                              {
+                                "node_id": "438",
+                                "role": "generic",
+                                "name": "",
+                                "depth": 6,
+                                "children": []
+                              },
+                              {
+                                "node_id": "439",
+                                "role": "generic",
+                                "name": "",
+                                "depth": 6,
+                                "children": []
+                              },
+                              {
+                                "node_id": "440",
+                                "role": "generic",
+                                "name": "",
+                                "depth": 6,
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "node_details": [
+      {
+        "node_id": "20",
+        "backend_node_id": 20,
+        "role": "RootWebArea",
+        "name": "HackerOne",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "focused": true,
+          "url": "https://hackerone.com/users/sign_up"
+        },
+        "child_ids": [
+          "37"
+        ],
+        "parent_id": null,
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "37",
+        "backend_node_id": 37,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "224"
+        ],
+        "parent_id": "20",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "224",
+        "backend_node_id": 224,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "26",
+          "426",
+          "427"
+        ],
+        "parent_id": "37",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "26",
+        "backend_node_id": 26,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "225"
+        ],
+        "parent_id": "224",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "426",
+        "backend_node_id": 426,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "224",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "427",
+        "backend_node_id": 427,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "429"
+        ],
+        "parent_id": "224",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "225",
+        "backend_node_id": 225,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "226"
+        ],
+        "parent_id": "26",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "429",
+        "backend_node_id": 429,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "432"
+        ],
+        "parent_id": "427",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "226",
+        "backend_node_id": 226,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "227",
+          "294",
+          "21"
+        ],
+        "parent_id": "225",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "227",
+        "backend_node_id": 227,
+        "role": "banner",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "228",
+          "229",
+          "274",
+          "293"
+        ],
+        "parent_id": "226",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "294",
+        "backend_node_id": 294,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "226",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "21",
+        "backend_node_id": 21,
+        "role": "main",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "295"
+        ],
+        "parent_id": "226",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "432",
+        "backend_node_id": 432,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "433",
+          "435",
+          "437",
+          "438",
+          "439",
+          "440"
+        ],
+        "parent_id": "429",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "228",
+        "backend_node_id": 228,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "227",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "229",
+        "backend_node_id": 229,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "230",
+          "233"
+        ],
+        "parent_id": "227",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "274",
+        "backend_node_id": 274,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "275",
+          "283"
+        ],
+        "parent_id": "227",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "275",
+        "backend_node_id": 275,
+        "role": "link",
+        "name": "Learn more about HackerOne",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://www.hackerone.com/"
+        },
+        "child_ids": [
+          "276",
+          "281"
+        ],
+        "parent_id": "274",
+        "is_interactive": true,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "283",
+        "backend_node_id": 283,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "284"
+        ],
+        "parent_id": "274",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "293",
+        "backend_node_id": 293,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "227",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "295",
+        "backend_node_id": 295,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "296"
+        ],
+        "parent_id": "21",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "296",
+        "backend_node_id": 296,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "297"
+        ],
+        "parent_id": "295",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "297",
+        "backend_node_id": 297,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "298"
+        ],
+        "parent_id": "296",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "433",
+        "backend_node_id": 433,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "434"
+        ],
+        "parent_id": "432",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "434",
+        "backend_node_id": 434,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "433",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "435",
+        "backend_node_id": 435,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "436"
+        ],
+        "parent_id": "432",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "437",
+        "backend_node_id": 437,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "432",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "438",
+        "backend_node_id": 438,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "432",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "439",
+        "backend_node_id": 439,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "432",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "440",
+        "backend_node_id": 440,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "432",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "230",
+        "backend_node_id": 230,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "231"
+        ],
+        "parent_id": "229",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "233",
+        "backend_node_id": 233,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "234",
+          "237",
+          "23"
+        ],
+        "parent_id": "229",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "234",
+        "backend_node_id": 234,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "235"
+        ],
+        "parent_id": "233",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "235",
+        "backend_node_id": 235,
+        "role": "link",
+        "name": "Go back to homepage",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/"
+        },
+        "child_ids": [
+          "22"
+        ],
+        "parent_id": "234",
+        "is_interactive": true,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "237",
+        "backend_node_id": 237,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "233",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "23",
+        "backend_node_id": 23,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "238",
+          "247",
+          "256",
+          "265"
+        ],
+        "parent_id": "233",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "238",
+        "backend_node_id": 238,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "240"
+        ],
+        "parent_id": "23",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "247",
+        "backend_node_id": 247,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "249"
+        ],
+        "parent_id": "23",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "256",
+        "backend_node_id": 256,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "258"
+        ],
+        "parent_id": "23",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "265",
+        "backend_node_id": 265,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "267"
+        ],
+        "parent_id": "23",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "276",
+        "backend_node_id": 276,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "275",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "281",
+        "backend_node_id": 281,
+        "role": "strong",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "282"
+        ],
+        "parent_id": "275",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "284",
+        "backend_node_id": 284,
+        "role": "link",
+        "name": "Log in",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/users/sign_in"
+        },
+        "child_ids": [
+          "285"
+        ],
+        "parent_id": "283",
+        "is_interactive": true,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "298",
+        "backend_node_id": 298,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "299"
+        ],
+        "parent_id": "297",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "299",
+        "backend_node_id": 299,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "300"
+        ],
+        "parent_id": "298",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "300",
+        "backend_node_id": 300,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "301"
+        ],
+        "parent_id": "299",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "301",
+        "backend_node_id": 301,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "480"
+        ],
+        "parent_id": "300",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "480",
+        "backend_node_id": 480,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "475",
+          "476",
+          "477",
+          "478"
+        ],
+        "parent_id": "301",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "475",
+        "backend_node_id": 475,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "481"
+        ],
+        "parent_id": "480",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "476",
+        "backend_node_id": 476,
+        "role": "heading",
+        "name": "Your account has been created! Please verify your email.",
+        "description": "",
+        "properties": {
+          "level": 1
+        },
+        "child_ids": [
+          "482"
+        ],
+        "parent_id": "480",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "477",
+        "backend_node_id": 477,
+        "role": "paragraph",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "483"
+        ],
+        "parent_id": "480",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "478",
+        "backend_node_id": 478,
+        "role": "paragraph",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "484",
+          "488",
+          "485",
+          "487"
+        ],
+        "parent_id": "480",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "436",
+        "backend_node_id": 436,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "435",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "231",
+        "backend_node_id": 231,
+        "role": "link",
+        "name": "Skip to main content \u00a0>",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/users/sign_up#main-content"
+        },
+        "child_ids": [
+          "232"
+        ],
+        "parent_id": "230",
+        "is_interactive": true,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "22",
+        "backend_node_id": 22,
+        "role": "image",
+        "name": "Hackerone logo",
+        "description": "",
+        "properties": {
+          "url": "data:image/svg+xml,%3c?xml%20version=%271.0%27?%3e%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2732%27%20height=%2732%27%20fill=%27none%27%20viewBox=%278%201%2016%2029.63%27%3e%3cpath%20fill-rule=%27evenodd%27%20clip-rule=%27evenodd%27%20d=%27M10.0409%201C10.6167%201%2011.1067%201.12633%2011.5133%201.37124H11.5133C11.92%201.62373%2012.122%201.94188%2012.122%202.33594V29.2567C12.122%2029.5978%2011.9098%2029.9111%2011.4931%2030.1963C11.0737%2030.4843%2010.5916%2030.6283%2010.0409%2030.6283C9.465%2030.6283%208.98253%2030.4843%208.59102%2030.1963C8.19703%2029.9084%208%2029.5979%208%2029.2567V2.33342C8%201.94188%208.19205%201.61873%208.57094%201.37124C8.94982%201.12636%209.4397%201%2010.0409%201ZM14.6022%2016.5557C14.5566%2016.0781%2014.6628%2015.7295%2014.9102%2015.4996V15.4995L20.4287%2012.0648C20.7974%2011.8147%2021.2799%2011.6935%2021.881%2011.6935C22.4844%2011.6935%2022.9872%2011.8147%2023.3916%2012.0647C23.7956%2012.3098%2024%2012.628%2024%2013.022V29.2568C24%2029.5979%2023.7906%2029.9084%2023.3709%2030.1964C22.9548%2030.4844%2022.457%2030.6283%2021.8811%2030.6283C21.3052%2030.6283%2020.8255%2030.4844%2020.4518%2030.1964C20.0677%2029.9084%2019.8786%2029.5979%2019.8786%2029.2567V17.1816L17.696%2018.5329C17.4487%2018.7604%2017.075%2018.8209%2016.5822%2018.7098C16.0823%2018.5961%2015.6452%2018.3284%2015.2539%2017.9015C14.8649%2017.4773%2014.6451%2017.0278%2014.6022%2016.5557Z%27%20fill=%27white%27/%3e%3c/svg%3e"
+        },
+        "child_ids": [],
+        "parent_id": "235",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "240",
+        "backend_node_id": 240,
+        "role": "link",
+        "name": "",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/hacktivity/overview"
+        },
+        "child_ids": [],
+        "parent_id": "238",
+        "is_interactive": true,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "249",
+        "backend_node_id": 249,
+        "role": "link",
+        "name": "",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/opportunities/all"
+        },
+        "child_ids": [],
+        "parent_id": "247",
+        "is_interactive": true,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "258",
+        "backend_node_id": 258,
+        "role": "link",
+        "name": "",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/directory/programs"
+        },
+        "child_ids": [],
+        "parent_id": "256",
+        "is_interactive": true,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "267",
+        "backend_node_id": 267,
+        "role": "link",
+        "name": "",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/leaderboard"
+        },
+        "child_ids": [],
+        "parent_id": "265",
+        "is_interactive": true,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "282",
+        "backend_node_id": 282,
+        "role": "StaticText",
+        "name": "Learn more about HackerOne",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000057"
+        ],
+        "parent_id": "281",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "285",
+        "backend_node_id": 285,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "287"
+        ],
+        "parent_id": "284",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "287",
+        "backend_node_id": 287,
+        "role": "StaticText",
+        "name": "Log in",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000058"
+        ],
+        "parent_id": "285",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "481",
+        "backend_node_id": 481,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000059"
+        ],
+        "parent_id": "475",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "482",
+        "backend_node_id": 482,
+        "role": "StaticText",
+        "name": "Your account has been created! Please verify your email.",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000061",
+          "-1000000062"
+        ],
+        "parent_id": "476",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "483",
+        "backend_node_id": 483,
+        "role": "StaticText",
+        "name": "A verification email has been sent. Please check your email and click on the link.",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000063",
+          "-1000000064"
+        ],
+        "parent_id": "477",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "484",
+        "backend_node_id": 484,
+        "role": "StaticText",
+        "name": "To resend email verification,",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000065"
+        ],
+        "parent_id": "478",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "488",
+        "backend_node_id": 488,
+        "role": "StaticText",
+        "name": " ",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000066"
+        ],
+        "parent_id": "478",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "485",
+        "backend_node_id": 485,
+        "role": "link",
+        "name": "click here",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/users/confirmation/new"
+        },
+        "child_ids": [
+          "486"
+        ],
+        "parent_id": "478",
+        "is_interactive": true,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "487",
+        "backend_node_id": 487,
+        "role": "StaticText",
+        "name": ".",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000068"
+        ],
+        "parent_id": "478",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "232",
+        "backend_node_id": 232,
+        "role": "StaticText",
+        "name": "Skip to main content \u00a0>",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000053",
+          "-1000000054",
+          "-1000000055",
+          "-1000000056"
+        ],
+        "parent_id": "231",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000057",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "Learn more about HackerOne",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "282",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000058",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "Log in",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "287",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000059",
+        "backend_node_id": null,
+        "role": "StaticText",
+        "name": "\uf108",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000060"
+        ],
+        "parent_id": "481",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000060",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "\uf108",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "-1000000059",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000061",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "Your account has been created! Please ",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "482",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000062",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "verify your email.",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "482",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000063",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "A verification email has been sent. Please check your email ",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "483",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000064",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "and click on the link.",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "483",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000065",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "To resend email verification,",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "484",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000066",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": " ",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "488",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "486",
+        "backend_node_id": 486,
+        "role": "StaticText",
+        "name": "click here",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000067"
+        ],
+        "parent_id": "485",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000068",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": ".",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "487",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000053",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "Skip to ",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "232",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000054",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "main ",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "232",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000055",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "content ",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "232",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000056",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "\u00a0>",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "232",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000060",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "\uf108",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "-1000000059",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000067",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "click here",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "486",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      }
+    ],
+    "relationships": [],
+    "statistics": {
+      "total_roles": 12,
+      "total_properties": 4,
+      "deepest_depth": 0,
+      "nodes_with_name": 34,
+      "nodes_with_description": 0,
+      "nodes_interactive": 9,
+      "nodes_visible": 0
+    }
+  }
+}

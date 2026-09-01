@@ -1,0 +1,95 @@
+{
+  "accessibility": [
+    {
+      "filename": "a11y_101042_795958.json",
+      "timestamp": "2026-08-01T10:10:42.796089",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101104_099597.json",
+      "timestamp": "2026-08-01T10:11:04.099808",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101112_347360.json",
+      "timestamp": "2026-08-01T10:11:12.347498",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101132_813159.json",
+      "timestamp": "2026-08-01T10:11:32.813330",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101139_209385.json",
+      "timestamp": "2026-08-01T10:11:39.209544",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101202_867629.json",
+      "timestamp": "2026-08-01T10:12:02.867778",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101209_431864.json",
+      "timestamp": "2026-08-01T10:12:09.432016",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101234_492732.json",
+      "timestamp": "2026-08-01T10:12:34.492867",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101242_238089.json",
+      "timestamp": "2026-08-01T10:12:42.238227",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101300_584227.json",
+      "timestamp": "2026-08-01T10:13:00.584356",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101301_685021.json",
+      "timestamp": "2026-08-01T10:13:01.685150",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101317_851748.json",
+      "timestamp": "2026-08-01T10:13:17.851891",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_101320_071005.json",
+      "timestamp": "2026-08-01T10:13:20.071145",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    }
+  ]
+}

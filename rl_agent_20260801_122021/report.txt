@@ -1,0 +1,25 @@
+================================================================================
+🚀 GENERIC WEB RL AGENT - FINAL REPORT
+================================================================================
+Total Cycles: 20
+Goal Achieved: 🔄 Still learning
+Best Reward: -inf
+Success Events: 0
+Pages Discovered: 0
+States Discovered: 0
+
+📊 Q-LEARNING STATS:
+  States Discovered: 0
+  Q-Values Learned: 0
+  Exploration Rate: 0.700
+  Learning Rate: 0.150
+  Total Actions: 0
+  Unique Actions: 0
+  Episodes: 0
+  Successful Episodes: 0
+  Avg Reward: 0.00
+  Max Reward: 0.00
+  Min Reward: 0.00
+
+
+================================================================================

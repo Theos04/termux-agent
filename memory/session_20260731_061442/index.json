@@ -1,0 +1,65 @@
+{
+  "dom_trees": [
+    {
+      "filename": "dom_061449_364850.json",
+      "timestamp": "2026-07-31T06:14:49.365075",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "filename": "snapshot_061451_500272.json",
+      "timestamp": "2026-07-31T06:14:51.500400",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "filename": "a11y_061453_204549.json",
+      "timestamp": "2026-07-31T06:14:53.204682",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "filename": "interaction_061659_254249.json",
+      "timestamp": "2026-07-31T06:16:59.254499",
+      "context": {
+        "action": "click",
+        "element_info": {
+          "tag": "a",
+          "text": "Jobs2",
+          "visible": true,
+          "canInteract": true
+        }
+      }
+    },
+    {
+      "filename": "interaction_061724_385116.json",
+      "timestamp": "2026-07-31T06:17:24.385447",
+      "context": {
+        "action": "click",
+        "element_info": {
+          "tag": "a",
+          "text": "Recommended jobs",
+          "visible": true,
+          "canInteract": true
+        }
+      }
+    }
+  ]
+}

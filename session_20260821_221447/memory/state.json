@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "session_id": "20260821_221447",
+    "start_time": "2026-08-21T22:14:47.445203",
+    "end_time": null,
+    "chrome_port": 9227,
+    "tab_url": "https://www.reddit.com/",
+    "tab_title": "Reddit - The heart of the internet",
+    "total_commands": 45,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 1,
+      "regex": 1,
+      "scripts": 1
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "session_20260821_221447/dom_trees/dom_221458_393187.json",
+      "metadata": {
+        "session_id": "20260821_221447",
+        "timestamp": "2026-08-21T22:14:58.393324",
+        "tab_url": "https://www.reddit.com/",
+        "tab_title": "Reddit - The heart of the internet",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 2091,
+        "command_index": 2
+      }
+    },
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": [],
+    "last_regex_extraction": {
+      "file": "session_20260821_221447/regex/regex_221523_378831.json",
+      "metadata": {
+        "session_id": "20260821_221447",
+        "timestamp": "2026-08-21T22:15:23.378946",
+        "tab_url": "https://www.reddit.com/",
+        "tab_title": "Reddit - The heart of the internet",
+        "context": {
+          "patterns": [
+            "EMAIL",
+            "URL",
+            "PHONE",
+            "UUID"
+          ]
+        },
+        "pattern_count": 4,
+        "total_matches": 0,
+        "command_index": 5
+      }
+    },
+    "last_xpath_query": null,
+    "last_css_test": null,
+    "last_semantic_extraction": null,
+    "last_json_ld": null,
+    "last_rdfa": null
+  },
+  "command_count": 45,
+  "last_updated": "2026-08-21T22:56:41.592949"
+}

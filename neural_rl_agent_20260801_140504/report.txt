@@ -1,0 +1,67 @@
+================================================================================
+🧠 NEURAL WEB RL AGENT - FINAL REPORT
+================================================================================
+Total Cycles: 20
+Goal Achieved: 🔄 Still learning
+Best Reward: 15.00
+Success Events: 12
+States Discovered: 13
+Discovery Rate: 100.00%
+
+🧩 PATTERN LEARNING STATS:
+  Total Patterns: 5
+  Total Sequences: 14
+  Successful Sequences: 0
+  Unique State Types: 2
+  Unique Actions: 10
+
+🏆 BEST PATTERNS:
+  listing → navigation: 8.00 (n=8)
+  content → critical: 2.00 (n=2)
+  listing → search: 2.00 (n=2)
+  listing → critical: 1.00 (n=1)
+  content → navigation: 1.00 (n=1)
+
+🧬 EVOLUTION STATS:
+  Generation: 2
+  Population Size: 5
+  Best Fitness: 46.00
+
+🎯 CONTEXTUAL BANDIT STATS:
+  Contexts: login, search_results, listing, form, content, generic
+  Epsilon: 0.100
+
+📈 Recent Performance (last 17):
+  Avg Reward: 9.16
+  Success Rate: 82.4%
+
+📈 Learning Progress:
+  First Half Avg: 8.50
+  Second Half Avg: 9.76
+  ✅ Agent is learning slowly
+
+📋 Action Distribution:
+  click|complete profile|critical: 3 times
+  click|job search how to apply for...|search: 3 times
+  navigate|jobs1|navigation: 3 times
+  navigate|terms of services|navigation: 1 times
+  navigate|https://www.naukri.com|navigation: 1 times
+  navigate|view all|navigation: 1 times
+  click|tips to remove job search u...|search: 1 times
+  navigate|how to use naukri|navigation: 1 times
+  navigate|saved jobs|navigation: 1 times
+  navigate|mnc|navigation: 1 times
+
+🌐 Visited Pages:
+  1. https://www.naukri.com/mnjuser/profile
+  2. https://www.naukri.com/staticpages/guidelines
+  3. https://www.naukri.com/mnjuser/homepage
+  4. https://www.naukri.com/blog/?utm_campaign=dashboard_widget&utm_source=naukri&utm
+  5. https://www.naukri.com/blog/benefits-of-pre-employment-background-checks/
+  6. https://www.naukri.com/blog/tag/how-to-use-naukri/
+  7. https://www.naukri.com/mnjuser/recommendedjobs
+  8. https://www.naukri.com/mnjuser/savedjobs
+  9. https://www.naukri.com/mnc-companies-in-india-cat101?title=MNCs%20actively%20hir
+  10. https://www.naukri.com/companies-hiring-in-india?title=MNCs%20actively%20hiring&
+
+================================================================================

@@ -1,0 +1,215 @@
+{
+  "metrics": {
+    "dom_nodes": 2604,
+    "ax_nodes": 14219,
+    "text_snippets": 36397,
+    "unique_texts": 4036,
+    "discovered_domain": "news_site",
+    "structure_types": {
+      "dict_3": 2,
+      "dict_8": 1,
+      "dom": 1,
+      "accessibility": 1,
+      "dict_2": 2
+    },
+    "text_stats": {
+      "total": 36397,
+      "unique": 4036,
+      "min_length": 1,
+      "max_length": 105795,
+      "avg_length": 27.230211281149547
+    },
+    "common_words": [
+      [
+        "internalrole",
+        3364
+      ],
+      [
+        "div",
+        2824
+      ],
+      [
+        "computedstring",
+        2351
+      ],
+      [
+        "gnb",
+        2214
+      ],
+      [
+        "box",
+        1899
+      ],
+      [
+        "font",
+        1897
+      ],
+      [
+        "webkit",
+        1632
+      ],
+      [
+        "aria",
+        1563
+      ],
+      [
+        "text",
+        1557
+      ],
+      [
+        "class",
+        1515
+      ],
+      [
+        "role",
+        1500
+      ],
+      [
+        "color",
+        1255
+      ],
+      [
+        "display",
+        1223
+      ],
+      [
+        "none",
+        1177
+      ],
+      [
+        "height",
+        1130
+      ],
+      [
+        "attribute",
+        1120
+      ],
+      [
+        "container",
+        1061
+      ],
+      [
+        "flex",
+        1017
+      ],
+      [
+        "width",
+        962
+      ],
+      [
+        "label",
+        926
+      ]
+    ],
+    "discovered_patterns": {
+      "common_attributes": [
+        [
+          "timestamp",
+          2
+        ],
+        [
+          "success",
+          2
+        ],
+        [
+          "tag",
+          2
+        ],
+        [
+          "metrics",
+          1
+        ],
+        [
+          "node_samples",
+          1
+        ],
+        [
+          "timestamp.dom_nodes",
+          1
+        ],
+        [
+          "timestamp.ax_nodes",
+          1
+        ],
+        [
+          "timestamp.text_snippets",
+          1
+        ],
+        [
+          "timestamp.unique_texts",
+          1
+        ],
+        [
+          "timestamp.discovered_domain",
+          1
+        ]
+      ]
+    }
+  },
+  "node_samples": [
+    {
+      "file": "discovered_analysis.json",
+      "type": "dict_3",
+      "keys": [
+        "metrics",
+        "node_samples",
+        "timestamp"
+      ],
+      "sample": "{'metrics': {'dom_nodes': 2604, 'ax_nodes': 14219, 'text_snippets': 36379, 'unique_texts': 4020, 'discovered_domain': 'news_site', 'structure_types': {'dom': 1, 'dict_3': 1, 'accessibility': 1, 'dict_"
+    },
+    {
+      "file": "ultimate_analysis.json",
+      "type": "dict_8",
+      "keys": [
+        "summary",
+        "structure_metrics",
+        "discovered_categories",
+        "text_clusters",
+        "common_patterns",
+        "top_keys",
+        "timestamp",
+        "no_assumptions"
+      ],
+      "sample": "{'summary': {'total_texts': 36379, 'unique_texts': 4020, 'files_analyzed': 3}, 'structure_metrics': {'text_lengths': {'total': 36379, 'unique': 4020, 'min': 1, 'max': 105795, 'avg': 27.219357321531653"
+    },
+    {
+      "file": "dom_061449_364850.json",
+      "type": "dom",
+      "keys": [
+        "nodeId",
+        "backendNodeId",
+        "nodeType",
+        "nodeName",
+        "localName",
+        "nodeValue",
+        "childNodeCount",
+        "children",
+        "documentURL",
+        "baseURL",
+        "xmlVersion",
+        "compatibilityMode",
+        "isScrollable"
+      ],
+      "sample": "{'nodeId': 1, 'backendNodeId': 1, 'nodeType': 9, 'nodeName': '#document', 'localName': '', 'nodeValue': '', 'childNodeCount': 2, 'children': [{'nodeId': 2, 'parentId': 1, 'backendNodeId': 323, 'nodeTy"
+    },
+    {
+      "file": "snapshot_061451_500272.json",
+      "type": "dict_3",
+      "keys": [
+        "dom_nodes",
+        "layout_tree",
+        "computed_styles"
+      ],
+      "sample": "{'dom_nodes': [{'nodeType': 9, 'nodeName': '#document', 'nodeValue': '', 'backendNodeId': 1, 'childNodeIndexes': [1, 2], 'layoutNodeIndex': 0, 'documentURL': 'https://www.naukri.com/mnjuser/homepage',"
+    },
+    {
+      "file": "a11y_061453_204549.json",
+      "type": "accessibility",
+      "keys": [
+        "nodes"
+      ],
+      "sample": "{'nodes': [{'nodeId': '1', 'ignored': False, 'role': {'type': 'internalRole', 'value': 'RootWebArea'}, 'chromeRole': {'type': 'internalRole', 'value': 144}, 'name': {'type': 'computedString', 'value':"
+    }
+  ],
+  "timestamp": "2026-07-31T11:18:59.874072"
+}

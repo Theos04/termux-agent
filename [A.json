@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-08-06T00:44:05.389486",
+  "collection_time": "2026-08-06 00:44:05",
+  "targets_collected": 1,
+  "findings_count": 2,
+  "risk_summary": {
+    "medium": 1,
+    "high": 1
+  },
+  "findings_by_risk": {
+    "NHI7": [
+      {
+        "risk_id": "NHI7",
+        "risk_name": "Insufficient NHI Monitoring",
+        "description": "No evidence of audit logging or monitoring in browser storage",
+        "risk_level": "medium",
+        "location": "https://www.meesho.com/",
+        "evidence": {
+          "storage_available": 0
+        },
+        "recommendation": "Implement client-side monitoring for NHI usage and suspicious activities.",
+        "timestamp": "2026-08-06T00:44:05.389321"
+      }
+    ],
+    "NHI9": [
+      {
+        "risk_id": "NHI9",
+        "risk_name": "Missing NHI Revocation",
+        "description": "No visible token revocation or expiration mechanisms",
+        "risk_level": "high",
+        "location": "https://www.meesho.com/",
+        "evidence": {
+          "storage_keys": []
+        },
+        "recommendation": "Implement token revocation endpoints and use short-lived tokens with refresh mechanisms.",
+        "timestamp": "2026-08-06T00:44:05.389451"
+      }
+    ]
+  },
+  "storage_summary": {
+    "48CBA3D19E2F59B1927E0BA970BDD362": {
+      "localStorage_count": 0,
+      "sessionStorage_count": 0,
+      "cookies_count": 0,
+      "indexedDB_count": 0,
+      "websql_count": 0,
+      "cacheStorage_count": 0
+    }
+  },
+  "recommendations": [
+    {
+      "risk_id": "NHI7",
+      "recommendation": "Implement client-side monitoring for NHI usage and suspicious activities.",
+      "risk_level": "medium"
+    },
+    {
+      "risk_id": "NHI9",
+      "recommendation": "Implement token revocation endpoints and use short-lived tokens with refresh mechanisms.",
+      "risk_level": "high"
+    }
+  ],
+  "all_findings": [
+    {
+      "risk_id": "NHI7",
+      "risk_name": "Insufficient NHI Monitoring",
+      "description": "No evidence of audit logging or monitoring in browser storage",
+      "risk_level": "medium",
+      "location": "https://www.meesho.com/",
+      "evidence": {
+        "storage_available": 0
+      },
+      "recommendation": "Implement client-side monitoring for NHI usage and suspicious activities.",
+      "timestamp": "2026-08-06T00:44:05.389321"
+    },
+    {
+      "risk_id": "NHI9",
+      "risk_name": "Missing NHI Revocation",
+      "description": "No visible token revocation or expiration mechanisms",
+      "risk_level": "high",
+      "location": "https://www.meesho.com/",
+      "evidence": {
+        "storage_keys": []
+      },
+      "recommendation": "Implement token revocation endpoints and use short-lived tokens with refresh mechanisms.",
+      "timestamp": "2026-08-06T00:44:05.389451"
+    }
+  ],
+  "raw_storage": {}
+}

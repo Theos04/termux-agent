@@ -1,0 +1,80 @@
+{
+  "dom_trees": [
+    {
+      "filename": "dom_170110_750924.json",
+      "timestamp": "2026-08-03T17:01:10.751080",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    },
+    {
+      "filename": "dom_170349_435722.json",
+      "timestamp": "2026-08-03T17:03:49.438711",
+      "context": {
+        "depth": -1,
+        "pierce": true,
+        "method": "DOM.getDocument"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "filename": "snapshot_170117_058177.json",
+      "timestamp": "2026-08-03T17:01:17.058316",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    },
+    {
+      "filename": "snapshot_170353_758413.json",
+      "timestamp": "2026-08-03T17:03:53.758609",
+      "context": {
+        "method": "DOMSnapshot.getSnapshot",
+        "params": {
+          "computedStyleWhitelist": [],
+          "includeEventListeners": false,
+          "includePaintOrder": false,
+          "includeUserAgentShadowTree": true
+        }
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "filename": "a11y_170120_192455.json",
+      "timestamp": "2026-08-03T17:01:20.192602",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_170126_441328.json",
+      "timestamp": "2026-08-03T17:01:26.441507",
+      "context": {
+        "method": "Comprehensive_AX_Tree"
+      }
+    },
+    {
+      "filename": "a11y_170356_480007.json",
+      "timestamp": "2026-08-03T17:03:56.480222",
+      "context": {
+        "method": "Accessibility.getFullAXTree"
+      }
+    },
+    {
+      "filename": "a11y_170412_682958.json",
+      "timestamp": "2026-08-03T17:04:12.683137",
+      "context": {
+        "method": "Comprehensive_AX_Tree"
+      }
+    }
+  ]
+}

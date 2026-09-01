@@ -1,0 +1,173 @@
+{
+  "page_type": "blog",
+  "total_texts": 561,
+  "total_headings": 0,
+  "total_links": 18,
+  "total_actions": 4,
+  "headings": [],
+  "links": [
+    "SEOStudio \u2192 https://seostudio.tools",
+    "Facebook \u2192 https://www.facebook.com/sharer/sharer.php?u=https://seostudio.tools",
+    "Twitter \u2192 https://twitter.com/intent/tweet?text=SEOStudio Tools&url=https://seostudio.tools&counturl=https://seostudio.tools",
+    "Pinterest \u2192 https://www.pinterest.com/pin-builder/?url=https://seostudio.tools&media=https://seostudio.tools/components/storage/app/public/photos/1/SEOSTUDIO.png&description=SEOStudio%20Tools",
+    "Linkedin \u2192 https://www.linkedin.com/shareArticle?mini=true&ro=true&title=SEOStudio Tools&url=https://seostudio.tools",
+    "Reddit \u2192 https://www.reddit.com/submit?url=https://seostudio.tools&title=SEOStudio%20Tools",
+    "Tumblr \u2192 https://tumblr.com/widgets/share/tool?canonicalUrl=https://seostudio.tools",
+    "Text Tools \u2192 https://seostudio.tools/#text-tools",
+    "YouTube Tools \u2192 https://seostudio.tools/#youtube-tools",
+    "SEO Tools \u2192 https://seostudio.tools/#seo-tools"
+  ],
+  "actions": [
+    {
+      "text": "Toggle navigation",
+      "type": "click",
+      "tag": "button"
+    },
+    {
+      "text": "Search box",
+      "type": "click",
+      "tag": "button"
+    },
+    {
+      "text": "Search for your tool",
+      "type": "type",
+      "tag": "input"
+    },
+    {
+      "text": "Enable dark mode",
+      "type": "click",
+      "tag": "button"
+    }
+  ],
+  "patterns": {
+    "common_phrases": {
+      "generator youtube": 21,
+      "text to": 18,
+      "youtube channel": 18,
+      "converter text": 15,
+      "extractor youtube": 15,
+      "binary converter": 14,
+      "converter text to": 13,
+      "to text": 13,
+      "to text converter": 13,
+      "text converter": 13,
+      "converter jpg": 12,
+      "to binary": 12,
+      "to binary converter": 12,
+      "to hex": 12,
+      "to hex converter": 12,
+      "hex converter": 12,
+      "binary to": 11,
+      "hex to": 11,
+      "checker youtube": 10,
+      "json to": 10
+    },
+    "top_words": [
+      [
+        "converter",
+        182
+      ],
+      [
+        "youtube",
+        84
+      ],
+      [
+        "generator",
+        54
+      ],
+      [
+        "text",
+        42
+      ],
+      [
+        "checker",
+        37
+      ],
+      [
+        "tools",
+        35
+      ],
+      [
+        "calculator",
+        33
+      ],
+      [
+        "json",
+        29
+      ],
+      [
+        "binary",
+        25
+      ],
+      [
+        "channel",
+        19
+      ],
+      [
+        "decimal",
+        19
+      ],
+      [
+        "image",
+        18
+      ],
+      [
+        "octal",
+        16
+      ],
+      [
+        "extractor",
+        15
+      ],
+      [
+        "title",
+        12
+      ],
+      [
+        "your",
+        11
+      ],
+      [
+        "ascii",
+        11
+      ],
+      [
+        "seostudio",
+        10
+      ],
+      [
+        "domain",
+        10
+      ],
+      [
+        "javascript",
+        10
+      ]
+    ]
+  },
+  "extracted": {
+    "numbers": [
+      "200+"
+    ],
+    "names": [
+      "Converter Decimal",
+      "Density Checker",
+      "Editing Tools",
+      "Cache Checker",
+      "Htaccess Redirect",
+      "Currency Converter",
+      "Converter About",
+      "Timestamp Link",
+      "About Us",
+      "Suggestion Tool"
+    ],
+    "urls": [
+      "https://seostudio.tools';",
+      "https://seostudio.tools/theme/mode',",
+      "https://seostudio.tools/assets/css/nucleo-svg.css\">",
+      "https://seostudio.tools/assets/css/fontawesome.min.css\">",
+      "https://scripts.cleverwebserver.com/51bd987933e42dce992d450b858b277a.js\";"
+    ]
+  },
+  "summary": "\ud83d\udccc PAGE TYPE: BLOG\n\n\u26a1 ACTIONS:\n   \u2022 Toggle navigation (click)\n   \u2022 Search box (click)\n   \u2022 Search for your tool (type)\n   \u2022 Enable dark mode (click)\n\n\ud83d\udcca EXTRACTED:\n   numbers: 200+\n   names: Converter Decimal, Density Checker, Editing Tools, Cache Checker, Htaccess Redirect\n   urls: https://seostudio.tools';, https://seostudio.tools/theme/mode',, https://seostudio.tools/assets/css/nucleo-svg.css\">, https://seostudio.tools/assets/css/fontawesome.min.css\">, https://scripts.cleverwebserver.com/51bd987933e42dce992d450b858b277a.js\";\n\n\ud83d\udca1 YOU CAN:\n   \u2022 Click on 3 elements\n   \u2022 Type into 1 fields"
+}

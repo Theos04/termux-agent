@@ -1,0 +1,177 @@
+{
+  "page_type": "job_listing",
+  "total_texts": 426,
+  "total_headings": 0,
+  "total_links": 10,
+  "total_actions": 1,
+  "headings": [],
+  "links": [
+    "Download Unstop Apps on Google Play \u2192 https://play.google.com/store/apps/details?id=com.dare2compete.app",
+    "Follow on twitter \u2192 https://twitter.com/Unstop_World",
+    "Follow on Instagram \u2192 https://www.instagram.com/unstop.world/",
+    "Follow on LinkedIn \u2192 https://www.linkedin.com/company/unstop",
+    "Follow on Facebook \u2192 https://www.facebook.com/Unstop.world",
+    "Follow on Telegram \u2192 https://t.me/+ON15qceSy-IyZjY9",
+    "Follow on Discord \u2192 https://discord.com/invite/DvYWXNr4yR",
+    "Follow on YouTube \u2192 https://www.youtube.com/c/Unstop_World",
+    "Download Unstop Apps on Google Play \u2192 https://play.google.com/store/apps/details?id=com.dare2compete.app",
+    "Download Unstop Apps on App Store \u2192 https://apps.apple.com/in/app/unstop-formerly-dare2compete/id1601170365"
+  ],
+  "actions": [
+    {
+      "text": "Search Opportunities",
+      "type": "type",
+      "tag": "input"
+    }
+  ],
+  "patterns": {
+    "common_phrases": {
+      "> .brz-bg": 63,
+      "> .brz-bg >": 63,
+      ".brz-bg >": 63,
+      "{ font-family:": 26,
+      "jobs in": 24,
+      "and (max-width:": 20,
+      "> .brz-container__wrap": 19,
+      ".brz-css-d-row-row >": 19,
+      "400, \"wdth\"": 19,
+      "400, \"wdth\" 100,": 19,
+      "\"wdth\" 100,": 19,
+      "\"wdth\" 100, \"soft\"": 19,
+      "100, \"soft\"": 19,
+      "{ font-family: 'montserrat',": 18,
+      "font-family: 'montserrat',": 18,
+      "font-family: 'montserrat', sans-serif;font-size:": 18,
+      "'montserrat', sans-serif;font-size:": 18,
+      "} @media": 17,
+      "screen and": 17,
+      "} @media (max-width:": 16
+    },
+    "top_words": [
+      [
+        "(max-width:",
+        125
+      ],
+      [
+        "solid",
+        88
+      ],
+      [
+        ".brz",
+        63
+      ],
+      [
+        ".brz-bg",
+        63
+      ],
+      [
+        ".un_input.input-size-large[_nghost-ng-c3667168809]",
+        51
+      ],
+      [
+        "jobs",
+        46
+      ],
+      [
+        "(min-width:",
+        43
+      ],
+      [
+        "font-family:",
+        28
+      ],
+      [
+        ".footer_main_right[_ngcontent-ng-c2435639421]",
+        23
+      ],
+      [
+        "register",
+        23
+      ],
+      [
+        "internships",
+        21
+      ],
+      [
+        "10px",
+        21
+      ],
+      [
+        ".brz-tp__dc-block-st1",
+        21
+      ],
+      [
+        "!important;",
+        19
+      ],
+      [
+        ".brz-container__wrap",
+        19
+      ],
+      [
+        ".brz-css-d-row-row",
+        19
+      ],
+      [
+        "400,",
+        19
+      ],
+      [
+        "\"wdth\"",
+        19
+      ],
+      [
+        "100,",
+        19
+      ],
+      [
+        "\"soft\"",
+        19
+      ]
+    ]
+  },
+  "extracted": {
+    "numbers": [
+      "0-1",
+      "0600-06",
+      "60-2",
+      "0-102",
+      "2-1",
+      "2021-05",
+      "60-10",
+      "91-9311777388",
+      "0870-088",
+      "67-1"
+    ],
+    "names": [
+      "Interviews Mentorships",
+      "Powered Skill",
+      "My Certificates",
+      "My Rounds",
+      "Unstop Private",
+      "Online Free",
+      "Articles Resources",
+      "Screening Agent",
+      "Now Accenture",
+      "Location Jobs"
+    ],
+    "urls": [
+      "https://d8it4huxumps7.cloudfront.net/uploads/images/68f8a91d2bef9_host_internships.png?d=730x428)}.host-internships[_ngcontent-ng-c3424469092]:before{position:absolute;content:\"\";background-repeat:no-repeat;background-position:center;background-size:cover;width:305px;height:194px;right:64px;bottom:0}@media",
+      "https://d8it4huxumps7.cloudfront.net/uploads/images/6835aeafcae68_no_data_img_1.png?d=321x141);background-repeat:no-repeat;width:161px;height:139px;background-size:contain;left:20%;top:20px}.no-data[_ngcontent-ng-c3087381453]:before{position:absolute;content:\"\";background-image:url(https://d8it4huxumps7.cloudfront.net/uploads/images/6835aec2bddf1_no_data_img_2.png?d=320x114);background-repeat:no-repeat;width:161px;height:139px;background-size:contain;right:20%;top:0}.activity_box[_ngcontent-ng-c3087381453]{border-radius:20px;padding:20px;background:var(--grey-50);overflow:hidden}.activity_box[_ngcontent-ng-c3087381453]",
+      "https://cdn.moengage.com/release/dc_3/versions/2.54.4/moe_webSdk.min.latest.js\",",
+      "https://d8it4huxumps7.cloudfront.net/uploads/images/67f7a42b6fcaf_abblication_mob.png?d=635x200)}.card-warapper[_ngcontent-ng-c3129475046]",
+      "https://fonts.gstatic.com/s/lalezar/v16/zrfl0HLVx-HwTP82YaL4IxL0.woff2)"
+    ],
+    "emails": [
+      "support@unstop.com",
+      "collection@infegy.com"
+    ],
+    "companies": [
+      "Pvt Ltd",
+      "Web Services",
+      "Us Partners",
+      "FLIVE Consulting"
+    ]
+  },
+  "summary": "\ud83d\udccc PAGE TYPE: JOB_LISTING\n\n\u26a1 ACTIONS:\n   \u2022 Search Opportunities (type)\n\n\ud83d\udcca EXTRACTED:\n   numbers: 0-1, 0600-06, 60-2, 0-102, 2-1\n   names: Interviews Mentorships, Powered Skill, My Certificates, My Rounds, Unstop Private\n   urls: https://d8it4huxumps7.cloudfront.net/uploads/images/68f8a91d2bef9_host_internships.png?d=730x428)}.host-internships[_ngcontent-ng-c3424469092]:before{position:absolute;content:\"\";background-repeat:no-repeat;background-position:center;background-size:cover;width:305px;height:194px;right:64px;bottom:0}@media, https://d8it4huxumps7.cloudfront.net/uploads/images/6835aeafcae68_no_data_img_1.png?d=321x141);background-repeat:no-repeat;width:161px;height:139px;background-size:contain;left:20%;top:20px}.no-data[_ngcontent-ng-c3087381453]:before{position:absolute;content:\"\";background-image:url(https://d8it4huxumps7.cloudfront.net/uploads/images/6835aec2bddf1_no_data_img_2.png?d=320x114);background-repeat:no-repeat;width:161px;height:139px;background-size:contain;right:20%;top:0}.activity_box[_ngcontent-ng-c3087381453]{border-radius:20px;padding:20px;background:var(--grey-50);overflow:hidden}.activity_box[_ngcontent-ng-c3087381453], https://cdn.moengage.com/release/dc_3/versions/2.54.4/moe_webSdk.min.latest.js\",, https://d8it4huxumps7.cloudfront.net/uploads/images/67f7a42b6fcaf_abblication_mob.png?d=635x200)}.card-warapper[_ngcontent-ng-c3129475046], https://fonts.gstatic.com/s/lalezar/v16/zrfl0HLVx-HwTP82YaL4IxL0.woff2)\n   emails: support@unstop.com, collection@infegy.com\n   companies: Pvt Ltd, Web Services, Us Partners, FLIVE Consulting\n\n\ud83d\udca1 YOU CAN:\n   \u2022 Type into 1 fields"
+}

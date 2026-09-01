@@ -1,0 +1,18 @@
+================================================================================
+🧠 SHAW TALEBI AGENT - FINAL REPORT
+================================================================================
+Total Cycles: 0
+Best Reward: -inf
+Total Reward: 0.00
+
+📊 DATA COLLECTION STATS:
+  Total Samples: 21
+  Unique URLs: 3
+  Data Diversity: 30.00%
+  Avg Interactive: 853.86
+
+🧠 LEARNING STATS:
+  Current Learning Rate: 0.00100
+
+
+================================================================================

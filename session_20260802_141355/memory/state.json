@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "session_id": "20260802_141355",
+    "start_time": "2026-08-02T14:13:55.333824",
+    "end_time": "2026-08-02T14:38:06.284428",
+    "chrome_port": 9260,
+    "tab_url": "https://www.naukri.com/mnjuser/homepage",
+    "tab_title": "Home | Mynaukri",
+    "total_commands": 46,
+    "snapshots_taken": [],
+    "files_generated": {
+      "accessibility": 3,
+      "dom_trees": 2,
+      "snapshots": 1,
+      "interactions": 3
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "session_20260802_141355/dom_trees/dom_141512_903247.json",
+      "metadata": {
+        "session_id": "20260802_141355",
+        "timestamp": "2026-08-02T14:15:12.903393",
+        "tab_url": "https://www.naukri.com/mnjuser/homepage",
+        "tab_title": "Home | Mynaukri",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 2333,
+        "command_index": 8
+      }
+    },
+    "last_snapshot": {
+      "file": "session_20260802_141355/snapshots/snapshot_141519_235610.json",
+      "metadata": {
+        "session_id": "20260802_141355",
+        "timestamp": "2026-08-02T14:15:19.235742",
+        "tab_url": "https://www.naukri.com/mnjuser/homepage",
+        "tab_title": "Home | Mynaukri",
+        "context": {
+          "method": "DOMSnapshot.getSnapshot",
+          "params": {
+            "computedStyleWhitelist": [],
+            "includeEventListeners": false,
+            "includePaintOrder": false,
+            "includeUserAgentShadowTree": true
+          }
+        },
+        "dom_node_count": 2633,
+        "layout_tree_count": 0,
+        "computed_styles_count": 0,
+        "command_index": 11
+      }
+    },
+    "last_accessibility": {
+      "file": "session_20260802_141355/accessibility/a11y_141530_415663.json",
+      "metadata": {
+        "session_id": "20260802_141355",
+        "timestamp": "2026-08-02T14:15:30.415857",
+        "tab_url": "https://www.naukri.com/mnjuser/homepage",
+        "tab_title": "Home | Mynaukri",
+        "context": {
+          "method": "Comprehensive_AX_Tree"
+        },
+        "node_count": 0,
+        "command_index": 13
+      }
+    },
+    "last_styles": null,
+    "last_interaction": {
+      "file": "session_20260802_141355/interactions/interaction_143533_422545.json",
+      "metadata": {
+        "session_id": "20260802_141355",
+        "timestamp": "2026-08-02T14:35:33.422735",
+        "tab_url": "https://www.naukri.com/mnjuser/homepage",
+        "tab_title": "Home | Mynaukri",
+        "context": {
+          "type": "script_execution"
+        },
+        "interaction_number": 3,
+        "command_index": 46
+      }
+    },
+    "interaction_count": 3,
+    "errors": []
+  },
+  "command_count": 46,
+  "last_updated": "2026-08-02T14:38:06.293077"
+}

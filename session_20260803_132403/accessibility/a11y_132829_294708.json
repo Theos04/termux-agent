@@ -1,0 +1,1947 @@
+{
+  "metadata": {
+    "session_id": "20260803_132403",
+    "timestamp": "2026-08-03T13:28:29.294880",
+    "tab_url": "https://hackerone.com/2fa/setup?security_key_enabled=true",
+    "tab_title": "Setup Two-factor authentication | HackerOne",
+    "context": {
+      "method": "Comprehensive_AX_Tree"
+    },
+    "node_count": 0,
+    "command_index": 23
+  },
+  "data": {
+    "total_nodes": 83,
+    "nodes_by_role": {
+      "RootWebArea": 1,
+      "none": 19,
+      "generic": 31,
+      "banner": 1,
+      "main": 1,
+      "heading": 1,
+      "button": 3,
+      "link": 6,
+      "StaticText": 7,
+      "LabelText": 1,
+      "image": 1,
+      "InlineTextBox": 10,
+      "textbox": 1
+    },
+    "nodes_by_property": {
+      "focusable": 8,
+      "focused": 1,
+      "url": 8,
+      "level": 1,
+      "invalid": 4,
+      "disabled": 3,
+      "editable": 1,
+      "multiline": 1,
+      "readonly": 1,
+      "required": 1,
+      "describedby": 1,
+      "labelledby": 1
+    },
+    "tree_structure": [
+      {
+        "node_id": "509",
+        "role": "RootWebArea",
+        "name": "Setup Two-factor authentication | HackerOne",
+        "depth": 0,
+        "children": [
+          {
+            "node_id": "524",
+            "role": "none",
+            "name": "",
+            "depth": 1,
+            "children": [
+              {
+                "node_id": "706",
+                "role": "generic",
+                "name": "",
+                "depth": 2,
+                "children": [
+                  {
+                    "node_id": "709",
+                    "role": "generic",
+                    "name": "",
+                    "depth": 3,
+                    "children": [
+                      {
+                        "node_id": "710",
+                        "role": "generic",
+                        "name": "",
+                        "depth": 4,
+                        "children": [
+                          {
+                            "node_id": "711",
+                            "role": "none",
+                            "name": "",
+                            "depth": 5,
+                            "children": [
+                              {
+                                "node_id": "712",
+                                "role": "banner",
+                                "name": "",
+                                "depth": 6,
+                                "children": [
+                                  {
+                                    "node_id": "713",
+                                    "role": "generic",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": []
+                                  },
+                                  {
+                                    "node_id": "714",
+                                    "role": "generic",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": [
+                                      {
+                                        "node_id": "715",
+                                        "role": "generic",
+                                        "name": "",
+                                        "depth": 8,
+                                        "children": [
+                                          {
+                                            "node_id": "716",
+                                            "role": "link",
+                                            "name": "Skip to main content \u00a0>",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "717",
+                                                "role": "StaticText",
+                                                "name": "Skip to main content \u00a0>",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "-1000000069",
+                                                    "role": "InlineTextBox",
+                                                    "name": "Skip to ",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  },
+                                                  {
+                                                    "node_id": "-1000000070",
+                                                    "role": "InlineTextBox",
+                                                    "name": "main ",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  },
+                                                  {
+                                                    "node_id": "-1000000071",
+                                                    "role": "InlineTextBox",
+                                                    "name": "content ",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  },
+                                                  {
+                                                    "node_id": "-1000000072",
+                                                    "role": "InlineTextBox",
+                                                    "name": "\u00a0>",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "node_id": "718",
+                                        "role": "none",
+                                        "name": "",
+                                        "depth": 8,
+                                        "children": [
+                                          {
+                                            "node_id": "719",
+                                            "role": "none",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "720",
+                                                "role": "link",
+                                                "name": "Go back to homepage",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "510",
+                                                    "role": "image",
+                                                    "name": "Hackerone logo",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "node_id": "722",
+                                            "role": "none",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": []
+                                          },
+                                          {
+                                            "node_id": "511",
+                                            "role": "none",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "723",
+                                                "role": "generic",
+                                                "name": "",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "725",
+                                                    "role": "link",
+                                                    "name": "",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "node_id": "732",
+                                                "role": "generic",
+                                                "name": "",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "734",
+                                                    "role": "link",
+                                                    "name": "",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "node_id": "741",
+                                                "role": "generic",
+                                                "name": "",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "743",
+                                                    "role": "link",
+                                                    "name": "",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "node_id": "750",
+                                                "role": "generic",
+                                                "name": "",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "752",
+                                                    "role": "link",
+                                                    "name": "",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "node_id": "759",
+                                    "role": "generic",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "node_id": "760",
+                                "role": "none",
+                                "name": "",
+                                "depth": 6,
+                                "children": []
+                              },
+                              {
+                                "node_id": "514",
+                                "role": "main",
+                                "name": "",
+                                "depth": 6,
+                                "children": [
+                                  {
+                                    "node_id": "761",
+                                    "role": "none",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": [
+                                      {
+                                        "node_id": "762",
+                                        "role": "none",
+                                        "name": "",
+                                        "depth": 8,
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "node_id": "768",
+                    "role": "generic",
+                    "name": "",
+                    "depth": 3,
+                    "children": []
+                  },
+                  {
+                    "node_id": "769",
+                    "role": "generic",
+                    "name": "",
+                    "depth": 3,
+                    "children": [
+                      {
+                        "node_id": "771",
+                        "role": "generic",
+                        "name": "",
+                        "depth": 4,
+                        "children": [
+                          {
+                            "node_id": "774",
+                            "role": "generic",
+                            "name": "",
+                            "depth": 5,
+                            "children": [
+                              {
+                                "node_id": "775",
+                                "role": "none",
+                                "name": "",
+                                "depth": 6,
+                                "children": [
+                                  {
+                                    "node_id": "776",
+                                    "role": "generic",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "node_id": "777",
+                                "role": "generic",
+                                "name": "",
+                                "depth": 6,
+                                "children": [
+                                  {
+                                    "node_id": "778",
+                                    "role": "generic",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "node_id": "779",
+                                "role": "generic",
+                                "name": "",
+                                "depth": 6,
+                                "children": []
+                              },
+                              {
+                                "node_id": "780",
+                                "role": "generic",
+                                "name": "",
+                                "depth": 6,
+                                "children": []
+                              },
+                              {
+                                "node_id": "781",
+                                "role": "generic",
+                                "name": "",
+                                "depth": 6,
+                                "children": []
+                              },
+                              {
+                                "node_id": "782",
+                                "role": "generic",
+                                "name": "",
+                                "depth": 6,
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "node_id": "794",
+                    "role": "generic",
+                    "name": "",
+                    "depth": 3,
+                    "children": []
+                  },
+                  {
+                    "node_id": "797",
+                    "role": "generic",
+                    "name": "",
+                    "depth": 3,
+                    "children": [
+                      {
+                        "node_id": "798",
+                        "role": "generic",
+                        "name": "",
+                        "depth": 4,
+                        "children": [
+                          {
+                            "node_id": "520",
+                            "role": "generic",
+                            "name": "",
+                            "depth": 5,
+                            "children": []
+                          },
+                          {
+                            "node_id": "799",
+                            "role": "generic",
+                            "name": "",
+                            "depth": 5,
+                            "children": [
+                              {
+                                "node_id": "801",
+                                "role": "none",
+                                "name": "",
+                                "depth": 6,
+                                "children": [
+                                  {
+                                    "node_id": "802",
+                                    "role": "heading",
+                                    "name": "Add security key",
+                                    "depth": 7,
+                                    "children": [
+                                      {
+                                        "node_id": "803",
+                                        "role": "none",
+                                        "name": "",
+                                        "depth": 8,
+                                        "children": [
+                                          {
+                                            "node_id": "804",
+                                            "role": "StaticText",
+                                            "name": "Add security key",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "-1000000073",
+                                                "role": "InlineTextBox",
+                                                "name": "Add security key",
+                                                "depth": 10,
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "node_id": "521",
+                                    "role": "button",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "node_id": "518",
+                                "role": "none",
+                                "name": "",
+                                "depth": 6,
+                                "children": [
+                                  {
+                                    "node_id": "809",
+                                    "role": "none",
+                                    "name": "",
+                                    "depth": 7,
+                                    "children": [
+                                      {
+                                        "node_id": "519",
+                                        "role": "generic",
+                                        "name": "",
+                                        "depth": 8,
+                                        "children": [
+                                          {
+                                            "node_id": "810",
+                                            "role": "LabelText",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "812",
+                                                "role": "StaticText",
+                                                "name": "Name",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "-1000000074",
+                                                    "role": "InlineTextBox",
+                                                    "name": "Name",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "node_id": "813",
+                                            "role": "generic",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "814",
+                                                "role": "StaticText",
+                                                "name": "Give your key a name to help you identify it",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "-1000000075",
+                                                    "role": "InlineTextBox",
+                                                    "name": "Give your key a name to help you identify it",
+                                                    "depth": 11,
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "node_id": "815",
+                                            "role": "none",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": []
+                                          },
+                                          {
+                                            "node_id": "816",
+                                            "role": "generic",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "517",
+                                                "role": "textbox",
+                                                "name": "Name",
+                                                "depth": 10,
+                                                "children": [
+                                                  {
+                                                    "node_id": "818",
+                                                    "role": "generic",
+                                                    "name": "",
+                                                    "depth": 11,
+                                                    "children": [
+                                                      {
+                                                        "node_id": "819",
+                                                        "role": "StaticText",
+                                                        "name": "sha-linux",
+                                                        "depth": 12,
+                                                        "children": [
+                                                          {
+                                                            "node_id": "-1000000076",
+                                                            "role": "InlineTextBox",
+                                                            "name": "sha-linux",
+                                                            "depth": 13,
+                                                            "children": []
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "node_id": "820",
+                                "role": "none",
+                                "name": "",
+                                "depth": 6,
+                                "children": [
+                                  {
+                                    "node_id": "821",
+                                    "role": "button",
+                                    "name": "Cancel",
+                                    "depth": 7,
+                                    "children": [
+                                      {
+                                        "node_id": "822",
+                                        "role": "none",
+                                        "name": "",
+                                        "depth": 8,
+                                        "children": [
+                                          {
+                                            "node_id": "824",
+                                            "role": "StaticText",
+                                            "name": "Cancel",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "-1000000077",
+                                                "role": "InlineTextBox",
+                                                "name": "Cancel",
+                                                "depth": 10,
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "node_id": "522",
+                                    "role": "button",
+                                    "name": "Continue",
+                                    "depth": 7,
+                                    "children": [
+                                      {
+                                        "node_id": "830",
+                                        "role": "none",
+                                        "name": "",
+                                        "depth": 8,
+                                        "children": [
+                                          {
+                                            "node_id": "832",
+                                            "role": "StaticText",
+                                            "name": "Continue",
+                                            "depth": 9,
+                                            "children": [
+                                              {
+                                                "node_id": "-1000000078",
+                                                "role": "InlineTextBox",
+                                                "name": "Continue",
+                                                "depth": 10,
+                                                "children": []
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "node_id": "833",
+                                            "role": "none",
+                                            "name": "",
+                                            "depth": 9,
+                                            "children": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "node_details": [
+      {
+        "node_id": "509",
+        "backend_node_id": 509,
+        "role": "RootWebArea",
+        "name": "Setup Two-factor authentication | HackerOne",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "focused": true,
+          "url": "https://hackerone.com/2fa/setup?security_key_enabled=true"
+        },
+        "child_ids": [
+          "524"
+        ],
+        "parent_id": null,
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "524",
+        "backend_node_id": 524,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "706"
+        ],
+        "parent_id": "509",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "706",
+        "backend_node_id": 706,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "709",
+          "768",
+          "769",
+          "794",
+          "797"
+        ],
+        "parent_id": "524",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "709",
+        "backend_node_id": 709,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "710"
+        ],
+        "parent_id": "706",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "768",
+        "backend_node_id": 768,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "706",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "769",
+        "backend_node_id": 769,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "771"
+        ],
+        "parent_id": "706",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "794",
+        "backend_node_id": 794,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "706",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "797",
+        "backend_node_id": 797,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "798"
+        ],
+        "parent_id": "706",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "710",
+        "backend_node_id": 710,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "711"
+        ],
+        "parent_id": "709",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "771",
+        "backend_node_id": 771,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "774"
+        ],
+        "parent_id": "769",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "798",
+        "backend_node_id": 798,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "520",
+          "799"
+        ],
+        "parent_id": "797",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "711",
+        "backend_node_id": 711,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "712",
+          "760",
+          "514"
+        ],
+        "parent_id": "710",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "712",
+        "backend_node_id": 712,
+        "role": "banner",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "713",
+          "714",
+          "759"
+        ],
+        "parent_id": "711",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "760",
+        "backend_node_id": 760,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "711",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "514",
+        "backend_node_id": 514,
+        "role": "main",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "761"
+        ],
+        "parent_id": "711",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "774",
+        "backend_node_id": 774,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "775",
+          "777",
+          "779",
+          "780",
+          "781",
+          "782"
+        ],
+        "parent_id": "771",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "520",
+        "backend_node_id": 520,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "798",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "799",
+        "backend_node_id": 799,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "801",
+          "518",
+          "820"
+        ],
+        "parent_id": "798",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "713",
+        "backend_node_id": 713,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "712",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "714",
+        "backend_node_id": 714,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "715",
+          "718"
+        ],
+        "parent_id": "712",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "759",
+        "backend_node_id": 759,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "712",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "761",
+        "backend_node_id": 761,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "762"
+        ],
+        "parent_id": "514",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "762",
+        "backend_node_id": 762,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "761",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "775",
+        "backend_node_id": 775,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "776"
+        ],
+        "parent_id": "774",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "776",
+        "backend_node_id": 776,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "775",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "777",
+        "backend_node_id": 777,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "778"
+        ],
+        "parent_id": "774",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "779",
+        "backend_node_id": 779,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "774",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "780",
+        "backend_node_id": 780,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "774",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "781",
+        "backend_node_id": 781,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "774",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "782",
+        "backend_node_id": 782,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "774",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "801",
+        "backend_node_id": 801,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "802",
+          "521"
+        ],
+        "parent_id": "799",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "802",
+        "backend_node_id": 802,
+        "role": "heading",
+        "name": "Add security key",
+        "description": "",
+        "properties": {
+          "level": 2
+        },
+        "child_ids": [
+          "803"
+        ],
+        "parent_id": "801",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "521",
+        "backend_node_id": 521,
+        "role": "button",
+        "name": "",
+        "description": "",
+        "properties": {
+          "invalid": "false",
+          "focusable": true
+        },
+        "child_ids": [],
+        "parent_id": "801",
+        "is_interactive": true,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "518",
+        "backend_node_id": 518,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "809"
+        ],
+        "parent_id": "799",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "809",
+        "backend_node_id": 809,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "519"
+        ],
+        "parent_id": "518",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "519",
+        "backend_node_id": 519,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "810",
+          "813",
+          "815",
+          "816"
+        ],
+        "parent_id": "809",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "820",
+        "backend_node_id": 820,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "821",
+          "522"
+        ],
+        "parent_id": "799",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "821",
+        "backend_node_id": 821,
+        "role": "button",
+        "name": "Cancel",
+        "description": "",
+        "properties": {
+          "disabled": true,
+          "invalid": "false"
+        },
+        "child_ids": [
+          "822"
+        ],
+        "parent_id": "820",
+        "is_interactive": true,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "522",
+        "backend_node_id": 522,
+        "role": "button",
+        "name": "Continue",
+        "description": "",
+        "properties": {
+          "disabled": true,
+          "invalid": "false"
+        },
+        "child_ids": [
+          "830"
+        ],
+        "parent_id": "820",
+        "is_interactive": true,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "715",
+        "backend_node_id": 715,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "716"
+        ],
+        "parent_id": "714",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "718",
+        "backend_node_id": 718,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "719",
+          "722",
+          "511"
+        ],
+        "parent_id": "714",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "719",
+        "backend_node_id": 719,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "720"
+        ],
+        "parent_id": "718",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "720",
+        "backend_node_id": 720,
+        "role": "link",
+        "name": "Go back to homepage",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/"
+        },
+        "child_ids": [
+          "510"
+        ],
+        "parent_id": "719",
+        "is_interactive": true,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "722",
+        "backend_node_id": 722,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "718",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "511",
+        "backend_node_id": 511,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "723",
+          "732",
+          "741",
+          "750"
+        ],
+        "parent_id": "718",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "723",
+        "backend_node_id": 723,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "725"
+        ],
+        "parent_id": "511",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "732",
+        "backend_node_id": 732,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "734"
+        ],
+        "parent_id": "511",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "741",
+        "backend_node_id": 741,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "743"
+        ],
+        "parent_id": "511",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "750",
+        "backend_node_id": 750,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "752"
+        ],
+        "parent_id": "511",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "778",
+        "backend_node_id": 778,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "777",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "803",
+        "backend_node_id": 803,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "804"
+        ],
+        "parent_id": "802",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "804",
+        "backend_node_id": 804,
+        "role": "StaticText",
+        "name": "Add security key",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000073"
+        ],
+        "parent_id": "803",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "810",
+        "backend_node_id": 810,
+        "role": "LabelText",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "812"
+        ],
+        "parent_id": "519",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "813",
+        "backend_node_id": 813,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "814"
+        ],
+        "parent_id": "519",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "815",
+        "backend_node_id": 815,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "519",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "816",
+        "backend_node_id": 816,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "517"
+        ],
+        "parent_id": "519",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "822",
+        "backend_node_id": 822,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "824"
+        ],
+        "parent_id": "821",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "824",
+        "backend_node_id": 824,
+        "role": "StaticText",
+        "name": "Cancel",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000077"
+        ],
+        "parent_id": "822",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "830",
+        "backend_node_id": 830,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "832",
+          "833"
+        ],
+        "parent_id": "522",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "832",
+        "backend_node_id": 832,
+        "role": "StaticText",
+        "name": "Continue",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000078"
+        ],
+        "parent_id": "830",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "833",
+        "backend_node_id": 833,
+        "role": "none",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "830",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "716",
+        "backend_node_id": 716,
+        "role": "link",
+        "name": "Skip to main content \u00a0>",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/2fa/setup?security_key_enabled=true#main-content"
+        },
+        "child_ids": [
+          "717"
+        ],
+        "parent_id": "715",
+        "is_interactive": true,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "510",
+        "backend_node_id": 510,
+        "role": "image",
+        "name": "Hackerone logo",
+        "description": "",
+        "properties": {
+          "url": "data:image/svg+xml,%3c?xml%20version=%271.0%27?%3e%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2732%27%20height=%2732%27%20fill=%27none%27%20viewBox=%278%201%2016%2029.63%27%3e%3cpath%20fill-rule=%27evenodd%27%20clip-rule=%27evenodd%27%20d=%27M10.0409%201C10.6167%201%2011.1067%201.12633%2011.5133%201.37124H11.5133C11.92%201.62373%2012.122%201.94188%2012.122%202.33594V29.2567C12.122%2029.5978%2011.9098%2029.9111%2011.4931%2030.1963C11.0737%2030.4843%2010.5916%2030.6283%2010.0409%2030.6283C9.465%2030.6283%208.98253%2030.4843%208.59102%2030.1963C8.19703%2029.9084%208%2029.5979%208%2029.2567V2.33342C8%201.94188%208.19205%201.61873%208.57094%201.37124C8.94982%201.12636%209.4397%201%2010.0409%201ZM14.6022%2016.5557C14.5566%2016.0781%2014.6628%2015.7295%2014.9102%2015.4996V15.4995L20.4287%2012.0648C20.7974%2011.8147%2021.2799%2011.6935%2021.881%2011.6935C22.4844%2011.6935%2022.9872%2011.8147%2023.3916%2012.0647C23.7956%2012.3098%2024%2012.628%2024%2013.022V29.2568C24%2029.5979%2023.7906%2029.9084%2023.3709%2030.1964C22.9548%2030.4844%2022.457%2030.6283%2021.8811%2030.6283C21.3052%2030.6283%2020.8255%2030.4844%2020.4518%2030.1964C20.0677%2029.9084%2019.8786%2029.5979%2019.8786%2029.2567V17.1816L17.696%2018.5329C17.4487%2018.7604%2017.075%2018.8209%2016.5822%2018.7098C16.0823%2018.5961%2015.6452%2018.3284%2015.2539%2017.9015C14.8649%2017.4773%2014.6451%2017.0278%2014.6022%2016.5557Z%27%20fill=%27white%27/%3e%3c/svg%3e"
+        },
+        "child_ids": [],
+        "parent_id": "720",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "725",
+        "backend_node_id": 725,
+        "role": "link",
+        "name": "",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/hacktivity/overview"
+        },
+        "child_ids": [],
+        "parent_id": "723",
+        "is_interactive": true,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "734",
+        "backend_node_id": 734,
+        "role": "link",
+        "name": "",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/opportunities/all"
+        },
+        "child_ids": [],
+        "parent_id": "732",
+        "is_interactive": true,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "743",
+        "backend_node_id": 743,
+        "role": "link",
+        "name": "",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/directory/programs"
+        },
+        "child_ids": [],
+        "parent_id": "741",
+        "is_interactive": true,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "752",
+        "backend_node_id": 752,
+        "role": "link",
+        "name": "",
+        "description": "",
+        "properties": {
+          "focusable": true,
+          "url": "https://hackerone.com/leaderboard"
+        },
+        "child_ids": [],
+        "parent_id": "750",
+        "is_interactive": true,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000073",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "Add security key",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "804",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "812",
+        "backend_node_id": 812,
+        "role": "StaticText",
+        "name": "Name",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000074"
+        ],
+        "parent_id": "810",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "814",
+        "backend_node_id": 814,
+        "role": "StaticText",
+        "name": "Give your key a name to help you identify it",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000075"
+        ],
+        "parent_id": "813",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "517",
+        "backend_node_id": 517,
+        "role": "textbox",
+        "name": "Name",
+        "description": "Give your key a name to help you identify it",
+        "properties": {
+          "disabled": true,
+          "invalid": "false",
+          "editable": "plaintext",
+          "multiline": false,
+          "readonly": false,
+          "required": false,
+          "describedby": "security-key-name-description",
+          "labelledby": ""
+        },
+        "child_ids": [
+          "818"
+        ],
+        "parent_id": "816",
+        "is_interactive": true,
+        "has_name": true,
+        "has_description": true
+      },
+      {
+        "node_id": "-1000000077",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "Cancel",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "824",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000078",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "Continue",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "832",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "717",
+        "backend_node_id": 717,
+        "role": "StaticText",
+        "name": "Skip to main content \u00a0>",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000069",
+          "-1000000070",
+          "-1000000071",
+          "-1000000072"
+        ],
+        "parent_id": "716",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000074",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "Name",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "812",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000075",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "Give your key a name to help you identify it",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "814",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "818",
+        "backend_node_id": 818,
+        "role": "generic",
+        "name": "",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "819"
+        ],
+        "parent_id": "517",
+        "is_interactive": false,
+        "has_name": false,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000069",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "Skip to ",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "717",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000070",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "main ",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "717",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000071",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "content ",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "717",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000072",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "\u00a0>",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "717",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "819",
+        "backend_node_id": 819,
+        "role": "StaticText",
+        "name": "sha-linux",
+        "description": "",
+        "properties": {},
+        "child_ids": [
+          "-1000000076"
+        ],
+        "parent_id": "818",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      },
+      {
+        "node_id": "-1000000076",
+        "backend_node_id": null,
+        "role": "InlineTextBox",
+        "name": "sha-linux",
+        "description": "",
+        "properties": {},
+        "child_ids": [],
+        "parent_id": "819",
+        "is_interactive": false,
+        "has_name": true,
+        "has_description": false
+      }
+    ],
+    "relationships": [],
+    "statistics": {
+      "total_roles": 13,
+      "total_properties": 12,
+      "deepest_depth": 0,
+      "nodes_with_name": 25,
+      "nodes_with_description": 1,
+      "nodes_interactive": 10,
+      "nodes_visible": 0
+    }
+  }
+}

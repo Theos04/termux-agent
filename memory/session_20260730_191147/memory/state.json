@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "session_id": "20260730_191147",
+    "start_time": "2026-07-30T19:11:47.467002",
+    "end_time": null,
+    "chrome_port": 0,
+    "tab_url": "",
+    "tab_title": "",
+    "total_commands": 0,
+    "snapshots_taken": [],
+    "files_generated": {}
+  },
+  "state": {
+    "last_dom_tree": null,
+    "last_snapshot": null,
+    "last_accessibility": null,
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 0,
+  "last_updated": "2026-07-30T19:11:47.471433"
+}

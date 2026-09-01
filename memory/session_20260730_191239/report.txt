@@ -1,0 +1,38 @@
+
+======================================================================
+📊 PAGE ANALYSIS REPORT
+======================================================================
+
+📁 DATA SOURCES:
+  dom: dom_191252_752541.json
+  accessibility: a11y_191256_499421.json
+  snapshot: snapshot_191254_828358.json
+
+📌 OVERVIEW:
+  Page Type: empty
+  Complexity Score: 0.00
+  Actionable: ❌
+  Job Listings Found: 0
+
+📄 DOM STRUCTURE:
+  Total Nodes: 1
+  Interactive Elements: 0
+  Forms: ❌
+  Search: ❌
+  Navigation: ❌
+
+🎯 RECOMMENDED ACTION: direct_scrape
+
+♿ ACCESSIBILITY:
+  Semantic Nodes: 0
+  Buttons: 0
+  Headings: 0
+  Links: 0
+  Form Fields: 0
+
+🧠 CONTEXT:
+  Purpose: Generic content browsing
+  Main Action: Explore page content
+  Confidence: 0.40
+
+======================================================================

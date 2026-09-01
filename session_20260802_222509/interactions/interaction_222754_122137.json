@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "session_id": "20260802_222509",
+    "timestamp": "2026-08-02T22:27:54.125604",
+    "tab_url": "https://web.whatsapp.com/",
+    "tab_title": "WhatsApp",
+    "context": {
+      "type": "script_execution"
+    },
+    "interaction_number": 1,
+    "command_index": 2
+  },
+  "data": {
+    "script_file": "/data/data/com.termux/files/home/automation/chrome-launcher/scripts-library/whatsapp/login_phone_with_success_indicator.js",
+    "script_content": "// WhatsApp Web - Click \"Log in with phone number\" and capture page state\n(function() {\n    console.log('\ud83d\udd0d Searching for \"Log in with phone number\"...');\n    \n    function getPageState() {\n        // Get page information\n        const state = {\n            url: window.location.href,\n            title: document.title,\n            hasPhoneInput: false,\n            hasCountryCode: false,\n            phoneInputs: [],\n            buttons: [],\n            visibleElements: [],\n            loginFormPres...",
+    "result": {
+      "success": true,
+      "message": "Clicked successfully",
+      "clicked": true,
+      "beforeState": {
+        "url": "https://web.whatsapp.com/",
+        "title": "WhatsApp",
+        "hasPhoneInput": false,
+        "hasCountryCode": false,
+        "phoneInputs": [],
+        "buttons": [
+          {
+            "text": "Link with phone number instead.",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Need help?wa-brand-arrow-out",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Log in with phone numberwa-brand-arrow-right",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Get startedwa-brand-arrow-out",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Terms & Privacy Policy",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          }
+        ],
+        "visibleElements": [
+          "wa-logowa-wordmark",
+          "wa-logowa-wordmark",
+          "wa-logo",
+          "wa-logo",
+          "wa-wordmark",
+          "wa-wordmark",
+          "Scan to log inLink with phone number instead.",
+          "Scan to log in",
+          "Link with phone number instead.",
+          "Link with phone number instead."
+        ],
+        "loginFormPresent": false,
+        "qrCodePresent": true,
+        "chatListPresent": false
+      },
+      "afterState": {
+        "url": "https://web.whatsapp.com/",
+        "title": "WhatsApp",
+        "hasPhoneInput": false,
+        "hasCountryCode": false,
+        "phoneInputs": [],
+        "buttons": [
+          {
+            "text": "Link with phone number instead.",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Need help?wa-brand-arrow-out",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Log in with phone numberwa-brand-arrow-right",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Get startedwa-brand-arrow-out",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Terms & Privacy Policy",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          }
+        ],
+        "visibleElements": [
+          "wa-logowa-wordmark",
+          "wa-logowa-wordmark",
+          "wa-logo",
+          "wa-logo",
+          "wa-wordmark",
+          "wa-wordmark",
+          "Scan to log inLink with phone number instead.",
+          "Scan to log in",
+          "Link with phone number instead.",
+          "Link with phone number instead."
+        ],
+        "loginFormPresent": false,
+        "qrCodePresent": true,
+        "chatListPresent": false
+      },
+      "changes": {
+        "urlChanged": false,
+        "titleChanged": false,
+        "phoneInputAppeared": false,
+        "loginFormAppeared": false,
+        "qrCodeChanged": false,
+        "chatListAppeared": false
+      },
+      "summary": {
+        "newUrl": "https://web.whatsapp.com/",
+        "newTitle": "WhatsApp",
+        "hasPhoneInput": false,
+        "hasLoginForm": false,
+        "hasQRCode": true,
+        "hasChatList": false,
+        "visibleButtons": [
+          {
+            "text": "Link with phone number instead.",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Need help?wa-brand-arrow-out",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Log in with phone numberwa-brand-arrow-right",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Get startedwa-brand-arrow-out",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          },
+          {
+            "text": "Terms & Privacy Policy",
+            "tag": "DIV",
+            "type": "",
+            "role": "button"
+          }
+        ],
+        "visibleTexts": [
+          "wa-logowa-wordmark",
+          "wa-logowa-wordmark",
+          "wa-logo",
+          "wa-logo",
+          "wa-wordmark",
+          "wa-wordmark",
+          "Scan to log inLink with phone number instead.",
+          "Scan to log in",
+          "Link with phone number instead.",
+          "Link with phone number instead."
+        ]
+      }
+    },
+    "execution_time": "2026-08-02T22:27:54.121805"
+  }
+}

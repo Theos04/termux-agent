@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "session_id": "20260808_105624",
+    "timestamp": "2026-08-08T10:56:55.528048",
+    "tab_url": "https://unstop.com/",
+    "tab_title": "Internships | Jobs | Competitions | Hackathons | Courses - Unstop",
+    "context": {
+      "patterns": [
+        "email"
+      ]
+    },
+    "pattern_count": 1,
+    "total_matches": 0,
+    "command_index": 3
+  },
+  "data": {
+    "patterns": {
+      "email": []
+    },
+    "detailed": {},
+    "total_matches": 0,
+    "pattern_count": 1,
+    "timestamp": "2026-08-08T10:56:55.526384",
+    "tab_url": "https://unstop.com/"
+  }
+}

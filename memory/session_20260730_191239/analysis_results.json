@@ -1,0 +1,63 @@
+{
+  "dom": {
+    "node_count": 1,
+    "interactive_count": 0,
+    "complexity": 0.0002,
+    "interaction_score": 0.0,
+    "has_forms": false,
+    "has_search": false,
+    "has_navigation": false,
+    "page_type": "empty",
+    "is_simple": true,
+    "action_elements": [],
+    "shadow_dom_count": 0,
+    "iframe_count": 0
+  },
+  "dom_decision": "direct_scrape",
+  "accessibility": {
+    "total_nodes": 0,
+    "semantic_density": 0.0,
+    "has_meaningful_structure": false,
+    "buttons": 0,
+    "headings": 0,
+    "links": 0,
+    "form_fields": 0,
+    "has_nav": false,
+    "has_main": false,
+    "has_search": false,
+    "has_form": false,
+    "top_roles": {},
+    "actionable_elements": [],
+    "job_elements": 0
+  },
+  "context": {
+    "page_type": "empty",
+    "purpose": "Generic content browsing",
+    "main_action": "Explore page content",
+    "confidence": 0.4,
+    "job_listings_count": 0,
+    "job_listings": [],
+    "key_companies": [],
+    "primary_actions": []
+  },
+  "summary": {
+    "timestamp": "2026-07-30T19:57:22.765658",
+    "page_type": "empty",
+    "actionable": false,
+    "complexity": 0.0002,
+    "job_listings": 0,
+    "primary_action": "Explore page content",
+    "has_data": true,
+    "files_used": {
+      "dom": "dom_191252_752541.json",
+      "accessibility": "a11y_191256_499421.json",
+      "snapshot": "snapshot_191254_828358.json"
+    },
+    "interactive_count": 0
+  },
+  "files": {
+    "dom": "dom_191252_752541.json",
+    "accessibility": "a11y_191256_499421.json",
+    "snapshot": "snapshot_191254_828358.json"
+  }
+}

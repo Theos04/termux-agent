@@ -1,0 +1,1267 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API from HAR Analysis",
+    "version": "1.0.0",
+    "description": "Auto-generated from HAR analysis"
+  },
+  "servers": [
+    {
+      "url": "https://fonts.gstatic.com"
+    }
+  ],
+  "paths": {
+    "/syncframe": {
+      "get": {
+        "summary": "GET /syncframe",
+        "parameters": [
+          {
+            "name": "origin",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "topUrl",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "gdpr",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "gdpr_consent",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "gpp",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "gpp_sid",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/api/script": {
+      "post": {
+        "summary": "POST /api/script",
+        "parameters": []
+      }
+    },
+    "/pcs/view": {
+      "get": {
+        "summary": "GET /pcs/view",
+        "parameters": [
+          {
+            "name": "xai",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "sai",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "sig",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "uach_m",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "dett",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "adurl",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "urlfix",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/pagead/gen_204": {
+      "get": {
+        "summary": "GET /pagead/gen_204",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "proto",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/images/mc_homepage/brd_arwb.jpg": {
+      "get": {
+        "summary": "GET /images/mc_homepage/brd_arwb.jpg",
+        "parameters": []
+      }
+    },
+    "/images/common/premium_crown.png": {
+      "get": {
+        "summary": "GET /images/common/premium_crown.png",
+        "parameters": []
+      }
+    },
+    "/translator": {
+      "post": {
+        "summary": "POST /translator",
+        "parameters": [
+          {
+            "name": "source",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "gzip",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/location": {
+      "get": {
+        "summary": "GET /location",
+        "parameters": []
+      }
+    },
+    "/s/lato/v25/S6uyw4BMUTPHjxAwXjeu.woff2": {
+      "get": {
+        "summary": "GET /s/lato/v25/S6uyw4BMUTPHjxAwXjeu.woff2",
+        "parameters": []
+      }
+    },
+    "/g/collect": {
+      "post": {
+        "summary": "POST /g/collect",
+        "parameters": [
+          {
+            "name": "v",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "tid",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "gtm",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "_p",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "gcs",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "gcd",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "npa",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "dma",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "tcfd",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "_eu",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "are",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "cid",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "frm",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "pscdl",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "rcb",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "sr",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "uaa",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "uab",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "uafvl",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "uam",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "uamb",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "uap",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "uapv",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "uaw",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "ul",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "gaf",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "tag_exp",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "sid",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "sct",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "seg",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "dl",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "dt",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "_s",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "tfd",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "dr",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "en",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "_c",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "ep.taboola",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "epn.pro_status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "ep.login",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "ae",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "epn.percent_scrolled",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "_et",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "ep.player_identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "ep.pro_article_tag",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "ep.ai_faq",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/pcs/activeview": {
+      "get": {
+        "summary": "GET /pcs/activeview",
+        "parameters": [
+          {
+            "name": "xai",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "sai",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "sig",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "mcvt",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "p",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "tm",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "tu",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "mtos",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "tos",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "v",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "bin",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "avms",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "bs",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "mc",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "vu",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "app",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "itpl",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "adk",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "rs",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "la",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "cr",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "uach",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "vs",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "r",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "co",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "rst",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "rpt",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "isd",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "lsd",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "met",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "wmsd",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "pbe",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "fle",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "vae",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "spb",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "sfl",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "ffslot",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "reach",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "io2",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/f/AGSKWxWP-t5kojb4W3E6DiVeGt2MkjjwCL-KjlKeOpQ7vQd8mZQ27wwseXnwvN42oPeAbnBc0oi4SlXI7RQBHEtXPBKTa3qEhdircWNRH8hBUY43XdZrYv7TMIc-Vz4bPcUAPtNwIy9puskYBID81l4IyExChXPjfrCMbLbK221rI91gjr2OTuZkVVis-NRU/__160x600./amazon/iframeproxy-_468x60b./adsbyfalcon./welcome_ad.": {
+      "get": {
+        "summary": "GET /f/AGSKWxWP-t5kojb4W3E6DiVeGt2MkjjwCL-KjlKeOpQ7vQd8mZQ27wwseXnwvN42oPeAbnBc0oi4SlXI7RQBHEtXPBKTa3qEhdircWNRH8hBUY43XdZrYv7TMIc-Vz4bPcUAPtNwIy9puskYBID81l4IyExChXPjfrCMbLbK221rI91gjr2OTuZkVVis-NRU/__160x600./amazon/iframeproxy-_468x60b./adsbyfalcon./welcome_ad.",
+        "parameters": []
+      }
+    },
+    "/el/AGSKWxX4cQAv3KRK_s-2nmiUiTxMaEtMut3Bc0HkwRyuo8jdRHyFq5C4pqE9UsTfisGTgDfQ9tW0Vb8kVGvLnQD4g4V-nfBkTYBMwhZGCX5pz3zHuc-uEJ_rVoO2hL1ocqf3_xgpo_2upA==": {
+      "post": {
+        "summary": "POST /el/AGSKWxX4cQAv3KRK_s-2nmiUiTxMaEtMut3Bc0HkwRyuo8jdRHyFq5C4pqE9UsTfisGTgDfQ9tW0Vb8kVGvLnQD4g4V-nfBkTYBMwhZGCX5pz3zHuc-uEJ_rVoO2hL1ocqf3_xgpo_2upA==",
+        "parameters": []
+      }
+    },
+    "/pagead/js/lidar.js": {
+      "get": {
+        "summary": "GET /pagead/js/lidar.js",
+        "parameters": [
+          {
+            "name": "fcd",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2": {
+      "get": {
+        "summary": "GET /s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "parameters": []
+      }
+    },
+    "/f/AGSKWxUKFRR264w3PyZ2S3VRcvLG4xfjA8zRUchLjYvjJxs1vm9XAhkDa_ju7raW14qR9nTJus54fJt0PNB4D0llIv3anzhlshziN0L1wNnv1jj5hMEWWQKc_bf82FamgSUALwBRdEJgzg==": {
+      "get": {
+        "summary": "GET /f/AGSKWxUKFRR264w3PyZ2S3VRcvLG4xfjA8zRUchLjYvjJxs1vm9XAhkDa_ju7raW14qR9nTJus54fJt0PNB4D0llIv3anzhlshziN0L1wNnv1jj5hMEWWQKc_bf82FamgSUALwBRdEJgzg==",
+        "parameters": [
+          {
+            "name": "fccs",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/assets/css/mclogin/v2/auth_popup.css": {
+      "get": {
+        "summary": "GET /assets/css/mclogin/v2/auth_popup.css",
+        "parameters": [
+          {
+            "name": "v",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/assets/css/mclogin/bootstrap.min.css": {
+      "get": {
+        "summary": "GET /assets/css/mclogin/bootstrap.min.css",
+        "parameters": [
+          {
+            "name": "v",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/network18media-moneycontrolenglish/trc/3/json": {
+      "post": {
+        "summary": "POST /network18media-moneycontrolenglish/trc/3/json",
+        "parameters": [
+          {
+            "name": "llvl",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "tim",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "lti",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "pubit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "t",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "name": "data",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/f/AGSKWxXNxCeNPyGwukmiw1-vk1c3HNInX8ArAyqNXqMaQrUIyg6gjh1OfyGB4ql_UKIlaOk9TucHTXFDuYM66aBuj0zjbc33zhrT2ixn2xN1wQ2pPgKBqTZ9ukFTilIqff_6buYJ22GDzg==": {
+      "get": {
+        "summary": "GET /f/AGSKWxXNxCeNPyGwukmiw1-vk1c3HNInX8ArAyqNXqMaQrUIyg6gjh1OfyGB4ql_UKIlaOk9TucHTXFDuYM66aBuj0zjbc33zhrT2ixn2xN1wQ2pPgKBqTZ9ukFTilIqff_6buYJ22GDzg==",
+        "parameters": [
+          {
+            "name": "fccs",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/taboola/image/fetch/c_crop%2Cf_jpg%2Cq_auto%2Ce_sharpen%2Car_1.7778%2Cw_1263%2Cx_93%2Cy_294/c_fill%2Cw_400%2Ch_223/http%3A//cdn.taboola.com/libtrc/static/thumbnails/STABLE_DIFFUSION_OUTCROP/ESD/5ab95377-2fe9-440d-b016-ddf16a8c1c56__29Rz0y4t.jpg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/c_crop%2Cf_jpg%2Cq_auto%2Ce_sharpen%2Car_1.7778%2Cw_1263%2Cx_93%2Cy_294/c_fill%2Cw_400%2Ch_223/http%3A//cdn.taboola.com/libtrc/static/thumbnails/STABLE_DIFFUSION_OUTCROP/ESD/5ab95377-2fe9-440d-b016-ddf16a8c1c56__29Rz0y4t.jpg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/c_crop%2Cf_jpg%2Cq_auto%2Ce_sharpen%2Car_1.7778%2Cw_1000%2Cx_0%2Cy_19/c_fill%2Cw_600%2Ch_334/https%3A//cdn.taboola.com/libtrc/static/thumbnails/80bd2b0b66f0ea033ea0ac2eee444622.jpg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/c_crop%2Cf_jpg%2Cq_auto%2Ce_sharpen%2Car_1.7778%2Cw_1000%2Cx_0%2Cy_19/c_fill%2Cw_600%2Ch_334/https%3A//cdn.taboola.com/libtrc/static/thumbnails/80bd2b0b66f0ea033ea0ac2eee444622.jpg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/c_crop%2Cf_jpg%2Cq_auto%2Ce_sharpen%2Car_1.7778%2Cw_1000%2Cx_0%2Cy_14/c_fill%2Cw_400%2Ch_223/https%3A//cdn.taboola.com/libtrc/static/thumbnails/7da148c4c72b9b6698c11d22c0f33d08.jpg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/c_crop%2Cf_jpg%2Cq_auto%2Ce_sharpen%2Car_1.7778%2Cw_1000%2Cx_0%2Cy_14/c_fill%2Cw_400%2Ch_223/https%3A//cdn.taboola.com/libtrc/static/thumbnails/7da148c4c72b9b6698c11d22c0f33d08.jpg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/d493bc5f3cf550e252cd36b43d787df7.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/d493bc5f3cf550e252cd36b43d787df7.png",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/h_334%2Cw_600%2Cb_auto,c_pad/https%3A//cdn.taboola.com/libtrc/static/thumbnails/bf3946417b508300f4e08e25747420b4.jpg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/h_334%2Cw_600%2Cb_auto,c_pad/https%3A//cdn.taboola.com/libtrc/static/thumbnails/bf3946417b508300f4e08e25747420b4.jpg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/a0d48ae6c82f296bf9083ec8de79ee06.jpg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/a0d48ae6c82f296bf9083ec8de79ee06.jpg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/h_223%2Cw_400%2Cb_auto,c_pad/https%3A//cdn.taboola.com/libtrc/static/thumbnails/d554956e98f5b9d2547f185c8941eba8.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/h_223%2Cw_400%2Cb_auto,c_pad/https%3A//cdn.taboola.com/libtrc/static/thumbnails/d554956e98f5b9d2547f185c8941eba8.png",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/c0aab05373abd72993ac606167367bb3.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/c0aab05373abd72993ac606167367bb3.png",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/4194b51ef6f09df446a53a7d0d936cfb.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/4194b51ef6f09df446a53a7d0d936cfb.png",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/e189cf4ce19fa57a718aa2eca4c63b88.jpg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/e189cf4ce19fa57a718aa2eca4c63b88.jpg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/4006a940471d532557dd9132f5100246.jpg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/4006a940471d532557dd9132f5100246.jpg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/da372deeec7746c771c4511f01fb55fd.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/da372deeec7746c771c4511f01fb55fd.png",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/96c23a4daa4de39867f7e63c5face716.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/96c23a4daa4de39867f7e63c5face716.png",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/h_334%2Cw_600%2Cc_pad,b_white/https%3A//cdn.taboola.com/libtrc/static/thumbnails/852a11587eea29f6ca2bd65651ea2722.jpg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/h_334%2Cw_600%2Cc_pad,b_white/https%3A//cdn.taboola.com/libtrc/static/thumbnails/852a11587eea29f6ca2bd65651ea2722.jpg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/h_334%2Cw_600%2Cc_pad,b_white/https%3A//cdn.taboola.com/libtrc/static/thumbnails/98a4bfad685ac65eb6635723e1b313b4.jpg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/h_334%2Cw_600%2Cc_pad,b_white/https%3A//cdn.taboola.com/libtrc/static/thumbnails/98a4bfad685ac65eb6635723e1b313b4.jpg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/25e620271d92576f3b90cde890383607.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/25e620271d92576f3b90cde890383607.png",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/5c09b982bbd2b4d1f482f000dcea0b94.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/5c09b982bbd2b4d1f482f000dcea0b94.png",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/6990daabc85127acc7789780a92bf9a2.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/6990daabc85127acc7789780a92bf9a2.png",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/32b04892958d19ad7b8aaff88098e8e1.jpeg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/32b04892958d19ad7b8aaff88098e8e1.jpeg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/43ba0f68984d84a7a5a79c43e2d0f530.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/43ba0f68984d84a7a5a79c43e2d0f530.png",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/939921ca216d45be30c1545a5ece05c9.jpg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/http%3A//cdn.taboola.com/libtrc/static/thumbnails/939921ca216d45be30c1545a5ece05c9.jpg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/aefa9a6f9290d6416036915a018e384e.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/aefa9a6f9290d6416036915a018e384e.png",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/6c2152a54aa989f9bf7af7fc3affca16.jpeg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/6c2152a54aa989f9bf7af7fc3affca16.jpeg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/IMAGE_UPSCALER/EIU/0d9891cc-ebfd-4e2f-9617-7623f4a2e3e9__2TQUPgvn.jpg": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_223%2Cw_400%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/IMAGE_UPSCALER/EIU/0d9891cc-ebfd-4e2f-9617-7623f4a2e3e9__2TQUPgvn.jpg",
+        "parameters": []
+      }
+    },
+    "/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/b8bad0f6fc71880343cb04217de4572b.png": {
+      "get": {
+        "summary": "GET /taboola/image/fetch/f_jpg%2Cq_auto%2Ch_334%2Cw_600%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//cdn.taboola.com/libtrc/static/thumbnails/b8bad0f6fc71880343cb04217de4572b.png",
+        "parameters": []
+      }
+    },
+    "/portal/api/web/asapApp/13108000159188961": {
+      "get": {
+        "summary": "GET /portal/api/web/asapApp/13108000159188961",
+        "parameters": [
+          {
+            "name": "orgId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    },
+    "/js/clevertap.min.js": {
+      "get": {
+        "summary": "GET /js/clevertap.min.js",
+        "parameters": []
+      }
+    },
+    "/el/AGSKWxUJq4ZHgLMV2GRmGwd7cLOqv9OP1svQDYyJLLZfyx6_q3kjwHlKczrG8VP1EQtrRtSqhRJbBdZU3WITdBp61gppCR49waOWdKoalRObInXWGK-rnASoMv0T9I5lmRcpA-hP-4UNwg==": {
+      "post": {
+        "summary": "POST /el/AGSKWxUJq4ZHgLMV2GRmGwd7cLOqv9OP1svQDYyJLLZfyx6_q3kjwHlKczrG8VP1EQtrRtSqhRJbBdZU3WITdBp61gppCR49waOWdKoalRObInXWGK-rnASoMv0T9I5lmRcpA-hP-4UNwg==",
+        "parameters": []
+      }
+    },
+    "/f/AGSKWxUmK-S59xaKNXMtYJVaVF2Ngh-MQLBnmYu4_ydPPT6yE-X0MFCue7fN5QV3T43H-5ihOUOhrUidSfRZ-Rtq7d6iw6LB85sMTB1hsiS19oBAINpzFZ9nsIrFuHfA8_enmJYtlIXLbQ==": {
+      "get": {
+        "summary": "GET /f/AGSKWxUmK-S59xaKNXMtYJVaVF2Ngh-MQLBnmYu4_ydPPT6yE-X0MFCue7fN5QV3T43H-5ihOUOhrUidSfRZ-Rtq7d6iw6LB85sMTB1hsiS19oBAINpzFZ9nsIrFuHfA8_enmJYtlIXLbQ==",
+        "parameters": [
+          {
+            "name": "fccs",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ]
+      }
+    }
+  }
+}

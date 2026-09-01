@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "session_id": "20260812_131833",
+    "start_time": "2026-08-12T13:18:33.288849",
+    "end_time": null,
+    "chrome_port": 9261,
+    "tab_url": "devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@07b52360cc15066f987c910ab34dfbcd4a8778d2/&targetType=tab&can_dock=true&panel=elements",
+    "tab_title": "DevTools - web.whatsapp.com/",
+    "total_commands": 30,
+    "snapshots_taken": [],
+    "files_generated": {
+      "dom_trees": 2,
+      "accessibility": 3,
+      "snapshots": 1
+    }
+  },
+  "state": {
+    "last_dom_tree": {
+      "file": "session_20260812_131833/dom_trees/dom_132034_058751.json",
+      "metadata": {
+        "session_id": "20260812_131833",
+        "timestamp": "2026-08-12T13:20:34.058924",
+        "tab_url": "https://web.whatsapp.com/",
+        "tab_title": "(186) WhatsApp Business",
+        "context": {
+          "depth": -1,
+          "pierce": true,
+          "method": "DOM.getDocument"
+        },
+        "node_count": 5917,
+        "command_index": 8
+      }
+    },
+    "last_snapshot": {
+      "file": "session_20260812_131833/snapshots/snapshot_132040_947183.json",
+      "metadata": {
+        "session_id": "20260812_131833",
+        "timestamp": "2026-08-12T13:20:40.947364",
+        "tab_url": "https://web.whatsapp.com/",
+        "tab_title": "(186) WhatsApp Business",
+        "context": {
+          "method": "DOMSnapshot.getSnapshot",
+          "params": {
+            "computedStyleWhitelist": [],
+            "includeEventListeners": false,
+            "includePaintOrder": false,
+            "includeUserAgentShadowTree": true
+          }
+        },
+        "dom_node_count": 6346,
+        "layout_tree_count": 0,
+        "computed_styles_count": 0,
+        "command_index": 11
+      }
+    },
+    "last_accessibility": {
+      "file": "session_20260812_131833/accessibility/a11y_132052_021849.json",
+      "metadata": {
+        "session_id": "20260812_131833",
+        "timestamp": "2026-08-12T13:20:52.022150",
+        "tab_url": "https://web.whatsapp.com/",
+        "tab_title": "(186) WhatsApp Business",
+        "context": {
+          "method": "Comprehensive_AX_Tree"
+        },
+        "node_count": 0,
+        "command_index": 13
+      }
+    },
+    "last_styles": null,
+    "last_interaction": null,
+    "interaction_count": 0,
+    "errors": []
+  },
+  "command_count": 30,
+  "last_updated": "2026-08-12T14:19:13.576588"
+}

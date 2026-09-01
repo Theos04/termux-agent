@@ -1,0 +1,2911 @@
+{
+  "title": "Booking Form",
+  "url": "https://www.agoda.com/the-park-hyderabad-hotel/hotel/hyderabad-in.html?checkIn=2026-08-05&los=1&Rooms=1&Adults=2&Childs=0&currency=INR&origin=IN&cid=-1&gclid=-1&dc=sg&msg=Bounce+back+from+booking+form",
+  "timestamp": 1785996554.3124387,
+  "metadata": {
+    "title": "Booking Form",
+    "url": "https://www.agoda.com/book/?masterRoomTypeId=3168255&roomToken=8b%3A0;c%3A1D1N_1N;cid%3A-1;dmc%3A0;dmcid%3A332;h%3A178188;o%3A2;p%3A0;pu%3A0;pm%3A1;r%3A3168255;rp%3A241;rc%3A957756;rid%3A0;uid%3Ab69ece2f-61e2-db7d-17e8-95c813500dc3;mc%3A0;mo%3A2;eb%3A0;mri%3A3168255;bor%3A0;dtr%3A0;fsc%3A1;rft%3A2;avr%3A18;ri%3AChwI%2Ft%2BCAxACIOIDKPj0dDAESgcxRDFOXzFOUJgFEgYIASICBGwaBhACKAQwASIECAQYAg%3D%3D;ec%3A0;thgc%3A0;sai%3A9213.37;rcy%3AINR&roomId=3168255&roomName=Luxury%20Room&isBOR=false&isBookNowPayLater=false&isNoCcRequired=false&isEasyCancel=false&isBreakfastIncluded=false&campaignCid=&campaignId=&promotionCode=&campaignName=&autoApplied=&campaignType=&secdat=mW3RQTQJhUJh5hpAzw7OyvDbv8K6DXqB9SiT3O%252F8n9qVjCfcuYV5Eo04UBNye5dRF5Ra%252FM2cff149HhqYrWIFJskIBdFT%252FzDITaS%252BBiD7kaXrm%252FVaZ9c7OPJ7rRXaZMN7IVNBHpv%252Bvhpke5a24OoIYLDb9XlBUuowscN%252B5JoMXuuGaH%252FvsA%252BwrTvU%252F%252FejpnkVTl3ePJxNk28oOsAOcb%252BwiTZlD4CO9flEi7%252BEpqsyLM%253D&cnIcp=0&cnty=35&v=29&ori=IN&finc=false&siteId=-1&dclid=-1&gclid=-1&ame=&aso=&aca=&aco=&ate=&r0=RO6h4jH1nc3XAeX1KDGIo7nNU6nJiMXFrUA81GF%252FtguTQrWmgcg7oBAwEzWqP4rLwAbpbnTuTH3s1Fi12zUvPOCAbqDMGtKJptzmtGlQ%252BZGp%252FG8nqiGSl1XdZZB%252BR8Qh43lZU3fp%252BYDiFX%252FCxlZuBylXazlzdNCkGWLRt4vmSz3MYkMdPgUPU%252F6bPHZf5j2RBhLfp3CP7cMh%252BQEJ4TbIbv%252FhIbPhCqEkEzQiYW99x1y5Doc%252B1XfMwpaNuT4JMrq%252BSyABViN0RKnQRgBuG9NjwBbT2NH6GINAePyqYQF7mOc%253D&nr0=1&xbr0=&sarg=wkrzR25HR8AvuqBZhjHV1cxnQ6IjbQfue66cnUnS9MG%252BO8QBJ0Wi8vXbhRGWivW4t%252F9kwBUY8wkZ9WT%252FxgOul6i5jSl%252BspfbsYWvaqr3dKZ0s5zqeIZlVcuW7qVJDuDiJ3G8VQVb4vKUO%252BI7VMnNneuKsAqNqwvO9pj6D3PPVJLjCnHvPTMTlXa%252FCRcSJ%252BkuqIqSqQtEgOGkUmecTZ13Xe7GSO%252BlnAOULlR96E2OjQ4W09jR%252BhiDQHj8qmEBe5jn",
+    "domain": "www.agoda.com",
+    "description": "",
+    "keywords": "",
+    "author": "",
+    "charset": "UTF-8",
+    "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+    "language": "en",
+    "total_links": 0,
+    "total_images": 12,
+    "total_scripts": 88,
+    "total_styles": 13,
+    "has_form": true,
+    "has_login_form": false,
+    "word_count": 918,
+    "is_secure": true
+  },
+  "links": {
+    "all": [],
+    "internal": [],
+    "external": [],
+    "competitor": []
+  },
+  "competitor_analysis": {
+    "competitor_links": [],
+    "competitor_keywords_found": [
+      "rival"
+    ],
+    "total_competitor_links": 0,
+    "competitor_domains": []
+  },
+  "clickable_elements": [
+    {
+      "tag": "button",
+      "text": "Sign in",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-surface afabc-border-generic-base-default afabc-fill-product-primary afabc-text-product-primary afabc-w-full afabc-items-center afabc-border-solid afabc-cursor-pointer afabc-flex afabc-flex-col afabc-justify-center afabc-px-24 afabc-py-12  afabc-rounded-base afabc-border-1   afabc-interactive-style afabc-interactive-primary afabc-inverted-focus-ring-interactive-border afabc-interactive-bg  ",
+      "dataset": "{\"activePressed\":\"true\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": "GET",
+      "position": {
+        "x": 1154,
+        "y": -70,
+        "width": 99,
+        "height": 44
+      }
+    },
+    {
+      "tag": "div",
+      "text": "Sign in",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-fill-inherit afabc-text-inherit afabc-items-center afabc-flex afabc-flex-row      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": "GET",
+      "position": {
+        "x": 1179,
+        "y": -57,
+        "width": 49,
+        "height": 18
+      }
+    },
+    {
+      "tag": "span",
+      "text": "Sign in",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "sc-aXZVg Typographystyled__TypographyStyled-sc-1uoovui-0 ifcRDN bkxKct",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": "GET",
+      "position": {
+        "x": 1179,
+        "y": -58,
+        "width": 49,
+        "height": 20
+      }
+    },
+    {
+      "tag": "input",
+      "text": "[No text]",
+      "href": null,
+      "type": "text",
+      "role": null,
+      "id": "contact.contactFirstName",
+      "classes": "afabc-box InputBase__StyledBox-sc-53odve-0 bMzsQY afabc-fill-generic-base-default afabc-text-generic-base-default afabc-w-full afabc-mt-0 afabc-px-2 afabc-pb-0 afabc-pt-0 afabc-pr-16 afabc-pl-2   afabc-border-0   ",
+      "dataset": "{\"testid\":\"contact.contactFirstName\",\"isError\":\"true\",\"elementName\":\"contact-first-name-input\",\"elementId\":\"contact-first-name-input-cef1dca6-b7e4-415b-a2e4-aa67fdfaeff9\",\"elementValue\":\"\",\"mimirElementData\":\"mspa\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 109,
+        "y": 144,
+        "width": 274,
+        "height": 20
+      }
+    },
+    {
+      "tag": "button",
+      "text": "[No text]",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-flex afabc-pointer-events-none afabc-p-0   afabc-border-0   ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 383,
+        "y": 147,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box ads-input-action ads-input-icon-container  afabc-fill-generic-base-default afabc-text-generic-base-default afabc-inline-flex      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 383,
+        "y": 147,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 383,
+        "y": 147,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "input",
+      "text": "[No text]",
+      "href": null,
+      "type": "text",
+      "role": null,
+      "id": "contact.contactLastName",
+      "classes": "afabc-box InputBase__StyledBox-sc-53odve-0 bMzsQY afabc-fill-generic-base-default afabc-text-generic-base-default afabc-w-full afabc-mt-0 afabc-px-2 afabc-pb-0 afabc-pt-0 afabc-pr-16 afabc-pl-2   afabc-border-0   ",
+      "dataset": "{\"testid\":\"contact.contactLastName\",\"isError\":\"true\",\"elementName\":\"contact-last-name-input\",\"elementId\":\"contact-last-name-input-c0157abc-6628-4f91-868c-1f82dd13aea8\",\"elementValue\":\"\",\"mimirElementData\":\"mspa\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 440,
+        "y": 144,
+        "width": 274,
+        "height": 20
+      }
+    },
+    {
+      "tag": "button",
+      "text": "[No text]",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-flex afabc-pointer-events-none afabc-p-0   afabc-border-0   ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 714,
+        "y": 147,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box ads-input-action ads-input-icon-container  afabc-fill-generic-base-default afabc-text-generic-base-default afabc-inline-flex      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 714,
+        "y": 147,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 714,
+        "y": 147,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "input",
+      "text": "[No text]",
+      "href": null,
+      "type": "email",
+      "role": null,
+      "id": "contact.contactEmail",
+      "classes": "afabc-box InputBase__StyledBox-sc-53odve-0 bMzsQY afabc-fill-generic-base-default afabc-text-generic-base-default afabc-w-full afabc-flex-1 afabc-mt-0 afabc-px-2 afabc-pb-0 afabc-pt-0 afabc-pr-16 afabc-pl-2   afabc-border-0   ",
+      "dataset": "{\"isError\":\"true\",\"testid\":\"contact.contactEmail\",\"elementValue\":\"\",\"elementName\":\"contact-email-input\",\"elementId\":\"contact-email-input-be113822-6c65-4bc8-ba22-1e0d1525d1f5\",\"mimirElementData\":\"mspa\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 109,
+        "y": 212,
+        "width": 274,
+        "height": 20
+      }
+    },
+    {
+      "tag": "button",
+      "text": "[No text]",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-flex afabc-pointer-events-none afabc-p-0   afabc-border-0   ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 383,
+        "y": 215,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box ads-input-action ads-input-icon-container  afabc-fill-generic-base-default afabc-text-generic-base-default afabc-inline-flex      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 383,
+        "y": 215,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 383,
+        "y": 215,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "button",
+      "text": "+91",
+      "href": null,
+      "type": "button",
+      "role": "combobox",
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-w-full afabc-items-center afabc-cursor-pointer afabc-flex afabc-relative afabc-px-16 afabc-py-8  afabc-rounded-8 afabc-border-0   afabc-interactive-style afabc-interactive-generic afabc-focus-ring-interactive-within afabc-focus-ring-interactive-border  ",
+      "dataset": "{\"activePressed\":\"true\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 96,
+        "y": 285,
+        "width": 154,
+        "height": 44
+      }
+    },
+    {
+      "tag": "div",
+      "text": "+91",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-fill-inherit afabc-text-inherit afabc-flex afabc-flex-1      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 112,
+        "y": 298,
+        "width": 122,
+        "height": 18
+      }
+    },
+    {
+      "tag": "input",
+      "text": "[No text]",
+      "href": null,
+      "type": "text",
+      "role": null,
+      "id": "contact.contactPhoneNumber",
+      "classes": "afabc-box InputBase__StyledBox-sc-53odve-0 bMzsQY afabc-fill-generic-base-default afabc-text-generic-base-default afabc-w-full afabc-mt-0 afabc-px-2 afabc-pb-0 afabc-pt-0 afabc-pr-16 afabc-pl-2   afabc-border-0   ",
+      "dataset": "{\"testid\":\"contact.contactPhoneNumber-PhoneNumberDataTestId\",\"elementValue\":\"\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 275,
+        "y": 296,
+        "width": 109,
+        "height": 20
+      }
+    },
+    {
+      "tag": "button",
+      "text": "[No text]",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-flex afabc-pointer-events-none afabc-p-0   afabc-border-0   ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 383,
+        "y": 299,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box ads-input-action ads-input-icon-container  afabc-fill-generic-base-default afabc-text-generic-base-default afabc-inline-flex      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 383,
+        "y": 299,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 383,
+        "y": 299,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box Inputstyled__InputContainerStyled-sc-1yd74ix-0 afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-relative afabc-mr-8  afabc-rounded-max    afabc-interactive-style afabc-interactive-generic afabc-focus-ring-interactive-within afabc-focus-ring-interactive-border  ",
+      "dataset": "{\"activePressed\":\"true\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 108,
+        "y": 530,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-fill-inherit afabc-text-inherit afabc-w-full afabc-h-full      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 108,
+        "y": 530,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "input",
+      "text": "[No text]",
+      "href": null,
+      "type": "radio",
+      "role": null,
+      "id": null,
+      "classes": "Inputstyled__InputStyled-sc-1yd74ix-1 hGYtLZ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 108,
+        "y": 530,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box RadioButtonstyled__RadioButtonStyled-sc-1cxijc0-0 iHyFky afabc-border-generic-state-inactive afabc-fill-inherit afabc-text-inherit afabc-border-solid  afabc-rounded-max afabc-border-2   ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 108,
+        "y": 530,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box Inputstyled__OverlayStyled-sc-1yd74ix-2 kPRtQy afabc-bg-product-primary afabc-fill-inherit afabc-text-inherit  afabc-rounded-base    ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 103,
+        "y": 525,
+        "width": 30,
+        "height": 30
+      }
+    },
+    {
+      "tag": "div",
+      "text": "Non-smoking",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 136,
+        "y": 532,
+        "width": 107,
+        "height": 20
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline afabc-mr-4",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 136,
+        "y": 532,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box Inputstyled__InputContainerStyled-sc-1yd74ix-0 afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-relative afabc-mr-8  afabc-rounded-max    afabc-interactive-style afabc-interactive-generic afabc-focus-ring-interactive-within afabc-focus-ring-interactive-border  ",
+      "dataset": "{\"activePressed\":\"true\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 108,
+        "y": 568,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-fill-inherit afabc-text-inherit afabc-w-full afabc-h-full      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 108,
+        "y": 568,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "input",
+      "text": "[No text]",
+      "href": null,
+      "type": "radio",
+      "role": null,
+      "id": null,
+      "classes": "Inputstyled__InputStyled-sc-1yd74ix-1 hGYtLZ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 108,
+        "y": 568,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box RadioButtonstyled__RadioButtonStyled-sc-1cxijc0-0 iHyFky afabc-border-generic-state-inactive afabc-fill-inherit afabc-text-inherit afabc-border-solid  afabc-rounded-max afabc-border-2   ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 108,
+        "y": 568,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box Inputstyled__OverlayStyled-sc-1yd74ix-2 kPRtQy afabc-bg-product-primary afabc-fill-inherit afabc-text-inherit  afabc-rounded-base    ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 103,
+        "y": 563,
+        "width": 30,
+        "height": 30
+      }
+    },
+    {
+      "tag": "div",
+      "text": "Smoking",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 136,
+        "y": 569,
+        "width": 79,
+        "height": 20
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline afabc-mr-4",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 136,
+        "y": 569,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box Inputstyled__InputContainerStyled-sc-1yd74ix-0 afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-relative afabc-mr-8  afabc-rounded-max    afabc-interactive-style afabc-interactive-generic afabc-focus-ring-interactive-within afabc-focus-ring-interactive-border  ",
+      "dataset": "{\"activePressed\":\"true\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 427,
+        "y": 530,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-fill-inherit afabc-text-inherit afabc-w-full afabc-h-full      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 427,
+        "y": 530,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "input",
+      "text": "[No text]",
+      "href": null,
+      "type": "radio",
+      "role": null,
+      "id": null,
+      "classes": "Inputstyled__InputStyled-sc-1yd74ix-1 hGYtLZ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 427,
+        "y": 530,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box RadioButtonstyled__RadioButtonStyled-sc-1cxijc0-0 iHyFky afabc-border-generic-state-inactive afabc-fill-inherit afabc-text-inherit afabc-border-solid  afabc-rounded-max afabc-border-2   ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 427,
+        "y": 530,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box Inputstyled__OverlayStyled-sc-1yd74ix-2 kPRtQy afabc-bg-product-primary afabc-fill-inherit afabc-text-inherit  afabc-rounded-base    ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 422,
+        "y": 525,
+        "width": 30,
+        "height": 30
+      }
+    },
+    {
+      "tag": "div",
+      "text": "I'd like a large bed",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 455,
+        "y": 532,
+        "width": 135,
+        "height": 20
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline afabc-mr-4",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 455,
+        "y": 532,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box Inputstyled__InputContainerStyled-sc-1yd74ix-0 afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-relative afabc-mr-8  afabc-rounded-max    afabc-interactive-style afabc-interactive-generic afabc-focus-ring-interactive-within afabc-focus-ring-interactive-border  ",
+      "dataset": "{\"activePressed\":\"true\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 427,
+        "y": 568,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-fill-inherit afabc-text-inherit afabc-w-full afabc-h-full      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 427,
+        "y": 568,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "input",
+      "text": "[No text]",
+      "href": null,
+      "type": "radio",
+      "role": null,
+      "id": null,
+      "classes": "Inputstyled__InputStyled-sc-1yd74ix-1 hGYtLZ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 427,
+        "y": 568,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box RadioButtonstyled__RadioButtonStyled-sc-1cxijc0-0 iHyFky afabc-border-generic-state-inactive afabc-fill-inherit afabc-text-inherit afabc-border-solid  afabc-rounded-max afabc-border-2   ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 427,
+        "y": 568,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "div",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box Inputstyled__OverlayStyled-sc-1yd74ix-2 kPRtQy afabc-bg-product-primary afabc-fill-inherit afabc-text-inherit  afabc-rounded-base    ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 422,
+        "y": 563,
+        "width": 30,
+        "height": 30
+      }
+    },
+    {
+      "tag": "div",
+      "text": "I'd like twin beds",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 455,
+        "y": 569,
+        "width": 126,
+        "height": 20
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline afabc-mr-4",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 455,
+        "y": 569,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "tag": "button",
+      "text": "Show additional preferences",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": "specialRequests.moreRequestToggle",
+      "classes": "afabc-box TextLink__TextLinkButtonStyled-sc-upxc4y-2 eAyiAB afabc-interactive-style afabc-interactive-generic afabc-inverted-focus-ring-interactive-focusonly afabc-interactive-bg  afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-outline-none afabc-text-start afabc-p-0   afabc-border-0   ",
+      "dataset": "{\"testid\":\"specialRequests.moreRequestToggle\",\"isError\":\"false\",\"activePressed\":\"true\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 96,
+        "y": 613,
+        "width": 199,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "Show additional preferences",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "sc-aXZVg Typographystyled__TypographyStyled-sc-1uoovui-0 ifcRDN fYnpnI TextLink__TextStyled-sc-upxc4y-0 hXIeCX",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 96,
+        "y": 612,
+        "width": 199,
+        "height": 18
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline afabc-ml-4",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 279,
+        "y": 613,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "button",
+      "text": "NEXT: FINAL STEP",
+      "href": null,
+      "type": "submit",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-product-primary afabc-fill-generic-base-inverted afabc-text-generic-base-inverted afabc-items-center afabc-cursor-pointer afabc-flex afabc-flex-col afabc-justify-center afabc-px-16 afabc-py-8  afabc-rounded-base afabc-border-0   afabc-interactive-style afabc-interactive-primary afabc-focus-ring-interactive-border afabc-interactive-bg  ",
+      "dataset": "{\"testid\":\"shimmer-cta\",\"action\":\"nextPage\",\"activePressed\":\"true\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 96,
+        "y": 1009,
+        "width": 650,
+        "height": 36
+      }
+    },
+    {
+      "tag": "div",
+      "text": "NEXT: FINAL STEP",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-fill-inherit afabc-text-inherit afabc-items-center afabc-flex afabc-flex-row      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 361,
+        "y": 1019,
+        "width": 119,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "NEXT: FINAL STEP",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "sc-aXZVg Typographystyled__TypographyStyled-sc-1uoovui-0 ifcRDN uzrnd",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 361,
+        "y": 1018,
+        "width": 119,
+        "height": 18
+      }
+    },
+    {
+      "tag": "button",
+      "text": "[No text]",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-surface afabc-fill-generic-base-disabled afabc-shadow-bottom-m afabc-text-generic-base-disabled afabc-items-center afabc-cursor-default afabc-flex afabc-flex-col afabc-justify-center  afabc-rounded-max afabc-border-0   ",
+      "dataset": "{\"elementName\":\"bf-hotel-image-carousel\",\"elementId\":\"bf-hotel-image-carousel-cc9bc06f-c3b3-48b1-894f-894df4cc9df4\",\"mimirElementData\":\"mspa\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 800,
+        "y": 209,
+        "width": 28,
+        "height": 28
+      }
+    },
+    {
+      "tag": "button",
+      "text": "[No text]",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-surface afabc-fill-generic-base-default afabc-shadow-bottom-m afabc-text-generic-base-default afabc-items-center afabc-cursor-pointer afabc-flex afabc-flex-col afabc-justify-center  afabc-rounded-max afabc-border-0   afabc-interactive-style afabc-interactive-primary afabc-inverted-focus-ring-interactive-border afabc-interactive-bg  ",
+      "dataset": "{\"elementName\":\"bf-hotel-image-carousel\",\"elementId\":\"bf-hotel-image-carousel-b65df3b8-0c2a-49d9-9668-902f5c78cdc1\",\"activePressed\":\"true\",\"mimirElementData\":\"mspa\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1214,
+        "y": 209,
+        "width": 28,
+        "height": 28
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1220,
+        "y": 215,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "button",
+      "text": "What's nearby?",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box TextLink__TextLinkButtonStyled-sc-upxc4y-2 eAyiAB afabc-interactive-style afabc-interactive-generic afabc-inverted-focus-ring-interactive-focusonly afabc-interactive-bg  afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-outline-none afabc-text-start afabc-p-0   afabc-border-0   ",
+      "dataset": "{\"elementName\":\"whats-nearby\",\"activePressed\":\"true\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 796,
+        "y": 402,
+        "width": 95,
+        "height": 21
+      }
+    },
+    {
+      "tag": "span",
+      "text": "What's nearby?",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "sc-aXZVg Typographystyled__TypographyStyled-sc-1uoovui-0 ifcRDN etFMwF TextLink__TextStyled-sc-upxc4y-0 hXIeCX",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 796,
+        "y": 402,
+        "width": 95,
+        "height": 21
+      }
+    },
+    {
+      "tag": "button",
+      "text": "Stay flexible! Cancel for free before 12 August 2026.",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-text-left afabc-p-0   afabc-border-0   ",
+      "dataset": "{\"testid\":\"toggle-booking-condition-bottomsheet\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 796,
+        "y": 505,
+        "width": 295,
+        "height": 21
+      }
+    },
+    {
+      "tag": "div",
+      "text": "Stay flexible! Cancel for free before 12 August 2026.",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-fill-inherit afabc-text-inherit afabc-items-start afabc-self-start afabc-inline-flex afabc-flex-row afabc-justify-center afabc-text-start afabc-p-0      ",
+      "dataset": "{\"testid\":\"cancellation-free-with-text\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 796,
+        "y": 506,
+        "width": 295,
+        "height": 14
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline afabc-mr-4",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 796,
+        "y": 506,
+        "width": 14,
+        "height": 14
+      }
+    },
+    {
+      "tag": "span",
+      "text": "Stay flexible! Cancel for free before 12 August 2026.",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "sc-aXZVg Typographystyled__TypographyStyled-sc-1uoovui-0 ifcRDN jDLVqM",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 814,
+        "y": 505,
+        "width": 277,
+        "height": 15
+      }
+    },
+    {
+      "tag": "button",
+      "text": "+66 more",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box TextLink__TextLinkButtonStyled-sc-upxc4y-2 eAyiAB afabc-interactive-style afabc-interactive-generic afabc-inverted-focus-ring-interactive-focusonly afabc-interactive-bg  afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-outline-none afabc-text-start afabc-p-0   afabc-border-0   ",
+      "dataset": "{\"testid\":\"RoomFacilitiesSeeMore\",\"elementName\":\"bf-more-facilities-see-more-button\",\"elementId\":\"bf-more-facilities-see-more-button-7e3353cd-c531-46af-93ed-9122c257b7d0\",\"activePressed\":\"true\",\"mimirElementData\":\"mspa\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1027,
+        "y": 988,
+        "width": 203,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "+66 more",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "sc-aXZVg Typographystyled__TypographyStyled-sc-1uoovui-0 ifcRDN fYnpnI TextLink__TextStyled-sc-upxc4y-0 hXIeCX",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1027,
+        "y": 986,
+        "width": 60,
+        "height": 18
+      }
+    },
+    {
+      "tag": "button",
+      "text": "See more details",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box TextLink__TextLinkButtonStyled-sc-upxc4y-2 eAyiAB afabc-interactive-style afabc-interactive-generic afabc-inverted-focus-ring-interactive-focusonly afabc-interactive-bg  afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-outline-none afabc-text-start afabc-p-0   afabc-border-0   ",
+      "dataset": "{\"activePressed\":\"true\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 994,
+        "y": 1333,
+        "width": 106,
+        "height": 18
+      }
+    },
+    {
+      "tag": "span",
+      "text": "See more details",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "sc-aXZVg Typographystyled__TypographyStyled-sc-1uoovui-0 ifcRDN etFMwF TextLink__TextStyled-sc-upxc4y-0 hXIeCX",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 994,
+        "y": 1333,
+        "width": 106,
+        "height": 18
+      }
+    },
+    {
+      "tag": "button",
+      "text": "Have a code?",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box TextLink__TextLinkButtonStyled-sc-upxc4y-2 eAyiAB afabc-interactive-style afabc-interactive-generic afabc-inverted-focus-ring-interactive-focusonly afabc-interactive-bg  afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-outline-none afabc-text-start afabc-p-0   afabc-border-0   ",
+      "dataset": "{\"testid\":\"pmc-campaign-list-add-coupon-code\",\"elementName\":\"promo-selection-have-code\",\"elementId\":\"promo-selection-have-code-b80fbe49-d011-401a-ba75-882a43cd1ad7\",\"activePressed\":\"true\",\"mimirElementData\":\"mspa\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1162,
+        "y": 1457,
+        "width": 84,
+        "height": 21
+      }
+    },
+    {
+      "tag": "span",
+      "text": "Have a code?",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "sc-aXZVg Typographystyled__TypographyStyled-sc-1uoovui-0 ifcRDN etFMwF TextLink__TextStyled-sc-upxc4y-0 hXIeCX",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1162,
+        "y": 1457,
+        "width": 84,
+        "height": 21
+      }
+    },
+    {
+      "tag": "button",
+      "text": "Apply",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-surface afabc-border-generic-base-default afabc-fill-product-primary afabc-text-product-primary afabc-w-full afabc-items-center afabc-border-solid afabc-cursor-pointer afabc-flex afabc-flex-col afabc-float-right afabc-justify-center afabc-px-12  afabc-rounded-base afabc-border-1   afabc-interactive-style afabc-interactive-primary afabc-inverted-focus-ring-interactive-border afabc-interactive-bg  ",
+      "dataset": "{\"testid\":\"coupon-wallet-apply-button\",\"elementName\":\"promo-selection-campaign-item\",\"elementId\":\"promo-selection-campaign-item-7319733c-da5b-44a5-8727-24078cb11ba8\",\"activePressed\":\"true\",\"mimirElementData\":\"mspa\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1158,
+        "y": 1580,
+        "width": 79,
+        "height": 28
+      }
+    },
+    {
+      "tag": "div",
+      "text": "Apply",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-fill-inherit afabc-text-inherit afabc-items-center afabc-flex afabc-flex-row      ",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1180,
+        "y": 1586,
+        "width": 36,
+        "height": 16
+      }
+    },
+    {
+      "tag": "span",
+      "text": "Apply",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "sc-aXZVg Typographystyled__TypographyStyled-sc-1uoovui-0 ifcRDN uzrnd",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1180,
+        "y": 1585,
+        "width": 36,
+        "height": 18
+      }
+    },
+    {
+      "tag": "button",
+      "text": "T&Cs",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box TextLink__TextLinkButtonStyled-sc-upxc4y-2 eAyiAB afabc-interactive-style afabc-interactive-generic afabc-inverted-focus-ring-interactive-focusonly afabc-interactive-bg  afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-outline-none afabc-text-start afabc-p-0   afabc-border-0   ",
+      "dataset": "{\"testid\":\"coupon-terms-icon\",\"activePressed\":\"true\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1170,
+        "y": 1620,
+        "width": 54,
+        "height": 21
+      }
+    },
+    {
+      "tag": "span",
+      "text": "T&Cs",
+      "href": null,
+      "type": null,
+      "role": null,
+      "id": null,
+      "classes": "sc-aXZVg Typographystyled__TypographyStyled-sc-1uoovui-0 ifcRDN eJrivZ TextLink__TextStyled-sc-upxc4y-0 hXIeCX",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1170,
+        "y": 1620,
+        "width": 54,
+        "height": 21
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline afabc-mr-4",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1170,
+        "y": 1623,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "button",
+      "text": "[No text]",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-inline-block afabc-pr-0 afabc-pl-4   afabc-border-0   ",
+      "dataset": "{\"elementName\":\"agoda-price-guarantee-info-icon\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1062,
+        "y": 1705,
+        "width": 20,
+        "height": 22
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 1066,
+        "y": 1706,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "button",
+      "text": "[No text]",
+      "href": null,
+      "type": "button",
+      "role": null,
+      "id": null,
+      "classes": "afabc-box afabc-bg-generic-base-transparent afabc-fill-inherit afabc-text-inherit afabc-cursor-pointer afabc-inline-block afabc-pr-0 afabc-pl-4   afabc-border-0   ",
+      "dataset": "{\"elementName\":\"hotel-tax-and-service-fees\"}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 833,
+        "y": 2034,
+        "width": 20,
+        "height": 23
+      }
+    },
+    {
+      "tag": "span",
+      "text": "[No text]",
+      "href": null,
+      "type": null,
+      "role": "img",
+      "id": null,
+      "classes": "afabc-inline-flex afabc-align-baseline",
+      "dataset": "{}",
+      "is_visible": true,
+      "form_action": null,
+      "form_method": null,
+      "position": {
+        "x": 837,
+        "y": 2035,
+        "width": 16,
+        "height": 16
+      }
+    }
+  ],
+  "form_inputs": [
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "contact.contactFirstName",
+      "value": "",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "options": null
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "contact.contactLastName",
+      "value": "",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "options": null
+    },
+    {
+      "tag": "input",
+      "type": "email",
+      "name": "",
+      "value": "",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "options": null
+    },
+    {
+      "tag": "select",
+      "type": "text",
+      "name": "",
+      "value": "35",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "options": [
+        {
+          "text": "Australia",
+          "value": "139",
+          "selected": false
+        },
+        {
+          "text": "China",
+          "value": "191",
+          "selected": false
+        },
+        {
+          "text": "Indonesia",
+          "value": "192",
+          "selected": false
+        },
+        {
+          "text": "Japan",
+          "value": "3",
+          "selected": false
+        },
+        {
+          "text": "Malaysia",
+          "value": "198",
+          "selected": false
+        },
+        {
+          "text": "Singapore",
+          "value": "114",
+          "selected": false
+        },
+        {
+          "text": "South Korea",
+          "value": "212",
+          "selected": false
+        },
+        {
+          "text": "Thailand",
+          "value": "106",
+          "selected": false
+        },
+        {
+          "text": "United Kingdom",
+          "value": "107",
+          "selected": false
+        },
+        {
+          "text": "United States",
+          "value": "181",
+          "selected": false
+        },
+        {
+          "text": "Afghanistan",
+          "value": "288",
+          "selected": false
+        },
+        {
+          "text": "Albania",
+          "value": "53",
+          "selected": false
+        },
+        {
+          "text": "Algeria",
+          "value": "143",
+          "selected": false
+        },
+        {
+          "text": "American Samoa",
+          "value": "289",
+          "selected": false
+        },
+        {
+          "text": "Andorra",
+          "value": "189",
+          "selected": false
+        },
+        {
+          "text": "Angola",
+          "value": "290",
+          "selected": false
+        },
+        {
+          "text": "Anguilla",
+          "value": "150",
+          "selected": false
+        },
+        {
+          "text": "Antigua & Barbuda",
+          "value": "50",
+          "selected": false
+        },
+        {
+          "text": "Argentina",
+          "value": "5",
+          "selected": false
+        },
+        {
+          "text": "Armenia",
+          "value": "246",
+          "selected": false
+        },
+        {
+          "text": "Aruba",
+          "value": "66",
+          "selected": false
+        },
+        {
+          "text": "Australia",
+          "value": "139",
+          "selected": false
+        },
+        {
+          "text": "Austria",
+          "value": "130",
+          "selected": false
+        },
+        {
+          "text": "Azerbaijan",
+          "value": "135",
+          "selected": false
+        },
+        {
+          "text": "Bahamas",
+          "value": "60",
+          "selected": false
+        },
+        {
+          "text": "Bahrain",
+          "value": "202",
+          "selected": false
+        },
+        {
+          "text": "Bangladesh",
+          "value": "117",
+          "selected": false
+        },
+        {
+          "text": "Barbados",
+          "value": "94",
+          "selected": false
+        },
+        {
+          "text": "Belarus",
+          "value": "21",
+          "selected": false
+        },
+        {
+          "text": "Belgium",
+          "value": "118",
+          "selected": false
+        },
+        {
+          "text": "Belize",
+          "value": "88",
+          "selected": false
+        },
+        {
+          "text": "Benin",
+          "value": "231",
+          "selected": false
+        },
+        {
+          "text": "Bermuda",
+          "value": "6",
+          "selected": false
+        },
+        {
+          "text": "Bhutan",
+          "value": "291",
+          "selected": false
+        },
+        {
+          "text": "Bolivia",
+          "value": "15",
+          "selected": false
+        },
+        {
+          "text": "Bonaire, Sint Eustatius and Saba",
+          "value": "344",
+          "selected": false
+        },
+        {
+          "text": "Bosnia Herzegovina",
+          "value": "103",
+          "selected": false
+        },
+        {
+          "text": "Botswana",
+          "value": "206",
+          "selected": false
+        },
+        {
+          "text": "Brazil",
+          "value": "207",
+          "selected": false
+        },
+        {
+          "text": "British Indian Ocean Territory",
+          "value": "330",
+          "selected": false
+        },
+        {
+          "text": "British Virgin Islands",
+          "value": "77",
+          "selected": false
+        },
+        {
+          "text": "Brunei Darussalam",
+          "value": "63",
+          "selected": false
+        },
+        {
+          "text": "Bulgaria",
+          "value": "126",
+          "selected": false
+        },
+        {
+          "text": "Burkina Faso",
+          "value": "237",
+          "selected": false
+        },
+        {
+          "text": "Burundi",
+          "value": "229",
+          "selected": false
+        },
+        {
+          "text": "Cambodia",
+          "value": "163",
+          "selected": false
+        },
+        {
+          "text": "Cameroon",
+          "value": "36",
+          "selected": false
+        },
+        {
+          "text": "Canada",
+          "value": "100",
+          "selected": false
+        },
+        {
+          "text": "Cape Verde",
+          "value": "292",
+          "selected": false
+        },
+        {
+          "text": "Cayman Islands",
+          "value": "142",
+          "selected": false
+        },
+        {
+          "text": "Central African Republic",
+          "value": "293",
+          "selected": false
+        },
+        {
+          "text": "Chad",
+          "value": "236",
+          "selected": false
+        },
+        {
+          "text": "Chile",
+          "value": "69",
+          "selected": false
+        },
+        {
+          "text": "China",
+          "value": "191",
+          "selected": false
+        },
+        {
+          "text": "Christmas Island",
+          "value": "283",
+          "selected": false
+        },
+        {
+          "text": "Cocos (Keeling) Islands",
+          "value": "321",
+          "selected": false
+        },
+        {
+          "text": "Colombia",
+          "value": "10",
+          "selected": false
+        },
+        {
+          "text": "Comoros",
+          "value": "294",
+          "selected": false
+        },
+        {
+          "text": "Cook Islands",
+          "value": "225",
+          "selected": false
+        },
+        {
+          "text": "Costa Rica",
+          "value": "40",
+          "selected": false
+        },
+        {
+          "text": "Cote D'ivoire",
+          "value": "165",
+          "selected": false
+        },
+        {
+          "text": "Croatia",
+          "value": "128",
+          "selected": false
+        },
+        {
+          "text": "Curacao",
+          "value": "342",
+          "selected": false
+        },
+        {
+          "text": "Cyprus",
+          "value": "24",
+          "selected": false
+        },
+        {
+          "text": "Czech Republic",
+          "value": "13",
+          "selected": false
+        },
+        {
+          "text": "Democratic Republic of the\u00a0Congo",
+          "value": "337",
+          "selected": false
+        },
+        {
+          "text": "Denmark",
+          "value": "158",
+          "selected": false
+        },
+        {
+          "text": "Djibouti",
+          "value": "244",
+          "selected": false
+        },
+        {
+          "text": "Dominica",
+          "value": "341",
+          "selected": false
+        },
+        {
+          "text": "Dominican Republic",
+          "value": "134",
+          "selected": false
+        },
+        {
+          "text": "Ecuador",
+          "value": "52",
+          "selected": false
+        },
+        {
+          "text": "Egypt",
+          "value": "16",
+          "selected": false
+        },
+        {
+          "text": "El Salvador",
+          "value": "80",
+          "selected": false
+        },
+        {
+          "text": "Equatorial Guinea",
+          "value": "295",
+          "selected": false
+        },
+        {
+          "text": "Eritrea",
+          "value": "242",
+          "selected": false
+        },
+        {
+          "text": "Estonia",
+          "value": "99",
+          "selected": false
+        },
+        {
+          "text": "Eswatini",
+          "value": "18",
+          "selected": false
+        },
+        {
+          "text": "Ethiopia",
+          "value": "240",
+          "selected": false
+        },
+        {
+          "text": "Falkland Islands",
+          "value": "322",
+          "selected": false
+        },
+        {
+          "text": "Faroe Islands",
+          "value": "200",
+          "selected": false
+        },
+        {
+          "text": "Federated States of Micronesia",
+          "value": "218",
+          "selected": false
+        },
+        {
+          "text": "Fiji",
+          "value": "109",
+          "selected": false
+        },
+        {
+          "text": "Finland",
+          "value": "28",
+          "selected": false
+        },
+        {
+          "text": "France",
+          "value": "153",
+          "selected": false
+        },
+        {
+          "text": "French Guiana",
+          "value": "113",
+          "selected": false
+        },
+        {
+          "text": "French Polynesia",
+          "value": "14",
+          "selected": false
+        },
+        {
+          "text": "Gabon",
+          "value": "234",
+          "selected": false
+        },
+        {
+          "text": "Gambia",
+          "value": "286",
+          "selected": false
+        },
+        {
+          "text": "Georgia",
+          "value": "71",
+          "selected": false
+        },
+        {
+          "text": "Germany",
+          "value": "101",
+          "selected": false
+        },
+        {
+          "text": "Ghana",
+          "value": "151",
+          "selected": false
+        },
+        {
+          "text": "Gibraltar",
+          "value": "4",
+          "selected": false
+        },
+        {
+          "text": "Greece",
+          "value": "197",
+          "selected": false
+        },
+        {
+          "text": "Greenland",
+          "value": "26",
+          "selected": false
+        },
+        {
+          "text": "Grenada",
+          "value": "184",
+          "selected": false
+        },
+        {
+          "text": "Guadeloupe",
+          "value": "89",
+          "selected": false
+        },
+        {
+          "text": "Guam",
+          "value": "208",
+          "selected": false
+        },
+        {
+          "text": "Guatemala",
+          "value": "41",
+          "selected": false
+        },
+        {
+          "text": "Guernsey",
+          "value": "406",
+          "selected": false
+        },
+        {
+          "text": "Guinea",
+          "value": "58",
+          "selected": false
+        },
+        {
+          "text": "Guinea-Bissau",
+          "value": "296",
+          "selected": false
+        },
+        {
+          "text": "Guyana",
+          "value": "243",
+          "selected": false
+        },
+        {
+          "text": "Haiti",
+          "value": "47",
+          "selected": false
+        },
+        {
+          "text": "Holy See (Vatican City)",
+          "value": "336",
+          "selected": false
+        },
+        {
+          "text": "Honduras",
+          "value": "39",
+          "selected": false
+        },
+        {
+          "text": "Hong Kong",
+          "value": "132",
+          "selected": false
+        },
+        {
+          "text": "Hungary",
+          "value": "37",
+          "selected": false
+        },
+        {
+          "text": "Iceland",
+          "value": "54",
+          "selected": false
+        },
+        {
+          "text": "India",
+          "value": "35",
+          "selected": true
+        },
+        {
+          "text": "Indonesia",
+          "value": "192",
+          "selected": false
+        },
+        {
+          "text": "Iraq",
+          "value": "297",
+          "selected": false
+        },
+        {
+          "text": "Ireland",
+          "value": "188",
+          "selected": false
+        },
+        {
+          "text": "Isle Of Man",
+          "value": "405",
+          "selected": false
+        },
+        {
+          "text": "Israel",
+          "value": "144",
+          "selected": false
+        },
+        {
+          "text": "Italy",
+          "value": "205",
+          "selected": false
+        },
+        {
+          "text": "Jamaica",
+          "value": "42",
+          "selected": false
+        },
+        {
+          "text": "Japan",
+          "value": "3",
+          "selected": false
+        },
+        {
+          "text": "Jersey",
+          "value": "404",
+          "selected": false
+        },
+        {
+          "text": "Jordan",
+          "value": "152",
+          "selected": false
+        },
+        {
+          "text": "Kazakhstan",
+          "value": "154",
+          "selected": false
+        },
+        {
+          "text": "Kenya",
+          "value": "176",
+          "selected": false
+        },
+        {
+          "text": "Kiribati",
+          "value": "298",
+          "selected": false
+        },
+        {
+          "text": "Kosovo",
+          "value": "402",
+          "selected": false
+        },
+        {
+          "text": "Kuwait",
+          "value": "43",
+          "selected": false
+        },
+        {
+          "text": "Kyrgyzstan",
+          "value": "156",
+          "selected": false
+        },
+        {
+          "text": "Laos",
+          "value": "190",
+          "selected": false
+        },
+        {
+          "text": "Latvia",
+          "value": "145",
+          "selected": false
+        },
+        {
+          "text": "Lebanon",
+          "value": "68",
+          "selected": false
+        },
+        {
+          "text": "Lesotho",
+          "value": "31",
+          "selected": false
+        },
+        {
+          "text": "Liberia",
+          "value": "299",
+          "selected": false
+        },
+        {
+          "text": "Libya",
+          "value": "174",
+          "selected": false
+        },
+        {
+          "text": "Liechtenstein",
+          "value": "187",
+          "selected": false
+        },
+        {
+          "text": "Lithuania",
+          "value": "157",
+          "selected": false
+        },
+        {
+          "text": "Luxembourg",
+          "value": "7",
+          "selected": false
+        },
+        {
+          "text": "Macau",
+          "value": "169",
+          "selected": false
+        },
+        {
+          "text": "Madagascar",
+          "value": "209",
+          "selected": false
+        },
+        {
+          "text": "Malawi",
+          "value": "87",
+          "selected": false
+        },
+        {
+          "text": "Malaysia",
+          "value": "198",
+          "selected": false
+        },
+        {
+          "text": "Maldives",
+          "value": "34",
+          "selected": false
+        },
+        {
+          "text": "Mali",
+          "value": "204",
+          "selected": false
+        },
+        {
+          "text": "Malta",
+          "value": "57",
+          "selected": false
+        },
+        {
+          "text": "Marshall Islands",
+          "value": "300",
+          "selected": false
+        },
+        {
+          "text": "Martinique",
+          "value": "83",
+          "selected": false
+        },
+        {
+          "text": "Mauritania",
+          "value": "22",
+          "selected": false
+        },
+        {
+          "text": "Mauritius",
+          "value": "9",
+          "selected": false
+        },
+        {
+          "text": "Mayotte",
+          "value": "301",
+          "selected": false
+        },
+        {
+          "text": "Mexico",
+          "value": "86",
+          "selected": false
+        },
+        {
+          "text": "Moldova",
+          "value": "141",
+          "selected": false
+        },
+        {
+          "text": "Monaco",
+          "value": "1",
+          "selected": false
+        },
+        {
+          "text": "Mongolia",
+          "value": "302",
+          "selected": false
+        },
+        {
+          "text": "Montenegro",
+          "value": "340",
+          "selected": false
+        },
+        {
+          "text": "Montserrat",
+          "value": "303",
+          "selected": false
+        },
+        {
+          "text": "Morocco",
+          "value": "2",
+          "selected": false
+        },
+        {
+          "text": "Mozambique",
+          "value": "235",
+          "selected": false
+        },
+        {
+          "text": "Myanmar",
+          "value": "203",
+          "selected": false
+        },
+        {
+          "text": "Namibia",
+          "value": "85",
+          "selected": false
+        },
+        {
+          "text": "Nauru",
+          "value": "304",
+          "selected": false
+        },
+        {
+          "text": "Nepal",
+          "value": "120",
+          "selected": false
+        },
+        {
+          "text": "Netherlands",
+          "value": "149",
+          "selected": false
+        },
+        {
+          "text": "New Caledonia",
+          "value": "44",
+          "selected": false
+        },
+        {
+          "text": "New Zealand",
+          "value": "25",
+          "selected": false
+        },
+        {
+          "text": "Nicaragua",
+          "value": "92",
+          "selected": false
+        },
+        {
+          "text": "Niger",
+          "value": "305",
+          "selected": false
+        },
+        {
+          "text": "Nigeria",
+          "value": "65",
+          "selected": false
+        },
+        {
+          "text": "Niue",
+          "value": "306",
+          "selected": false
+        },
+        {
+          "text": "Norfolk Island",
+          "value": "230",
+          "selected": false
+        },
+        {
+          "text": "North Macedonia",
+          "value": "84",
+          "selected": false
+        },
+        {
+          "text": "Northern Mariana Islands",
+          "value": "32",
+          "selected": false
+        },
+        {
+          "text": "Norway",
+          "value": "129",
+          "selected": false
+        },
+        {
+          "text": "Oman",
+          "value": "155",
+          "selected": false
+        },
+        {
+          "text": "Pakistan",
+          "value": "19",
+          "selected": false
+        },
+        {
+          "text": "Palau",
+          "value": "133",
+          "selected": false
+        },
+        {
+          "text": "Palestinian Territory",
+          "value": "401",
+          "selected": false
+        },
+        {
+          "text": "Panama",
+          "value": "175",
+          "selected": false
+        },
+        {
+          "text": "Papua New Guinea",
+          "value": "91",
+          "selected": false
+        },
+        {
+          "text": "Paraguay",
+          "value": "111",
+          "selected": false
+        },
+        {
+          "text": "Peru",
+          "value": "186",
+          "selected": false
+        },
+        {
+          "text": "Philippines",
+          "value": "70",
+          "selected": false
+        },
+        {
+          "text": "Pitcairn Islands",
+          "value": "338",
+          "selected": false
+        },
+        {
+          "text": "Poland",
+          "value": "182",
+          "selected": false
+        },
+        {
+          "text": "Portugal",
+          "value": "213",
+          "selected": false
+        },
+        {
+          "text": "Puerto Rico",
+          "value": "166",
+          "selected": false
+        },
+        {
+          "text": "Qatar",
+          "value": "105",
+          "selected": false
+        },
+        {
+          "text": "Republic of Congo",
+          "value": "285",
+          "selected": false
+        },
+        {
+          "text": "Reunion Island",
+          "value": "239",
+          "selected": false
+        },
+        {
+          "text": "Romania",
+          "value": "75",
+          "selected": false
+        },
+        {
+          "text": "Russia",
+          "value": "33",
+          "selected": false
+        },
+        {
+          "text": "Rwanda",
+          "value": "131",
+          "selected": false
+        },
+        {
+          "text": "Saint Barthelemy",
+          "value": "348",
+          "selected": false
+        },
+        {
+          "text": "Saint Helena",
+          "value": "333",
+          "selected": false
+        },
+        {
+          "text": "Saint Kitts And Nevis",
+          "value": "8",
+          "selected": false
+        },
+        {
+          "text": "Saint Lucia",
+          "value": "195",
+          "selected": false
+        },
+        {
+          "text": "Saint Martin (France)",
+          "value": "347",
+          "selected": false
+        },
+        {
+          "text": "Saint Pierre and Miquelon",
+          "value": "307",
+          "selected": false
+        },
+        {
+          "text": "Samoa",
+          "value": "287",
+          "selected": false
+        },
+        {
+          "text": "San Marino",
+          "value": "241",
+          "selected": false
+        },
+        {
+          "text": "Sao Tome and Principe",
+          "value": "308",
+          "selected": false
+        },
+        {
+          "text": "Saudi Arabia",
+          "value": "74",
+          "selected": false
+        },
+        {
+          "text": "Senegal",
+          "value": "233",
+          "selected": false
+        },
+        {
+          "text": "Serbia",
+          "value": "339",
+          "selected": false
+        },
+        {
+          "text": "Seychelles",
+          "value": "115",
+          "selected": false
+        },
+        {
+          "text": "Sierra Leone",
+          "value": "309",
+          "selected": false
+        },
+        {
+          "text": "Singapore",
+          "value": "114",
+          "selected": false
+        },
+        {
+          "text": "Sint Maarten (Netherlands)",
+          "value": "343",
+          "selected": false
+        },
+        {
+          "text": "Slovakia",
+          "value": "125",
+          "selected": false
+        },
+        {
+          "text": "Slovenia",
+          "value": "27",
+          "selected": false
+        },
+        {
+          "text": "Solomon Islands",
+          "value": "323",
+          "selected": false
+        },
+        {
+          "text": "Somalia",
+          "value": "310",
+          "selected": false
+        },
+        {
+          "text": "South Africa",
+          "value": "62",
+          "selected": false
+        },
+        {
+          "text": "South Georgia Islands",
+          "value": "334",
+          "selected": false
+        },
+        {
+          "text": "South Korea",
+          "value": "212",
+          "selected": false
+        },
+        {
+          "text": "South Sudan",
+          "value": "346",
+          "selected": false
+        },
+        {
+          "text": "Spain",
+          "value": "167",
+          "selected": false
+        },
+        {
+          "text": "Sri Lanka",
+          "value": "82",
+          "selected": false
+        },
+        {
+          "text": "St. Vincent & Grenadines",
+          "value": "137",
+          "selected": false
+        },
+        {
+          "text": "Sudan",
+          "value": "311",
+          "selected": false
+        },
+        {
+          "text": "Suriname",
+          "value": "312",
+          "selected": false
+        },
+        {
+          "text": "Sweden",
+          "value": "49",
+          "selected": false
+        },
+        {
+          "text": "Switzerland",
+          "value": "51",
+          "selected": false
+        },
+        {
+          "text": "Taiwan",
+          "value": "140",
+          "selected": false
+        },
+        {
+          "text": "Tajikistan",
+          "value": "313",
+          "selected": false
+        },
+        {
+          "text": "Tanzania",
+          "value": "199",
+          "selected": false
+        },
+        {
+          "text": "Thailand",
+          "value": "106",
+          "selected": false
+        },
+        {
+          "text": "Timor-Leste",
+          "value": "331",
+          "selected": false
+        },
+        {
+          "text": "Togo",
+          "value": "121",
+          "selected": false
+        },
+        {
+          "text": "Tokelau",
+          "value": "314",
+          "selected": false
+        },
+        {
+          "text": "Tonga",
+          "value": "315",
+          "selected": false
+        },
+        {
+          "text": "Trinidad & Tobago",
+          "value": "95",
+          "selected": false
+        },
+        {
+          "text": "Tunisia",
+          "value": "56",
+          "selected": false
+        },
+        {
+          "text": "Turkey",
+          "value": "45",
+          "selected": false
+        },
+        {
+          "text": "Turkmenistan",
+          "value": "316",
+          "selected": false
+        },
+        {
+          "text": "Turks & Caicos Islands",
+          "value": "48",
+          "selected": false
+        },
+        {
+          "text": "Tuvalu",
+          "value": "317",
+          "selected": false
+        },
+        {
+          "text": "U.S. Virgin Islands",
+          "value": "81",
+          "selected": false
+        },
+        {
+          "text": "Uganda",
+          "value": "245",
+          "selected": false
+        },
+        {
+          "text": "Ukraine",
+          "value": "79",
+          "selected": false
+        },
+        {
+          "text": "United Arab Emirates",
+          "value": "64",
+          "selected": false
+        },
+        {
+          "text": "United Kingdom",
+          "value": "107",
+          "selected": false
+        },
+        {
+          "text": "United States",
+          "value": "181",
+          "selected": false
+        },
+        {
+          "text": "Uruguay",
+          "value": "110",
+          "selected": false
+        },
+        {
+          "text": "Uzbekistan",
+          "value": "172",
+          "selected": false
+        },
+        {
+          "text": "Vanuatu",
+          "value": "194",
+          "selected": false
+        },
+        {
+          "text": "Venezuela",
+          "value": "146",
+          "selected": false
+        },
+        {
+          "text": "Vietnam",
+          "value": "38",
+          "selected": false
+        },
+        {
+          "text": "Wallis and Futuna",
+          "value": "318",
+          "selected": false
+        },
+        {
+          "text": "Western Sahara",
+          "value": "284",
+          "selected": false
+        },
+        {
+          "text": "Yemen",
+          "value": "98",
+          "selected": false
+        },
+        {
+          "text": "Zambia",
+          "value": "171",
+          "selected": false
+        },
+        {
+          "text": "Zimbabwe",
+          "value": "61",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "contact.contactPhoneNumber",
+      "value": "",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "options": null
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "property.address1",
+      "value": "",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "options": null
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "name": "",
+      "value": "on",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "options": null
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "name": "",
+      "value": "on",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "options": null
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "name": "",
+      "value": "on",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "options": null
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "name": "",
+      "value": "on",
+      "placeholder": "",
+      "required": false,
+      "disabled": false,
+      "options": null
+    }
+  ],
+  "text": "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\n1\nCustomer information\n2\nPayment information\n3\nBooking is confirmed!\nSign in\n\nThis price is guaranteed for...\n\n00:17:30\n\nWho\u2019s the lead guest?\n\n*Required field\n\nFirst name *\n\nFirst name *\n\nLast name *\n\nLast name *\n\nEmail *\n\nEmail *\n\nCountry/region of residence *\n\nCountry/region of residence *\n\nAustralia\nChina\nIndonesia\nJapan\nMalaysia\nSingapore\nSouth Korea\nThailand\nUnited Kingdom\nUnited States\nAfghanistan\nAlbania\nAlgeria\nAmerican Samoa\nAndorra\nAngola\nAnguilla\nAntigua & Barbuda\nArgentina\nArmenia\nAruba\nAustralia\nAustria\nAzerbaijan\nBahamas\nBahrain\nBangladesh\nBarbados\nBelarus\nBelgium\nBelize\nBenin\nBermuda\nBhutan\nBolivia\nBonaire, Sint Eustatius and Saba\nBosnia Herzegovina\nBotswana\nBrazil\nBritish Indian Ocean Territory\nBritish Virgin Islands\nBrunei Darussalam\nBulgaria\nBurkina Faso\nBurundi\nCambodia\nCameroon\nCanada\nCape Verde\nCayman Islands\nCentral African Republic\nChad\nChile\nChina\nChristmas Island\nCocos (Keeling) Islands\nColombia\nComoros\nCook Islands\nCosta Rica\nCote D'ivoire\nCroatia\nCuracao\nCyprus\nCzech Republic\nDemocratic Republic of the\u00a0Congo\nDenmark\nDjibouti\nDominica\nDominican Republic\nEcuador\nEgypt\nEl Salvador\nEquatorial Guinea\nEritrea\nEstonia\nEswatini\nEthiopia\nFalkland Islands\nFaroe Islands\nFederated States of Micronesia\nFiji\nFinland\nFrance\nFrench Guiana\nFrench Polynesia\nGabon\nGambia\nGeorgia\nGermany\nGhana\nGibraltar\nGreece\nGreenland\nGrenada\nGuadeloupe\nGuam\nGuatemala\nGuernsey\nGuinea\nGuinea-Bissau\nGuyana\nHaiti\nHoly See (Vatican City)\nHonduras\nHong Kong\nHungary\nIceland\nIndia\nIndonesia\nIraq\nIreland\nIsle Of Man\nIsrael\nItaly\nJamaica\nJapan\nJersey\nJordan\nKazakhstan\nKenya\nKiribati\nKosovo\nKuwait\nKyrgyzstan\nLaos\nLatvia\nLebanon\nLesotho\nLiberia\nLibya\nLiechtenstein\nLithuania\nLuxembourg\nMacau\nMadagascar\nMalawi\nMalaysia\nMaldives\nMali\nMalta\nMarshall Islands\nMartinique\nMauritania\nMauritius\nMayotte\nMexico\nMoldova\nMonaco\nMongolia\nMontenegro\nMontserrat\nMorocco\nMozambique\nMyanmar\nNamibia\nNauru\nNepal\nNetherlands\nNew Caledonia\nNew Zealand\nNicaragua\nNiger\nNigeria\nNiue\nNorfolk Island\nNorth Macedonia\nNorthern Mariana Islands\nNorway\nOman\nPakistan\nPalau\nPalestinian Territory\nPanama\nPapua New Guinea\nParaguay\nPeru\nPhilippines\nPitcairn Islands\nPoland\nPortugal\nPuerto Rico\nQatar\nRepublic of Congo\nReunion Island\nRomania\nRussia\nRwanda\nSaint Barthelemy\nSaint Helena\nSaint Kitts And Nevis\nSaint Lucia\nSaint Martin (France)\nSaint Pierre and Miquelon\nSamoa\nSan Marino\nSao Tome and Principe\nSaudi Arabia\nSenegal\nSerbia\nSeychelles\nSierra Leone\nSingapore\nSint Maarten (Netherlands)\nSlovakia\nSlovenia\nSolomon Islands\nSomalia\nSouth Africa\nSouth Georgia Islands\nSouth Korea\nSouth Sudan\nSpain\nSri Lanka\nSt. Vincent & Grenadines\nSudan\nSuriname\nSweden\nSwitzerland\nTaiwan\nTajikistan\nTanzania\nThailand\nTimor-Leste\nTogo\nTokelau\nTonga\nTrinidad & Tobago\nTunisia\nTurkey\nTurkmenistan\nTurks & Caicos Islands\nTuvalu\nU.S. Virgin Islands\nUganda\nUkraine\nUnited Arab Emirates\nUnited Kingdom\nUnited States\nUruguay\nUzbekistan\nVanuatu\nVenezuela\nVietnam\nWallis and Futuna\nWestern Sahara\nYemen\nZambia\nZimbabwe\nMobile number\nCountry code\n\n+91\n\nMobile number\n\nMobile number\n\nPlease make sure your contact information is correct. We'll use it to send your booking confirmation and any reminders to assist your booking completion.\nSpecial requests\n\nSubject to availability. Your selections will be sent to the property right after you book.\n\nWhich type of room would you prefer?\n\nNon-smoking\n\nSmoking\n\nWhich bed setup would you prefer?\n\nI'd like a large bed\n\nI'd like twin beds\n\nShow additional preferences\nFree room benefits\n\nFully refundable\n\nCancel for free before 12 August 2026\n\nFREE\n\nFree WiFi\n\nFREE\n\nParking\n\nFREE\nNEXT: FINAL STEP\nYou won't be charged yet.\nCheck-in\n\nThu, Aug 13\n\n02:00 PM\nCheck-out\n\nFri, Aug 14\n\n12:00 PM\n\n1\n\nnight\n1 / 3\n1/3\nThe Park Hyderabad Hotel\n5 stars out of 5\ntooltip\n\nThis star rating is provided to Agoda by the property, and is usually determined by an official hotel ratings organisation or a third party.\n\n8.2\nExcellent\n\n8902\nreviews\n22, Rajbhavan Road, Somajiguda, Banjara Hills, Hyderabad, Telangana, India, 500082\nWhat's nearby?\n\n\" The stay here was too good there's ntg to complain about. \"\n\n\ud83c\uddee\ud83c\uddf3\n\nLakshmi Kanth Reddy \u00b7 Mar 2025\n\nStay flexible! Cancel for free before 12 August 2026.\n1 x Luxury Room\nSize:29 m\u00b2\nMax:2 adults\n1 king bed or 2 single beds\nLuggage storage available\nBook and pay now\nWe have limited availability at this price - book now!\nFood & Beverage Discount 10%\nParking\nWelcome drink\nExpress check-in\nFree WiFi\nDrinking water\nFree fitness center access\n\nBathtub\n\nExtra long bed\n\nMini bar\n\nPrivate bathroom\n\nCloset\n\nWindow\n\nBlackout curtains\n\nNon-smoking\n\nWi-Fi [free]\n\n+66 more\n\nGreat choice on price \u2013 this is the lowest rate at The Park Hyderabad Hotel.\n\nWe have limited availability at this price - book now!\n\nIt's only 7 days until your check-in. Rates may rise if you don\u2019t book now.\n\nHow much will it cost to cancel?\n\nStay flexible!\u00a0Cancel for free before 12 Aug 2026.\u00a0Quickly edit your booking online - no added cost!\u00a0\nSee more details\n\nToday\n12 Aug\nArrival\nCoupons\nHave a code?\nRs. 1,371 off\n\nPromotion Discount \u00a0\n\nRs. 2,150 off\n\nIDFCINEMI12 -\u00a0Get Extra 12% Off - Pay using IDFC Bank EMI (Installments)\n\nApply\nT&Cs\nWe price match. Find it for less, and we'll match it!\n\nYou saved Rs. 1,371.23 on this booking!\n\n68% OFF TODAY\nOriginal price\u00a0(1 room x 1 night)\nRs. 23,512.82\nOur price\u00a0\nRs. 8,970.00\nAGODASPONSORED Coupon applied\n-Rs. 1,371.23\nPrice Before Taxes\nRs. 7,598.77\nTaxes and fees\nRs. 1,614.60\nBooking fees\nFREE\nPrice\nRs. 9,213.37\nIncluded in price: Tax 18%\n103+ MILLION VERIFIED REVIEWS\nFind the perfect place to stay. Read honest reviews from the Agoda travel community.\nBEST PRICE GUARANTEE\nNobody works harder to get you the best price. And if you find one lower, we'll refund you the difference.\nFREE 24/7 CUSTOMER SERVICE\nAvailable in 17 languages. All day, every day, we're here to help you.\n\nAll material herein \u00a9 2005\u20132026 Agoda Company Pte. Ltd. All Rights Reserved.\n\nAgoda is part of Booking Holdings Inc., the world leader in online travel & related services.\n\nsg-pc-6g-cronos-spa-prod-bb6694ccb-42l7v",
+  "all_urls": [],
+  "concatenated_urls": ""
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Builder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .badge {
+            background: #FF6B35;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        h1 { color: #1a1a2e; }
+        .create-workflow {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .create-workflow form {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .create-workflow input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            min-width: 200px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        .btn:hover { background: #45a049; }
+        .btn-danger { background: #f44336; }
+        .btn-danger:hover { background: #da190b; }
+        .workflow-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .workflow-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            position: relative;
+        }
+        .workflow-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .workflow-card h3 { color: #1a1a2e; margin-bottom: 10px; }
+        .workflow-card p { color: #666; font-size: 14px; margin-bottom: 15px; }
+        .workflow-card .meta { color: #999; font-size: 12px; }
+        .delete-workflow {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: #f44336;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 5px 8px;
+            border-radius: 4px;
+        }
+        .delete-workflow:hover { background: #ffebee; }
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Workflow Builder</h1>
+            <span class="badge">FastAPI (File-based)</span>
+        </div>
+        
+        <div class="create-workflow">
+            <h3>Create New Workflow</h3>
+            <form action="/api/workflows" method="post">
+                <input type="text" name="name" placeholder="Workflow name" required>
+                <input type="text" name="description" placeholder="Description (optional)">
+                <button type="submit" class="btn">Create</button>
+            </form>
+        </div>
+
+        <div class="workflow-grid">
+            {% if workflows %}
+                {% for workflow in workflows %}
+                    <div class="workflow-card" onclick="window.location.href='/workflow/{{ workflow.id }}'">
+                        <button class="delete-workflow" onclick="event.stopPropagation(); deleteWorkflow({{ workflow.id }})">×</button>
+                        <h3>{{ workflow.name }}</h3>
+                        {% if workflow.description %}
+                            <p>{{ workflow.description }}</p>
+                        {% endif %}
+                        <div class="meta">
+                            Created: {{ workflow.created_at[:16]|replace('T', ' ') }}<br>
+                            Boxes: {{ workflow.boxes|length }}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    <p>No workflows created yet. Create your first workflow above!</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        async function deleteWorkflow(id) {
+            if (confirm('Are you sure you want to delete this workflow?')) {
+                const response = await fetch(`/api/workflows/${id}`, { method: 'DELETE' });
+                if (response.ok) window.location.reload();
+            }
+        }
+    </script>
+</body>
+</html>
