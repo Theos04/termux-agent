@@ -1866,3 +1866,912 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+"""Chrome Session Manager ER Diagram
+make er diagram for this
+ER Diagram for Chrome Session Manager
+Based on the code, here's the entity-relationship diagram showing the data structures and their relationships.
+
+Entities & Attributes
+1. SESSION (core entity, from SessionDB)
+Attribute	Type	Notes
+id (PK)	INTEGER	Auto-increment
+name	TEXT	UNIQUE, session identifier
+url	TEXT	Target website
+port	INTEGER	UNIQUE, debug port (9222–9299)
+profile_dir	TEXT	Chrome user-data-dir
+pid	INTEGER	Process ID (nullable)
+status	TEXT	running / stopped / error
+restart_count	INTEGER	Default 0
+created_at	TIMESTAMP	
+last_used	TIMESTAMP	Nullable
+2. PORT (resource pool)
+Attribute	Type	Notes
+port (PK)	INTEGER	9222–9299
+session_id (FK)	INTEGER	→ SESSION.id (nullable)
+in_use	BOOLEAN	
+3. SESSION_INFO (from SessionInfoTracker / session_info.json)
+Attribute	Type	Notes
+session_id (PK, FK)	INTEGER	→ SESSION.id
+name	TEXT	Denormalized
+url	TEXT	Denormalized
+port	INTEGER	
+profile_dir	TEXT	
+starts	INTEGER	Counter
+errors	INTEGER	Counter
+status	TEXT	running / stopped / error
+pid	INTEGER	Nullable
+last_start	TIMESTAMP	
+last_end	TIMESTAMP	
+last_error	TEXT	Nullable
+current_ws_id	TEXT	Primary WebSocket ID (FK)
+4. WEBSOCKET (tab-level, from get_ws_urls())
+Attribute	Type	Notes
+tab_id (PK)	TEXT	Chrome target ID
+session_id (FK)	INTEGER	→ SESSION.id
+title	TEXT	Tab title
+url	TEXT	Tab URL
+ws_url	TEXT	webSocketDebuggerUrl
+is_primary	BOOLEAN	First tab = primary
+5. EVENT (audit log, from session_info.json → events[])
+Attribute	Type	Notes
+event_id (PK)	INTEGER	Auto-increment
+session_id (FK)	INTEGER	→ SESSION.id
+type	TEXT	start / end / error
+timestamp	TIMESTAMP	
+session_name	TEXT	Denormalized
+port	INTEGER	Nullable
+pid	INTEGER	Nullable
+url	TEXT	Nullable
+websocket_id	TEXT	Nullable (FK → WEBSOCKET.tab_id)
+error	TEXT	Nullable
+6. STATISTICS (singleton aggregate)
+Attribute	Type	Notes
+id (PK)	INTEGER	Always 1
+total_starts	INTEGER	
+total_ends	INTEGER	
+total_errors	INTEGER	
+active_sessions	INTEGER	
+last_updated	TIMESTAMP	
+7. SCRIPT (from JavaScriptManager, stored as {id}.json)
+Attribute	Type	Notes
+script_id (PK)	TEXT	MD5 hash (8 chars)
+name	TEXT	
+code	TEXT	JS source
+created	TIMESTAMP	
+updated	TIMESTAMP	
+8. DISPLAY (from DisplayManager, VNC/X11)
+Attribute	Type	Notes
+display_num (PK)	INTEGER	:1–:5
+vnc_port	INTEGER	5900 + display_num
+vnc_pid	INTEGER	VNC server PID
+is_active	BOOLEAN	Verified via xdpyinfo
+ER Diagram (Mermaid)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Relationship Summary
+Relationship	Cardinality	Description
+SESSION → SESSION_INFO	1 : 1	Each session has one tracking record
+SESSION → WEBSOCKET	1 : N	One session exposes many tabs (WS endpoints)
+SESSION → EVENT	1 : N	One session emits many lifecycle events
+SESSION → PORT	1 : 1	Each session binds exactly one debug port
+SESSION → DISPLAY	N : 1	Many sessions can share one VNC display
+WEBSOCKET → EVENT	1 : N	Events reference the active WS ID
+SESSION_INFO → WEBSOCKET	1 : N	websocket_ids[] array + current_ws_id
+STATISTICS	singleton	Global aggregate, no FK
+SCRIPT	standalone	Saved JS snippets, no FK to session
+Notes for a FastAPI Migration
+SESSION and PORT are already SQL-backed (SessionDB) → easy to expose via SQLAlchemy + Pydantic.
+
+SESSION_INFO, EVENT, and STATISTICS are currently JSON-file-backed → flatten into proper tables (or keep JSONB in Postgres) for concurrent FastAPI workers.
+
+WEBSOCKET should become a real table synced by a background health-check task (currently only refreshed on demand).
+
+DISPLAY is environment-scoped — keep in app state, not DB.
+
+SCRIPT is file-backed but trivially maps to a table.
+
+This gives you a clean relational model that maps 1:1 to REST endpoints (/sessions, /sessions/{id}/events, /sessions/{id}/tabs, etc.) plus a WebSocket endpoint for live event streaming.
+
+''
+ER Diagram for Enhanced Chrome CDP Controller
+Based on the second file, here's the entity-relationship diagram. This system is session-centric with file-based persistence (JSON/JSONL), not a SQL database — so entities map to dataclasses, directories, and state keys.
+
+Entities & Attributes
+1. SESSION (from SessionMetadata dataclass)
+Attribute	Type	Notes
+session_id (PK)	TEXT	YYYYMMDD_HHMMSS
+start_time	TIMESTAMP	
+end_time	TIMESTAMP	Nullable
+chrome_port	INTEGER	CDP debug port
+tab_url	TEXT	Currently attached tab
+tab_title	TEXT	
+total_commands	INTEGER	Counter
+2. TAB (runtime, from get_tabs())
+Attribute	Type	Notes
+tab_id (PK)	TEXT	Chrome target id
+session_id (FK)	TEXT	→ SESSION.session_id
+title	TEXT	
+url	TEXT	
+ws_url	TEXT	webSocketDebuggerUrl
+type	TEXT	page (filtered)
+3. COMMAND_LOG (from CommandLog dataclass → logs/session.jsonl)
+Attribute	Type	Notes
+log_id (PK)	INTEGER	Implicit order
+session_id (FK)	TEXT	→ SESSION.session_id
+timestamp	TIMESTAMP	
+command	TEXT	e.g. DOM.getDocument
+params	JSON	
+success	BOOLEAN	
+result_summary	TEXT	
+duration_ms	FLOAT	
+4. EVENT (from _log_event → logs/session.jsonl)
+Attribute	Type	Notes
+event_id (PK)	INTEGER	Implicit
+session_id (FK)	TEXT	→ SESSION.session_id
+timestamp	TIMESTAMP	
+event	TEXT	session_start, session_end, command, error, cdp_notification
+data	JSON	
+5. ARTIFACT (files generated in session subdirectories)
+Attribute	Type	Notes
+artifact_id (PK)	TEXT	filename
+session_id (FK)	TEXT	→ SESSION.session_id
+category	TEXT	dom_trees, snapshots, accessibility, computed_styles, scripts, interactions, regex, xpath, selectors, semantic, logs, exports, memory
+timestamp	TIMESTAMP	
+metadata	JSON	context, counts
+path	TEXT	
+6. DOM_TREE (specialization of ARTIFACT, dom_trees/*.json)
+Attribute	Type	Notes
+artifact_id (PK, FK)	TEXT	→ ARTIFACT.artifact_id
+node_count	INTEGER	
+root_node_id	INTEGER	
+depth	INTEGER	
+pierce	BOOLEAN	
+7. SNAPSHOT (specialization, snapshots/*.json, LayoutSnapshot)
+Attribute	Type	Notes
+artifact_id (PK, FK)	TEXT	→ ARTIFACT.artifact_id
+dom_node_count	INTEGER	
+layout_tree_count	INTEGER	
+computed_styles_count	INTEGER	
+8. AX_TREE (specialization, accessibility/*.json)
+Attribute	Type	Notes
+artifact_id (PK, FK)	TEXT	→ ARTIFACT.artifact_id
+total_nodes	INTEGER	
+node_count	INTEGER	
+9. AX_NODE (within AX_TREE — from get_comprehensive_ax_tree)
+Attribute	Type	Notes
+node_id (PK)	INTEGER	
+artifact_id (FK)	TEXT	→ AX_TREE.artifact_id
+backend_node_id	INTEGER	
+role	TEXT	
+name	TEXT	
+description	TEXT	
+parent_id (FK)	INTEGER	→ AX_NODE.node_id (self-ref)
+is_interactive	BOOLEAN	
+has_name	BOOLEAN	
+has_description	BOOLEAN	
+10. AX_PROPERTY (attributes of AX_NODE)
+Attribute	Type	Notes
+property_id (PK)	INTEGER	
+node_id (FK)	INTEGER	→ AX_NODE.node_id
+name	TEXT	e.g. focusable
+value	TEXT	
+11. INTERACTION (from save_interaction → interactions/*.json)
+Attribute	Type	Notes
+artifact_id (PK, FK)	TEXT	→ ARTIFACT.artifact_id
+interaction_number	INTEGER	
+element_index	INTEGER	
+action	TEXT	click / type / hover
+value	TEXT	Nullable
+result	JSON	
+verification	JSON	
+12. REGEX_EXTRACTION (from save_regex_results)
+Attribute	Type	Notes
+artifact_id (PK, FK)	TEXT	→ ARTIFACT.artifact_id
+total_matches	INTEGER	
+pattern_count	INTEGER	
+13. REGEX_PATTERN (from RegexPatterns library — static)
+Attribute	Type	Notes
+pattern_name (PK)	TEXT	EMAIL, URL, IP_V4, …
+pattern	TEXT	compiled regex
+has_named_groups	BOOLEAN	
+14. REGEX_MATCH (per-pattern result)
+Attribute	Type	Notes
+match_id (PK)	INTEGER	
+artifact_id (FK)	TEXT	→ REGEX_EXTRACTION.artifact_id
+pattern_name (FK)	TEXT	→ REGEX_PATTERN.pattern_name
+value	TEXT	
+start	INTEGER	
+end	INTEGER	
+groups	JSON	
+15. XPATH_QUERY (from save_xpath_results)
+Attribute	Type	Notes
+artifact_id (PK, FK)	TEXT	→ ARTIFACT.artifact_id
+expression	TEXT	
+match_count	INTEGER	
+duration_ms	FLOAT	
+error	TEXT	Nullable
+16. CSS_TEST (from save_css_results)
+Attribute	Type	Notes
+artifact_id (PK, FK)	TEXT	→ ARTIFACT.artifact_id
+selector	TEXT	
+valid	BOOLEAN	
+match_count	INTEGER	
+duration_ms	FLOAT	
+error	TEXT	Nullable
+17. SEMANTIC_EXTRACTION (from save_semantic_results)
+Attribute	Type	Notes
+artifact_id (PK, FK)	TEXT	→ ARTIFACT.artifact_id
+json_ld_blocks	INTEGER	
+rdfa_triples	INTEGER	
+microdata_items	INTEGER	
+total_triples	INTEGER	
+18. JSON_LD_BLOCK (within SEMANTIC_EXTRACTION)
+Attribute	Type	Notes
+block_id (PK)	INTEGER	
+artifact_id (FK)	TEXT	→ SEMANTIC_EXTRACTION.artifact_id
+data	JSON	Full @context/@type object
+19. RDF_TRIPLE (from _generate_triples)
+Attribute	Type	Notes
+triple_id (PK)	INTEGER	
+artifact_id (FK)	TEXT	→ SEMANTIC_EXTRACTION.artifact_id
+subject	TEXT	
+predicate	TEXT	
+object	TEXT	
+source	TEXT	json_ld / rdfa / microdata
+20. STATE (from session.state dict → memory/state.json)
+Attribute	Type	Notes
+state_key (PK)	TEXT	e.g. last_dom_tree, interaction_count
+session_id (FK)	TEXT	→ SESSION.session_id
+value	JSON	pointer to latest artifact or counter
+21. ERROR (from log_error → state['errors'])
+Attribute	Type	Notes
+error_id (PK)	INTEGER	
+session_id (FK)	TEXT	→ SESSION.session_id
+timestamp	TIMESTAMP	
+error	TEXT	
+context	JSON	
+ER Diagram (Mermaid)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Relationship Summary
+Relationship	Cardinality	Description
+SESSION → TAB	1 : N	One session can attach to many tabs (usually 1 at a time)
+SESSION → COMMAND_LOG	1 : N	Every CDP command is logged
+SESSION → EVENT	1 : N	Lifecycle + notification events
+SESSION → ARTIFACT	1 : N	All generated files
+ARTIFACT → DOM_TREE / SNAPSHOT / AX_TREE / …	1 : 0..1	Specialization by category
+AX_TREE → AX_NODE	1 : N	Hierarchical accessibility nodes
+AX_NODE → AX_NODE	1 : N	Self-referential parent/child
+AX_NODE → AX_PROPERTY	1 : N	ARIA properties
+REGEX_EXTRACTION → REGEX_MATCH	1 : N	Matches per pattern
+REGEX_PATTERN → REGEX_MATCH	1 : N	Pattern library drives matches
+SEMANTIC_EXTRACTION → JSON_LD_BLOCK	1 : N	JSON-LD blocks found
+SEMANTIC_EXTRACTION → RDF_TRIPLE	1 : N	Normalized triples
+SESSION → STATE	1 : 1	Singleton state dict
+SESSION → ERROR	1 : N	Error log
+Key Differences vs. File 1 (cdpv119.py)
+Aspect	File 1 (Session Manager)	File 2 (CDP Controller)
+Primary entity	SESSION (Chrome instance)	SESSION (CDP analysis run)
+Persistence	SQLite (SessionDB) + JSON	JSON / JSONL files only
+Core focus	Process lifecycle, ports, VNC	DOM/AX/regex/xpath/semantic extraction
+Tab model	WEBSOCKET (tab_id + ws_url)	TAB (same idea, different name)
+New entities	—	ARTIFACT, AX_NODE, REGEX_MATCH, RDF_TRIPLE, XPATH_QUERY, CSS_TEST
+Overlap	SESSION, EVENT, COMMAND_LOG	SESSION, EVENT, COMMAND_LOG
+Foreign key	session_id (INTEGER)	session_id (TEXT timestamp)
+Notes for Unifying / FastAPI Migration
+Two different SESSION concepts — in File 1 it's a long-lived Chrome process; in File 2 it's a short-lived analysis run. If merging, use a parent CHROME_INSTANCE → child ANALYSIS_SESSION.
+
+ARTIFACT is the key abstraction — it unifies all the save_* methods (dom_tree, snapshot, regex, xpath, css, semantic, interaction). A single artifacts table with a category column + category-specific detail tables works well.
+
+AX_NODE self-reference — model as a real tree in SQL (adjacency list) or store the whole AX tree as JSONB if you don't need to query individual nodes.
+
+REGEX_PATTERN is static — seed it as a lookup table; REGEX_MATCH references it by name.
+
+STATE — best kept as a JSONB column on SESSION rather than a separate table.
+
+COMMAND_LOG and EVENT — currently both go to the same session.jsonl; split into two tables for cleaner querying.
+
+session_db.py
+ER Diagram for session_db.py (SQLite Schema)
+This module defines the actual physical SQL schema backing the SessionDB class. Unlike the earlier file-based diagrams, everything here is concrete: three tables, four indexes, foreign keys, and a few derived/statistical queries.
+
+Entities (Tables)
+1. sessions (primary entity)
+Column	Type	Constraints	Notes
+id (PK)	INTEGER	PRIMARY KEY AUTOINCREMENT	
+name	TEXT	UNIQUE NOT NULL	
+url	TEXT	NOT NULL	
+port	INTEGER	UNIQUE NOT NULL	9222–9299
+profile_dir	TEXT	NOT NULL	Chrome --user-data-dir
+pid	INTEGER	NULL	Process ID when running
+status	TEXT	DEFAULT 'stopped'	stopped / running / error
+restart_count	INTEGER	DEFAULT 0	Added via migration
+notes	TEXT	NULL	
+created_at	TIMESTAMP	DEFAULT CURRENT_TIMESTAMP	
+updated_at	TIMESTAMP	DEFAULT CURRENT_TIMESTAMP	
+last_used	TIMESTAMP	NULL	
+2. session_history (audit log)
+Column	Type	Constraints	Notes
+id (PK)	INTEGER	PRIMARY KEY AUTOINCREMENT	
+session_id (FK)	INTEGER	NOT NULL → sessions.id ON DELETE CASCADE	
+action	TEXT	NOT NULL	created, started, stopped, port_changed
+details	TEXT	NULL	Human-readable message
+timestamp	TIMESTAMP	DEFAULT CURRENT_TIMESTAMP	
+3. used_ports (resource pool / registry)
+Column	Type	Constraints	Notes
+port (PK)	INTEGER	PRIMARY KEY	9222–9299
+session_id (FK)	INTEGER	NULL → sessions.id ON DELETE CASCADE	
+acquired_at	TIMESTAMP	DEFAULT CURRENT_TIMESTAMP	
+Indexes
+Index	Table	Columns	Purpose
+idx_sessions_status	sessions	status	Fast filter by running/stopped
+idx_sessions_port	sessions	port	Port lookup
+idx_history_session	session_history	session_id	Per-session history fetch
+idx_history_timestamp	session_history	timestamp	Recent-activity queries
+ER Diagram (Mermaid)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Relationship Summary
+Relationship	Cardinality	Enforcement	Description
+sessions → session_history	1 : N	ON DELETE CASCADE	Every lifecycle event is logged
+sessions → used_ports	1 : 0..1	ON DELETE CASCADE	A session claims exactly one port; deleting the session frees the port
+used_ports.port → sessions.port	(logical)	Application-enforced	used_ports mirrors sessions.port to prevent race conditions during port allocation
+Note: There is a logical redundancy between sessions.port (UNIQUE) and used_ports.port (PK). Both enforce one-port-per-session, but used_ports exists so the port can be reserved before the session row is fully committed, and released independently. The application keeps them in sync via create_session, update_session_port, release_port, and delete_session.
+
+Derived / Aggregate Views (not tables)
+These are computed by methods, not stored — worth noting for a FastAPI migration (they map naturally to read-only endpoints):
+
+Method	Returns	Maps to
+get_available_ports(9222, 9299)	List[int]	GET /ports/available
+get_all_ports()	List[int]	GET /ports/used
+get_session_stats()	Dict	GET /stats
+get_history(session_id, limit)	List[Dict]	GET /sessions/{id}/history
+get_session_restart_count(id)	int	GET /sessions/{id}/restart_count
+cleanup_zombie_ports()	void	maintenance task
+vacuum()	void	maintenance task
+get_session_stats() internally aggregates:
+
+status_counts → SELECT status, COUNT(*) FROM sessions GROUP BY status
+
+total_sessions → SELECT COUNT(*) FROM sessions
+
+last_activity → SELECT MAX(last_used) FROM sessions
+
+used_ports / available_ports → derived from used_ports table
+
+Status Lifecycle (State Machine)
+The sessions.status column follows this state machine, driven by method calls:
+
+
+
+
+
+
+
+
+
+
+Actions logged to session_history at each transition:
+
+create_session → created
+
+start_session → started
+
+stop_session → stopped
+
+update_session_port → port_changed
+
+(restart) → implicitly via start_session again
+
+Schema Notes / Observations for a FastAPI Migration
+used_ports is technically redundant with sessions.port UNIQUE, but it exists to decouple port reservation from session creation — useful if you later support "reserved but not yet assigned" ports. If you drop it, replace with a single sessions.port UNIQUE and use transactions with BEGIN IMMEDIATE for allocation.
+
+RETURNING clause used in increment_session_restart_count requires SQLite ≥ 3.35. If deploying against older SQLite, rewrite as UPDATE + SELECT.
+
+No ON UPDATE CASCADE anywhere — updated_at is manually set by the application on each mutation.
+
+session_history.action is free-form TEXT — no CHECK constraint. For FastAPI, convert to an Enum (created, started, stopped, port_changed, restarted, deleted).
+
+Missing FK from used_ports.session_id to sessions.id is nullable — this allows orphan ports (session_id = NULL) but the cleanup method only deletes rows whose session_id NOT IN (SELECT id FROM sessions). A NULL session_id would not be caught by that NOT IN (NULL semantics). Consider session_id IS NULL OR session_id NOT IN (...).
+
+Timestamps are stored as TEXT (ISO-8601 via datetime.now().isoformat() for app-written fields, but SQLite CURRENT_TIMESTAMP for defaults). This is a mixed representation — created_at may be "2024-01-01 12:00:00" (SQLite default) while updated_at is "2024-01-01T12:00:00.123456". Normalize before migrating to Postgres.
+
+WAL mode enabled (PRAGMA journal_mode=WAL) — good for concurrent reads; the _lock (RLock) serializes writes at the Python level. For FastAPI with multiple workers, this lock won't protect across processes — use SQLite's own locking or migrate to Postgres.
+
+Combined View: How session_db.py Fits with the Other Two Files
+File	Role	Key Entities
+session_db.py	Persistence layer	sessions, session_history, used_ports
+cdpv119.py	Orchestration layer	SESSION, SESSION_INFO, WEBSOCKET, EVENT, DISPLAY
+#!usrbinenv python3.txt	Analysis layer	SESSION (analysis run), ARTIFACT, AX_NODE, REGEX_MATCH, RDF_TRIPLE
+The sessions table in session_db.py is the authoritative source for SESSION in cdpv119.py. The SessionInfoTracker JSON file in cdpv119.py duplicates a subset of this data plus WebSocket IDs — in a unified FastAPI design, WebSocket IDs should move into a tabs table FK'd to sessions.id.
+
+
+"""
