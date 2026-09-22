@@ -1,88 +1,17 @@
-# Python
-__pycache__/
-*.pyc
+# Session data
+session_*/
+agent_*/
+rl_agent_*/
+session_har_*.har
 
-# SQLite
-*.db
-*.db-wal
-*.db-shm
-*.sqlite
+# Secrets
+fresh_tokens.json
+*.tokens
 
-# Agent runtime
-.agent.pid
-logs/
-
-# Logs
-*.log
-
-# Cache
-.cache/
-
-# Chrome profile
-chrome-persistent-profile/
-~/chrome-persistent-profile/
-
-# Temp
-tmp/
-temp/
-
-# VSCode
-.vscode/
-
-# Virtual env
-venv/
-.env
+# Generated job dumps
+recommended_jobs_*.json
+agoda_advanced_analysis.json
 
 # Python
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-
-# Virtual environments
-venv/
-.env
-
-# Databases
-*.db
-*.sqlite
-*.sqlite3
-dump.rdb
-
-# Logs
-logs/
-*.log
-
-# Cache
-.pytest_cache/
-.mypy_cache/
-
-# Generated JSON dumps
-page_analysis_*.json
-dom_tree_*.json
-ax_tree_*.json
-snapshot_*.json
-semantic_elements_*.json
-crawl_*.json
-deepseek_chat_*.json
-notebooklm_*.json
-har_*.json
-scraped_*.json
-
-# Generated text
-deepseek_chat_*.txt
-notebooklm_*.txt
-
-# Screenshots
-*.png
-
-# Temporary
-*.bak
-~
-
-# Celery
-celerybeat-schedule*
-
-# OS
-.DS_Store
-Thumbs.db
