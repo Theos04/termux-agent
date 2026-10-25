@@ -11,7 +11,8 @@ bin/
 # Runtime / local state
 agent.db
 *.db
-logs/
+logs/*
+!logs/.gitkeep
 agent_runs/*
 !agent_runs/.gitkeep
 *.log
