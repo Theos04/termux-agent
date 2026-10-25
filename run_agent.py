@@ -12,6 +12,7 @@ sys.path.insert(0, str(ROOT))
 
 import handlers.cdp_handlers  # noqa: F401 — register CDP handlers
 import handlers.mcp_agent  # noqa: F401 — register MCP agent_act
+import handlers.maps_scrape  # noqa: F401 — Maps skills cron handler
 
 from agent.agent import Agent
 from agent.config import AgentConfig

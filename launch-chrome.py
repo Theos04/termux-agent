@@ -48,6 +48,7 @@ def main():
     cmd = [
         chrome_path,
         f"--remote-debugging-port={DEBUG_PORT}",
+        "--remote-allow-origins=*",
         f"--user-data-dir={PROFILE_DIR}",
         "--no-first-run",
         "--no-default-browser-check",

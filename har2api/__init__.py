@@ -1,6 +1,8 @@
 """
 HAR2API - Convert HAR files to API clients
 """
+from typing import Optional, List, Dict, Any, Union
+from datetime import datetime
 
 __version__ = "0.1.0"
 __author__ = "Your Name"

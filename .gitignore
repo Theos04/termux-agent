@@ -1,17 +1,56 @@
-# Session data
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.env
+bin/
+
+# Runtime / local state
+agent.db
+*.db
+logs/
+agent_runs/*
+!agent_runs/.gitkeep
+*.log
+
+# Sessions & captures
 session_*/
 agent_*/
 rl_agent_*/
 session_har_*.har
+*.har
+media/
+memory/
+scraped_data/
+job_details/
+whatsapp/
+reels_single_profile/
 
 # Secrets
 fresh_tokens.json
 *.tokens
+*secret*.json
+*credentials*
+threads_auth.json
+naukri_token.txt
 
-# Generated job dumps
+# Generated dumps
 recommended_jobs_*.json
+maps_extract_*.json
+maps_phones_*.json
 agoda_advanced_analysis.json
 
-# Python
-__pycache__/
-*.pyc
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.bak
+*.orig
+*~
+
+# Optional heavy local models
+*.gguf
+models/
