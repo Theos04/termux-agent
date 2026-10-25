@@ -312,6 +312,17 @@ class Database:
                 (1 if enabled else 0, name),
             )
 
+    def delete_schedule(self, name: str) -> bool:
+        with self.transaction() as conn:
+            cur = conn.execute("DELETE FROM schedules WHERE name = ?", (name,))
+            return cur.rowcount > 0
+
+    def get_schedule_by_name(self, name: str) -> Optional[dict]:
+        row = self.conn.execute(
+            "SELECT * FROM schedules WHERE name = ?", (name,)
+        ).fetchone()
+        return self._row_to_dict(row) if row else None
+
     # --- Stats ---
 
     def increment_stat(self, key: str, amount: int = 1) -> None:

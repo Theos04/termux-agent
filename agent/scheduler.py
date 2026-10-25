@@ -111,3 +111,11 @@ class Scheduler:
         self._events.emit(
             "schedule.disabled", {"name": name}, source="scheduler"
         )
+
+    def delete_schedule(self, name: str) -> bool:
+        ok = self._db.delete_schedule(name)
+        if ok:
+            self._events.emit(
+                "schedule.deleted", {"name": name}, source="scheduler"
+            )
+        return ok

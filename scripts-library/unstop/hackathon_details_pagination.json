@@ -1,0 +1,815 @@
+{
+  "timestamp": 1785745191.7246253,
+  "total": 134,
+  "hackathons": [
+    {
+      "url": "https://unstop.com/hackathons",
+      "text": "Hackathons",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/simply-updify-innovatex-20-simply-updify-1729747",
+      "text": "Simply Updify InnovateX 2.0 Simply Updify 1 - 4 MembersOnline Software Development  Undergraduate  P",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/debuggers-assemble-loyola-icam-college-of-engineering-and-technology-licet-chennai-1729706",
+      "text": "Prompt with Jarvis Loyola ICAM College of Engineering and Technology (LICET), Chennai 1 - 2 MembersO",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/web-forge-loyola-icam-college-of-engineering-and-technology-licet-chennai-1729524",
+      "text": "Web-Forge Loyola ICAM College of Engineering and Technology (LICET), Chennai 1 - 2 Members Loyola-IC",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/spider-sprint-loyola-icam-college-of-engineering-and-technology-licet-chennai-1729511",
+      "text": "Spider-Sprint Loyola ICAM College of Engineering and Technology (LICET), Chennai 1 - 2 Members Loyol",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/ml-bubble-2026-machine-learning-awareness-skill-building-challenge-army-institute-of-technology-ait-pune-1729558",
+      "text": "ML Bubble 2026 \u2013 Machine Learning Awareness & Skill Building Challenge Army Institute of Technology ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/competitions/crp-ta-hackathon-people-matters-1723444",
+      "text": "Unstop TA Hackathon People Matters 1 - 3 MembersOnline Experienced Professionals  Closed  Posted Jul",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/codeissance-2026-thadomal-shahani-engineering-college-tsec-mumbai-1729289",
+      "text": "Codeissance 2026 Thadomal Shahani Engineering College (TSEC), Mumbai 2 - 4 Members Thadomal Shahani ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/trivarna-ctf-international-ctf-championship-astitwam-1724784",
+      "text": "Trivarna CTF \u2014 International CTF Championship Astitwam 1 - 4 MembersOnline Quizzes & Treasure Hunt  ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/echosphere-agora-conversational-ai-hackathon-knotic-1723695",
+      "text": "EchoSphere: Agora Conversational AI Hackathon KNOTiC 2 - 4 MembersOnline Applied AI  AI Engineering ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/python-basic-programming-competition-bvc-college-of-engineering-rajamahendravaram-andhra-pradesh-1729093",
+      "text": "Python Basic Programming Competition BVC College of Engineering, Rajamahendravaram, Andhra PradeshIn",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/nexbuildon-hack-2026-nexbuildon-community-1728774",
+      "text": "NexBuildOn Hack 2026 NexBuildOn Community 2 - 4 MembersOnline Software Development  Undergraduate  E",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/prasunethon-20-prasunet-1728532",
+      "text": "Prasunethon 2.0 Prasunet 1 - 3 MembersOnline Business Operations  Applied AI  Everyone can apply    ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/codesprint-2o-one-shot-challenge-oriental-college-of-technology-oct-bhopal-1728495",
+      "text": "CodeSprint 2.O : One Shot Challenge Oriental College of Technology (OCT), BhopalIndividual Participa",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/techno-vbiquity-2o-technical-coding-competition-technocrats-group-of-institutions-bhopal-madhya-pradesh-1728481",
+      "text": "Techno Vbiquity 2.O \u2013 Technical Coding Competition Technocrats Group of Institutions, Bhopal, Madhya",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/y-hack26-24-hour-national-hackathon-kpr-institute-of-engineering-and-technology-kpriet-coimbatore-1702198",
+      "text": "Y-Hack'26 \u2013 24-Hour National Hackathon KPR Institute of Engineering and Technology (KPRIET), Coimbat",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hackdevengers-10-hackdevengers-devengers-1720006",
+      "text": "HackDevengers 1.0 DevengersIndividual ParticipationOnline Web Development  Artificial Intelligence  ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/samarthya-2026-project-competition-smt-kashibai-navale-college-of-engineering-sknce-pune-1727380",
+      "text": "Samarthya 2026 Project Competition Smt Kashibai Navale College of Engineering (SKNCE), Pune 150 Fee ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/nexora-hackhere-1727929",
+      "text": "Nexora Hackhere 1000 Fee 1 - 4 Members SNS Innovation HUB, Coimbatore,  Coimbatore, Tamil Nadu, Indi",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/morrow-10-makers-need-more-mnm-1727667",
+      "text": "Morrow 1.0 Makers Need More (MnM) 1 - 4 MembersOnline Software Development  Everyone can apply  Post",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/o/9KkAp04/?ref=HPBWX1Ug",
+      "text": "Adobe University Hackathon 2026  Register Now!",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/promptathon-yeshwantrao-chavan-college-of-engineering-ycce-nagpur-1725407",
+      "text": "Promptathon Yeshwantrao Chavan College of Engineering (YCCE), Nagpur 100 FeeIndividual Participation",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/caspian-ai-agent-hackathon-caspian-1726439",
+      "text": "Caspian AI Agent Hackathon Caspian 1 - 2 MembersOnline Software Development  AI Engineering  Undergr",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/kurukshetra-20-hackfest-mit-arts-commerce-science-college-alandi-pune-maharashtra-1726911",
+      "text": "Kurukshetra 2.0 Hackfest MIT Arts, Commerce & Science College, Alandi, Pune, Maharashtra 1 - 4 Membe",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/synapse-2026-techverse-solutions-1726927",
+      "text": "Synapse 2026 TechVerse SolutionsIndividual Participation Unstop Office,  South Delhi, Delhi, India  ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/edge-ai-hackathon-2026-parala-maharaja-engineering-college-berhampur-1720578",
+      "text": "Edge AI Hackathon 2026 Parala Maharaja Engineering College, Berhampur 3 - 5 Members Parala Maharaja ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/fusionix-2026-university-of-engineering-and-management-kolkata-1727790",
+      "text": "FusioniX'26 University of Engineering and Management Kolkata 3 - 4 Members University of Engineering",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/qodex-aravali-international-school-1727842",
+      "text": "QodeX Aravali international school 1 - 4 MembersOnline Software Development  Quizzes & Treasure Hunt",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/puzzle-masters-hackathon-2026-gamnexis-1726256",
+      "text": "Puzzle Masters Hackathon 2026 Gamnexis 1 - 5 MembersOnline Quizzes & Treasure Hunt  Online Gaming & ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/trivium-20-detox-1727396",
+      "text": "Trivium 2.0 DETOX 1 - 2 MembersOnline Applied AI  Quizzes & Treasure Hunt  Everyone can apply  Poste",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/national-level-mit-india-hackathon-2026-mit-academy-of-engineering-mitaoe-pune-maharashtra-1727144",
+      "text": "National Level MIT India Hackathon 2026 MIT Academy of Engineering (MITAOE), Pune, Maharashtra 4 Mem",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/game-of-codes-30-pes-modern-college-of-engineering-pesmce-pune-1727351",
+      "text": "Game of Codes 3.0 PES Modern College of Engineering (PESMCE), PuneIndividual ParticipationOnline Qui",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/flight-hack-20-digimation-flight-1727112",
+      "text": "Flight Hack 2.0 Digimation Flight 1 - 4 MembersOnline Program Management  Project Management  Everyo",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/innoventure-2026-international-innovation-technology-challenge-amity-university-au-noida-1726797",
+      "text": "InnoVenture 2026 \u2013 International Innovation & Technology Challenge Amity University (AU), Noida 2 - ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/code-forge-2026-g-h-raisoni-college-of-engineering-and-management-ghrcem-nagpur-1726255",
+      "text": "Code Forge 2026 G. H. Raisoni College of Engineering and Management (GHRCEM), Nagpur 400 Fee 2 - 4 M",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/codefury-90-university-visvesvaraya-college-of-engineering-uvce-bangalore-1726707",
+      "text": "CodeFury 9.0 University Visvesvaraya College Of Engineering (UVCE), Bangalore 120 FeeIndividual Part",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu-ram-university-of-science-and-technology-dcrust-murthal-1726534",
+      "text": "Paper Buddy EduVerse Hackathon 2026 Deenbandhu Chhotu Ram University Of Science And Technology (DCRU",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/techfusion-hackathon-malla-reddy-mr-deemed-university-1726419",
+      "text": "Techfusion Hackathon Malla Reddy (MR) Deemed University 449 Fee 2 - 4 Members Malla Reddy (MR) Deeme",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/open-innovation-hackathon-hakitxmrdu-malla-reddy-deemed-to-be-university-1725253",
+      "text": "Open Innovation  Hackathon Malla Reddy Deemed to Be University 449 Fee 2 - 4 Members Malla Reddy (MR",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/code-chakra-competitive-programming-championship-malla-reddy-mr-deemed-university-1726414",
+      "text": "Code Chakra Competitive Programming Championship Malla Reddy (MR) Deemed University 449 Fee 2 - 4 Me",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/catalyst-10-integral-university-iu-lucknow-1726311",
+      "text": "Catalyst 1.0 Integral University (IU), Lucknow 40 FeeIndividual Participation Integral University,  ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/stampers-national-hackathon-2026-stampers-1726290",
+      "text": "STAMPERS National Hackathon 2026 STAMPERS 1 - 4 MembersOnline Quizzes & Treasure Hunt  Undergraduate",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/specathon-2026-st-peters-engineering-college-1723868",
+      "text": "Specathon 2026 St Peters Engineering College 2 - 4 Members St.Peter's Engineering College, Hyderabad",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/omnikon-national-hackathon-2026-omnikon-1715716",
+      "text": "Omnikon National Hackathon 2026 Omnikon 1 - 2 MembersOnline Everyone can apply  Prizes worth  10,000",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/levelup-game-hackathon-gamnexis-1722925",
+      "text": "LevelUp Game Hackathon Gamnexis 1 - 3 MembersOnline Games & Sports  Everyone can apply  Posted Jul 2",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hackquest-2026-oriental-college-of-technology-oct-bhopal-1724486",
+      "text": "HackQuest 2026 Oriental College of Technology (OCT), BhopalIndividual ParticipationOnline Software D",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hacknexus26-droidecks-1695049",
+      "text": "HackNexus'26 Droidecks 2 - 4 MembersOnline Software Development  Undergraduate  Postgraduate  Engine",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/algoverse26-bharati-vidyapeeth-college-of-engineering-pune-1724255",
+      "text": "AlgoVerse'26 Bharati Vidyapeeth College of Engineering Pune 1 - 4 Members Bharati Vidyapeeth College",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/international-hackathon-competition-2026-sofzenix-it-solution-llp-1724168",
+      "text": "International Hackathon Competition 2026 Sofzenix IT Solution LLP 1 - 4 MembersOnline Software Devel",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/craftverse-20-pimpri-chinchwad-college-of-engineering-research-pccoer-ravet-pimpri-chinchwad-pune-1719658",
+      "text": "CraftVerse 2.0 Pimpri Chinchwad College Of Engineering & Research (PCCOE&R), Ravet, Pimpri-Chinchwad",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/2nd-nextgen-hackathon-2026-soft-computing-research-society-new-delhi-delhi-1722019",
+      "text": "2nd NextGen Hackathon 2026 Soft Computing Research Society, New Delhi, Delhi 2 - 4 MembersOnline Sof",
+      "id": "2",
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/pitchx-2026-indias-biggest-startup-pitch-challenge-pitch-build-scale-devtech-it-solution-1715544",
+      "text": "PitchX 2026 \u2013 India's Biggest Startup Pitch Challenge | Pitch. Build. Scale. DevTech It Solution 2 -",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hackfinity-30-ramco-institute-of-technology-rit-tamil-nadu-1722654",
+      "text": "Hackfinity 3.0 Ramco Institute of Technology (RIT), Tamil Nadu 3 - 4 MembersOnline Software Developm",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/codeyourcult-build-cult-1723045",
+      "text": "CodeYourCult Build Cult 1 - 4 Members TBA,  New Delhi, Delhi, India  Software Development  Everyone ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hackers-gambit-2026-jaihind-college-of-engineering-kuran-1723293",
+      "text": "Hacker's Gambit 2026 Jaihind college of Engineering Kuran 1 - 3 MembersOnline Quizzes & Treasure Hun",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/simucode-robotics-challenge-week-2026-simucode-1720382",
+      "text": "SimuCode Robotics Challenge Week 2026 SimuCodeIndividual ParticipationOnline Robotics Engineer  Quiz",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/pace-where-logic-meets-expression-technocrats-institute-of-technology-excellence-bhopal-1719528",
+      "text": "P.A.C.E - Where Logic Meets Expression. Technocrats Institute of Technology (Excellence), BhopalIndi",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/build-with-bharat-30-chitkara-university-cu-himachal-pradesh-1722484",
+      "text": "Build With Bharat 3.0 Chitkara University (CU), Himachal Pradesh 2 - 5 Members Chitkara University H",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/vibewright-oblivion26-dcode-nsut-1722532",
+      "text": "Vibewright D'Code NSUT 1 - 4 Members Netaji Subhas University of Technology, Azad Hind Fauj Marg, Dw",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/ascendant-agents-oblivion26-dcode-nsut-1722256",
+      "text": "Ascendant Agents D'Code NSUT 2 - 4 Members Netaji Subhas University of Technology, Azad Hind Fauj Ma",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hack-4-crown-oblivion26-dcode-nsut-1721294",
+      "text": "Hack-4-Crown D'Code NSUT 3 - 4 Members Netaji Subhas University of Technology, Azad Hind Fauj Marg, ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/code-royale-oblivion26-dcode-nsut-1722239",
+      "text": "Code Royale D'Code NSUTIndividual Participation Netaji Subhas University of Technology, Azad Hind Fa",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/the-innovators-court-oblivion26-netaji-subhas-university-of-technology-nsut-delhi-1722249",
+      "text": "The Innovator's Court Netaji Subhas University of Technology (NSUT), Delhi 2 - 4 Members Netaji Subh",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/ux-imperium-oblivion26-netaji-subhas-university-of-technology-nsut-delhi-1722371",
+      "text": "UX Imperium Netaji Subhas University of Technology (NSUT), Delhi 2 - 4 Members Netaji Subhas Univers",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/algoolympia-10-chandigarh-university-cu-ajitgarh-punjab-1721974",
+      "text": "AlgOlympia Chandigarh University (CU), Ajitgarh, Punjab 2 - 4 Members Chandigarh University,  Mohali",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/kone-elevate26-srm-easwari-engineering-college-srmeec-ramapuram-1719196",
+      "text": "KONE Elevate'26 SRM Easwari Engineering College (SRMEEC), Ramapuram 2 - 4 Members Easwari Engineerin",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/ieee-hacksynapse-2026-madhav-institute-of-technology-and-science-1717985",
+      "text": "IEEE HackSynapse 2026 Madhav Institute of Technology and Science 3 - 4 Members Madhav Institute of T",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/fugacity-code-the-problem-fugacity-2026-iit-kharagpur-1719692",
+      "text": "Fugacity: Code the Problem Indian Institute of Technology (IIT), KharagpurIndividual Participation D",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/h-p-projects-hackathon-global-challenges-2026-h-p-projects-1719280",
+      "text": "H & P PROJECTS Hackathon Global Challenges 2026 H & P ProjectsIndividual ParticipationOnline Quizzes",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/code-oclock-2k26-coimbatore-institute-of-technology-cit-coimbatore-1719235",
+      "text": "Code O'Clock 2K26 Coimbatore Institute of Technology (CIT), Coimbatore 1 - 4 Members CIT,  Coimbator",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/build-with-bharat-40-national-institute-of-technology-nit-delhi-1719203",
+      "text": "Build With Bharat 2.0 National Institute of Technology (NIT), Delhi 2 - 5 Members National Institute",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/innovik-60-international-hackathon-2026-shekunj-1718207",
+      "text": "INNOVIK 6.0 : International Hackathon 2026 SheKunj 2 - 4 Members Vikrant Institute of Technology & M",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/ml-hackathon-fugacity-2026-iit-kharagpur-1716679",
+      "text": "ML Hackathon Indian Institute of Technology (IIT), Kharagpur 1 - 4 MembersOnline Machine Learning En",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/ideathon-spark-before-the-code-vasantdada-patil-pratishthans-college-of-engineering-and-visual-arts-mumbai-ma-1718428",
+      "text": "IDEATHON: Spark Before the Code Vasantdada Patil Pratishthan's College of Engineering and Visual Art",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/pixel-30-vel-tech-rangarajan-dr-sagunthala-rd-institute-of-science-and-technology-avadi-1718359",
+      "text": "PIXEL 3.0 Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, AvadiIndividua",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/crp-adobe-university-hackathon-2026-adobe-1715333",
+      "text": "Adobe University Hackathon 2026 Adobe 2 - 3 MembersOnline Cloud Engineering  Artificial Intelligence",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/nerds-10-indias-first-ai-hackathon-for-schools-kokos-ai-pvt-ltd-1718104",
+      "text": "NERDS 1.0 - India's First AI Hackathon For Schools Kokos AI Pvt Ltd. 2 - 4 Members Grand Finale At T",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/segue-30-global-design-thinking-challenge-online-offline-schooloffutureskillscomsegue-3-0-noida-institute-of--1712134",
+      "text": "Segue 3.0 : Global Design Thinking Challenge (Online + Offline) Noida Institute of Engineering And T",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/orchestrix-newgen-x-ai-club-iitm-iit-madras-1717439",
+      "text": "OIEquestra : Newgen x AI Club IITM Indian Institute of Technology (IIT), Madras 1 - 4 MembersOnline ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/bytebattle-hackathon-2026-h-p-projects-1717192",
+      "text": "ByteBattle Hackathon 2026 H & P ProjectsIndividual ParticipationOnline Software Development  Quizzes",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/ignitex-hackfest-2026-h-p-projects-1717162",
+      "text": "IgniteX HackFest 2026 H & P ProjectsIndividual ParticipationOnline Quizzes & Treasure Hunt  Everyone",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hackmatrix-2026-24-hour-national-hackathon-ieee-computer-society-mits-gwalior-1701757",
+      "text": "HackMatriX 2026 -  National Hackathon IEEE Computer Society MITS, Gwalior 1 - 4 MembersOnline Softwa",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/futuretech-hackfest-2026-h-p-projects-1716746",
+      "text": "FutureTech HackFest 2026 H & P ProjectsIndividual ParticipationOnline Applied AI  Software Developme",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hacksynergy-2026-inderprastha-engineering-college-ipec-ghaziabad-1716413",
+      "text": "HackSynergy 2026 Inderprastha Engineering College (IPEC), Ghaziabad 2 - 5 Members INDERPRASTHA ENGIN",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/all-india-hackathon-axcentra-1703933",
+      "text": "All India Hackathon Axcentra 1 - 3 MembersOnline Software Development  Quizzes & Treasure Hunt  Ever",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/code-build-10-cobuild-1703709",
+      "text": "Code Build 1.0 Cobuild 2 - 4 Members Indira Gandhi Delhi Technical University for Women,  Delhi, Del",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hacknova-2026-kvg-college-of-engineering-kvgce-sullia-karnataka-1715653",
+      "text": "test KVG College of Engineering (KVGCE), Sullia, Karnataka 2 - 4 Members IIT Tirupati, Andhra Pradhe",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/realworldiq-challenge-2026-bansal-institute-of-research-technology-science-1715032",
+      "text": "RealWorldIQ Challenge 2026 Bansal Institute of Research, Technology & ScienceIndividual Participatio",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hackside-down-falcon-sphere-1712468",
+      "text": "Hackside Down - Hackathon For School Students Falcon Sphere 1 - 5 Members Saraswati Global School, T",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/indradhanu-pccoe-international-grand-challenge-2026-pimpri-chinchwad-college-of-engineering-pccoe-pune-1710779",
+      "text": "Indradhanu: PCCOE International Grand Challenge 2026 Pimpri Chinchwad College of Engineering (PCCOE)",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/elucode-edulinkup-1712263",
+      "text": "ELUCode EduLinkUpIndividual ParticipationOnline Quizzes & Treasure Hunt  Posted Jul 7, 2026  12  day",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/brainwave-2026-guru-gobind-singh-indraprastha-university-ggsipu-delhi-1711474",
+      "text": "Brainwave Guru Gobind Singh Indraprastha University (GGSIPU), Delhi 2 - 4 Members University School ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/innovate-4-impact-ieee-wie-affinity-group-bharati-vidyapeeth-deemed-to-be-university-college-of-engineering-p-1711745",
+      "text": "Innovate 4 Impact: AI SDG Global Hackathon 2026 IEEE WIE Affinity Group, Bharati Vidyapeeth (Deemed ",
+      "id": null,
+      "status": "open"
+    },
+    {
+      "url": "https://unstop.com/hackathons/buildathon-2026-techverse-solutions-1723834",
+      "text": "Buildathon 2026 TechVerse SolutionsIndividual ParticipationOnline Product Management  Undergraduate ",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/demux-30-demux-30-bv-raju-institute-of-technology-narsapur-bvrit-n-1715858",
+      "text": "DEMUX 3.0 BV Raju Institute of Technology, Narsapur (BVRIT-N) 999 Fee 2 - 3 Members BV RAJU INSTITUT",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/bidaya-under-the-surface-prizes100k-usd-in-virtual-cards-bidaya-1722539",
+      "text": "Bidaya - Under The Surface (Prizes:100K USD In Virtual Cards) BidayaIndividual ParticipationOnline F",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/webcraft24-gl-bajaj-institute-of-management-greater-noida-1727968",
+      "text": "WebCraft24 GL Bajaj Institute of Management, Greater Noida 2 - 4 Members GL Bajaj Institute of Manag",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/coderush-20-yeshwantrao-chavan-college-of-engineering-ycce-nagpur-1723466",
+      "text": "CodeRush 2.0 Yeshwantrao Chavan College of Engineering (YCCE), Nagpur 5 Members CT Department, YCCE ",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/pixxelhack-20-a-web-development-hackathon-thakur-college-of-engineering-and-technology-tcet-mumbai-1719044",
+      "text": "PixxelHack 2.0 \u2013 A National Level Web Development Hackathon Thakur College of Engineering and Techno",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/project-viksit-bharat-2026-national-level-innovation-hackathon-frontend-arena-1720487",
+      "text": "Project Viksit Bharat 2026 | National-Level Innovation Hackathon Frontend Arena 1 - 2 MembersOnline ",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/technova-igniting-brilliance-season-3-enterprise-system-solutions-private-limited-1709421",
+      "text": "TechNova: Igniting Brilliance (Season 3) Enterprise System Solutions Private Limited 1 - 3 MembersOn",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/smackathon-2k26-yeshwantrao-chavan-college-of-engineering-ycce-nagpur-1718448",
+      "text": "Smackathon 2k26 Yeshwantrao Chavan College of Engineering (YCCE), Nagpur 3 - 5 MembersOnline Quizzes",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/evil-corp-ctf-6-hour-intense-hacking-nexploit-1719174",
+      "text": "Evil Corp CTF 6 Hour Intense Hacking Nexploit 1 - 4 MembersOnline Quizzes & Treasure Hunt  Undergrad",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/stem-jam-iit-guwahati-1711334",
+      "text": "S.T.E.M Jam Indian Institute of Technology (IIT), Guwahati 1 - 19 MembersOnline Quizzes & Treasure H",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/devfusion-4o-the-developers-hackathon-iit-bombay-1714389",
+      "text": "DevFusion 4.O- The Developers Hackathon Indian Institute of Technology (IIT), Bombay 1 - 3 MembersOn",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hackverse-2026-national-level-innovation-hackathon-bharati-vidyapeeth-deemed-university-1712204",
+      "text": "HackVerse 2026 | National Level Innovation Hackathon Bharati Vidyapeeth Deemed University 150 Fee 1 ",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/national-level-technical-hackathon-dhanalakshmi-srinivasan-engineering-college-perambalur-1711964",
+      "text": "National Level Technical Hackathon Dhanalakshmi Srinivasan Engineering College, Perambalur 2 - 4 Mem",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/varithon-2026-marathwada-mitra-mandals-college-of-engineering-mmcoe-pune-1711499",
+      "text": "Varithon 2026 Marathwada Mitra Mandal's College of Engineering (MMCOE), Pune 2 - 5 Members Marathwad",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/tech-a-thon-50-bit-mesra-ranchi-1699177",
+      "text": "Tech-A-Thon 5.0 - By ECE Society Birla Institute of Technology (BIT), Mesra, Ranchi 1 - 3 MembersOnl",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/codability26-mmmut-gorakhpur-1710316",
+      "text": "Codability'26 Madan Mohan Malaviya University of Technology (MMMUT), GorakhpurIndividual Participati",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hacklabify-v10-hacklabify-1699949",
+      "text": "Hacklabify V1.0 Hacklabify 1 - 5 Members TBD,  Delhi, Delhi, India  Data Science  Others  Undergradu",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/aerothon-2026-hal-x-iiti-iit-indore-1709519",
+      "text": "Aerothon 2026 - HAL x IITI Indian Institute of Technology (IIT), Indore 2 - 4 MembersOnline Machine ",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/bizzathon-hackathon-e-summit-2026-iit-ism-dhanbad-indian-institute-of-technology-indian-school-of-mines-iit-i-1704716",
+      "text": "VentureX Indian Institute of Technology, Indian School of Mines (IIT ISM), Dhanbad 2 - 5 Members IIT",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/crp-women-who-master-aspire-for-her-x-logitech-1702474",
+      "text": "Women Who Master Aspire For Her x LogitechIndividual Participation Machine Learning Engineering  Art",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/ikigai-2026-acropolis-institute-of-technology-and-research-indore-1703362",
+      "text": "IKIGAI 2026 Acropolis Institute of Technology and Research, Indore 500 Fee 2 - 4 Members Acropolis I",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/code-innovate-impact-iit-bombay-1703222",
+      "text": "Code. Innovate. Impact Indian Institute of Technology (IIT), Bombay 1 - 2 MembersOnline Quizzes & Tr",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hacknite-12-hour-hackathon-hackers-cult-1701779",
+      "text": "Hacknite: 12 Hour Hackathon Hackers Cult 1 - 4 Members Master's Union,  Gurgaon, Haryana, India  Eve",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/drophack-siec-community-1701822",
+      "text": "DropHack SIEC Community 2 - 4 Members TBA(To Be Announced),  Gurgaon, Haryana, India  Software Devel",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/srcas-hackathon-30-whats-the-next-big-idea-sri-ramakrishna-college-of-arts-science-srcas-1700643",
+      "text": "SRCAS Hackathon 3.0 - What's the next big idea? Sri Ramakrishna College of Arts & Science (SRCAS) 2 ",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/open-source-competition-elite-coders-1699721",
+      "text": "Open Source Competition Elite CodersIndividual ParticipationOnline Software Development  Undergradua",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hackaithon-20-sphere-hive-kvg-college-of-engineering-sullia-1699309",
+      "text": "Hack[AI]thon 2.0 Sphere Hive, KVG college of engineering sullia 2 - 4 Members VRIF, VTU Belagavi, Ka",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/netelixir-aignition-30-netelixir-1694845",
+      "text": "NetElixir AIgnition 3.0 NetElixir 1 - 3 MembersOnline Machine Learning Engineering  Applied AI  IT O",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/intellify-40-marwadi-university-mu-gujarat-1684922",
+      "text": "Intellify 4.0 Marwadi University (MU), Gujarat 250 Fee 2 - 4 Members Marwadi University,  Rajkot, Gu",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/e-rakshak-svnit-surat-1686561",
+      "text": "E-Rakshak Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat 3 - 4 Members SVNIT Sur",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/gdta-hackathon-2026-sns-institutions-coimbatore-tamil-nadu-1682187",
+      "text": "Global Design Thinking Alliance Hackathon 2026 SNS Institutions, Coimbatore, Tamil Nadu 1 - 4 Member",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/far-away-zuup-1677472",
+      "text": "Far Away Zuup 1 - 5 Members Final Round in a Japanese University,  Tokyo, Tokyo, Japan  Project Mana",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hackfinix-2026-cambridge-institute-of-technology-north-campus-bengaluru-1671676",
+      "text": "HackfiniX 2026 Cambridge Institute of Technology North Campus, Bengaluru 3 - 4 Members Cambridge Ins",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/kora-kinetic-open-robotics-and-ai-hackathon-2026-national-institute-of-technology-nit-delhi-1671012",
+      "text": "Kora : Kinetic Open Robotics And AI Hackathon 2026 National Institute of Technology (NIT), Delhi 200",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/natural-language-processing-tool-for-material-information-extraction-from-construction-specifications-10th-in-1635199",
+      "text": "Natural Language Processing Tool for Material Information Extraction from Construction Specification",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/hacktherank-sindhudurg-shikshan-prasarak-mandals-college-of-engineering-1648972",
+      "text": "Team Gemini Sindhudurg Shikshan Prasarak Mandals College of EngineeringIndividual ParticipationOnlin",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/codenovate-25-keshav-memorial-institute-of-technology-kmit-hyderabad-1573328",
+      "text": "Codenovate '25 Keshav Memorial Institute of Technology (KMIT), Hyderabad 500 Fee 3 - 4 Members Kesha",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/inceptia-hackathon-pimpri-chinchwad-college-of-engineering-research-pccoe-r-pimpri-chinchwad-pune-1479480",
+      "text": "Inceptia Hackathon Pimpri Chinchwad College Of Engineering & Research (PCCOE &R), Pimpri-Chinchwad, ",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/glb-hackathon-40-gl-bajaj-institute-of-management-1452489",
+      "text": "WebCraft24 GL Bajaj Institute of Management and Research 2 - 4 Members GL Bajaj Institute of Managem",
+      "id": null,
+      "status": "closed"
+    },
+    {
+      "url": "https://unstop.com/hackathons/crp-intellect-global-hackathon-intellect-design-arena-247390",
+      "text": "Intellect Global Hackathon Intellect Design ArenaIndividual ParticipationOnline Technology & Coding ",
+      "id": null,
+      "status": "closed"
+    }
+  ],
+  "by_status": {
+    "open": 105,
+    "closed": 50,
+    "upcoming": 105
+  }
+}

@@ -1,0 +1,1 @@
+alaert.domain("XSS")

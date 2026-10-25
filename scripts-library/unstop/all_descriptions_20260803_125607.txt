@@ -1,0 +1,152 @@
+
+======================================================================
+📌 1. 2540+ Hackathons in India 2026 – Online & Student Challenges
+======================================================================
+URL: https://unstop.com/hackathons
+Organizer: Unknown
+Team Size: Unknown
+Status: Unknown
+Dates: N/A
+Prizes: N/A
+Register Button: True
+
+DESCRIPTION:
+----------------------------------------------------------------------
+None
+----------------------------------------------------------------------
+
+======================================================================
+📌 3. Prompt with Jarvis
+======================================================================
+URL: https://unstop.com/hackathons/debuggers-assemble-loyola-icam-college-of-engineering-and-technology-licet-chennai-1729706
+Organizer: Harsh Mehta
+Team Size: 1 - 2 Members
+Status: Unknown
+Dates: N/A
+Prizes: Reviews, FAQs & Discussions, Online, Prompt with Jarvis, Loyola ICAM College of Engineering and Technology (LICET), Chennai
+Register Button: True
+
+DESCRIPTION:
+----------------------------------------------------------------------
+Where Creativity Meets Intelligence.
+
+What happens when your imagination meets Generative AI?
+
+AI Prompting is a two-round challenge that tests your ability to think creatively, craft effective prompts, and transform ideas into impactful AI-powered solutions.
+
+Event Highlights:
+
+Round 1 – AI Image Generation
+
+Create a powerful prompt from a given theme and generate a high-quality AI image that showcases your creativity and prompt engineering skills.
+
+Round 2 – AI Startup Challenge:
+
+Build an AI-powered startup by creating its name, logo, tagline, advertisement, and business pitch based on a surprise domain.
+
+The Final Twist:
+
+Just before your presentation, your startup will face an unexpected real-world challenge. Adapt your idea within 2 minutes and demonstrate how your solution overcomes ...
+----------------------------------------------------------------------
+
+======================================================================
+📌 4. Web-Forge
+======================================================================
+URL: https://unstop.com/hackathons/web-forge-loyola-icam-college-of-engineering-and-technology-licet-chennai-1729524
+Organizer: Harsh Mehta
+Team Size: 1 - 2 Members
+Status: Unknown
+Dates: N/A
+Prizes: Reviews, FAQs & Discussions, Offline, Web-Forge, Loyola ICAM College of Engineering and Technology (LICET), Chennai, Location, Loyola-ICAM College of Engineering and Technology, Chennai, Tamil Nadu, India
+Register Button: True
+
+DESCRIPTION:
+----------------------------------------------------------------------
+Prompt, build and pitch a website with Google AI Studio — race an image-recreation challenge, then design under a live client curveball. Creativity, functionality and pitch all count.
+
+Building Rules
+
+Build a Static Website Prototype Using Google Ai Studio Only
+Must Include a Home Page, Navigation Bar, Hero Section and Contact Section Respective to Your Challenge Card
+Refine Your Prompts Throughout the Round — Aim for A Working Mvp, Not a Production Build
+Once the Hidden Challenges Are Revealed, Incorporate Them Into Your Existing Site Within the Remaining Time
+
+Winning Criteria
+
+Prompt Engineering — 25
+Creativity & Innovation — 20
+Website Functionality & Ui — 20
+Problem Solving & Hidden Challenge Integration — 15
+Presentation & Pitch — 20
+
+General Rules
+
+Teams of 2 Participants
+Every Parti...
+----------------------------------------------------------------------
+
+======================================================================
+📌 5. Spider-Sprint
+======================================================================
+URL: https://unstop.com/hackathons/spider-sprint-loyola-icam-college-of-engineering-and-technology-licet-chennai-1729511
+Organizer: Harsh Mehta
+Team Size: 1 - 2 Members
+Status: Unknown
+Dates: N/A
+Prizes: Reviews, FAQs & Discussions, Offline, Spider-Sprint, Loyola ICAM College of Engineering and Technology (LICET), Chennai, Location, Loyola-ICAM College of Engineering and Technology, Chennai, Tamil Nadu, India
+Register Button: True
+
+DESCRIPTION:
+----------------------------------------------------------------------
+Race the clock across three rounds — from MCQ screening to a live on-stage coding finale. Swing through algorithms at lightning pace.
+
+Building Rules
+
+Carry your college ID card at all times inside the venue
+Entry is restricted to registered participants, volunteers, judges and faculty coordinators
+No food or beverages inside the venue — water bottles are permitted
+Sit at your allotted system; swapping seats without permission isn't allowed
+Maintain silence during Rounds 1 and 2
+
+Winning Criteria
+
+Correctness of Output Is the Primary Criterion Every Round
+Submission Time Is the Tiebreaker when Scores Are Equal
+Rounds 2 and 3 Use Points-Per-Problem Scoring with A Time Penalty for Incorrect Submissions
+Code Efficiency Counts as Bonus Points in The Final Round
+Highest Cumulative Score After Ro...
+----------------------------------------------------------------------
+
+======================================================================
+📌 6. ML Bubble 2026 – Machine Learning Awareness & Skill Building Challenge
+======================================================================
+URL: https://unstop.com/hackathons/ml-bubble-2026-machine-learning-awareness-skill-building-challenge-army-institute-of-technology-ait-pune-1729558
+Organizer: Harsh Mehta
+Team Size: 1 - 4 Members
+Status: Unknown
+Dates: N/A
+Prizes: Reviews, FAQs & Discussions, Online, ML Bubble 2026 – Machine Learning Awareness & Skill Building Challenge, Army Institute of Technology (AIT), Pune
+Register Button: True
+
+DESCRIPTION:
+----------------------------------------------------------------------
+Machine Learning is becoming an essential skill for engineers and is now a key component of major hackathons and industry projects. ML Bubble provides students with an opportunity to explore real-world problems and develop ML-based solutions according to their academic level.
+
+The event is divided into three tracks:
+
+FE – Explore & Identify
+Identify a real-world problem.
+Explain why Machine Learning can help solve it.
+Submit a short presentation or write-up.
+SE – Design & Solve
+Design an ML-based solution.
+Train a working model.
+Present results and evaluation metrics.
+Submit PPT and model.
+TE-BE – Design & Solve (Advanced)
+Build and train a working ML model.
+Present results and performance metrics.
+Include comparative analysis and deployment considerations.
+Submit PPT and model.
+Sugges...
+----------------------------------------------------------------------

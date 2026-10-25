@@ -1,0 +1,212 @@
+#!/usr/bin/env python3
+"""
+Auto-generated API client from HAR analysis
+Generated: {{ generated_at }}
+Total Endpoints: {{ total_endpoints }}
+"""
+
+import requests
+import json
+from typing import Optional, Dict, Any, List
+from datetime import datetime
+from urllib.parse import urlencode
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import logging
+
+logger = logging.getLogger(__name__)
+
+class {{ class_name }}:
+    """Auto-generated API client from HAR analysis"""
+    
+    BASE_URL = {{ base_url | pyliteral }}
+    
+    def __init__(self, 
+                 token: Optional[str] = None,
+                 api_key: Optional[str] = None,
+                 session: Optional[requests.Session] = None,
+                 **kwargs):
+        """
+        Initialize the API client
+        
+        Args:
+            token: Bearer token for authentication
+            api_key: API key for authentication
+            session: Custom requests session
+            **kwargs: Additional headers as keyword arguments
+        """
+        self.token = token
+        self.api_key = api_key
+        self.session = session or requests.Session()
+        
+        # Default headers
+        self.default_headers = {
+            "User-Agent": "APIClient/1.0",
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+        }
+        
+        # Add common headers from HAR analysis
+        {% for name, value in common_headers.items() %}
+        self.default_headers[{{ name | pyliteral }}] = {{ value | pyliteral }}
+        {% endfor %}
+        
+        # Add authentication
+        if token:
+            self.default_headers["Authorization"] = f"Bearer {token}"
+        elif api_key:
+            self.default_headers["X-API-Key"] = api_key
+            
+        # Custom headers
+        for key, value in kwargs.items():
+            if key.startswith('header_'):
+                header_name = key.replace('header_', '')
+                self.default_headers[header_name] = value
+                
+        self.session.headers.update(self.default_headers)
+        
+        # Rate limiting
+        self.rate_limit = 50  # requests per second
+        self.last_request_time = 0
+        
+    def _request(self, 
+                 method: str, 
+                 path: str,
+                 params: Optional[Dict] = None,
+                 json_data: Optional[Dict] = None,
+                 **kwargs) -> Dict[str, Any]:
+        """Make API request with error handling"""
+        url = f"{self.BASE_URL}{path}"
+        
+        try:
+            response = self.session.request(
+                method=method,
+                url=url,
+                params=params,
+                json=json_data,
+                **kwargs
+            )
+            response.raise_for_status()
+            return response.json()
+        except requests.exceptions.HTTPError as e:
+            logger.error(f"HTTP error: {e}")
+            return {"error": str(e), "status_code": response.status_code}
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Request error: {e}")
+            return {"error": str(e)}
+        except json.JSONDecodeError as e:
+            logger.error(f"JSON decode error: {e}")
+            return {"error": "Invalid JSON response", "text": response.text[:200]}
+            
+    def _apply_rate_limit(self):
+        """Apply rate limiting"""
+        import time
+        current_time = time.time()
+        time_since_last = current_time - self.last_request_time
+        if time_since_last < 1.0 / self.rate_limit:
+            time.sleep(1.0 / self.rate_limit - time_since_last)
+        self.last_request_time = time.time()
+
+    {% for method in methods %}
+    def {{ method.name }}(self, 
+                          {% for param in method.query_params %}
+                          {{ param }}: Optional[str] = None,
+                          {% endfor %}
+                          **kwargs) -> Dict[str, Any]:
+        """
+        {{ method.method }} {{ method.path }}
+        
+        {% if method.query_params %}
+        Args:
+            {% for param in method.query_params %}
+            {{ param }}: Query parameter
+            {% endfor %}
+        {% endif %}
+        """
+        params = {}
+        {% for param in method.query_params %}
+        if {{ param }} is not None:
+            params["{{ param }}"] = {{ param }}
+        {% endfor %}
+        
+        {% if method.has_body %}
+        json_data = kwargs.get("json_data", {})
+        # Add additional body parameters
+        for key, value in kwargs.items():
+            if key not in ["json_data"]:
+                json_data[key] = value
+        {% else %}
+        json_data = None
+        {% endif %}
+        
+        return self._request(
+            method={{ method.method | pyliteral }},
+            path={{ method.path | pyliteral }},
+            params=params,
+            json_data=json_data,
+            **kwargs.get("request_kwargs", {})
+        )
+    {% endfor %}
+    
+    # Utility Methods
+    
+    def get_all_data(self, max_workers: int = 5) -> Dict[str, Any]:
+        """Fetch data from all endpoints in parallel"""
+        results = {}
+        endpoints = [m for m in dir(self) if callable(getattr(self, m)) and m.startswith(('get_', 'post_', 'put_', 'delete_'))]
+        
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = {
+                endpoint: executor.submit(getattr(self, endpoint))
+                for endpoint in endpoints
+            }
+            
+            for endpoint, future in futures.items():
+                try:
+                    results[endpoint] = future.result(timeout=30)
+                except Exception as e:
+                    results[endpoint] = {"error": str(e)}
+                    
+        return results
+    
+    def export_openapi(self) -> Dict[str, Any]:
+        """Generate OpenAPI specification"""
+        return {
+            "openapi": "3.0.0",
+            "info": {
+                "title": "{{ class_name }} API",
+                "version": "1.0.0",
+                "description": "Auto-generated from HAR analysis"
+            },
+            "servers": [{"url": self.BASE_URL}],
+            "paths": {
+                {% for method in methods %}
+                {{ method.path | pyliteral }}: {
+                    {{ method.method.lower() | pyliteral }}: {
+                        "summary": {{ method.name | pyliteral }},
+                        "parameters": [
+                            {% for param in method.query_params %}
+                            {
+                                "name": {{ param | pyliteral }},
+                                "in": "query",
+                                "schema": {"type": "string"}
+                            }{% if not loop.last %},{% endif %}
+                            {% endfor %}
+                        ]
+                    }
+                }{% if not loop.last %},{% endif %}
+                {% endfor %}
+            }
+        }
+
+# Example usage
+if __name__ == "__main__":
+    # Initialize client
+    client = {{ class_name }}(token="your_token_here")
+    
+    # Example: Fetch data from all endpoints
+    # all_data = client.get_all_data()
+    # print(json.dumps(all_data, indent=2))
+    
+    print("API Client Generated Successfully!")
+    print(f"Base URL: {client.BASE_URL}")
+    print(f"Available methods: {[m for m in dir(client) if callable(getattr(client, m)) and not m.startswith('_')]}")
