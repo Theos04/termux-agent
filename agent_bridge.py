@@ -280,7 +280,13 @@ class PageFetcher:
             if not self.ws_url:
                 return False
 
+            # Connect with a short open timeout, then raise recv timeout —
+            # long Runtime.evaluate (Maps scroll/phone enrich) needs headroom.
             self.ws = websocket.create_connection(self.ws_url, timeout=5)
+            try:
+                self.ws.settimeout(120)
+            except Exception:
+                pass
             self._send_cdp("Runtime.enable")
             self._send_cdp("Page.enable")
             self._send_cdp("Accessibility.enable")
@@ -505,6 +511,15 @@ class PageFetcher:
             return None
         cmd_id = self._next_cmd_id()
         payload = {"id": cmd_id, "method": method, "params": params or {}}
+        # Socket recv timeout defaults to 5s on connect — far too short for
+        # awaitPromise Maps scripts (scroll/enrich). Align sock timeout with
+        # the command deadline so quiet periods during JS sleep don't kill WS.
+        prev_sock_timeout = None
+        try:
+            prev_sock_timeout = self.ws.gettimeout()
+            self.ws.settimeout(max(float(timeout), 5.0) + 2.0)
+        except Exception:
+            pass
         try:
             self.ws.send(json.dumps(payload))
             start_t = time.time()
@@ -522,6 +537,12 @@ class PageFetcher:
             logger.debug(f"CDP send error: {e}")
             self._record_cdp(method, params, None, str(e))
             self.disconnect()
+        finally:
+            if prev_sock_timeout is not None and self.ws is not None:
+                try:
+                    self.ws.settimeout(prev_sock_timeout)
+                except Exception:
+                    pass
         return None
 
     def list_tabs(self) -> List[Dict[str, Any]]:
@@ -595,6 +616,10 @@ class PageFetcher:
             self.active_url = target.get("url", "")
             self.ws_url = target["ws"]
             self.ws = websocket.create_connection(self.ws_url, timeout=5)
+            try:
+                self.ws.settimeout(120)
+            except Exception:
+                pass
             self._send_cdp("Runtime.enable")
             self._send_cdp("Page.enable")
             self._send_cdp("Accessibility.enable")
@@ -604,12 +629,15 @@ class PageFetcher:
             self.ws = None
             return False
 
-    def evaluate_js(self, script: str) -> Any:
+    def evaluate_js(self, script: str, timeout: float = 30.0) -> Any:
         """Run JavaScript in current tab and return value."""
         res = self._send_cdp(
             "Runtime.evaluate",
             {"expression": script, "returnByValue": True, "awaitPromise": True},
+            timeout=timeout,
         )
+        if res and "exceptionDetails" in res:
+            return None
         if res and "result" in res:
             return res["result"].get("value")
         return None
@@ -962,8 +990,17 @@ class PageFetcher:
             {"expression": code, "returnByValue": True, "awaitPromise": True},
             timeout=timeout,
         )
+        if res and "exceptionDetails" in res:
+            ed = res.get("exceptionDetails") or {}
+            exc = (ed.get("exception") or {}).get("description") or ed.get("text") or "JS exception"
+            return {"ok": False, "error": f"script exception: {exc}", "raw": _clip_for_log(res)}
         if res and "result" in res:
-            return res["result"].get("value")
+            val = res["result"].get("value")
+            if val is not None:
+                return val
+            # subtype error / undefined with no value
+            desc = res["result"].get("description") or res["result"].get("type")
+            return {"ok": False, "error": f"script returned no value ({desc})", "raw": _clip_for_log(res)}
         return {"ok": False, "error": "script evaluation failed", "raw": _clip_for_log(res)}
 
 
@@ -1555,6 +1592,18 @@ class OrchestratorAgent:
     def stop(self) -> None:
         self.stop_requested = True
 
+    def _get_db(self):
+        """Lazily create/return a Database instance for places persistence."""
+        if not hasattr(self, "_db") or self._db is None:
+            try:
+                from agent.database import Database
+                from agent.config import AgentConfig
+                cfg = AgentConfig.from_env()
+                self._db = Database(cfg.db_path)
+            except Exception:
+                self._db = None
+        return self._db
+
     def _mmcp_tool_executor(self) -> Callable[[str, Dict[str, Any]], Dict[str, Any]]:
         """Bridge mmcp workflow tool names → OrchestratorAgent.execute_action."""
 
@@ -1656,6 +1705,7 @@ class OrchestratorAgent:
             har_manager=self.har,
             notify=self._notify,
             pincode_csv=DEFAULT_PINCODE_CSV,
+            db=self._get_db(),
         )
         result = pipe.run(goal, dry_run=dry_run)
         self.extracted.update(result.get("extracted") or {})

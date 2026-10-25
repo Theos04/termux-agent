@@ -11,6 +11,13 @@ Keys:
     Ctrl+Q  quit
     F1–F8   open panels (help/model/settings/stats/sessions/system/browser/cron)
 
+Local source (current directory only, results stay in the chat context):
+    ; read codebase                 load source files from the cwd
+    ; cat <file>                    print a file
+    ; sed -n '1,80p' <file>         print a line range
+    ; sed -i 's/old/new/g' <file>   substitute inside a file
+    /sh <those same commands>
+
 Model discovery: scans $LLAMA_MODEL_DIR, ~/llama.cpp/models, ~/.llama-tui/models
 (recursively, depth ≤ 2) for *.gguf. Vocab-only and tiny files (<10 MB) are
 filtered out. Switch live via F2 / /model.
@@ -19,14 +26,22 @@ Optional: `pip install psutil` for per-process stats (falls back to /proc).
 """
 
 import codecs
+import difflib
+import importlib
+import importlib.util
+import inspect
 import json
 import os
 import re
+import shlex
+import socket
 import subprocess
 import sys
 import tempfile
 import threading
 import time
+import urllib.error
+import urllib.request
 from collections import deque
 from typing import Any
 
@@ -65,14 +80,33 @@ except Exception:
 HOME = os.path.expanduser("~")
 LLAMA_DIR = os.path.join(HOME, "llama.cpp")
 LLAMA_BIN = os.environ.get("LLAMA_BIN", os.path.join(LLAMA_DIR, "build/bin/llama-cli"))
+LLAMA_SERVER_BIN = os.environ.get(
+    "LLAMA_SERVER_BIN", os.path.join(LLAMA_DIR, "build/bin/llama-server")
+)
+LLAMA_SERVER_PORT = int(os.environ.get("LLAMA_SERVER_PORT", "8491"))
+LLAMA_SERVER_HOST = "127.0.0.1"
 
 # Directories scanned for *.gguf. First match wins for display order.
+# Also scans HuggingFace hub cache for downloaded GGUF blobs.
+_HF_CACHE = os.path.join(HOME, ".cache", "huggingface", "hub")
+_HF_GGUF_DIRS = []
+if os.path.isdir(_HF_CACHE):
+    for _repo in os.listdir(_HF_CACHE):
+        _snap = os.path.join(_HF_CACHE, _repo, "snapshots")
+        if not os.path.isdir(_snap):
+            continue
+        for _rev in os.listdir(_snap):
+            _rev_path = os.path.join(_snap, _rev)
+            if os.path.isdir(_rev_path):
+                _HF_GGUF_DIRS.append(_rev_path)
+
 MODEL_DIRS = [
     d
     for d in (
-        os.environ.get("LLAMA_MODEL_DIR"),
-        os.path.join(LLAMA_DIR, "models"),
-        os.path.join(HOME, ".llama-tui", "models"),
+        [os.environ.get("LLAMA_MODEL_DIR")]
+        + [os.path.join(LLAMA_DIR, "models")]
+        + [os.path.join(HOME, ".llama-tui", "models")]
+        + _HF_GGUF_DIRS
     )
     if d
 ]
@@ -87,11 +121,18 @@ TEMP = 0.7
 TOP_P = 0.95
 REPEAT_PENALTY = 1.1
 TIMEOUT_S = 180
+
+# DeepSeek-R1 needs much more room for <think> reasoning chains
+_DS_R1_CTX = 8192
+_DS_R1_N_PREDICT = 2048
+_DS_R1_TIMEOUT = 600
 MAX_PROMPT_CHARS = 3200
 SYSTEM_PROMPT = "You are a helpful assistant. Answer clearly and concisely."
 DEFAULT_SYSTEM_PROMPT = SYSTEM_PROMPT
 
 SESS_DIR = os.path.join(HOME, ".llama-tui", "sessions")
+TODO_PATH = os.path.join(HOME, ".llama-tui", "todo.json")
+SKILLS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "agent", "skills")
 
 STOP_MARKERS = ["</s>", "<|user|>", "<|assistant|>", "<|system|>", "[end of text]"]
 SPARK = "▁▂▃▄▅▆▇█"
@@ -105,6 +146,490 @@ C_USER = "#89b4fa"
 C_AI = "#a6e3a1"
 C_WARN = "#f9e2af"
 C_ERR = "#f38ba8"
+
+# ───────────────────────── workspace commands (; cat / ; sed) ─────────────────────────
+# Results are jailed to the process cwd. The model never gets a shell.
+WORKSPACE_DISPLAY_CHARS = 14_000
+WORKSPACE_HISTORY_CHARS = 4_000
+_CODEBASE_BODY_BUDGET = 3_500
+_CODEBASE_FILE_CAP = 1_200
+_CODEBASE_TREE_CAP = 250
+_CMD_TIMEOUT_S = 15
+_MAX_FILE_BYTES = 1_000_000
+
+_SAFE_CMDS = frozenset({
+    "cat", "sed", "ls", "head", "tail", "wc", "grep", "rg", "find", "pwd", "nl",
+})
+_SKIP_DIRS = frozenset({
+    ".git", "__pycache__", "node_modules", ".venv", "venv",
+    "agent_runs", "logs", "dist", "build", ".mypy_cache", ".pytest_cache",
+    "data",
+})
+_SOURCE_EXTS = frozenset({
+    ".py", ".js", ".md", ".sh", ".toml", ".yml", ".yaml",
+    ".css", ".html", ".txt", ".rhai", ".json",
+})
+_SECRET_NAMES = frozenset({
+    "credentials.json", "token.json", "secrets.json", "id_rsa", "id_ed25519",
+})
+_OPTS_WITH_ARG = {
+    "head": {"-n", "-c", "--lines", "--bytes"},
+    "tail": {"-n", "-c", "--lines", "--bytes"},
+    "nl": {"-s", "-w", "-v", "-i", "-b"},
+    "grep": {
+        "-e", "-f", "-m", "-A", "-B", "-C",
+        "--regexp", "--file", "--max-count", "--include", "--exclude", "--exclude-dir",
+    },
+    "rg": {"-e", "-g", "-t", "-m", "-A", "-B", "-C", "--max-count"},
+    "find": {
+        "-name", "-iname", "-path", "-regex", "-maxdepth", "-mindepth",
+        "-type", "-size", "-mtime", "-mmin",
+    },
+}
+_FIND_DENIED = frozenset({
+    "-exec", "-execdir", "-ok", "-okdir", "-delete",
+    "-fls", "-fprint", "-fprintf", "-fprint0",
+})
+_SHELL_TOKENS = frozenset({"|", "||", "&", "&&", ";", ">", ">>", "<", "<<"})
+_SED_RANGE = re.compile(r"^(\d+)(,(\d+|\$))?p$")
+_SED_SUB = re.compile(
+    r"^s(?P<d>[^\s\\])(?:\\.|(?!(?P=d)).)*?(?P=d)"
+    r"(?:\\.|(?!(?P=d)).)*?(?P=d)[gimpI0-9]*$"
+)
+_CODEBASE_RE = re.compile(
+    r"^(?:please\s+)?"
+    r"(?:read|load|show|dump)"
+    r"\s+(?:the\s+|my\s+|this\s+)?"
+    r"(?:codebase|code\s*base|source(?:\s+code)?|repo(?:sitory)?)"
+    r"(?:\s+of\s+the\s+current\s+(?:directory|dir|folder))?"
+    r"\s*$",
+    re.IGNORECASE,
+)
+_CAT_CODEBASE_RE = re.compile(
+    r"^cat\s+(?:the\s+)?(?:codebase|source\s+code)"
+    r"(?:\s+of\s+the\s+current\s+(?:directory|dir|folder))?"
+    r"\s*$",
+    re.IGNORECASE,
+)
+
+
+class WorkspaceError(Exception):
+    """A local source command was rejected or failed closed."""
+
+
+def _is_secret(path: str) -> bool:
+    base = os.path.basename(path)
+    return (
+        base in _SECRET_NAMES
+        or base == ".env"
+        or base.startswith(".env.")
+        or base.endswith((".pem", ".key", ".p12", ".pfx"))
+    )
+
+
+def _resolve_in_workspace(token: str, workspace: str) -> str:
+    if token in {"-", ""}:
+        raise WorkspaceError("stdin is disabled; pass a file in the current directory")
+    raw = token if os.path.isabs(token) else os.path.join(workspace, token)
+    real = os.path.realpath(raw)
+    root = os.path.realpath(workspace)
+    if real != root and not real.startswith(root + os.sep):
+        raise WorkspaceError(f"path is outside the current directory: {token}")
+    if _is_secret(real):
+        raise WorkspaceError(f"refusing secret file: {os.path.basename(real)}")
+    return real
+
+
+def _rel(path: str, workspace: str) -> str:
+    return os.path.relpath(path, os.path.realpath(workspace))
+
+
+def classify_workspace_input(msg: str, workspace: str) -> bool:
+    """True when this line is a local source command, not chat."""
+    raw = (msg or "").strip()
+    if not raw:
+        return False
+    if raw.startswith(";"):
+        return True
+    if _CODEBASE_RE.match(raw) or _CAT_CODEBASE_RE.match(raw):
+        return True
+    return _looks_like_shell(raw, workspace)
+
+
+def _looks_like_shell(body: str, workspace: str) -> bool:
+    try:
+        argv = shlex.split(body, posix=True)
+    except ValueError:
+        return False
+    if not argv or argv[0].lower() not in _SAFE_CMDS:
+        return False
+    if len(argv) == 1:
+        return argv[0].lower() in {"ls", "pwd"}
+    return any(_token_is_pathish(tok, workspace) for tok in argv[1:])
+
+
+def _token_is_pathish(tok: str, workspace: str) -> bool:
+    if tok.startswith("-") or tok[:1].isdigit() or any(c in tok for c in "/*.$~"):
+        return True
+    return os.path.exists(os.path.join(workspace, tok))
+
+
+def run_workspace_line(msg: str, workspace: str) -> str:
+    """Run one jailed source command. Raises WorkspaceError."""
+    body = re.sub(r"^;+\s*", "", (msg or "").strip()).strip()
+    if not body:
+        raise WorkspaceError(
+            "empty command. try: ; read codebase   ; cat <file>   ; sed -n '1,40p' <file>"
+        )
+    if _CODEBASE_RE.match(body) or _CAT_CODEBASE_RE.match(body):
+        return read_codebase(workspace)
+    try:
+        argv = shlex.split(body, posix=True)
+    except ValueError as exc:
+        raise WorkspaceError(f"could not parse command: {exc}") from exc
+    if not argv:
+        raise WorkspaceError("empty command")
+    if any(tok in _SHELL_TOKENS or "`" in tok or "$(" in tok for tok in argv):
+        raise WorkspaceError("pipes, redirects, and shell substitution are disabled")
+    if argv[0] == "read" and len(argv) == 2:
+        argv[0] = "cat"
+    return exec_workspace(argv, workspace)
+
+
+def read_codebase(workspace: str) -> str:
+    """List source files under workspace and inline as many as the context budget allows."""
+    root = os.path.realpath(workspace)
+    if not os.path.isdir(root):
+        raise WorkspaceError(f"current directory is not a directory: {workspace}")
+    found: list[str] = []
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = sorted(
+            d for d in dirnames
+            if d not in _SKIP_DIRS and not d.startswith(".")
+        )
+        for name in sorted(filenames):
+            if name.startswith(".") or _is_secret(name):
+                continue
+            ext = os.path.splitext(name)[1].lower()
+            if ext not in _SOURCE_EXTS:
+                continue
+            full = os.path.join(dirpath, name)
+            real = os.path.realpath(full)
+            if real != root and not real.startswith(root + os.sep):
+                continue
+            if _is_secret(real):
+                continue
+            try:
+                if os.path.getsize(real) > 256_000:
+                    continue
+            except OSError:
+                continue
+            found.append(real)
+            if len(found) >= _CODEBASE_TREE_CAP:
+                break
+        if len(found) >= _CODEBASE_TREE_CAP:
+            break
+    found.sort(key=lambda p: (_rel(p, root).count("/"), _rel(p, root)))
+    lines = [
+        f"workspace: {root}",
+        f"source files: {len(found)}"
+        + (" (listing capped)" if len(found) >= _CODEBASE_TREE_CAP else ""),
+        "commands: ; cat <file>    ; sed -n '1,80p' <file>    ; sed -i 's/old/new/g' <file>",
+        "",
+        "tree:",
+    ]
+    for path in found:
+        lines.append(f"  {_rel(path, root)}")
+    lines.append("")
+    budget = _CODEBASE_BODY_BUDGET
+    shown = 0
+    for path in found:
+        if budget <= 0:
+            break
+        try:
+            with open(path, "r", encoding="utf-8", errors="replace") as fh:
+                blob = fh.read(_CODEBASE_FILE_CAP + 1)
+        except OSError as exc:
+            lines.append(f"## {_rel(path, root)}  ({exc})")
+            continue
+        if "\x00" in blob:
+            continue
+        take = min(_CODEBASE_FILE_CAP, budget)
+        clipped = len(blob) > take
+        body = blob[:take]
+        budget -= len(body)
+        shown += 1
+        rel = _rel(path, root)
+        lines.append(f"## {rel}" + ("  (clipped)" if clipped else ""))
+        lines.append(body.rstrip())
+        lines.append("")
+    if shown < len(found):
+        lines.append(
+            f"(inlined {shown} of {len(found)} files — "
+            "; cat <file> or ; sed -n 'A,Bp' <file> for the rest)"
+        )
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def exec_workspace(argv: list[str], workspace: str) -> str:
+    cmd = argv[0]
+    if os.path.basename(cmd) != cmd or cmd not in _SAFE_CMDS:
+        raise WorkspaceError(
+            "allowed commands: "
+            + " ".join(sorted(_SAFE_CMDS))
+            + "    or: ; read codebase"
+        )
+    if cmd == "pwd":
+        if len(argv) != 1:
+            raise WorkspaceError("pwd takes no arguments")
+        return os.path.realpath(workspace) + "\n"
+    if cmd == "sed":
+        return _run_sed(argv, workspace)
+    path_idx = _path_indexes(cmd, argv)
+    resolved_argv = list(argv)
+    paths: list[str] = []
+    for i in path_idx:
+        real = _resolve_in_workspace(argv[i], workspace)
+        resolved_argv[i] = real
+        paths.append(real)
+    if cmd in {"cat", "head", "tail", "nl", "wc"} and not paths:
+        raise WorkspaceError(f"{cmd} needs a file in the current directory")
+    for path in paths:
+        if os.path.isfile(path) and os.path.getsize(path) > _MAX_FILE_BYTES:
+            raise WorkspaceError(
+                f"{_rel(path, workspace)} is over 1 MB; use ; sed -n 'A,Bp' {_rel(path, workspace)}"
+            )
+    if cmd == "grep":
+        resolved_argv = [
+            "grep",
+            "--exclude-dir=.git",
+            "--exclude-dir=__pycache__",
+            "--exclude=credentials.json",
+            "--exclude=token.json",
+            "--exclude=secrets.json",
+            "--exclude=.env",
+            "--exclude=*.pem",
+            "--exclude=*.key",
+            "--exclude=*.p12",
+            *resolved_argv[1:],
+        ]
+    text, _code = _run_argv(resolved_argv, workspace)
+    return text
+
+
+def _path_indexes(cmd: str, argv: list[str]) -> list[int]:
+    take_arg = _OPTS_WITH_ARG.get(cmd, set())
+    idxs: list[int] = []
+    i = 1
+    pattern_taken = cmd not in {"grep", "rg"}
+    find_expr = False
+    while i < len(argv):
+        arg = argv[i]
+        if cmd == "find" and arg in _FIND_DENIED:
+            raise WorkspaceError(f"find {arg} is disabled")
+        if arg == "--":
+            idxs.extend(range(i + 1, len(argv)))
+            break
+        if arg in take_arg:
+            if cmd == "find":
+                find_expr = True
+            if cmd in {"grep", "rg"} and arg in {"-e", "--regexp"}:
+                pattern_taken = True
+            i += 2
+            continue
+        if arg.startswith("-"):
+            if cmd == "find":
+                find_expr = True
+            i += 1
+            continue
+        if cmd == "find" and find_expr:
+            raise WorkspaceError(f"unexpected find argument: {arg}")
+        if not pattern_taken:
+            pattern_taken = True
+            i += 1
+            continue
+        idxs.append(i)
+        i += 1
+    if cmd == "find" and not idxs:
+        argv.append(".")
+        idxs.append(len(argv) - 1)
+    return idxs
+
+
+def _check_sed_script(script: str) -> None:
+    if "\n" in script or "\x00" in script:
+        raise WorkspaceError("sed script must be one line")
+    if _SED_RANGE.fullmatch(script) or _SED_SUB.fullmatch(script):
+        return
+    raise WorkspaceError(
+        "sed supports a line range or one substitution: "
+        "; sed -n '1,80p' FILE    or    ; sed -i 's/old/new/g' FILE"
+    )
+
+
+def _prepare_sed(argv: list[str], workspace: str) -> tuple[list[str], list[str], bool]:
+    flags: list[str] = []
+    scripts: list[str] = []
+    files: list[str] = []
+    seen_script = False
+    i = 1
+    while i < len(argv):
+        arg = argv[i]
+        if arg == "--":
+            files.extend(argv[i + 1:])
+            break
+        if arg in {"-e", "--expression"}:
+            if i + 1 >= len(argv):
+                raise WorkspaceError("sed -e needs a script")
+            _check_sed_script(argv[i + 1])
+            scripts.append(argv[i + 1])
+            seen_script = True
+            i += 2
+            continue
+        if arg in {"-f", "--file"}:
+            raise WorkspaceError("sed -f is disabled; pass the script with -e or as the first argument")
+        if arg in {"-n", "--quiet", "--silent"}:
+            if "-n" not in flags:
+                flags.append("-n")
+            i += 1
+            continue
+        if arg in {"-E", "-r", "--regexp-extended"}:
+            if "-E" not in flags:
+                flags.append("-E")
+            i += 1
+            continue
+        if arg in {"-i", "--in-place"}:
+            if "-i" not in flags:
+                flags.append("-i")
+            i += 1
+            continue
+        if (arg.startswith("-i") and arg != "-i") or arg.startswith("--in-place="):
+            suffix = arg[2:] if arg.startswith("-i") else arg.split("=", 1)[1]
+            if not re.fullmatch(r"\.?[A-Za-z0-9_-]+", suffix or ""):
+                raise WorkspaceError("sed -i suffix must look like .bak")
+            flags.append(arg if arg.startswith("-i") else f"-i{suffix}")
+            i += 1
+            continue
+        if arg.startswith("-"):
+            raise WorkspaceError(f"sed flag not allowed: {arg}")
+        if not seen_script:
+            _check_sed_script(arg)
+            scripts.append(arg)
+            seen_script = True
+            i += 1
+            continue
+        files.append(arg)
+        i += 1
+    if not seen_script:
+        raise WorkspaceError("sed needs a script")
+    if not files:
+        raise WorkspaceError("sed needs a file in the current directory")
+    if all(_SED_RANGE.fullmatch(s) for s in scripts) and "-n" not in flags:
+        flags.insert(0, "-n")
+    resolved = [_resolve_in_workspace(tok, workspace) for tok in files]
+    for path in resolved:
+        if os.path.isfile(path) and os.path.getsize(path) > _MAX_FILE_BYTES:
+            raise WorkspaceError(f"{_rel(path, workspace)} is over 1 MB")
+    out = ["sed", *flags]
+    for script in scripts:
+        out.extend(["-e", script])
+    out.extend(resolved)
+    inplace = any(f == "-i" or f.startswith("-i") for f in flags)
+    return out, resolved, inplace
+
+
+def _run_sed(argv: list[str], workspace: str) -> str:
+    cleaned, paths, inplace = _prepare_sed(argv, workspace)
+    before: dict[str, bytes] = {}
+    if inplace:
+        for path in paths:
+            with open(path, "rb") as fh:
+                before[path] = fh.read()
+    try:
+        text, code = _run_argv(cleaned, workspace)
+    except WorkspaceError:
+        _restore_files(before)
+        raise
+    if code != 0:
+        if before:
+            _restore_files(before)
+            return text.rstrip() + "\n(file restored)\n"
+        return text
+    if inplace and before:
+        emptied = _empty_inplace(before)
+        if emptied:
+            raise WorkspaceError(
+                "sed -i would empty "
+                + ", ".join(_rel(p, workspace) for p in emptied)
+                + "; restored"
+            )
+        diffs = _inplace_diffs(before, workspace)
+        extra = ""
+        if text.strip() and text.strip() != "(no output)":
+            extra = "\n" + text
+        return (diffs + extra).rstrip() + "\n"
+    return text
+
+
+def _restore_files(before: dict[str, bytes]) -> None:
+    for path, blob in before.items():
+        with open(path, "wb") as fh:
+            fh.write(blob)
+
+
+def _empty_inplace(before: dict[str, bytes]) -> list[str]:
+    emptied = []
+    for path, old in before.items():
+        with open(path, "rb") as fh:
+            new = fh.read()
+        if old.strip() and not new.strip():
+            emptied.append(path)
+    if emptied:
+        _restore_files(before)
+    return emptied
+
+
+def _inplace_diffs(before: dict[str, bytes], workspace: str) -> str:
+    chunks = []
+    for path, old in before.items():
+        with open(path, "r", encoding="utf-8", errors="replace") as fh:
+            new = fh.read()
+        old_text = old.decode("utf-8", "replace")
+        rel = _rel(path, workspace)
+        diff = "".join(difflib.unified_diff(
+            old_text.splitlines(keepends=True),
+            new.splitlines(keepends=True),
+            fromfile=rel,
+            tofile=rel,
+        ))
+        chunks.append(diff.rstrip() or f"{rel}: no change")
+    return "\n".join(chunks)
+
+
+def _run_argv(argv: list[str], workspace: str) -> tuple[str, int]:
+    try:
+        proc = subprocess.run(
+            argv,
+            cwd=os.path.realpath(workspace),
+            capture_output=True,
+            text=True,
+            timeout=_CMD_TIMEOUT_S,
+            stdin=subprocess.DEVNULL,
+            shell=False,
+        )
+    except FileNotFoundError as exc:
+        raise WorkspaceError(f"command not found: {argv[0]}") from exc
+    except subprocess.TimeoutExpired as exc:
+        raise WorkspaceError(f"{argv[0]} timed out after {_CMD_TIMEOUT_S}s") from exc
+    parts = []
+    if proc.stdout:
+        parts.append(proc.stdout.rstrip("\n"))
+    if proc.stderr:
+        parts.append(proc.stderr.strip())
+    if proc.returncode != 0:
+        parts.append(f"(exit {proc.returncode})")
+    text = "\n".join(p for p in parts if p).strip()
+    return (text or "(no output)") + "\n", proc.returncode
 
 
 # ───────────────────────── helpers ─────────────────────────
@@ -158,10 +683,11 @@ def fmt_bytes(n: float) -> str:
 
 def quant_of(path: str) -> str:
     m = re.search(
-        r"[._-](Q\d[_A-Z0-9]*|IQ\d[_A-Z0-9]*|F16|F32|BF16)",
+        r"[._-](Q\d[_A-Za-z0-9]*|IQ\d[_A-Za-z0-9]*|F16|F32|BF16)",
         os.path.basename(path),
+        re.IGNORECASE,
     )
-    return m.group(1) if m else "?"
+    return m.group(1).upper() if m else "?"
 
 
 def is_probably_vocab(path: str) -> bool:
@@ -178,15 +704,17 @@ def discover_models(include_tiny: bool = False) -> list:
     """Recursively find *.gguf under MODEL_DIRS (depth ≤ 2).
 
     Filters out vocab-only files and anything < MIN_MODEL_BYTES unless
-    include_tiny is set. Deduped, sorted by filename.
+    include_tiny is set. Deduped by realpath so symlinks and their targets
+    don't appear twice. Sorted by basename.
     """
-    seen = set()
+    seen_real = set()   # dedup by resolved inode path
+    seen_path = set()   # dedup by literal path string
     out = []
     for root in MODEL_DIRS:
         if not root or not os.path.isdir(root):
             continue
         base_len = len(root.rstrip(os.sep))
-        for dirpath, dirnames, filenames in os.walk(root):
+        for dirpath, dirnames, filenames in os.walk(root, followlinks=True):
             depth = dirpath[base_len:].count(os.sep)
             if depth >= 2:
                 dirnames[:] = []
@@ -194,11 +722,15 @@ def discover_models(include_tiny: bool = False) -> list:
                 if not fn.lower().endswith(".gguf"):
                     continue
                 full = os.path.join(dirpath, fn)
-                if full in seen:
+                if full in seen_path:
                     continue
+                real = os.path.realpath(full)
+                if real in seen_real:
+                    continue   # skip duplicate symlink → same file
                 if not include_tiny and is_probably_vocab(full):
                     continue
-                seen.add(full)
+                seen_path.add(full)
+                seen_real.add(real)
                 out.append(full)
     out.sort(key=lambda p: (os.path.basename(p).lower(), p))
     return out
@@ -240,12 +772,204 @@ ModelState.init(_initial)
 MODEL_PATH = ModelState.path  # legacy alias
 
 
+# ───────────────────────── llama-server sidecar ─────────────────────────
+class LlamaServer:
+    """Manages a persistent llama-server process.
+
+    Keeps the model loaded in RAM between requests so each query doesn't
+    pay the model-load cost (~30-90s for 7B).  Falls back to llama-cli
+    if the server binary is missing or the server fails to start.
+    """
+
+    _proc: subprocess.Popen | None = None
+    _model: str = ""
+    _lock = threading.Lock()
+    _ready = False
+
+    @classmethod
+    def _port_free(cls) -> bool:
+        try:
+            with socket.create_connection((LLAMA_SERVER_HOST, LLAMA_SERVER_PORT), timeout=0.3):
+                return False
+        except OSError:
+            return True
+
+    @classmethod
+    def _wait_ready(cls, timeout: float = 60.0) -> bool:
+        """Poll /health until server reports ready or timeout."""
+        url = f"http://{LLAMA_SERVER_HOST}:{LLAMA_SERVER_PORT}/health"
+        deadline = time.time() + timeout
+        while time.time() < deadline:
+            try:
+                with urllib.request.urlopen(url, timeout=1) as r:
+                    data = json.loads(r.read())
+                    if data.get("status") in ("ok", "loading model"):
+                        # keep waiting until fully loaded
+                        if data.get("status") == "ok":
+                            return True
+            except Exception:
+                pass
+            time.sleep(0.5)
+        return False
+
+    @classmethod
+    def start(cls, model_path: str, ctx: int, threads: int) -> bool:
+        """Start (or restart) the server for the given model. Returns True on success."""
+        if not os.path.exists(LLAMA_SERVER_BIN):
+            return False
+        with cls._lock:
+            # Already running with the right model
+            if cls._proc and cls._proc.poll() is None and cls._model == model_path and cls._ready:
+                return True
+            cls.stop()
+            if not cls._port_free():
+                # Something else on that port — can't use server mode
+                return False
+            cmd = [
+                LLAMA_SERVER_BIN,
+                "-m", model_path,
+                "-c", str(ctx),
+                "-t", str(threads),
+                "-ngl", "0",
+                "--host", LLAMA_SERVER_HOST,
+                "--port", str(LLAMA_SERVER_PORT),
+                "--no-webui",
+                "--log-disable",
+            ]
+            try:
+                cls._proc = subprocess.Popen(
+                    cmd,
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                )
+            except Exception:
+                cls._proc = None
+                return False
+            cls._model = model_path
+            cls._ready = False
+        # Wait outside the lock so UI thread isn't blocked long
+        ok = cls._wait_ready(timeout=120.0)
+        with cls._lock:
+            cls._ready = ok
+        return ok
+
+    @classmethod
+    def stop(cls) -> None:
+        """Kill the server process if running."""
+        if cls._proc:
+            try:
+                cls._proc.terminate()
+                cls._proc.wait(timeout=5)
+            except Exception:
+                try:
+                    cls._proc.kill()
+                except Exception:
+                    pass
+            cls._proc = None
+            cls._model = ""
+            cls._ready = False
+
+    @classmethod
+    def is_ready(cls) -> bool:
+        with cls._lock:
+            return cls._ready and cls._proc is not None and cls._proc.poll() is None
+
+    @classmethod
+    def complete(cls, prompt: str, n_predict: int, stops: list[str],
+                 temp: float, top_p: float, repeat_penalty: float,
+                 stream_cb=None) -> str:
+        """Send a completion request; call stream_cb(chunk_str) as tokens arrive.
+
+        Returns the full generated text, or raises on error.
+        """
+        url = f"http://{LLAMA_SERVER_HOST}:{LLAMA_SERVER_PORT}/completion"
+        payload = json.dumps({
+            "prompt": prompt,
+            "n_predict": n_predict,
+            "stop": stops,
+            "temperature": temp,
+            "top_p": top_p,
+            "repeat_penalty": repeat_penalty,
+            "stream": stream_cb is not None,
+            "cache_prompt": True,
+        }).encode()
+        req = urllib.request.Request(
+            url, data=payload,
+            headers={"Content-Type": "application/json"},
+        )
+        full = ""
+        with urllib.request.urlopen(req, timeout=600) as resp:
+            if stream_cb is None:
+                data = json.loads(resp.read())
+                return data.get("content", "")
+            # Streaming: read SSE lines
+            for raw_line in resp:
+                line = raw_line.decode("utf-8", "replace").strip()
+                if not line.startswith("data:"):
+                    continue
+                body = line[5:].strip()
+                if body == "[DONE]":
+                    break
+                try:
+                    chunk = json.loads(body)
+                except Exception:
+                    continue
+                token = chunk.get("content", "")
+                full += token
+                if stream_cb:
+                    stream_cb(full)
+                if chunk.get("stop"):
+                    break
+        return full
+
+
 # ───────────────────────── prompt formatting helper ─────────────────────────
+def is_deepseek_r1(model_path: str) -> bool:
+    """Return True if the model path looks like a DeepSeek-R1 distil."""
+    low = model_path.lower()
+    return (
+        "deepseek-r1" in low
+        or "deepseek_r1" in low
+        or "r1-distill" in low
+        or "r1_distill" in low
+    )
+
+
+def strip_think_blocks(text: str) -> tuple[str, str]:
+    """Split DeepSeek-R1 output into (thinking, answer).
+
+    Returns (think_text, answer_text).  If no </think> found, answer is empty
+    and all text is treated as still-in-progress thinking.
+    """
+    if "<think>" not in text and "</think>" not in text:
+        return "", text  # not a thinking model output
+    # Thinking starts right after <think> (which we pre-primed in the prompt)
+    # or at the very start if the model echoed <think> itself.
+    body = text
+    if body.startswith("<think>"):
+        body = body[len("<think>"):]
+    if "</think>" in body:
+        think_part, _, answer_part = body.partition("</think>")
+        return think_part.strip(), answer_part.strip()
+    # Still generating inside <think> block
+    return body, ""
+
+
 def format_chat_prompt(model_path: str, history: list, system_prompt: str) -> tuple:
     """Format prompt with the appropriate template depending on the model."""
     low = model_path.lower()
-    if "qwen" in low or "deepseek" in low:
-        # ChatML format
+    if is_deepseek_r1(model_path):
+        # DeepSeek-R1: ChatML format; we prime <think> so the model reasons first.
+        # The final answer appears after </think>. strip_think_blocks() separates them.
+        p = f"<|im_start|>system\n{system_prompt}<|im_end|>\n"
+        for r, t in history:
+            role = "user" if r == "user" else "assistant"
+            p += f"<|im_start|>{role}\n{t}<|im_end|>\n"
+        p += "<|im_start|>assistant\n<think>\n"
+        marker = "<|im_start|>assistant"
+        stops = ["<|im_end|>", "<|im_start|>", "<|endoftext|>", "\n[ Prompt:"]
+    elif "qwen" in low or "deepseek" in low:
+        # ChatML format (Qwen / other DeepSeek)
         p = f"<|im_start|>system\n{system_prompt}<|im_end|>\n"
         for r, t in history:
             role = "user" if r == "user" else "assistant"
@@ -476,7 +1200,9 @@ class HelpScreen(BaseModal):
             "[#a6e3a1]F5[/]  sessions    saved conversations\n"
             "[#a6e3a1]F6[/]  system      system prompt editor\n"
             "[#a6e3a1]F7[/]  browser     CDP & HAR monitor\n"
-            "[#a6e3a1]F8[/]  cron        schedule maps scrapes\n\n"
+            "[#a6e3a1]F8[/]  cron        schedule maps scrapes\n"
+            "[#a6e3a1]F9[/]  skills      available agent skills\n"
+            "[#a6e3a1]F10[/] todo        to-do list\n\n"
             "[bold #f38ba8]commands[/]\n\n"
             "[bold #89b4fa]/agent <goal>[/]          autonomous multi-tab CDP agent (AX/CSS/JEV/HAR)\n"
             "[bold #89b4fa]/fetch <url>[/]           fetch page via CDP or HTTP and inject to chat\n"
@@ -485,8 +1211,16 @@ class HelpScreen(BaseModal):
             "[bold #89b4fa]/har [start|stop|save][/]  control background network traffic capture\n"
             "[bold #89b4fa]/cdp [port][/]             connect/probe Chrome CDP (9222/9226/9228)\n"
             "[bold #89b4fa]/cron[/]                   open cron job menu (same as F8)\n"
+            "[bold #89b4fa]/skills[/]                 list available agent skills (same as F9)\n"
+            "[bold #89b4fa]/schedules[/]              view DB schedules & task counts\n"
+            "[bold #89b4fa]/todo [add|done|del] …[/]  manage to-do list (same as F10)\n"
             "[bold #89b4fa]/print <path>[/]            show a local file in chat (jsonl pretty)\n"
             "[bold #89b4fa]/runlog[/]                  show latest agent_runs/run_*.jsonl\n"
+            "[bold #89b4fa]; read codebase[/]         load cwd source into the chat context\n"
+            "[bold #89b4fa]; cat <file>[/]             print a source file (model sees it)\n"
+            "[bold #89b4fa]; sed -n '1,80p' <file>[/]  print a line range\n"
+            "[bold #89b4fa]; sed -i 's/old/new/g' <f>[/]  edit a file inside the cwd\n"
+            "[bold #89b4fa]/sh <cmd>[/]                same commands without the leading ;\n"
             "[bold #89b4fa]/help, /model, /clear, /reset, /stop[/]\n\n"
             "[dim]Tip: plain text like “phone numbers of jewellers in pune”\n"
             "auto-routes to /agent → skills (decision + pincode CSV + maps).\n"
@@ -501,7 +1235,6 @@ class ModelScreen(BaseModal):
         Binding("escape", "dismiss_modal", "Close"),
         Binding("q", "dismiss_modal", "Close"),
         Binding("r", "rescan", "Rescan"),
-        Binding("enter", "switch_model", "Use"),
         Binding("t", "toggle_tiny", "Toggle tiny"),
     ]
 
@@ -564,6 +1297,10 @@ class ModelScreen(BaseModal):
     def on_list_view_highlighted(self, event: ListView.Highlighted) -> None:
         self._update_details()
 
+    def on_list_view_selected(self, event: ListView.Selected) -> None:
+        """ListView fires this on Enter — use it to trigger the switch."""
+        self.action_switch_model()
+
     def _update_details(self) -> None:
         path = self._selected_path()
         try:
@@ -604,9 +1341,7 @@ class ModelScreen(BaseModal):
     def action_switch_model(self) -> None:
         path = self._selected_path()
         if not path or not os.path.exists(path):
-            return
-        if ModelState.path and os.path.realpath(path) == os.path.realpath(ModelState.path):
-            self.dismiss(None)
+            self.toast("[#f38ba8]no model selected or file missing[/]")
             return
         try:
             self.app._apply_model_switch(path)
@@ -1141,6 +1876,476 @@ class CronScreen(BaseModal):
             self.action_refresh_jobs()
 
 
+
+# ───────────────────────── skills panel ─────────────────────────
+_SKILL_META = {
+    "decision": {
+        "icon": "🧠",
+        "desc": "Parses natural-language goals into structured scrape decisions (query, state, city, fields, cron hint).",
+        "status": "core",
+    },
+    "pincodes": {
+        "icon": "📍",
+        "desc": "Loads and filters Indian pincode CSV data for geo-targeted scraping tasks.",
+        "status": "data",
+    },
+    "maps_geo": {
+        "icon": "🗺",
+        "desc": "Executes Google Maps scrapes via CDP browser automation (live) or builds dry-run URL plans.",
+        "status": "live/dry",
+    },
+    "google_workspace": {
+        "icon": "📅",
+        "desc": "Google Calendar & Sheets integration — exports schedules and scrape results.",
+        "status": "optional",
+    },
+    "gcal_scheduler": {
+        "icon": "🗓",
+        "desc": "Syncs cron jobs to Google Calendar recurring events.",
+        "status": "optional",
+    },
+}
+
+
+def _discover_skills() -> list[dict]:
+    """Scan agent/skills/ for *.py files and collect metadata."""
+    out = []
+    if not os.path.isdir(SKILLS_DIR):
+        return out
+    for fn in sorted(os.listdir(SKILLS_DIR)):
+        if not fn.endswith(".py") or fn.startswith("_"):
+            continue
+        name = fn[:-3]
+        path = os.path.join(SKILLS_DIR, fn)
+        meta = _SKILL_META.get(name, {})
+        # try to load docstring via importlib
+        doc = ""
+        try:
+            spec = importlib.util.spec_from_file_location(f"_skill_{name}", path)
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            doc = (inspect.getdoc(mod) or "").split("\n")[0]
+        except Exception:
+            pass
+        # Prefer curated description over auto-docstring
+        desc = meta.get("desc") or doc or "(no description)"
+        out.append({
+            "name": name,
+            "file": fn,
+            "path": path,
+            "icon": meta.get("icon", "⚙"),
+            "desc": desc,
+            "status": meta.get("status", "available"),
+        })
+    return out
+
+
+class SkillsScreen(BaseModal):
+    """F9 – display all available agent skills with descriptions."""
+
+    BINDINGS = [
+        Binding("escape", "dismiss_modal", "Close"),
+        Binding("q", "dismiss_modal", "Close"),
+        Binding("r", "rescan", "Rescan"),
+        Binding("m", "open_models", "Models"),
+        Binding("enter", "activate", "Use / Open"),
+    ]
+
+    DEFAULT_CSS = """
+    SkillsScreen > Vertical {
+        width: 88%;
+        max-width: 104;
+        height: 80%;
+    }
+    SkillsScreen #skills-list {
+        height: 1fr;
+        border: round #313244;
+        background: #11111b;
+    }
+    SkillsScreen #skill-detail {
+        height: 6;
+        padding: 0 1;
+    }
+    """
+
+    def compose(self) -> ComposeResult:
+        with Vertical() as v:
+            v.border_title = "agent skills"
+            yield Static(
+                "[#89b4fa]↑↓[/] navigate   [#a6e3a1]Enter[/] activate   [#a6e3a1]m[/] switch model   [#a6e3a1]r[/] rescan   [#6c7086]skills auto-chain: decision → pincodes → maps_geo[/]",
+                markup=True,
+                classes="modal-section",
+            )
+            yield ListView(id="skills-list")
+            yield Static(id="skill-detail", markup=True)
+            yield Static("Esc / q · m = open model picker (F2)", classes="modal-hint")
+
+    def on_mount(self) -> None:
+        self._skills: list[dict] = []
+        self._refresh_list()
+        self.query_one("#skills-list", ListView).focus()
+
+    # sentinel index 0 is always the "switch model" shortcut
+    _MODEL_SENTINEL = {"name": "⟳ switch model", "icon": "📦", "status": "meta",
+                       "desc": "Open the model picker (same as F2)", "path": "", "file": ""}
+
+    def _refresh_list(self) -> None:
+        lv = self.query_one("#skills-list", ListView)
+        lv.clear()
+        self._skills = [self._MODEL_SENTINEL] + _discover_skills()
+        # Always show model switcher at top
+        cur_model = os.path.basename(ModelState.path) if ModelState.path else "none"
+        lv.append(ListItem(Label(
+            f"📦 [bold]switch model[/]  [#f9e2af]current: {cur_model}[/]  "
+            f"[#6c7086]→ open F2 model picker[/]"
+        )))
+        if len(self._skills) <= 1:
+            lv.append(ListItem(Label("[#f38ba8](no skills found in agent/skills/)[/]")))
+            return
+        for sk in self._skills[1:]:
+            icon = sk["icon"]
+            status_col = {
+                "core": "#a6e3a1",
+                "data": "#89b4fa",
+                "live/dry": "#f9e2af",
+                "optional": "#6c7086",
+            }.get(sk["status"], "#cdd6f4")
+            label = Label(
+                f"{icon} [bold]{sk['name']}[/]  "
+                f"[{status_col}]{sk['status']}[/]  "
+                f"[#6c7086]{sk['desc'][:60]}[/]"
+            )
+            lv.append(ListItem(label))
+
+    def on_list_view_highlighted(self, _event: ListView.Highlighted) -> None:
+        self._update_detail()
+
+    def _update_detail(self) -> None:
+        lv = self.query_one("#skills-list", ListView)
+        box = self.query_one("#skill-detail", Static)
+        if lv.index is None or lv.index < 0 or lv.index >= len(self._skills):
+            box.update("[#6c7086]no selection[/]")
+            return
+        sk = self._skills[lv.index]
+        # Sentinel: model switcher
+        if sk["path"] == "":
+            cur_model = ModelState.path or "none"
+            box.update(
+                f"[bold #89b4fa]action[/]  open model picker (F2)\n"
+                f"[bold #89b4fa]current[/] {cur_model}\n"
+                f"[#6c7086]Press Enter or m to open the model picker[/]"
+            )
+            return
+        # Check importability
+        try:
+            spec = importlib.util.spec_from_file_location(f"_chk_{sk['name']}", sk["path"])
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            ok = "[#a6e3a1]✓ importable[/]"
+        except Exception as e:
+            ok = f"[#f38ba8]✗ import error: {str(e)[:60]}[/]"
+        box.update(
+            f"[bold #89b4fa]skill[/]   {sk['icon']} {sk['name']}\n"
+            f"[bold #89b4fa]file[/]    {sk['file']}\n"
+            f"[bold #89b4fa]status[/]  {sk['status']}   {ok}\n"
+            f"[bold #89b4fa]desc[/]    {sk['desc']}"
+        )
+
+    def action_activate(self) -> None:
+        """Enter key: if on the model sentinel, open F2 model picker."""
+        lv = self.query_one("#skills-list", ListView)
+        if lv.index is not None and lv.index < len(self._skills):
+            if self._skills[lv.index]["path"] == "":
+                self.action_open_models()
+
+    def action_open_models(self) -> None:
+        """Open the F2 model picker from within the Skills panel."""
+        self.dismiss(None)
+        self.app.push_screen(ModelScreen())
+
+    def action_rescan(self) -> None:
+        self._refresh_list()
+        self._update_detail()
+        self.toast("skills rescanned")
+
+
+# ───────────────────────── schedules panel ─────────────────────────
+class SchedulesScreen(BaseModal):
+    """View-only panel showing DB schedules and recent task counts."""
+
+    BINDINGS = [
+        Binding("escape", "dismiss_modal", "Close"),
+        Binding("q", "dismiss_modal", "Close"),
+        Binding("r", "refresh_data", "Refresh"),
+    ]
+
+    DEFAULT_CSS = """
+    SchedulesScreen > Vertical {
+        width: 92%;
+        max-width: 108;
+        height: 80%;
+    }
+    SchedulesScreen #sched-list {
+        height: 1fr;
+        border: round #313244;
+        background: #11111b;
+    }
+    SchedulesScreen #sched-stats {
+        height: 6;
+        padding: 0 1;
+    }
+    """
+
+    def compose(self) -> ComposeResult:
+        with Vertical() as v:
+            v.border_title = "schedules & task queue"
+            yield Static(
+                "[#89b4fa]↑↓[/] navigate   [#a6e3a1]r[/] refresh   [#6c7086]edit via /cron or F8[/]",
+                markup=True,
+                classes="modal-section",
+            )
+            yield ListView(id="sched-list")
+            yield Static(id="sched-stats", markup=True)
+            yield Static("Esc / q to close · r to refresh", classes="modal-hint")
+
+    def on_mount(self) -> None:
+        self.action_refresh_data()
+
+    def _get_db(self):
+        try:
+            from agent.config import AgentConfig
+            from agent.database import Database
+            cfg = AgentConfig()
+            return Database(cfg.db_path)
+        except Exception:
+            return None
+
+    def action_refresh_data(self) -> None:
+        lv = self.query_one("#sched-list", ListView)
+        lv.clear()
+        db = self._get_db()
+        if db is None:
+            lv.append(ListItem(Label("[#f38ba8](database not available)[/]")))
+            return
+
+        schedules = db.get_schedules()
+        if not schedules:
+            lv.append(ListItem(Label("[#6c7086](no schedules — use F8 / /cron to add)[/]")))
+        else:
+            for s in schedules:
+                en = "[#a6e3a1]ON [/]" if s.get("enabled") else "[#6c7086]OFF[/]"
+                name = (s.get("name") or "?")[:24]
+                expr = s.get("cron_expr", "?")
+                next_r = (s.get("next_run_at") or "?")[:16]
+                last_r = (s.get("last_run_at") or "—")[:16]
+                tt = s.get("task_type", "?")
+                label = (
+                    f"{en} [bold]{name}[/]  [#89b4fa]{expr}[/]  "
+                    f"next [#a6e3a1]{next_r}[/]  last [#6c7086]{last_r}[/]  "
+                    f"[#45475a]{tt}[/]"
+                )
+                lv.append(ListItem(Label(label)))
+
+        # Task counts
+        try:
+            counts = db.count_tasks_by_status()
+            places = db.count_places()
+        except Exception:
+            counts, places = {}, {}
+
+        total_tasks = sum(counts.values())
+        pending = counts.get("pending", 0)
+        running = counts.get("running", 0)
+        completed = counts.get("completed", 0)
+        failed = counts.get("failed", 0)
+
+        stats_text = (
+            f"[bold #f9e2af]task queue[/]  "
+            f"total [bold]{total_tasks}[/]  "
+            f"pending [#89b4fa]{pending}[/]  "
+            f"running [#a6e3a1]{running}[/]  "
+            f"done [#6c7086]{completed}[/]  "
+            f"failed [#f38ba8]{failed}[/]\n"
+            f"[bold #f9e2af]places db[/]  "
+            f"total [bold]{places.get('total', 0)}[/]  "
+            f"with phone [#a6e3a1]{places.get('with_phone', 0)}[/]\n"
+            f"[#6c7086]Edit schedules via /cron (F8) · add tasks via /agent <goal>[/]"
+        )
+        try:
+            self.query_one("#sched-stats", Static).update(stats_text)
+        except Exception:
+            pass
+
+
+# ───────────────────────── to-do list panel ─────────────────────────
+def _load_todos() -> list[dict]:
+    """Load to-do items from JSON file."""
+    try:
+        if os.path.exists(TODO_PATH):
+            with open(TODO_PATH, encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, list):
+                return data
+    except Exception:
+        pass
+    return []
+
+
+def _save_todos(items: list[dict]) -> None:
+    os.makedirs(os.path.dirname(TODO_PATH), exist_ok=True)
+    with open(TODO_PATH, "w", encoding="utf-8") as f:
+        json.dump(items, f, indent=2, ensure_ascii=False)
+
+
+class TodoScreen(BaseModal):
+    """F10 – persistent to-do list (saved to ~/.llama-tui/todo.json)."""
+
+    BINDINGS = [
+        Binding("escape", "dismiss_modal", "Close"),
+        Binding("q", "dismiss_modal", "Close"),
+        Binding("a", "add_item", "Add"),
+        Binding("d", "done_item", "Done"),
+        Binding("x", "delete_item", "Delete"),
+        Binding("r", "refresh_list", "Refresh"),
+    ]
+
+    DEFAULT_CSS = """
+    TodoScreen > Vertical {
+        width: 80%;
+        max-width: 96;
+        height: 80%;
+    }
+    TodoScreen #todo-list {
+        height: 1fr;
+        border: round #313244;
+        background: #11111b;
+    }
+    TodoScreen #todo-input {
+        margin: 0 0 1 0;
+        border: round #313244;
+        background: #11111b;
+    }
+    TodoScreen #todo-input:focus {
+        border: round #89b4fa;
+    }
+    TodoScreen #todo-status {
+        height: 2;
+        padding: 0 1;
+    }
+    """
+
+    def compose(self) -> ComposeResult:
+        with Vertical() as v:
+            v.border_title = "to-do list"
+            yield Static(
+                "[#89b4fa]a[/] add   [#a6e3a1]d[/] mark done   [#f38ba8]x[/] delete   [#6c7086]r[/] refresh",
+                markup=True,
+                classes="modal-section",
+            )
+            yield ListView(id="todo-list")
+            yield Input(placeholder="new task — type here and press 'a' or Enter…", id="todo-input")
+            yield Static(id="todo-status", markup=True)
+            yield Static(
+                f"Saved to {TODO_PATH}  ·  Esc / q to close",
+                classes="modal-hint",
+            )
+
+    def on_mount(self) -> None:
+        self._items: list[dict] = _load_todos()
+        self._refresh_list()
+        self.query_one("#todo-list", ListView).focus()
+
+    def _refresh_list(self) -> None:
+        lv = self.query_one("#todo-list", ListView)
+        lv.clear()
+        if not self._items:
+            lv.append(ListItem(Label("[#6c7086](empty — press 'a' to add a task)[/]")))
+        else:
+            for i, item in enumerate(self._items):
+                done = bool(item.get("done"))
+                created = (item.get("created_at") or "")[:10]
+                text = item.get("text", "?")
+                check = "[#a6e3a1]✓[/]" if done else "[#6c7086]○[/]"
+                style = "#6c7086" if done else "#cdd6f4"
+                label = (
+                    f"{check} [{style}]{text}[/]"
+                    + (f"  [#45475a]{created}[/]" if created else "")
+                )
+                lv.append(ListItem(Label(label)))
+        done_count = sum(1 for it in self._items if it.get("done"))
+        total = len(self._items)
+        try:
+            self.query_one("#todo-status", Static).update(
+                f"[#6c7086]{done_count}/{total} done  ·  "
+                f"{total - done_count} remaining[/]"
+            )
+        except Exception:
+            pass
+
+    def _selected_index(self) -> int | None:
+        lv = self.query_one("#todo-list", ListView)
+        if lv.index is None or lv.index < 0 or not self._items:
+            return None
+        if lv.index >= len(self._items):
+            return None
+        return lv.index
+
+    def _get_input_text(self) -> str:
+        try:
+            return self.query_one("#todo-input", Input).value.strip()
+        except Exception:
+            return ""
+
+    def _clear_input(self) -> None:
+        try:
+            self.query_one("#todo-input", Input).value = ""
+        except Exception:
+            pass
+
+    def action_add_item(self) -> None:
+        text = self._get_input_text()
+        if not text:
+            self.query_one("#todo-input", Input).focus()
+            return
+        self._items.append({
+            "text": text,
+            "done": False,
+            "created_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        })
+        _save_todos(self._items)
+        self._clear_input()
+        self._refresh_list()
+        self.toast(f"added: {text[:40]}")
+
+    def on_input_submitted(self, _event: Input.Submitted) -> None:
+        self.action_add_item()
+
+    def action_done_item(self) -> None:
+        idx = self._selected_index()
+        if idx is None:
+            return
+        self._items[idx]["done"] = not self._items[idx].get("done", False)
+        _save_todos(self._items)
+        self._refresh_list()
+        state = "done" if self._items[idx]["done"] else "undone"
+        self.toast(f"marked {state}: {self._items[idx].get('text', '')[:40]}")
+
+    def action_delete_item(self) -> None:
+        idx = self._selected_index()
+        if idx is None:
+            return
+        text = self._items[idx].get("text", "?")[:40]
+        self._items.pop(idx)
+        _save_todos(self._items)
+        self._refresh_list()
+        self.toast(f"deleted: {text}")
+
+    def action_refresh_list(self) -> None:
+        self._items = _load_todos()
+        self._refresh_list()
+        self.toast("to-do list refreshed")
+
+
 # ───────────────────────── app ─────────────────────────
 class LlamaTUI(App):
     TITLE = "llama-tui"
@@ -1224,6 +2429,8 @@ class LlamaTUI(App):
         Binding("f6", "panel_system", "System"),
         Binding("f7", "panel_browser", "Browser"),
         Binding("f8", "panel_cron", "Cron"),
+        Binding("f9", "panel_skills", "Skills"),
+        Binding("f10", "panel_todo", "Todo"),
     ]
 
     # ── layout ──
@@ -1237,7 +2444,7 @@ class LlamaTUI(App):
                 yield Static(id="taskbar", classes="idle")
                 yield Static(id="statusbar")
                 inp = Input(
-                    placeholder="type a message, Enter to send…  (/help · /agent <goal> · /fetch <url>)",
+                    placeholder="message · /help · ; read codebase · ; cat file · ; sed …",
                     id="input",
                 )
                 inp.border_title = "input"
@@ -1252,6 +2459,7 @@ class LlamaTUI(App):
 
     # ── lifecycle ──
     def on_mount(self) -> None:
+        self.workspace = os.path.abspath(os.getcwd())
         self.fetcher = PageFetcher()
         self.har = HarManager()
         self.cron = CronStore()
@@ -1444,16 +2652,18 @@ class LlamaTUI(App):
     @staticmethod
     def _render_msg(role: str, text: str, cursor: bool = False) -> Text:
         t = Text()
+        # Escape Rich markup-special chars so model output (e.g. <think>) renders literally
+        safe = text.replace("[", "\\[").replace("<", "\\<")
         if role == "user":
             t.append("▌you  ", style=f"bold {C_USER}")
-            t.append(text, style=C_TEXT)
+            t.append(safe, style=C_TEXT)
         elif role == "ai":
             t.append("▌ai   ", style=f"bold {C_AI}")
-            t.append(text, style=C_TEXT)
+            t.append(safe, style=C_TEXT)
             if cursor:
                 t.append("█", style=C_AI)
         else:
-            t.append(text, style=f"italic {C_DIM}")
+            t.append(safe, style=f"italic {C_DIM}")
         return t
 
     # ── periodic panels ──
@@ -1597,6 +2807,11 @@ class LlamaTUI(App):
             event.input.value = ""
             self._handle_command(msg[1:].strip())
             return
+        workspace = getattr(self, "workspace", None) or os.getcwd()
+        if classify_workspace_input(msg, workspace):
+            event.input.value = ""
+            self.handle_workspace_input(msg)
+            return
         # "print /path/to/file" or bare agent_runs path — never send to LLM
         print_path = self._extract_local_file_request(msg)
         if print_path:
@@ -1690,6 +2905,9 @@ class LlamaTUI(App):
             "system": self.action_panel_system,
             "browser": self.action_panel_browser,
             "cron": self.action_panel_cron,
+            "skills": self.action_panel_skills,
+            "schedules": self.action_panel_schedules,
+            "todo": self.action_panel_todo,
             "clear": self.action_clear,
             "reset": self.action_reset,
             "stop": self.action_stop,
@@ -1724,7 +2942,28 @@ class LlamaTUI(App):
             self.handle_har_cmd(arg)
         elif cmd == "cdp":
             self.handle_cdp_cmd(arg)
-        elif cmd in ("print", "cat", "show", "runlog"):
+        elif cmd == "todo":
+            self._handle_todo_cmd(arg)
+        elif cmd == "schedules":
+            self.action_panel_schedules()
+        elif cmd == "skills":
+            self.action_panel_skills()
+        elif cmd in ("code", "codebase"):
+            self.handle_workspace_input("; read codebase of the current directory")
+        elif cmd == "sh":
+            if not arg.strip():
+                self.add_message(
+                    "sys",
+                    "Usage: /sh cat <file>  ·  /sh sed -n '1,40p' <file>  ·  ; read codebase",
+                )
+            else:
+                self.handle_workspace_input("; " + arg.strip())
+        elif cmd == "cat":
+            if not arg.strip():
+                self.add_message("sys", "Usage: /cat <file>  ·  ; cat <file>  ·  ; read codebase")
+            else:
+                self.handle_workspace_input("; cat " + arg.strip())
+        elif cmd in ("print", "show", "runlog"):
             path = arg.strip()
             if not path and cmd == "runlog":
                 # latest run_*.jsonl
@@ -1940,9 +3179,16 @@ class LlamaTUI(App):
             model_path = ModelState.path
             _, marker, stops = format_chat_prompt(model_path, [], "")
             flags = llama_flags()
+            # DeepSeek-R1 needs much larger context/prediction budget for reasoning
+            _is_r1 = is_deepseek_r1(model_path)
+            _n_predict = _DS_R1_N_PREDICT if _is_r1 else N_PREDICT
+            _ctx = _DS_R1_CTX if _is_r1 else CTX
+            _timeout = _DS_R1_TIMEOUT if _is_r1 else TIMEOUT_S
+            if _is_r1:
+                ui(self.log_line, f"[#f9e2af]DeepSeek-R1: ctx={_ctx} n_predict={_n_predict} — reasoning mode[/]")
             cmd = [
                 LLAMA_BIN, "-m", model_path, "-f", prompt_path,
-                "-n", str(N_PREDICT), "-t", str(THREADS), "-c", str(CTX),
+                "-n", str(_n_predict), "-t", str(THREADS), "-c", str(_ctx),
                 "-ngl", "0", "-b", "512",
                 "--temp", str(TEMP), "--top-p", str(TOP_P),
                 "--repeat-penalty", str(REPEAT_PENALTY),
@@ -1959,7 +3205,7 @@ class LlamaTUI(App):
                 stdin=subprocess.DEVNULL,
                 capture_output=True,
                 text=True,
-                timeout=TIMEOUT_S,
+                timeout=_timeout,
             )
             raw = proc.stdout
             if marker in raw:
@@ -1972,7 +3218,12 @@ class LlamaTUI(App):
             for s in stops:
                 if s in gen:
                     gen = gen.split(s)[0]
-            return gen.strip()
+            gen = gen.strip()
+            # For DeepSeek-R1, extract only the answer after </think>
+            if _is_r1:
+                _, answer = strip_think_blocks(gen)
+                gen = answer if answer else gen
+            return gen
         except Exception as e:
             return f"LLM error: {e}"
         finally:
@@ -2022,6 +3273,35 @@ class LlamaTUI(App):
         else:
             self.add_message("sys", f"⚠️ Typing failed: {res.get('error', 'Unknown')}")
             self.log_line(f"[{C_WARN}]Typing failed: {res.get('error')}[/]")
+
+    def handle_workspace_input(self, msg: str) -> None:
+        """Run ; cat / ; sed / ; read codebase and keep the output in chat context."""
+        if self.busy:
+            self.log_line(f"[{C_WARN}]busy — Ctrl+X to stop[/]")
+            return
+        workspace = getattr(self, "workspace", None) or os.getcwd()
+        self.add_message("user", msg)
+        try:
+            result = run_workspace_line(msg, workspace)
+        except WorkspaceError as exc:
+            self.add_message("sys", f"⚠️ {exc}")
+            self.history.append(("user", msg))
+            self.history.append(("assistant", f"Workspace error: {exc}"))
+            self.log_line(f"[{C_WARN}]workspace:[/] {exc}")
+            return
+        display = result
+        if len(display) > WORKSPACE_DISPLAY_CHARS:
+            display = display[:WORKSPACE_DISPLAY_CHARS] + "\n… (display truncated)"
+        self.add_message("sys", display.rstrip())
+        hist = result
+        if len(hist) > WORKSPACE_HISTORY_CHARS:
+            hist = hist[:WORKSPACE_HISTORY_CHARS] + (
+                "\n… (truncated for context — ; cat <file> or ; sed -n 'A,Bp' <file>)"
+            )
+        self.history.append(("user", msg))
+        self.history.append(("assistant", hist.rstrip()))
+        self.turns += 1
+        self.log_line(f"[#a6e3a1]workspace[/] {msg[:80]}")
 
     def handle_print_cmd(self, path: str) -> None:
         """Show a local file in chat (pretty-print json/jsonl). Never hits the LLM."""
@@ -2087,6 +3367,74 @@ class LlamaTUI(App):
         except Exception as e:
             self.log_line(f"[{C_ERR}]print failed:[/] {e}")
             self.add_message("sys", f"print failed: {e}")
+
+
+    def _handle_todo_cmd(self, arg: str) -> None:
+        """Handle /todo [add <text>|done <n>|del <n>|list] from chat input."""
+        parts = (arg or "").strip().split(maxsplit=1)
+        sub = parts[0].lower() if parts else "list"
+        rest = parts[1] if len(parts) > 1 else ""
+
+        items = _load_todos()
+
+        if sub in ("", "list", "ls"):
+            if not items:
+                self.add_message("sys", "📋 To-do list is empty.  Use /todo add <task> to add one.")
+                return
+            lines = ["📋 [bold]To-do list[/bold]"]
+            for i, it in enumerate(items, 1):
+                done = it.get("done", False)
+                check = "✓" if done else "○"
+                text = it.get("text", "?")
+                lines.append(f"  {i}. {check} {text}")
+            self.add_message("sys", "\n".join(lines))
+
+        elif sub == "add":
+            if not rest:
+                self.log_line(f"[{C_WARN}]Usage: /todo add <task text>[/]")
+                return
+            items.append({"text": rest, "done": False, "created_at": time.strftime("%Y-%m-%dT%H:%M:%S")})
+            _save_todos(items)
+            self.add_message("sys", f"📋 Added: {rest}")
+            self.log_line(f"todo added: {rest[:40]}")
+
+        elif sub in ("done", "check"):
+            try:
+                n = int(rest) - 1
+                if 0 <= n < len(items):
+                    items[n]["done"] = True
+                    _save_todos(items)
+                    self.add_message("sys", f"📋 ✓ Done: {items[n].get('text', '')}")
+                else:
+                    self.log_line(f"[{C_WARN}]todo: index {n+1} out of range[/]")
+            except ValueError:
+                self.log_line(f"[{C_WARN}]Usage: /todo done <number>[/]")
+
+        elif sub in ("del", "delete", "rm", "remove"):
+            try:
+                n = int(rest) - 1
+                if 0 <= n < len(items):
+                    text = items[n].get("text", "?")
+                    items.pop(n)
+                    _save_todos(items)
+                    self.add_message("sys", f"📋 Deleted: {text}")
+                else:
+                    self.log_line(f"[{C_WARN}]todo: index {n+1} out of range[/]")
+            except ValueError:
+                self.log_line(f"[{C_WARN}]Usage: /todo del <number>[/]")
+
+        elif sub in ("clear", "reset"):
+            # Only clear completed items
+            before = len(items)
+            items = [it for it in items if not it.get("done")]
+            _save_todos(items)
+            removed = before - len(items)
+            self.add_message("sys", f"📋 Cleared {removed} completed task(s). {len(items)} remaining.")
+
+        elif sub in ("open", "show"):
+            self.action_panel_todo()
+        else:
+            self.log_line(f"[{C_WARN}]todo: unknown subcommand '{sub}' — try add/done/del/list/clear[/]")
 
     def handle_har_cmd(self, arg: str) -> None:
         sub = arg.strip().lower()
@@ -2194,6 +3542,15 @@ class LlamaTUI(App):
     def action_panel_system(self) -> None:
         self.push_screen(SystemScreen())
 
+    def action_panel_skills(self) -> None:
+        self.push_screen(SkillsScreen())
+
+    def action_panel_todo(self) -> None:
+        self.push_screen(TodoScreen())
+
+    def action_panel_schedules(self) -> None:
+        self.push_screen(SchedulesScreen())
+
     # ── model switch (called by ModelScreen) ──
     def _apply_model_switch(self, new_path: str) -> None:
         if self.busy:
@@ -2223,6 +3580,16 @@ class LlamaTUI(App):
             )
         if not os.path.exists(LLAMA_BIN):
             self.log_line(f"[{C_ERR}]llama-cli still missing:[/] {LLAMA_BIN}")
+        # Pre-warm llama-server in background so first reply is fast
+        if os.path.exists(LLAMA_SERVER_BIN):
+            _is_r1 = is_deepseek_r1(new_path)
+            _ctx = _DS_R1_CTX if _is_r1 else CTX
+            self.log_line(f"[#6c7086]starting llama-server on :{LLAMA_SERVER_PORT}…[/]")
+            def _start_server():
+                ok = LlamaServer.start(new_path, ctx=_ctx, threads=THREADS)
+                status = f"[#a6e3a1]llama-server ready[/]" if ok else f"[{C_WARN}]llama-server failed — using llama-cli fallback[/]"
+                self.call_from_thread(self.log_line, status)
+            threading.Thread(target=_start_server, daemon=True).start()
 
     # ── generation (worker thread) ──
     @staticmethod
@@ -2247,6 +3614,70 @@ class LlamaTUI(App):
         prompt_path = None
         reply = ""
         err_chunks = []
+        model_path = ModelState.path
+        _, marker, stops = format_chat_prompt(model_path, [], "")
+        _is_r1 = is_deepseek_r1(model_path)
+        _n_predict = _DS_R1_N_PREDICT if _is_r1 else N_PREDICT
+        _ctx = _DS_R1_CTX if _is_r1 else CTX
+        _timeout = _DS_R1_TIMEOUT if _is_r1 else TIMEOUT_S
+
+        # ── helper: display text during streaming ──
+        def _show(content: str) -> None:
+            if _is_r1:
+                think_text, answer_text = strip_think_blocks(content.lstrip())
+                if answer_text:
+                    shown = answer_text
+                elif think_text:
+                    lines = think_text.strip().splitlines()
+                    last_line = lines[-1][:80] if lines else ""
+                    shown = f"💭 thinking… {last_line}"
+                else:
+                    shown = content.lstrip()
+            else:
+                shown = content.lstrip()
+            ui(self._update_live, shown, True)
+
+        # ── try llama-server path first ──
+        if LlamaServer.is_ready() and LlamaServer._model == model_path:
+            try:
+                ui(self.log_line, "sending to llama-server…")
+                self.state = "generating"
+                self.gen_start = time.time()
+                last_ui = 0.0
+
+                def _stream_cb(full_so_far: str) -> None:
+                    nonlocal last_ui
+                    self.gen_tokens += 1
+                    now = time.time()
+                    if now - last_ui > 0.08:
+                        last_ui = now
+                        _show(full_so_far)
+
+                raw_reply = LlamaServer.complete(
+                    prompt=prompt,
+                    n_predict=_n_predict,
+                    stops=stops,
+                    temp=TEMP,
+                    top_p=TOP_P,
+                    repeat_penalty=REPEAT_PENALTY,
+                    stream_cb=_stream_cb,
+                )
+                if _is_r1:
+                    _, answer = strip_think_blocks(raw_reply)
+                    reply = answer if answer else raw_reply
+                else:
+                    reply = raw_reply.strip()
+                if not reply and self.stop_flag:
+                    reply = "[stopped]"
+                elif not reply:
+                    reply = "[empty response from server]"
+                ui(self._finish, reply, "", time.time() - t0)
+                return
+            except Exception as e:
+                ui(self.log_line, f"[{C_WARN}]server error ({e}) — falling back to llama-cli[/]")
+                self.state = "loading"
+
+        # ── llama-cli fallback ──
         try:
             with tempfile.NamedTemporaryFile(
                 "w", suffix=".txt", delete=False, dir=HOME, encoding="utf-8"
@@ -2254,12 +3685,12 @@ class LlamaTUI(App):
                 f.write(prompt)
                 prompt_path = f.name
 
-            model_path = ModelState.path
-            _, marker, stops = format_chat_prompt(model_path, [], "")
             flags = llama_flags()
+            if _is_r1:
+                ui(self.log_line, f"[#f9e2af]DeepSeek-R1: ctx={_ctx} n_predict={_n_predict} — reasoning mode[/]")
             cmd = [
                 LLAMA_BIN, "-m", model_path, "-f", prompt_path,
-                "-n", str(N_PREDICT), "-t", str(THREADS), "-c", str(CTX),
+                "-n", str(_n_predict), "-t", str(THREADS), "-c", str(_ctx),
                 "-ngl", "0", "-b", "512",
                 "--temp", str(TEMP), "--top-p", str(TOP_P),
                 "--repeat-penalty", str(REPEAT_PENALTY),
@@ -2299,9 +3730,9 @@ class LlamaTUI(App):
             hit_stop = False
 
             while True:
-                if time.time() - t0 > TIMEOUT_S:
+                if time.time() - t0 > _timeout:
                     self.proc.kill()
-                    ui(self.log_line, f"[{C_ERR}]timeout after {TIMEOUT_S}s[/]")
+                    ui(self.log_line, f"[{C_ERR}]timeout after {_timeout}s[/]")
                     break
                 data = os.read(fd, 256)
                 if not data:
@@ -2317,12 +3748,10 @@ class LlamaTUI(App):
                         pass
                 raw += decoder.decode(data)
 
-                # Check if generation has started past marker
                 if marker in raw:
                     content = raw.split(marker)[-1]
                     if content.startswith("\n"):
                         content = content[1:]
-
                     cut = None
                     for s in stops:
                         i = content.find(s)
@@ -2340,8 +3769,7 @@ class LlamaTUI(App):
                 now = time.time()
                 if now - last_ui > 0.08 and reply:
                     last_ui = now
-                    shown = reply.lstrip()
-                    ui(self._update_live, shown, True)
+                    _show(reply)
                 if hit_stop:
                     try:
                         self.proc.terminate()
@@ -2362,6 +3790,9 @@ class LlamaTUI(App):
                     if s in content:
                         content = content.split(s)[0]
                 reply = content.strip()
+                if _is_r1:
+                    _, answer = strip_think_blocks(reply)
+                    reply = answer if answer else reply
             else:
                 reply = ""
             stderr_text = b"".join(err_chunks).decode("utf-8", "replace")
@@ -2370,7 +3801,6 @@ class LlamaTUI(App):
                 if self.stop_flag:
                     reply = "[stopped]"
                 else:
-                    # Figure out why the spawn produced nothing.
                     low = stderr_text.lower()
                     hint = ""
                     if "invalid argument" in low:
@@ -2394,21 +3824,9 @@ class LlamaTUI(App):
             ui(self._finish, reply, stderr_text, time.time() - t0)
 
         except FileNotFoundError:
-            ui(
-                self._finish,
-                f"[Error: llama binary not found at {LLAMA_BIN}]",
-                "",
-                time.time() - t0,
-                True,
-            )
+            ui(self._finish, f"[Error: llama binary not found at {LLAMA_BIN}]", "", time.time() - t0, True)
         except PermissionError:
-            ui(
-                self._finish,
-                f"[Error: llama binary not executable: {LLAMA_BIN}]",
-                "",
-                time.time() - t0,
-                True,
-            )
+            ui(self._finish, f"[Error: llama binary not executable: {LLAMA_BIN}]", "", time.time() - t0, True)
         except Exception as e:  # noqa: BLE001
             ui(self._finish, f"[Error: {str(e)[:120]}]", "", time.time() - t0, True)
         finally:

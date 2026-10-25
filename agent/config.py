@@ -39,3 +39,15 @@ class AgentConfig:
     api_port: int = field(
         default_factory=lambda: int(os.environ.get("AGENT_API_PORT", "9227"))
     )
+    whatsapp_cdp_port: int = field(
+        default_factory=lambda: int(os.environ.get("WHATSAPP_CDP_PORT", "9223"))
+    )
+    whatsapp_profile_dir: str = field(
+        default_factory=lambda: os.environ.get(
+            "WHATSAPP_PROFILE_DIR",
+            str(_LAUNCHER_ROOT / "data" / "chrome-whatsapp-profile"),
+        )
+    )
+    whatsapp_poll_interval: float = field(
+        default_factory=lambda: float(os.environ.get("WHATSAPP_POLL_INTERVAL", "5.0"))
+    )

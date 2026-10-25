@@ -35,6 +35,9 @@ class MapsGeoSkill:
     SCRIPT_INSPECT = f"{DIR}/inspect-and-discover"
     SCRIPT_SCROLL = f"{DIR}/get-cards-via-scroll"
     SCRIPT_PHONES = f"{DIR}/enrich-phones"
+    SCRIPT_HARVEST = f"{DIR}/harvest-feed"
+    SCRIPT_SCROLL_ONCE = f"{DIR}/scroll-once"
+    SCRIPT_READ_PHONE = f"{DIR}/read-panel-phone"
     SCRIPT_SEARCH = f"{DIR}/search"
 
     # Stop agent after this many consecutive URL failures / empty extracts
@@ -53,10 +56,12 @@ class MapsGeoSkill:
         har_manager=None,
         out_dir: Optional[str] = None,
         notify=None,
+        db=None,
     ):
         self.fetcher = page_fetcher
         self.har = har_manager
         self.notify = notify or (lambda *_a, **_k: None)
+        self.db = db  # optional agent.database.Database instance for DB persistence
         root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         self.out_dir = out_dir or os.path.join(root, "agent_runs")
         self.last_selectors: Dict[str, Any] = {}
@@ -95,6 +100,187 @@ class MapsGeoSkill:
 
     def _run(self, script: str, args: Optional[Dict] = None, timeout: float = 120.0) -> Any:
         return self.fetcher.run_library_script(script, args=args or {}, timeout=timeout)
+
+    def _seed_maps_results(self, cards: List[Dict[str, Any]]) -> None:
+        """Expose harvested cards to enrich-phones.js via window.mapsResults."""
+        try:
+            payload = json.dumps(cards, ensure_ascii=False)
+            self.fetcher.evaluate_js(
+                f"window.mapsResults = {payload}; true",
+                timeout=15.0,
+            )
+        except Exception:
+            pass
+
+    def scroll_cards_stepwise(
+        self,
+        *,
+        name_css: Optional[str] = None,
+        max_scrolls: int = 35,
+        scroll_delay_ms: int = 1200,
+        max_stable: int = 5,
+        max_cards: int = 200,
+    ) -> Dict[str, Any]:
+        """Harvest + scroll in short CDP evals (survives Maps nav / WS quiet)."""
+        merged: Dict[str, Dict[str, Any]] = {}
+        last_count = 0
+        stable = 0
+        scrolls = 0
+        ended = False
+
+        for _ in range(max(1, max_scrolls)):
+            harvest = self._run(
+                self.SCRIPT_HARVEST,
+                {"name_css": name_css} if name_css else {},
+                timeout=25.0,
+            )
+            if not isinstance(harvest, dict) or not harvest.get("ok"):
+                if merged:
+                    break
+                return {
+                    "ok": False,
+                    "error": (harvest or {}).get("error")
+                    if isinstance(harvest, dict)
+                    else "harvest failed",
+                    "data": [],
+                    "count": 0,
+                }
+            for card in harvest.get("data") or []:
+                key = (card.get("maps_url") or "").split("?")[0] or (
+                    card.get("name") or ""
+                ).lower()
+                if not key:
+                    continue
+                prev = merged.get(key) or {}
+                merged[key] = {**prev, **{k: v for k, v in card.items() if v}}
+            count = len(merged)
+            ended = bool(harvest.get("end"))
+            if count >= max_cards or ended:
+                break
+            if count == last_count:
+                stable += 1
+            else:
+                stable = 0
+            last_count = count
+            if stable >= max_stable:
+                break
+            step = self._run(self.SCRIPT_SCROLL_ONCE, {}, timeout=15.0)
+            scrolls += 1
+            if isinstance(step, dict) and step.get("end"):
+                ended = True
+                break
+            time.sleep(max(0.2, scroll_delay_ms / 1000.0))
+
+        data = list(merged.values())
+        self._seed_maps_results(data)
+        return {
+            "ok": True,
+            "count": len(data),
+            "scrolls": scrolls,
+            "end": ended,
+            "with_phone": sum(1 for c in data if c.get("phone")),
+            "data": data,
+        }
+
+    def enrich_phones_stepwise(
+        self,
+        cards: List[Dict[str, Any]],
+        *,
+        max_places: int = 50,
+        open_delay_ms: int = 1400,
+        only_missing: bool = True,
+    ) -> Dict[str, Any]:
+        """
+        Click/open each place and read the phone panel.
+
+        Prefers navigating ``maps_url`` (reliable after feed virtualization);
+        falls back to feed-click enrich script for cards still missing URLs.
+        Always runs when phones are requested — list cards alone rarely have numbers.
+        """
+        out = [dict(c) for c in cards]
+        enriched = 0
+        attempted = 0
+        delay = max(0.4, open_delay_ms / 1000.0)
+
+        def _apply_phone(idx: int, phone: Optional[str]) -> None:
+            nonlocal enriched
+            if not phone:
+                return
+            prev = out[idx].get("phone")
+            out[idx]["phone"] = phone
+            if not prev:
+                enriched += 1
+
+        # 1) Navigate place URLs one-by-one (short CDP calls)
+        for i, card in enumerate(out):
+            if attempted >= max_places:
+                break
+            if only_missing and card.get("phone"):
+                continue
+            maps_url = (card.get("maps_url") or "").strip()
+            if not maps_url or "/maps/place" not in maps_url:
+                continue
+            attempted += 1
+            try:
+                self.fetcher.navigate(maps_url)
+                time.sleep(delay)
+                # consent may reappear on place pages
+                self._run(self.SCRIPT_CONSENT, {"delay_ms": 200}, timeout=15.0)
+                time.sleep(0.3)
+                read = self._run(self.SCRIPT_READ_PHONE, {}, timeout=20.0)
+                phone = None
+                if isinstance(read, dict):
+                    phone = read.get("phone")
+                _apply_phone(i, phone)
+                self._progress(
+                    label="phones",
+                    step=attempted,
+                    total=max_places,
+                    phase=f"phone {attempted}/{max_places}",
+                    cards=len(out),
+                    phones=sum(1 for c in out if c.get("phone")),
+                )
+            except Exception as e:
+                out[i]["_phone_error"] = str(e)[:120]
+
+        # 2) Library enrich for any still-missing (feed click) if we're on a search page
+        still_missing = sum(1 for c in out if not c.get("phone"))
+        if still_missing and attempted < max_places:
+            self._seed_maps_results(out)
+            batch = self._run(
+                self.SCRIPT_PHONES,
+                {
+                    "max_places": min(max_places - attempted, still_missing + 3),
+                    "only_missing": True,
+                    "open_delay_ms": open_delay_ms,
+                },
+                timeout=min(300.0, 12.0 * (max_places - attempted + 2)),
+            )
+            if isinstance(batch, dict) and batch.get("ok"):
+                by_key = {}
+                for c in batch.get("data") or []:
+                    key = (c.get("maps_url") or "").split("?")[0] or (c.get("name") or "").lower()
+                    if key:
+                        by_key[key] = c
+                for i, card in enumerate(out):
+                    key = (card.get("maps_url") or "").split("?")[0] or (
+                        card.get("name") or ""
+                    ).lower()
+                    other = by_key.get(key)
+                    if other and other.get("phone") and not card.get("phone"):
+                        out[i]["phone"] = other["phone"]
+                        enriched += 1
+
+        self._seed_maps_results(out)
+        with_phone = sum(1 for c in out if c.get("phone"))
+        return {
+            "ok": with_phone > 0 or attempted == 0,
+            "data": out,
+            "enriched": enriched,
+            "attempted": attempted,
+            "with_phone": with_phone,
+            "count": len(out),
+        }
 
     # ── quality / meaning ─────────────────────────────────────────────
 
@@ -215,6 +401,20 @@ class MapsGeoSkill:
             payload["phones_path"] = phone_path
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(payload, f, indent=2, ensure_ascii=False, default=str)
+
+        # ── persist to agent.db places table ──────────────────────────
+        if self.db is not None and cards:
+            try:
+                db_result = self.db.store_places(cards, query=query)
+                payload["db_inserted"] = db_result.get("inserted", 0)
+                payload["db_updated"] = db_result.get("updated", 0)
+                # rewrite JSON with DB stats
+                with open(path, "w", encoding="utf-8") as f:
+                    json.dump(payload, f, indent=2, ensure_ascii=False, default=str)
+            except Exception as _db_err:
+                import logging
+                logging.getLogger(__name__).warning("store_places failed: %s", _db_err)
+
         return path
 
     # ── single URL scrape ─────────────────────────────────────────────
@@ -338,17 +538,34 @@ class MapsGeoSkill:
                 f"scroll count={scroll.get('count')} with_phone={scroll.get('with_phone')} "
                 f"selectors_used={scroll.get('selectors_used')}"
             )
+            self._seed_maps_results(raw_cards)
         else:
-            observations.append(f"scroll fail={scroll}")
-            return {
-                "ok": False,
-                "error": (scroll or {}).get("error") if isinstance(scroll, dict) else "scroll failed",
-                "cards": [],
-                "url": url,
-                "observations": observations,
-                "abort": True,
-                "selectors": selectors,
-            }
+            observations.append(f"scroll fail={scroll} — trying stepwise harvest")
+            step = self.scroll_cards_stepwise(
+                name_css=selectors.get("name_css"),
+                max_scrolls=int(scroll_payload.get("max_scrolls") or 30),
+                scroll_delay_ms=int(scroll_payload.get("scroll_delay_ms") or 1200),
+                max_stable=int(scroll_payload.get("max_stable") or 5),
+                max_cards=int(scroll_payload.get("max_cards") or 200),
+            )
+            if isinstance(step, dict) and step.get("ok") and step.get("data"):
+                raw_cards = list(step.get("data") or [])
+                observations.append(
+                    f"stepwise_scroll count={step.get('count')} scrolls={step.get('scrolls')}"
+                )
+            else:
+                observations.append(f"stepwise_scroll fail={step}")
+                return {
+                    "ok": False,
+                    "error": (scroll or {}).get("error")
+                    if isinstance(scroll, dict)
+                    else "scroll failed",
+                    "cards": [],
+                    "url": url,
+                    "observations": observations,
+                    "abort": True,
+                    "selectors": selectors,
+                }
 
         # Early quality check before expensive phone enrich
         pre = self._validate_batch(raw_cards, require_phone=False, fields=fields)
@@ -366,27 +583,28 @@ class MapsGeoSkill:
             }
 
         cards = list(pre["cards"])
+        fields_l = [f.lower() for f in (fields or [])]
+        want_phone = enrich_phones or "phone" in fields_l or require_phone
 
-        if enrich_phones:
+        if want_phone:
             missing = sum(1 for c in cards if not c.get("phone"))
             if missing:
-                phones = self._run(
-                    self.SCRIPT_PHONES,
-                    {
-                        "max_places": min(max_places, missing + 5),
-                        "only_missing": True,
-                        "open_delay_ms": 1100,
-                    },
-                    timeout=300.0,
+                # Always open each place panel — list cards almost never show phones.
+                phones = self.enrich_phones_stepwise(
+                    cards,
+                    max_places=min(max_places, max(missing, 1)),
+                    only_missing=True,
+                    open_delay_ms=1400,
                 )
-                if isinstance(phones, dict) and phones.get("ok"):
+                if isinstance(phones, dict):
                     cards = list(phones.get("data") or cards)
                     observations.append(
-                        f"enrich enriched={phones.get('enriched')} "
+                        f"enrich_stepwise enriched={phones.get('enriched')} "
+                        f"attempted={phones.get('attempted')} "
                         f"with_phone={phones.get('with_phone')}"
                     )
                 else:
-                    observations.append(f"enrich fail={phones}")
+                    observations.append(f"enrich_stepwise fail={phones}")
 
         for c in cards:
             c["_search_url"] = url
@@ -396,11 +614,31 @@ class MapsGeoSkill:
                     "phone_css": selectors.get("phone_css"),
                 }
 
-        quality = self._validate_batch(cards, require_phone=require_phone, fields=fields)
+        # When phone was requested, demand at least one number so runs never
+        # "succeed" with an all-null phone column.
+        quality = self._validate_batch(
+            cards,
+            require_phone=require_phone,
+            fields=fields,
+        )
+        with_phone = quality["with_phone"]
         observations.append(
             f"quality meaningful={quality['meaningful']} "
-            f"with_phone={quality['with_phone']} ok={quality['ok']}"
+            f"with_phone={with_phone} ok={quality['ok']}"
         )
+
+        if want_phone and quality["meaningful"] > 0 and with_phone == 0:
+            observations.append("FAIL: phone field requested but 0 phones after enrich")
+            return {
+                "ok": False,
+                "error": "phone enrichment produced 0 numbers — place panels had no phone",
+                "cards": quality["cards"],
+                "url": url,
+                "observations": observations,
+                "abort": True,
+                "selectors": selectors,
+                "quality": quality,
+            }
 
         if not quality["ok"]:
             return {
@@ -419,7 +657,7 @@ class MapsGeoSkill:
             "url": url,
             "cards": quality["cards"],
             "count": quality["meaningful"],
-            "with_phone": quality["with_phone"],
+            "with_phone": with_phone,
             "observations": observations,
             "selectors": selectors,
             "quality": quality,

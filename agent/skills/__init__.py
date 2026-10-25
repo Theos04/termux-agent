@@ -5,6 +5,8 @@ import os
 from .decision import DecisionBuilderSkill, ScrapeDecision
 from .pincodes import PincodeSkill, DEFAULT_PINCODE_CSV
 from .maps_geo import MapsGeoSkill
+from .google_workspace import GoogleWorkspaceSkill
+from .whatsapp import WhatsAppSkill
 
 __all__ = [
     "DecisionBuilderSkill",
@@ -12,6 +14,8 @@ __all__ = [
     "PincodeSkill",
     "DEFAULT_PINCODE_CSV",
     "MapsGeoSkill",
+    "GoogleWorkspaceSkill",
+    "WhatsAppSkill",
     "SkillsPipeline",
 ]
 
@@ -28,6 +32,7 @@ class SkillsPipeline:
         har_manager=None,
         notify=None,
         pincode_csv: str = DEFAULT_PINCODE_CSV,
+        db=None,
     ):
         self.fetcher = page_fetcher
         self.har = har_manager
@@ -38,12 +43,16 @@ class SkillsPipeline:
             page_fetcher=page_fetcher,
             har_manager=har_manager,
             notify=self.notify,
+            db=db,
         )
+        self.whatsapp = WhatsAppSkill(db=db)
 
     def can_handle(self, goal: str) -> bool:
-        return self.decision.can_handle(goal)
+        return self.decision.can_handle(goal) or self.whatsapp.can_handle(goal)
 
     def run(self, goal: str, dry_run: bool = True) -> dict:
+        if self.whatsapp.can_handle(goal):
+            return self.whatsapp.run(goal, dry_run=dry_run)
         decision = self.decision.build(goal, dry_run=dry_run)
         self.notify("agent_plan", {"tasks": decision.as_plan_tasks(), "decision": decision.to_dict()})
 
